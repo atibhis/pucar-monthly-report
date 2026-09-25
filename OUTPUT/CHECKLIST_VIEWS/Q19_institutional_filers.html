@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q19 — Institutional & Out-of-District Complainants (3+ Filings) — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q19 — Institutional & Out-of-District Complainants (3+ Filings)</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> How many cases were filed by out-of-district or institutional complainants under Section 142(2) of the NI Act this month, from which districts or states, and which complainants have filed three or more cases?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Institutional Filers (3+)</div><div class="kpi-value">102</div><div class="kpi-sub">Banks, Nidhi companies & firms</div></div>
+    <div class="kpi-card"><div class="kpi-title">#1 Institutional Complainant</div><div class="kpi-value">HDFC BANK LTD</div><div class="kpi-sub">213 Cases filed in ON Court</div></div>
+    <div class="kpi-card"><div class="kpi-title">#2 Institutional Complainant</div><div class="kpi-value">PARAVUR AKSHAYA</div><div class="kpi-sub">64 Cases filed</div></div>
+    <div class="kpi-card"><div class="kpi-title">#3 Institutional Complainant</div><div class="kpi-value">HARITHA SYNDICATE</div><div class="kpi-sub">62 Cases filed</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+                    <span class="count-info" id="recordCountText">Showing 102 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q19_institutional_filers.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>complainant</th><th>total_cases_filed</th><th>filed_this_month</th><th>filed_last_month</th></tr></thead>
+            <tbody><tr><td>HDFC BANK LTD</td><td>213</td><td>0</td><td>0</td></tr>
+<tr><td>PARAVUR AKSHAYA NIDHI LTD</td><td>66</td><td>3</td><td>12</td></tr>
+<tr><td>HARITHA SYNDICATE</td><td>62</td><td>4</td><td>5</td></tr>
+<tr><td>VIDHYADIRAJA GRAMA NIDHI LIMITED</td><td>30</td><td>0</td><td>0</td></tr>
+<tr><td>SAUBHAGYA FINANCE</td><td>29</td><td>0</td><td>0</td></tr>
+<tr><td>MANAPPURAM FINANCE LTD</td><td>29</td><td>0</td><td>0</td></tr>
+<tr><td>MABEN NIDHI LTD.</td><td>19</td><td>2</td><td>4</td></tr>
+<tr><td>SHREE PADMA NIDHI LIMITED</td><td>19</td><td>0</td><td>1</td></tr>
+<tr><td>NEDUNGOLAM GRAMIN NIDHI LTD</td><td>17</td><td>1</td><td>1</td></tr>
+<tr><td>SILVERLINE TRADING COMPANY</td><td>17</td><td>0</td><td>0</td></tr>
+<tr><td>ELAKAMON AKSHAYA NIDHI LTD</td><td>15</td><td>0</td><td>3</td></tr>
+<tr><td>MANAPPURAM FINANCE LTD.</td><td>15</td><td>0</td><td>6</td></tr>
+<tr><td>SHAKTHIKULANGARA NIDHI LTD</td><td>15</td><td>0</td><td>0</td></tr>
+<tr><td>KOLLAM URBAN VIKAS NIDHI LIMITED</td><td>15</td><td>2</td><td>5</td></tr>
+<tr><td>MARANATHA FINCORP</td><td>15</td><td>2</td><td>0</td></tr>
+<tr><td>M/S EVANGELINE DEV IMPEX PVT LTD</td><td>13</td><td>0</td><td>0</td></tr>
+<tr><td>MABEN NIDHI LTD</td><td>13</td><td>1</td><td>0</td></tr>
+<tr><td>KERALA KAUMUDI (P) LTD</td><td>13</td><td>0</td><td>0</td></tr>
+<tr><td>SAMASTHA NAIR NIDHI LTD.</td><td>12</td><td>0</td><td>0</td></tr>
+<tr><td>SREE NARAYANA PRARTHANA SAMITHI</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>MANAPPURAM FINANCE LIMITED</td><td>11</td><td>1</td><td>2</td></tr>
+<tr><td>SREENARAYANA PRARTHANA SAMITHI</td><td>11</td><td>0</td><td>1</td></tr>
+<tr><td>KALADEVI N</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td>SUNIL KUMAR B</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>PADMAKUMAR</td><td>8</td><td>1</td><td>1</td></tr>
+<tr><td>SANTHA</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>KERALA KAUMUDI PVT LTD</td><td>8</td><td>3</td><td>0</td></tr>
+<tr><td>M/S MAXVALUE CREDITS AND INVESTMENTS LTD</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>AYIROOR NIDHI LTD</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>HDFC BANK</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>SREE GOKULAM CHITS AND FINANCE CO PVT LTD</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>SAUBHAGAYA FINANCE</td><td>7</td><td>0</td><td>0</td></tr>
+<tr><td>KERALA KAUMUDI</td><td>7</td><td>0</td><td>0</td></tr>
+<tr><td>SREE GOKULAM CHIT AND FINANCE CO PVT LTD</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>KOLLAM URBAN VIKAS NIDHI LTD</td><td>6</td><td>0</td><td>4</td></tr>
+<tr><td>MAX VALUE CREDITS AND INVESTMENT LTD</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>V BOBBY SUNIL DUTT</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>ANIL KUMAR</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>SALIM</td><td>6</td><td>0</td><td>5</td></tr>
+<tr><td>ANANTHAPURI NIDHI LIMITED</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>AJIKUMAR M S</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>KOLLAM NAGARA NIDHI LTD</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C.P ENTERPRISES</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>BINDHU JAMES LITTLE FLOWER</td><td>5</td><td>0</td><td>5</td></tr>
+<tr><td>RAJEEV R</td><td>5</td><td>1</td><td>1</td></tr>
+<tr><td>AHAMED KABEER</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>M/S FORT IN INFRA DEVELOPERS PRIVATE LIMITED</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>HARIHARAN S</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>PARIPALLY GURUKRIPA NIDHI LTD</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>POOTHAKULAM NIDHI LIMITED</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>UMAMAHESWARI R</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>GOPALAKRISHNA PILLAI</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>VIJAYAN A</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>REJIMON B</td><td>4</td><td>1</td><td>1</td></tr>
+<tr><td>TOMY SOLOMON</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>REMA K</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>SANKARA NARAYANA PILLAI</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>ZAINA A</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>KOLLAM URBAN VIKAS NIDHI LTD.</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>VINU S PAI</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>VISWAMBARAN P</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>TREVOR MORRISON</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>SURESH KUMAR T</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>SHAJAHAN A</td><td>4</td><td>2</td><td>0</td></tr>
+<tr><td>CORE PHARMA</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>CHEMMANUR GOLD PALACE INTERNATIONAL LTD</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>MAXVALUE CREDITS AND INVESTMENTS LTD</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>BANK EMPLOYEES COOPERATIVE SOCIETY</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>SUJESH CHANDRAN</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>LALY ABRAHAM</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>JOHN BOSCO</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>RAVEENDRAN R</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>KOLLAM GRAMA VIKASANA NIDHI LTD</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SAJI YOHANNAN</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SHEELA S</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SILVER LINE TRADING COMPANY</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>BEEMA MOL R</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SURENDRANATH</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>DEEPU D</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>AMJITHA S</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>SATHEESH BABU</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>S KUNJUMON</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>ATHIRA S</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>RAJENDRAN K</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SUBHASH CHANDRA BOSE</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>EDGE INTERIORS</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SHAJI</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>M/S TMS SREENIVASA REDDIAR</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>BROTHERS PHARMA</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>P MANIYAN PILLAI</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>XAVIER A</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SURESH S</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>LEELAMANI</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>MUHAMED SHERIEEF A</td><td>3</td><td>0</td><td>3</td></tr>
+<tr><td>MERMOUNT CORPORATION</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>SREEKUMAR GOPINADHAN</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>ANILKUMAR</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>THANOOF A</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>ESHIKA CASHEW COMPANY</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>NIXON WILLIAM</td><td>3</td><td>0</td><td>3</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

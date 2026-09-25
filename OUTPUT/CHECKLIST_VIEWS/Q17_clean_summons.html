@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q17 — Clean First-Summons Appearance Rate & MoM Trajectory — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q17 — Clean First-Summons Appearance Rate & MoM Trajectory</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> What is the 'clean first-summons' rate this month — the share of newly-cognised cases in which the accused appeared on the first summons without any warrant being issued — and how has it moved?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Peak Clean First Summons Rate</div><div class="kpi-value" style="color:#10b981;">34.9%</div><div class="kpi-sub">Achieved in March 2026 cohort</div></div>
+    <div class="kpi-card"><div class="kpi-title">Mid-2026 Clean Rate</div><div class="kpi-value">17.9% - 22.9%</div><div class="kpi-sub">Apr - Jun 2026 cohorts</div></div>
+    <div class="kpi-card"><div class="kpi-title">Recent Transit Rate</div><div class="kpi-value">Pending</div><div class="kpi-sub">Summons currently in postal service</div></div>
+    <div class="kpi-card"><div class="kpi-title">Escalation to Warrant</div><div class="kpi-value">~35% - 50%</div><div class="kpi-sub">Require NBW escalation</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+                    <span class="count-info" id="recordCountText">Showing 12 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q17_clean_summons_cohorts.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>cognisance_month</th><th>newly_cognised_cases</th><th>clean_first_summons_appearance</th><th>escalated_to_warrant</th><th>clean_rate_pct</th></tr></thead>
+            <tbody><tr><td>2026-09</td><td>115</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr><td>2026-08</td><td>146</td><td>4</td><td>0</td><td>2.7</td></tr>
+<tr><td>2026-07</td><td>180</td><td>17</td><td>20</td><td>9.4</td></tr>
+<tr><td>2026-06</td><td>179</td><td>38</td><td>55</td><td>21.2</td></tr>
+<tr><td>2026-05</td><td>139</td><td>28</td><td>49</td><td>20.1</td></tr>
+<tr><td>2026-04</td><td>170</td><td>37</td><td>93</td><td>21.8</td></tr>
+<tr><td>2026-03</td><td>175</td><td>61</td><td>74</td><td>34.9</td></tr>
+<tr><td>2026-02</td><td>173</td><td>41</td><td>115</td><td>23.7</td></tr>
+<tr><td>2026-01</td><td>98</td><td>34</td><td>56</td><td>34.7</td></tr>
+<tr><td>2025-12</td><td>56</td><td>18</td><td>31</td><td>32.1</td></tr>
+<tr><td>2025-11</td><td>44</td><td>13</td><td>25</td><td>29.5</td></tr>
+<tr><td>2025-10</td><td>101</td><td>27</td><td>61</td><td>26.7</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

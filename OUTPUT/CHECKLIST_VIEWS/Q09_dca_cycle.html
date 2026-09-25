@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 — Delay Condonation 'Take Steps' Cycle (>5 DCA Hearings) — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q9 — Delay Condonation 'Take Steps' Cycle (>5 DCA Hearings)</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> Which cases are in the 'take steps' / delay-condonation cycle — issue DCA notice, complainant absent, take steps, repeat — with more than five DCA hearings each?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Cases with > 5 DCA Hearings</div><div class="kpi-value" style="color:#ef4444;">57</div><div class="kpi-sub">Repeat take steps / absent cycle</div></div>
+    <div class="kpi-card"><div class="kpi-title">Max DCA Hearings on 1 Case</div><div class="kpi-value">15</div><div class="kpi-sub">Single case bottleneck</div></div>
+    <div class="kpi-card"><div class="kpi-title">Average Cycle Duration</div><div class="kpi-value">158.1 Days</div><div class="kpi-sub">Span between first & last DCA</div></div>
+    <div class="kpi-card"><div class="kpi-title">Total DCA Hearings Recorded</div><div class="kpi-value">497</div><div class="kpi-sub">Across 57 repeat cycle cases</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+                    <span class="count-info" id="recordCountText">Showing 57 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q09_dca_cycle_cases.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>filingnumber</th><th>courtcasenumber</th><th>casetitle</th><th>stage</th><th>dca_hearings_count</th><th>cycle_span_days</th></tr></thead>
+            <tbody><tr><td>KL-000059-2025</td><td>ST/780/2026</td><td>Subair A vs Siva Prasad</td><td>Appearance</td><td>15</td><td>284.8</td></tr>
+<tr><td>KL-000352-2024</td><td>ST/372/2026</td><td>JINJU RANI vs SUNIL S</td><td>Appearance</td><td>15</td><td>348.0</td></tr>
+<tr><td>KL-001117-2025</td><td>nan</td><td>Aman A vs Sherafudeen</td><td>Post-Disposal</td><td>14</td><td>216.9</td></tr>
+<tr><td>KL-000149-2024</td><td>ST/277/2025</td><td>Sree Gokulam Chits and Finance Company vs sajeshkumar</td><td>Post-Judgement</td><td>14</td><td>189.0</td></tr>
+<tr><td>KL-000374-2025</td><td>nan</td><td>Bineesh vs Athul R</td><td>Cognizance</td><td>14</td><td>254.0</td></tr>
+<tr><td>KL-000519-2025</td><td>nan</td><td>Santha vs Suneesh</td><td>Post-Disposal</td><td>14</td><td>502.9</td></tr>
+<tr><td>KL-000035-2026</td><td>ST/918/2026</td><td>G Crafts, J and J Manufacturing  vs De Cake World</td><td>Appearance</td><td>13</td><td>133.2</td></tr>
+<tr><td>KL-000160-2026</td><td>nan</td><td>Ansari M vs Sreekumar R</td><td>Cognizance</td><td>13</td><td>231.9</td></tr>
+<tr><td>KL-000441-2025</td><td>nan</td><td>Santha vs Noushad Y</td><td>Cognizance</td><td>13</td><td>526.0</td></tr>
+<tr><td>KL-001165-2025</td><td>ST/835/2026</td><td>Mohammed Hafis Nizam vs Roufin Abdul Kalam</td><td>Appearance</td><td>11</td><td>160.8</td></tr>
+<tr><td>KL-001136-2025</td><td>ST/868/2026</td><td>kerala kaumudi (P) Ltd vs Gopakumar K</td><td>Appearance</td><td>11</td><td>202.1</td></tr>
+<tr><td>KL-000109-2025</td><td>ST/753/2025</td><td>Ajikumar M S vs Vinu S Pai</td><td>Complainant Evidence</td><td>11</td><td>165.0</td></tr>
+<tr><td>KL-000433-2025</td><td>nan</td><td>Santha vs Ramees</td><td>Appearance</td><td>11</td><td>273.0</td></tr>
+<tr><td>KL-000451-2026</td><td>nan</td><td>Rajeev vs Abhila Reji</td><td>Cognizance</td><td>11</td><td>190.0</td></tr>
+<tr><td>KL-000944-2025</td><td>ST/389/2026</td><td>Rema K vs Reeja S</td><td>Bail & Recording of Plea</td><td>11</td><td>196.0</td></tr>
+<tr><td>KL-001112-2025</td><td>ST/940/2026</td><td>A Najeeb vs Sheela</td><td>Appearance</td><td>11</td><td>224.0</td></tr>
+<tr><td>KL-000481-2026</td><td>ST/856/2026</td><td>M/s Prakruthy Distributors vs Anilkumar</td><td>Appearance</td><td>9</td><td>122.8</td></tr>
+<tr><td>KL-000394-2025</td><td>ST/20/2026</td><td>Gopinathan Nair G vs Jasmin M</td><td>Complainant Evidence</td><td>9</td><td>230.8</td></tr>
+<tr><td>KL-000483-2026</td><td>ST/671/2026</td><td>SREENARAYANA PRARTHANA SAMITHI KUNNATHOOR vs UMADEVI S</td><td>Appearance</td><td>9</td><td>73.0</td></tr>
+<tr><td>KL-000638-2026</td><td>nan</td><td>RAHUL vs BIJU</td><td>Cognizance</td><td>9</td><td>160.0</td></tr>
+<tr><td>KL-001229-2025</td><td>nan</td><td>HDFC Bank Ltd vs Ajesh Kuttappan</td><td>Post-Disposal</td><td>9</td><td>179.0</td></tr>
+<tr><td>KL-000766-2025</td><td>ST/812/2025</td><td>Sanoop Salton vs Anoob B</td><td>Post-Disposal</td><td>9</td><td>79.0</td></tr>
+<tr><td>KL-000740-2025</td><td>nan</td><td>Neethu T J vs Minimol</td><td>Post-Disposal</td><td>9</td><td>154.8</td></tr>
+<tr><td>KL-000114-2024</td><td>ST/529/2025</td><td>Balachandran S vs Ms Karma Assistance LLP</td><td>Appearance</td><td>8</td><td>216.0</td></tr>
+<tr><td>KL-001013-2025</td><td>ST/64/2026</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>8</td><td>69.0</td></tr>
+<tr><td>KL-000906-2025</td><td>ST/2/2026</td><td>Siju Sadanandan vs Sinosh S</td><td>Complainant Evidence</td><td>8</td><td>70.0</td></tr>
+<tr><td>KL-000371-2026</td><td>ST/1190/2026</td><td>Beena Alias Beena Moideen vs Viji Vincent</td><td>Appearance</td><td>8</td><td>149.8</td></tr>
+<tr><td>KL-000725-2026</td><td>nan</td><td>Saubhagaya Finance  vs Devu</td><td>Cognizance</td><td>8</td><td>129.1</td></tr>
+<tr><td>KL-000133-2026</td><td>nan</td><td>SUJATHA vs BINDHU</td><td>Cognizance</td><td>8</td><td>152.0</td></tr>
+<tr><td>KL-000286-2024</td><td>ST/819/2025</td><td>Biju K vs Dileep D</td><td>Appearance</td><td>8</td><td>152.8</td></tr>
+<tr><td>KL-000880-2025</td><td>ST/65/2026</td><td>MOHAN JOHN vs Sanju Sherief</td><td>Complainant Evidence</td><td>8</td><td>75.0</td></tr>
+<tr><td>KL-000136-2025</td><td>ST/391/2026</td><td>Johnson Daniel vs Sumesh</td><td>Appearance</td><td>8</td><td>96.0</td></tr>
+<tr><td>KL-000297-2026</td><td>nan</td><td>SHAMEER S vs JASMINE BASHEER</td><td>Appearance</td><td>7</td><td>115.8</td></tr>
+<tr><td>KL-001205-2026</td><td>nan</td><td>R Sasidharan Pillai vs USHA KUMARI</td><td>Cognizance</td><td>7</td><td>105.8</td></tr>
+<tr><td>KL-000721-2026</td><td>nan</td><td>Saubhagaya Finance  vs Saraswathy</td><td>Cognizance</td><td>7</td><td>134.0</td></tr>
+<tr><td>KL-001073-2025</td><td>ST/252/2026</td><td>Theertha Cashew Traders vs Nazeer F</td><td>Complainant Evidence</td><td>7</td><td>102.9</td></tr>
+<tr><td>KL-000715-2026</td><td>nan</td><td>Saubhagaya Finance  vs Ambili G</td><td>Cognizance</td><td>7</td><td>135.1</td></tr>
+<tr><td>KL-001256-2025</td><td>ST/582/2026</td><td>John Bosco vs Sujitha</td><td>Appearance</td><td>7</td><td>104.9</td></tr>
+<tr><td>KL-000445-2026</td><td>nan</td><td>Peter Sebastian vs Abin Justin</td><td>Cognizance</td><td>7</td><td>157.0</td></tr>
+<tr><td>KL-000751-2026</td><td>ST/1211/2026</td><td>Laly Abraham vs Ambily Gopan</td><td>Appearance</td><td>7</td><td>97.0</td></tr>
+<tr><td>KL-000059-2026</td><td>ST/781/2026</td><td>AYIROOR NIDHI LTD vs GOKUL RAJENDRAN</td><td>Appearance</td><td>7</td><td>106.0</td></tr>
+<tr><td>KL-000157-2026</td><td>nan</td><td>A TWO METAL CRAFT vs JOHN C</td><td>Cognizance</td><td>7</td><td>186.8</td></tr>
+<tr><td>KL-000503-2026</td><td>nan</td><td>SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR vs RENJU R</td><td>Cognizance</td><td>6</td><td>173.0</td></tr>
+<tr><td>KL-000793-2026</td><td>nan</td><td>Sainaba vs ShylaS</td><td>Cognizance</td><td>6</td><td>95.0</td></tr>
+<tr><td>KL-000581-2026</td><td>ST/782/2026</td><td>M/s Anchalummood Rural Co Operative Society vs Shamsudeen</td><td>Bail & Recording of Plea</td><td>6</td><td>93.9</td></tr>
+<tr><td>KL-001234-2025</td><td>ST/285/2026</td><td>HDFC Bank Ltd vs Mary Subha</td><td>Post-Disposal</td><td>6</td><td>53.0</td></tr>
+<tr><td>KL-000739-2026</td><td>nan</td><td>saubhagya finance vs Suma</td><td>Cognizance</td><td>6</td><td>132.0</td></tr>
+<tr><td>KL-000705-2025</td><td>ST/749/2026</td><td>Sumesh S vs Bahuleyan</td><td>Appearance</td><td>6</td><td>89.1</td></tr>
+<tr><td>KL-000198-2026</td><td>ST/656/2026</td><td>Anup Kumar T S vs Shanty Mon T C</td><td>Appearance</td><td>6</td><td>88.0</td></tr>
+<tr><td>KL-000818-2026</td><td>nan</td><td>Sankara Narayana Pillai vs Remya Mohan</td><td>Cognizance</td><td>6</td><td>121.0</td></tr>
+<tr><td>KL-000586-2026</td><td>nan</td><td>Snehalatha vs Muhammed Nasar M</td><td>Cognizance</td><td>6</td><td>155.0</td></tr>
+<tr><td>KL-000588-2026</td><td>nan</td><td>Siyad vs Shaukath M</td><td>Cognizance</td><td>6</td><td>142.0</td></tr>
+<tr><td>KL-000705-2026</td><td>ST/778/2026</td><td>RAJAN PILLAI M N vs ARYA C</td><td>Post-Disposal</td><td>6</td><td>78.9</td></tr>
+<tr><td>KL-000914-2026</td><td>nan</td><td>Sree Gokulam Chits and Finance Co Pvt Ltd vs Rejitha</td><td>Appearance</td><td>6</td><td>111.0</td></tr>
+<tr><td>KL-001119-2025</td><td>ST/68/2026</td><td>Theertha Cashew Traders vs Nazeer F and 1 Other</td><td>Complainant Evidence</td><td>6</td><td>66.9</td></tr>
+<tr><td>KL-000552-2026</td><td>ST/1061/2026</td><td>Sreelekshmi A vs Preetha Chandra</td><td>Appearance</td><td>6</td><td>99.9</td></tr>
+<tr><td>KL-001024-2025</td><td>ST/811/2025</td><td>Bank of India , Kadapakkada Branch vs Shanavas A</td><td>Complainant Evidence</td><td>6</td><td>62.9</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

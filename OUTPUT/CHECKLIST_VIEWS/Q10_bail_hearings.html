@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 — Hearings Needed to Secure Bail & 3+ Hearing Tail — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q10 — Hearings Needed to Secure Bail & 3+ Hearing Tail</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> What is the distribution of the number of hearings needed to secure bail per case, and how many cases now sit in the 3+ hearing tail?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Total Bail Cases Granted</div><div class="kpi-value">620</div><div class="kpi-sub">Analyzed case register</div></div>
+    <div class="kpi-card"><div class="kpi-title">Average Hearings to Bail</div><div class="kpi-value">2.82</div><div class="kpi-sub">Recorded hearings per case</div></div>
+    <div class="kpi-card"><div class="kpi-title">3+ Hearing Tail Share</div><div class="kpi-value" style="color:#ef4444;">50.2%</div><div class="kpi-sub">311 cases require 3+ hearings</div></div>
+    <div class="kpi-card"><div class="kpi-title">Secured in 1 Hearing</div><div class="kpi-value">203</div><div class="kpi-sub">32.1% clean single-day bail</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+                    <span class="count-info" id="recordCountText">Showing 620 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q10_bail_hearings_cases.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>filingnumber</th><th>courtcasenumber</th><th>casetitle</th><th>stage</th><th>total_bail_hearings</th><th>days_to_secure_bail</th></tr></thead>
+            <tbody><tr><td>KL-000180-2025</td><td>ST/81/2025</td><td>Gopakumar Gopi vs Sajitha</td><td>Judgement</td><td>11</td><td>68.8</td></tr>
+<tr><td>KL-000385-2025</td><td>ST/208/2025</td><td>Viswambaran P vs Ajith Kumar</td><td>Complainant Evidence</td><td>10</td><td>75.8</td></tr>
+<tr><td>KL-000381-2025</td><td>ST/207/2025</td><td>Viswambaran P vs Ajith Kumar</td><td>Complainant Evidence</td><td>10</td><td>75.8</td></tr>
+<tr><td>KL-000421-2025</td><td>ST/159/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Arun  A</td><td>Post-Disposal</td><td>9</td><td>90.1</td></tr>
+<tr><td>KL-000048-2026</td><td>ST/119/2026</td><td>Unni J vs C R SUDHEER and 1 Other</td><td>Appearance</td><td>8</td><td>70.0</td></tr>
+<tr><td>KL-000958-2025</td><td>ST/554/2025</td><td>Sajuthajudeen vs Joice</td><td>Complainant Evidence</td><td>8</td><td>38.0</td></tr>
+<tr><td>KL-000274-2025</td><td>ST/156/2025</td><td>Sahad vs Ajmeer</td><td>Post-Disposal</td><td>8</td><td>77.2</td></tr>
+<tr><td>KL-000175-2025</td><td>ST/107/2025</td><td>Lathika Sasankan vs Shiju A</td><td>Post-Judgement</td><td>7</td><td>28.1</td></tr>
+<tr><td>KL-000656-2025</td><td>ST/310/2025</td><td>HDFC Bank vs Siju K</td><td>Post-Judgement</td><td>7</td><td>51.9</td></tr>
+<tr><td>KL-000434-2025</td><td>ST/168/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Ajayakrishnan P</td><td>Post-Disposal</td><td>7</td><td>313.0</td></tr>
+<tr><td>KL-001054-2026</td><td>ST/903/2026</td><td>Leela vs Nithin VS</td><td>Appearance</td><td>7</td><td>27.0</td></tr>
+<tr><td>KL-000109-2025</td><td>ST/753/2025</td><td>Ajikumar M S vs Vinu S Pai</td><td>Complainant Evidence</td><td>7</td><td>115.0</td></tr>
+<tr><td>KL-001022-2025</td><td>ST/551/2025</td><td>Manappuram Finance Ltd. vs Arun  K</td><td>Complainant Evidence</td><td>7</td><td>34.0</td></tr>
+<tr><td>KL-000021-2026</td><td>ST/7/2026</td><td>Sahadevan Pillai B vs Krishnan Kutty M</td><td>Appearance</td><td>7</td><td>72.1</td></tr>
+<tr><td>KL-000479-2025</td><td>ST/209/2025</td><td>Shylajakumari S vs Anandan</td><td>Post-Judgement</td><td>7</td><td>44.9</td></tr>
+<tr><td>KL-000327-2026</td><td>ST/127/2026</td><td>Hussain Nizam vs Muhammed Niyas</td><td>Complainant Evidence</td><td>7</td><td>77.1</td></tr>
+<tr><td>KL-001175-2025</td><td>ST/788/2025</td><td>Dileep James vs Baiju</td><td>Complainant Evidence</td><td>7</td><td>79.2</td></tr>
+<tr><td>KL-000743-2025</td><td>ST/383/2025</td><td>Jaquiline Nepolean vs Nishant Muraleedharan</td><td>Complainant Evidence</td><td>7</td><td>83.0</td></tr>
+<tr><td>KL-000273-2025</td><td>ST/290/2025</td><td>Life Care Agencies vs T K Yunus Kutty</td><td>Post-Judgement</td><td>7</td><td>198.1</td></tr>
+<tr><td>KL-000390-2026</td><td>ST/158/2026</td><td>Rachani R vs Bhagya Aiswarya Nidhi Ltd and 3 Others</td><td>Complainant Evidence</td><td>7</td><td>107.0</td></tr>
+<tr><td>KL-001024-2025</td><td>ST/811/2025</td><td>Bank of India , Kadapakkada Branch vs Shanavas A</td><td>Complainant Evidence</td><td>7</td><td>236.1</td></tr>
+<tr><td>KL-000372-2025</td><td>ST/499/2025</td><td>RAJEEVAN PILLAI V R vs THULASIDHARAN NAIR</td><td>Complainant Evidence</td><td>6</td><td>52.0</td></tr>
+<tr><td>KL-000380-2025</td><td>ST/215/2025</td><td>Ahamed Kabeer vs Rejeena</td><td>Post-Judgement</td><td>6</td><td>45.0</td></tr>
+<tr><td>KL-000300-2024</td><td>ST/27/2025</td><td>HARIHARAN S vs BIJU V P</td><td>Examination of Accused</td><td>6</td><td>69.1</td></tr>
+<tr><td>KL-000851-2026</td><td>ST/450/2026</td><td>Remya Chandran vs Shiju Anirudhan</td><td>Appearance</td><td>6</td><td>104.0</td></tr>
+<tr><td>KL-000357-2025</td><td>ST/116/2025</td><td>M/s Sidhartha Trading Corporation vs Ahmed Kabeer</td><td>Post-Disposal</td><td>6</td><td>57.1</td></tr>
+<tr><td>KL-000335-2024</td><td>ST/311/2025</td><td>Subi Darsan vs Anziya A</td><td>Post-Disposal</td><td>6</td><td>51.0</td></tr>
+<tr><td>KL-000529-2025</td><td>ST/245/2025</td><td>M/S Fort In Infra Developers Private Limited vs Arul S</td><td>Post-Disposal</td><td>6</td><td>49.0</td></tr>
+<tr><td>KL-000880-2025</td><td>ST/65/2026</td><td>MOHAN JOHN vs Sanju Sherief</td><td>Complainant Evidence</td><td>6</td><td>76.0</td></tr>
+<tr><td>KL-000093-2025</td><td>ST/89/2025</td><td>Nowshar  H vs Muhammed Habeeb</td><td>Post-Judgement</td><td>6</td><td>32.0</td></tr>
+<tr><td>KL-000258-2025</td><td>ST/105/2025</td><td>Abdul Ibrahim vs Prathapachandran P R</td><td>Post-Disposal</td><td>6</td><td>89.8</td></tr>
+<tr><td>KL-000268-2025</td><td>ST/187/2025</td><td>The Quilon Co Operative Urban Bank Ltd vs Rajaprasad S</td><td>Examination of Accused</td><td>6</td><td>49.9</td></tr>
+<tr><td>KL-000427-2025</td><td>ST/172/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Dheeraj B</td><td>Post-Disposal</td><td>6</td><td>42.8</td></tr>
+<tr><td>KL-000425-2025</td><td>ST/188/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Rahul Raj</td><td>Post-Disposal</td><td>6</td><td>47.9</td></tr>
+<tr><td>KL-000580-2025</td><td>ST/247/2025</td><td>Kavya Babu vs Jiji L</td><td>Examination of Accused</td><td>6</td><td>73.0</td></tr>
+<tr><td>KL-000458-2025</td><td>ST/378/2025</td><td>SAKTHIKULANGARA NIDHI LTD vs Rahul R</td><td>Arguments</td><td>6</td><td>77.0</td></tr>
+<tr><td>KL-001138-2025</td><td>ST/17/2026</td><td>Beema Mol R vs Remya</td><td>Complainant Evidence</td><td>6</td><td>83.0</td></tr>
+<tr><td>KL-000612-2026</td><td>ST/284/2026</td><td>Rahul Krishnan vs Binu Aloysius</td><td>Appearance</td><td>6</td><td>79.0</td></tr>
+<tr><td>KL-000285-2025</td><td>ST/108/2025</td><td>Cleetas Antony vs Mahadevan T R</td><td>Post-Judgement</td><td>6</td><td>44.9</td></tr>
+<tr><td>KL-000069-2025</td><td>ST/429/2025</td><td>Ajikumar M S vs Vinu  Pai</td><td>Complainant Evidence</td><td>6</td><td>115.0</td></tr>
+<tr><td>KL-000302-2025</td><td>ST/505/2025</td><td>Sidrah Nut Foods vs Deal Makers Exporteria Pvt Ltd and 3 Others</td><td>Complainant Evidence</td><td>6</td><td>13.0</td></tr>
+<tr><td>KL-000301-2024</td><td>ST/26/2025</td><td>HARIHARAN S vs BIJU V P</td><td>Examination of Accused</td><td>6</td><td>69.1</td></tr>
+<tr><td>KL-000147-2024</td><td>ST/422/2025</td><td>Sree Gokulam Chit And Finance vs Sajeesh Kumar G</td><td>Post-Judgement</td><td>6</td><td>69.0</td></tr>
+<tr><td>KL-000178-2025</td><td>ST/82/2025</td><td>Sindhu S vs Kavitha</td><td>Complainant Evidence</td><td>6</td><td>58.0</td></tr>
+<tr><td>KL-000459-2026</td><td>ST/197/2026</td><td>PADMAKUMAR vs Greeshma Rengan</td><td>Complainant Evidence</td><td>6</td><td>102.1</td></tr>
+<tr><td>KL-000954-2025</td><td>ST/588/2025</td><td>Jayachandran  S vs Ajitha Kumari S</td><td>Examination of Accused</td><td>6</td><td>53.0</td></tr>
+<tr><td>KL-000071-2026</td><td>ST/42/2026</td><td>Nisharag U vs Ajayan S</td><td>Complainant Evidence</td><td>6</td><td>29.1</td></tr>
+<tr><td>KL-000225-2025</td><td>ST/304/2025</td><td>Varghese K S vs Sreekumar B</td><td>Judgement</td><td>6</td><td>46.0</td></tr>
+<tr><td>KL-000542-2025</td><td>ST/331/2025</td><td>ESHIKA CASHEW COMPANY vs ECOSOL and 2 Others</td><td>Defense Evidence</td><td>6</td><td>81.0</td></tr>
+<tr><td>KL-000901-2025</td><td>ST/492/2025</td><td>Sowmiya vs Surabhi</td><td>Complainant Evidence</td><td>6</td><td>21.0</td></tr>
+<tr><td>KL-000334-2024</td><td>ST/29/2025</td><td>Sheela Mohan vs Leenadas J</td><td>Post-Disposal</td><td>5</td><td>126.1</td></tr>
+<tr><td>KL-000975-2025</td><td>ST/648/2025</td><td>Pramod  P vs K  RAJEEV</td><td>Complainant Evidence</td><td>5</td><td>60.2</td></tr>
+<tr><td>KL-000039-2025</td><td>ST/184/2025</td><td>Ajikumar M S vs Vinu S Pai Pai</td><td>Complainant Evidence</td><td>5</td><td>23.0</td></tr>
+<tr><td>KL-000506-2026</td><td>ST/222/2026</td><td>Riyas M vs Pranav P</td><td>Appearance</td><td>5</td><td>61.0</td></tr>
+<tr><td>KL-000302-2024</td><td>ST/25/2025</td><td>HARIHARAN S vs BIJU V P</td><td>Examination of Accused</td><td>5</td><td>69.1</td></tr>
+<tr><td>KL-000990-2026</td><td>ST/530/2026</td><td>Rose Gold and Diamonds vs Rajika P</td><td>Appearance</td><td>5</td><td>71.0</td></tr>
+<tr><td>KL-000275-2025</td><td>ST/183/2025</td><td>SABU V vs JYOTHI S</td><td>Examination of Accused</td><td>5</td><td>0.0</td></tr>
+<tr><td>KL-001218-2025</td><td>ST/813/2025</td><td>Sangeeth A vs Sky Travels Tuty</td><td>Complainant Evidence</td><td>5</td><td>63.0</td></tr>
+<tr><td>KL-000573-2025</td><td>ST/327/2025</td><td>Vinod  P G vs Shyam Mohan</td><td>Appearance</td><td>5</td><td>30.0</td></tr>
+<tr><td>KL-000313-2026</td><td>ST/113/2026</td><td>Azhakesan S vs Abhiram M</td><td>Complainant Evidence</td><td>5</td><td>83.0</td></tr>
+<tr><td>KL-000296-2024</td><td>ST/262/2025</td><td>Sree Gokulam Chit And Finance vs Sajeesh Kumar</td><td>Post-Judgement</td><td>5</td><td>25.0</td></tr>
+<tr><td>KL-000720-2025</td><td>ST/359/2025</td><td>Rajeev vs SRS Flour Mill</td><td>Judgement</td><td>5</td><td>33.0</td></tr>
+<tr><td>KL-000511-2025</td><td>ST/315/2025</td><td>Mohammed Sidhique  E S vs Sirus J M</td><td>Judgement</td><td>5</td><td>25.0</td></tr>
+<tr><td>KL-000521-2025</td><td>ST/430/2025</td><td>Satheesh Babu vs Jayaram</td><td>Post-Judgement</td><td>5</td><td>43.1</td></tr>
+<tr><td>KL-000398-2025</td><td>ST/335/2025</td><td>Judy J vs Shahina N</td><td>Complainant Evidence</td><td>5</td><td>28.0</td></tr>
+<tr><td>KL-000456-2026</td><td>ST/196/2026</td><td>PADMAKUMAR vs Femina</td><td>Appearance</td><td>5</td><td>81.0</td></tr>
+<tr><td>KL-000394-2025</td><td>ST/20/2026</td><td>Gopinathan Nair G vs Jasmin M</td><td>Complainant Evidence</td><td>5</td><td>73.0</td></tr>
+<tr><td>KL-000128-2024</td><td>ST/62/2025</td><td>PRASANTH S vs B SABU  PANICKER</td><td>Complainant Evidence</td><td>5</td><td>230.1</td></tr>
+<tr><td>KL-000642-2025</td><td>ST/424/2025</td><td>Nisha V vs Deepa</td><td>Complainant Evidence</td><td>5</td><td>45.0</td></tr>
+<tr><td>KL-000149-2024</td><td>ST/277/2025</td><td>Sree Gokulam Chits and Finance Company vs sajeshkumar</td><td>Post-Judgement</td><td>5</td><td>32.0</td></tr>
+<tr><td>KL-000722-2025</td><td>ST/559/2025</td><td>Julius Pathrose vs Sajeela</td><td>Post-Judgement</td><td>5</td><td>28.0</td></tr>
+<tr><td>KL-000794-2026</td><td>ST/409/2026</td><td>Sheela S vs V A Shajahan</td><td>Appearance</td><td>5</td><td>39.0</td></tr>
+<tr><td>KL-000607-2025</td><td>ST/276/2025</td><td>ANILKUMAR C R vs UNNIKRISHNAN</td><td>Arguments</td><td>5</td><td>37.9</td></tr>
+<tr><td>KL-000817-2025</td><td>ST/590/2025</td><td>Bindu  S vs Girish V S</td><td>Bail & Recording of Plea</td><td>5</td><td>36.8</td></tr>
+<tr><td>KL-000735-2026</td><td>ST/367/2026</td><td>Haritha Syndicate vs Ajinjose</td><td>Appearance</td><td>5</td><td>87.0</td></tr>
+<tr><td>KL-000689-2026</td><td>ST/345/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Manu</td><td>Appearance</td><td>5</td><td>76.0</td></tr>
+<tr><td>KL-000635-2026</td><td>ST/317/2026</td><td>SHABEEK vs ARCH ANTONY</td><td>Appearance</td><td>5</td><td>87.0</td></tr>
+<tr><td>KL-000667-2026</td><td>ST/325/2026</td><td>NEGIL DAS vs DEVIKA R</td><td>Complainant Evidence</td><td>5</td><td>51.0</td></tr>
+<tr><td>KL-000098-2025</td><td>ST/59/2025</td><td>SHIBU V vs MASHDAS M</td><td>Post-Disposal</td><td>5</td><td>93.0</td></tr>
+<tr><td>KL-000766-2025</td><td>ST/812/2025</td><td>Sanoop Salton vs Anoob B</td><td>Post-Disposal</td><td>5</td><td>54.1</td></tr>
+<tr><td>KL-000679-2026</td><td>ST/358/2026</td><td>Ajaya Kumar K B vs Sheela R</td><td>Appearance</td><td>5</td><td>64.0</td></tr>
+<tr><td>KL-001178-2025</td><td>ST/796/2025</td><td>vyapari vyavasayi merchantile social welfare cooporative society  vs Muhhammad Firdhouse</td><td>Appearance</td><td>5</td><td>179.0</td></tr>
+<tr><td>KL-000311-2026</td><td>ST/112/2026</td><td>Pushpamangalam Financiers vs Manoj V</td><td>Complainant Evidence</td><td>5</td><td>83.0</td></tr>
+<tr><td>KL-000818-2025</td><td>ST/591/2025</td><td>Bindu  S vs Girish V S</td><td>Bail & Recording of Plea</td><td>5</td><td>36.8</td></tr>
+<tr><td>KL-000059-2025</td><td>ST/780/2026</td><td>Subair A vs Siva Prasad</td><td>Appearance</td><td>5</td><td>79.0</td></tr>
+<tr><td>KL-000667-2025</td><td>ST/307/2025</td><td>Leony Fernandez vs Henry Christopher</td><td>Judgement</td><td>5</td><td>29.1</td></tr>
+<tr><td>KL-000322-2026</td><td>ST/105/2026</td><td>Kollam Nagara Nidhi Ltd  vs Varsha Sivadas</td><td>Appearance</td><td>5</td><td>77.0</td></tr>
+<tr><td>KL-001119-2025</td><td>ST/68/2026</td><td>Theertha Cashew Traders vs Nazeer F and 1 Other</td><td>Complainant Evidence</td><td>5</td><td>0.0</td></tr>
+<tr><td>KL-000135-2025</td><td>ST/194/2025</td><td>M/s Evangaline Dev Impex Pvt Ltd  vs Vineetha  Vijayan</td><td>Post-Disposal</td><td>5</td><td>42.0</td></tr>
+<tr><td>KL-000785-2025</td><td>ST/509/2025</td><td>JEEVAN  RAJ vs SREEJI S</td><td>Complainant Evidence</td><td>5</td><td>39.7</td></tr>
+<tr><td>KL-000362-2025</td><td>ST/284/2025</td><td>Viswambaran P vs Ajith Kumar</td><td>Complainant Evidence</td><td>5</td><td>18.0</td></tr>
+<tr><td>KL-001065-2026</td><td>ST/574/2026</td><td>Kollam Nagra Nidhi Ltd vs Sathy S</td><td>Appearance</td><td>5</td><td>92.0</td></tr>
+<tr><td>KL-000128-2025</td><td>ST/596/2025</td><td>Sheela vs Arch Antony</td><td>Complainant Evidence</td><td>5</td><td>45.0</td></tr>
+<tr><td>KL-000121-2025</td><td>ST/197/2025</td><td>kerala kaumudi vs Anilkumar P</td><td>Post-Disposal</td><td>5</td><td>34.1</td></tr>
+<tr><td>KL-000679-2025</td><td>ST/351/2025</td><td>Vijayakumari vs Sajeev G</td><td>Post-Disposal</td><td>5</td><td>55.0</td></tr>
+<tr><td>KL-000065-2024</td><td>ST/42/2025</td><td>M/s.Orient-Agencies vs Sarin T K</td><td>Post-Disposal</td><td>5</td><td>60.0</td></tr>
+<tr><td>KL-000440-2025</td><td>ST/223/2025</td><td>Sheela  Nair vs Akbarsha  S</td><td>Defense Evidence</td><td>5</td><td>37.8</td></tr>
+<tr><td>KL-000999-2025</td><td>ST/738/2025</td><td>Kerala Kaumudi Pvt Ltd vs Madhu Kumar P</td><td>Complainant Evidence</td><td>5</td><td>87.1</td></tr>
+<tr><td>KL-000971-2025</td><td>ST/607/2025</td><td>Shiju R Chandran vs Jayakumari R</td><td>Complainant Evidence</td><td>5</td><td>30.0</td></tr>
+<tr><td>KL-000482-2026</td><td>ST/202/2026</td><td>Suhail S vs Titus Kumar</td><td>Complainant Evidence</td><td>5</td><td>85.0</td></tr>
+<tr><td>KL-000428-2025</td><td>ST/173/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Naveen K P</td><td>Post-Disposal</td><td>5</td><td>42.1</td></tr>
+<tr><td>KL-001241-2025</td><td>ST/834/2025</td><td>Manu Augustin vs Alphonse Pappachan</td><td>Bail & Recording of Plea</td><td>5</td><td>114.2</td></tr>
+<tr><td>KL-000334-2026</td><td>ST/126/2026</td><td>Manju M vs Shalini</td><td>Complainant Evidence</td><td>5</td><td>83.0</td></tr>
+<tr><td>KL-000448-2025</td><td>ST/343/2025</td><td>SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs SANTHI S</td><td>Appearance</td><td>5</td><td>28.0</td></tr>
+<tr><td>KL-000100-2025</td><td>ST/149/2025</td><td>Raseena vs Praveen</td><td>Post-Disposal</td><td>5</td><td>27.0</td></tr>
+<tr><td>KL-001027-2025</td><td>ST/618/2025</td><td>Thanoof A vs Rajith</td><td>Complainant Evidence</td><td>5</td><td>25.0</td></tr>
+<tr><td>KL-000332-2024</td><td>ST/31/2025</td><td>Sheeja N vs Bhadran</td><td>Post-Disposal</td><td>5</td><td>60.0</td></tr>
+<tr><td>KL-001007-2025</td><td>ST/737/2025</td><td>KERALA KAUMUDI PVT LTD vs Madhu Kumar P</td><td>Complainant Evidence</td><td>5</td><td>87.1</td></tr>
+<tr><td>KL-000303-2024</td><td>ST/24/2025</td><td>HARIHARAN S vs BIJU V P</td><td>Examination of Accused</td><td>5</td><td>69.1</td></tr>
+<tr><td>KL-001055-2025</td><td>ST/662/2025</td><td>Ramlath Y vs Thajudeen  E</td><td>Post-Disposal</td><td>5</td><td>88.0</td></tr>
+<tr><td>KL-000689-2025</td><td>ST/370/2025</td><td>K K Shajahan vs Babitha Sam</td><td>Complainant Evidence</td><td>5</td><td>76.1</td></tr>
+<tr><td>KL-000809-2025</td><td>ST/562/2025</td><td>Aswathi S vs Vadacodu  Monachan</td><td>Appearance</td><td>4</td><td>31.0</td></tr>
+<tr><td>KL-000093-2024</td><td>ST/14/2025</td><td>HARIHARAN S vs BIJU V P</td><td>Examination of Accused</td><td>4</td><td>46.1</td></tr>
+<tr><td>KL-001262-2025</td><td>ST/4/2026</td><td>Bahulayan N vs Latha</td><td>Appearance</td><td>4</td><td>39.0</td></tr>
+<tr><td>KL-000749-2025</td><td>ST/387/2025</td><td>TINNY SUNNY vs NAGARAJAN G THENMALA RAJAN</td><td>Examination of Accused</td><td>4</td><td>98.0</td></tr>
+<tr><td>KL-000711-2026</td><td>ST/347/2026</td><td>Parvathy A S vs RAJESH KUMAR S</td><td>Complainant Evidence</td><td>4</td><td>61.0</td></tr>
+<tr><td>KL-000233-2025</td><td>ST/104/2025</td><td>Sachin vs Safeela</td><td>Appearance</td><td>4</td><td>163.0</td></tr>
+<tr><td>KL-000644-2026</td><td>ST/307/2026</td><td>SILVERLINE TRADING COMPANY vs SAJEEV</td><td>Appearance</td><td>4</td><td>66.0</td></tr>
+<tr><td>KL-000881-2025</td><td>ST/528/2025</td><td>Surendranath vs Gopinatha Pilla</td><td>Arguments</td><td>4</td><td>38.0</td></tr>
+<tr><td>KL-001134-2025</td><td>ST/750/2025</td><td>N B Chandra Mohan vs Sangeetha  V</td><td>Bail & Recording of Plea</td><td>4</td><td>32.0</td></tr>
+<tr><td>KL-000475-2026</td><td>ST/194/2026</td><td>SILVERLINE TRADING COMPANY vs SANJEEVAN</td><td>Complainant Evidence</td><td>4</td><td>98.0</td></tr>
+<tr><td>KL-000465-2026</td><td>ST/188/2026</td><td>Pramodkumar Nair vs Biju K</td><td>Appearance</td><td>4</td><td>127.0</td></tr>
+<tr><td>KL-000036-2025</td><td>ST/36/2025</td><td>Ajikumar M S vs Vinu Pai</td><td>Complainant Evidence</td><td>4</td><td>61.2</td></tr>
+<tr><td>KL-000138-2025</td><td>ST/349/2025</td><td>Shanavas vs Biju Lakshmikantha</td><td>Complainant Evidence</td><td>4</td><td>33.2</td></tr>
+<tr><td>KL-000709-2025</td><td>ST/388/2025</td><td>ANZAR vs Thanzal</td><td>Post-Disposal</td><td>4</td><td>43.0</td></tr>
+<tr><td>KL-000364-2025</td><td>ST/285/2025</td><td>Viswaabharan P vs Ajith Kumar</td><td>Complainant Evidence</td><td>4</td><td>18.0</td></tr>
+<tr><td>KL-001015-2025</td><td>ST/825/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>4</td><td>33.0</td></tr>
+<tr><td>KL-000904-2025</td><td>ST/599/2025</td><td>Haritha Syndicate vs Gopakumar V</td><td>Post-Disposal</td><td>4</td><td>57.0</td></tr>
+<tr><td>KL-000892-2025</td><td>ST/481/2025</td><td>Hashim J vs Jeejo Rajkumar</td><td>Complainant Evidence</td><td>4</td><td>36.1</td></tr>
+<tr><td>KL-000397-2026</td><td>ST/154/2026</td><td>Paravur Akshaya Nidhi Ltd vs Renjith R</td><td>Complainant Evidence</td><td>4</td><td>59.0</td></tr>
+<tr><td>KL-000444-2026</td><td>ST/179/2026</td><td>Udayakumar G vs Anithakumary S</td><td>Complainant Evidence</td><td>4</td><td>58.0</td></tr>
+<tr><td>KL-000731-2026</td><td>ST/388/2026</td><td>NISHA RANI L vs PREETHA M P</td><td>Complainant Evidence</td><td>4</td><td>49.0</td></tr>
+<tr><td>KL-000936-2026</td><td>ST/498/2026</td><td>Kollam Urban Vikas Nidhi Limited vs Rahul R</td><td>Appearance</td><td>4</td><td>50.0</td></tr>
+<tr><td>KL-000030-2025</td><td>ST/38/2025</td><td>SILVER LINE TRADING COMPANY vs M/s GOURI STORES</td><td>Complainant Evidence</td><td>4</td><td>0.0</td></tr>
+<tr><td>KL-000373-2025</td><td>ST/286/2025</td><td>Viswambaran P vs Ajith Kumar</td><td>Complainant Evidence</td><td>4</td><td>18.0</td></tr>
+<tr><td>KL-000408-2025</td><td>ST/152/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Abhijith  Ajith</td><td>Post-Disposal</td><td>4</td><td>35.0</td></tr>
+<tr><td>KL-000143-2026</td><td>ST/79/2026</td><td>JAYAPRAKASH PK vs LIYONI B</td><td>Complainant Evidence</td><td>4</td><td>61.0</td></tr>
+<tr><td>KL-000389-2026</td><td>ST/144/2026</td><td>Sajju V vs Uthara S</td><td>Complainant Evidence</td><td>4</td><td>63.1</td></tr>
+<tr><td>KL-000323-2026</td><td>ST/137/2026</td><td>K Vijayan Pillai vs Geetha K M</td><td>Complainant Evidence</td><td>4</td><td>88.1</td></tr>
+<tr><td>KL-000238-2026</td><td>ST/92/2026</td><td>Shiyal Hussain vs Sudheer KA</td><td>Complainant Evidence</td><td>4</td><td>60.0</td></tr>
+<tr><td>KL-000258-2026</td><td>ST/85/2026</td><td>Radhakrishnan Nair vs Arun OA</td><td>Appearance</td><td>4</td><td>47.0</td></tr>
+<tr><td>KL-001240-2025</td><td>ST/830/2025</td><td>A T Georgekutty vs Jismi Antony</td><td>Complainant Evidence</td><td>4</td><td>46.0</td></tr>
+<tr><td>KL-000546-2025</td><td>ST/394/2025</td><td>ESHIKA CASHEW COMPANY vs Sans Cashew India Pvt. Ltd and 3 Others</td><td>Complainant Evidence</td><td>4</td><td>43.0</td></tr>
+<tr><td>KL-000113-2025</td><td>ST/298/2025</td><td>SYAM JOY vs SOBHANA</td><td>Post-Disposal</td><td>4</td><td>31.0</td></tr>
+<tr><td>KL-000659-2025</td><td>ST/372/2025</td><td>SILVER LINE TRADING COMPANY vs GRAND MASTER HOME APPLIANCES  and 1 Other</td><td>Examination of Accused</td><td>4</td><td>45.1</td></tr>
+<tr><td>KL-001139-2025</td><td>ST/755/2025</td><td>Sreekumar K vs Anzar</td><td>Complainant Evidence</td><td>4</td><td>55.0</td></tr>
+<tr><td>KL-000198-2026</td><td>ST/656/2026</td><td>Anup Kumar T S vs Shanty Mon T C</td><td>Appearance</td><td>4</td><td>64.0</td></tr>
+<tr><td>KL-001259-2025</td><td>ST/41/2026</td><td>Nazimudeen H vs Anees</td><td>Complainant Evidence</td><td>4</td><td>50.1</td></tr>
+<tr><td>KL-000334-2025</td><td>ST/200/2025</td><td>Gireesh Kumar TK vs Renjith Chandran</td><td>Post-Disposal</td><td>4</td><td>24.0</td></tr>
+<tr><td>KL-000691-2025</td><td>ST/340/2025</td><td>Kantilal Maruti Katkar vs Stephen  T</td><td>Defense Evidence</td><td>4</td><td>32.0</td></tr>
+<tr><td>KL-000502-2025</td><td>ST/418/2025</td><td>Sheeja S vs S G Vijayakumar</td><td>Complainant Evidence</td><td>4</td><td>203.0</td></tr>
+<tr><td>KL-001073-2025</td><td>ST/252/2026</td><td>Theertha Cashew Traders vs Nazeer F</td><td>Complainant Evidence</td><td>4</td><td>49.2</td></tr>
+<tr><td>KL-001222-2026</td><td>ST/679/2026</td><td>Subhash Chandra Bose vs Meenu</td><td>Appearance</td><td>4</td><td>28.0</td></tr>
+<tr><td>KL-000764-2025</td><td>ST/440/2025</td><td>Priya  Krishnan vs Litheesh A S</td><td>Appearance</td><td>4</td><td>18.0</td></tr>
+<tr><td>KL-000868-2026</td><td>ST/457/2026</td><td>Shariar A R vs Binu Sharina R</td><td>Appearance</td><td>4</td><td>70.0</td></tr>
+<tr><td>KL-000481-2025</td><td>ST/423/2025</td><td>Rahul Nair R vs Ajeeshkumar V</td><td>Examination of Accused</td><td>4</td><td>26.0</td></tr>
+<tr><td>KL-001026-2025</td><td>ST/575/2025</td><td>ARSH  N vs FRANCIS  ALBERT</td><td>Post-Disposal</td><td>4</td><td>29.0</td></tr>
+<tr><td>KL-000319-2024</td><td>ST/13/2025</td><td>Riyas B vs Athul Raj R</td><td>Post-Judgement</td><td>4</td><td>55.0</td></tr>
+<tr><td>KL-000583-2026</td><td>ST/268/2026</td><td>KUNJUMON K V vs PRAMEELA C</td><td>Appearance</td><td>4</td><td>60.0</td></tr>
+<tr><td>KL-000515-2026</td><td>ST/251/2026</td><td>BABU P vs VIJAYANATHAN PILLAI</td><td>Appearance</td><td>4</td><td>53.0</td></tr>
+<tr><td>KL-000054-2024</td><td>ST/5/2025</td><td>Ashokan S vs Baiju Raveendran</td><td>Examination of Accused</td><td>4</td><td>64.1</td></tr>
+<tr><td>KL-001251-2025</td><td>ST/843/2025</td><td>ARUN MOHAN vs SUMA G</td><td>Appearance</td><td>4</td><td>191.0</td></tr>
+<tr><td>KL-001137-2025</td><td>ST/763/2025</td><td>ARYA U vs MANIKANDAN K</td><td>Bail & Recording of Plea</td><td>4</td><td>34.0</td></tr>
+<tr><td>KL-000681-2025</td><td>ST/791/2025</td><td>KAMALA KUMAR vs RAJU C CHELLAPPAN</td><td>Appearance</td><td>4</td><td>98.0</td></tr>
+<tr><td>KL-000345-2025</td><td>ST/365/2025</td><td>Rajendran M vs Sureshkumar  S</td><td>Post-Judgement</td><td>4</td><td>22.0</td></tr>
+<tr><td>KL-000137-2026</td><td>ST/53/2026</td><td>Sajeev S vs Sudheer</td><td>Bail & Recording of Plea</td><td>4</td><td>51.0</td></tr>
+<tr><td>KL-001095-2026</td><td>ST/588/2026</td><td>Anuja A G vs Fathima S</td><td>Appearance</td><td>4</td><td>72.0</td></tr>
+<tr><td>KL-000004-2025</td><td>ST/69/2025</td><td>MARANATHA FINCORP vs MAYAKUMARI S</td><td>Post-Disposal</td><td>4</td><td>34.0</td></tr>
+<tr><td>KL-000401-2026</td><td>ST/151/2026</td><td>Prabhakaran K vs Harikumar S</td><td>Appearance</td><td>4</td><td>0.0</td></tr>
+<tr><td>KL-000073-2026</td><td>ST/54/2026</td><td>M/s TMS Sreenivasa Reddiar and 1 Other vs ALEX R ASHOK</td><td>Bail & Recording of Plea</td><td>4</td><td>54.0</td></tr>
+<tr><td>KL-000765-2025</td><td>ST/435/2025</td><td>Aji Parameswaran vs Sreekumar</td><td>Judgement</td><td>4</td><td>40.8</td></tr>
+<tr><td>KL-000225-2026</td><td>ST/75/2026</td><td>N Raveendran Nair vs Nazeer</td><td>Appearance</td><td>4</td><td>50.0</td></tr>
+<tr><td>KL-001018-2025</td><td>ST/739/2025</td><td>kerala kaumudi private limited vs Madhu Kumar P</td><td>Complainant Evidence</td><td>4</td><td>87.1</td></tr>
+<tr><td>KL-000966-2025</td><td>ST/645/2025</td><td>Gopalakrishna Pillai vs Veena Anil</td><td>Post-Disposal</td><td>4</td><td>30.1</td></tr>
+<tr><td>KL-000194-2025</td><td>ST/154/2025</td><td>Suma Devi M Jayakumar vs Jayalekshmi K</td><td>Complainant Evidence</td><td>4</td><td>40.0</td></tr>
+<tr><td>KL-000935-2026</td><td>ST/494/2026</td><td>Sudheesh B vs Anoop Krishnan V</td><td>Appearance</td><td>4</td><td>69.0</td></tr>
+<tr><td>KL-001158-2025</td><td>ST/770/2025</td><td>Anil Kumar vs ARANYASURENDRAN</td><td>Complainant Evidence</td><td>4</td><td>70.0</td></tr>
+<tr><td>KL-000957-2026</td><td>ST/523/2026</td><td>Thulaseedharan Pillai vs SHEEBA MOL</td><td>Appearance</td><td>4</td><td>52.0</td></tr>
+<tr><td>KL-000080-2025</td><td>ST/185/2025</td><td>M/s TMS SREENIVASA REDDIAR vs GREEN SPICES</td><td>Defense Evidence</td><td>4</td><td>48.0</td></tr>
+<tr><td>KL-001239-2025</td><td>ST/829/2025</td><td>A T Georgekutty vs Jismi Antony</td><td>Complainant Evidence</td><td>4</td><td>46.1</td></tr>
+<tr><td>KL-000670-2025</td><td>ST/577/2025</td><td>Bank Employees Cooperative Society vs K G Gireesh Kumar</td><td>Defense Evidence</td><td>4</td><td>35.0</td></tr>
+<tr><td>KL-001012-2025</td><td>ST/822/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>4</td><td>0.0</td></tr>
+<tr><td>KL-000314-2025</td><td>ST/167/2025</td><td>Darsana vs Sreedevi</td><td>Post-Disposal</td><td>4</td><td>31.1</td></tr>
+<tr><td>KL-000734-2025</td><td>ST/479/2025</td><td>PHILOMINA SATHYAN vs GANGA G and 2 Others</td><td>Appearance</td><td>4</td><td>0.0</td></tr>
+<tr><td>KL-001152-2025</td><td>ST/765/2025</td><td>Gopalakrishna Pillai vs SANDHYA</td><td>Defense Evidence</td><td>4</td><td>25.0</td></tr>
+<tr><td>KL-000575-2025</td><td>ST/240/2025</td><td>PREEJA S vs Asha Alias Ashakumari</td><td>Defense Evidence</td><td>4</td><td>29.0</td></tr>
+<tr><td>KL-000430-2025</td><td>ST/175/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Shintu Binu</td><td>Post-Disposal</td><td>4</td><td>41.8</td></tr>
+<tr><td>KL-000706-2026</td><td>ST/344/2026</td><td>Geethalaly vs Anandan</td><td>Appearance</td><td>4</td><td>51.0</td></tr>
+<tr><td>KL-000496-2025</td><td>ST/433/2025</td><td>Mathai Johnson vs Albert Henry</td><td>Complainant Evidence</td><td>4</td><td>62.1</td></tr>
+<tr><td>KL-000231-2025</td><td>ST/103/2025</td><td>Shefeek  M vs Abdul Vaheed S</td><td>Post-Judgement</td><td>4</td><td>0.0</td></tr>
+<tr><td>KL-000012-2025</td><td>ST/39/2025</td><td>M M Khan vs Chacko Panicker</td><td>Post-Judgement</td><td>4</td><td>19.9</td></tr>
+<tr><td>KL-000684-2025</td><td>ST/579/2025</td><td>Sreelal V vs Sreejesh Kumar K P</td><td>Complainant Evidence</td><td>4</td><td>30.0</td></tr>
+<tr><td>KL-000913-2025</td><td>ST/503/2025</td><td>Vidhyadharan G vs Sherafudeen H</td><td>Post-Disposal</td><td>4</td><td>28.1</td></tr>
+<tr><td>KL-000281-2025</td><td>ST/312/2025</td><td>Vijayaleksmi M vs Sheela Kumari</td><td>Post-Judgement</td><td>4</td><td>1.0</td></tr>
+<tr><td>KL-001255-2025</td><td>ST/46/2026</td><td>Krishnan Unni S vs K B Gopakumar</td><td>Post-Disposal</td><td>4</td><td>60.0</td></tr>
+<tr><td>KL-000310-2026</td><td>ST/107/2026</td><td>Ajikumar M S vs Nizarudeen</td><td>Complainant Evidence</td><td>4</td><td>55.1</td></tr>
+<tr><td>KL-000942-2025</td><td>ST/540/2025</td><td>HIGHNESS FINANCE PRIVATE LIMITED vs BIJITHA S</td><td>Complainant Evidence</td><td>4</td><td>88.2</td></tr>
+<tr><td>KL-000701-2025</td><td>ST/478/2025</td><td>N K Chandra Kumar vs M/s Brothers Shopping Mall and 1 Other</td><td>Judgement</td><td>4</td><td>27.0</td></tr>
+<tr><td>KL-000091-2025</td><td>ST/232/2025</td><td>M/s TMS SREENIVASA REDDIAR vs GREEN SPICES</td><td>Complainant Evidence</td><td>4</td><td>48.0</td></tr>
+<tr><td>KL-001256-2025</td><td>ST/582/2026</td><td>John Bosco vs Sujitha</td><td>Appearance</td><td>4</td><td>65.0</td></tr>
+<tr><td>KL-000662-2026</td><td>ST/321/2026</td><td>Fathima S vs Juharnisa</td><td>Appearance</td><td>4</td><td>62.0</td></tr>
+<tr><td>KL-000791-2025</td><td>ST/510/2025</td><td>Santhosh Kumar vs Sheeja Vinod</td><td>Complainant Evidence</td><td>4</td><td>32.0</td></tr>
+<tr><td>KL-000763-2025</td><td>ST/438/2025</td><td>GOPALAKRISHNA PILLAI vs AMBIKA G</td><td>Defense Evidence</td><td>4</td><td>33.8</td></tr>
+<tr><td>KL-001249-2025</td><td>ST/839/2025</td><td>Jamaludeen K P vs Arya Sahan</td><td>Appearance</td><td>3</td><td>34.0</td></tr>
+<tr><td>KL-000695-2025</td><td>ST/410/2025</td><td>M/S Fort In Infra Developers Private Limited vs Arul S</td><td>Bail & Recording of Plea</td><td>3</td><td>64.0</td></tr>
+<tr><td>KL-000415-2025</td><td>ST/384/2025</td><td>SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs LATHA S</td><td>Post-Judgement</td><td>3</td><td>11.9</td></tr>
+<tr><td>KL-000220-2025</td><td>ST/160/2025</td><td>Manoj G vs Shibu S</td><td>Post-Disposal</td><td>3</td><td>45.2</td></tr>
+<tr><td>KL-000360-2025</td><td>ST/212/2025</td><td>Jamon J vs Sumangalan S</td><td>Defense Evidence</td><td>3</td><td>20.2</td></tr>
+<tr><td>KL-000697-2026</td><td>ST/337/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Baiju John</td><td>Appearance</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-000631-2025</td><td>ST/283/2025</td><td>Manju  Sharavanan vs Santhosh Kumar J</td><td>Post-Judgement</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-000026-2026</td><td>ST/11/2026</td><td>Augustine Frank vs Joseph Alias Joseph Joseph</td><td>Bail & Recording of Plea</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000245-2026</td><td>ST/84/2026</td><td>Prasad Pillai vs Vijayasree</td><td>Post-Disposal</td><td>3</td><td>31.1</td></tr>
+<tr><td>KL-001009-2025</td><td>ST/821/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-001263-2025</td><td>ST/1/2026</td><td>Bahulayan N vs Jayaprakash M P</td><td>Appearance</td><td>3</td><td>39.0</td></tr>
+<tr><td>KL-000263-2025</td><td>ST/106/2025</td><td>LEENUS LOPAS vs RAHILA THAHIR</td><td>Arguments</td><td>3</td><td>130.0</td></tr>
+<tr><td>KL-000812-2025</td><td>ST/493/2025</td><td>Joy Thomas vs M/s Earl Corvus Habitat Pvt. Ltd.  and 1 Other</td><td>Complainant Evidence</td><td>3</td><td>41.9</td></tr>
+<tr><td>KL-000814-2025</td><td>ST/444/2025</td><td>Joy Thomas vs Antony</td><td>Complainant Evidence</td><td>3</td><td>11.0</td></tr>
+<tr><td>KL-000699-2025</td><td>ST/488/2025</td><td>Syna N vs Saleela Sudheer</td><td>Post-Disposal</td><td>3</td><td>34.9</td></tr>
+<tr><td>KL-000393-2026</td><td>ST/201/2026</td><td>LALI vs Ansila</td><td>Defense Evidence</td><td>3</td><td>40.0</td></tr>
+<tr><td>KL-000616-2025</td><td>ST/395/2025</td><td>M/S Fort In Infra Developers Private Limited  vs Sameera Shaiju Alias Sameera Saman</td><td>Bail & Recording of Plea</td><td>3</td><td>34.0</td></tr>
+<tr><td>KL-000480-2025</td><td>ST/214/2025</td><td>Shylajakumari S vs Anandan</td><td>Post-Judgement</td><td>3</td><td>12.0</td></tr>
+<tr><td>KL-001195-2025</td><td>ST/795/2025</td><td>Indumathi T vs MANJU</td><td>Defense Evidence</td><td>3</td><td>42.1</td></tr>
+<tr><td>KL-001121-2026</td><td>ST/739/2026</td><td>Philipose V vs Josymol Joseph</td><td>Appearance</td><td>3</td><td>76.0</td></tr>
+<tr><td>KL-000437-2025</td><td>ST/404/2025</td><td>Santha vs Hussain K</td><td>Post-Disposal</td><td>3</td><td>31.0</td></tr>
+<tr><td>KL-000597-2025</td><td>ST/326/2025</td><td>Babu  Clemant vs Aju  Nelson</td><td>Post-Disposal</td><td>3</td><td>34.2</td></tr>
+<tr><td>KL-000282-2024</td><td>ST/34/2025</td><td>J K Vijayakumar vs Chacko Panicker</td><td>Defense Evidence</td><td>3</td><td>108.9</td></tr>
+<tr><td>KL-000469-2025</td><td>ST/190/2025</td><td>HDFC BANK LTD vs FAISAL K M</td><td>Post-Disposal</td><td>3</td><td>16.0</td></tr>
+<tr><td>KL-000101-2025</td><td>ST/58/2025</td><td>Sajeev R vs Lekshmi</td><td>Examination of Accused</td><td>3</td><td>18.0</td></tr>
+<tr><td>KL-000138-2024</td><td>ST/12/2025</td><td>NADARAJ UMASANKAR vs RENUKA</td><td>Cognizance</td><td>3</td><td>17.1</td></tr>
+<tr><td>KL-000551-2025</td><td>ST/300/2025</td><td>Surendranath vs Rajimol</td><td>Bail & Recording of Plea</td><td>3</td><td>6.2</td></tr>
+<tr><td>KL-000760-2026</td><td>ST/382/2026</td><td>Paravur akshaya Nidhi Ltd vs Priyadarshan B</td><td>Complainant Evidence</td><td>3</td><td>50.0</td></tr>
+<tr><td>KL-000487-2026</td><td>ST/203/2026</td><td>Manappuram Finance Ltd. vs Sosamma Issac</td><td>Appearance</td><td>3</td><td>20.0</td></tr>
+<tr><td>KL-000817-2026</td><td>ST/465/2026</td><td>Sheela Nair vs Suchithra Niyas</td><td>Appearance</td><td>3</td><td>58.0</td></tr>
+<tr><td>KL-000352-2026</td><td>ST/128/2026</td><td>Sajeev K vs Ashmy Shahudeen</td><td>Appearance</td><td>3</td><td>40.0</td></tr>
+<tr><td>KL-000655-2025</td><td>ST/369/2025</td><td>Seraphine Dev Impex Pvt Limited vs Chandran Pillai</td><td>Examination of Accused</td><td>3</td><td>26.0</td></tr>
+<tr><td>KL-001010-2025</td><td>ST/552/2025</td><td>Salim Sha vs P N Harikumar Babupillai</td><td>Bail & Recording of Plea</td><td>3</td><td>20.0</td></tr>
+<tr><td>KL-000552-2025</td><td>ST/227/2025</td><td>GEETHA S vs SATHEESH KUMAR G</td><td>Examination of Accused</td><td>3</td><td>13.0</td></tr>
+<tr><td>KL-000682-2026</td><td>ST/326/2026</td><td>Sivaji S vs Deepa</td><td>Appearance</td><td>3</td><td>36.0</td></tr>
+<tr><td>KL-000889-2025</td><td>ST/640/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>3</td><td>32.0</td></tr>
+<tr><td>KL-001258-2025</td><td>ST/47/2026</td><td>Nazimudeen H vs Sajeena R</td><td>Complainant Evidence</td><td>3</td><td>43.1</td></tr>
+<tr><td>KL-000945-2025</td><td>ST/820/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>3</td><td>33.0</td></tr>
+<tr><td>KL-000342-2024</td><td>ST/19/2025</td><td>HDFC BANK LTD vs VASANTHAKUMARI S</td><td>Post-Disposal</td><td>3</td><td>26.1</td></tr>
+<tr><td>KL-001011-2025</td><td>ST/824/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>3</td><td>33.0</td></tr>
+<tr><td>KL-000919-2025</td><td>ST/517/2025</td><td>K Regunathan Pillai vs Lekha  Prakash</td><td>Defense Evidence</td><td>3</td><td>32.0</td></tr>
+<tr><td>KL-000640-2025</td><td>ST/302/2025</td><td>MAHESH PRAKASH vs SANTHOSH KUMAR</td><td>Post-Judgement</td><td>3</td><td>15.0</td></tr>
+<tr><td>KL-000869-2025</td><td>ST/808/2025</td><td>Abdul Salim M vs M/s Frizzile Foods and 3 Others</td><td>Post-Disposal</td><td>3</td><td>68.0</td></tr>
+<tr><td>KL-000965-2025</td><td>ST/647/2025</td><td>Sajuthajudeen vs Nargees</td><td>Examination of Accused</td><td>3</td><td>11.0</td></tr>
+<tr><td>KL-000781-2025</td><td>ST/450/2025</td><td>Jetrude  J vs Subinesh K  Paniker</td><td>Complainant Evidence</td><td>3</td><td>11.1</td></tr>
+<tr><td>KL-000833-2025</td><td>ST/452/2025</td><td>Gopalakrishna Pillai vs Remanan Pillai</td><td>Post-Disposal</td><td>3</td><td>29.2</td></tr>
+<tr><td>KL-000555-2025</td><td>ST/280/2025</td><td>AVM Agencies vs Jaggir Muhammed</td><td>Post-Disposal</td><td>3</td><td>14.9</td></tr>
+<tr><td>KL-000829-2025</td><td>ST/448/2025</td><td>Manappuram Finance Ltd. vs SHANIFA  J</td><td>Complainant Evidence</td><td>3</td><td>19.8</td></tr>
+<tr><td>KL-000536-2025</td><td>ST/324/2025</td><td>Ferozkhan A vs Najimudeen</td><td>Complainant Evidence</td><td>3</td><td>18.0</td></tr>
+<tr><td>KL-000545-2025</td><td>ST/231/2025</td><td>DANIEL KUTTY vs PRATHEEP P</td><td>Arguments</td><td>3</td><td>16.0</td></tr>
+<tr><td>KL-000285-2024</td><td>ST/113/2025</td><td>Athira S vs FARHANA</td><td>Post-Disposal</td><td>3</td><td>11.1</td></tr>
+<tr><td>KL-000951-2026</td><td>ST/829/2026</td><td>ANI vs VISHNU B</td><td>Appearance</td><td>3</td><td>46.8</td></tr>
+<tr><td>KL-000368-2025</td><td>ST/238/2025</td><td>Siyad H vs Sajeevan S</td><td>Examination of Accused</td><td>3</td><td>25.0</td></tr>
+<tr><td>KL-000324-2026</td><td>ST/116/2026</td><td>Kollam Nagara Nidhi Ltd vs Vinod</td><td>Bail & Recording of Plea</td><td>3</td><td>41.0</td></tr>
+<tr><td>KL-000422-2025</td><td>ST/204/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Shameer P N</td><td>Post-Disposal</td><td>3</td><td>14.0</td></tr>
+<tr><td>KL-000448-2026</td><td>ST/199/2026</td><td>SOMARAJAN K vs SUJITH S</td><td>Appearance</td><td>3</td><td>54.1</td></tr>
+<tr><td>KL-000746-2025</td><td>ST/419/2025</td><td>Thyagarajan vs Shylaja R</td><td>Complainant Evidence</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000563-2026</td><td>ST/259/2026</td><td>Archana Lal vs Subhash Chand</td><td>Appearance</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000644-2025</td><td>ST/344/2025</td><td>Franklin vs Lekha</td><td>Defense Evidence</td><td>3</td><td>59.0</td></tr>
+<tr><td>KL-001156-2025</td><td>ST/63/2026</td><td>Siyana S vs Surumiya</td><td>Complainant Evidence</td><td>3</td><td>29.0</td></tr>
+<tr><td>KL-000635-2025</td><td>ST/362/2025</td><td>Trevor Morrison vs Twinkle</td><td>Complainant Evidence</td><td>3</td><td>22.0</td></tr>
+<tr><td>KL-000151-2026</td><td>ST/37/2026</td><td>V BOBBY SUNIL DUTT vs FAZIH K S</td><td>Complainant Evidence</td><td>3</td><td>69.0</td></tr>
+<tr><td>KL-000212-2026</td><td>ST/219/2026</td><td>Deepa S vs Shamila</td><td>Defense Evidence</td><td>3</td><td>42.0</td></tr>
+<tr><td>KL-001191-2026</td><td>ST/651/2026</td><td>VISHAKH B vs JOBSTARS HR SOLUTIONS PVT. LTD and 2 Others</td><td>Appearance</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-001242-2025</td><td>ST/835/2025</td><td>M/S SILVERLINE TRADING COMPANY vs RATHEESH RAJAPPAN PILLAI</td><td>Examination of Accused</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000738-2026</td><td>ST/374/2026</td><td>JEEVA G S vs NIZAR ISMAILKUNJU</td><td>Appearance</td><td>3</td><td>35.0</td></tr>
+<tr><td>KL-000715-2025</td><td>ST/341/2025</td><td>Bhadran K vs Sahul Hameed</td><td>Post-Judgement</td><td>3</td><td>29.0</td></tr>
+<tr><td>KL-000816-2025</td><td>ST/561/2025</td><td>M Hanuman Traders vs Faisi H</td><td>Defense Evidence</td><td>3</td><td>17.0</td></tr>
+<tr><td>KL-000784-2025</td><td>ST/560/2025</td><td>Shiras S vs Abdul Haleem</td><td>Post-Disposal</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-001122-2025</td><td>ST/742/2025</td><td>Balu B vs Sheela</td><td>Post-Disposal</td><td>3</td><td>12.0</td></tr>
+<tr><td>KL-001178-2026</td><td>ST/644/2026</td><td>Akhil R vs Abdul Sathar M</td><td>Complainant Evidence</td><td>3</td><td>44.0</td></tr>
+<tr><td>KL-000616-2026</td><td>ST/611/2026</td><td>THUNDIL NOUSHAD vs ANEESH ARAVIND</td><td>Appearance</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-000572-2025</td><td>ST/353/2025</td><td>Ramaswamy  V vs Ajayakumar</td><td>Post-Disposal</td><td>3</td><td>31.1</td></tr>
+<tr><td>KL-001132-2025</td><td>ST/748/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>3</td><td>30.0</td></tr>
+<tr><td>KL-000762-2026</td><td>ST/385/2026</td><td>Manikandan G vs Syam</td><td>Complainant Evidence</td><td>3</td><td>32.0</td></tr>
+<tr><td>KL-000867-2026</td><td>ST/451/2026</td><td>K Didikarunan vs Sheeja Nadesan Secretary In Charge and 2 Others</td><td>Appearance</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-000988-2026</td><td>ST/531/2026</td><td>Darshana J vs Sandhya Devi Amma S</td><td>Appearance</td><td>3</td><td>36.0</td></tr>
+<tr><td>KL-001099-2025</td><td>ST/727/2025</td><td>IDBI Bank Ltd vs Jayasree R</td><td>Complainant Evidence</td><td>3</td><td>32.0</td></tr>
+<tr><td>KL-000995-2025</td><td>ST/546/2025</td><td>HDFC BANK LTD vs JOBSON THOMAS</td><td>Post-Disposal</td><td>3</td><td>17.0</td></tr>
+<tr><td>KL-000716-2025</td><td>ST/532/2025</td><td>Vasanthakumari vs George</td><td>Examination of Accused</td><td>3</td><td>108.0</td></tr>
+<tr><td>KL-000577-2025</td><td>ST/242/2025</td><td>Al Nabeel vs Arief N</td><td>Defense Evidence</td><td>3</td><td>1.9</td></tr>
+<tr><td>KL-000782-2025</td><td>ST/420/2025</td><td>Thajudeen vs Mohammed Ashraf</td><td>Complainant Evidence</td><td>3</td><td>33.0</td></tr>
+<tr><td>KL-001079-2025</td><td>ST/725/2025</td><td>Suresh Kumar T vs Nidhin M</td><td>Complainant Evidence</td><td>3</td><td>25.0</td></tr>
+<tr><td>KL-000277-2025</td><td>ST/128/2025</td><td>S Mohana  Kumar vs Wilfred Culas</td><td>Appearance</td><td>3</td><td>49.1</td></tr>
+<tr><td>KL-000221-2026</td><td>ST/387/2026</td><td>N Madhusoodhanan vs Sanil Kumar S</td><td>Appearance</td><td>3</td><td>65.0</td></tr>
+<tr><td>KL-000936-2025</td><td>ST/744/2025</td><td>Haritha Syndicate vs Prasad T</td><td>Post-Disposal</td><td>3</td><td>17.0</td></tr>
+<tr><td>KL-000686-2026</td><td>ST/334/2026</td><td>M/s Vijaya Traders vs Manoj</td><td>Appearance</td><td>3</td><td>23.0</td></tr>
+<tr><td>KL-000539-2025</td><td>ST/425/2025</td><td>Satheesh Babu vs Muhammed Shafi</td><td>Complainant Evidence</td><td>3</td><td>32.0</td></tr>
+<tr><td>KL-000355-2024</td><td>ST/375/2025</td><td>A B Traders vs Adhiq Agencies</td><td>Post-Disposal</td><td>3</td><td>23.0</td></tr>
+<tr><td>KL-001001-2025</td><td>ST/522/2025</td><td>Haritha Syndicate vs Merli</td><td>Post-Disposal</td><td>3</td><td>18.0</td></tr>
+<tr><td>KL-001067-2025</td><td>ST/769/2025</td><td>Bank Employees Cooperative Society Ltd vs R Sasi A Raman</td><td>Post-Disposal</td><td>3</td><td>42.0</td></tr>
+<tr><td>KL-001358-2026</td><td>ST/758/2026</td><td>K M IZZUDIN vs ABDUL SALAM</td><td>Appearance</td><td>3</td><td>43.0</td></tr>
+<tr><td>KL-000758-2026</td><td>ST/386/2026</td><td>Ayyapparajan R vs Sreemon B</td><td>Complainant Evidence</td><td>3</td><td>52.0</td></tr>
+<tr><td>KL-001044-2025</td><td>ST/621/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Saraswathy  K V</td><td>Post-Disposal</td><td>3</td><td>26.0</td></tr>
+<tr><td>KL-000146-2024</td><td>ST/211/2025</td><td>NAPOLEON P vs M Majeed</td><td>Post-Disposal</td><td>3</td><td>8.0</td></tr>
+<tr><td>KL-000435-2025</td><td>ST/179/2025</td><td>CHANDRASEKHARAN PILLAI K vs NAHEENA B</td><td>Complainant Evidence</td><td>3</td><td>0.0</td></tr>
+<tr><td>KL-001147-2025</td><td>ST/761/2025</td><td>Vinayaka Garments vs Vidhyadharan Textiles</td><td>Appearance</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000776-2025</td><td>ST/456/2025</td><td>Jetrude  J vs SUBINESH K PANIKER</td><td>Complainant Evidence</td><td>3</td><td>11.1</td></tr>
+<tr><td>KL-001017-2025</td><td>ST/549/2025</td><td>Muhammed  Saidali vs P N Harikumar Babupillai</td><td>Bail & Recording of Plea</td><td>3</td><td>20.0</td></tr>
+<tr><td>KL-000530-2025</td><td>ST/578/2025</td><td>Bank Employees Co-operative Society Ltd vs S Nelson</td><td>Complainant Evidence</td><td>3</td><td>25.0</td></tr>
+<tr><td>KL-000134-2026</td><td>ST/35/2026</td><td>V BOBBY SUNIL DUTT vs THOMAS VARGHESE O V</td><td>Arguments</td><td>3</td><td>47.0</td></tr>
+<tr><td>KL-000445-2025</td><td>ST/482/2025</td><td>Manju  P M vs Deepa</td><td>Complainant Evidence</td><td>3</td><td>25.0</td></tr>
+<tr><td>KL-000906-2025</td><td>ST/2/2026</td><td>Siju Sadanandan vs Sinosh S</td><td>Complainant Evidence</td><td>3</td><td>26.0</td></tr>
+<tr><td>KL-000274-2026</td><td>ST/90/2026</td><td>Sandhya R Nair vs Arun OA</td><td>Appearance</td><td>3</td><td>47.0</td></tr>
+<tr><td>KL-000751-2025</td><td>ST/399/2025</td><td>Vishnu N vs Nandakumar</td><td>Complainant Evidence</td><td>3</td><td>28.0</td></tr>
+<tr><td>KL-000810-2025</td><td>ST/475/2025</td><td>Ushakumari S vs The Kollam Co-Op Building Society and 2 Others</td><td>Appearance</td><td>3</td><td>61.0</td></tr>
+<tr><td>KL-000330-2025</td><td>ST/445/2025</td><td>Rajendran Pillai vs Balu B</td><td>Defense Evidence</td><td>3</td><td>21.9</td></tr>
+<tr><td>KL-000268-2024</td><td>ST/44/2025</td><td>SHIVAKUMAR PATTEL vs K Rajenderkumar</td><td>Post-Disposal</td><td>3</td><td>93.1</td></tr>
+<tr><td>KL-000744-2025</td><td>ST/598/2025</td><td>JFC FRUITS vs Shahanas</td><td>Complainant Evidence</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-001049-2025</td><td>ST/627/2025</td><td>Muhammed  I vs P N Harikumar Babupillai</td><td>Bail & Recording of Plea</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-000650-2025</td><td>ST/303/2025</td><td>Gireeshchandran Nair C P vs Rajkumar V</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000054-2025</td><td>ST/75/2025</td><td>MARANATHA FINCORP vs DEVIKA SAJI</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-001421-2026</td><td>ST/814/2026</td><td>MOHAMMED NAJEEM I vs ABDUL SALAM</td><td>Appearance</td><td>2</td><td>30.0</td></tr>
+<tr><td>KL-000775-2026</td><td>ST/390/2026</td><td>Maruthi Enterprises vs Reji John</td><td>Appearance</td><td>2</td><td>24.0</td></tr>
+<tr><td>KL-000052-2024</td><td>ST/226/2025</td><td>Al Nabeel vs Siyad A</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000254-2026</td><td>ST/97/2026</td><td>BINDHU S vs STIMO GEORGE</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000092-2025</td><td>ST/233/2025</td><td>BIJU vs BABU KUTTAN PILLAI</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000288-2026</td><td>ST/101/2026</td><td>RAJENDRAN K vs ATHIRA</td><td>Complainant Evidence</td><td>2</td><td>18.0</td></tr>
+<tr><td>KL-000900-2026</td><td>ST/493/2026</td><td>Sreelekha V S VS vs Pradeesh P P</td><td>Appearance</td><td>2</td><td>54.0</td></tr>
+<tr><td>KL-000611-2026</td><td>ST/298/2026</td><td>Sindhumol vs Renjith Kumar</td><td>Complainant Evidence</td><td>2</td><td>17.0</td></tr>
+<tr><td>KL-000466-2025</td><td>ST/189/2025</td><td>Mohammad Shafin vs Jasmie S</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000822-2025</td><td>ST/501/2025</td><td>Joseph D vs Krishnakumar R</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000045-2025</td><td>ST/787/2025</td><td>Murali Govind vs SOUMYA</td><td>Complainant Evidence</td><td>2</td><td>21.0</td></tr>
+<tr><td>KL-001101-2025</td><td>ST/719/2025</td><td>Shobhitha vs Satheesh S</td><td>Defense Evidence</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000941-2025</td><td>ST/699/2025</td><td>Aru Raj vs Ajesh S</td><td>Complainant Evidence</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-000994-2026</td><td>ST/893/2026</td><td>ANI vs Sheela</td><td>Appearance</td><td>2</td><td>12.0</td></tr>
+<tr><td>KL-000745-2025</td><td>ST/396/2025</td><td>Shyni vs Susy A</td><td>Judgement</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000839-2026</td><td>ST/435/2026</td><td>PRAMESH A vs RISANA S</td><td>Complainant Evidence</td><td>2</td><td>19.0</td></tr>
+<tr><td>KL-000775-2025</td><td>ST/437/2025</td><td>Subhadra  K vs Asha  Anilal</td><td>Defense Evidence</td><td>2</td><td>19.0</td></tr>
+<tr><td>KL-000977-2026</td><td>ST/529/2026</td><td>Subash B S vs NIBIN NELSON</td><td>Complainant Evidence</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-001016-2025</td><td>ST/550/2025</td><td>Manappuram Finance Ltd. vs Jincy  Arun</td><td>Examination of Accused</td><td>2</td><td>23.0</td></tr>
+<tr><td>KL-001246-2025</td><td>ST/607/2026</td><td>Tomy Solomon vs Anila R S</td><td>Appearance</td><td>2</td><td>24.0</td></tr>
+<tr><td>KL-001036-2025</td><td>ST/617/2025</td><td>Sukumara  Babu K vs Sindhu</td><td>Complainant Evidence</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-001042-2026</td><td>ST/558/2026</td><td>Sadanandan Thampan vs Radhakrishnan Nair</td><td>Appearance</td><td>2</td><td>33.0</td></tr>
+<tr><td>KL-001014-2025</td><td>ST/823/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>2</td><td>14.0</td></tr>
+<tr><td>KL-001525-2026</td><td>ST/887/2026</td><td>Ranadevan S vs Aji P Parameswaran</td><td>Appearance</td><td>2</td><td>26.0</td></tr>
+<tr><td>KL-000557-2026</td><td>ST/255/2026</td><td>Nedungolam Gramin Nidhi Ltd vs Sisily Sathyaseelan</td><td>Appearance</td><td>2</td><td>22.0</td></tr>
+<tr><td>KL-000485-2025</td><td>ST/379/2025</td><td>Mary Rakhee vs Anjali U</td><td>Post-Disposal</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-000591-2025</td><td>ST/597/2025</td><td>Madhu B vs Sujitha</td><td>Defense Evidence</td><td>2</td><td>10.0</td></tr>
+<tr><td>KL-000419-2025</td><td>ST/178/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Mathew  Thomas</td><td>Post-Disposal</td><td>2</td><td>39.0</td></tr>
+<tr><td>KL-001078-2025</td><td>ST/722/2025</td><td>Saubhagya Finance vs Merlin</td><td>Appearance</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000240-2026</td><td>ST/88/2026</td><td>SATHYARAJAN vs SREEKALA P</td><td>Complainant Evidence</td><td>2</td><td>14.0</td></tr>
+<tr><td>KL-001123-2025</td><td>ST/49/2026</td><td>Vishnu  Nair vs Athira V</td><td>Defense Evidence</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-000589-2026</td><td>ST/290/2026</td><td>JV castle vs Vijayan Pathrose</td><td>Appearance</td><td>2</td><td>3.0</td></tr>
+<tr><td>KL-000117-2025</td><td>ST/220/2025</td><td>Arjun D vs Kiran Babu R</td><td>Post-Disposal</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000250-2026</td><td>ST/142/2026</td><td>Sajeebhai vs Aathira V Nath</td><td>Complainant Evidence</td><td>2</td><td>17.1</td></tr>
+<tr><td>KL-000562-2025</td><td>ST/246/2025</td><td>Yahiya vs Subair</td><td>Post-Judgement</td><td>2</td><td>49.1</td></tr>
+<tr><td>KL-000587-2025</td><td>ST/414/2025</td><td>Rajendran K vs Gireesh S</td><td>Post-Disposal</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-001175-2026</td><td>ST/668/2026</td><td>RAJADHANI GOLD AND DIAMONDS PRIVATE LTD vs HASHINA S</td><td>Bail & Recording of Plea</td><td>2</td><td>44.0</td></tr>
+<tr><td>KL-000617-2025</td><td>ST/376/2025</td><td>SALEENA vs Viji Yasodaran</td><td>Defense Evidence</td><td>2</td><td>21.1</td></tr>
+<tr><td>KL-000383-2025</td><td>ST/181/2025</td><td>Pradeep S vs Ajayakumar B O</td><td>Post-Disposal</td><td>2</td><td>10.9</td></tr>
+<tr><td>KL-000824-2025</td><td>ST/537/2025</td><td>Beena L vs Lekha R</td><td>Complainant Evidence</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-001247-2025</td><td>ST/608/2026</td><td>Tomy Solomon vs Anu Kumar</td><td>Appearance</td><td>2</td><td>12.0</td></tr>
+<tr><td>KL-000353-2024</td><td>ST/33/2025</td><td>HDFC BANK LTD vs SOMAN NARAYANAN</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-001103-2025</td><td>ST/720/2025</td><td>RIYAS A vs BEENA  BEEGUM</td><td>Bail & Recording of Plea</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000897-2026</td><td>ST/873/2026</td><td>Subhash Chandra Bose vs Amrith</td><td>Appearance</td><td>2</td><td>21.0</td></tr>
+<tr><td>KL-000426-2025</td><td>ST/171/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Anoop</td><td>Post-Disposal</td><td>2</td><td>10.0</td></tr>
+<tr><td>KL-000042-2026</td><td>ST/25/2026</td><td>Sebastian Joseph vs Bernad Sebastian</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000263-2024</td><td>ST/267/2025</td><td>SreeGokulam Chits and Finance CO vs Sajeshkumar</td><td>Post-Judgement</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000346-2024</td><td>ST/40/2025</td><td>ELIAMMA ROBINSON vs SABITHA THAMPI ARNOLD</td><td>Judgement</td><td>2</td><td>271.1</td></tr>
+<tr><td>KL-000361-2025</td><td>ST/117/2025</td><td>Jamon J vs Sumangalan S</td><td>Defense Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000064-2025</td><td>ST/161/2025</td><td>HDFC BANK LTD vs JIJI S</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000325-2024</td><td>ST/514/2025</td><td>Sofiya vs Shehensha</td><td>Appearance</td><td>2</td><td>12.2</td></tr>
+<tr><td>KL-001102-2026</td><td>ST/591/2026</td><td>Paravur Akshaya Nidhi Ltd vs Arjun R Nath</td><td>Bail & Recording of Plea</td><td>2</td><td>15.1</td></tr>
+<tr><td>KL-000066-2026</td><td>ST/361/2026</td><td>Samastha Nair Nidhi Ltd vs Leela S K</td><td>Post-Disposal</td><td>2</td><td>9.0</td></tr>
+<tr><td>KL-000650-2026</td><td>ST/339/2026</td><td>XAVIER A vs REJI BABU</td><td>Complainant Evidence</td><td>2</td><td>27.0</td></tr>
+<tr><td>KL-001054-2025</td><td>ST/661/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Subha  K</td><td>Post-Disposal</td><td>2</td><td>18.1</td></tr>
+<tr><td>KL-000278-2025</td><td>ST/127/2025</td><td>MGR ASSOCIATES vs CHANDRIKA K K</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-001053-2025</td><td>ST/659/2025</td><td>Parvathy vs Rolin Cardoz</td><td>Examination of Accused</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-000157-2024</td><td>ST/257/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs SINDHU L</td><td>Post-Judgement</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000729-2025</td><td>ST/389/2025</td><td>Madhusoodanan Pillai vs ANILKUMAR</td><td>Post-Disposal</td><td>2</td><td>14.0</td></tr>
+<tr><td>KL-000693-2025</td><td>ST/484/2025</td><td>Gokul Raj vs Jyothikumar</td><td>Post-Judgement</td><td>2</td><td>13.7</td></tr>
+<tr><td>KL-000983-2025</td><td>ST/545/2025</td><td>HAFIS vs K S Kumar</td><td>Complainant Evidence</td><td>2</td><td>10.0</td></tr>
+<tr><td>KL-000811-2025</td><td>ST/630/2025</td><td>Sham B vs Brothers Shopping Mall and 1 Other</td><td>Complainant Evidence</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-000265-2025</td><td>ST/93/2025</td><td>Hakkim M vs Yedukrishna</td><td>Arguments</td><td>2</td><td>11.8</td></tr>
+<tr><td>KL-001042-2025</td><td>ST/625/2025</td><td>Salman vs P N Harikumar  Babupillai</td><td>Bail & Recording of Plea</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-000599-2026</td><td>ST/274/2026</td><td>Anoy Sinoy vs Vipin Kumar D</td><td>Complainant Evidence</td><td>2</td><td>22.0</td></tr>
+<tr><td>KL-001224-2025</td><td>ST/817/2025</td><td>Edwin Gomez vs Saliamma</td><td>Bail & Recording of Plea</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-000636-2025</td><td>ST/400/2025</td><td>Trevor Morrison vs Twinkle Mohan</td><td>Complainant Evidence</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000068-2025</td><td>ST/53/2025</td><td>Rakhil R vs Minikumari KP</td><td>Post-Disposal</td><td>2</td><td>5.1</td></tr>
+<tr><td>KL-000428-2026</td><td>ST/181/2026</td><td>Surendran N vs BIJU V</td><td>Complainant Evidence</td><td>2</td><td>34.0</td></tr>
+<tr><td>KL-000856-2026</td><td>ST/1024/2026</td><td>Abdul Salam Kochukunju vs Abdul Salam</td><td>Appearance</td><td>2</td><td>33.0</td></tr>
+<tr><td>KL-000753-2025</td><td>ST/736/2025</td><td>Helen Samuel vs Bindhu</td><td>Post-Disposal</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000412-2025</td><td>ST/405/2025</td><td>Sanathanan R vs Shahin  Salim</td><td>Defense Evidence</td><td>2</td><td>14.0</td></tr>
+<tr><td>KL-000141-2024</td><td>ST/11/2025</td><td>Sanoj vs Asha S</td><td>Post-Disposal</td><td>2</td><td>0.1</td></tr>
+<tr><td>KL-000728-2026</td><td>ST/355/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Dhanalekshmy S</td><td>Appearance</td><td>2</td><td>6.8</td></tr>
+<tr><td>KL-001025-2025</td><td>ST/628/2025</td><td>C O NINAN vs MARY DIANA</td><td>Post-Disposal</td><td>2</td><td>10.0</td></tr>
+<tr><td>KL-000761-2026</td><td>ST/395/2026</td><td>Manikandan G vs MURALEEDHARAN</td><td>Complainant Evidence</td><td>2</td><td>22.0</td></tr>
+<tr><td>KL-000141-2026</td><td>ST/40/2026</td><td>Santha C vs Sreelatha S</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000717-2025</td><td>ST/346/2025</td><td>Sakthivel P vs Subha  K V</td><td>Complainant Evidence</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-000259-2025</td><td>ST/162/2025</td><td>Radhamany G vs Laly</td><td>Post-Judgement</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000553-2026</td><td>ST/249/2026</td><td>ABDUL VAHID vs ABDUL MAJEED C</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000676-2025</td><td>ST/368/2025</td><td>Surendranath vs Sugunan</td><td>Complainant Evidence</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000411-2025</td><td>ST/531/2025</td><td>Rajalekshmi S vs ANOOP S BABU</td><td>Appearance</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000848-2026</td><td>ST/443/2026</td><td>Sindhukumari M V vs Chinchu P Nair</td><td>Appearance</td><td>2</td><td>14.1</td></tr>
+<tr><td>KL-000049-2024</td><td>ST/4/2025</td><td>SAJU H  DAS vs JAYAKUMARI R</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000601-2025</td><td>ST/282/2025</td><td>Haritha Syndicate vs Naginass  N</td><td>Examination of Accused</td><td>2</td><td>124.8</td></tr>
+<tr><td>KL-000633-2025</td><td>ST/402/2025</td><td>Trevor Morrison vs Smitha Twinkle</td><td>Complainant Evidence</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000831-2025</td><td>ST/502/2025</td><td>Vishnu P vs Mini Sreekumar</td><td>Complainant Evidence</td><td>2</td><td>11.0</td></tr>
+<tr><td>KL-000402-2025</td><td>ST/428/2025</td><td>V Ajayakumar vs Rekha</td><td>Complainant Evidence</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-001144-2026</td><td>ST/648/2026</td><td>RAJENDRA RS vs RAJI CARLOSE</td><td>Appearance</td><td>2</td><td>43.0</td></tr>
+<tr><td>KL-000996-2026</td><td>ST/830/2026</td><td>Viswambaran Kuttappan vs Shyla R</td><td>Appearance</td><td>2</td><td>47.0</td></tr>
+<tr><td>KL-000995-2026</td><td>ST/827/2026</td><td>Viswambaran Kuttappan vs Vinod</td><td>Appearance</td><td>2</td><td>47.0</td></tr>
+<tr><td>KL-000552-2026</td><td>ST/1061/2026</td><td>Sreelekshmi A vs Preetha Chandra</td><td>Appearance</td><td>2</td><td>34.0</td></tr>
+<tr><td>KL-000662-2025</td><td>ST/361/2025</td><td>Umamaheswari R vs Surya</td><td>Defense Evidence</td><td>2</td><td>53.0</td></tr>
+<tr><td>KL-000700-2026</td><td>ST/341/2026</td><td>Jalaja C vs Maya Sreekumar</td><td>Post-Disposal</td><td>2</td><td>17.8</td></tr>
+<tr><td>KL-000672-2025</td><td>ST/698/2025</td><td>St Marys Trading Company vs Suresh Kumar</td><td>Complainant Evidence</td><td>2</td><td>8.0</td></tr>
+<tr><td>KL-000538-2026</td><td>ST/308/2026</td><td>Nithin S vs Balanarayanan B H</td><td>Appearance</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-000804-2025</td><td>ST/526/2025</td><td>Rejimon B vs Mohanan Pillai</td><td>Complainant Evidence</td><td>2</td><td>16.0</td></tr>
+<tr><td>KL-000167-2026</td><td>ST/66/2026</td><td>Sabu M vs Sainudheen Kutty M</td><td>Complainant Evidence</td><td>2</td><td>15.0</td></tr>
+<tr><td>KL-000802-2025</td><td>ST/485/2025</td><td>Veena Prabhakumar Veena A vs Faizal</td><td>Complainant Evidence</td><td>2</td><td>18.0</td></tr>
+<tr><td>KL-000634-2025</td><td>ST/401/2025</td><td>Trevor Morrison vs Smitha Twinkle</td><td>Complainant Evidence</td><td>2</td><td>13.0</td></tr>
+<tr><td>KL-000729-2026</td><td>ST/356/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Chandrababu S</td><td>Appearance</td><td>2</td><td>27.0</td></tr>
+<tr><td>KL-000195-2025</td><td>ST/164/2025</td><td>HDFC BANK LTD vs Sujith S</td><td>Post-Disposal</td><td>2</td><td>0.0</td></tr>
+<tr><td>KL-000708-2025</td><td>ST/680/2025</td><td>Leela R vs Manjula</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000492-2025</td><td>ST/273/2025</td><td>HDFC BANK LTD vs S SURENDRAN PILLAI</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000348-2024</td><td>ST/158/2025</td><td>P Muraleedharan Achary vs Suvarnna S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000959-2025</td><td>ST/602/2025</td><td>Sobhana  K I vs Sufaija S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001002-2026</td><td>ST/540/2026</td><td>Tiju Thomas vs Remya Chandran</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001530-2026</td><td>ST/888/2026</td><td>BABU RAJAN vs LALITHA</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000571-2026</td><td>ST/260/2026</td><td>Rajan Pillai vs Gireesh C</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000856-2025</td><td>ST/460/2025</td><td>Prakashan T vs Sofiya R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001048-2025</td><td>ST/626/2025</td><td>Haritha Syndicate vs Deepthi S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000369-2026</td><td>ST/134/2026</td><td>Maxvalue Credits and Investments Ltd vs Bindhu</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000626-2025</td><td>ST/772/2025</td><td>Riyas A vs S K S STORES</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000436-2026</td><td>ST/174/2026</td><td>Akash J vs Bibin Baby</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000009-2026</td><td>ST/15/2026</td><td>ARUMUGHAM S vs MUBEENA M</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000649-2026</td><td>ST/306/2026</td><td>XAVIER A vs REJI BABU</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000930-2025</td><td>ST/541/2025</td><td>Premkrishnan V vs Bijith B</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000304-2026</td><td>ST/122/2026</td><td>P Maniyan Pillai vs Prasanthan Pillai S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000966-2026</td><td>ST/524/2026</td><td>Paravur Akshaya Nidhi Ltd vs Sajeed S</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000393-2025</td><td>ST/151/2025</td><td>Johnson A vs Jayapalan  Rozario</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001149-2025</td><td>ST/764/2025</td><td>Haritha Syndicate vs Resmi B S</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000019-2026</td><td>ST/5/2026</td><td>HDFC BANK LTD vs MAHILAL K MOHAN</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001056-2025</td><td>ST/663/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Anandapadmanabhan</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000593-2026</td><td>ST/270/2026</td><td>Samastha Nair Nidhi Ltd., vs Madhavan Pillai</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001058-2026</td><td>ST/566/2026</td><td>SHEEJA MOL vs Jayasree</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001115-2025</td><td>ST/730/2025</td><td>Shine Sudhakaran vs Rejani R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000062-2025</td><td>ST/202/2025</td><td>Sunildeth KR vs Sheeja A</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000544-2026</td><td>ST/246/2026</td><td>Shree Padma Nidhi Limited vs Sangeeth S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000770-2025</td><td>ST/472/2025</td><td>HDFC BANK LTD vs JERIL J</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001245-2025</td><td>ST/836/2025</td><td>SILVERLINE TRADING COMPANY vs MAHESH PILLAI MOHAN</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000757-2025</td><td>ST/397/2025</td><td>HDFC BANK LTD vs ABDUL SAMAD</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001334-2026</td><td>ST/745/2026</td><td>Anupriya G vs Sandhya</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000952-2025</td><td>ST/587/2025</td><td>Arun George vs Athul Raj</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001168-2025</td><td>ST/771/2025</td><td>Valleriyan vs Hitha Krishna</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000407-2026</td><td>ST/161/2026</td><td>SREELATHA O vs SREEJA</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000232-2025</td><td>ST/205/2025</td><td>Nistilan Stephen vs Usha Cyril</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000593-2025</td><td>ST/251/2025</td><td>SUMA PARAYIL VEEDU KUMARAN vs JABEES STEPHEN</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000320-2024</td><td>ST/255/2025</td><td>Jayakumari I vs Binu  Raj</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000725-2025</td><td>ST/412/2025</td><td>Quilon Co Operative Urban Bank Ltd vs Saifudeen</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000328-2025</td><td>ST/740/2025</td><td>Asian Firdaus Cashews vs A K B Exports and Imports and 1 Other</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000211-2025</td><td>ST/101/2025</td><td>HDFC BANK LTD vs Shameer B</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000260-2025</td><td>ST/288/2025</td><td>Vijayakumar V vs Roopa Rani V</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000192-2025</td><td>ST/96/2025</td><td>Darsana vs Remya Krishnan  S</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001457-2026</td><td>ST/839/2026</td><td>Baby Shylaja vs Suchithra SN</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000894-2025</td><td>ST/536/2025</td><td>Ratheesh E vs Bincymol W</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000637-2025</td><td>ST/356/2025</td><td>Shemeer A vs Biju</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000158-2026</td><td>ST/59/2026</td><td>Deepthi vs Chandrababu</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000604-2026</td><td>ST/279/2026</td><td>Thangalkunju vs Rajaneesh</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000986-2025</td><td>ST/674/2025</td><td>Haritha Syndicate vs Sajeesh Kumar</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000102-2024</td><td>ST/6/2025</td><td>Jacob  K vs Aji Koruthu</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000547-2026</td><td>ST/261/2026</td><td>SOBHANA vs MERI</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000529-2026</td><td>ST/258/2026</td><td>Sivaprasad C vs Sindu</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001057-2026</td><td>ST/724/2026</td><td>Mini P vs Shuba</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000556-2025</td><td>ST/392/2025</td><td>Dr NISANTH S vs RESHMA JOSE</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000588-2025</td><td>ST/421/2025</td><td>MULTIMIX DISTRIBUTORS vs Muneer</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000624-2026</td><td>ST/304/2026</td><td>XAVIER A vs REJI BABU</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001021-2025</td><td>ST/707/2025</td><td>Kollam Vyapari Vyavasayi Mercantile Social Welfare Co-Operative Society vs Mohammod</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000928-2025</td><td>ST/635/2025</td><td>Meena Melvin vs Cicili Leyon</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000939-2025</td><td>ST/672/2025</td><td>HDFC BANK LTD vs JIBIN MATHEW</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000674-2026</td><td>ST/461/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Suchitra Sunil</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001019-2025</td><td>ST/548/2025</td><td>Bindhu D vs Mehruniza</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000587-2026</td><td>ST/271/2026</td><td>Samastha Nair Nidhi Ltd.,  vs Ambili</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000036-2026</td><td>ST/27/2026</td><td>Pattam Granites And Tiles vs Shiny Britto</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000622-2026</td><td>ST/296/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Monikuttan</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000276-2026</td><td>ST/104/2026</td><td>Thampi K Kunjappan vs Sheeja</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000322-2024</td><td>ST/78/2025</td><td>Sujith Sukumaran vs Sijimol</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000391-2026</td><td>ST/147/2026</td><td>Sivarenjini vs Ramsiya</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000015-2026</td><td>ST/23/2026</td><td>Vinu S Pai vs Santhi S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001133-2025</td><td>ST/749/2025</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000320-2026</td><td>ST/115/2026</td><td>MOHANA PILLAI vs Sreedvi</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000564-2026</td><td>ST/265/2026</td><td>Sajad S vs Ajmal Khan K</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000323-2024</td><td>ST/256/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs PRADEEP  KUMAR</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000264-2026</td><td>ST/106/2026</td><td>Ajitha TR vs Bharathan</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000835-2026</td><td>ST/436/2026</td><td>Nedungolam Gramin Nidhi Ltd vs Jayadev A P</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000707-2026</td><td>ST/359/2026</td><td>Sajidabeevi vs Sudheer</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000668-2025</td><td>ST/500/2025</td><td>Sobhana  K I vs Sajin S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000595-2026</td><td>ST/269/2026</td><td>M/s Anchalummood Rural Co-operative Society vs Jiji P</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000891-2025</td><td>ST/585/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs SHIBU  B</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000759-2026</td><td>ST/381/2026</td><td>Paravur Akshaya Nidhi Ltd vs Reji R</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000805-2025</td><td>ST/480/2025</td><td>Pathrose Robert vs Jaimon Xavier</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000971-2026</td><td>ST/525/2026</td><td>Laly Abraham vs Preetha Kumary M</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000054-2026</td><td>ST/24/2026</td><td>Brothers Pharma vs Karunya Medicals and 1 Other</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000610-2026</td><td>ST/282/2026</td><td>Athul R vs Arunsha K</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000767-2026</td><td>ST/398/2026</td><td>Prakash B L vs SHINE SUNDARESAN</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000161-2025</td><td>ST/139/2025</td><td>Jacob  K vs Aji P Koruthu</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000017-2026</td><td>ST/69/2026</td><td>Vinu S Pai vs Rajan S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000148-2026</td><td>ST/39/2026</td><td>Rajith V vs Fr Bijoy P</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001079-2026</td><td>ST/579/2026</td><td>Rajesh R K Nair vs Vinod R K</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000885-2025</td><td>ST/573/2025</td><td>Renjith C vs Sudheer</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000784-2026</td><td>ST/399/2026</td><td>Saleena S vs RAJU</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001143-2025</td><td>ST/762/2025</td><td>Shihabudeen vs Saifudeen</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001205-2025</td><td>ST/807/2025</td><td>Sebastian Joseph vs Bernad Sebastian</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001097-2026</td><td>ST/584/2026</td><td>BINU ANTONY K vs VIDHUKUMAR K V</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001182-2025</td><td>ST/785/2025</td><td>Surumi S vs Safeena</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000931-2025</td><td>ST/673/2025</td><td>Anitha S vs Rajeev R</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000921-2026</td><td>ST/521/2026</td><td>PADMAKUMAR vs Yahiya</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000152-2026</td><td>ST/44/2026</td><td>V BOBBY SUNIL DUTT vs SUNIL KUMAR B S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000576-2026</td><td>ST/286/2026</td><td>Bindhu vs Gireesh</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000341-2025</td><td>ST/147/2025</td><td>HDFC BANK LTD vs VINCY V S</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000823-2025</td><td>ST/580/2025</td><td>Sreerag Syamala vs Akshay</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000826-2025</td><td>ST/495/2025</td><td>Priya Rajeev vs Bindu  A</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000646-2026</td><td>ST/310/2026</td><td>SKYLINE METALLOIDS vs MOHAMMED BASHEER CHARAPARAMBIL</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000041-2026</td><td>ST/19/2026</td><td>Brothers Pharma vs Karunya Medicals and 1 Other</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000474-2026</td><td>ST/192/2026</td><td>Amal Murali vs Sandhya V and 1 Other</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000348-2026</td><td>ST/155/2026</td><td>Bank Employees Cooperative Society vs Vinneth P S</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000550-2026</td><td>ST/247/2026</td><td>SOBHANA vs ANIMOLE Y</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000243-2026</td><td>ST/78/2026</td><td>Manoj J vs Mithra</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000595-2025</td><td>ST/679/2025</td><td>Arun Kumar vs Prasad</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000221-2025</td><td>ST/443/2025</td><td>Afzaal vs Ansarudeen  A</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000070-2026</td><td>ST/171/2026</td><td>MERMOUNT CORPORATION vs NIHAS N S</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000462-2025</td><td>ST/318/2025</td><td>Deepam Manufacturing and Industrial vs Nisha Foods and 1 Other</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000299-2024</td><td>ST/91/2025</td><td>Shamsudeen  M vs Aswathy</td><td>Arguments</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000605-2025</td><td>ST/347/2025</td><td>Babu H vs Pradeep Kumar P</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000305-2026</td><td>ST/123/2026</td><td>P Maniyan Pillai vs PRASANTHAN PILLAI S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001013-2025</td><td>ST/64/2026</td><td>Kaladevi N vs Sajith B</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000413-2025</td><td>ST/235/2025</td><td>sree gokulam chits and finance co pvt ltd vs SREEKUMARI MANOHARAN</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000489-2025</td><td>ST/274/2025</td><td>HDFC BANK LTD vs S SURENDRAN PILLAI</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000318-2026</td><td>ST/136/2026</td><td>ANEESH KUMAR R vs A GOPAL SANKAR</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000828-2025</td><td>ST/684/2025</td><td>Beema Mol R vs Shameena Noufal  S</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001036-2026</td><td>ST/562/2026</td><td>POOTHAKULAM NIDHI LIMITED vs Prasad K</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001338-2026</td><td>ST/776/2026</td><td>Anupriya G vs SarathChandran</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000991-2026</td><td>ST/533/2026</td><td>Rose Gold and Diamonds vs Veena</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000531-2026</td><td>ST/237/2026</td><td>Binu John vs Limi Lorance</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000577-2026</td><td>ST/262/2026</td><td>M/s Anchalummood Rural Cooperative Society vs Pushpa Kumari K</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000072-2026</td><td>ST/172/2026</td><td>Mermount Corporation vs NIHAS N S</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000371-2025</td><td>ST/239/2025</td><td>Abdul Majeed vs Sirajudeen</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000116-2025</td><td>ST/462/2025</td><td>Praseetha A vs MUHAMMED</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000405-2026</td><td>ST/248/2026</td><td>Renjith Vijayan vs Shiju Thomas</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000837-2025</td><td>ST/527/2025</td><td>Sivaprasad C vs Thriptha</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000041-2025</td><td>ST/363/2025</td><td>SILVER LINE TRADING COMPANY vs M/s MSB COLOURS</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000303-2025</td><td>ST/166/2025</td><td>C.P Enterprises    vs Sajina  Abdhulla Basheer</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000816-2026</td><td>ST/426/2026</td><td>Wilson Thomas vs Tintu R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000453-2026</td><td>ST/198/2026</td><td>Naveen M vs Unnikrishnan M</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000558-2026</td><td>ST/276/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Dileep</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000605-2026</td><td>ST/277/2026</td><td>SILVERLINE TRADING COMPANY vs VARNAM PAINTS and 1 Other</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000439-2026</td><td>ST/176/2026</td><td>Akash J vs Akshai B Bose</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000359-2025</td><td>ST/122/2025</td><td>HDFC BANK LTD vs JAYARAM KRISHNAN</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001069-2025</td><td>ST/692/2025</td><td>M/S Fort In Infra Developers Private Limited vs Arul S</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001263-2026</td><td>ST/712/2026</td><td>SHEELA S vs BIJU KUMAR</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000209-2024</td><td>ST/48/2025</td><td>Athira S vs shobhitha</td><td>Post-Disposal</td><td>1</td><td>-0.1</td></tr>
+<tr><td>KL-000317-2025</td><td>ST/111/2025</td><td>Hakkim vs Baby Vanaja</td><td>Arguments</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000272-2026</td><td>ST/96/2026</td><td>Kannan vs Saranyamol</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000287-2025</td><td>ST/241/2025</td><td>MOLLY A vs RAJU ABRAHAM</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000628-2026</td><td>ST/300/2026</td><td>A R WOOD INDUSTRIES vs RAJANI</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000007-2026</td><td>ST/21/2026</td><td>Vinu S Pai vs Santhi S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000333-2026</td><td>ST/117/2026</td><td>BALU PS vs DEEPU PRAHLAD</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000154-2025</td><td>ST/87/2025</td><td>HDFC BANK LTD vs AJITH KUMAR K</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000423-2025</td><td>ST/321/2025</td><td>THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001068-2025</td><td>ST/691/2025</td><td>M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd vs Nishana N</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000169-2026</td><td>ST/67/2026</td><td>Sabu M vs Sainudheen Kutty M</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000107-2025</td><td>ST/70/2025</td><td>HDFC BANK LTD vs SAJIV</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000396-2026</td><td>ST/153/2026</td><td>Paravur Akshaya Nidhi Ltd vs Sreelatha</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001102-2025</td><td>ST/726/2025</td><td>IDBI Bank Ltd vs Jayasree R</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000584-2026</td><td>ST/264/2026</td><td>Krishnamurthy T vs Riyas B</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000756-2026</td><td>ST/396/2026</td><td>Praveen vs N Joseph</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000835-2025</td><td>ST/454/2025</td><td>HDFC BANK LTD vs SATHYA BHAMA</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000718-2026</td><td>ST/357/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Mohanan</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001177-2025</td><td>ST/790/2025</td><td>Premkrishnan V vs Santhosh Netto</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001151-2025</td><td>ST/767/2025</td><td>Maniyan Krishnan vs Saju B</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000523-2026</td><td>ST/224/2026</td><td>Athira S vs Nishanth</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000236-2025</td><td>ST/556/2025</td><td>Shaji G vs Shobhana</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000639-2026</td><td>ST/305/2026</td><td>SILVERLINE TRADING COMPANY vs ARUN KUMAR SARNGADHARAN</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000340-2025</td><td>ST/150/2025</td><td>Musthafa Sudheer vs Akash Sanjeev</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000051-2026</td><td>ST/26/2026</td><td>Brothers Pharma vs Karunya Medicals and 1 Other</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001200-2025</td><td>ST/806/2025</td><td>Umamaheswari R vs ARUNDHATHY</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000460-2025</td><td>ST/225/2025</td><td>SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES</td><td>Examination of Accused</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000146-2025</td><td>ST/268/2025</td><td>HDFC BANK LTD vs SUJITH LAL</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000658-2025</td><td>ST/309/2025</td><td>HDFC Bank Ltd vs AMRUTHLAL D M</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000507-2025</td><td>ST/295/2025</td><td>HDFC BANKLTD vs SURENDRAN PILLAI S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000470-2026</td><td>ST/209/2026</td><td>Gopalakrishnan vs Surendran Pillai</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001294-2026</td><td>ST/729/2026</td><td>Shibu Bhaskaran vs Priyaanka S Kumar</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001163-2026</td><td>ST/638/2026</td><td>Chandra Mohanan P vs Sheena P</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001087-2025</td><td>ST/847/2025</td><td>Supreme Cashew Industries vs Ubaid Ebrahim</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000603-2026</td><td>ST/281/2026</td><td>SILVERLINE TRADING COMPANY vs VARNAM PAINTS and 1 Other</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000129-2025</td><td>ST/733/2025</td><td>Sheela vs Deepakutty Arch</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000661-2025</td><td>ST/576/2025</td><td>Rakhesh Rajendran vs Saranya A</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001202-2025</td><td>ST/814/2025</td><td>Umamaheswari R vs Sabitha</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000789-2026</td><td>ST/407/2026</td><td>Sunil S vs Shakeela</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000653-2026</td><td>ST/311/2026</td><td>Joy James vs Lawrance R</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000764-2026</td><td>ST/406/2026</td><td>Abdul Khareem A vs Muhammed Saleem N K</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001188-2025</td><td>ST/784/2025</td><td>Valleriyan vs Hitha Krishna</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000916-2025</td><td>ST/507/2025</td><td>Gopalakrishna Pillai vs Amritha A</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000634-2026</td><td>ST/302/2026</td><td>VASAVAN N vs APARNA NARENDRAN</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000316-2026</td><td>ST/108/2026</td><td>SHAKTHIKULANGARA NIDHI LTD vs Sreekumar R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000279-2025</td><td>ST/126/2025</td><td>MARANATHA FINCORP vs LALEESH S</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000010-2026</td><td>ST/22/2026</td><td>Vinu S Pai vs Rajan S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000603-2025</td><td>ST/271/2025</td><td>Bijumon  K vs Siddeek</td><td>Post-Judgement</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000321-2026</td><td>ST/110/2026</td><td>SHAKTHIKULANGARA NIDHI LTD vs Ratheesh Kumar</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000964-2026</td><td>ST/536/2026</td><td>Paravur Akshaya Nidhi Ltd vs Sreeja R P</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000687-2025</td><td>ST/426/2025</td><td>NISAM  A vs ANEES R</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000120-2024</td><td>ST/41/2025</td><td>Surya R L Kumari vs Sheeba A</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000142-2026</td><td>ST/173/2026</td><td>mermount corporation vs RAYYAN TILES AND GRANITES</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000613-2025</td><td>ST/496/2025</td><td>MAHEEN  J vs SAIDKUTTY S</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000522-2025</td><td>ST/391/2025</td><td>Satheesh Babu vs Ragesh R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001220-2025</td><td>ST/815/2025</td><td>Seenath vs Viji Anand</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000568-2025</td><td>ST/287/2025</td><td>HARITHA SYNDICATE vs RENJITH</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000987-2026</td><td>ST/537/2026</td><td>The Quilon Co-Operative Urban Bank Ltd Kollam  vs Mohanan R</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000049-2026</td><td>ST/32/2026</td><td>SASIDHARAN PILLAI vs ANILKUMAR L S</td><td>Defense Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000883-2025</td><td>ST/572/2025</td><td>Haritha Syndicate vs Biju</td><td>Post-Disposal</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000186-2026</td><td>ST/140/2026</td><td>Sivaprasad vs Rafeek</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000404-2026</td><td>ST/157/2026</td><td>Shifas vs Aneesha</td><td>Bail & Recording of Plea</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-001372-2026</td><td>ST/775/2026</td><td>SHEELA S vs Biju Kumar</td><td>Appearance</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000239-2026</td><td>ST/121/2026</td><td>P Maniyan Pillai vs Prasanthan Pillai S</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000491-2025</td><td>ST/408/2025</td><td>Santha vs K Ramachandran Chettiyar</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr>
+<tr><td>KL-000437-2026</td><td>ST/189/2026</td><td>ABRAHAM SAMUEL vs ARYA R</td><td>Complainant Evidence</td><td>1</td><td>0.0</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

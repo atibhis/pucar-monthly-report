@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11 — Unexecuted Warrants (>21 Working Days) & Police Station Laggards — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q11 — Unexecuted Warrants (>21 Working Days) & Police Station Laggards</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> Which warrants remain unexecuted after twenty-one working days, which executing officers or police stations are the laggards, and what is the execution rate for each?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Police Stations Analyzed</div><div class="kpi-value">145</div><div class="kpi-sub">iCOPS integration register</div></div>
+    <div class="kpi-card"><div class="kpi-title">Total Warrants Tracked</div><div class="kpi-value">958</div><div class="kpi-sub">Through iCOPS police feed</div></div>
+    <div class="kpi-card"><div class="kpi-title">Total Unexecuted Warrants</div><div class="kpi-value" style="color:#ef4444;">873</div><div class="kpi-sub">> 21 working days unserved</div></div>
+    <div class="kpi-card"><div class="kpi-title">Overall Execution Rate</div><div class="kpi-value">8.9%</div><div class="kpi-sub">Police service yield</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+                    <span class="count-info" id="recordCountText">Showing 145 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q11_unexecuted_warrants_police_stations.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>police_station</th><th>district</th><th>total_warrants</th><th>unexecuted</th><th>executed</th><th>execution_rate_pct</th></tr></thead>
+            <tbody><tr><td>KOLLAM EAST</td><td>KOLLAM CITY</td><td>54</td><td>54</td><td>0</td><td>0.0</td></tr>
+<tr><td>SAKTHIKULANGARA</td><td>KOLLAM CITY</td><td>55</td><td>42</td><td>13</td><td>23.6</td></tr>
+<tr><td>ERAVIPURAM</td><td>KOLLAM CITY</td><td>50</td><td>40</td><td>10</td><td>20.0</td></tr>
+<tr><td>KUNDARA</td><td>KOLLAM RURAL</td><td>43</td><td>37</td><td>6</td><td>14.0</td></tr>
+<tr><td>KILIKOLLOOR</td><td>KOLLAM CITY</td><td>39</td><td>36</td><td>3</td><td>7.7</td></tr>
+<tr><td>ANCHALUMMOODU</td><td>KOLLAM CITY</td><td>36</td><td>36</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHAVARA</td><td>KOLLAM CITY</td><td>34</td><td>34</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOTTIYAM</td><td>KOLLAM CITY</td><td>32</td><td>30</td><td>2</td><td>6.3</td></tr>
+<tr><td>POOYAPPALLY</td><td>KOLLAM RURAL</td><td>25</td><td>23</td><td>2</td><td>8.0</td></tr>
+<tr><td>PATHANAMTHITTA</td><td>PATHANAMTHITTA</td><td>21</td><td>21</td><td>0</td><td>0.0</td></tr>
+<tr><td>KARUNAGAPALLY</td><td>KOLLAM CITY</td><td>24</td><td>20</td><td>4</td><td>16.7</td></tr>
+<tr><td>SASTHANCOTTAH</td><td>KOLLAM RURAL</td><td>21</td><td>20</td><td>1</td><td>4.8</td></tr>
+<tr><td>PARAVOOR</td><td>KOLLAM CITY</td><td>20</td><td>19</td><td>1</td><td>5.0</td></tr>
+<tr><td>CHATHANNUR</td><td>KOLLAM CITY</td><td>18</td><td>18</td><td>0</td><td>0.0</td></tr>
+<tr><td>EZHUKONE</td><td>KOLLAM RURAL</td><td>18</td><td>17</td><td>1</td><td>5.6</td></tr>
+<tr><td>OCHIRA</td><td>KOLLAM CITY</td><td>17</td><td>17</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOLLAM WEST</td><td>KOLLAM CITY</td><td>20</td><td>15</td><td>5</td><td>25.0</td></tr>
+<tr><td>KOTTARAKARA</td><td>KOLLAM RURAL</td><td>18</td><td>14</td><td>4</td><td>22.2</td></tr>
+<tr><td>PUNALOOR</td><td>KOLLAM RURAL</td><td>14</td><td>14</td><td>0</td><td>0.0</td></tr>
+<tr><td>SOORANADU</td><td>KOLLAM RURAL</td><td>15</td><td>13</td><td>2</td><td>13.3</td></tr>
+<tr><td>AYIROOR</td><td>THIRUVANANTHAPURAM RURAL</td><td>13</td><td>13</td><td>0</td><td>0.0</td></tr>
+<tr><td>KAYAMKULAM</td><td>ALAPPUZHA</td><td>12</td><td>11</td><td>1</td><td>8.3</td></tr>
+<tr><td>PARIPPALLY</td><td>KOLLAM CITY</td><td>12</td><td>11</td><td>1</td><td>8.3</td></tr>
+<tr><td>CHADAYAMANGALAM</td><td>KOLLAM RURAL</td><td>12</td><td>11</td><td>1</td><td>8.3</td></tr>
+<tr><td>VENJARAMOODU</td><td>THIRUVANANTHAPURAM RURAL</td><td>11</td><td>11</td><td>0</td><td>0.0</td></tr>
+<tr><td>KADAKKAL</td><td>KOLLAM RURAL</td><td>10</td><td>10</td><td>0</td><td>0.0</td></tr>
+<tr><td>PUTHOOR</td><td>KOLLAM RURAL</td><td>10</td><td>9</td><td>1</td><td>10.0</td></tr>
+<tr><td>KALLAMBALAM</td><td>THIRUVANANTHAPURAM RURAL</td><td>9</td><td>9</td><td>0</td><td>0.0</td></tr>
+<tr><td>YERROOR</td><td>KOLLAM RURAL</td><td>10</td><td>8</td><td>2</td><td>20.0</td></tr>
+<tr><td>KUNNIKODE</td><td>KOLLAM RURAL</td><td>8</td><td>7</td><td>1</td><td>12.5</td></tr>
+<tr><td>PATHANA PURAM</td><td>KOLLAM RURAL</td><td>7</td><td>7</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHIRAYINKIL</td><td>THIRUVANANTHAPURAM RURAL</td><td>7</td><td>7</td><td>0</td><td>0.0</td></tr>
+<tr><td>THIRUVALLA</td><td>PATHANAMTHITTA</td><td>7</td><td>7</td><td>0</td><td>0.0</td></tr>
+<tr><td>PANGODE</td><td>THIRUVANANTHAPURAM RURAL</td><td>7</td><td>6</td><td>1</td><td>14.3</td></tr>
+<tr><td>PANDALAM</td><td>PATHANAMTHITTA</td><td>6</td><td>6</td><td>0</td><td>0.0</td></tr>
+<tr><td>KADUTHURUTHI</td><td>KOTTAYAM</td><td>6</td><td>6</td><td>0</td><td>0.0</td></tr>
+<tr><td>PALLITHOTTAM</td><td>KOLLAM CITY</td><td>6</td><td>6</td><td>0</td><td>0.0</td></tr>
+<tr><td>ARANMULA</td><td>PATHANAMTHITTA</td><td>6</td><td>6</td><td>0</td><td>0.0</td></tr>
+<tr><td>NEDUMANGAD</td><td>THIRUVANANTHAPURAM RURAL</td><td>6</td><td>5</td><td>1</td><td>16.7</td></tr>
+<tr><td>KILIMANOOR</td><td>THIRUVANANTHAPURAM RURAL</td><td>5</td><td>5</td><td>0</td><td>0.0</td></tr>
+<tr><td>ANCHAL</td><td>KOLLAM RURAL</td><td>5</td><td>5</td><td>0</td><td>0.0</td></tr>
+<tr><td>NEYYATTINKARA</td><td>THIRUVANANTHAPURAM RURAL</td><td>5</td><td>4</td><td>1</td><td>20.0</td></tr>
+<tr><td>CHAVARA THEKKUMBHAGAM</td><td>KOLLAM CITY</td><td>5</td><td>4</td><td>1</td><td>20.0</td></tr>
+<tr><td>PERINADU</td><td>PATHANAMTHITTA</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>THRIKUNNAPUZHA</td><td>ALAPPUZHA</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>ALAPPUZHA SOUTH</td><td>ALAPPUZHA</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>RANNY</td><td>PATHANAMTHITTA</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>MEDICAL COLLEGE PS</td><td>THRISSUR CITY</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOTTAYAM WEST</td><td>KOTTAYAM</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>ANKAMALY</td><td>ERNAKULAM RURAL</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>ATTINGAL</td><td>THIRUVANANTHAPURAM RURAL</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>MUHAMMA</td><td>ALAPPUZHA</td><td>4</td><td>4</td><td>0</td><td>0.0</td></tr>
+<tr><td>ENATHU</td><td>PATHANAMTHITTA</td><td>6</td><td>3</td><td>3</td><td>50.0</td></tr>
+<tr><td>EAST KALLADA</td><td>KOLLAM RURAL</td><td>4</td><td>3</td><td>1</td><td>25.0</td></tr>
+<tr><td>HARIPPAD</td><td>ALAPPUZHA</td><td>4</td><td>3</td><td>1</td><td>25.0</td></tr>
+<tr><td>VATTIYOORKAVU</td><td>THIRUVANANTHAPURAM CITY</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOTTAYI</td><td>PALAKKAD</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>VATTAPPARA</td><td>THIRUVANANTHAPURAM RURAL</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>PALLIKKAL</td><td>THIRUVANANTHAPURAM RURAL</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>KADAKKAVOOR</td><td>THIRUVANANTHAPURAM RURAL</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>THENMALA</td><td>KOLLAM RURAL</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANNARGHAT</td><td>PALAKKAD</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>THOTTAPPALLY</td><td>ALAPPUZHA</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>MARADU PS</td><td>ERNAKULAM CITY</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>KONNY</td><td>PATHANAMTHITTA</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>PULIKEEZHU</td><td>PATHANAMTHITTA</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>VALLI KUNNAM</td><td>ALAPPUZHA</td><td>3</td><td>3</td><td>0</td><td>0.0</td></tr>
+<tr><td>MULANTHURUTHY</td><td>ERNAKULAM RURAL</td><td>3</td><td>2</td><td>1</td><td>33.3</td></tr>
+<tr><td>NEMOM</td><td>THIRUVANANTHAPURAM CITY</td><td>3</td><td>2</td><td>1</td><td>33.3</td></tr>
+<tr><td>SREEKARYAM</td><td>THIRUVANANTHAPURAM CITY</td><td>3</td><td>2</td><td>1</td><td>33.3</td></tr>
+<tr><td>VADAKEKAD</td><td>THRISSUR RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANGALAPURAM</td><td>THIRUVANANTHAPURAM RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOZHIKODE CUSBA</td><td>KOZHIKODE CITY</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANNANCHERY</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>FORT</td><td>THIRUVANANTHAPURAM CITY</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>TIRUR</td><td>MALAPPURAM</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>ARIYANCODE</td><td>THIRUVANANTHAPURAM RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>VIZHINJAM</td><td>THIRUVANANTHAPURAM CITY</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>PETTAH</td><td>THIRUVANANTHAPURAM CITY</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>POTHENCODE</td><td>THIRUVANANTHAPURAM RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHERPU</td><td>THRISSUR RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANNANCHERY</td><td>KOLLAM</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>KANAKAKUNNU</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANNAR</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>NOORANADU</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>SULTHANBATHERY</td><td>WYNAD</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>KAZHAKUTTAM</td><td>THIRUVANANTHAPURAM CITY</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>ALAPPUZHA NORTH</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHENGANNUR</td><td>ALAPPUZHA</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>PALODE</td><td>THIRUVANANTHAPURAM RURAL</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHIRAYINKIL</td><td>KOLLAM</td><td>2</td><td>2</td><td>0</td><td>0.0</td></tr>
+<tr><td>VECHOOCHIRA</td><td>PATHANAMTHITTA</td><td>3</td><td>1</td><td>2</td><td>66.7</td></tr>
+<tr><td>NEDUPUZHA</td><td>THRISSUR CITY</td><td>2</td><td>1</td><td>1</td><td>50.0</td></tr>
+<tr><td>CHELAKKARA</td><td>THRISSUR RURAL</td><td>2</td><td>1</td><td>1</td><td>50.0</td></tr>
+<tr><td>POZHIYOOR</td><td>THIRUVANANTHAPURAM RURAL</td><td>2</td><td>1</td><td>1</td><td>50.0</td></tr>
+<tr><td>KAREELAKULANGARA</td><td>ALAPPUZHA</td><td>2</td><td>1</td><td>1</td><td>50.0</td></tr>
+<tr><td>KUMARAKOM</td><td>KOTTAYAM</td><td>2</td><td>1</td><td>1</td><td>50.0</td></tr>
+<tr><td>KEEZHVAIPUR</td><td>PATHANAMTHITTA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KODUVALLY</td><td>KOZHIKODE RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>VADANAPALLY</td><td>THRISSUR RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>FORT COCHIN</td><td>ERNAKULAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PAZHAYANNUR</td><td>THRISSUR RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PALAKKAD TOWN SOUTH</td><td>PALAKKAD</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>AMBALAMEDU</td><td>ERNAKULAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHITTOOR</td><td>PALAKKAD</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>MANIMALA</td><td>KOTTAYAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOIPURAM</td><td>PATHANAMTHITTA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>MALAPPURAM</td><td>MALAPPURAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>THRISSUR WEST</td><td>THRISSUR CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>ARROOR</td><td>ALAPPUZHA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KANNANALLOOR</td><td>KOLLAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>GANDHI NAGAR</td><td>KOTTAYAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>ADOOR</td><td>PATHANAMTHITTA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOVALAM</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KALPAKANCHERRY</td><td>MALAPPURAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>VARKALA</td><td>THIRUVANANTHAPURAM RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>NEDUMBASSERY AIRPORT</td><td>ERNAKULAM RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PUNNAPRA</td><td>ALAPPUZHA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>POOJAPPURA</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>CHALAKUDI</td><td>THRISSUR RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>THAMARASSERY</td><td>KOZHIKODE RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>AREAKKODE</td><td>MALAPPURAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>ERNAKULAM CENTRAL</td><td>ERNAKULAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KARUVARAKUNDU</td><td>MALAPPURAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>VALAPPAD</td><td>THRISSUR RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>THANITHODE</td><td>PATHANAMTHITTA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PEROORKADA</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PERINGOME</td><td>KANNUR</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KOLLENGODE</td><td>PALAKKAD</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>NEENDAKARA COASTAL</td><td>KOLLAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>MALAYALAPUZHA</td><td>PATHANAMTHITTA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PERAMBRA</td><td>KOZHIKODE RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>PANTHEERANKAVU  PS</td><td>KOLLAM</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KODENCHERRY</td><td>KOZHIKODE RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>NATTUKAL</td><td>PALAKKAD</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KANNUR TOWN</td><td>KANNUR</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>MALAYINKIL</td><td>THIRUVANANTHAPURAM RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>THIRUVALLAM</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>KULATHUPUZHA</td><td>KOLLAM RURAL</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>THAMPANOOR</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>MAVELIKKARA</td><td>ALAPPUZHA</td><td>1</td><td>1</td><td>0</td><td>0.0</td></tr>
+<tr><td>VENMANI</td><td>ALAPPUZHA</td><td>2</td><td>0</td><td>2</td><td>100.0</td></tr>
+<tr><td>HIRUVANANTHAPURAM RAILWA</td><td>RAILWAY POLICE</td><td>1</td><td>0</td><td>1</td><td>100.0</td></tr>
+<tr><td>AMBALAPUZHA</td><td>ALAPPUZHA</td><td>1</td><td>0</td><td>1</td><td>100.0</td></tr>
+<tr><td>VALIATHURA</td><td>THIRUVANANTHAPURAM CITY</td><td>1</td><td>0</td><td>1</td><td>100.0</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

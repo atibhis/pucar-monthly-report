@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 — Disposal Mix by Outcome & Contested Pipeline — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q2 — Disposal Mix by Outcome & Contested Pipeline</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> Of the cases disposed of this month, what is the mix by outcome — judgement, withdrawn, compounded / settled, dismissed for non-prosecution — and is the pipeline for contested and un-contested cases? (Month-wise filter available below, defaulting to latest month).
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Disposals in Selected Month</div><div class="kpi-value" id="kpiTotal">26</div><div class="kpi-sub" id="kpiMonthLabel">September 2026</div></div>
+    <div class="kpi-card"><div class="kpi-title">Withdrawn (Sec 280)</div><div class="kpi-value" id="kpiWithdrawn" style="color:#10b981;">15</div><div class="kpi-sub" id="kpiWithdrawnSub">57.7% of monthly disposals</div></div>
+    <div class="kpi-card"><div class="kpi-title">Judgement (Contested)</div><div class="kpi-value" id="kpiJudgement">5</div><div class="kpi-sub" id="kpiJudgementSub">19.2% contested trial</div></div>
+    <div class="kpi-card"><div class="kpi-title">Dismissed</div><div class="kpi-value" id="kpiDismissed" style="color:#ef4444;">6</div><div class="kpi-sub" id="kpiDismissedSub">23.1% non-prosecution/defect</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+    <div style="display:flex; align-items:center; gap:8px;">
+        <label for="monthFilter" style="font-weight:700; font-size:13px; color:#0b1239;">Disposal Month:</label>
+        <select id="monthFilter" onchange="applyMonthFilter(this.value)" class="search-input" style="width:200px; font-weight:700; cursor:pointer; padding:8px 12px;">
+            <option value="2026-09" selected>September 2026 (Latest)</option><option value="2026-08">2026-08</option><option value="2026-07">2026-07</option><option value="2026-06">2026-06</option><option value="2026-05">2026-05</option><option value="2026-04">2026-04</option><option value="2026-03">2026-03</option><option value="2026-02">2026-02</option><option value="2026-01">2026-01</option><option value="2025-12">2025-12</option><option value="2025-11">2025-11</option><option value="2025-10">2025-10</option><option value="2025-09">2025-09</option><option value="2025-08">2025-08</option><option value="2025-07">2025-07</option><option value="2025-06">2025-06</option><option value="2025-05">2025-05</option><option value="2025-04">2025-04</option><option value="2025-02">2025-02</option><option value="2025-01">2025-01</option><option value="ALL">All Recorded Months (478)</option>
+        </select>
+    </div>
+    
+                    <span class="count-info" id="recordCountText">Showing 478 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q02_all_disposals_master.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>filingnumber</th><th>courtcasenumber</th><th>casetitle</th><th>stage</th><th>outcome</th><th>natureofdisposal</th><th>disposal_month</th></tr></thead>
+            <tbody><tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-001014-2026</td><td>nan</td><td>chemmanur gold palce international ltd vs Raju Madhavan</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000979-2025</td><td>ST/649/2025</td><td>HDFC BANK LTD vs YASODHARAN K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000784-2025</td><td>ST/560/2025</td><td>Shiras S vs Abdul Haleem</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000458-2026</td><td>ST/184/2026</td><td>HDFC BANK LTD vs BINDHU S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000504-2026</td><td>ST/227/2026</td><td>Max value credits and investment ltd vs Manoj K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000681-2026</td><td>ST/323/2026</td><td>SHAJI vs VIJITHA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000484-2026</td><td>ST/266/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Mohanakumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000559-2026</td><td>ST/254/2026</td><td>Nedungolam Gramin Nidhi Ltd vs Ratheesh Kumar S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000904-2025</td><td>ST/599/2025</td><td>Haritha Syndicate vs Gopakumar V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2025-02" data-outcome="CONVICTED"><td>KL-000346-2024</td><td>ST/40/2025</td><td>ELIAMMA ROBINSON vs SABITHA THAMPI ARNOLD</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000449-2026</td><td>ST/182/2026</td><td>Sreekumar Gopinadhan vs Ranjani Vijaykumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000799-2026</td><td>ST/408/2026</td><td>Manappuram Finance Ltd vs Saneesh AV</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000020-2026</td><td>ST/6/2026</td><td>HDFC BANK LTD vs NANDU S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000156-2026</td><td>ST/56/2026</td><td>Paravur Akshaya Nidhi Ltd vs Gayathri A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000679-2025</td><td>ST/351/2025</td><td>Vijayakumari vs Sajeev G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-001441-2026</td><td>ST/821/2026</td><td>Maben Nidhi Ltd. vs Maimoonath</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000705-2026</td><td>ST/778/2026</td><td>RAJAN PILLAI M N vs ARYA C</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000591-2026</td><td>ST/275/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Jamseena</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000976-2026</td><td>ST/534/2026</td><td>Shree Padma Nidhi Limited vs Nasarudeen</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-000380-2026</td><td>ST/369/2026</td><td>Saubhagaya Finance  vs Manu M</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="ACQUITTED"><td>KL-000259-2025</td><td>ST/162/2025</td><td>Radhamany G vs Laly</td><td>Post-Judgement</td><td>ACQUITTED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000699-2025</td><td>ST/488/2025</td><td>Syna N vs Saleela Sudheer</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000974-2026</td><td>ST/552/2026</td><td>Anil Kumar PJ vs Akbar Sha</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000078-2025</td><td>ST/136/2025</td><td>KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000494-2025</td><td>ST/269/2025</td><td>HDFC BANK LTD vs Parvathy Gopan</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000926-2026</td><td>ST/501/2026</td><td>Maben Nidhi Ltd vs Sabitha Suresh</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="ABATED"><td>KL-001056-2025</td><td>ST/663/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Anandapadmanabhan</td><td>Post-Disposal</td><td>ABATED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000429-2025</td><td>ST/174/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Manu P M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000827-2025</td><td>ST/743/2025</td><td>Pattam Granites and Tiles vs Sudarsanan R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000920-2025</td><td>ST/512/2025</td><td>HDFC BANK LTD vs BIJULAL G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-001067-2025</td><td>ST/769/2025</td><td>Bank Employees Cooperative Society Ltd vs R Sasi A Raman</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000246-2026</td><td>ST/83/2026</td><td>Paravur Akshaya Nidhi Ltd vs Suma L</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-001663-2026</td><td>ST/995/2026</td><td>Kollam Urban Vikas Nidhi Limited vs Ratheesh L R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000302-2026</td><td>ST/120/2026</td><td>George Raju vs ANITHA ARADAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000320-2024</td><td>ST/255/2025</td><td>Jayakumari I vs Binu  Raj</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-000916-2025</td><td>ST/507/2025</td><td>Gopalakrishna Pillai vs Amritha A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-001117-2025</td><td>nan</td><td>Aman A vs Sherafudeen</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-07" data-outcome="ACQUITTED"><td>KL-000656-2025</td><td>ST/310/2025</td><td>HDFC Bank vs Siju K</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000025-2025</td><td>nan</td><td>HDFC BAMK LTD vs PRADEESH M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-001222-2025</td><td>ST/816/2025</td><td>Sunil Kumar B vs Arun M G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000554-2026</td><td>ST/253/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Mony M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000090-2025</td><td>nan</td><td>M/s TMS SREENIVASA REDDIAR vs GREEN SPICES</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-06" data-outcome="ACQUITTED"><td>KL-000296-2024</td><td>ST/262/2025</td><td>Sree Gokulam Chit And Finance vs Sajeesh Kumar</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-001069-2025</td><td>ST/692/2025</td><td>M/S Fort In Infra Developers Private Limited vs Arul S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-001255-2025</td><td>ST/46/2026</td><td>Krishnan Unni S vs K B Gopakumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000788-2025</td><td>nan</td><td>Saubhagya Finance vs Emmanuel A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000084-2025</td><td>nan</td><td>HDFC BANK LTD vs AJI CHANDI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000338-2025</td><td>nan</td><td>Jeni  J vs Gopika J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001183-2025</td><td>nan</td><td>Sree Gokulam Chits and Finance Co Pvt Ltd vs Renju A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000004-2025</td><td>ST/69/2025</td><td>MARANATHA FINCORP vs MAYAKUMARI S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-08" data-outcome="DISMISSED"><td>KL-000340-2024</td><td>nan</td><td>Prince PP vs Sulfikar</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000799-2025</td><td>nan</td><td>Saubhagya Finance vs Anu A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-02" data-outcome="DISMISSED"><td>KL-000276-2024</td><td>nan</td><td>HDFC Bank LTD vs Sethu Lal</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000083-2025</td><td>ST/56/2025</td><td>HDFC BANK LTD vs ANANDHU  UNNI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000347-2024</td><td>ST/47/2025</td><td>HDFC BANK LTD vs JIJO JEROME</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-01" data-outcome="WITHDRAWN"><td>KL-000353-2024</td><td>ST/33/2025</td><td>HDFC BANK LTD vs SOMAN NARAYANAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-01</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000330-2024</td><td>nan</td><td>SREE GOKULAM CHITS AND FINANCE COMPANY PVT LTD vs RASHEEDA BEEVI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000212-2025</td><td>ST/165/2025</td><td>HDFC BANK LTD vs Ajmal M A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-03" data-outcome="DISMISSED"><td>KL-000548-2026</td><td>nan</td><td>Sibi Varghese vs Anjali Krishna ALIAS Anjali A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000353-2025</td><td>ST/291/2025</td><td>HDFC BANK LTD vs VIJITH BABU</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000362-2026</td><td>ST/130/2026</td><td>Max value credits and investment ltd vs Suresh S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000840-2025</td><td>ST/658/2025</td><td>HDFC Bank Ltd vs SALAHUDEEN M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000948-2025</td><td>ST/542/2025</td><td>HDFC BANK LTD vs SALIM S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000153-2024</td><td>ST/1/2024</td><td>HDFC Bank Ltd vs Abhijith V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000471-2025</td><td>ST/192/2025</td><td>HDFC BANK LTD vs VINOD KUMAR B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000436-2025</td><td>ST/169/2025</td><td>Joseph Thomas vs Shine K Joseph</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000853-2025</td><td>ST/466/2025</td><td>HDFC BANK LTD vs ANISTON A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000010-2025</td><td>ST/85/2025</td><td>HDFC BANK LTD vs NIBIN PETER</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000326-2024</td><td>ST/263/2025</td><td>SreeGokulam Chits and Finance CO vs Udeesh Kumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000181-2025</td><td>ST/143/2025</td><td>HDFC BANK LTD vs FATHIMA H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-001034-2025</td><td>ST/612/2025</td><td>HDFC BANK LTD vs ANILKUMAR R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000300-2025</td><td>ST/110/2025</td><td>Viknesh Syam vs Safiyunnisa Beevi R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000508-2025</td><td>ST/218/2025</td><td>HDFC BANK LTD vs CHINJU C</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000351-2025</td><td>ST/146/2025</td><td>HDFC BANK LTD vs ANSAR H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-001125-2025</td><td>ST/768/2025</td><td>HDFC BANK LTD vs ANJU M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000338-2024</td><td>ST/21/2025</td><td>M/s. Sree Gokulam Chit and Finance Co. Pvt. Ltd. vs Venu S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000213-2025</td><td>ST/131/2025</td><td>HDFC BANK LTD vs Thomas Koshy</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000337-2024</td><td>ST/22/2025</td><td>M JAYASEELAN vs BAIJU B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000768-2025</td><td>ST/498/2025</td><td>HDFAC BANK LTD vs REMYA M R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000470-2025</td><td>ST/191/2025</td><td>HDFC BANK LTD vs ARUN RAJ P R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000758-2025</td><td>ST/409/2025</td><td>HDFC BANK LTD vs SUJATHA K G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000935-2025</td><td>ST/642/2025</td><td>HDFC BANK LTD vs JASMIN Y</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000994-2025</td><td>ST/519/2025</td><td>Anita Manoj vs Soumya Mol</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001185-2025</td><td>ST/781/2025</td><td>HDFC BANK LTD vs BEENA B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000874-2025</td><td>ST/476/2025</td><td>HDFC BANK LTD vs DEEPU PILLAI B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000987-2025</td><td>ST/675/2025</td><td>HDFC BANK LTD vs AJINSHA S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000970-2025</td><td>ST/606/2025</td><td>HDFC BANK LTD vs JAYAKRISHNAN A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000847-2025</td><td>ST/464/2025</td><td>HDFC BANK LTD vs ANSAR P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000312-2024</td><td>ST/45/2025</td><td>Sunil Kumar B vs Arun M G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001029-2025</td><td>ST/608/2025</td><td>HDFC BANK LTD vs NISHA RAJ</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000152-2025</td><td>ST/114/2025</td><td>hdfc bank ltd vs PRAVEEN P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000147-2025</td><td>ST/84/2025</td><td>HDFC BANK LTD vs MURUKAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000774-2025</td><td>ST/449/2025</td><td>Dr NISANTH S vs Sreekumar  R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000124-2025</td><td>ST/234/2025</td><td>HDFC BANK vs MANU S RAJAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000123-2025</td><td>ST/155/2025</td><td>HDFC BANK vs PRAVEEN KUMAR</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000769-2025</td><td>ST/474/2025</td><td>HDFC BANK LTD vs THOMAS KOSHY</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000855-2025</td><td>ST/637/2025</td><td>HDFC BANK LTD vs Hafsa Beegam</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-001145-2025</td><td>ST/759/2025</td><td>HDFC BANK LTD vs SARATH S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000110-2025</td><td>ST/71/2025</td><td>HDFC LTD vs KUNJUMOLE</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000106-2025</td><td>ST/305/2025</td><td>HDFC Bank Ltd vs SAM KUMAR</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000087-2025</td><td>ST/54/2025</td><td>HDFC Bank Ltd vs Aneesha A S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000839-2025</td><td>ST/459/2025</td><td>HDFC BANK LTD vs RAJILA P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000474-2025</td><td>ST/381/2025</td><td>Jisha C S vs Sonia  George</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000355-2024</td><td>ST/375/2025</td><td>A B Traders vs Adhiq Agencies</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000206-2025</td><td>ST/100/2025</td><td>HDFC BANK LTD vs Ansar P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000085-2025</td><td>ST/102/2025</td><td>HDFC BANK LTD vs ANITHA KUMARI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000127-2025</td><td>ST/64/2025</td><td>HDFC BANK vs SHEHANAS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000277-2024</td><td>ST/3/2025</td><td>HDFC BANK LTD vs Rini Thankachan</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000079-2025</td><td>ST/119/2025</td><td>Sunil Kumar B vs Arun MG</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000097-2025</td><td>ST/57/2025</td><td>HDFC Bank Ltd vs Ramani</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000922-2025</td><td>ST/513/2025</td><td>HDFC BANK LTD vs RAJITH M R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000086-2025</td><td>ST/83/2025</td><td>HDFC BANK LTD vs NEETHU S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000038-2025</td><td>ST/133/2025</td><td>HDFC BANK LTD vs PRADEEP KUNJAPPI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000207-2025</td><td>ST/157/2025</td><td>HDFC BANK LTD vs Suhaib Abdhul Jaleel</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000202-2025</td><td>ST/142/2025</td><td>HDFC BANK LTD vs Siju Achankunju</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000118-2025</td><td>ST/67/2025</td><td>HDFC BANK  vs SHAJI VARGHESE</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000082-2025</td><td>ST/60/2025</td><td>HDFC Bank LTD vs ANISH KUMAR</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000531-2025</td><td>ST/323/2025</td><td>Bank Employees Co-operative Society Ltd vs Rosamma Babu</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000075-2024</td><td>ST/73/2025</td><td>Sree Gokulam Chit &Finance Co.Pvt Ltd. vs Haseena</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000203-2025</td><td>ST/132/2025</td><td>HDFC BANK LTD vs Jagannadhan Unnithan K N</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000191-2025</td><td>ST/135/2025</td><td>HDFC BANK LTD vs Suresh G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001000-2025</td><td>ST/521/2025</td><td>Haritha Syndicate vs Ananthakrishnan J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000382-2025</td><td>ST/134/2025</td><td>HDFC BANK LTD vs ANVAR S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-05" data-outcome="ACQUITTED"><td>KL-000281-2025</td><td>ST/312/2025</td><td>Vijayaleksmi M vs Sheela Kumari</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000319-2026</td><td>ST/109/2026</td><td>SHAKTHIKULANGARA NIDHI LTD vs Vijayakumari Pillai</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000161-2026</td><td>ST/70/2026</td><td>Shree Padma Nidhi Limited vs Sanil C</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000669-2025</td><td>ST/61/2026</td><td>Shabin S vs  M K Agencies and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001059-2025</td><td>ST/710/2025</td><td>Senatro vs Casmel Fernadez</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000314-2025</td><td>ST/167/2025</td><td>Darsana vs Sreedevi</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000378-2025</td><td>ST/272/2025</td><td>M/s Achimed Health Care LLP vs M/S TRICHUR SURGICALS and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000416-2026</td><td>ST/164/2026</td><td>HDFC BANK LTD vs AASHLEYS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-001243-2025</td><td>ST/837/2025</td><td>SILVERLINE TRADING COMPANY vs ANIL KUMAR DAMODARAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-001062-2025</td><td>ST/687/2025</td><td>Haritha Syndicate vs Renjini</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-001032-2025</td><td>ST/610/2025</td><td>HDFC BANK LTD vs HARISON A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000336-2025</td><td>ST/360/2025</td><td>Sameer  R vs Shamnad</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000220-2025</td><td>ST/160/2025</td><td>Manoj G vs Shibu S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000457-2025</td><td>ST/222/2025</td><td>SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs Reghunathan K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000341-2025</td><td>ST/147/2025</td><td>HDFC BANK LTD vs VINCY V S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000485-2025</td><td>ST/379/2025</td><td>Mary Rakhee vs Anjali U</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000709-2025</td><td>ST/388/2025</td><td>ANZAR vs Thanzal</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000379-2025</td><td>ST/314/2025</td><td>M/S ALCHIMED HEALTH CARE LLP vs M/S TRICHUR SURGICALS and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000698-2025</td><td>ST/411/2025</td><td>ANIL KUMAR vs Ranjitha V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000555-2025</td><td>ST/280/2025</td><td>AVM Agencies vs Jaggir Muhammed</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000510-2025</td><td>ST/253/2025</td><td>HDFC BANK LTD vs RAJI THOMAS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000195-2025</td><td>ST/164/2025</td><td>HDFC BANK LTD vs Sujith S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001109-2025</td><td>ST/732/2025</td><td>Suresh Kumar T vs Raveendran Achary</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000995-2025</td><td>ST/546/2025</td><td>HDFC BANK LTD vs JOBSON THOMAS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000793-2025</td><td>ST/463/2025</td><td>M/s Kollam Vyapari Vyavasayi Co-operative Society vs Joshy George and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000757-2025</td><td>ST/397/2025</td><td>HDFC BANK LTD vs ABDUL SAMAD</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000529-2025</td><td>ST/245/2025</td><td>M/S Fort In Infra Developers Private Limited vs Arul S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000766-2025</td><td>ST/812/2025</td><td>Sanoop Salton vs Anoob B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000694-2025</td><td>ST/535/2025</td><td>M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd vs Unni Krishnan Kartha</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001071-2025</td><td>ST/694/2025</td><td>HDFC BANK LTD vs SHEELA S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000955-2025</td><td>ST/518/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Sunil  Kumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000503-2025</td><td>ST/322/2025</td><td>Binu vs Faizy</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000588-2025</td><td>ST/421/2025</td><td>MULTIMIX DISTRIBUTORS vs Muneer</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001038-2025</td><td>ST/615/2025</td><td>Sunil Kumar B vs Arun M G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-001218-2026</td><td>nan</td><td>SUNIL V vs KEERTHI S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000442-2025</td><td>ST/406/2025</td><td>Santha vs Deepa S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001221-2025</td><td>ST/826/2025</td><td>Prajeeshkumar Y vs Shajo K P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000431-2025</td><td>ST/508/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Suresh Kumar U S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000126-2025</td><td>ST/65/2025</td><td>HDFC BANK vs SOUMYA MOHAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000020-2025</td><td>ST/88/2025</td><td>MGR ASSOCIATES vs Sujatha</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000105-2025</td><td>ST/97/2025</td><td>HDFC BANK LTD vs SAJI KALEEKKAL MATHEW</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000650-2025</td><td>ST/303/2025</td><td>Gireeshchandran Nair C P vs Rajkumar V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000469-2025</td><td>ST/190/2025</td><td>HDFC BANK LTD vs FAISAL K M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000066-2025</td><td>ST/244/2025</td><td>Kerala Kaumudi vs Alankar Silks</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001237-2025</td><td>ST/840/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Seema Sundaren</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000913-2025</td><td>ST/503/2025</td><td>Vidhyadharan G vs Sherafudeen H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000898-2025</td><td>ST/538/2025</td><td>Sunil Kumar B vs Arun MG</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000055-2025</td><td>ST/203/2025</td><td>Savithri vs Trivandrum chicken</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000065-2024</td><td>ST/42/2025</td><td>M/s.Orient-Agencies vs Sarin T K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000068-2025</td><td>ST/53/2025</td><td>Rakhil R vs Minikumari KP</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000285-2024</td><td>ST/113/2025</td><td>Athira S vs FARHANA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000113-2025</td><td>ST/298/2025</td><td>SYAM JOY vs SOBHANA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000135-2025</td><td>ST/194/2025</td><td>M/s Evangaline Dev Impex Pvt Ltd  vs Vineetha  Vijayan</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000141-2024</td><td>ST/11/2025</td><td>Sanoj vs Asha S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000154-2025</td><td>ST/87/2025</td><td>HDFC BANK LTD vs AJITH KUMAR K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000209-2024</td><td>ST/48/2025</td><td>Athira S vs shobhitha</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000211-2025</td><td>ST/101/2025</td><td>HDFC BANK LTD vs Shameer B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000334-2024</td><td>ST/29/2025</td><td>Sheela Mohan vs Leenadas J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000335-2024</td><td>ST/311/2025</td><td>Subi Darsan vs Anziya A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000342-2024</td><td>ST/19/2025</td><td>HDFC BANK LTD vs VASANTHAKUMARI S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000418-2025</td><td>ST/153/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Arjun  A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000425-2025</td><td>ST/188/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Rahul Raj</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000426-2025</td><td>ST/171/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Anoop</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000427-2025</td><td>ST/172/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Dheeraj B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000430-2025</td><td>ST/175/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Shintu Binu</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000466-2025</td><td>ST/189/2025</td><td>Mohammad Shafin vs Jasmie S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000572-2025</td><td>ST/353/2025</td><td>Ramaswamy  V vs Ajayakumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000727-2025</td><td>ST/489/2025</td><td>Peroor Karunalloor Bhagavathi Temple Trust vs Jayaganesh</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-07" data-outcome="CONVICTED"><td>KL-000701-2025</td><td>ST/478/2025</td><td>N K Chandra Kumar vs M/s Brothers Shopping Mall and 1 Other</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-01" data-outcome="ACQUITTED"><td>KL-000722-2025</td><td>ST/559/2025</td><td>Julius Pathrose vs Sajeela</td><td>Post-Judgement</td><td>ACQUITTED</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000729-2025</td><td>ST/389/2025</td><td>Madhusoodanan Pillai vs ANILKUMAR</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-03" data-outcome="DISMISSED"><td>KL-001254-2025</td><td>ST/841/2025</td><td>Anilkumar vs Mumthas I</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000753-2025</td><td>ST/736/2025</td><td>Helen Samuel vs Bindhu</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-001026-2025</td><td>ST/575/2025</td><td>ARSH  N vs FRANCIS  ALBERT</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000322-2024</td><td>ST/78/2025</td><td>Sujith Sukumaran vs Sijimol</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-02" data-outcome="DISMISSED"><td>KL-000268-2024</td><td>ST/44/2025</td><td>SHIVAKUMAR PATTEL vs K Rajenderkumar</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-11" data-outcome="DISMISSED"><td>KL-000274-2025</td><td>ST/156/2025</td><td>Sahad vs Ajmeer</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000795-2025</td><td>nan</td><td>Saubhagya Finance vs Vasumathi S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-04" data-outcome="CONVICTED"><td>KL-000285-2025</td><td>ST/108/2025</td><td>Cleetas Antony vs Mahadevan T R</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2025-12" data-outcome="DISMISSED"><td>KL-000833-2025</td><td>ST/452/2025</td><td>Gopalakrishna Pillai vs Remanan Pillai</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-03" data-outcome="ACQUITTED"><td>KL-000603-2025</td><td>ST/271/2025</td><td>Bijumon  K vs Siddeek</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-10" data-outcome="DISMISSED"><td>KL-000943-2025</td><td>nan</td><td>Rema K vs Reeja S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000936-2025</td><td>ST/744/2025</td><td>Haritha Syndicate vs Prasad T</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000054-2025</td><td>ST/75/2025</td><td>MARANATHA FINCORP vs DEVIKA SAJI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001159-2025</td><td>ST/778/2025</td><td>Thumpassery Combines vs Honey Bastian</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000671-2026</td><td>ST/327/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Krishna Prabha</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000750-2025</td><td>ST/386/2025</td><td>Prasanth  V vs SUSHAMA BABU ALIAS SUSHAMA S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-001070-2025</td><td>ST/693/2025</td><td>HDFC BANK LTD vs ABHIJITH J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000493-2025</td><td>ST/206/2025</td><td>HDFC BANK LTD vs SAI KUMAR S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000437-2025</td><td>ST/404/2025</td><td>Santha vs Hussain K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000301-2025</td><td>ST/259/2025</td><td>Employees State Insurance Corporation vs Muhammed Rafeeq and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000770-2025</td><td>ST/472/2025</td><td>HDFC BANK LTD vs JERIL J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000808-2026</td><td>ST/428/2026</td><td>Sujahi vs Naseera Beevi A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2025-02" data-outcome="CONVICTED"><td>KL-000012-2025</td><td>ST/39/2025</td><td>M M Khan vs Chacko Panicker</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000102-2025</td><td>ST/130/2025</td><td>Renjith  S vs Didi Karunan</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2026-02" data-outcome="ACQUITTED"><td>KL-000131-2025</td><td>ST/228/2025</td><td>George Varghese vs Aniyan Koshy</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000720-2026</td><td>ST/353/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Jayalekshmy S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-001003-2025</td><td>ST/786/2025</td><td>UNIWEND MEDICALS Pvt. Ltd vs Dr Simel Koshy</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-03" data-outcome="CONVICTED"><td>KL-000175-2025</td><td>ST/107/2025</td><td>Lathika Sasankan vs Shiju A</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000305-2025</td><td>nan</td><td>C.P Enterprises vs Jen  Joseph J L</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-08" data-outcome="ACQUITTED"><td>KL-000640-2025</td><td>ST/302/2025</td><td>MAHESH PRAKASH vs SANTHOSH KUMAR</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000286-2026</td><td>nan</td><td>Sudarsan Financiers vs Sabitha Thampi</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-001500-2026</td><td>ST/864/2026</td><td>HDFC BANK LTD vs JASMIE</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000652-2026</td><td>nan</td><td>SREE GOKULAM CHITS AND FUNDS PVT LTD vs REVATHY M M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000916-2026</td><td>ST/640/2026</td><td>Geethu L vs Aji Sudheesh</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="CONVICTED"><td>KL-000667-2025</td><td>ST/307/2025</td><td>Leony Fernandez vs Henry Christopher</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000344-2024</td><td>ST/28/2025</td><td>HDFC BANK LTD vs DEEPASENAN JL</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000052-2024</td><td>ST/226/2025</td><td>Al Nabeel vs Siyad A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-09" data-outcome="CONVICTED"><td>KL-000345-2025</td><td>ST/365/2025</td><td>Rajendran M vs Sureshkumar  S</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000796-2026</td><td>nan</td><td>PANCHERIL TRADERS vs DEEPA</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2025-10" data-outcome="ACQUITTED"><td>KL-000319-2024</td><td>ST/13/2025</td><td>Riyas B vs Athul Raj R</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="ACQUITTED"><td>KL-000380-2025</td><td>ST/215/2025</td><td>Ahamed Kabeer vs Rejeena</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-03" data-outcome="ACQUITTED"><td>KL-000415-2025</td><td>ST/384/2025</td><td>SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs LATHA S</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-07" data-outcome="CONVICTED"><td>KL-000225-2025</td><td>ST/304/2025</td><td>Varghese K S vs Sreekumar B</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-001054-2025</td><td>ST/661/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Subha  K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2025-12" data-outcome="ACQUITTED"><td>KL-000562-2025</td><td>ST/246/2025</td><td>Yahiya vs Subair</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-09" data-outcome="CONVICTED"><td>KL-000720-2025</td><td>ST/359/2025</td><td>Rajeev vs SRS Flour Mill</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000492-2025</td><td>ST/273/2025</td><td>HDFC BANK LTD vs S SURENDRAN PILLAI</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-07" data-outcome="CONVICTED"><td>KL-000573-2025</td><td>ST/327/2025</td><td>Vinod  P G vs Shyam Mohan</td><td>Appearance</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000519-2025</td><td>nan</td><td>Santha vs Suneesh</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="ACQUITTED"><td>KL-000157-2024</td><td>ST/257/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs SINDHU L</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000770-2026</td><td>nan</td><td>Viji Varghese vs Jomon K</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000279-2024</td><td>ST/1/2025</td><td>HDFC BANK LTD vs Bindhu G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-001114-2026</td><td>ST/606/2026</td><td>Paravur Akshaya Nidhi Ltd vs Preenakuimari</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000869-2025</td><td>ST/808/2025</td><td>Abdul Salim M vs M/s Frizzile Foods and 3 Others</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000700-2026</td><td>ST/341/2026</td><td>Jalaja C vs Maya Sreekumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000922-2026</td><td>ST/495/2026</td><td>KOLLAM URBAN VIKAS NIDHI LIMITED vs SANTHI S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-09" data-outcome="CONVICTED"><td>KL-000745-2025</td><td>ST/396/2025</td><td>Shyni vs Susy A</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-001170-2025</td><td>ST/773/2025</td><td>Sunil Kumar B vs Arun MG</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000666-2026</td><td>ST/364/2026</td><td>K Rajan vs Reji Mol</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-001177-2025</td><td>ST/790/2025</td><td>Premkrishnan V vs Santhosh Netto</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-000966-2025</td><td>ST/645/2025</td><td>Gopalakrishna Pillai vs Veena Anil</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-11" data-outcome="ABATED"><td>KL-000043-2025</td><td>ST/258/2025</td><td>Manual Cruz Darwin vs GOPINATHAN</td><td>Post-Disposal</td><td>ABATED</td><td>nan</td><td>2025-11</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000278-2025</td><td>ST/127/2025</td><td>MGR ASSOCIATES vs CHANDRIKA K K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000852-2026</td><td>ST/658/2026</td><td>Bank Employees Cooperative Society vs Sunil Kumar S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2025-12" data-outcome="ABATED"><td>KL-000453-2025</td><td>ST/266/2025</td><td>Manual Cruz Darwin vs Gopinathan</td><td>Post-Disposal</td><td>ABATED</td><td>nan</td><td>2025-12</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000489-2025</td><td>ST/274/2025</td><td>HDFC BANK LTD vs S SURENDRAN PILLAI</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="ACQUITTED"><td>KL-000479-2025</td><td>ST/209/2025</td><td>Shylajakumari S vs Anandan</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000866-2025</td><td>ST/471/2025</td><td>HDFC BANK LTD vs JASMIN ALI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000790-2025</td><td>nan</td><td>Saubhagya Finance vs Diana</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000795-2026</td><td>ST/412/2026</td><td>Sunil Kumar B vs Arun MG</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-08" data-outcome="ACQUITTED"><td>KL-000631-2025</td><td>ST/283/2025</td><td>Manju  Sharavanan vs Santhosh Kumar J</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="ACQUITTED"><td>KL-000480-2025</td><td>ST/214/2025</td><td>Shylajakumari S vs Anandan</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000066-2026</td><td>ST/361/2026</td><td>Samastha Nair Nidhi Ltd vs Leela S K</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000399-2025</td><td>ST/229/2025</td><td>Sudharshanan vs Bindhu</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000165-2025</td><td>nan</td><td>SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs UDAYAKUMAR</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-001044-2025</td><td>ST/621/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Saraswathy  K V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-04" data-outcome="DISMISSED"><td>KL-001093-2025</td><td>ST/724/2025</td><td>Saubhagya Finance vs Neetha  S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000336-2024</td><td>ST/23/2025</td><td>HDFC BANK LTD vs MATHEW CHIRAYIL CHACKO</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-08" data-outcome="DISMISSED"><td>KL-000384-2025</td><td>nan</td><td>ANIL KUMAR vs MALAVIKA G</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000836-2025</td><td>nan</td><td>HDFC BANK LTD vs Anandhu A S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000797-2025</td><td>nan</td><td>Saubhagya Finance vs Geethu S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000535-2025</td><td>nan</td><td>HDFC BANK LTD vs NCS Vastram LLP</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000914-2025</td><td>nan</td><td>Rema K vs Reeja S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-02" data-outcome="DISMISSED"><td>KL-000047-2026</td><td>nan</td><td>RUKKIYABEEVI vs KAREEM N A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000731-2025</td><td>ST/525/2025</td><td>HDFC BANK LTD vs SHANU SULAIMAN SUBAIDA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-04" data-outcome="DISMISSED"><td>KL-000463-2026</td><td>nan</td><td>Nizar M vs Sheeja A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000140-2025</td><td>nan</td><td>Vishnu  Mohan vs Vikas Kothari</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-02" data-outcome="DISMISSED"><td>KL-000274-2024</td><td>nan</td><td>HDFC BANK LTD vs Rajamma Raghavan</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-01" data-outcome="WITHDRAWN"><td>KL-000287-2024</td><td>ST/30/2025</td><td>HARITHA SYNDICATE vs DIVYA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-01</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000582-2025</td><td>nan</td><td>Haritha Syndicate vs Vineetha S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000738-2025</td><td>nan</td><td>Naizam M vs Prathapachandran P R</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-12" data-outcome="DISMISSED"><td>KL-001144-2025</td><td>nan</td><td>Paulose George vs Anil Kumar and 1 Other</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-001033-2025</td><td>ST/611/2025</td><td>HDFC BANK LTD vs SHEEBA S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000280-2024</td><td>nan</td><td>HDFC BANK LTD vs Nishad M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001031-2025</td><td>ST/609/2025</td><td>HDFC BANK LTD vs PEEDIKATHARAYIL AGENCIES, Proprietor - KABEER.I</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000264-2024</td><td>nan</td><td>THUMPASSERY COMBINES vs Smt SUMI J</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000960-2025</td><td>nan</td><td>A P Gopakumar vs Dhanesh D</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000210-2025</td><td>nan</td><td>HDFC BANK LTD vs Abul Aziz Najeeb</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000023-2025</td><td>ST/195/2025</td><td>HDFC BANK LTD vs JIJOMON JOSEPH</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000049-2024</td><td>ST/4/2025</td><td>SAJU H  DAS vs JAYAKUMARI R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001232-2025</td><td>nan</td><td>HDFC Bank Ltd vs Vinod Kumar Raveendran Pillai</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001216-2025</td><td>ST/156/2026</td><td>ALTHAF N vs VISHNU PRASAD</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000923-2025</td><td>ST/633/2025</td><td>HDFC BANK LTD vs SANOOP K I</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000359-2025</td><td>ST/122/2025</td><td>HDFC BANK LTD vs JAYARAM KRISHNAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000319-2025</td><td>ST/112/2025</td><td>BINESH B vs DHANYA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001192-2025</td><td>ST/50/2026</td><td>HDFC BANK LTD vs VINDHYA VIJAYAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000388-2025</td><td>ST/163/2025</td><td>HDFC BANK LTD vs SHIJIN CHACKO C</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000756-2025</td><td>ST/398/2025</td><td>HDFC BANK LTD vs SUJITH S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000968-2025</td><td>ST/604/2025</td><td>HDFC BANK LTD vs REMANI BABU</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-000565-2026</td><td>nan</td><td>Anil Thankachan vs Sreedevi R</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000848-2025</td><td>ST/465/2025</td><td>HDFC BANK LTD vs ARUNKUMAR K A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000345-2024</td><td>ST/17/2025</td><td>HDFC BANK LTD vs SALIM P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000864-2025</td><td>ST/469/2025</td><td>HDFC BANK LTD vs ANEES P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000272-2024</td><td>ST/243/2025</td><td>HDFC Bank LTD vs Jithin C Raj</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000122-2024</td><td>ST/7/2025</td><td>HDFC BANK LTD vs Retheesh Kumar T</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000854-2025</td><td>ST/467/2025</td><td>HDFC BANK LTD vs LIMITLESS AGENCIES</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-001065-2025</td><td>ST/690/2025</td><td>M/S Fort In Infra Developers Private Limited vs Fahaz Sha  M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000205-2025</td><td>ST/99/2025</td><td>HDFC BANK LTD vs Lalithammal  V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000214-2025</td><td>ST/504/2025</td><td>HDFC BANK LTD vs Vigneswaran S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000860-2025</td><td>ST/568/2025</td><td>HDFC BANK LTD vs Santhosh Thankappan</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001194-2025</td><td>ST/51/2026</td><td>HDFC BANK LTD vs RESHMA M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000509-2025</td><td>ST/219/2025</td><td>HDFC BANK LTD vs SHAHARBANU A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000938-2025</td><td>ST/671/2025</td><td>HDFC BANK LTD vs MAHESH MOHAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000293-2024</td><td>ST/129/2025</td><td>HDFC BANK LTD vs Anusree S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-12" data-outcome="WITHDRAWN"><td>KL-000849-2025</td><td>ST/665/2025</td><td>HDFC BANK LTD vs Prabhath T</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000259-2024</td><td>ST/9/2025</td><td>HDFC bank LTD vs Suraj S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000937-2025</td><td>ST/670/2025</td><td>HDFC BANK LTD vs NOUSHAR S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000008-2025</td><td>ST/252/2025</td><td>HDFC BANK LTD vs REEBU  RAJ</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000350-2025</td><td>ST/118/2025</td><td>HDFC BANK LTD vs MUHAMMED SHABIN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000449-2025</td><td>ST/260/2025</td><td>ALCHIMED HEALTH CARE LLP vs ASCENT BIOMEDICAL INC and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000342-2025</td><td>ST/249/2025</td><td>HDFC BANK LTD vs BINDHU ANANDAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000967-2025</td><td>ST/603/2025</td><td>HDFC BANK LTD vs THASNI S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000852-2025</td><td>ST/565/2025</td><td>HDFC BANK LTD vs Vinu V Nair</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000771-2025</td><td>ST/473/2025</td><td>HDFC BANK LTD vs MEENAKUMARI R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000927-2025</td><td>ST/634/2025</td><td>RADHAMONY R vs VAHIDA A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000859-2025</td><td>ST/567/2025</td><td>HDFC BANK LTD vs Sowraj Sudheeran</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000862-2025</td><td>ST/461/2025</td><td>HDFC BANK LTD vs RESHMA P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000899-2025</td><td>ST/593/2025</td><td>HDFC BANK LTD vs KIRAN K PILLAI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000153-2025</td><td>ST/237/2025</td><td>HDFC Bank ltd vs ROSHIN NK</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000767-2025</td><td>ST/415/2025</td><td>HDFC BANK LTD vs VIJESH KUMAR V</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-001035-2025</td><td>ST/613/2025</td><td>HDFC BANK LTD vs FIROS THAMPI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001104-2025</td><td>ST/721/2025</td><td>HDFC BANK LTD vs JIJUMON S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000288-2024</td><td>ST/94/2025</td><td>HDFC Bank LTD vs Aleyamma Varghese</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000755-2025</td><td>ST/416/2025</td><td>SATHEESH KUMAR G vs Geethadevi R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000505-2025</td><td>ST/270/2025</td><td>Binu vs Nivas H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-04" data-outcome="WITHDRAWN"><td>KL-000018-2026</td><td>ST/18/2026</td><td>John Mathew vs Jose John</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-04</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000863-2025</td><td>ST/468/2025</td><td>HDFC BANK LTD vs YASODHARAN K</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000993-2025</td><td>ST/681/2025</td><td>HDFC BANK LTD vs AJINSHA S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000263-2026</td><td>ST/87/2026</td><td>Paravur Akshaya Nidhi Ltd vs Abhilash G</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000312-2026</td><td>ST/118/2026</td><td>Saubhagya Finance vs Renjith Raveendran Raveendran</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000562-2026</td><td>ST/257/2026</td><td>Shree Padma Nidhi Limited vs Arun R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001072-2025</td><td>ST/695/2025</td><td>HDFC BANK LTD vs GREESHMA MOHAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-05" data-outcome="WITHDRAWN"><td>KL-000307-2024</td><td>ST/120/2025</td><td>G VIKRAMAN PILLAI vs JAYANTHI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-05</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001213-2025</td><td>ST/803/2025</td><td>HDFC BANK LTD vs AL RIYAS S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000125-2025</td><td>ST/66/2025</td><td>HDFC BANK vs MOHSINA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2025-06" data-outcome="WITHDRAWN"><td>KL-000182-2025</td><td>ST/144/2025</td><td>HDFC BANK LTD vs BOSCART LOGISTICS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-06</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000163-2025</td><td>ST/98/2025</td><td>HDFC bank LTD vs Adersh  S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000950-2025</td><td>ST/544/2025</td><td>HDFC BANK LTD vs SALIM H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001037-2025</td><td>ST/614/2025</td><td>HDFC BANK LTD vs AMALU L</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000072-2025</td><td>ST/55/2025</td><td>HDFC BANK LTD vs KUNJUMOL</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001181-2025</td><td>ST/777/2025</td><td>HDFC BANK LTD vs KODIYATTU TRADERS</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000877-2025</td><td>ST/570/2025</td><td>HDFC BANK LTD vs SAYYADALIKHAN S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000926-2025</td><td>ST/586/2025</td><td>Ramamoorthi vs M/s. Mayura Silks and 4 Others</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001020-2025</td><td>ST/547/2025</td><td>Abdul Javad A vs M/S GreenHill Industries and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001197-2025</td><td>ST/804/2025</td><td>Sthudeep R vs Shahina</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000600-2025</td><td>ST/281/2025</td><td>Haritha Syndicate vs Hussain</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000334-2025</td><td>ST/200/2025</td><td>Gireesh Kumar TK vs Renjith Chandran</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-001102-2025</td><td>ST/726/2025</td><td>IDBI Bank Ltd vs Jayasree R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000349-2025</td><td>ST/115/2025</td><td>HDFC BANK LTD vs ANZAR N</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000325-2025</td><td>ST/182/2025</td><td>HDFC BANK LTD vs SHANAVAS A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-001045-2025</td><td>ST/622/2025</td><td>SHAKTHIKULANGARA NIDHI LTD vs Mini  M C</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000576-2025</td><td>ST/319/2025</td><td>Sivaprasad vs Jayachandrababu</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-07" data-outcome="WITHDRAWN"><td>KL-000024-2025</td><td>ST/92/2025</td><td>HDFC BANK LTD vs DEVANANTH S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-07</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000117-2025</td><td>ST/220/2025</td><td>Arjun D vs Kiran Babu R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000759-2025</td><td>ST/436/2025</td><td>HDFC BANK LTD vs HAMSA HAJI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000376-2025</td><td>ST/313/2025</td><td>M/s Alchimed Health Care LLP vs M/s Trichur Surgicals and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000422-2025</td><td>ST/204/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Shameer P N</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000773-2025</td><td>ST/417/2025</td><td>Pavanan vs PRATHEEP P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000186-2025</td><td>ST/845/2025</td><td>Vijayakumar vs Nazarudeen S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000875-2025</td><td>ST/477/2025</td><td>HDFC BANK LTD vs RESON P REJI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000146-2025</td><td>ST/268/2025</td><td>HDFC BANK LTD vs SUJITH LAL</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000597-2025</td><td>ST/326/2025</td><td>Babu  Clemant vs Aju  Nelson</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000099-2025</td><td>ST/148/2025</td><td>Suresh Kumar T vs Akhil A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001001-2025</td><td>ST/522/2025</td><td>Haritha Syndicate vs Merli</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-09" data-outcome="WITHDRAWN"><td>KL-000146-2024</td><td>ST/211/2025</td><td>NAPOLEON P vs M Majeed</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001122-2025</td><td>ST/742/2025</td><td>Balu B vs Sheela</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000165-2026</td><td>ST/57/2026</td><td>MANIAMMA S vs ROHINI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-001208-2025</td><td>ST/800/2025</td><td>Deepak S vs Jijomon Joseph</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-02" data-outcome="WITHDRAWN"><td>KL-000098-2025</td><td>ST/59/2025</td><td>SHIBU V vs MASHDAS M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000258-2025</td><td>ST/105/2025</td><td>Abdul Ibrahim vs Prathapachandran P R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000419-2025</td><td>ST/178/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Mathew  Thomas</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000421-2025</td><td>ST/159/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Arun  A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000279-2025</td><td>ST/126/2025</td><td>MARANATHA FINCORP vs LALEESH S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-01" data-outcome="WITHDRAWN"><td>KL-000332-2024</td><td>ST/31/2025</td><td>Sheeja N vs Bhadran</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-01</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000357-2025</td><td>ST/116/2025</td><td>M/s Sidhartha Trading Corporation vs Ahmed Kabeer</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="WITHDRAWN"><td>KL-000408-2025</td><td>ST/152/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Abhijith  Ajith</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-02" data-outcome="WITHDRAWN"><td>KL-000658-2025</td><td>ST/309/2025</td><td>HDFC Bank Ltd vs AMRUTHLAL D M</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-02</td></tr>
+<tr data-month="2025-12" data-outcome="DISMISSED"><td>KL-000189-2025</td><td>ST/352/2025</td><td>Pushpa Rajan P vs Judeson Thomas</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-01" data-outcome="DISMISSED"><td>KL-000596-2025</td><td>ST/506/2025</td><td>Nassarudeen M vs Siyad  P</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-12" data-outcome="DISMISSED"><td>KL-001140-2025</td><td>ST/757/2025</td><td>MOHAMMED ALI vs ANZAR A</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-01" data-outcome="ACQUITTED"><td>KL-000093-2025</td><td>ST/89/2025</td><td>Nowshar  H vs Muhammed Habeeb</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-10" data-outcome="CONVICTED"><td>KL-000231-2025</td><td>ST/103/2025</td><td>Shefeek  M vs Abdul Vaheed S</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2025-10</td></tr>
+<tr data-month="2026-08" data-outcome="CONVICTED"><td>KL-000180-2025</td><td>ST/81/2025</td><td>Gopakumar Gopi vs Sajitha</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000270-2024</td><td>ST/846/2025</td><td>HDFC Bank LTD vs Meenakumari R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000428-2025</td><td>ST/173/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Naveen K P</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2026-01" data-outcome="ACQUITTED"><td>KL-000693-2025</td><td>ST/484/2025</td><td>Gokul Raj vs Jyothikumar</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-12" data-outcome="ACQUITTED"><td>KL-000715-2025</td><td>ST/341/2025</td><td>Bhadran K vs Sahul Hameed</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2025-12</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000927-2026</td><td>ST/496/2026</td><td>M/s Kollam Urban Vikas Nidhi Ltd vs Girija Kumari</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-001116-2026</td><td>ST/619/2026</td><td>Paravur Akshaya Nidhi Ltd vs Sajitha S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-06" data-outcome="ACQUITTED"><td>KL-000263-2024</td><td>ST/267/2025</td><td>SreeGokulam Chits and Finance CO vs Sajeshkumar</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-001070-2026</td><td>ST/573/2026</td><td>Nedungolam Gramin Nidhi Ltd vs Geetha R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000932-2026</td><td>ST/497/2026</td><td>KOLLAM URBAN VIKAS NIDHI LIMITED vs JUMAILATHU BEEVI</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-03" data-outcome="WITHDRAWN"><td>KL-000587-2025</td><td>ST/414/2025</td><td>Rajendran K vs Gireesh S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-001076-2025</td><td>ST/696/2025</td><td>HDFC BANK LTD vs JUBIN KOSHY</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-06" data-outcome="CONVICTED"><td>KL-000511-2025</td><td>ST/315/2025</td><td>Mohammed Sidhique  E S vs Sirus J M</td><td>Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="ACQUITTED"><td>KL-000521-2025</td><td>ST/430/2025</td><td>Satheesh Babu vs Jayaram</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-08" data-outcome="DISMISSED"><td>KL-000245-2026</td><td>ST/84/2026</td><td>Prasad Pillai vs Vijayasree</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2025-08" data-outcome="ABATED"><td>KL-000188-2025</td><td>nan</td><td>Ahamed Kabeer vs Basil Paul</td><td>Cognizance</td><td>ABATED</td><td>nan</td><td>2025-08</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000651-2026</td><td>nan</td><td>Chemmanur Gold Palace International Ltd vs Sujitha S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000556-2026</td><td>ST/610/2026</td><td>SHEENA S vs JAYAKUMARI</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-001229-2025</td><td>nan</td><td>HDFC Bank Ltd vs Ajesh Kuttappan</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000460-2026</td><td>ST/627/2026</td><td>HDFC BANK LTD vs VARGHESE T</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000632-2026</td><td>nan</td><td>Chemmanur   Gold Palace International ltd vs Sobha Ramachandran</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="DISMISSED"><td>KL-000633-2026</td><td>nan</td><td>Chemmanur gold palace international ltd vs Radhika G S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2025-02" data-outcome="ABATED"><td>KL-000267-2024</td><td>ST/849/2025</td><td>Kabeer  T vs Jayapalan</td><td>Post-Disposal</td><td>ABATED</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000417-2025</td><td>ST/530/2025</td><td>SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs SIMI HANEEF</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000788-2026</td><td>ST/751/2026</td><td>DIVYA FOODS vs THANIMA HOMESHOP MARKETING NETWORK</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-08" data-outcome="DISMISSED"><td>KL-000846-2025</td><td>ST/850/2025</td><td>HDFC Bank Ltd vs Vimalkumar Vijayan</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-001016-2026</td><td>nan</td><td>Chemmanur gold palace international ltd vs Amritha K</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000232-2026</td><td>ST/81/2026</td><td>Chathannoor Sree Nidhi Ltd vs Maya</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-001085-2025</td><td>ST/704/2025</td><td>Saubhagya Finance vs Prem Kumar S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000777-2025</td><td>ST/447/2025</td><td>Haritha Syndicate  vs Anandu Anilkumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000621-2025</td><td>ST/557/2025</td><td>Travancore Alchimed Health Care LLP vs M/S GLOBAL ASSOCIATES</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-001092-2025</td><td>ST/714/2025</td><td>Saubhagya Finance vs Renjith Raj R</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000996-2025</td><td>ST/555/2025</td><td>Arya Sugunan vs Arifkhan</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000988-2025</td><td>ST/676/2025</td><td>HDFC BANK LTD vs NANDU M R</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000853-2026</td><td>ST/440/2026</td><td>C Raveendran Pillai vs Balamurali</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000991-2025</td><td>ST/682/2025</td><td>Haritha Syndicate vs Shahar A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-000933-2025</td><td>ST/685/2025</td><td>Haritha Syndicate vs Santhosh A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000862-2026</td><td>ST/447/2026</td><td>Paravur Akshya Nidhi Ltd vs Premsankar S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000982-2025</td><td>ST/651/2025</td><td>HDFC BANK LTD vs VINEETH B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-07" data-outcome="DISMISSED"><td>KL-000419-2026</td><td>ST/160/2026</td><td>Maxvalue Credits and Investments Ltd. vs Ahammed Ubaidulla</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-05" data-outcome="DISMISSED"><td>KL-001088-2025</td><td>ST/709/2025</td><td>Saubhagya Finance vs Sindhu K</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000691-2026</td><td>ST/331/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Akhil Raj</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-08" data-outcome="DISMISSED"><td>KL-001234-2025</td><td>ST/285/2026</td><td>HDFC Bank Ltd vs Mary Subha</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000672-2026</td><td>ST/328/2026</td><td>Vidhyadiraja Grama Nidhi Limited vs Santhosh Kumar</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000016-2026</td><td>ST/8/2026</td><td>HDFC BANK LTD vs PREENU PRASAD</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000861-2025</td><td>ST/569/2025</td><td>HDFC BANK LTD vs Shafna A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000960-2026</td><td>ST/522/2026</td><td>Puthen Purayil Associates vs ME Tronics and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-000414-2026</td><td>ST/191/2026</td><td>Sindhu P vs Treessa Thomas</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000630-2026</td><td>ST/370/2026</td><td>Ayiroor Nidhi Ltd vs Manu A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-08" data-outcome="WITHDRAWN"><td>KL-001146-2025</td><td>ST/760/2025</td><td>HDFC BANK LTD vs SURAJ S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-08</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000314-2026</td><td>ST/99/2026</td><td>Sunil Kumar B vs Arun MG</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-09" data-outcome="DISMISSED"><td>KL-000702-2026</td><td>ST/342/2026</td><td>George Silva vs Sreelal Nair</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000615-2026</td><td>ST/293/2026</td><td>Edge Interiors vs M/ s Intech Traders Pvt Ltd and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000617-2026</td><td>ST/294/2026</td><td>Edge Interiors vs M/s Intech Traders Pvt Ltd  and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000618-2026</td><td>ST/295/2026</td><td>Edge Interiors vs M/s Intech Traders Pvt Ltd and 1 Other</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000877-2026</td><td>ST/460/2026</td><td>Manappuram Finance Ltd vs Alexander T</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000883-2025</td><td>ST/572/2025</td><td>Haritha Syndicate vs Biju</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2025-08" data-outcome="ABATED"><td>KL-000100-2025</td><td>ST/149/2025</td><td>Raseena vs Praveen</td><td>Post-Disposal</td><td>ABATED</td><td>nan</td><td>2025-08</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-001025-2025</td><td>ST/628/2025</td><td>C O NINAN vs MARY DIANA</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-07" data-outcome="WITHDRAWN"><td>KL-000252-2026</td><td>ST/91/2026</td><td>Hashim Shoukathali vs Navaz K H</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-07</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000413-2025</td><td>ST/235/2025</td><td>sree gokulam chits and finance co pvt ltd vs SREEKUMARI MANOHARAN</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000192-2025</td><td>ST/96/2025</td><td>Darsana vs Remya Krishnan  S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-09" data-outcome="WITHDRAWN"><td>KL-001055-2025</td><td>ST/662/2025</td><td>Ramlath Y vs Thajudeen  E</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-06" data-outcome="WITHDRAWN"><td>KL-000710-2026</td><td>ST/360/2026</td><td>Raju S vs Rajula</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000383-2025</td><td>ST/181/2025</td><td>Pradeep S vs Ajayakumar B O</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000121-2025</td><td>ST/197/2025</td><td>kerala kaumudi vs Anilkumar P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-06" data-outcome="ACQUITTED"><td>KL-000149-2024</td><td>ST/277/2025</td><td>Sree Gokulam Chits and Finance Company vs sajeshkumar</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-06" data-outcome="ACQUITTED"><td>KL-000147-2024</td><td>ST/422/2025</td><td>Sree Gokulam Chit And Finance vs Sajeesh Kumar G</td><td>Post-Judgement</td><td>ACQUITTED</td><td>CONTESTED</td><td>2026-06</td></tr>
+<tr data-month="2026-09" data-outcome="CONVICTED"><td>KL-000273-2025</td><td>ST/290/2025</td><td>Life Care Agencies vs T K Yunus Kutty</td><td>Post-Judgement</td><td>CONVICTED</td><td>CONTESTED</td><td>2026-09</td></tr>
+<tr data-month="2026-05" data-outcome="WITHDRAWN"><td>KL-000434-2025</td><td>ST/168/2025</td><td>M/s Evangeline Dev Impex Pvt Ltd vs Ajayakrishnan P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-05</td></tr>
+<tr data-month="2026-01" data-outcome="DISMISSED"><td>KL-000740-2025</td><td>nan</td><td>Neethu T J vs Minimol</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000204-2025</td><td>ST/248/2025</td><td>HDFC BANK LTD vs Jayesh B</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2025-11" data-outcome="WITHDRAWN"><td>KL-000934-2025</td><td>ST/641/2025</td><td>HDFC BANK LTD vs PRASANTH R P</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-11</td></tr>
+<tr data-month="2026-01" data-outcome="WITHDRAWN"><td>KL-000865-2025</td><td>ST/470/2025</td><td>HDFC BANK LTD vs NIDHIN S</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2026-01</td></tr>
+<tr data-month="2025-02" data-outcome="DISMISSED"><td>KL-000273-2024</td><td>nan</td><td>HDFC Bank LTD vs Sharanya TK</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-02</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000796-2025</td><td>nan</td><td>Saubhagya Finance vs Sree Renjini U</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000798-2025</td><td>nan</td><td>Saubhagya Finance vs Jyothilakshmi L</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000907-2025</td><td>nan</td><td>Rema K vs Reeja S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-09" data-outcome="DISMISSED"><td>KL-000800-2025</td><td>nan</td><td>Saubhagya Finance vs Ram Kumar S</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2025-09</td></tr>
+<tr data-month="2025-08" data-outcome="WITHDRAWN"><td>KL-000155-2025</td><td>nan</td><td>sree gokulam chits and finance co pvt ltd vs Savad  A</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-08</td></tr>
+<tr data-month="2026-03" data-outcome="DISMISSED"><td>KL-000060-2026</td><td>nan</td><td>AYIROOR NIDHI LTD vs SANDHYA B</td><td>Post-Disposal</td><td>DISMISSED</td><td>UNCONTESTED</td><td>2026-03</td></tr>
+<tr data-month="2025-04" data-outcome="WITHDRAWN"><td>KL-000141-2025</td><td>nan</td><td>Cochin Bakers And Spices vs Benedict Benzon</td><td>Post-Disposal</td><td>WITHDRAWN</td><td>UNCONTESTED</td><td>2025-04</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+        function applyMonthFilter(month) {
+            const table = document.getElementById("dataTable");
+            const rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let total = 0, withdrawn = 0, judgement = 0, dismissed = 0;
+            for (let i = 0; i < rows.length; i++) {
+                const rowMonth = rows[i].getAttribute("data-month");
+                const outcome = (rows[i].getAttribute("data-outcome") || "").toUpperCase();
+                if (month === "ALL" || rowMonth === month) {
+                    rows[i].style.display = "";
+                    total++;
+                    if (outcome.includes("WITHDRAWN") || outcome.includes("SETTLED") || outcome.includes("COMPOUNDED")) {
+                        withdrawn++;
+                    } else if (outcome.includes("CONVICTED") || outcome.includes("ACQUITTED") || outcome.includes("JUDGEMENT")) {
+                        judgement++;
+                    } else if (outcome.includes("DISMISSED")) {
+                        dismissed++;
+                    }
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+            document.getElementById("kpiTotal").innerText = total;
+            document.getElementById("kpiWithdrawn").innerText = withdrawn;
+            document.getElementById("kpiJudgement").innerText = judgement;
+            document.getElementById("kpiDismissed").innerText = dismissed;
+            const wPct = total > 0 ? (100.0 * withdrawn / total).toFixed(1) : "0.0";
+            const jPct = total > 0 ? (100.0 * judgement / total).toFixed(1) : "0.0";
+            const dPct = total > 0 ? (100.0 * dismissed / total).toFixed(1) : "0.0";
+            document.getElementById("kpiWithdrawnSub").innerText = wPct + "% of monthly disposals";
+            document.getElementById("kpiJudgementSub").innerText = jPct + "% contested trial";
+            document.getElementById("kpiDismissedSub").innerText = dPct + "% defect / non-appearance";
+            document.getElementById("kpiMonthLabel").innerText = month === "ALL" ? "All Recorded Months" : "Month: " + month;
+            document.getElementById("recordCountText").innerText = "Showing " + total + " records";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            applyMonthFilter("2026-09");
+        });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q14 — Absconding Accused: Moved to LPR vs Awaiting CJM Approval — 24x7 ON Court Data View</title>
+    <style>
+        :root {
+            --primary: #0b1239;
+            --primary-hover: #16205b;
+            --accent-green: #10b981;
+            --accent-green-light: #ecfdf5;
+            --accent-green-border: #a7f3d0;
+            --accent-green-dark: #065f46;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0b1239;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 32px 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1320px; margin: 0 auto; }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--accent-green); text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 20px;
+            background: var(--accent-green-light);
+            color: var(--accent-green-dark);
+            border: 1px solid var(--accent-green-border);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .question-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-dark);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary);
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 22px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(11, 18, 57, 0.02);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.05);
+        }
+        .kpi-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 6px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 12px;
+            padding: 26px 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(11, 18, 57, 0.03);
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .search-input {
+            padding: 10px 14px;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            font-size: 13px;
+            width: 300px;
+            outline: none;
+            color: var(--primary);
+            font-family: inherit;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(11, 18, 57, 0.1);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .btn:hover { background: var(--primary-hover); }
+        .btn-accent { background: var(--accent-green); }
+        .btn-accent:hover { background: #059669; }
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+        th {
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            padding: 12px 14px;
+            border: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        th:hover { background: var(--primary-hover); }
+        td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+        }
+        tr:hover td { background: #f8fafc; }
+        .count-info { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .stage-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--border-dark);
+            background: #f8fafc;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .stage-pill:hover, .stage-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+        .stage-pill .count {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green-dark);
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .stage-pill.active .count {
+            background: #ffffff;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-nav">
+                <a href="../monthly_case_performance_report.html" class="back-link">← Back to Monthly Case Performance Report</a>
+                <span class="badge">24x7 ON Court Kollam • KLKM52 Live View</span>
+            </div>
+            <h1>Q14 — Absconding Accused: Moved to LPR vs Awaiting CJM Approval</h1>
+            <div class="question-box">
+                <strong>Analytical Question:</strong> How many cases with an absconding accused have been moved to the Long Pending Register this month, versus how many are still awaiting CJM approval to be moved?
+            </div>
+        </div>
+
+        
+
+        <div class="kpi-grid">
+            
+    <div class="kpi-card"><div class="kpi-title">Active in LPR Today</div><div class="kpi-value" style="color:#10b981;">17</div><div class="kpi-sub">Dormant cases parked</div></div>
+    <div class="kpi-card"><div class="kpi-title">Awaiting CJM Approval</div><div class="kpi-value" style="color:#ef4444;">392</div><div class="kpi-sub">4+ failed NBWs awaiting move</div></div>
+    <div class="kpi-card"><div class="kpi-title">Total Numbered in LPR</div><div class="kpi-value">23</div><div class="kpi-sub">LP/1/2025 to LP/19/2026</div></div>
+    <div class="kpi-card"><div class="kpi-title">Revived / Disposed from LPR</div><div class="kpi-value">6</div><div class="kpi-sub">Revived back to ACTIVE</div></div>
+    
+        </div>
+
+        <div class="main-card">
+            <div class="toolbar">
+                <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <input type="text" id="filterInput" onkeyup="filterData()" class="search-input" placeholder="Search across any column...">
+                    
+    <div style="display:inline-flex; align-items:center; gap:14px; font-size:12px; font-weight:600; color:#475569; margin-left:auto;">
+        <span style="display:inline-flex; align-items:center; gap:6px;"><span style="display:inline-block; width:11px; height:11px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 2px rgba(139,92,246,0.25);"></span> LPR (Parked)</span>
+        <span style="display:inline-flex; align-items:center; gap:6px;"><span style="display:inline-block; width:11px; height:11px; border-radius:50%; background:#10b981; box-shadow:0 0 0 2px rgba(16,185,129,0.25);"></span> Active Caseload</span>
+    </div>
+    
+                    <span class="count-info" id="recordCountText">Showing 23 records</span>
+                </div>
+                <div>
+                    <a href="../../DATA/CHECKLIST/Q14_lpr_cases_register.csv" download class="btn">📥 Export Dataset (CSV)</a>
+                </div>
+            </div>
+
+            
+    <div class="table-responsive">
+        <table id="dataTable">
+            <thead><tr><th>filingnumber</th><th>courtcasenumber</th><th>casetitle</th><th>lprnumber</th><th>lifecyclestatus</th><th>stage</th></tr></thead>
+            <tbody><tr><td>KL-000997-2025</td><td>ST/520/2025</td><td>Ferozkhan A vs Ramesh</td><td>LP/10/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Bail & Recording of Plea</td></tr>
+<tr><td>KL-000712-2025</td><td>ST/393/2025</td><td>Rupesh L vs Aromal</td><td>LP/11/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000314-2024</td><td>ST/196/2025</td><td>G VIKRAMAN PILLAI vs ANIL KUMAR</td><td>LP/1/2025</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000040-2025</td><td>ST/289/2025</td><td>Rizwan Cashews vs Nadha Enterprises</td><td>LP/1/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-001087-2025</td><td>ST/847/2025</td><td>Supreme Cashew Industries vs Ubaid Ebrahim</td><td>LP/12/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000846-2025</td><td>ST/850/2025</td><td>HDFC Bank Ltd vs Vimalkumar Vijayan</td><td>LP/13/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Post-Disposal</td></tr>
+<tr><td>KL-000741-2025</td><td>ST/432/2025</td><td>Geevarghese C vs Shahanad</td><td>LP/14/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000579-2025</td><td>ST/434/2025</td><td>Oommachan vs Sudha</td><td>LP/15/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-001082-2025</td><td>ST/848/2025</td><td>Choice Cashew Industries vs Ubaid Ebrahim</td><td>LP/16/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000737-2025</td><td>ST/380/2025</td><td>S Rajakrishnan vs Biju S</td><td>LP/17/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000896-2025</td><td>ST/584/2025</td><td>Ahamed Kabeer vs Rajesh R</td><td>LP/18/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000897-2025</td><td>ST/592/2025</td><td>Ahamed Kabeer vs Rajesh R</td><td>LP/19/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000527-2025</td><td>ST/230/2025</td><td>Vineeth Mohan vs Denny Rajan</td><td>LP/2/2025</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000150-2024</td><td>ST/43/2025</td><td>Raju  Maniyan vs Sindhu</td><td>LP/2/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000267-2024</td><td>ST/849/2025</td><td>Kabeer  T vs Jayapalan</td><td>LP/3/2025</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Post-Disposal</td></tr>
+<tr><td>KL-000270-2024</td><td>ST/846/2025</td><td>HDFC Bank LTD vs Meenakumari R</td><td>LP/3/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Post-Disposal</td></tr>
+<tr><td>KL-000186-2025</td><td>ST/845/2025</td><td>Vijayakumar vs Nazarudeen S</td><td>LP/4/2025</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,0.25);" title="Active Caseload"></span><span style="display:none;">ACTIVE Active</span></div></td><td>Post-Disposal</td></tr>
+<tr><td>KL-000713-2025</td><td>ST/390/2025</td><td>Marykutty Andrew vs Sumayya</td><td>LP/4/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000838-2025</td><td>ST/458/2025</td><td>HDFC BANK LTD vs MAJEESH MURALI</td><td>LP/5/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000339-2024</td><td>ST/20/2025</td><td>SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G</td><td>LP/6/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000506-2025</td><td>ST/217/2025</td><td>HDFC BANK LTD vs VALSALA T K</td><td>LP/7/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr>
+<tr><td>KL-000280-2025</td><td>ST/170/2025</td><td>Praveen P vs Naveen R</td><td>LP/8/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Bail & Recording of Plea</td></tr>
+<tr><td>KL-000728-2025</td><td>ST/441/2025</td><td>Sivakumar K vs Gopakumar</td><td>LP/9/2026</td><td><div style="display:flex; justify-content:center; align-items:center;"><span style="display:inline-block; width:13px; height:13px; border-radius:50%; background:#8b5cf6; box-shadow:0 0 0 3px rgba(139,92,246,0.25);" title="Long Pending Register (LPR)"></span><span style="display:none;">LPR Long Pending Register</span></div></td><td>Appearance</td></tr></tbody>
+        </table>
+    </div>
+    
+        </div>
+    </div>
+
+    <script>
+        function filterData() {
+            const input = document.getElementById("filterInput");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("dataTable");
+            const tr = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            let visibleCount = 0;
+
+            for (let i = 0; i < tr.length; i++) {
+                const tds = tr[i].getElementsByTagName("td");
+                let match = false;
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const txtValue = tds[j].textContent || tds[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                if (match) {
+                    tr[i].style.display = "";
+                    visibleCount++;
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+            document.getElementById("recordCountText").innerText = "Showing " + visibleCount + " records";
+        }
+
+        // Table column sorting
+        document.querySelectorAll("#dataTable th").forEach((header, index) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const isAsc = header.getAttribute("data-order") !== "asc";
+                
+                rows.sort((a, b) => {
+                    const aText = a.children[index].innerText.trim();
+                    const bText = b.children[index].innerText.trim();
+                    const aNum = parseFloat(aText.replace(/[^0-9.-]+/g, ""));
+                    const bNum = parseFloat(bText.replace(/[^0-9.-]+/g, ""));
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        return isAsc ? aNum - bNum : bNum - aNum;
+                    }
+                    return isAsc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                
+                header.setAttribute("data-order", isAsc ? "asc" : "desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
