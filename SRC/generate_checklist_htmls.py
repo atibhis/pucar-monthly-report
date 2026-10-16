@@ -992,12 +992,94 @@ def get_executive_summary_metrics():
     appearance_cases = appearance_stage.get("total_cases", 1252)
     appearance_pct = round((appearance_cases / total_active_matters) * 100, 1) if total_active_matters else 65.0
 
+    active_types = q2_data.get("active_case_types", {})
+    st_cases = active_types.get("ST", 1748)
+    st_pct = round((st_cases / total_active_matters) * 100, 1) if total_active_matters else 90.7
+    cmp_cases = active_types.get("CMP", 114)
+    cmp_pct = round((cmp_cases / total_active_matters) * 100, 1) if total_active_matters else 5.9
+
     q3_data = DATA.get("Q3_cohort_disposal", {})
     cohort_pct = q3_data.get("benchmark_cohort_pct_6m", 15.8)
     cohort_label = q3_data.get("benchmark_cohort", "March 2026 cohort")
 
     q1_data = DATA.get("Q1_disposal_rate", {})
     clearance_pct = q1_data.get("current_rate_pct", 0.55)
+    floor_deficit = q1_data.get("floor_deficit_pct", 14.45)
+
+    # Hearings (Card 3)
+    q6_data = DATA.get("Q6_non_substantive_hearings", {})
+    total_proceedings = q6_data.get("total_proceedings", 979)
+    non_sub_cnt = q6_data.get("non_substantive_count", 815)
+    non_sub_pct = q6_data.get("non_substantive_percentage", 83.2)
+    substantive_cnt = max(0, total_proceedings - non_sub_cnt)
+    substantive_pct = round((substantive_cnt / total_proceedings) * 100, 1) if total_proceedings else 16.8
+    
+    top_reasons = q6_data.get("top_reasons", [])
+    awaiting_returns = next((r for r in top_reasons if "Awaiting" in r.get("reason", "")), {})
+    awaiting_returns_cnt = awaiting_returns.get("count", 413)
+    awaiting_returns_pct = round((awaiting_returns_cnt / total_proceedings) * 100, 1) if total_proceedings else 42.2
+    
+    take_steps = next((r for r in top_reasons if "Take Steps" in r.get("reason", "")), {})
+    take_steps_cnt = take_steps.get("count", 254)
+    take_steps_pct = round((take_steps_cnt / total_proceedings) * 100, 1) if total_proceedings else 25.9
+
+    q5_data = DATA.get("Q5_hearing_gaps", {})
+    median_gap_days = q5_data.get("stats", {}).get("p50_days", 21.0)
+    p75_gap_days = q5_data.get("stats", {}).get("p75_days", 27.5)
+    hearing_gaps_over_60d = q5_data.get("cases_over_2_months_count", 17)
+
+    # Process & Summons (Card 4)
+    proc_sum = DATA.get("process_summary", {})
+    total_process_tasks = proc_sum.get("total_tasks", 13590)
+    total_summons = proc_sum.get("total_summons", 4368)
+    total_warrants = proc_sum.get("total_warrants", 7313)
+    total_notices = proc_sum.get("total_notices", 1909)
+    delivered_tasks = proc_sum.get("delivered_tasks", 2149)
+    delivered_pct = proc_sum.get("delivered_pct", 15.8)
+    expired_tasks = proc_sum.get("expired_tasks", 2534)
+    expired_pct = proc_sum.get("expired_pct", 18.6)
+
+    # Detailed registers
+    silent_60d_cnt = DATA.get("Q4_silent_cases", {}).get("total_silent_over_60d", 49)
+    silent_stages = DATA.get("Q4_silent_cases", {}).get("stage_breakdown", {})
+    silent_defect = silent_stages.get("Defect Correction", 25)
+    silent_filing = silent_stages.get("Filing", 18)
+    silent_court = sum(v for k, v in silent_stages.items() if k not in ["Defect Correction", "Filing"])
+
+    q7_cognizance_cnt = DATA.get("Q7_cognizance_bottlenecks", {}).get("total_stuck_over_3_months", 31)
+    q7_dca_cnt = DATA.get("Q7_cognizance_bottlenecks", {}).get("hold_up_reasons_breakdown", {}).get("Delay Petition Pending (DCA)", 25)
+
+    q9_dca_cycle_cnt = DATA.get("Q9_dca_cycle", {}).get("total_cases_in_dca_cycle_over_5h", 66)
+
+    q11_stations_cnt = len(DATA.get("Q11_warrant_laggards", {}).get("police_stations", []))
+    q12_repeat_warrants_cnt = DATA.get("Q12_repeat_warrants", {}).get("cases_count", 626)
+    q13_stalled_tasks_cnt = DATA.get("Q13_expired_processes", {}).get("total_stalled_or_expired", 931)
+    q13_unpaid_cnt = DATA.get("Q13_expired_processes", {}).get("breakpoint_breakdown", {}).get("Payment Step (Litigant/Advocate unpaid fee demand)", 792)
+
+    q8_med_6m_cnt = DATA.get("Q8_mediation_cases", {}).get("in_mediation_over_6_months", 305)
+    q8_med_12m_cnt = DATA.get("Q8_mediation_cases", {}).get("in_mediation_over_12_months", 123)
+
+    q10_bail_tail_cnt = DATA.get("Q10_bail_distribution", {}).get("stuck_in_3plus_hearing_tail", 335)
+    q10_bail_avg_h = DATA.get("Q10_bail_distribution", {}).get("average_hearings", 2.84)
+    q10_bail_tail_pct = DATA.get("Q10_bail_distribution", {}).get("pct_tail_3plus", 50.5)
+
+    q15_pairs_cnt = DATA.get("Q15_consolidation_pairs", {}).get("total_consolidation_pairs", 14)
+    q15_cases_cnt = DATA.get("Q15_consolidation_pairs", {}).get("total_stuck_cases_involved", 41)
+
+    top_advs = DATA.get("Q16_advocate_caseload", {}).get("top_advocates", [])[:15]
+    top_advs_cases = sum(a.get("pending_caseload", 0) for a in top_advs) if top_advs else 581
+    top_advs_pct = round((top_advs_cases / total_active_matters) * 100, 1) if total_active_matters else 30.2
+
+    q18_latency_days = int(DATA.get("Q18_engagement_latency", {}).get("stats", {}).get("median_latency_days", 59))
+    q18_latency_mean = DATA.get("Q18_engagement_latency", {}).get("stats", {}).get("mean_latency_days", 78.5)
+
+    q19_inst_cnt = DATA.get("Q19_institutional_filers", {}).get("total_institutions_with_3plus", 105)
+
+    q14_lpr_cnt = DATA.get("Q14_lpr_movements", {}).get("total_moved_to_lpr", 17)
+    q14_awaiting_cnt = DATA.get("Q14_lpr_movements", {}).get("awaiting_lpr_cjm_approval_est", 448)
+
+    q20_mobile_pct = DATA.get("Q20_data_quality", {}).get("respondent_mobile_capture", {}).get("pct_carrying_mobile", 17.9)
+    q20_missing_mobile_pct = round(100.0 - float(q20_mobile_pct), 1)
 
     return {
         "total_disposals": total_disposals,
@@ -1014,9 +1096,60 @@ def get_executive_summary_metrics():
         "total_active_matters": total_active_matters,
         "appearance_cases": appearance_cases,
         "appearance_pct": appearance_pct,
+        "st_cases": st_cases,
+        "st_pct": st_pct,
+        "cmp_cases": cmp_cases,
+        "cmp_pct": cmp_pct,
         "clearance_pct": clearance_pct,
+        "floor_deficit": floor_deficit,
         "cohort_pct": cohort_pct,
         "cohort_label": cohort_label,
+        "total_proceedings": total_proceedings,
+        "non_sub_cnt": non_sub_cnt,
+        "non_sub_pct": non_sub_pct,
+        "substantive_cnt": substantive_cnt,
+        "substantive_pct": substantive_pct,
+        "awaiting_returns_cnt": awaiting_returns_cnt,
+        "awaiting_returns_pct": awaiting_returns_pct,
+        "take_steps_cnt": take_steps_cnt,
+        "take_steps_pct": take_steps_pct,
+        "median_gap_days": median_gap_days,
+        "p75_gap_days": p75_gap_days,
+        "hearing_gaps_over_60d": hearing_gaps_over_60d,
+        "total_process_tasks": total_process_tasks,
+        "total_summons": total_summons,
+        "total_warrants": total_warrants,
+        "total_notices": total_notices,
+        "delivered_tasks": delivered_tasks,
+        "delivered_pct": delivered_pct,
+        "expired_tasks": expired_tasks,
+        "expired_pct": expired_pct,
+        "silent_60d_cnt": silent_60d_cnt,
+        "silent_defect": silent_defect,
+        "silent_filing": silent_filing,
+        "silent_court": silent_court,
+        "q7_cognizance_cnt": q7_cognizance_cnt,
+        "q7_dca_cnt": q7_dca_cnt,
+        "q9_dca_cycle_cnt": q9_dca_cycle_cnt,
+        "q11_stations_cnt": q11_stations_cnt,
+        "q12_repeat_warrants_cnt": q12_repeat_warrants_cnt,
+        "q13_stalled_tasks_cnt": q13_stalled_tasks_cnt,
+        "q13_unpaid_cnt": q13_unpaid_cnt,
+        "q8_med_6m_cnt": q8_med_6m_cnt,
+        "q8_med_12m_cnt": q8_med_12m_cnt,
+        "q10_bail_tail_cnt": q10_bail_tail_cnt,
+        "q10_bail_avg_h": q10_bail_avg_h,
+        "q10_bail_tail_pct": q10_bail_tail_pct,
+        "q15_pairs_cnt": q15_pairs_cnt,
+        "q15_cases_cnt": q15_cases_cnt,
+        "top_advs_pct": top_advs_pct,
+        "q18_latency_days": q18_latency_days,
+        "q18_latency_mean": q18_latency_mean,
+        "q19_inst_cnt": q19_inst_cnt,
+        "q14_lpr_cnt": q14_lpr_cnt,
+        "q14_awaiting_cnt": q14_awaiting_cnt,
+        "q20_mobile_pct": q20_mobile_pct,
+        "q20_missing_mobile_pct": q20_missing_mobile_pct,
     }
 
 
@@ -1068,13 +1201,13 @@ def generate_master_email():
                     <div style="font-size:12px;">
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">ST (Summary Trial)</span>
-                            <span style="font-weight:700; color:#0b1239;">1,748 <span style="font-weight:400; color:#64748b;">(90.7%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['st_cases']:,} <span style="font-weight:400; color:#64748b;">({m['st_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b; margin-bottom:8px;">Substantive trials</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">CMP (Misc Petition)</span>
-                            <span style="font-weight:700; color:#0b1239;">114 <span style="font-weight:400; color:#64748b;">(5.9%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['cmp_cases']:,} <span style="font-weight:400; color:#64748b;">({m['cmp_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b;">Interlocutory petitions</div>
                     </div>
@@ -1121,16 +1254,16 @@ def generate_master_email():
                 <!-- Card 3: Hearings -->
                 <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px 24px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
                     <div style="font-size:17px; font-weight:800; color:#0b1239; margin-bottom:12px;">Hearings</div>
-                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">1,017</div>
-                    <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL HEARINGS</div>
+                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">{m['total_proceedings']:,}</div>
+                    <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL HEARINGS THIS MONTH</div>
                     
                     <div style="margin-top:14px;">
-                        <div style="font-size:16px; font-weight:700; color:#10b981;">21.0 days median gap</div>
+                        <div style="font-size:16px; font-weight:700; color:#10b981;">{m['median_gap_days']:.1f} days median gap</div>
                         <div style="font-size:12px; color:#64748b; margin-top:2px;">Between successive dates</div>
                     </div>
 
                     <div style="margin-top:10px; font-size:12px; color:#0b1239; font-weight:600;">
-                        14.7% Substantive Ratio
+                        {m['substantive_pct']:.1f}% Substantive Ratio
                     </div>
 
                     <hr style="border:none; border-top:1px solid #e2e8f0; margin:16px 0 12px 0;">
@@ -1138,19 +1271,19 @@ def generate_master_email():
                     <div style="font-size:12px;">
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Substantive Trial</span>
-                            <span style="font-weight:700; color:#0b1239;">149 <span style="font-weight:400; color:#64748b;">(14.7%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['substantive_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['substantive_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b; margin-bottom:8px;">Evidence / Plea / Bail</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Awaiting Return Reports</span>
-                            <span style="font-weight:700; color:#0b1239;">406 <span style="font-weight:400; color:#64748b;">(39.9%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['awaiting_returns_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['awaiting_returns_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b; margin-bottom:8px;">Postal & Police return lag</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline;">
                             <span style="font-weight:700; color:#0b1239;">Take Steps / Process</span>
-                            <span style="font-weight:700; color:#0b1239;">238 <span style="font-weight:400; color:#64748b;">(23.4%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['take_steps_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['take_steps_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b;">Fresh steps ordered</div>
                     </div>
@@ -1159,16 +1292,16 @@ def generate_master_email():
                 <!-- Card 4: Process & Summons -->
                 <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px 24px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
                     <div style="font-size:17px; font-weight:800; color:#0b1239; margin-bottom:12px;">Process & Summons</div>
-                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">3,521</div>
+                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">{m['total_process_tasks']:,}</div>
                     <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL PROCESS TASKS</div>
                     
                     <div style="margin-top:14px;">
-                        <div style="font-size:16px; font-weight:700; color:#10b981;">49.3% delivered</div>
+                        <div style="font-size:16px; font-weight:700; color:#10b981;">{m['delivered_pct']}% delivered</div>
                         <div style="font-size:12px; color:#64748b; margin-top:2px;">Overall service rate</div>
                     </div>
 
                     <div style="margin-top:10px; font-size:12px; color:#0b1239; font-weight:600;">
-                        82.5% RPAD • 17.5% Police
+                        {m['total_summons']:,} Summons • {m['total_warrants']:,} Warrants
                     </div>
 
                     <hr style="border:none; border-top:1px solid #e2e8f0; margin:16px 0 12px 0;">
@@ -1176,19 +1309,19 @@ def generate_master_email():
                     <div style="font-size:12px;">
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Delivered</span>
-                            <span style="font-weight:700; color:#0b1239;">1,279 <span style="font-weight:400; color:#64748b;">(49.3%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['delivered_tasks']:,} <span style="font-weight:400; color:#64748b;">({m['delivered_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">Successfully served</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Expired / Hearing Arrived</span>
-                            <span style="font-weight:700; color:#0b1239;">780 <span style="font-weight:400; color:#64748b;">(22.1%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['expired_tasks']:,} <span style="font-weight:400; color:#64748b;">({m['expired_pct']}%)</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b; margin-bottom:8px;">Unreturned at date</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline;">
                             <span style="font-weight:700; color:#0b1239;">Police Warrants (5+)</span>
-                            <span style="font-weight:700; color:#0b1239;">534 <span style="font-weight:400; color:#64748b;">(15.2%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['q12_repeat_warrants_cnt']:,} <span style="font-weight:400; color:#64748b;">cases</span></span>
                         </div>
                         <div style="text-align:right; font-size:11px; color:#64748b;">Repeat warrant backlog</div>
                     </div>
@@ -1228,31 +1361,31 @@ def generate_master_email():
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">MoM Disposal Rate vs 15% Floor (Police Station Complexes)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">1.59%</td>
-                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">-13.41% Deficit</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['clearance_pct']:.2f}%</td>
+                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">-{m['floor_deficit']:.2f}% Deficit</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q01_disposal_rate.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">60-Day Silent Cases (Stage-Wise Breakdown)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">50 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">26 Defect, 18 Filing, 6 In-Court</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['silent_60d_cnt']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">{m['silent_defect']} Defect, {m['silent_filing']} Filing, {m['silent_court']} In-Court</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q04_silent_cases.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Hearing Interval Outliers (>60 Days)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">20 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">P75: 27 days</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['hearing_gaps_over_60d']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">P75: {m['p75_gap_days']:.1f} days</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q05_hearing_gaps.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Cognizance Delay > 90 Days</td>
-                                <td style="padding:11px 8px; color:#0b1239;">53 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">38 on Delay Petitions</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q7_cognizance_cnt']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['q7_dca_cnt']} on Delay Petitions</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q07_cognizance_bottlenecks.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Delay Condonation Repeat Cycles (>5 Hearings)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">55 cases</td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q9_dca_cycle_cnt']} cases</td>
                                 <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">Repeat Take Steps</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q09_dca_cycle.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
@@ -1265,20 +1398,20 @@ def generate_master_email():
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Unexecuted Warrants (>21 Working Days)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">145 stations</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">1.8% Police Execution</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q11_stations_cnt']} stations</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">Laggard Police Stations</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q11_warrant_laggards.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Repeat Warrant Backlog (5+ Warrants Issued)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">534 cases</td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q12_repeat_warrants_cnt']} cases</td>
                                 <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">Chronic Defaulters</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q12_repeat_warrants.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Expired Process Tasks (Unreturned at Hearing)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">780 tasks</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">22.1% of Tasks</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q13_stalled_tasks_cnt']} tasks</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['q13_unpaid_cnt']} Unpaid Steps</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q13_expired_processes.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
@@ -1296,37 +1429,37 @@ def generate_master_email():
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Mediation Duration (>6 Months)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">305 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">123 cases > 1 yr</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q8_med_6m_cnt']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['q8_med_12m_cnt']} cases > 1 yr</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q08_mediation_cases.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Bail Hearing Count (3+ Hearings to Secure)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">306 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">2.8 avg hearings</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q10_bail_tail_cnt']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['q10_bail_avg_h']:.1f} avg hearings</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q10_bail_hearings.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Case Consolidation Pairs (Same Parties)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">31 pairs</td>
-                                <td style="padding:11px 8px;"><span style="color:#10b981; font-weight:600; font-size:12px;">Joint Listing Candidate</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q15_pairs_cnt']} pairs</td>
+                                <td style="padding:11px 8px;"><span style="color:#10b981; font-weight:600; font-size:12px;">{m['q15_cases_cnt']} stuck matters</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q15_consolidation_pairs.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Top Advocates Caseload Concentration</td>
                                 <td style="padding:11px 8px; color:#0b1239;">Top 15</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">42% of active docket</span></td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['top_advs_pct']}% of active docket</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q16_advocate_caseload.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">First Appearance to Plea Recording Latency</td>
-                                <td style="padding:11px 8px; color:#0b1239;">59 days</td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q18_latency_days']} days</td>
                                 <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">Median delay</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q18_engagement_latency.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Institutional & Bulk Complainants (3+ Cases)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">101 entities</td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q19_inst_cnt']} entities</td>
                                 <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">HDFC, Akshaya, Haritha</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q19_institutional_filers.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
@@ -1339,14 +1472,14 @@ def generate_master_email():
                             </tr>
                             <tr style="border-bottom:1px solid #f1f5f9;">
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Long Pending Register (LPR) Movement</td>
-                                <td style="padding:11px 8px; color:#0b1239;">18 cases</td>
-                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">Dormant Register</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q14_lpr_cnt']} cases</td>
+                                <td style="padding:11px 8px;"><span style="color:#64748b; font-size:12px;">{m['q14_awaiting_cnt']} awaiting CJM</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q14_lpr_movements.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
                             <tr>
                                 <td style="padding:11px 8px; font-weight:600; color:#0b1239;">Data Quality (Mobile Numbers & Return Codes)</td>
-                                <td style="padding:11px 8px; color:#0b1239;">17.7% mobile</td>
-                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">82.3% Missing Phone</span></td>
+                                <td style="padding:11px 8px; color:#0b1239;">{m['q20_mobile_pct']}% mobile</td>
+                                <td style="padding:11px 8px;"><span style="color:#ef4444; font-weight:600; font-size:12px;">{m['q20_missing_mobile_pct']}% Missing Phone</span></td>
                                 <td style="padding:11px 8px; text-align:right;"><a href="CHECKLIST_VIEWS/Q20_data_quality.html" target="_blank" style="color:#10b981; font-weight:700; text-decoration:none;">Open Register →</a></td>
                             </tr>
 
@@ -1466,8 +1599,8 @@ def generate_markdown_briefing():
 * **{m['total_active_matters']:,} Total Active Matters**
 * **{m['appearance_cases']:,} in Appearance** ({m['appearance_pct']}% of active stock)
 * Breakdown:
-  - Summary Trial (`ST`): **1,748** (90.7%)
-  - Misc Petition (`CMP`): **114** (5.9%)
+  - Summary Trial (`ST`): **{m['st_cases']:,}** ({m['st_pct']}%)
+  - Misc Petition (`CMP`): **{m['cmp_cases']:,}** ({m['cmp_pct']}%)
 
 ### 2. Disposals
 * **{m['total_disposals']:,} Total Disposed Cases**
@@ -1479,22 +1612,22 @@ def generate_markdown_briefing():
   - Judgement / Conviction: **{m['judgement_cnt']:,}** ({m['judgement_pct']}%) — *+{m['cur_judgement']} this month*
 
 ### 3. Hearings
-* **1,017 Total Proceedings Recorded**
-* **21.0 days median gap** between successive hearing dates
-* **14.7% substantive trial ratio** (149 substantive vs 868 procedural)
+* **{m['total_proceedings']:,} Total Proceedings Recorded**
+* **{m['median_gap_days']:.1f} days median gap** between successive hearing dates
+* **{m['substantive_pct']:.1f}% substantive trial ratio** ({m['substantive_cnt']:,} substantive vs {m['non_sub_cnt']:,} procedural)
 * Breakdown:
-  - Substantive Trial: **149** (14.7%) — Evidence / Plea / Bail
-  - Awaiting Return Reports: **406** (39.9%) — Police / postal return delays
-  - Take Steps / Re-issue: **238** (23.4%) — Procedural cycle
+  - Substantive Trial: **{m['substantive_cnt']:,}** ({m['substantive_pct']}%) — Evidence / Plea / Bail
+  - Awaiting Return Reports: **{m['awaiting_returns_cnt']:,}** ({m['awaiting_returns_pct']}%) — Police / postal return delays
+  - Take Steps / Re-issue: **{m['take_steps_cnt']:,}** ({m['take_steps_pct']}%) — Procedural cycle
 
 ### 4. Process & Summons
-* **3,521 Total Process Tasks Issued**
-* **49.3% delivery rate** (1,279 delivered)
-* **82.5% RPAD / Post • 17.5% Police**
+* **{m['total_process_tasks']:,} Total Process Tasks Issued**
+* **{m['delivered_pct']}% delivery rate** ({m['delivered_tasks']:,} delivered)
+* **{m['total_summons']:,} Summons • {m['total_warrants']:,} Warrants**
 * Breakdown:
-  - Delivered: **1,279** (49.3%) — Successfully served
-  - Expired: **780** (22.1%) — Unreturned at hearing date
-  - Police Warrants (5+): **534** (15.2%) — Repeat warrant backlog (1.8% police execution rate)
+  - Delivered: **{m['delivered_tasks']:,}** ({m['delivered_pct']}%) — Successfully served
+  - Expired: **{m['expired_tasks']:,}** ({m['expired_pct']}%) — Unreturned at hearing date
+  - Police Warrants (5+): **{m['q12_repeat_warrants_cnt']:,} cases** — Repeat warrant backlog
 
 ---
 
@@ -1503,29 +1636,29 @@ def generate_markdown_briefing():
 *Key summary fields are shown up top. The remaining detailed registers and case-level queues are tracked on the secondary server setup below:*
 
 ### 1. Case Delay & Velocity Bottlenecks
-* **MoM Disposal Rate vs 15% Floor (Police Station Complexes)**: Current rate **1.59%** (-13.41% deficit vs floor) across Police Station Court Complexes • [View Drill-down](CHECKLIST_VIEWS/Q01_disposal_rate.html)
-* **60-Day Silent Cases (Stage-Wise Breakdown)**: **50 cases** active with zero hearings or orders (88% stalled in pre-registration: **26 in Defect Correction**, **18 in Filing**, 2 in Cognizance, 1 in Appearance, 1 in Judgement, 2 Unclassified) • [View Register](CHECKLIST_VIEWS/Q04_silent_cases.html)
-* **Hearing Interval Outliers (>60 Days)**: **20 cases** with extreme gaps (P75: 27 days) • [View Register](CHECKLIST_VIEWS/Q05_hearing_gaps.html)
-* **Cognizance Delay > 90 Days**: **53 cases** stalled (38 blocked by Delay Petitions) • [View Register](CHECKLIST_VIEWS/Q07_cognizance_bottlenecks.html)
-* **Delay Condonation Repeat Cycles**: **55 cases** stuck in >5 DCA hearings • [View Register](CHECKLIST_VIEWS/Q09_dca_cycle.html)
+* **MoM Disposal Rate vs 15% Floor (Police Station Complexes)**: Current rate **{m['clearance_pct']:.2f}%** (-{m['floor_deficit']:.2f}% deficit vs floor) across Police Station Court Complexes • [View Drill-down](CHECKLIST_VIEWS/Q01_disposal_rate.html)
+* **60-Day Silent Cases (Stage-Wise Breakdown)**: **{m['silent_60d_cnt']} cases** active with zero hearings or orders ({m['silent_defect']} in Defect Correction, {m['silent_filing']} in Filing, {m['silent_court']} In-Court) • [View Register](CHECKLIST_VIEWS/Q04_silent_cases.html)
+* **Hearing Interval Outliers (>60 Days)**: **{m['hearing_gaps_over_60d']} cases** with extreme gaps (P75: {m['p75_gap_days']:.1f} days) • [View Register](CHECKLIST_VIEWS/Q05_hearing_gaps.html)
+* **Cognizance Delay > 90 Days**: **{m['q7_cognizance_cnt']} cases** stalled ({m['q7_dca_cnt']} blocked by Delay Petitions) • [View Register](CHECKLIST_VIEWS/Q07_cognizance_bottlenecks.html)
+* **Delay Condonation Repeat Cycles**: **{m['q9_dca_cycle_cnt']} cases** stuck in >5 DCA hearings • [View Register](CHECKLIST_VIEWS/Q09_dca_cycle.html)
 
 ### 2. Process Delivery & Police Enforcement
-* **Unexecuted Warrants (>21 Working Days)**: **145 police stations** tracked (1.8% execution rate) • [View Station Table](CHECKLIST_VIEWS/Q11_warrant_laggards.html)
-* **Repeat Warrant Backlog**: **534 cases** with ≥ 5 warrants issued • [View Defaulter Register](CHECKLIST_VIEWS/Q12_repeat_warrants.html)
-* **Expired Process Tasks**: **780 tasks** expired before hearing return was recorded • [View Register](CHECKLIST_VIEWS/Q13_expired_processes.html)
+* **Unexecuted Warrants (>21 Working Days)**: **{m['q11_stations_cnt']} police stations** tracked • [View Station Table](CHECKLIST_VIEWS/Q11_warrant_laggards.html)
+* **Repeat Warrant Backlog**: **{m['q12_repeat_warrants_cnt']} cases** with ≥ 5 warrants issued • [View Defaulter Register](CHECKLIST_VIEWS/Q12_repeat_warrants.html)
+* **Expired Process Tasks**: **{m['q13_stalled_tasks_cnt']} tasks** stalled or expired ({m['q13_unpaid_cnt']} unpaid fee steps) • [View Register](CHECKLIST_VIEWS/Q13_expired_processes.html)
 * **Clean Summons Cohorts**: Fast-track cohort velocity analysis • [View Cohorts](CHECKLIST_VIEWS/Q17_clean_summons.html)
 
 ### 3. Caseflow & Litigant Management
-* **Mediation Duration (>6 Months)**: **305 cases** in mediation > 6 months (123 > 1 year) • [View Register](CHECKLIST_VIEWS/Q08_mediation_cases.html)
-* **Bail Hearing Count**: **306 cases** requiring 3+ hearings to secure bail • [View Register](CHECKLIST_VIEWS/Q10_bail_hearings.html)
-* **Case Consolidation Pairs**: **31 case pairs** sharing identical complainant and accused • [View Pairs](CHECKLIST_VIEWS/Q15_consolidation_pairs.html)
-* **Top Advocates Caseload**: Top 15 advocates represent **42.1%** of active docket • [View Caseload Table](CHECKLIST_VIEWS/Q16_advocate_caseload.html)
-* **First Appearance to Plea Recording**: **59 days** median engagement latency • [View Register](CHECKLIST_VIEWS/Q18_engagement_latency.html)
-* **Institutional & Bulk Complainants**: **101 entities** with ≥3 cases (HDFC Bank, Akshaya, Haritha) • [View Register](CHECKLIST_VIEWS/Q19_institutional_filers.html)
+* **Mediation Duration (>6 Months)**: **{m['q8_med_6m_cnt']} cases** in mediation > 6 months ({m['q8_med_12m_cnt']} > 1 year) • [View Register](CHECKLIST_VIEWS/Q08_mediation_cases.html)
+* **Bail Hearing Count**: **{m['q10_bail_tail_cnt']} cases** requiring 3+ hearings to secure bail ({m['q10_bail_avg_h']:.1f} avg hearings) • [View Register](CHECKLIST_VIEWS/Q10_bail_hearings.html)
+* **Case Consolidation Pairs**: **{m['q15_pairs_cnt']} case pairs** sharing identical complainant and accused ({m['q15_cases_cnt']} stuck cases) • [View Pairs](CHECKLIST_VIEWS/Q15_consolidation_pairs.html)
+* **Top Advocates Caseload**: Top 15 advocates represent **{m['top_advs_pct']}%** of active docket • [View Caseload Table](CHECKLIST_VIEWS/Q16_advocate_caseload.html)
+* **First Appearance to Plea Recording**: **{m['q18_latency_days']} days** median engagement latency (Mean: {m['q18_latency_mean']:.1f}d) • [View Register](CHECKLIST_VIEWS/Q18_engagement_latency.html)
+* **Institutional & Bulk Complainants**: **{m['q19_inst_cnt']} entities** with ≥3 cases (HDFC Bank, Akshaya, Haritha) • [View Register](CHECKLIST_VIEWS/Q19_institutional_filers.html)
 
 ### 4. Court Administration & Data Quality
-* **Long Pending Register (LPR) Movement**: **18 cases** in LPR; 3 revived upon appearance • [View Register](CHECKLIST_VIEWS/Q14_lpr_movements.html)
-* **Data Quality Audit**: **17.7%** mobile number capture; 28.7% blank police returns • [View Audit](CHECKLIST_VIEWS/Q20_data_quality.html)
+* **Long Pending Register (LPR) Movement**: **{m['q14_lpr_cnt']} cases** in LPR; {m['q14_awaiting_cnt']} awaiting CJM approval • [View Register](CHECKLIST_VIEWS/Q14_lpr_movements.html)
+* **Data Quality Audit**: **{m['q20_mobile_pct']}%** mobile number capture; {m['q20_missing_mobile_pct']}% missing phone • [View Audit](CHECKLIST_VIEWS/Q20_data_quality.html)
 
 ---
 *Automated Report • 24x7 ON Court Kerala • Live Metabase Database Pipeline*

@@ -158,7 +158,12 @@ class ChecklistDataExtractor:
                 "floor_deficit_pct": floor_deficit,
                 "status": status
             })
-        active_pending_stock = 1633
+        live_pending = self.query("""
+            SELECT count(*) as count FROM dristi_cases 
+            WHERE stage NOT IN ('Post-Disposal', 'Post-Judgement') 
+              AND status NOT IN ('DRAFT_IN_PROGRESS', 'PENDING_PAYMENT');
+        """)
+        active_pending_stock = int(live_pending[0].get("count", 1927)) if live_pending else 1927
         cur_disp = sum(r["disposals"] for r in q1_rows if r["month"] == self.target_month)
         cur_rate = round((cur_disp / active_pending_stock) * 100, 2)
         master_results["Q1_disposal_rate"] = {
@@ -218,6 +223,22 @@ class ChecklistDataExtractor:
         """
         pipeline_stages = self.query(sql_q2_pipeline)
 
+        sql_case_types = """
+        SELECT 
+            CASE 
+                WHEN c.courtcasenumber ILIKE 'ST%' THEN 'ST'
+                WHEN c.cmpnumber IS NOT NULL AND (c.courtcasenumber IS NULL OR c.courtcasenumber NOT ILIKE 'ST%') THEN 'CMP'
+                ELSE 'OTHER'
+            END as case_type,
+            count(*) as count
+        FROM dristi_cases c
+        WHERE c.stage NOT IN ('Post-Disposal', 'Post-Judgement') 
+          AND c.status NOT IN ('DRAFT_IN_PROGRESS', 'PENDING_PAYMENT')
+        GROUP BY 1;
+        """
+        raw_case_types = self.query(sql_case_types)
+        case_type_counts = {r["case_type"]: r["count"] for r in raw_case_types}
+
         master_results["Q2_disposal_mix"] = {
             "title": "Disposal Mix by Outcome & Contested Pipeline",
             "reporting_month": self.target_month,
@@ -225,11 +246,12 @@ class ChecklistDataExtractor:
             "outcome_mix": outcome_mix,
             "disposal_contested_split": contested_disp,
             "active_pipeline_by_stage": pipeline_stages,
+            "active_case_types": case_type_counts,
             "cases": cur_month_disp[["filingnumber", "courtcasenumber", "casetitle", "outcome", "natureofdisposal", "disposal_month"]].to_dict(orient="records")
         }
         df_q2_disp.to_csv(os.path.join(DATA_DIR, "Q02_all_disposals_master.csv"), index=False)
         m_label = datetime.strptime(self.target_month, "%Y-%m").strftime("%B")
-        print(f"  [+] Q2 extracted. {m_label} Disposals: {len(cur_month_disp)} (Withdrawn: {outcome_mix.get('WITHDRAWN', 0)}, Judgement: {outcome_mix.get('CONVICTED', 0) + outcome_mix.get('ACQUITTED', 0) + outcome_mix.get('JUDGEMENT', 0)}, Dismissed: {outcome_mix.get('DISMISSED', 0)})")
+        print(f"  [+] Q2 extracted. {m_label} Disposals: {len(cur_month_disp)} (Withdrawn: {outcome_mix.get('WITHDRAWN', 0)}, Judgement: {outcome_mix.get('CONVICTED', 0) + outcome_mix.get('ACQUITTED', 0) + outcome_mix.get('JUDGEMENT', 0)}, Dismissed: {outcome_mix.get('DISMISSED', 0)}) | Active Types: {case_type_counts}")
 
         # -------------------------------------------------------------
         # Q3: 6-Month Cohort Disposal Benchmark & MoM Movement
@@ -797,6 +819,24 @@ class ChecklistDataExtractor:
             "tasks_sample": raw_q13[:25]
         }
         print(f"  [+] Q13 extracted. Stalled/Expired tasks: {len(raw_q13)} tasks. (Breakpoints: {bp_tally})")
+
+        # Process & Summons Core Execution Overview
+        sql_process_summary = """
+        SELECT 
+            count(*) as total_tasks,
+            count(*) filter (where tasktype = 'SUMMONS') as total_summons,
+            count(*) filter (where tasktype = 'WARRANT') as total_warrants,
+            count(*) filter (where tasktype = 'NOTICE') as total_notices,
+            count(*) filter (where status in ('DELIVERED', 'EXECUTED', 'COMPLETED')) as delivered_tasks,
+            count(*) filter (where status = 'EXPIRED') as expired_tasks,
+            round(100.0 * count(*) filter (where status in ('DELIVERED', 'EXECUTED', 'COMPLETED')) / nullif(count(*), 0), 1) as delivered_pct,
+            round(100.0 * count(*) filter (where status = 'EXPIRED') / nullif(count(*), 0), 1) as expired_pct
+        FROM dristi_task 
+        WHERE tasktype in ('SUMMONS', 'WARRANT', 'NOTICE');
+        """
+        raw_process_summary = self.query(sql_process_summary)[0]
+        master_results["process_summary"] = raw_process_summary
+        print(f"  [+] Live Process Summary extracted: {raw_process_summary['total_tasks']} tasks ({raw_process_summary['delivered_pct']}% delivered, {raw_process_summary['expired_pct']}% expired).")
 
         # -------------------------------------------------------------
         # Q14: Absconding Accused: Moved to LPR vs Awaiting CJM Approval

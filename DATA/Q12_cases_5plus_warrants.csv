@@ -1,8 +1,8 @@
 filingnumber,courtcasenumber,casetitle,stage,total_warrants,executed_warrants,unexecuted_or_reissued,span_days
 KL-000745-2025,ST/396/2025,Shyni vs Susy A,Judgement,36,0,36,342.0
 KL-000194-2025,ST/154/2025,Suma Devi M Jayakumar vs Jayalekshmi K,Complainant Evidence,32,0,32,451.0
-KL-000411-2025,ST/531/2025,Rajalekshmi S vs ANOOP S BABU,Appearance,32,0,32,119.0
 KL-000356-2024,ST/35/2025,Pramod babu vs Roopa,Appearance,32,0,32,526.2
+KL-000411-2025,ST/531/2025,Rajalekshmi S vs ANOOP S BABU,Appearance,32,0,32,119.0
 KL-000051-2025,ST/50/2025,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES,Cognizance,30,0,30,381.0
 KL-000260-2025,ST/288/2025,Vijayakumar V vs Roopa Rani V,Complainant Evidence,29,0,29,408.9
 KL-000644-2025,ST/344/2025,Franklin vs Lekha,Defense Evidence,28,0,28,378.1
@@ -10,618 +10,618 @@ KL-000560-2025,ST/316/2025,Cyril vs Shamnad,Complainant Evidence,26,0,26,389.0
 KL-000304-2025,ST/236/2025,SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs CHARASHMA KUMARI P L,Appearance,26,0,26,333.0
 KL-000577-2025,ST/242/2025,Al Nabeel vs Arief N,Defense Evidence,26,0,26,457.1
 KL-000287-2025,ST/241/2025,MOLLY A vs RAJU ABRAHAM,Complainant Evidence,25,0,25,429.0
-KL-000340-2025,ST/150/2025,Musthafa Sudheer vs Akash Sanjeev,Appearance,24,0,24,469.9
-KL-000302-2024,ST/25/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
-KL-000575-2025,ST/240/2025,PREEJA S vs Asha Alias Ashakumari,Defense Evidence,24,0,24,310.1
-KL-000301-2024,ST/26/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
-KL-000339-2024,ST/20/2025,SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G,Appearance,24,0,24,513.1
-KL-000303-2024,ST/24/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
 KL-000093-2024,ST/14/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
+KL-000575-2025,ST/240/2025,PREEJA S vs Asha Alias Ashakumari,Defense Evidence,24,0,24,310.1
+KL-000339-2024,ST/20/2025,SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G,Appearance,24,0,24,513.1
+KL-000340-2025,ST/150/2025,Musthafa Sudheer vs Akash Sanjeev,Appearance,24,0,24,469.9
+KL-000303-2024,ST/24/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
+KL-000302-2024,ST/25/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
+KL-000301-2024,ST/26/2025,HARIHARAN S vs BIJU V P,Examination of Accused,24,0,24,450.0
 KL-000454-2025,ST/221/2025,SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs BINDU RAJENDRAN,Appearance,23,0,23,397.1
-KL-000036-2025,ST/36/2025,Ajikumar M S vs Vinu Pai,Complainant Evidence,22,0,22,537.1
 KL-000369-2026,ST/134/2026,Maxvalue Credits and Investments Ltd vs Bindhu,Complainant Evidence,22,0,22,170.9
-KL-000078-2025,ST/136/2025,KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED,Post-Disposal,22,0,22,192.0
 KL-000273-2025,ST/290/2025,Life Care Agencies vs T K Yunus Kutty,Post-Judgement,22,0,22,374.0
-KL-000545-2025,ST/231/2025,DANIEL KUTTY vs PRATHEEP P,Arguments,20,0,20,240.0
+KL-000078-2025,ST/136/2025,KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED,Post-Disposal,22,0,22,192.0
+KL-000036-2025,ST/36/2025,Ajikumar M S vs Vinu Pai,Complainant Evidence,22,0,22,537.1
 KL-001186-2025,ST/780/2025,Anitha J vs Harish H,Appearance,20,0,20,264.1
+KL-000102-2024,ST/6/2025,Jacob  K vs Aji Koruthu,Examination of Accused,20,0,20,569.1
+KL-000300-2024,ST/27/2025,HARIHARAN S vs BIJU V P,Examination of Accused,20,0,20,450.0
+KL-000545-2025,ST/231/2025,DANIEL KUTTY vs PRATHEEP P,Arguments,20,0,20,240.0
+KL-000041-2026,ST/19/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,20,0,20,208.0
 KL-001068-2025,ST/691/2025,M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd vs Nishana N,Examination of Accused,20,0,20,273.0
 KL-000423-2025,ST/321/2025,"THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR",Examination of Accused,20,0,20,339.0
 KL-000221-2025,ST/443/2025,Afzaal vs Ansarudeen  A,Complainant Evidence,20,0,20,327.9
-KL-000041-2026,ST/19/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,20,0,20,208.0
-KL-000102-2024,ST/6/2025,Jacob  K vs Aji Koruthu,Examination of Accused,20,0,20,569.1
-KL-000300-2024,ST/27/2025,HARIHARAN S vs BIJU V P,Examination of Accused,20,0,20,450.0
-KL-000493-2025,ST/206/2025,HDFC BANK LTD vs SAI KUMAR S,Post-Disposal,19,0,19,440.9
 KL-000013-2025,ST/177/2025,HARITHA SYNDICATE vs SUBHA ANTONY,Appearance,19,1,18,440.0
-KL-000015-2025,ST/77/2025,Jessy  Panicker vs Sreelatha,Appearance,19,0,19,535.2
+KL-000593-2025,ST/251/2025,SUMA PARAYIL VEEDU KUMARAN vs JABEES STEPHEN,Arguments,19,0,19,462.0
+KL-000578-2025,ST/320/2025,M/s Mark PVC Products vs Niyas,Appearance,19,0,19,379.0
 KL-000363-2025,ST/213/2025,Karuna vs Anoob A Ayyaqppan,Appearance,19,0,19,276.0
 KL-000405-2025,ST/279/2025,M/s Combined Foods Private Limited vs VAHSON DISTRIBUTORS  and 1 Other,Bail & Recording of Plea,19,0,19,355.9
-KL-000578-2025,ST/320/2025,M/s Mark PVC Products vs Niyas,Appearance,19,0,19,379.0
-KL-000593-2025,ST/251/2025,SUMA PARAYIL VEEDU KUMARAN vs JABEES STEPHEN,Arguments,19,0,19,462.0
-KL-000371-2025,ST/239/2025,Abdul Majeed vs Sirajudeen,Complainant Evidence,18,0,18,441.1
-KL-000069-2025,ST/429/2025,Ajikumar M S vs Vinu  Pai,Complainant Evidence,18,0,18,351.1
+KL-000493-2025,ST/206/2025,HDFC BANK LTD vs SAI KUMAR S,Post-Disposal,19,0,19,440.9
+KL-000015-2025,ST/77/2025,Jessy  Panicker vs Sreelatha,Appearance,19,0,19,535.2
 KL-001179-2025,ST/783/2025,KBC Chicken vs Afsal S,Appearance,18,0,18,173.0
 KL-001187-2025,ST/782/2025,Anitha J vs Harish H,Appearance,18,0,18,233.1
-KL-000607-2025,ST/276/2025,ANILKUMAR C R vs UNNIKRISHNAN,Judgement,18,0,18,464.0
+KL-000069-2025,ST/429/2025,Ajikumar M S vs Vinu  Pai,Complainant Evidence,18,0,18,351.1
 KL-000984-2025,ST/652/2025,HDFC BANK LTD vs AJI,Appearance,18,0,18,273.0
-KL-000128-2024,ST/62/2025,PRASANTH S vs B SABU  PANICKER,Complainant Evidence,18,0,18,427.9
+KL-000607-2025,ST/276/2025,ANILKUMAR C R vs UNNIKRISHNAN,Judgement,18,0,18,464.0
 KL-000005-2025,ST/124/2025,Rejin R vs Hamsa Mayottil,Appearance,18,1,17,339.0
+KL-000128-2024,ST/62/2025,PRASANTH S vs B SABU  PANICKER,Complainant Evidence,18,0,18,427.9
 KL-000061-2025,ST/74/2025,HDFC BANK LTD vs SUJITH SURENDRAN,Appearance,18,0,18,472.0
+KL-000371-2025,ST/239/2025,Abdul Majeed vs Sirajudeen,Complainant Evidence,18,0,18,441.1
+KL-000687-2025,ST/426/2025,NISAM  A vs ANEES R,Complainant Evidence,17,0,17,374.0
+KL-000720-2025,ST/359/2025,Rajeev vs SRS Flour Mill,Judgement,17,0,17,322.1
+KL-000512-2025,ST/329/2025,Travancore Plastics And Chemicals vs Ansar M S,Bail & Recording of Plea,17,0,17,359.0
+KL-000299-2024,ST/91/2025,Shamsudeen  M vs Aswathy,Appearance,17,1,16,456.9
+KL-000318-2024,ST/176/2025,Rafeeq Thangal M vs Gopi Krishnan,Appearance,17,0,17,326.0
+KL-000291-2025,ST/278/2025,M/s Combined Foods Private Limited vs Vahson Distributors and 1 Other,Bail & Recording of Plea,17,0,17,355.9
+KL-000146-2026,ST/31/2026,Maben Nidhi Ltd. vs Saritha R,Appearance,17,0,17,220.0
 KL-000333-2024,ST/61/2025,Life Care Agencies vs Neeraj  Dev D,Appearance,17,0,17,415.0
 KL-000666-2025,ST/308/2025,C.P Enterprises vs Shahul  P,Appearance,17,0,17,322.9
-KL-000299-2024,ST/91/2025,Shamsudeen  M vs Aswathy,Appearance,17,1,16,456.9
 KL-001030-2025,ST/629/2025,Haritha Syndicate vs Anilkumar,Bail & Recording of Plea,17,0,17,254.0
-KL-000146-2026,ST/31/2026,Maben Nidhi Ltd. vs Saritha R,Appearance,17,0,17,220.0
 KL-000406-2025,ST/140/2025,DAISY T vs LAWRANCE H,Appearance,17,1,16,448.0
-KL-000318-2024,ST/176/2025,Rafeeq Thangal M vs Gopi Krishnan,Appearance,17,0,17,326.0
-KL-000720-2025,ST/359/2025,Rajeev vs SRS Flour Mill,Judgement,17,0,17,322.1
 KL-000262-2024,ST/138/2025,HARITHA SYNDICATE vs VIJI,Appearance,17,0,17,404.9
-KL-000291-2025,ST/278/2025,M/s Combined Foods Private Limited vs Vahson Distributors and 1 Other,Bail & Recording of Plea,17,0,17,355.9
-KL-000512-2025,ST/329/2025,Travancore Plastics And Chemicals vs Ansar M S,Bail & Recording of Plea,17,0,17,359.0
-KL-000687-2025,ST/426/2025,NISAM  A vs ANEES R,Complainant Evidence,17,0,17,374.0
-KL-000233-2025,ST/104/2025,Sachin vs Safeela,Appearance,16,0,16,459.0
-KL-000806-2025,ST/446/2025,Vinuraj R vs Ali Askar A,Appearance,16,0,16,335.0
-KL-001078-2025,ST/722/2025,Saubhagya Finance vs Merlin,Complainant Evidence,16,0,16,233.1
-KL-000148-2026,ST/39/2026,Rajith V vs Fr Bijoy P,Complainant Evidence,16,0,16,208.0
-KL-000595-2025,ST/679/2025,Arun Kumar vs Prasad,Complainant Evidence,16,0,16,280.1
-KL-000324-2025,ST/137/2025,MARANATHA FINCORP vs K C SUGUNAN KALATHIL CHANDRAN SUGUNAN,Appearance,16,0,16,390.9
 KL-000134-2025,ST/193/2025,HDFC BANK LTD vs ANAS MYTHEENKUNJU SHAJAHAN,Appearance,16,0,16,388.0
-KL-001142-2025,ST/758/2025,Manuel Cruz Darwin vs Subish Kaikolante,Appearance,16,0,16,125.0
-KL-000805-2025,ST/480/2025,Pathrose Robert vs Jaimon Xavier,Complainant Evidence,16,0,16,333.0
-KL-000783-2025,ST/734/2025,Ansu Joseph vs Sathyaprakash M,Appearance,16,0,16,262.9
-KL-000842-2025,ST/563/2025,Zaina A vs Abdul Rasheed Sameer,Appearance,16,0,16,303.9
 KL-000528-2025,ST/330/2025,Jayalatha vs Rajesh,Appearance,16,0,16,372.0
+KL-000805-2025,ST/480/2025,Pathrose Robert vs Jaimon Xavier,Complainant Evidence,16,0,16,333.0
+KL-000324-2025,ST/137/2025,MARANATHA FINCORP vs K C SUGUNAN KALATHIL CHANDRAN SUGUNAN,Appearance,16,0,16,390.9
 KL-000355-2025,ST/210/2025,Sherly  Wilson vs Manaf K S,Appearance,16,0,16,365.0
+KL-000233-2025,ST/104/2025,Sachin vs Safeela,Appearance,16,0,16,459.0
+KL-000148-2026,ST/39/2026,Rajith V vs Fr Bijoy P,Complainant Evidence,16,0,16,208.0
+KL-000301-2026,ST/111/2026,Sunitha K T vs Aruna A,Appearance,16,1,15,200.0
+KL-000939-2025,ST/672/2025,HDFC BANK LTD vs JIBIN MATHEW,Post-Disposal,16,0,16,303.0
+KL-000842-2025,ST/563/2025,Zaina A vs Abdul Rasheed Sameer,Appearance,16,0,16,303.9
+KL-000115-2025,ST/72/2025,HDFC Bank vs AYYAPPAN G,Appearance,16,0,16,524.0
+KL-001142-2025,ST/758/2025,Manuel Cruz Darwin vs Subish Kaikolante,Appearance,16,0,16,125.0
 KL-000377-2025,ST/123/2025,Suchee Garments  vs Fizaka International impex LLP and 2 Others,Bail & Recording of Plea,16,0,16,418.0
 KL-000807-2026,ST/424/2026,VIPINACHANDRAN vs MURUKESAN NAIR,Appearance,16,0,16,71.0
-KL-000301-2026,ST/111/2026,Sunitha K T vs Aruna A,Appearance,16,1,15,200.0
-KL-000115-2025,ST/72/2025,HDFC Bank vs AYYAPPAN G,Appearance,16,0,16,524.0
-KL-000939-2025,ST/672/2025,HDFC BANK LTD vs JIBIN MATHEW,Post-Disposal,16,0,16,303.0
-KL-000461-2025,ST/224/2025,Abhilash Mohan vs Sarad Sathyan,Appearance,15,0,15,374.0
-KL-000399-2025,ST/229/2025,Sudharshanan vs Bindhu,Post-Disposal,15,0,15,189.9
-KL-000143-2025,ST/63/2025,HDFC BANK LTD vs BINU V R,Appearance,15,0,15,472.0
+KL-000806-2025,ST/446/2025,Vinuraj R vs Ali Askar A,Appearance,16,0,16,335.0
+KL-000783-2025,ST/734/2025,Ansu Joseph vs Sathyaprakash M,Appearance,16,0,16,262.9
+KL-001078-2025,ST/722/2025,Saubhagya Finance vs Merlin,Complainant Evidence,16,0,16,233.1
+KL-000595-2025,ST/679/2025,Arun Kumar vs Prasad,Complainant Evidence,16,0,16,280.1
 KL-000389-2026,ST/144/2026,Sajju V vs Uthara S,Complainant Evidence,15,0,15,155.0
+KL-000461-2025,ST/224/2025,Abhilash Mohan vs Sarad Sathyan,Appearance,15,0,15,374.0
+KL-000143-2025,ST/63/2025,HDFC BANK LTD vs BINU V R,Appearance,15,0,15,472.0
 KL-000186-2026,ST/140/2026,Sivaprasad vs Rafeek,Appearance,15,0,15,196.0
 KL-001048-2025,ST/626/2025,Haritha Syndicate vs Deepthi S,Complainant Evidence,15,0,15,300.9
-KL-000344-2024,ST/28/2025,HDFC BANK LTD vs DEEPASENAN JL,Post-Disposal,14,0,14,245.2
-KL-000439-2025,ST/293/2025,CHANDRASEKHARAN PILLAI K vs ANSEELA,Appearance,14,0,14,328.0
+KL-000399-2025,ST/229/2025,Sudharshanan vs Bindhu,Post-Disposal,15,0,15,189.9
+KL-000455-2025,ST/407/2025,Santha vs Krishnaji Sivakumar,Appearance,14,0,14,315.9
 KL-000145-2025,ST/86/2025,HDFC BANK LTD vs NASILA IQBAL,Appearance,14,0,14,507.0
+KL-000858-2025,ST/683/2025,Beema Mol R vs Hayarunisa Beevi,Bail & Recording of Plea,14,0,14,257.0
+KL-000730-2025,ST/524/2025,HDFC BANK LTD vs MOHAN PRASAD U N,Appearance,14,0,14,299.0
+KL-000882-2025,ST/571/2025,Haritha Syndicate vs Ratheesh R,Appearance,14,0,14,321.0
+KL-000725-2025,ST/412/2025,Quilon Co Operative Urban Bank Ltd vs Saifudeen,Appearance,14,0,14,293.0
+KL-000514-2025,ST/264/2025,Ravi P vs Onasis Joseph,Appearance,14,0,14,295.8
+KL-000327-2026,ST/127/2026,Hussain Nizam vs Muhammed Niyas,Complainant Evidence,14,0,14,144.9
+KL-000156-2024,ST/10/2025,Suresh Kumar T vs Jijo J,Cognizance,14,0,14,472.9
 KL-000184-2025,ST/296/2025,kerala kaumudi  vs Devan Vaidyan T,Appearance,14,0,14,319.1
 KL-000601-2025,ST/282/2025,Haritha Syndicate vs Naginass  N,Examination of Accused,14,0,14,445.0
-KL-000294-2025,ST/377/2025,Shylaja I vs Rajesh R,Appearance,14,0,14,367.9
-KL-000882-2025,ST/571/2025,Haritha Syndicate vs Ratheesh R,Appearance,14,0,14,321.0
-KL-000123-2024,ST/8/2025,S Kunjumon vs K Pradeep,Complainant Evidence,14,0,14,562.1
-KL-000730-2025,ST/524/2025,HDFC BANK LTD vs MOHAN PRASAD U N,Appearance,14,0,14,299.0
-KL-000725-2025,ST/412/2025,Quilon Co Operative Urban Bank Ltd vs Saifudeen,Appearance,14,0,14,293.0
-KL-000858-2025,ST/683/2025,Beema Mol R vs Hayarunisa Beevi,Bail & Recording of Plea,14,0,14,257.0
-KL-000462-2025,ST/318/2025,Deepam Manufacturing and Industrial vs Nisha Foods and 1 Other,Complainant Evidence,14,0,14,358.0
-KL-000327-2026,ST/127/2026,Hussain Nizam vs Muhammed Niyas,Complainant Evidence,14,0,14,144.9
-KL-000959-2025,ST/602/2025,Sobhana  K I vs Sufaija S,Complainant Evidence,14,0,14,264.0
-KL-000514-2025,ST/264/2025,Ravi P vs Onasis Joseph,Appearance,14,0,14,295.8
+KL-000344-2024,ST/28/2025,HDFC BANK LTD vs DEEPASENAN JL,Post-Disposal,14,0,14,245.2
 KL-000481-2025,ST/423/2025,Rahul Nair R vs Ajeeshkumar V,Examination of Accused,14,0,14,188.0
-KL-000824-2025,ST/537/2025,Beena L vs Lekha R,Complainant Evidence,14,0,14,115.0
 KL-000542-2025,ST/331/2025,ESHIKA CASHEW COMPANY vs ECOSOL and 2 Others,Defense Evidence,14,0,14,372.0
+KL-000439-2025,ST/293/2025,CHANDRASEKHARAN PILLAI K vs ANSEELA,Appearance,14,0,14,328.0
+KL-000462-2025,ST/318/2025,Deepam Manufacturing and Industrial vs Nisha Foods and 1 Other,Complainant Evidence,14,0,14,358.0
+KL-000123-2024,ST/8/2025,S Kunjumon vs K Pradeep,Complainant Evidence,14,0,14,562.1
+KL-000824-2025,ST/537/2025,Beena L vs Lekha R,Complainant Evidence,14,0,14,115.0
 KL-000515-2025,ST/265/2025,Ravi P vs Onasis Joseph,Appearance,14,0,14,295.8
+KL-000959-2025,ST/602/2025,Sobhana  K I vs Sufaija S,Complainant Evidence,14,0,14,264.0
 KL-001050-2025,ST/657/2025,Haritha Syndicate vs Jayasree B,Appearance,14,0,14,251.9
-KL-000156-2024,ST/10/2025,Suresh Kumar T vs Jijo J,Cognizance,14,0,14,472.9
-KL-000455-2025,ST/407/2025,Santha vs Krishnaji Sivakumar,Appearance,14,0,14,315.9
-KL-000286-2025,ST/317/2025,THANVEER N vs MUHAMMED AFSAL,Appearance,13,0,13,373.1
-KL-001238-2025,ST/833/2025,Cristy X vs Bagal Holidays and 1 Other,Bail & Recording of Plea,13,0,13,170.0
-KL-000664-2025,ST/332/2025,C.P Enterprises vs Next Gen Technologie Services,Appearance,13,0,13,283.9
-KL-000361-2025,ST/117/2025,Jamon J vs Sumangalan S,Defense Evidence,13,1,12,510.1
-KL-000544-2026,ST/246/2026,Shree Padma Nidhi Limited vs Sangeeth S,Complainant Evidence,13,0,13,167.0
-KL-000157-2024,ST/257/2025,SHAKTHIKULANGARA NIDHI LTD vs SINDHU L,Post-Judgement,13,0,13,389.9
-KL-000662-2025,ST/361/2025,Umamaheswari R vs Surya,Defense Evidence,13,0,13,89.0
-KL-000051-2026,ST/26/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,13,0,13,218.9
-KL-000310-2024,ST/95/2025,Hdfc Bank LTD vs Abilash Dileep,Appearance,13,0,13,397.0
-KL-000676-2025,ST/368/2025,Surendranath vs Sugunan,Examination of Accused,13,0,13,344.0
+KL-000294-2025,ST/377/2025,Shylaja I vs Rajesh R,Appearance,14,0,14,367.9
 KL-000292-2025,ST/413/2025,Shefeek  M vs Sheniz HP Gas Agency,Appearance,13,0,13,289.0
-KL-000131-2024,ST/339/2025,Shaufi A vs Azad Rahim,Appearance,13,0,13,338.0
+KL-001238-2025,ST/833/2025,Cristy X vs Bagal Holidays and 1 Other,Bail & Recording of Plea,13,0,13,170.0
+KL-000278-2024,ST/2/2025,HDFC BANK LTD vs Sivaranjini S,Appearance,13,0,13,549.9
+KL-000664-2025,ST/332/2025,C.P Enterprises vs Next Gen Technologie Services,Appearance,13,0,13,283.9
+KL-000662-2025,ST/361/2025,Umamaheswari R vs Surya,Defense Evidence,13,0,13,89.0
 KL-000173-2025,ST/80/2025,HDFC BANK LTD vs KRISHNAKUMAR S,Appearance,13,0,13,445.1
-KL-000120-2024,ST/41/2025,Surya R L Kumari vs Sheeba A,Complainant Evidence,13,1,12,449.0
-KL-000232-2025,ST/205/2025,Nistilan Stephen vs Usha Cyril,Complainant Evidence,13,0,13,361.0
 KL-000298-2024,ST/16/2025,JOSEPH ANTONY vs LENTO,Appearance,13,0,13,401.0
 KL-001086-2025,ST/705/2025,Saubhagya Finance vs Maya,Appearance,13,0,13,258.1
-KL-000278-2024,ST/2/2025,HDFC BANK LTD vs Sivaranjini S,Appearance,13,0,13,549.9
-KL-001076-2025,ST/696/2025,HDFC BANK LTD vs JUBIN KOSHY,Post-Disposal,13,0,13,231.0
-KL-000605-2025,ST/347/2025,Babu H vs Pradeep Kumar P,Appearance,13,0,13,280.0
 KL-000886-2025,ST/491/2025,Dr Jameela Beevi B vs Shajin Kattan Kodumal,Appearance,13,0,13,247.0
-KL-000716-2025,ST/532/2025,Vasanthakumari vs George,Examination of Accused,13,0,13,240.0
 KL-000370-2026,ST/138/2026,Firos Naisam vs Shahina,Appearance,13,0,13,137.0
 KL-000060-2025,ST/216/2025,VISHNU VIJAYAN vs SAVAD,Appearance,13,0,13,284.9
+KL-000286-2025,ST/317/2025,THANVEER N vs MUHAMMED AFSAL,Appearance,13,0,13,373.1
+KL-000676-2025,ST/368/2025,Surendranath vs Sugunan,Examination of Accused,13,0,13,344.0
+KL-000120-2024,ST/41/2025,Surya R L Kumari vs Sheeba A,Complainant Evidence,13,1,12,449.0
+KL-001076-2025,ST/696/2025,HDFC BANK LTD vs JUBIN KOSHY,Post-Disposal,13,0,13,231.0
+KL-000605-2025,ST/347/2025,Babu H vs Pradeep Kumar P,Appearance,13,0,13,280.0
+KL-000310-2024,ST/95/2025,Hdfc Bank LTD vs Abilash Dileep,Appearance,13,0,13,397.0
+KL-000544-2026,ST/246/2026,Shree Padma Nidhi Limited vs Sangeeth S,Complainant Evidence,13,0,13,167.0
+KL-000716-2025,ST/532/2025,Vasanthakumari vs George,Examination of Accused,13,0,13,240.0
+KL-000051-2026,ST/26/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,13,0,13,218.9
+KL-000361-2025,ST/117/2025,Jamon J vs Sumangalan S,Defense Evidence,13,1,12,510.1
+KL-000232-2025,ST/205/2025,Nistilan Stephen vs Usha Cyril,Complainant Evidence,13,0,13,361.0
 KL-000764-2025,ST/440/2025,Priya  Krishnan vs Litheesh A S,Appearance,13,0,13,298.0
+KL-000157-2024,ST/257/2025,SHAKTHIKULANGARA NIDHI LTD vs SINDHU L,Post-Judgement,13,0,13,389.9
+KL-000131-2024,ST/339/2025,Shaufi A vs Azad Rahim,Appearance,13,0,13,338.0
+KL-000261-2024,ST/254/2025,HARITHA SYNDICATE vs RAJU N,Appearance,12,0,12,370.0
+KL-000107-2025,ST/70/2025,HDFC BANK LTD vs SAJIV,Complainant Evidence,12,0,12,440.0
+KL-000282-2025,ST/125/2025,MARANATHA FINCORP vs AMBILI K,Appearance,12,0,12,443.0
+KL-000401-2025,ST/403/2025,Santha vs Asif,Appearance,12,0,12,219.9
+KL-001089-2025,ST/706/2025,Saubhagya Finance vs Kunjumol,Appearance,12,0,12,258.1
+KL-000621-2025,ST/557/2025,Travancore Alchimed Health Care LLP vs M/S GLOBAL ASSOCIATES,Post-Disposal,12,0,12,223.9
 KL-000543-2025,ST/385/2025,ESHIKA CASHEW COMPANY vs Chithira Impex and 2 Others,Complainant Evidence,12,0,12,372.0
-KL-000689-2025,ST/370/2025,K K Shajahan vs Babitha Sam,Examination of Accused,12,0,12,375.0
-KL-000019-2026,ST/5/2026,HDFC BANK LTD vs MAHILAL K MOHAN,Complainant Evidence,12,0,12,241.0
-KL-000180-2025,ST/81/2025,Gopakumar Gopi vs Sajitha,Judgement,12,0,12,358.0
+KL-001055-2025,ST/662/2025,Ramlath Y vs Thajudeen  E,Post-Disposal,12,0,12,135.0
 KL-000815-2025,ST/442/2025,Veena S vs Nazarudeen A,Appearance,12,0,12,318.0
 KL-001129-2025,ST/754/2025,HDFC BANK LTD vs MUHAMMEDALI HUSSAIN,Appearance,12,0,12,257.0
-KL-000206-2025,ST/100/2025,HDFC BANK LTD vs Ansar P,Post-Disposal,12,1,11,207.0
-KL-000261-2024,ST/254/2025,HARITHA SYNDICATE vs RAJU N,Appearance,12,0,12,370.0
-KL-001083-2025,ST/702/2025,Saubhagya Finance vs Aswathy S,Appearance,12,0,12,249.0
-KL-000621-2025,ST/557/2025,Travancore Alchimed Health Care LLP vs M/S GLOBAL ASSOCIATES,Post-Disposal,12,0,12,223.9
-KL-000343-2025,ST/250/2025,"Aghnotronics vs Vecare Consumer Science Pvt Ltd,",Appearance,12,0,12,336.0
-KL-000569-2025,ST/325/2025,Jubairiyath vs Shameema B,Appearance,12,0,12,423.0
-KL-000107-2025,ST/70/2025,HDFC BANK LTD vs SAJIV,Complainant Evidence,12,0,12,440.0
-KL-001089-2025,ST/706/2025,Saubhagya Finance vs Kunjumol,Appearance,12,0,12,258.1
-KL-000474-2026,ST/192/2026,Amal Murali vs Sandhya V and 1 Other,Appearance,12,0,12,169.0
-KL-001166-2025,ST/844/2025,M/S KRISHNA FUELS vs VARGHESE,Complainant Evidence,12,0,12,189.0
 KL-000154-2024,ST/199/2025,REMYA R vs PREETHY MATHEW,Appearance,12,0,12,300.9
-KL-000779-2025,ST/457/2025,Maneesh S vs ARMINZAIN ENTERPRISES,Appearance,12,0,12,258.0
-KL-000401-2025,ST/403/2025,Santha vs Asif,Appearance,12,0,12,219.9
+KL-001166-2025,ST/844/2025,M/S KRISHNA FUELS vs VARGHESE,Complainant Evidence,12,0,12,189.0
+KL-000474-2026,ST/192/2026,Amal Murali vs Sandhya V and 1 Other,Appearance,12,0,12,169.0
+KL-000206-2025,ST/100/2025,HDFC BANK LTD vs Ansar P,Post-Disposal,12,1,11,207.0
 KL-000323-2026,ST/137/2026,K Vijayan Pillai vs Geetha K M,Complainant Evidence,12,0,12,152.1
-KL-000282-2025,ST/125/2025,MARANATHA FINCORP vs AMBILI K,Appearance,12,0,12,443.0
-KL-001055-2025,ST/662/2025,Ramlath Y vs Thajudeen  E,Post-Disposal,12,0,12,135.0
-KL-000021-2026,ST/7/2026,Sahadevan Pillai B vs Krishnan Kutty M,Appearance,12,0,12,97.0
-KL-000048-2025,ST/76/2025,Anila George vs Revikumar P,Appearance,12,0,12,517.1
+KL-000689-2025,ST/370/2025,K K Shajahan vs Babitha Sam,Examination of Accused,12,0,12,375.0
 KL-000872-2025,ST/581/2025,Arya Ravi vs Shajin Kattan Kodumal,Appearance,12,0,12,334.0
-KL-000213-2025,ST/131/2025,HDFC BANK LTD vs Thomas Koshy,Post-Disposal,12,0,12,206.0
-KL-001051-2025,ST/656/2025,Haritha Syndicate vs Haja  Mueenudeen,Appearance,12,0,12,164.0
+KL-000048-2025,ST/76/2025,Anila George vs Revikumar P,Appearance,12,0,12,517.1
+KL-000180-2025,ST/81/2025,Gopakumar Gopi vs Sajitha,Judgement,12,0,12,358.0
 KL-000975-2025,ST/648/2025,Pramod  P vs K  RAJEEV,Complainant Evidence,12,0,12,308.1
+KL-001083-2025,ST/702/2025,Saubhagya Finance vs Aswathy S,Appearance,12,0,12,249.0
+KL-000021-2026,ST/7/2026,Sahadevan Pillai B vs Krishnan Kutty M,Appearance,12,0,12,97.0
+KL-000779-2025,ST/457/2025,Maneesh S vs ARMINZAIN ENTERPRISES,Appearance,12,0,12,258.0
+KL-000569-2025,ST/325/2025,Jubairiyath vs Shameema B,Appearance,12,0,12,423.0
+KL-000213-2025,ST/131/2025,HDFC BANK LTD vs Thomas Koshy,Post-Disposal,12,0,12,206.0
+KL-000019-2026,ST/5/2026,HDFC BANK LTD vs MAHILAL K MOHAN,Complainant Evidence,12,0,12,241.0
+KL-001051-2025,ST/656/2025,Haritha Syndicate vs Haja  Mueenudeen,Appearance,12,0,12,164.0
+KL-000343-2025,ST/250/2025,"Aghnotronics vs Vecare Consumer Science Pvt Ltd,",Appearance,12,0,12,336.0
+KL-000329-2024,ST/32/2025,HDFC Bank Ltd vs Nirmal Philip,Appearance,11,0,11,504.0
 KL-000924-2025,ST/515/2025,HDFC BANK LTD vs RINU R,Appearance,11,0,11,282.9
-KL-000473-2025,ST/198/2025,HDFC BANK LTD vs SHEEJA,Appearance,11,0,11,428.9
-KL-000366-2026,ST/133/2026,Maxvalue Credits and Investments Ltd vs Usha,Appearance,11,0,11,124.9
-KL-000314-2024,ST/196/2025,G VIKRAMAN PILLAI vs ANIL KUMAR,Appearance,11,0,11,409.8
+KL-000031-2025,ST/677/2025,Anil kumar vs Vidya Anand,Appearance,11,0,11,290.0
 KL-000451-2025,ST/455/2025,SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs Sreeja,Appearance,11,0,11,252.0
-KL-000522-2025,ST/391/2025,Satheesh Babu vs Ragesh R,Complainant Evidence,11,0,11,302.1
+KL-000356-2025,ST/275/2025,Rahimath A vs Azeem  N,Appearance,11,0,11,324.1
 KL-000283-2025,ST/109/2025,SURESH KUMAR T S vs SOBHA CHANDRAN,Appearance,11,0,11,379.0
+KL-000314-2024,ST/196/2025,G VIKRAMAN PILLAI vs ANIL KUMAR,Appearance,11,0,11,409.8
+KL-001151-2025,ST/767/2025,Maniyan Krishnan vs Saju B,Complainant Evidence,11,0,11,298.1
 KL-000813-2025,ST/717/2025,GEETHA S vs Satheeshkumar G,Bail & Recording of Plea,11,0,11,301.0
-KL-000317-2025,ST/111/2025,Hakkim vs Baby Vanaja,Judgement,11,0,11,408.9
-KL-001019-2025,ST/548/2025,Bindhu D vs Mehruniza,Complainant Evidence,11,0,11,337.1
+KL-000387-2026,ST/143/2026,RG Electronics and 2 Others vs Omkar Distributors,Appearance,11,0,11,163.0
+KL-001080-2025,ST/700/2025,Saubhagya Finance vs Usha Kumari R,Bail & Recording of Plea,11,0,11,169.1
+KL-000276-2026,ST/104/2026,Thampi K Kunjappan vs Sheeja,Complainant Evidence,11,0,11,185.0
+KL-000366-2026,ST/133/2026,Maxvalue Credits and Investments Ltd vs Usha,Appearance,11,0,11,124.9
+KL-000473-2025,ST/198/2025,HDFC BANK LTD vs SHEEJA,Appearance,11,0,11,428.9
+KL-000364-2025,ST/285/2025,Viswaabharan P vs Ajith Kumar,Complainant Evidence,11,0,11,382.0
+KL-000398-2025,ST/335/2025,Judy J vs Shahina N,Complainant Evidence,11,0,11,327.0
+KL-001126-2025,ST/747/2025,HDFC BANK LTD vs ANTHONI,Appearance,11,0,11,257.9
+KL-001171-2025,ST/775/2025,HDFC BANK LTD vs PRADEEP V,Appearance,11,0,11,228.0
 KL-000832-2025,ST/494/2025,Manappuram Finance Ltd. vs Sudheep B,Bail & Recording of Plea,11,0,11,306.1
 KL-000268-2025,ST/187/2025,The Quilon Co Operative Urban Bank Ltd vs Rajaprasad S,Examination of Accused,11,1,10,458.0
-KL-000527-2025,ST/230/2025,Vineeth Mohan vs Denny Rajan,Appearance,11,0,11,337.0
-KL-001080-2025,ST/700/2025,Saubhagya Finance vs Usha Kumari R,Bail & Recording of Plea,11,0,11,169.1
-KL-000387-2026,ST/143/2026,RG Electronics and 2 Others vs Omkar Distributors,Appearance,11,0,11,163.0
-KL-000279-2024,ST/1/2025,HDFC BANK LTD vs Bindhu G,Post-Disposal,11,0,11,312.9
-KL-000929-2025,ST/801/2025,ANCY  MALIK vs BIJU DAMODARAN,Bail & Recording of Plea,11,0,11,109.0
-KL-001241-2025,ST/834/2025,Manu Augustin vs Alphonse Pappachan,Post-Disposal,11,1,10,166.0
-KL-000323-2024,ST/256/2025,SHAKTHIKULANGARA NIDHI LTD vs PRADEEP  KUMAR,Appearance,11,0,11,448.0
-KL-001084-2025,ST/703/2025,Saubhagya Finance vs Bindhu,Appearance,11,0,11,226.1
 KL-000333-2026,ST/117/2026,BALU PS vs DEEPU PRAHLAD,Appearance,11,0,11,187.0
-KL-000329-2024,ST/32/2025,HDFC Bank Ltd vs Nirmal Philip,Appearance,11,0,11,504.0
-KL-000921-2025,ST/636/2025,HDFC BANK LTD vs AJI K N,Appearance,11,0,11,326.1
-KL-001126-2025,ST/747/2025,HDFC BANK LTD vs ANTHONI,Appearance,11,0,11,257.9
-KL-000356-2025,ST/275/2025,Rahimath A vs Azeem  N,Appearance,11,0,11,324.1
+KL-000929-2025,ST/801/2025,ANCY  MALIK vs BIJU DAMODARAN,Bail & Recording of Plea,11,0,11,109.0
+KL-001084-2025,ST/703/2025,Saubhagya Finance vs Bindhu,Appearance,11,0,11,226.1
+KL-000279-2024,ST/1/2025,HDFC BANK LTD vs Bindhu G,Post-Disposal,11,0,11,312.9
 KL-000885-2025,ST/573/2025,Renjith C vs Sudheer,Complainant Evidence,11,0,11,315.0
+KL-000921-2025,ST/636/2025,HDFC BANK LTD vs AJI K N,Appearance,11,0,11,326.1
+KL-000323-2024,ST/256/2025,SHAKTHIKULANGARA NIDHI LTD vs PRADEEP  KUMAR,Appearance,11,0,11,448.0
+KL-000522-2025,ST/391/2025,Satheesh Babu vs Ragesh R,Complainant Evidence,11,0,11,302.1
+KL-001241-2025,ST/834/2025,Manu Augustin vs Alphonse Pappachan,Post-Disposal,11,1,10,166.0
 KL-000561-2025,ST/261/2025,SHAINI S vs SINOJ S,Bail & Recording of Plea,11,0,11,308.0
+KL-000527-2025,ST/230/2025,Vineeth Mohan vs Denny Rajan,Appearance,11,0,11,337.0
+KL-000317-2025,ST/111/2025,Hakkim vs Baby Vanaja,Judgement,11,0,11,408.9
 KL-000310-2026,ST/107/2026,Ajikumar M S vs Nizarudeen,Complainant Evidence,11,0,11,93.1
 KL-000977-2025,ST/654/2025,Raveendran R vs Lento C,Appearance,11,1,10,235.0
-KL-001151-2025,ST/767/2025,Maniyan Krishnan vs Saju B,Complainant Evidence,11,0,11,298.1
-KL-001171-2025,ST/775/2025,HDFC BANK LTD vs PRADEEP V,Appearance,11,0,11,228.0
-KL-000398-2025,ST/335/2025,Judy J vs Shahina N,Complainant Evidence,11,0,11,327.0
-KL-000364-2025,ST/285/2025,Viswaabharan P vs Ajith Kumar,Complainant Evidence,11,0,11,382.0
-KL-000031-2025,ST/677/2025,Anil kumar vs Vidya Anand,Appearance,11,0,11,290.0
-KL-000276-2026,ST/104/2026,Thampi K Kunjappan vs Sheeja,Complainant Evidence,11,0,11,185.0
-KL-001057-2025,ST/664/2025,Haritha Syndicate vs Stanley  Jose,Appearance,10,0,10,305.0
-KL-000653-2025,ST/523/2025,Girija T vs K Ramesh,Bail & Recording of Plea,10,0,10,108.0
-KL-000034-2026,ST/16/2026,K MURALEEDHARAN PILLAI vs Shamsudeen,Bail & Recording of Plea,10,0,10,114.0
-KL-000263-2025,ST/106/2025,LEENUS LOPAS vs RAHILA THAHIR,Arguments,10,0,10,406.0
-KL-001095-2025,ST/715/2025,Saubhagya Finance vs Sudha  O,Appearance,10,0,10,258.0
+KL-001019-2025,ST/548/2025,Bindhu D vs Mehruniza,Complainant Evidence,11,0,11,337.1
+KL-000910-2025,ST/601/2025,MARANATHA FINCORP vs SINDHU T S,Appearance,10,0,10,272.0
 KL-000691-2025,ST/340/2025,Kantilal Maruti Katkar vs Stephen  T,Defense Evidence,10,0,10,329.0
 KL-000918-2025,ST/669/2025,Ahamed Kabeer vs Sathyaseelan,Appearance,10,0,10,237.9
-KL-000190-2025,ST/487/2025,M/S COMBINED FOODS (P) LTD vs FNS TRADING AND DISTRIBUTION,Bail & Recording of Plea,10,0,10,237.9
-KL-000645-2025,ST/371/2025,Faizal A vs Nahas A S,Appearance,10,0,10,264.9
-KL-000354-2026,ST/215/2026,Kosh Koshy vs Abhijith Pillai,Appearance,10,0,10,190.1
-KL-000064-2025,ST/161/2025,HDFC BANK LTD vs JIJI S,Complainant Evidence,10,0,10,469.0
+KL-000219-2026,ST/76/2026,Vinu S vs Soumya P S,Appearance,10,0,10,119.0
+KL-000331-2026,ST/125/2026,Saritha vs Rajeena R T and 1 Other,Appearance,10,0,10,148.1
 KL-000459-2026,ST/197/2026,PADMAKUMAR vs Greeshma Rengan,Complainant Evidence,10,0,10,55.0
-KL-000661-2025,ST/576/2025,Rakhesh Rajendran vs Saranya A,Complainant Evidence,10,1,9,321.9
-KL-000685-2025,ST/374/2025,Biju B vs Sunilkumar R,Appearance,10,0,10,325.0
-KL-000600-2025,ST/281/2025,Haritha Syndicate vs Hussain,Post-Disposal,10,0,10,73.1
+KL-000034-2026,ST/16/2026,K MURALEEDHARAN PILLAI vs Shamsudeen,Bail & Recording of Plea,10,0,10,114.0
+KL-000978-2025,ST/655/2025,Raveendran R vs Lento C,Appearance,10,1,9,235.0
+KL-001096-2025,ST/716/2025,Saubhagya Finance vs Resna S,Appearance,10,0,10,258.0
+KL-000845-2025,ST/666/2025,HDFC Bank Ltd vs SHIMLA S,Appearance,10,0,10,235.0
+KL-000645-2025,ST/371/2025,Faizal A vs Nahas A S,Appearance,10,0,10,264.9
+KL-000930-2025,ST/541/2025,Premkrishnan V vs Bijith B,Complainant Evidence,10,0,10,332.0
 KL-000531-2026,ST/237/2026,Binu John vs Limi Lorance,Appearance,10,0,10,179.0
+KL-000661-2025,ST/576/2025,Rakhesh Rajendran vs Saranya A,Complainant Evidence,10,1,9,321.9
+KL-000161-2025,ST/139/2025,Jacob  K vs Aji P Koruthu,Examination of Accused,10,0,10,421.1
+KL-000263-2025,ST/106/2025,LEENUS LOPAS vs RAHILA THAHIR,Arguments,10,0,10,406.0
+KL-000062-2026,ST/33/2026,AYIROOR NIDHI LTD vs DEEPA V,Appearance,10,1,9,191.0
+KL-000925-2025,ST/516/2025,HDFC BANK LTD vs SAJEED J,Appearance,10,0,10,294.0
+KL-001075-2025,ST/711/2025,HDFC BANK LTD vs PRABIN P KUTTAPPAN,Appearance,10,0,10,216.9
+KL-000064-2025,ST/161/2025,HDFC BANK LTD vs JIJI S,Complainant Evidence,10,0,10,469.0
+KL-000685-2025,ST/374/2025,Biju B vs Sunilkumar R,Appearance,10,0,10,325.0
+KL-000436-2026,ST/174/2026,Akash J vs Bibin Baby,Complainant Evidence,10,0,10,169.0
 KL-000183-2025,ST/145/2025,HDFC BANK LTD vs GEETHA SURESH,Appearance,10,0,10,439.0
 KL-000280-2025,ST/170/2025,Praveen P vs Naveen R,Bail & Recording of Plea,10,0,10,378.0
-KL-000436-2026,ST/174/2026,Akash J vs Bibin Baby,Complainant Evidence,10,0,10,169.0
-KL-000976-2025,ST/653/2025,Raveendran R vs Lento C,Appearance,10,1,9,235.0
-KL-000161-2025,ST/139/2025,Jacob  K vs Aji P Koruthu,Examination of Accused,10,0,10,421.1
-KL-000978-2025,ST/655/2025,Raveendran R vs Lento C,Appearance,10,1,9,235.0
-KL-000219-2026,ST/76/2026,Vinu S vs Soumya P S,Appearance,10,0,10,119.0
-KL-000062-2026,ST/33/2026,AYIROOR NIDHI LTD vs DEEPA V,Appearance,10,1,9,191.0
-KL-001075-2025,ST/711/2025,HDFC BANK LTD vs PRABIN P KUTTAPPAN,Appearance,10,0,10,216.9
-KL-001096-2025,ST/716/2025,Saubhagya Finance vs Resna S,Appearance,10,0,10,258.0
-KL-000833-2026,ST/475/2026,Stephen Netto vs Ganga,Appearance,10,0,10,71.0
-KL-000521-2025,ST/430/2025,Satheesh Babu vs Jayaram,Post-Judgement,10,0,10,281.1
-KL-000925-2025,ST/516/2025,HDFC BANK LTD vs SAJEED J,Appearance,10,0,10,294.0
-KL-000282-2024,ST/34/2025,J K Vijayakumar vs Chacko Panicker,Defense Evidence,10,0,10,542.9
-KL-001226-2025,ST/818/2025,Vidhu B vs Vijayakumar,Bail & Recording of Plea,10,0,10,169.1
 KL-001077-2025,ST/697/2025,HDFC BANK LTD vs HARSH MOHAN,Appearance,10,0,10,285.9
-KL-000930-2026,ST/506/2026,Maben Nidhi Ltd vs Bindhu,Appearance,10,0,10,107.0
-KL-000845-2025,ST/666/2025,HDFC Bank Ltd vs SHIMLA S,Appearance,10,0,10,235.0
-KL-000930-2025,ST/541/2025,Premkrishnan V vs Bijith B,Complainant Evidence,10,0,10,332.0
-KL-000910-2025,ST/601/2025,MARANATHA FINCORP vs SINDHU T S,Appearance,10,0,10,272.0
-KL-000248-2026,ST/82/2026,SHAKTHIKULANGARA NIDHI LTD vs Sanija R,Appearance,10,0,10,183.2
-KL-000964-2025,ST/595/2025,Haritha Syndicate vs Beena L,Appearance,10,0,10,302.9
-KL-000132-2024,ST/297/2025,Shaufi A vs Azad Abdul  Rahim,Appearance,10,0,10,307.0
-KL-000331-2026,ST/125/2026,Saritha vs Rajeena R T and 1 Other,Appearance,10,0,10,148.1
-KL-000870-2026,ST/477/2026,Riyaskhan N vs Saneesh Syam,Appearance,10,0,10,87.0
+KL-000282-2024,ST/34/2025,J K Vijayakumar vs Chacko Panicker,Defense Evidence,10,0,10,542.9
+KL-000833-2026,ST/475/2026,Stephen Netto vs Ganga,Appearance,10,0,10,71.0
+KL-001226-2025,ST/818/2025,Vidhu B vs Vijayakumar,Bail & Recording of Plea,10,0,10,169.1
+KL-000521-2025,ST/430/2025,Satheesh Babu vs Jayaram,Post-Judgement,10,0,10,281.1
 KL-001143-2025,ST/762/2025,Shihabudeen vs Saifudeen,Arguments,10,0,10,262.0
+KL-000930-2026,ST/506/2026,Maben Nidhi Ltd vs Bindhu,Appearance,10,0,10,107.0
+KL-000190-2025,ST/487/2025,M/S COMBINED FOODS (P) LTD vs FNS TRADING AND DISTRIBUTION,Bail & Recording of Plea,10,0,10,237.9
+KL-000653-2025,ST/523/2025,Girija T vs K Ramesh,Bail & Recording of Plea,10,0,10,108.0
+KL-000132-2024,ST/297/2025,Shaufi A vs Azad Abdul  Rahim,Appearance,10,0,10,307.0
+KL-000976-2025,ST/653/2025,Raveendran R vs Lento C,Appearance,10,1,9,235.0
+KL-000600-2025,ST/281/2025,Haritha Syndicate vs Hussain,Post-Disposal,10,0,10,73.1
 KL-000491-2025,ST/408/2025,Santha vs K Ramachandran Chettiyar,Complainant Evidence,10,0,10,333.9
-KL-000671-2025,ST/367/2025,Suresh  Kumar vs Aneesh  Mohan,Appearance,9,0,9,291.0
-KL-000199-2026,ST/58/2026,Muhammed Riyas N vs Ashkar Anzar,Appearance,9,0,9,200.0
-KL-000988-2025,ST/676/2025,HDFC BANK LTD vs NANDU M R,Post-Disposal,9,0,9,222.9
-KL-000550-2026,ST/247/2026,SOBHANA vs ANIMOLE Y,Appearance,9,0,9,167.0
-KL-000506-2025,ST/217/2025,HDFC BANK LTD vs VALSALA T K,Appearance,9,0,9,367.0
-KL-000401-2026,ST/151/2026,Prabhakaran K vs Harikumar S,Appearance,9,0,9,193.0
-KL-000552-2025,ST/227/2025,GEETHA S vs SATHEESH KUMAR G,Examination of Accused,9,0,9,217.0
-KL-000784-2026,ST/399/2026,Saleena S vs RAJU,Complainant Evidence,9,0,9,141.0
-KL-000912-2025,ST/632/2025,MARANATHA FINCORP vs Surendran K,Appearance,9,0,9,314.0
-KL-001052-2025,ST/831/2025,Tinu P vs Vinu P,Bail & Recording of Plea,9,0,9,234.1
-KL-000512-2026,ST/234/2026,SHAJI vs Girish Kumar S,Appearance,9,0,9,173.0
-KL-000713-2025,ST/390/2025,Marykutty Andrew vs Sumayya,Appearance,9,0,9,387.0
-KL-000405-2026,ST/248/2026,Renjith Vijayan vs Shiju Thomas,Appearance,9,0,9,90.0
-KL-000632-2025,ST/355/2025,K R SUSEELAN vs Poornima Harbhan,Appearance,9,0,9,246.0
-KL-000141-2024,ST/11/2025,Sanoj vs Asha S,Post-Disposal,9,0,9,335.1
-KL-000468-2025,ST/338/2025,Deepam Manufacturing and Industrial vs Apna Traders and 1 Other,Appearance,9,0,9,318.0
-KL-000911-2025,ST/631/2025,MARANATHA FINCORP vs NISHAD K J,Appearance,9,0,9,314.0
-KL-000460-2025,ST/225/2025,SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES,Arguments,9,0,9,458.0
-KL-000834-2025,ST/453/2025,Manappuram Finance Ltd. vs ANNIE ISSAC,Appearance,9,0,9,353.9
+KL-000354-2026,ST/215/2026,Kosh Koshy vs Abhijith Pillai,Appearance,10,0,10,190.1
+KL-001057-2025,ST/664/2025,Haritha Syndicate vs Stanley  Jose,Appearance,10,0,10,305.0
+KL-000248-2026,ST/82/2026,SHAKTHIKULANGARA NIDHI LTD vs Sanija R,Appearance,10,0,10,183.2
+KL-000870-2026,ST/477/2026,Riyaskhan N vs Saneesh Syam,Appearance,10,0,10,87.0
+KL-000964-2025,ST/595/2025,Haritha Syndicate vs Beena L,Appearance,10,0,10,302.9
+KL-001095-2025,ST/715/2025,Saubhagya Finance vs Sudha  O,Appearance,10,0,10,258.0
 KL-000259-2025,ST/162/2025,Radhamany G vs Laly,Post-Judgement,9,0,9,374.0
-KL-000789-2026,ST/407/2026,Sunil S vs Shakeela,Complainant Evidence,9,0,9,140.1
-KL-000823-2025,ST/580/2025,Sreerag Syamala vs Akshay,Complainant Evidence,9,0,9,229.1
-KL-000884-2025,ST/583/2025,SILVERLINE METAL INDUSTRIES vs AKHIL KUMARI,Bail & Recording of Plea,9,0,9,247.0
-KL-001043-2025,ST/619/2025,SHAKTHIKULANGARA NIDHI LTD vs Rajani  V,Appearance,9,0,9,329.0
-KL-000891-2025,ST/585/2025,SHAKTHIKULANGARA NIDHI LTD vs SHIBU  B,Examination of Accused,9,1,8,315.0
-KL-000220-2026,ST/168/2026,Mohanan G vs Shajimon M,Appearance,9,0,9,170.0
-KL-000704-2025,ST/486/2025,Haritha Syndicate vs Vishnu M L,Bail & Recording of Plea,9,0,9,278.9
-KL-000116-2025,ST/462/2025,Praseetha A vs MUHAMMED,Appearance,9,0,9,328.0
-KL-000417-2025,ST/530/2025,SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs SIMI HANEEF,Post-Disposal,9,0,9,155.0
-KL-000547-2026,ST/261/2026,SOBHANA vs MERI,Appearance,9,0,9,168.0
-KL-000054-2026,ST/24/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,9,0,9,222.1
+KL-000671-2025,ST/367/2025,Suresh  Kumar vs Aneesh  Mohan,Appearance,9,0,9,291.0
+KL-000911-2025,ST/631/2025,MARANATHA FINCORP vs NISHAD K J,Appearance,9,0,9,314.0
+KL-000199-2026,ST/58/2026,Muhammed Riyas N vs Ashkar Anzar,Appearance,9,0,9,200.0
+KL-000512-2026,ST/234/2026,SHAJI vs Girish Kumar S,Appearance,9,0,9,173.0
 KL-000777-2025,ST/447/2025,Haritha Syndicate  vs Anandu Anilkumar,Post-Disposal,9,0,9,237.9
-KL-000275-2025,ST/183/2025,SABU V vs JYOTHI S,Defense Evidence,9,0,9,268.0
-KL-000446-2025,ST/180/2025,Haritha Syndicate vs Vishnu Soman,Appearance,9,0,9,490.9
+KL-000789-2026,ST/407/2026,Sunil S vs Shakeela,Complainant Evidence,9,0,9,140.1
+KL-000988-2025,ST/676/2025,HDFC BANK LTD vs NANDU M R,Post-Disposal,9,0,9,222.9
+KL-000823-2025,ST/580/2025,Sreerag Syamala vs Akshay,Complainant Evidence,9,0,9,229.1
+KL-000468-2025,ST/338/2025,Deepam Manufacturing and Industrial vs Apna Traders and 1 Other,Appearance,9,0,9,318.0
 KL-000894-2025,ST/536/2025,Ratheesh E vs Bincymol W,Appearance,9,0,9,307.9
+KL-000446-2025,ST/180/2025,Haritha Syndicate vs Vishnu Soman,Appearance,9,0,9,490.9
+KL-000460-2025,ST/225/2025,SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES,Arguments,9,0,9,458.0
+KL-000784-2026,ST/399/2026,Saleena S vs RAJU,Complainant Evidence,9,0,9,141.0
+KL-000552-2025,ST/227/2025,GEETHA S vs SATHEESH KUMAR G,Examination of Accused,9,0,9,217.0
+KL-000912-2025,ST/632/2025,MARANATHA FINCORP vs Surendran K,Appearance,9,0,9,314.0
+KL-000401-2026,ST/151/2026,Prabhakaran K vs Harikumar S,Appearance,9,0,9,193.0
+KL-000405-2026,ST/248/2026,Renjith Vijayan vs Shiju Thomas,Appearance,9,0,9,90.0
+KL-000550-2026,ST/247/2026,SOBHANA vs ANIMOLE Y,Appearance,9,0,9,167.0
+KL-000220-2026,ST/168/2026,Mohanan G vs Shajimon M,Appearance,9,0,9,170.0
 KL-000981-2025,ST/718/2025,Mulamoottil Associates vs Haneefa,Appearance,9,0,9,313.0
-KL-000941-2025,ST/699/2025,Aru Raj vs Ajesh S,Complainant Evidence,8,0,8,31.1
+KL-000547-2026,ST/261/2026,SOBHANA vs MERI,Appearance,9,0,9,168.0
+KL-000417-2025,ST/530/2025,SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs SIMI HANEEF,Post-Disposal,9,0,9,155.0
+KL-000704-2025,ST/486/2025,Haritha Syndicate vs Vishnu M L,Bail & Recording of Plea,9,0,9,278.9
+KL-000506-2025,ST/217/2025,HDFC BANK LTD vs VALSALA T K,Appearance,9,0,9,367.0
+KL-000713-2025,ST/390/2025,Marykutty Andrew vs Sumayya,Appearance,9,0,9,387.0
+KL-001043-2025,ST/619/2025,SHAKTHIKULANGARA NIDHI LTD vs Rajani  V,Appearance,9,0,9,329.0
+KL-000884-2025,ST/583/2025,SILVERLINE METAL INDUSTRIES vs AKHIL KUMARI,Bail & Recording of Plea,9,0,9,247.0
+KL-000834-2025,ST/453/2025,Manappuram Finance Ltd. vs ANNIE ISSAC,Appearance,9,0,9,353.9
+KL-000632-2025,ST/355/2025,K R SUSEELAN vs Poornima Harbhan,Appearance,9,0,9,246.0
+KL-001052-2025,ST/831/2025,Tinu P vs Vinu P,Bail & Recording of Plea,9,0,9,234.1
+KL-000891-2025,ST/585/2025,SHAKTHIKULANGARA NIDHI LTD vs SHIBU  B,Examination of Accused,9,1,8,315.0
+KL-000054-2026,ST/24/2026,Brothers Pharma vs Karunya Medicals and 1 Other,Complainant Evidence,9,0,9,222.1
+KL-000141-2024,ST/11/2025,Sanoj vs Asha S,Post-Disposal,9,0,9,335.1
+KL-000275-2025,ST/183/2025,SABU V vs JYOTHI S,Defense Evidence,9,0,9,268.0
+KL-000116-2025,ST/462/2025,Praseetha A vs MUHAMMED,Appearance,9,0,9,328.0
+KL-000505-2026,ST/214/2026,BABU N vs MUHAMMED RAFI,Appearance,8,0,8,154.9
+KL-000881-2025,ST/528/2025,Surendranath vs Gopinatha Pilla,Arguments,8,0,8,321.0
+KL-001016-2025,ST/550/2025,Manappuram Finance Ltd. vs Jincy  Arun,Appearance,8,0,8,69.0
+KL-000869-2026,ST/452/2026,Vijayan A vs MINIMOL L,Appearance,8,0,8,100.0
+KL-000645-2026,ST/309/2026,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL,Appearance,8,0,8,92.0
+KL-000365-2025,ST/345/2025,HDFC BANK LTD vs SUMANLAL S,Appearance,8,0,8,338.0
 KL-000771-2026,ST/383/2026,MANAPPURAM FINANCE LIMITED vs PARVATHY P,Appearance,8,0,8,132.9
-KL-000587-2026,ST/271/2026,"Samastha Nair Nidhi Ltd.,  vs Ambili",Complainant Evidence,8,1,7,159.9
+KL-001199-2025,ST/792/2025,Sri Durga Traders vs Manu Soman,Appearance,8,0,8,237.9
 KL-001108-2026,ST/597/2026,SHYAM MOHAN vs ANEESHA B R,Appearance,8,0,8,32.0
-KL-001261-2025,ST/10/2026,M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd. vs Jose Nikesh,Examination of Accused,8,1,7,217.1
-KL-000431-2026,ST/167/2026,HDFC BANK LTD vs SINAJ C T,Appearance,8,0,8,183.0
-KL-000998-2025,ST/751/2025,kerala kaumudi vs Vinod B,Appearance,8,0,8,83.0
-KL-000335-2026,ST/129/2026,Saritha vs SHAFEER S,Appearance,8,0,8,148.1
-KL-000594-2026,ST/278/2026,Shree Padma Nidhi Limited vs Anusmitha V,Appearance,8,0,8,121.0
-KL-000565-2025,ST/334/2025,Haritha Syndicate vs Jyothish,Appearance,8,0,8,329.0
-KL-000637-2026,ST/303/2026,SILVERLINE TRADING COMPANY vs ANOOP SUGATHAN KUMAR,Appearance,8,0,8,133.9
-KL-000062-2025,ST/202/2025,Sunildeth KR vs Sheeja A,Appearance,8,0,8,423.8
-KL-000644-2026,ST/307/2026,SILVERLINE TRADING COMPANY vs SAJEEV,Appearance,8,0,8,41.9
-KL-000636-2026,ST/318/2026,Ashif Riyas vs Habeeb A,Appearance,8,0,8,144.0
-KL-000490-2025,ST/358/2025,Sree Gokulam Chits and Finance Co Pvt Ltd vs Vanmathy  V,Appearance,8,0,8,109.0
-KL-000829-2025,ST/448/2025,Manappuram Finance Ltd. vs SHANIFA  J,Complainant Evidence,8,0,8,178.9
-KL-000749-2025,ST/387/2025,TINNY SUNNY vs NAGARAJAN G THENMALA RAJAN,Examination of Accused,8,0,8,349.0
-KL-000441-2026,ST/177/2026,Aneesha Biju vs Sarath Sasi,Appearance,8,0,8,141.9
-KL-000830-2025,ST/451/2025,Manappuram Finance Ltd. vs Archana G,Appearance,8,0,8,316.0
-KL-000009-2025,ST/68/2025,HDFC BANK LTD vs SUNI S,Appearance,8,0,8,409.0
-KL-000235-2026,ST/80/2026,HDFC BANK LTD vs JIJUMON S,Appearance,8,0,8,180.0
-KL-000049-2025,ST/52/2025,SHAJAHAN M vs NUSRATH V P,Appearance,8,0,8,419.0
+KL-001047-2025,ST/624/2025,Haritha Syndicate vs Kunjumon,Appearance,8,0,8,288.0
 KL-001205-2025,ST/807/2025,Sebastian Joseph vs Bernad Sebastian,Complainant Evidence,8,0,8,254.9
-KL-000315-2026,ST/100/2026,Salini Blossy vs Naaj Trouvaille Travel & Tourism,Appearance,8,0,8,102.1
-KL-001028-2025,ST/620/2025,Haritha Syndicate vs John  Mary,Appearance,8,0,8,223.0
-KL-000536-2025,ST/324/2025,Ferozkhan A vs Najimudeen,Complainant Evidence,8,1,7,314.0
-KL-001039-2025,ST/616/2025,HDFC BANK LTD vs SHIHAB E,Appearance,8,0,8,258.0
-KL-000393-2025,ST/151/2025,Johnson A vs Jayapalan  Rozario,Complainant Evidence,8,0,8,461.0
-KL-000286-2024,ST/819/2025,Biju K vs Dileep D,Appearance,8,0,8,226.9
-KL-000851-2025,ST/511/2025,HDFC BANK LTD vs JIJUMON S,Appearance,8,0,8,303.0
-KL-000953-2025,ST/646/2025,Sajeena Y vs Shahaludeen,Appearance,8,0,8,67.0
-KL-000272-2026,ST/96/2026,Kannan vs Saranyamol,Appearance,8,0,8,196.0
-KL-000045-2025,ST/787/2025,Murali Govind vs SOUMYA,Complainant Evidence,8,0,8,280.1
-KL-000467-2026,ST/233/2026,Annamma Thomas vs Deepu James,Appearance,8,0,8,85.9
-KL-000270-2024,ST/846/2025,HDFC Bank LTD vs Meenakumari R,Post-Disposal,8,2,6,241.0
-KL-000044-2025,ST/46/2025,HDFC BANK LTD vs ROBIN SAMUEL,Appearance,8,0,8,477.1
-KL-000723-2025,ST/756/2025,SINIKUMAR K S vs RENJITH ASOKAN,Appearance,8,0,8,206.0
-KL-000219-2025,ST/364/2025,Anil Kumar vs Manesh,Appearance,8,1,7,308.9
-KL-000385-2026,ST/211/2026,Elakamon Akshaya Nidhi Ltd vs Padmini S,Appearance,8,0,8,157.9
-KL-000549-2026,ST/250/2026,Ajithkumar A vs Sobha A,Appearance,8,0,8,164.9
-KL-000392-2026,ST/212/2026,Elakamon Akshaya Nidhi Ltd vs Fousiya,Appearance,8,0,8,157.9
+KL-000323-2025,ST/141/2025,MARANATHA FINCORP vs SUNDARAMBAL M P,Appearance,8,0,8,441.9
 KL-000776-2026,ST/405/2026,MANAPPURAM FINANCE LIMITED vs SHYLA JOSE and 1 Other,Bail & Recording of Plea,8,0,8,70.1
-KL-000056-2025,ST/51/2025,M P SUBASH vs NUSRATH V P,Appearance,8,0,8,419.0
-KL-000524-2026,ST/232/2026,Shree Padma Nidhi Limited vs Remya R,Appearance,8,0,8,155.9
+KL-000484-2025,ST/366/2025,Anil Kumar S vs Renjith,Complainant Evidence,8,0,8,353.0
+KL-000954-2025,ST/588/2025,Jayachandran  S vs Ajitha Kumari S,Examination of Accused,8,0,8,30.0
+KL-000432-2026,ST/220/2026,Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer,Appearance,8,0,8,152.1
+KL-000085-2025,ST/102/2025,HDFC BANK LTD vs ANITHA KUMARI,Post-Disposal,8,0,8,53.0
+KL-000518-2026,ST/263/2026,BYJU Y vs SUMESH R,Appearance,8,0,8,105.0
+KL-000044-2025,ST/46/2025,HDFC BANK LTD vs ROBIN SAMUEL,Appearance,8,0,8,477.1
+KL-000587-2026,ST/271/2026,"Samastha Nair Nidhi Ltd.,  vs Ambili",Complainant Evidence,8,1,7,159.9
+KL-000961-2025,ST/594/2025,HDFC BANK LTD vs SHYJU S RAJU,Appearance,8,0,8,310.0
+KL-001028-2025,ST/620/2025,Haritha Syndicate vs John  Mary,Appearance,8,0,8,223.0
+KL-001039-2025,ST/616/2025,HDFC BANK LTD vs SHIHAB E,Appearance,8,0,8,258.0
+KL-000286-2024,ST/819/2025,Biju K vs Dileep D,Appearance,8,0,8,226.9
+KL-000638-2025,ST/678/2025,Rajeevan V vs Sheena Sunilkumar,Appearance,8,0,8,224.9
+KL-000953-2025,ST/646/2025,Sajeena Y vs Shahaludeen,Appearance,8,0,8,67.0
+KL-000234-2026,ST/74/2026,HDFC BANK LTD vs VISHNU VIJAYAN,Appearance,8,0,8,186.0
+KL-000549-2026,ST/250/2026,Ajithkumar A vs Sobha A,Appearance,8,0,8,164.9
+KL-000393-2025,ST/151/2025,Johnson A vs Jayapalan  Rozario,Complainant Evidence,8,0,8,461.0
+KL-000749-2025,ST/387/2025,TINNY SUNNY vs NAGARAJAN G THENMALA RAJAN,Examination of Accused,8,0,8,349.0
+KL-000594-2026,ST/278/2026,Shree Padma Nidhi Limited vs Anusmitha V,Appearance,8,0,8,121.0
+KL-000637-2026,ST/303/2026,SILVERLINE TRADING COMPANY vs ANOOP SUGATHAN KUMAR,Appearance,8,0,8,133.9
+KL-000431-2026,ST/167/2026,HDFC BANK LTD vs SINAJ C T,Appearance,8,0,8,183.0
+KL-000723-2025,ST/756/2025,SINIKUMAR K S vs RENJITH ASOKAN,Appearance,8,0,8,206.0
+KL-000235-2026,ST/80/2026,HDFC BANK LTD vs JIJUMON S,Appearance,8,0,8,180.0
+KL-000272-2026,ST/96/2026,Kannan vs Saranyamol,Appearance,8,0,8,196.0
+KL-000009-2025,ST/68/2025,HDFC BANK LTD vs SUNI S,Appearance,8,0,8,409.0
+KL-000335-2026,ST/129/2026,Saritha vs SHAFEER S,Appearance,8,0,8,148.1
+KL-001135-2025,ST/752/2025,Sooryakumar vs Sivanand Viswas Nidhi Ltd ,Appearance,8,0,8,23.0
+KL-000619-2025,ST/439/2025,Rajesh Raveendran Pillai vs Shijumom  Joseph,Appearance,8,1,7,291.1
+KL-000270-2024,ST/846/2025,HDFC Bank LTD vs Meenakumari R,Post-Disposal,8,2,6,241.0
+KL-000062-2025,ST/202/2025,Sunildeth KR vs Sheeja A,Appearance,8,0,8,423.8
+KL-000636-2026,ST/318/2026,Ashif Riyas vs Habeeb A,Appearance,8,0,8,144.0
+KL-000392-2026,ST/212/2026,Elakamon Akshaya Nidhi Ltd vs Fousiya,Appearance,8,0,8,157.9
+KL-000644-2026,ST/307/2026,SILVERLINE TRADING COMPANY vs SAJEEV,Appearance,8,0,8,41.9
+KL-000944-2025,ST/389/2026,Rema K vs Reeja S,Bail & Recording of Plea,8,0,8,86.0
+KL-000385-2026,ST/211/2026,Elakamon Akshaya Nidhi Ltd vs Padmini S,Appearance,8,0,8,157.9
 KL-000869-2025,ST/808/2025,Abdul Salim M vs M/s Frizzile Foods and 3 Others,Post-Disposal,8,0,8,126.0
 KL-000294-2026,ST/376/2026,Anilkumar B vs Ramani S,Appearance,8,0,8,98.0
-KL-000645-2026,ST/309/2026,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL,Appearance,8,0,8,92.0
-KL-000598-2026,ST/273/2026,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other,Appearance,8,0,8,99.0
-KL-000580-2025,ST/247/2025,Kavya Babu vs Jiji L,Complainant Evidence,8,0,8,373.0
-KL-000619-2025,ST/439/2025,Rajesh Raveendran Pillai vs Shijumom  Joseph,Appearance,8,1,7,291.1
-KL-000980-2025,ST/650/2025,HDFC BANK LTD vs SAJITH KUMAR,Appearance,8,0,8,293.9
-KL-000323-2025,ST/141/2025,MARANATHA FINCORP vs SUNDARAMBAL M P,Appearance,8,0,8,441.9
-KL-000954-2025,ST/588/2025,Jayachandran  S vs Ajitha Kumari S,Examination of Accused,8,0,8,30.0
-KL-001047-2025,ST/624/2025,Haritha Syndicate vs Kunjumon,Appearance,8,0,8,288.0
-KL-000365-2025,ST/345/2025,HDFC BANK LTD vs SUMANLAL S,Appearance,8,0,8,338.0
-KL-000944-2025,ST/389/2026,Rema K vs Reeja S,Bail & Recording of Plea,8,0,8,86.0
-KL-000085-2025,ST/102/2025,HDFC BANK LTD vs ANITHA KUMARI,Post-Disposal,8,0,8,53.0
-KL-000484-2025,ST/366/2025,Anil Kumar S vs Renjith,Complainant Evidence,8,0,8,353.0
-KL-000432-2026,ST/220/2026,Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer,Appearance,8,0,8,152.1
-KL-001135-2025,ST/752/2025,Sooryakumar vs Sivanand Viswas Nidhi Ltd ,Appearance,8,0,8,23.0
-KL-001199-2025,ST/792/2025,Sri Durga Traders vs Manu Soman,Appearance,8,0,8,237.9
-KL-000193-2025,ST/292/2025,VIPIN DAS D DAS vs SHAMSHEER MAHEEN,Appearance,8,0,8,328.0
 KL-000306-2026,ST/98/2026,Biju K P vs SALEENA A,Appearance,8,0,8,161.0
-KL-000518-2026,ST/263/2026,BYJU Y vs SUMESH R,Appearance,8,0,8,105.0
-KL-000869-2026,ST/452/2026,Vijayan A vs MINIMOL L,Appearance,8,0,8,100.0
-KL-000881-2025,ST/528/2025,Surendranath vs Gopinatha Pilla,Arguments,8,0,8,321.0
-KL-000505-2026,ST/214/2026,BABU N vs MUHAMMED RAFI,Appearance,8,0,8,154.9
+KL-000980-2025,ST/650/2025,HDFC BANK LTD vs SAJITH KUMAR,Appearance,8,0,8,293.9
+KL-000490-2025,ST/358/2025,Sree Gokulam Chits and Finance Co Pvt Ltd vs Vanmathy  V,Appearance,8,0,8,109.0
+KL-000580-2025,ST/247/2025,Kavya Babu vs Jiji L,Complainant Evidence,8,0,8,373.0
+KL-001261-2025,ST/10/2026,M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd. vs Jose Nikesh,Examination of Accused,8,1,7,217.1
+KL-000998-2025,ST/751/2025,kerala kaumudi vs Vinod B,Appearance,8,0,8,83.0
+KL-000851-2025,ST/511/2025,HDFC BANK LTD vs JIJUMON S,Appearance,8,0,8,303.0
+KL-000193-2025,ST/292/2025,VIPIN DAS D DAS vs SHAMSHEER MAHEEN,Appearance,8,0,8,328.0
 KL-000837-2025,ST/527/2025,Sivaprasad C vs Thriptha,Complainant Evidence,8,0,8,306.0
-KL-001016-2025,ST/550/2025,Manappuram Finance Ltd. vs Jincy  Arun,Appearance,8,0,8,69.0
-KL-000234-2026,ST/74/2026,HDFC BANK LTD vs VISHNU VIJAYAN,Appearance,8,0,8,186.0
+KL-000441-2026,ST/177/2026,Aneesha Biju vs Sarath Sasi,Appearance,8,0,8,141.9
+KL-000830-2025,ST/451/2025,Manappuram Finance Ltd. vs Archana G,Appearance,8,0,8,316.0
+KL-000524-2026,ST/232/2026,Shree Padma Nidhi Limited vs Remya R,Appearance,8,0,8,155.9
+KL-000829-2025,ST/448/2025,Manappuram Finance Ltd. vs SHANIFA  J,Complainant Evidence,8,0,8,178.9
+KL-000056-2025,ST/51/2025,M P SUBASH vs NUSRATH V P,Appearance,8,0,8,419.0
+KL-000467-2026,ST/233/2026,Annamma Thomas vs Deepu James,Appearance,8,0,8,85.9
+KL-000049-2025,ST/52/2025,SHAJAHAN M vs NUSRATH V P,Appearance,8,0,8,419.0
+KL-000315-2026,ST/100/2026,Salini Blossy vs Naaj Trouvaille Travel & Tourism,Appearance,8,0,8,102.1
+KL-000219-2025,ST/364/2025,Anil Kumar vs Manesh,Appearance,8,1,7,308.9
+KL-000536-2025,ST/324/2025,Ferozkhan A vs Najimudeen,Complainant Evidence,8,1,7,314.0
+KL-000565-2025,ST/334/2025,Haritha Syndicate vs Jyothish,Appearance,8,0,8,329.0
 KL-000040-2025,ST/289/2025,Rizwan Cashews vs Nadha Enterprises,Appearance,8,0,8,350.1
-KL-000961-2025,ST/594/2025,HDFC BANK LTD vs SHYJU S RAJU,Appearance,8,0,8,310.0
-KL-000638-2025,ST/678/2025,Rajeevan V vs Sheena Sunilkumar,Appearance,8,0,8,224.9
-KL-000657-2025,ST/373/2025,HDFC Bank Ltd vs Sanju Unnikrishnan,Appearance,7,0,7,308.1
-KL-001087-2025,ST/847/2025,Supreme Cashew Industries vs Ubaid Ebrahim,Appearance,7,0,7,282.0
-KL-000347-2024,ST/47/2025,HDFC BANK LTD vs JIJO JEROME,Post-Disposal,7,0,7,138.1
-KL-000603-2025,ST/271/2025,Bijumon  K vs Siddeek,Post-Judgement,7,0,7,175.9
-KL-001178-2025,ST/796/2025,vyapari vyavasayi merchantile social welfare cooporative society  vs Muhhammad Firdhouse,Appearance,7,0,7,195.0
-KL-000055-2026,ST/322/2026,Ansari M vs Sharly,Bail & Recording of Plea,7,0,7,150.9
-KL-000140-2026,ST/29/2026,Maben Nidhi Ltd. vs Sunil PD,Appearance,7,0,7,225.2
-KL-000737-2025,ST/380/2025,S Rajakrishnan vs Biju S,Appearance,7,0,7,334.0
-KL-000718-2025,ST/558/2025,Ajayakumar vs Prasanth  D,Appearance,7,0,7,189.0
-KL-000688-2026,ST/340/2026,VIKRAMARAJAN V vs SILJI PAULOSE,Appearance,7,0,7,127.9
-KL-000461-2026,ST/187/2026,HDFC BANK LTD vs VIJAYA KUMARI P,Appearance,7,0,7,179.2
-KL-000418-2026,ST/178/2026,Chackochan M vs Rajendran Pillai K N,Appearance,7,0,7,180.1
-KL-000708-2025,ST/680/2025,Leela R vs Manjula,Bail & Recording of Plea,7,0,7,280.9
-KL-000024-2026,ST/9/2026,GOPESH vs PRAVEEN PV,Appearance,7,0,7,212.0
-KL-000027-2026,ST/48/2026,MUHAMMED AJMAL  U N vs SAJEEV S R,Appearance,7,0,7,216.0
-KL-001121-2025,ST/745/2025,ANJU PILLAI vs MUBASHIR,Appearance,7,0,7,235.0
-KL-000666-2026,ST/364/2026,K Rajan vs Reji Mol,Post-Disposal,7,0,7,92.0
-KL-000072-2025,ST/55/2025,HDFC BANK LTD vs KUNJUMOL,Post-Disposal,7,1,6,124.0
-KL-000320-2026,ST/115/2026,MOHANA PILLAI vs Sreedvi,Appearance,7,0,7,191.0
-KL-000695-2025,ST/410/2025,M/S Fort In Infra Developers Private Limited vs Arul S,Bail & Recording of Plea,7,0,7,378.0
-KL-000347-2026,ST/124/2026,Ajayan M S vs Vishakh S,Appearance,7,0,7,189.9
-KL-000523-2025,ST/735/2025,SYAM  C vs R EKAMBARAM,Appearance,7,0,7,191.0
-KL-000430-2026,ST/166/2026,HDFC BANK LTD vs SANTHOSH KUMAR R,Appearance,7,0,7,170.0
-KL-000407-2026,ST/161/2026,SREELATHA O vs SREEJA,Appearance,7,0,7,184.0
-KL-000267-2024,ST/849/2025,Kabeer  T vs Jayapalan,Post-Disposal,7,0,7,289.0
-KL-001118-2025,ST/731/2025,Zaina A vs Sameer,Appearance,7,0,7,233.0
-KL-000361-2026,ST/135/2026,Haritha Syndicate vs Kalarani,Appearance,7,0,7,189.1
-KL-000158-2026,ST/59/2026,Deepthi vs Chandrababu,Complainant Evidence,7,0,7,165.9
-KL-000303-2025,ST/166/2025,C.P Enterprises    vs Sajina  Abdhulla Basheer,Defense Evidence,7,0,7,492.0
-KL-000504-2025,ST/728/2025,HIGHNESS FINANCE PRIVATE LIMITED vs GIRIJA T,Appearance,7,0,7,183.0
-KL-000206-2026,ST/114/2026,Vijayan Pillai vs Biji Mohan,Appearance,7,0,7,214.0
-KL-000568-2025,ST/287/2025,HARITHA SYNDICATE vs RENJITH,Appearance,7,0,7,385.9
-KL-000293-2024,ST/129/2025,HDFC BANK LTD vs Anusree S,Post-Disposal,7,0,7,65.1
-KL-000475-2026,ST/194/2026,SILVERLINE TRADING COMPANY vs SANJEEVAN,Complainant Evidence,7,0,7,111.9
-KL-001081-2025,ST/701/2025,Saubhagya Finance vs Amina,Complainant Evidence,7,0,7,246.1
-KL-000249-2026,ST/86/2026,Chathannoor Sree Nidhi Ltd vs Sajitha,Appearance,7,0,7,214.0
-KL-001189-2025,ST/789/2025,M/S Sadik Stores vs Sajan Sasidharan,Appearance,7,0,7,251.9
-KL-000828-2025,ST/684/2025,Beema Mol R vs Shameena Noufal  S,Defense Evidence,7,0,7,299.0
-KL-000033-2026,ST/14/2026,Sujith vs VINCENT,Appearance,7,0,7,212.0
-KL-001037-2025,ST/614/2025,HDFC BANK LTD vs AMALU L,Post-Disposal,7,0,7,96.9
-KL-000624-2025,ST/328/2025,MARABO ENTERPRISE LLP  vs COLOUR MART,Appearance,7,0,7,343.0
-KL-000969-2025,ST/605/2025,HDFC BANK LTD vs HARI MURALI,Appearance,7,0,7,259.0
-KL-000909-2025,ST/668/2025,MARANATHA FINCORP vs SREERAJ S T,Appearance,7,0,7,304.0
-KL-000804-2026,ST/415/2026,Jasmin S vs Sethu Suresh,Appearance,7,0,7,92.0
-KL-001046-2025,ST/623/2025,Haritha Syndicate vs Shani M,Appearance,7,0,7,235.0
-KL-001227-2025,ST/842/2025,"M/s HDFC Bank ltd, vs Mary Subha",Post-Disposal,7,0,7,165.0
-KL-000075-2026,ST/34/2026,V BOBBY SUNIL DUTT vs JIJO D PAUL,Appearance,7,0,7,218.1
-KL-000959-2026,ST/516/2026,Anilkumar vs Prabhakumari,Appearance,7,0,7,97.0
-KL-001200-2025,ST/806/2025,Umamaheswari R vs ARUNDHATHY,Complainant Evidence,7,0,7,195.0
-KL-000136-2025,ST/391/2026,Johnson Daniel vs Sumesh,Appearance,7,0,7,94.0
-KL-000501-2025,ST/533/2025,Mohammed Sidhique E S vs Haseena  S,Appearance,7,0,7,247.0
-KL-000835-2025,ST/454/2025,HDFC BANK LTD vs SATHYA BHAMA,Complainant Evidence,7,0,7,339.0
-KL-000786-2026,ST/419/2026,Anees Abbas vs Ajesh Kumar K,Appearance,7,0,7,127.0
-KL-000533-2026,ST/230/2026,Anoop S vs Rechana R,Appearance,7,0,7,158.0
-KL-000622-2026,ST/296/2026,Vidhyadiraja Grama Nidhi Limited vs Monikuttan,Appearance,7,0,7,159.0
-KL-001009-2026,ST/549/2026,Deepak Raju vs Athira Mohan,Appearance,7,0,7,39.0
-KL-001212-2025,ST/802/2025,HDFC BANK LTD vs MATHEWS JOY IDICULLA,Appearance,7,0,7,208.9
-KL-000875-2025,ST/477/2025,HDFC BANK LTD vs RESON P REJI,Post-Disposal,7,1,6,99.0
-KL-000966-2026,ST/524/2026,Paravur Akshaya Nidhi Ltd vs Sajeed S,Appearance,7,0,7,78.0
-KL-000844-2025,ST/564/2025,HDFC Bank Ltd vs Vishnu Sundar S,Appearance,7,0,7,98.0
-KL-000162-2026,ST/62/2026,Sebastian J vs Kasmel S,Appearance,7,0,7,123.9
+KL-000045-2025,ST/787/2025,Murali Govind vs SOUMYA,Complainant Evidence,8,0,8,280.1
+KL-000941-2025,ST/699/2025,Aru Raj vs Ajesh S,Complainant Evidence,8,0,8,31.1
+KL-000598-2026,ST/273/2026,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other,Appearance,8,0,8,99.0
 KL-000728-2025,ST/441/2025,Sivakumar K vs Gopakumar,Appearance,7,0,7,355.0
-KL-000927-2026,ST/496/2026,M/s Kollam Urban Vikas Nidhi Ltd vs Girija Kumari,Post-Disposal,7,0,7,86.0
-KL-001215-2025,ST/810/2025,Akhil Chandran vs Axis Overseas and 1 Other,Appearance,7,0,7,214.0
-KL-000622-2025,ST/427/2025,Ratheesh  Raveendran Pillai vs Shijumon Joseph,Appearance,7,0,7,266.9
+KL-000027-2026,ST/48/2026,MUHAMMED AJMAL  U N vs SAJEEV S R,Appearance,7,0,7,216.0
+KL-000737-2025,ST/380/2025,S Rajakrishnan vs Biju S,Appearance,7,0,7,334.0
+KL-000875-2025,ST/477/2025,HDFC BANK LTD vs RESON P REJI,Post-Disposal,7,1,6,99.0
+KL-001046-2025,ST/623/2025,Haritha Syndicate vs Shani M,Appearance,7,0,7,235.0
+KL-001081-2025,ST/701/2025,Saubhagya Finance vs Amina,Complainant Evidence,7,0,7,246.1
+KL-000718-2025,ST/558/2025,Ajayakumar vs Prasanth  D,Appearance,7,0,7,189.0
+KL-000140-2026,ST/29/2026,Maben Nidhi Ltd. vs Sunil PD,Appearance,7,0,7,225.2
+KL-000804-2026,ST/415/2026,Jasmin S vs Sethu Suresh,Appearance,7,0,7,92.0
+KL-000361-2026,ST/135/2026,Haritha Syndicate vs Kalarani,Appearance,7,0,7,189.1
+KL-000657-2025,ST/373/2025,HDFC Bank Ltd vs Sanju Unnikrishnan,Appearance,7,0,7,308.1
 KL-000087-2025,ST/54/2025,HDFC Bank Ltd vs Aneesha A S,Post-Disposal,7,0,7,143.0
-KL-000935-2026,ST/494/2026,Sudheesh B vs Anoop Krishnan V,Appearance,7,0,7,56.0
+KL-001121-2025,ST/745/2025,ANJU PILLAI vs MUBASHIR,Appearance,7,0,7,235.0
+KL-001009-2026,ST/549/2026,Deepak Raju vs Athira Mohan,Appearance,7,0,7,39.0
+KL-000622-2026,ST/296/2026,Vidhyadiraja Grama Nidhi Limited vs Monikuttan,Appearance,7,0,7,159.0
+KL-001087-2025,ST/847/2025,Supreme Cashew Industries vs Ubaid Ebrahim,Appearance,7,0,7,282.0
+KL-000504-2025,ST/728/2025,HIGHNESS FINANCE PRIVATE LIMITED vs GIRIJA T,Appearance,7,0,7,183.0
+KL-000603-2025,ST/271/2025,Bijumon  K vs Siddeek,Post-Judgement,7,0,7,175.9
+KL-000347-2026,ST/124/2026,Ajayan M S vs Vishakh S,Appearance,7,0,7,189.9
+KL-000835-2025,ST/454/2025,HDFC BANK LTD vs SATHYA BHAMA,Complainant Evidence,7,0,7,339.0
+KL-000927-2026,ST/496/2026,M/s Kollam Urban Vikas Nidhi Ltd vs Girija Kumari,Post-Disposal,7,0,7,86.0
+KL-000828-2025,ST/684/2025,Beema Mol R vs Shameena Noufal  S,Defense Evidence,7,0,7,299.0
+KL-000666-2026,ST/364/2026,K Rajan vs Reji Mol,Post-Disposal,7,0,7,92.0
+KL-000523-2025,ST/735/2025,SYAM  C vs R EKAMBARAM,Appearance,7,0,7,191.0
+KL-001212-2025,ST/802/2025,HDFC BANK LTD vs MATHEWS JOY IDICULLA,Appearance,7,0,7,208.9
+KL-000024-2026,ST/9/2026,GOPESH vs PRAVEEN PV,Appearance,7,0,7,212.0
+KL-000708-2025,ST/680/2025,Leela R vs Manjula,Bail & Recording of Plea,7,0,7,280.9
+KL-000055-2026,ST/322/2026,Ansari M vs Sharly,Bail & Recording of Plea,7,0,7,150.9
 KL-000879-2026,ST/456/2026,Manappuram Finance Ltd vs Adarsh Sathyapal,Appearance,7,0,7,92.9
-KL-001258-2025,ST/47/2026,Nazimudeen H vs Sajeena R,Appearance,6,0,6,164.0
-KL-000814-2026,ST/519/2026,Ambili A vs Heera J,Appearance,6,0,6,69.0
-KL-000279-2026,ST/94/2026,Sindhu V R vs Mujeeb Mon,Bail & Recording of Plea,6,0,6,21.0
-KL-000838-2025,ST/458/2025,HDFC BANK LTD vs MAJEESH MURALI,Appearance,6,0,6,280.0
-KL-000519-2026,ST/221/2026,Paravur Akshaya Nidhi Ltd vs Sheeja Shaji,Appearance,6,0,6,124.9
-KL-000109-2025,ST/753/2025,Ajikumar M S vs Vinu S Pai,Complainant Evidence,6,0,6,294.1
-KL-001177-2025,ST/790/2025,Premkrishnan V vs Santhosh Netto,Post-Disposal,6,0,6,37.9
-KL-000348-2026,ST/155/2026,Bank Employees Cooperative Society vs Vinneth P S,Complainant Evidence,6,0,6,195.0
-KL-000979-2025,ST/649/2025,HDFC BANK LTD vs YASODHARAN K,Post-Disposal,6,0,6,91.0
-KL-000290-2026,ST/241/2026,Rathilal R vs Varsha S,Appearance,6,0,6,107.0
-KL-000528-2026,ST/228/2026,Manappuram Finance Ltd vs Manjusha S,Appearance,6,0,6,74.0
-KL-000637-2025,ST/356/2025,Shemeer A vs Biju,Examination of Accused,6,0,6,257.1
-KL-000150-2024,ST/43/2025,Raju  Maniyan vs Sindhu,Appearance,6,0,6,435.9
-KL-000422-2026,ST/244/2026,Elakamon Akshaya Nidhi Ltd vs Faseela H,Appearance,6,0,6,141.9
-KL-000620-2026,ST/292/2026,Nizam vs Mohammed Basheer,Appearance,6,0,6,143.0
-KL-000033-2025,ST/37/2025,M/s. Collection India Enterprises Pvt Ltd vs P PRASAD,Appearance,6,0,6,494.0
-KL-000757-2026,ST/394/2026,Nedungolam Gramin Nidhi Ltd vs Rejitha A,Appearance,6,0,6,125.0
+KL-000033-2026,ST/14/2026,Sujith vs VINCENT,Appearance,7,0,7,212.0
+KL-000303-2025,ST/166/2025,C.P Enterprises    vs Sajina  Abdhulla Basheer,Defense Evidence,7,0,7,492.0
+KL-001037-2025,ST/614/2025,HDFC BANK LTD vs AMALU L,Post-Disposal,7,0,7,96.9
+KL-000418-2026,ST/178/2026,Chackochan M vs Rajendran Pillai K N,Appearance,7,0,7,180.1
+KL-000347-2024,ST/47/2025,HDFC BANK LTD vs JIJO JEROME,Post-Disposal,7,0,7,138.1
+KL-001227-2025,ST/842/2025,"M/s HDFC Bank ltd, vs Mary Subha",Post-Disposal,7,0,7,165.0
+KL-000136-2025,ST/391/2026,Johnson Daniel vs Sumesh,Appearance,7,0,7,94.0
+KL-000844-2025,ST/564/2025,HDFC Bank Ltd vs Vishnu Sundar S,Appearance,7,0,7,98.0
+KL-000568-2025,ST/287/2025,HARITHA SYNDICATE vs RENJITH,Appearance,7,0,7,385.9
+KL-000935-2026,ST/494/2026,Sudheesh B vs Anoop Krishnan V,Appearance,7,0,7,56.0
+KL-000072-2025,ST/55/2025,HDFC BANK LTD vs KUNJUMOL,Post-Disposal,7,1,6,124.0
+KL-000959-2026,ST/516/2026,Anilkumar vs Prabhakumari,Appearance,7,0,7,97.0
+KL-001215-2025,ST/810/2025,Akhil Chandran vs Axis Overseas and 1 Other,Appearance,7,0,7,214.0
+KL-000501-2025,ST/533/2025,Mohammed Sidhique E S vs Haseena  S,Appearance,7,0,7,247.0
+KL-000075-2026,ST/34/2026,V BOBBY SUNIL DUTT vs JIJO D PAUL,Appearance,7,0,7,218.1
+KL-000695-2025,ST/410/2025,M/S Fort In Infra Developers Private Limited vs Arul S,Bail & Recording of Plea,7,0,7,378.0
+KL-001118-2025,ST/731/2025,Zaina A vs Sameer,Appearance,7,0,7,233.0
+KL-000966-2026,ST/524/2026,Paravur Akshaya Nidhi Ltd vs Sajeed S,Appearance,7,0,7,78.0
+KL-000688-2026,ST/340/2026,VIKRAMARAJAN V vs SILJI PAULOSE,Appearance,7,0,7,127.9
+KL-000430-2026,ST/166/2026,HDFC BANK LTD vs SANTHOSH KUMAR R,Appearance,7,0,7,170.0
+KL-001189-2025,ST/789/2025,M/S Sadik Stores vs Sajan Sasidharan,Appearance,7,0,7,251.9
+KL-000461-2026,ST/187/2026,HDFC BANK LTD vs VIJAYA KUMARI P,Appearance,7,0,7,179.2
+KL-000624-2025,ST/328/2025,MARABO ENTERPRISE LLP  vs COLOUR MART,Appearance,7,0,7,343.0
+KL-000293-2024,ST/129/2025,HDFC BANK LTD vs Anusree S,Post-Disposal,7,0,7,65.1
+KL-000622-2025,ST/427/2025,Ratheesh  Raveendran Pillai vs Shijumon Joseph,Appearance,7,0,7,266.9
+KL-000909-2025,ST/668/2025,MARANATHA FINCORP vs SREERAJ S T,Appearance,7,0,7,304.0
+KL-000969-2025,ST/605/2025,HDFC BANK LTD vs HARI MURALI,Appearance,7,0,7,259.0
+KL-000407-2026,ST/161/2026,SREELATHA O vs SREEJA,Appearance,7,0,7,184.0
+KL-000786-2026,ST/419/2026,Anees Abbas vs Ajesh Kumar K,Appearance,7,0,7,127.0
+KL-000162-2026,ST/62/2026,Sebastian J vs Kasmel S,Appearance,7,0,7,123.9
+KL-000320-2026,ST/115/2026,MOHANA PILLAI vs Sreedvi,Appearance,7,0,7,191.0
+KL-000249-2026,ST/86/2026,Chathannoor Sree Nidhi Ltd vs Sajitha,Appearance,7,0,7,214.0
+KL-001178-2025,ST/796/2025,vyapari vyavasayi merchantile social welfare cooporative society  vs Muhhammad Firdhouse,Appearance,7,0,7,195.0
+KL-000158-2026,ST/59/2026,Deepthi vs Chandrababu,Complainant Evidence,7,0,7,165.9
+KL-000475-2026,ST/194/2026,SILVERLINE TRADING COMPANY vs SANJEEVAN,Complainant Evidence,7,0,7,111.9
+KL-000267-2024,ST/849/2025,Kabeer  T vs Jayapalan,Post-Disposal,7,0,7,289.0
+KL-000206-2026,ST/114/2026,Vijayan Pillai vs Biji Mohan,Appearance,7,0,7,214.0
+KL-000533-2026,ST/230/2026,Anoop S vs Rechana R,Appearance,7,0,7,158.0
+KL-001200-2025,ST/806/2025,Umamaheswari R vs ARUNDHATHY,Complainant Evidence,7,0,7,195.0
 KL-000881-2026,ST/466/2026,Manappuram Finance Ltd vs Anu A,Appearance,6,0,6,110.0
-KL-001149-2025,ST/764/2025,Haritha Syndicate vs Resmi B S,Bail & Recording of Plea,6,0,6,263.0
-KL-001207-2026,ST/665/2026,Arya S vs Society for Integrated Growth of the Nation  and 2 Others,Appearance,6,0,6,0.0
-KL-001150-2025,ST/766/2025,A R WOOD INDUSTRIES vs SADIQUE,Post-Disposal,6,0,6,130.0
-KL-000727-2026,ST/392/2026,saubhagya finance vs Rugminiyamma,Appearance,6,0,6,88.1
-KL-000465-2026,ST/188/2026,Pramodkumar Nair vs Biju K,Appearance,6,0,6,111.1
-KL-000890-2025,ST/582/2025,SILVERLINE TRADING COMPANY vs SURESH,Appearance,6,0,6,195.1
-KL-000866-2025,ST/471/2025,HDFC BANK LTD vs JASMIN ALI,Post-Disposal,6,0,6,91.0
-KL-000896-2025,ST/584/2025,Ahamed Kabeer vs Rajesh R,Appearance,6,0,6,170.1
-KL-000099-2025,ST/148/2025,Suresh Kumar T vs Akhil A,Post-Disposal,6,0,6,38.0
-KL-000502-2026,ST/491/2026,Max value credits and investment ltd  vs Sabarinath,Appearance,6,0,6,92.9
+KL-000542-2026,ST/235/2026,Sujith vs Afsal,Bail & Recording of Plea,6,0,6,123.9
+KL-000033-2025,ST/37/2025,M/s. Collection India Enterprises Pvt Ltd vs P PRASAD,Appearance,6,0,6,494.0
+KL-001222-2025,ST/816/2025,Sunil Kumar B vs Arun M G,Post-Disposal,6,0,6,14.1
+KL-000300-2025,ST/110/2025,Viknesh Syam vs Safiyunnisa Beevi R,Post-Disposal,6,0,6,168.1
+KL-000577-2026,ST/262/2026,M/s Anchalummood Rural Cooperative Society vs Pushpa Kumari K,Post-Disposal,6,0,6,145.0
+KL-000424-2026,ST/245/2026,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes,Appearance,6,0,6,91.1
+KL-000949-2025,ST/543/2025,HDFC BANK LTD vs SYAMKUMAR K,Appearance,6,0,6,276.1
+KL-000514-2026,ST/216/2026,Thariq Azeez N vs Pranav P V,Appearance,6,0,6,140.9
+KL-001258-2025,ST/47/2026,Nazimudeen H vs Sajeena R,Appearance,6,0,6,164.0
+KL-001152-2026,ST/639/2026,Paravur Akshaya Nidhi Ltd vs Athira A,Appearance,6,0,6,57.0
+KL-001206-2025,ST/798/2025,HDFC BANK LTD vs SREEHARI M,Appearance,6,0,6,206.0
+KL-000054-2025,ST/75/2025,MARANATHA FINCORP vs DEVIKA SAJI,Post-Disposal,6,0,6,433.0
+KL-000951-2025,ST/643/2025,Raju Peter vs Shaji,Complainant Evidence,6,0,6,243.1
+KL-000635-2025,ST/362/2025,Trevor Morrison vs Twinkle,Complainant Evidence,6,0,6,0.0
+KL-000944-2026,ST/504/2026,Ayiroor Nidhi Ltd vs Anil S,Appearance,6,0,6,99.0
+KL-000328-2025,ST/740/2025,Asian Firdaus Cashews vs A K B Exports and Imports and 1 Other,Appearance,6,0,6,245.9
+KL-000908-2025,ST/600/2025,HDFC BANK LTD vs NOBIN MATHAI,Bail & Recording of Plea,6,0,6,259.0
+KL-000697-2026,ST/337/2026,Vidhyadiraja Grama Nidhi Limited vs Baiju John,Appearance,6,0,6,125.0
+KL-001066-2026,ST/570/2026,Kollam Nagara Nidhi Ltd vs Manikantan B,Appearance,6,0,6,84.1
+KL-001168-2025,ST/771/2025,Valleriyan vs Hitha Krishna,Complainant Evidence,6,0,6,269.0
+KL-000144-2026,ST/30/2026,Maben Nidhi Ltd. vs Pinto Paul,Appearance,6,0,6,172.1
+KL-000138-2026,ST/28/2026,Maben Nidhi Ltd. vs Nasla N,Appearance,6,0,6,172.1
 KL-000558-2026,ST/276/2026,Vidhyadiraja Grama Nidhi Limited vs Dileep,Appearance,6,0,6,130.1
-KL-000364-2026,ST/131/2026,max value credits and invesmnet ltd vs Rema,Appearance,6,0,6,124.0
-KL-000501-2026,ST/226/2026,Max value credits and investment ltd vs Syamala K,Appearance,6,0,6,126.0
-KL-001235-2025,ST/827/2025,Sree Venkateswara Enterprises vs Popees Babycare Products Pvt Ltd  and 1 Other,Bail & Recording of Plea,6,0,6,154.0
-KL-000513-2026,ST/238/2026,Mohanan Pillai vs Prasanna Kumari,Appearance,6,0,6,123.0
+KL-000757-2026,ST/394/2026,Nedungolam Gramin Nidhi Ltd vs Rejitha A,Appearance,6,0,6,125.0
+KL-000422-2026,ST/244/2026,Elakamon Akshaya Nidhi Ltd vs Faseela H,Appearance,6,0,6,141.9
+KL-000528-2026,ST/228/2026,Manappuram Finance Ltd vs Manjusha S,Appearance,6,0,6,74.0
+KL-000838-2025,ST/458/2025,HDFC BANK LTD vs MAJEESH MURALI,Appearance,6,0,6,280.0
+KL-000692-2026,ST/335/2026,Shree Padma Nidhi Limited vs Sabitha Bhargavan,Appearance,6,0,6,141.9
+KL-000279-2026,ST/94/2026,Sindhu V R vs Mujeeb Mon,Bail & Recording of Plea,6,0,6,21.0
+KL-000290-2026,ST/241/2026,Rathilal R vs Varsha S,Appearance,6,0,6,107.0
+KL-000637-2025,ST/356/2025,Shemeer A vs Biju,Examination of Accused,6,0,6,257.1
+KL-000620-2026,ST/292/2026,Nizam vs Mohammed Basheer,Appearance,6,0,6,143.0
+KL-001150-2025,ST/766/2025,A R WOOD INDUSTRIES vs SADIQUE,Post-Disposal,6,0,6,130.0
 KL-000629-2026,ST/301/2026,Shree Padma Nidhi Limited vs Sajeev R,Appearance,6,0,6,136.9
-KL-000874-2025,ST/476/2025,HDFC BANK LTD vs DEEPU PILLAI B,Post-Disposal,6,0,6,40.0
 KL-000668-2025,ST/500/2025,Sobhana  K I vs Sajin S,Complainant Evidence,6,0,6,226.0
 KL-000613-2026,ST/297/2026,Vidhyadiraja Grama Nidhi Limited vs Renju Rajan,Appearance,6,0,6,162.0
-KL-000717-2026,ST/363/2026,Nedungolam Gramin  Nidhi Ltd vs Ganga B,Bail & Recording of Plea,6,0,6,116.0
-KL-000579-2025,ST/434/2025,Oommachan vs Sudha,Appearance,6,0,6,245.0
-KL-000659-2025,ST/372/2025,SILVER LINE TRADING COMPANY vs GRAND MASTER HOME APPLIANCES  and 1 Other,Examination of Accused,6,0,6,65.1
 KL-000676-2026,ST/324/2026,Shree Padma Nidhi Limited vs Sunilkumar S,Appearance,6,0,6,144.0
 KL-001207-2025,ST/799/2025,HDFC BANK LTD vs AMLAL R,Appearance,6,0,6,206.0
-KL-000097-2025,ST/57/2025,HDFC Bank Ltd vs Ramani,Post-Disposal,6,0,6,48.1
-KL-000488-2026,ST/204/2026,Manappuram Finance Ltd vs Ajeesh M,Appearance,6,0,6,138.1
-KL-000595-2026,ST/269/2026,M/s Anchalummood Rural Co-operative Society vs Jiji P,Post-Disposal,6,0,6,145.0
-KL-000138-2026,ST/28/2026,Maben Nidhi Ltd. vs Nasla N,Appearance,6,0,6,172.1
-KL-000341-2026,ST/362/2026,SHAMSUDEEN KHALID vs SANTHOSH KUMAR,Bail & Recording of Plea,6,0,6,69.0
 KL-000526-2025,ST/333/2025,Mohammed Sidhique  E S vs Lazar S,Appearance,6,0,6,360.1
 KL-000278-2025,ST/127/2025,MGR ASSOCIATES vs CHANDRIKA K K,Post-Disposal,6,0,6,51.0
-KL-000144-2026,ST/30/2026,Maben Nidhi Ltd. vs Pinto Paul,Appearance,6,0,6,172.1
-KL-000212-2025,ST/165/2025,HDFC BANK LTD vs Ajmal M A,Post-Disposal,6,0,6,51.1
-KL-000530-2025,ST/578/2025,Bank Employees Co-operative Society Ltd vs S Nelson,Complainant Evidence,6,0,6,254.1
-KL-000067-2026,ST/45/2026,SREEKUMAR GOPINADHAN vs Ranjani Vijaykumar,Bail & Recording of Plea,6,0,6,192.0
-KL-000876-2025,ST/490/2025,Haritha Syndicate vs Gireesh Kumar,Bail & Recording of Plea,6,0,6,324.1
-KL-001168-2025,ST/771/2025,Valleriyan vs Hitha Krishna,Complainant Evidence,6,0,6,269.0
-KL-000734-2026,ST/373/2026,MANAPPURAM FINANCE LIMITED vs SHAKEER SATHAR,Appearance,6,0,6,131.9
-KL-000681-2025,ST/791/2025,KAMALA KUMAR vs RAJU C CHELLAPPAN,Complainant Evidence,6,0,6,240.1
 KL-000962-2025,ST/686/2025,Akshay Asok vs Ashiq N,Appearance,6,1,5,291.0
-KL-001217-2025,ST/52/2026,Girija Subhagan vs Rajesh Kumar,Appearance,6,0,6,113.0
-KL-000741-2025,ST/432/2025,Geevarghese C vs Shahanad,Appearance,6,0,6,245.0
-KL-001123-2026,ST/620/2026,HARITHA SYNDICATE vs AKHIL B,Appearance,6,0,6,58.9
 KL-000289-2024,ST/15/2025,HARITHA SYNDICATE vs SAJEENA,Appearance,6,0,6,354.0
-KL-000665-2025,ST/336/2025,C.P Enterprises vs Aiswarya Cable Network,Appearance,6,0,6,298.0
-KL-001066-2026,ST/570/2026,Kollam Nagara Nidhi Ltd vs Manikantan B,Appearance,6,0,6,84.1
-KL-001228-2025,ST/832/2025,Sanoj S vs Arun Babu,Bail & Recording of Plea,6,0,6,119.9
-KL-001096-2026,ST/626/2026,Saheerath vs V S Sudhakaran Nair,Appearance,6,0,6,68.0
 KL-000864-2026,ST/445/2026,Paravur Akshaya Nidhi Ltd vs Vishnu Manoj,Appearance,6,0,6,98.0
-KL-001109-2026,ST/621/2026,HARITHA SYNDICATE vs SIMLA E,Appearance,6,0,6,68.0
-KL-001164-2025,ST/774/2025,HDFC BANK LTD vs MUHAMMED ANAS ANSHAD,Appearance,6,0,6,247.0
-KL-000712-2025,ST/393/2025,Rupesh L vs Aromal,Appearance,6,0,6,339.0
-KL-000697-2026,ST/337/2026,Vidhyadiraja Grama Nidhi Limited vs Baiju John,Appearance,6,0,6,125.0
 KL-000615-2025,ST/354/2025,Anil Kumar vs Babilu S,Appearance,6,0,6,328.0
-KL-000394-2026,ST/150/2026,Trouver Destination LLP vs Arjun S,Appearance,6,0,6,158.0
-KL-000731-2025,ST/525/2025,HDFC BANK LTD vs SHANU SULAIMAN SUBAIDA,Post-Disposal,6,0,6,50.9
-KL-000022-2025,ST/348/2025,MARANATHA FINCORP vs BIPIN BABU,Appearance,6,0,6,320.8
 KL-000907-2026,ST/481/2026,Nedungolam Gramin Nidhi Ltd vs Radha S,Appearance,6,0,6,71.0
-KL-001021-2025,ST/707/2025,Kollam Vyapari Vyavasayi Mercantile Social Welfare Co-Operative Society vs Mohammod,Appearance,6,0,6,232.0
-KL-000908-2025,ST/600/2025,HDFC BANK LTD vs NOBIN MATHAI,Bail & Recording of Plea,6,0,6,259.0
-KL-000328-2025,ST/740/2025,Asian Firdaus Cashews vs A K B Exports and Imports and 1 Other,Appearance,6,0,6,245.9
-KL-000944-2026,ST/504/2026,Ayiroor Nidhi Ltd vs Anil S,Appearance,6,0,6,99.0
-KL-000635-2025,ST/362/2025,Trevor Morrison vs Twinkle,Complainant Evidence,6,0,6,0.0
-KL-001201-2025,ST/793/2025,Upasana Healthcare and Hospitals Private Limited  vs Ramlal R,Appearance,6,0,6,251.1
-KL-000542-2026,ST/235/2026,Sujith vs Afsal,Bail & Recording of Plea,6,0,6,123.9
 KL-000986-2025,ST/674/2025,Haritha Syndicate vs Sajeesh Kumar,Complainant Evidence,6,1,5,209.0
-KL-000951-2025,ST/643/2025,Raju Peter vs Shaji,Complainant Evidence,6,0,6,243.1
-KL-001085-2025,ST/704/2025,Saubhagya Finance vs Prem Kumar S,Post-Disposal,6,0,6,100.1
 KL-001172-2025,ST/776/2025,HDFC BANK LTD vs Raji K R,Appearance,6,0,6,250.0
-KL-000653-2026,ST/311/2026,Joy James vs Lawrance R,Appearance,6,0,6,139.1
-KL-000163-2026,ST/55/2026,Sheeja Robert vs Ravi,Complainant Evidence,6,0,6,199.0
 KL-000897-2025,ST/592/2025,Ahamed Kabeer vs Rajesh R,Appearance,6,0,6,170.1
-KL-000147-2024,ST/422/2025,Sree Gokulam Chit And Finance vs Sajeesh Kumar G,Post-Judgement,6,0,6,31.0
-KL-000054-2025,ST/75/2025,MARANATHA FINCORP vs DEVIKA SAJI,Post-Disposal,6,0,6,433.0
-KL-001206-2025,ST/798/2025,HDFC BANK LTD vs SREEHARI M,Appearance,6,0,6,206.0
-KL-001152-2026,ST/639/2026,Paravur Akshaya Nidhi Ltd vs Athira A,Appearance,6,0,6,57.0
-KL-000701-2026,ST/375/2026,Saubhagaya Finance  vs Aruna S,Appearance,6,0,6,104.0
-KL-000514-2026,ST/216/2026,Thariq Azeez N vs Pranav P V,Appearance,6,0,6,140.9
 KL-000952-2025,ST/587/2025,Arun George vs Athul Raj,Complainant Evidence,6,0,6,298.0
-KL-000502-2025,ST/418/2025,Sheeja S vs S G Vijayakumar,Examination of Accused,6,0,6,363.0
-KL-000949-2025,ST/543/2025,HDFC BANK LTD vs SYAMKUMAR K,Appearance,6,0,6,276.1
-KL-000680-2025,ST/431/2025,Rajan S vs Ambili S,Bail & Recording of Plea,6,0,6,195.1
 KL-000491-2026,ST/208/2026,Saji R vs Sulaimankunju A,Appearance,6,0,6,120.1
-KL-000863-2026,ST/446/2026,Paravur Akshaya Nidhi Ltd vs Hrishikesan Pillai R,Appearance,6,0,6,44.0
-KL-000424-2026,ST/245/2026,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes,Appearance,6,0,6,91.1
-KL-000396-2026,ST/153/2026,Paravur Akshaya Nidhi Ltd vs Sreelatha,Appearance,6,0,6,169.0
 KL-000192-2025,ST/96/2025,Darsana vs Remya Krishnan  S,Post-Disposal,6,0,6,84.0
-KL-000577-2026,ST/262/2026,M/s Anchalummood Rural Cooperative Society vs Pushpa Kumari K,Post-Disposal,6,0,6,145.0
-KL-000360-2026,ST/240/2026,Elakamon Akshaya Nidhi Ltd vs Aseena S,Appearance,6,0,6,141.9
 KL-000617-2025,ST/376/2025,SALEENA vs Viji Yasodaran,Defense Evidence,6,0,6,170.0
-KL-000650-2026,ST/339/2026,XAVIER A vs REJI BABU,Complainant Evidence,6,0,6,97.0
-KL-000300-2025,ST/110/2025,Viknesh Syam vs Safiyunnisa Beevi R,Post-Disposal,6,0,6,168.1
-KL-000963-2025,ST/644/2025,Haritha Syndicate vs Vishnu S,Appearance,6,0,6,255.9
 KL-000042-2026,ST/25/2026,Sebastian Joseph vs Bernad Sebastian,Complainant Evidence,6,0,6,219.0
-KL-000627-2026,ST/320/2026,Jessy Roy vs Asha S V,Bail & Recording of Plea,6,0,6,70.1
-KL-000054-2024,ST/5/2025,Ashokan S vs Baiju Raveendran,Examination of Accused,6,0,6,506.0
-KL-000817-2026,ST/465/2026,Sheela Nair vs Suchithra Niyas,Appearance,6,0,6,56.1
 KL-000326-2026,ST/139/2026,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other,Appearance,6,0,6,104.1
-KL-001222-2025,ST/816/2025,Sunil Kumar B vs Arun M G,Post-Disposal,6,0,6,14.1
 KL-000411-2026,ST/175/2026,JENU vs SHERMILA,Appearance,6,0,6,165.9
+KL-000727-2026,ST/392/2026,saubhagya finance vs Rugminiyamma,Appearance,6,0,6,88.1
+KL-000502-2026,ST/491/2026,Max value credits and investment ltd  vs Sabarinath,Appearance,6,0,6,92.9
+KL-000681-2025,ST/791/2025,KAMALA KUMAR vs RAJU C CHELLAPPAN,Complainant Evidence,6,0,6,240.1
+KL-001201-2025,ST/793/2025,Upasana Healthcare and Hospitals Private Limited  vs Ramlal R,Appearance,6,0,6,251.1
+KL-000817-2026,ST/465/2026,Sheela Nair vs Suchithra Niyas,Appearance,6,0,6,56.1
+KL-001203-2025,ST/797/2025,Shemeena Basheer vs Raseena Jalaludheen,Bail & Recording of Plea,6,0,6,172.1
+KL-000627-2026,ST/320/2026,Jessy Roy vs Asha S V,Bail & Recording of Plea,6,0,6,70.1
+KL-000650-2026,ST/339/2026,XAVIER A vs REJI BABU,Complainant Evidence,6,0,6,97.0
+KL-000680-2025,ST/431/2025,Rajan S vs Ambili S,Bail & Recording of Plea,6,0,6,195.1
+KL-000502-2025,ST/418/2025,Sheeja S vs S G Vijayakumar,Examination of Accused,6,0,6,363.0
+KL-000147-2024,ST/422/2025,Sree Gokulam Chit And Finance vs Sajeesh Kumar G,Post-Judgement,6,0,6,31.0
+KL-000163-2026,ST/55/2026,Sheeja Robert vs Ravi,Complainant Evidence,6,0,6,199.0
+KL-000653-2026,ST/311/2026,Joy James vs Lawrance R,Appearance,6,0,6,139.1
+KL-000022-2025,ST/348/2025,MARANATHA FINCORP vs BIPIN BABU,Appearance,6,0,6,320.8
+KL-001164-2025,ST/774/2025,HDFC BANK LTD vs MUHAMMED ANAS ANSHAD,Appearance,6,0,6,247.0
+KL-001096-2026,ST/626/2026,Saheerath vs V S Sudhakaran Nair,Appearance,6,0,6,68.0
+KL-000665-2025,ST/336/2025,C.P Enterprises vs Aiswarya Cable Network,Appearance,6,0,6,298.0
+KL-001123-2026,ST/620/2026,HARITHA SYNDICATE vs AKHIL B,Appearance,6,0,6,58.9
+KL-000741-2025,ST/432/2025,Geevarghese C vs Shahanad,Appearance,6,0,6,245.0
+KL-000876-2025,ST/490/2025,Haritha Syndicate vs Gireesh Kumar,Bail & Recording of Plea,6,0,6,324.1
+KL-000067-2026,ST/45/2026,SREEKUMAR GOPINADHAN vs Ranjani Vijaykumar,Bail & Recording of Plea,6,0,6,192.0
+KL-000212-2025,ST/165/2025,HDFC BANK LTD vs Ajmal M A,Post-Disposal,6,0,6,51.1
+KL-000513-2026,ST/238/2026,Mohanan Pillai vs Prasanna Kumari,Appearance,6,0,6,123.0
+KL-000099-2025,ST/148/2025,Suresh Kumar T vs Akhil A,Post-Disposal,6,0,6,38.0
+KL-000896-2025,ST/584/2025,Ahamed Kabeer vs Rajesh R,Appearance,6,0,6,170.1
+KL-000866-2025,ST/471/2025,HDFC BANK LTD vs JASMIN ALI,Post-Disposal,6,0,6,91.0
+KL-000890-2025,ST/582/2025,SILVERLINE TRADING COMPANY vs SURESH,Appearance,6,0,6,195.1
+KL-000150-2024,ST/43/2025,Raju  Maniyan vs Sindhu,Appearance,6,0,6,435.9
+KL-001177-2025,ST/790/2025,Premkrishnan V vs Santhosh Netto,Post-Disposal,6,0,6,37.9
+KL-000519-2026,ST/221/2026,Paravur Akshaya Nidhi Ltd vs Sheeja Shaji,Appearance,6,0,6,124.9
+KL-000814-2026,ST/519/2026,Ambili A vs Heera J,Appearance,6,0,6,69.0
+KL-000420-2026,ST/243/2026,Elakamon Akshaya Nidhi Ltd vs Preetha,Appearance,6,0,6,141.9
 KL-000826-2025,ST/495/2025,Priya Rajeev vs Bindu  A,Complainant Evidence,6,0,6,139.0
 KL-000014-2026,ST/12/2026,Ajith S vs Vandana B,Bail & Recording of Plea,6,0,6,139.0
-KL-001203-2025,ST/797/2025,Shemeena Basheer vs Raseena Jalaludheen,Bail & Recording of Plea,6,0,6,172.1
-KL-000420-2026,ST/243/2026,Elakamon Akshaya Nidhi Ltd vs Preetha,Appearance,6,0,6,141.9
 KL-000150-2026,ST/36/2026,V BOBBY SUNIL DUTT vs NAFIH P M,Appearance,6,0,6,171.9
 KL-001091-2025,ST/708/2025,Saubhagya Finance vs Raji Sunil,Bail & Recording of Plea,6,0,6,205.0
 KL-000564-2025,ST/534/2025,GIRIRAJ KUMAR KABRA vs AADITHYA TRADING CORPORATION and 1 Other,Appearance,6,0,6,231.9
-KL-000692-2026,ST/335/2026,Shree Padma Nidhi Limited vs Sabitha Bhargavan,Appearance,6,0,6,141.9
-KL-000972-2026,ST/539/2026,SHAKTHIKULANGARA NIDHI LTD vs Vidhu Vijayan,Appearance,5,0,5,95.0
-KL-000726-2026,ST/403/2026,saubhagya finance vs Lekshmi PK,Appearance,5,0,5,69.9
-KL-000564-2026,ST/265/2026,Sajad S vs Ajmal Khan K,Complainant Evidence,5,0,5,158.0
-KL-000902-2025,ST/574/2025,Shamshad Khan vs Shameema B,Bail & Recording of Plea,5,0,5,156.0
-KL-001146-2025,ST/760/2025,HDFC BANK LTD vs SURAJ S,Post-Disposal,5,0,5,148.9
-KL-000801-2026,ST/411/2026,Manappuram Finance Ltd vs Anuraj R,Bail & Recording of Plea,5,0,5,116.1
-KL-000149-2026,ST/43/2026,V BOBBY SUNIL DUTT vs TOLIN THOMAS,Appearance,5,0,5,218.1
-KL-000442-2026,ST/180/2026,HARITHA SYNDICATE vs SINDHU,Appearance,5,0,5,190.1
-KL-000266-2026,ST/207/2026,Shree Padma Nidhi Limited vs SREELATHA R,Appearance,5,0,5,148.1
-KL-001105-2025,ST/723/2025,R Sindu vs P R Pratap Chandran,Bail & Recording of Plea,5,0,5,162.0
-KL-000982-2025,ST/651/2025,HDFC BANK LTD vs VINEETH B,Post-Disposal,5,0,5,70.0
-KL-001120-2025,ST/746/2025,Tomy Solomon vs Suneer  A,Bail & Recording of Plea,5,0,5,224.0
-KL-000037-2026,ST/38/2026,Ajitha V vs Sebastian,Appearance,5,0,5,139.0
-KL-000517-2026,ST/223/2026,Paravur Akshaya Nidi Ltd vs Savitha D,Appearance,5,0,5,124.0
-KL-000110-2025,ST/71/2025,HDFC LTD vs KUNJUMOLE,Post-Disposal,5,0,5,79.0
-KL-000395-2026,ST/152/2026,Paravur Akshaya Nidhi Ltd vs Aswathy Krishna,Appearance,5,0,5,192.0
-KL-000520-2025,ST/299/2025,RAISUDEEN M vs JAYAPRAKASH,Appearance,5,0,5,294.0
-KL-001063-2026,ST/612/2026,Kollam Nagara Nidhi Ltd vs Omana C,Appearance,5,0,5,85.0
-KL-000704-2026,ST/368/2026,KRISHNA KUMAR vs RENJU,Appearance,5,0,5,94.0
-KL-001251-2025,ST/843/2025,ARUN MOHAN vs SUMA G,Appearance,5,0,5,154.0
-KL-000141-2026,ST/40/2026,Santha C vs Sreelatha S,Complainant Evidence,5,0,5,179.0
-KL-000775-2025,ST/437/2025,Subhadra  K vs Asha  Anilal,Defense Evidence,5,0,5,83.0
-KL-000769-2026,ST/384/2026,MANAPPURAM FINANCE LIMITED vs SIJIL KRISHNAN,Appearance,5,0,5,133.9
-KL-000523-2026,ST/224/2026,Athira S vs Nishanth,Complainant Evidence,5,0,5,156.9
-KL-000614-2026,ST/289/2026,Vidhyadiraja Grama Nidhi Limited vs Sunil Kumar,Appearance,5,0,5,115.0
-KL-001072-2025,ST/695/2025,HDFC BANK LTD vs GREESHMA MOHAN,Post-Disposal,5,0,5,53.0
-KL-001139-2025,ST/755/2025,Sreekumar K vs Anzar,Complainant Evidence,5,0,5,246.0
-KL-000757-2025,ST/397/2025,HDFC BANK LTD vs ABDUL SAMAD,Post-Disposal,5,0,5,41.1
-KL-000479-2026,ST/267/2026,Vidhyadiraja Grama Nidhi Limited vs Deepakumari,Appearance,5,0,5,107.0
-KL-000758-2025,ST/409/2025,HDFC BANK LTD vs SUJATHA K G,Post-Disposal,5,0,5,109.1
-KL-000454-2026,ST/183/2026,Maxvalue Credits and Investments Ltd. vs Manoj,Appearance,5,0,5,109.0
-KL-000211-2025,ST/101/2025,HDFC BANK LTD vs Shameer B,Post-Disposal,5,0,5,78.0
-KL-000452-2026,ST/185/2026,Vijayan A vs Nizar H,Appearance,5,0,5,123.1
-KL-000931-2026,ST/507/2026,Maben Nidhi Ltd vs Shameer K E,Appearance,5,0,5,104.0
-KL-000280-2026,ST/93/2026,SUDHA T vs SUDHEESH S,Appearance,5,0,5,182.9
-KL-000384-2026,ST/145/2026,Sivakumar Alias Sivakumar Sukumaran vs Santhosh M,Appearance,5,0,5,186.0
-KL-000440-2025,ST/223/2025,Sheela  Nair vs Akbarsha  S,Arguments,5,0,5,232.9
-KL-000800-2026,ST/410/2026,Manappuram Finance Ltd vs Anil V P,Appearance,5,0,5,114.1
-KL-000303-2026,ST/95/2026,Paravur Akshaya Nidhi Ltd vs Amitha S,Appearance,5,0,5,213.0
+KL-000109-2025,ST/753/2025,Ajikumar M S vs Vinu S Pai,Complainant Evidence,6,0,6,294.1
+KL-000348-2026,ST/155/2026,Bank Employees Cooperative Society vs Vinneth P S,Complainant Evidence,6,0,6,195.0
+KL-000979-2025,ST/649/2025,HDFC BANK LTD vs YASODHARAN K,Post-Disposal,6,0,6,91.0
+KL-001149-2025,ST/764/2025,Haritha Syndicate vs Resmi B S,Bail & Recording of Plea,6,0,6,263.0
+KL-001207-2026,ST/665/2026,Arya S vs Society for Integrated Growth of the Nation  and 2 Others,Appearance,6,0,6,0.0
+KL-000465-2026,ST/188/2026,Pramodkumar Nair vs Biju K,Appearance,6,0,6,111.1
+KL-000364-2026,ST/131/2026,max value credits and invesmnet ltd vs Rema,Appearance,6,0,6,124.0
+KL-000501-2026,ST/226/2026,Max value credits and investment ltd vs Syamala K,Appearance,6,0,6,126.0
+KL-001235-2025,ST/827/2025,Sree Venkateswara Enterprises vs Popees Babycare Products Pvt Ltd  and 1 Other,Bail & Recording of Plea,6,0,6,154.0
+KL-000874-2025,ST/476/2025,HDFC BANK LTD vs DEEPU PILLAI B,Post-Disposal,6,0,6,40.0
+KL-000717-2026,ST/363/2026,Nedungolam Gramin  Nidhi Ltd vs Ganga B,Bail & Recording of Plea,6,0,6,116.0
+KL-000579-2025,ST/434/2025,Oommachan vs Sudha,Appearance,6,0,6,245.0
+KL-000659-2025,ST/372/2025,SILVER LINE TRADING COMPANY vs GRAND MASTER HOME APPLIANCES  and 1 Other,Examination of Accused,6,0,6,65.1
+KL-000097-2025,ST/57/2025,HDFC Bank Ltd vs Ramani,Post-Disposal,6,0,6,48.1
+KL-000488-2026,ST/204/2026,Manappuram Finance Ltd vs Ajeesh M,Appearance,6,0,6,138.1
+KL-000595-2026,ST/269/2026,M/s Anchalummood Rural Co-operative Society vs Jiji P,Post-Disposal,6,0,6,145.0
+KL-000341-2026,ST/362/2026,SHAMSUDEEN KHALID vs SANTHOSH KUMAR,Bail & Recording of Plea,6,0,6,69.0
+KL-000530-2025,ST/578/2025,Bank Employees Co-operative Society Ltd vs S Nelson,Complainant Evidence,6,0,6,254.1
+KL-000734-2026,ST/373/2026,MANAPPURAM FINANCE LIMITED vs SHAKEER SATHAR,Appearance,6,0,6,131.9
+KL-001217-2025,ST/52/2026,Girija Subhagan vs Rajesh Kumar,Appearance,6,0,6,113.0
+KL-001228-2025,ST/832/2025,Sanoj S vs Arun Babu,Bail & Recording of Plea,6,0,6,119.9
+KL-001109-2026,ST/621/2026,HARITHA SYNDICATE vs SIMLA E,Appearance,6,0,6,68.0
+KL-000394-2026,ST/150/2026,Trouver Destination LLP vs Arjun S,Appearance,6,0,6,158.0
+KL-000731-2025,ST/525/2025,HDFC BANK LTD vs SHANU SULAIMAN SUBAIDA,Post-Disposal,6,0,6,50.9
+KL-001021-2025,ST/707/2025,Kollam Vyapari Vyavasayi Mercantile Social Welfare Co-Operative Society vs Mohammod,Appearance,6,0,6,232.0
+KL-001085-2025,ST/704/2025,Saubhagya Finance vs Prem Kumar S,Post-Disposal,6,0,6,100.1
+KL-000701-2026,ST/375/2026,Saubhagaya Finance  vs Aruna S,Appearance,6,0,6,104.0
+KL-000863-2026,ST/446/2026,Paravur Akshaya Nidhi Ltd vs Hrishikesan Pillai R,Appearance,6,0,6,44.0
+KL-000396-2026,ST/153/2026,Paravur Akshaya Nidhi Ltd vs Sreelatha,Appearance,6,0,6,169.0
+KL-000360-2026,ST/240/2026,Elakamon Akshaya Nidhi Ltd vs Aseena S,Appearance,6,0,6,141.9
+KL-000963-2025,ST/644/2025,Haritha Syndicate vs Vishnu S,Appearance,6,0,6,255.9
+KL-000054-2024,ST/5/2025,Ashokan S vs Baiju Raveendran,Examination of Accused,6,0,6,506.0
+KL-000712-2025,ST/393/2025,Rupesh L vs Aromal,Appearance,6,0,6,339.0
 KL-000186-2025,ST/845/2025,Vijayakumar vs Nazarudeen S,Post-Disposal,5,0,5,148.0
-KL-000696-2026,ST/336/2026,Vidhyadiraja Grama Nidhi Limited vs Santhilal,Appearance,5,0,5,110.9
-KL-000863-2025,ST/468/2025,HDFC BANK LTD vs YASODHARAN K,Post-Disposal,5,0,5,91.0
-KL-001092-2025,ST/714/2025,Saubhagya Finance vs Renjith Raj R,Post-Disposal,5,0,5,117.9
-KL-001018-2025,ST/739/2025,kerala kaumudi private limited vs Madhu Kumar P,Complainant Evidence,5,0,5,226.9
+KL-000643-2026,ST/312/2026,Shree Padma Nidhi Limited vs Sujitha S,Appearance,5,0,5,139.0
+KL-000452-2026,ST/185/2026,Vijayan A vs Nizar H,Appearance,5,0,5,123.1
+KL-000303-2026,ST/95/2026,Paravur Akshaya Nidhi Ltd vs Amitha S,Appearance,5,0,5,213.0
+KL-000395-2026,ST/152/2026,Paravur Akshaya Nidhi Ltd vs Aswathy Krishna,Appearance,5,0,5,192.0
+KL-000999-2025,ST/738/2025,Kerala Kaumudi Pvt Ltd vs Madhu Kumar P,Complainant Evidence,5,0,5,213.0
+KL-000110-2025,ST/71/2025,HDFC LTD vs KUNJUMOLE,Post-Disposal,5,0,5,79.0
+KL-000196-2025,ST/186/2025,City Boots vs Noushad A M,Appearance,5,0,5,419.0
+KL-000479-2026,ST/267/2026,Vidhyadiraja Grama Nidhi Limited vs Deepakumari,Appearance,5,0,5,107.0
+KL-001146-2025,ST/760/2025,HDFC BANK LTD vs SURAJ S,Post-Disposal,5,0,5,148.9
+KL-000300-2026,ST/102/2026,Paravur Akshaya Nidhi Ltd vs Asha V S,Appearance,5,0,5,149.0
+KL-000520-2025,ST/299/2025,RAISUDEEN M vs JAYAPRAKASH,Appearance,5,0,5,294.0
+KL-000429-2026,ST/165/2026,Maxvalue Credits and Investments Ltd vs Shajahan,Appearance,5,0,5,171.0
+KL-000050-2025,ST/741/2025,Ever Decor vs Milano Furniture,Appearance,5,0,5,240.1
 KL-000813-2026,ST/425/2026,SANILKUMAR NARAYANAN vs SHAHUL HAMEED,Appearance,5,0,5,105.0
+KL-001018-2025,ST/739/2025,kerala kaumudi private limited vs Madhu Kumar P,Complainant Evidence,5,0,5,226.9
+KL-000243-2026,ST/78/2026,Manoj J vs Mithra,Complainant Evidence,5,0,5,182.0
+KL-000530-2026,ST/231/2026,Manappuram Finance Ltd vs Chinju Mol KT,Appearance,5,0,5,70.0
+KL-000326-2024,ST/263/2025,SreeGokulam Chits and Finance CO vs Udeesh Kumar,Post-Disposal,5,0,5,84.0
+KL-000316-2026,ST/108/2026,SHAKTHIKULANGARA NIDHI LTD vs Sreekumar R,Complainant Evidence,5,1,4,190.0
+KL-000277-2025,ST/128/2025,S Mohana  Kumar vs Wilfred Culas,Appearance,5,1,4,489.0
+KL-000070-2026,ST/171/2026,MERMOUNT CORPORATION vs NIHAS N S,Appearance,5,0,5,172.1
+KL-000863-2025,ST/468/2025,HDFC BANK LTD vs YASODHARAN K,Post-Disposal,5,0,5,91.0
+KL-000696-2026,ST/336/2026,Vidhyadiraja Grama Nidhi Limited vs Santhilal,Appearance,5,0,5,110.9
+KL-001105-2025,ST/723/2025,R Sindu vs P R Pratap Chandran,Bail & Recording of Plea,5,0,5,162.0
+KL-001120-2025,ST/746/2025,Tomy Solomon vs Suneer  A,Bail & Recording of Plea,5,0,5,224.0
+KL-000614-2026,ST/289/2026,Vidhyadiraja Grama Nidhi Limited vs Sunil Kumar,Appearance,5,0,5,115.0
+KL-000758-2025,ST/409/2025,HDFC BANK LTD vs SUJATHA K G,Post-Disposal,5,0,5,109.1
+KL-000704-2026,ST/368/2026,KRISHNA KUMAR vs RENJU,Appearance,5,0,5,94.0
+KL-000101-2025,ST/58/2025,Sajeev R vs Lekshmi,Examination of Accused,5,0,5,141.0
+KL-000608-2026,ST/280/2026,Vidhyadiraja Grama Nidhi Limited vs Shahar,Appearance,5,0,5,139.0
+KL-000211-2025,ST/101/2025,HDFC BANK LTD vs Shameer B,Post-Disposal,5,0,5,78.0
+KL-000757-2025,ST/397/2025,HDFC BANK LTD vs ABDUL SAMAD,Post-Disposal,5,0,5,41.1
+KL-001072-2025,ST/695/2025,HDFC BANK LTD vs GREESHMA MOHAN,Post-Disposal,5,0,5,53.0
+KL-000774-2026,ST/418/2026,M/s Maxvalue Credits and Investments Ltd. vs Raji J,Appearance,5,0,5,90.0
+KL-000564-2026,ST/265/2026,Sajad S vs Ajmal Khan K,Complainant Evidence,5,0,5,158.0
+KL-000353-2024,ST/33/2025,HDFC BANK LTD vs SOMAN NARAYANAN,Post-Disposal,5,0,5,45.0
+KL-001181-2026,ST/653/2026,Nowsher A vs Sudhir Kumar Chandrasekhar,Appearance,5,0,5,61.0
+KL-000216-2026,ST/213/2026,Kollam Grama Vikasana Nidhi Ltd vs Aswathi S,Bail & Recording of Plea,5,0,5,184.0
+KL-000940-2025,ST/539/2025,HDFC BANK LTD vs JAYASREE KAYYALAYIL SUNNARAN,Appearance,5,0,5,255.1
+KL-000398-2026,ST/163/2026,Kollam Grama Vikasana Nidhi Ltd vs Arun Satheesan,Appearance,5,0,5,157.0
+KL-000532-2026,ST/229/2026,Manappuram Finance Ltd vs Rajeena,Appearance,5,0,5,104.0
+KL-000931-2025,ST/673/2025,Anitha S vs Rajeev R,Appearance,5,0,5,106.0
 KL-000388-2026,ST/242/2026,Elakamon Akshaya Nidhi Ltd vs Reji,Appearance,5,0,5,136.9
 KL-000352-2024,ST/372/2026,JINJU RANI vs SUNIL S,Appearance,5,0,5,102.1
-KL-000210-2026,ST/417/2026,ANTONY A vs AKHIL B,Bail & Recording of Plea,5,0,5,89.0
 KL-000996-2025,ST/555/2025,Arya Sugunan vs Arifkhan,Post-Disposal,5,0,5,79.0
-KL-000436-2025,ST/169/2025,Joseph Thomas vs Shine K Joseph,Post-Disposal,5,1,4,84.9
-KL-000466-2025,ST/189/2025,Mohammad Shafin vs Jasmie S,Post-Disposal,5,0,5,71.9
-KL-000608-2026,ST/280/2026,Vidhyadiraja Grama Nidhi Limited vs Shahar,Appearance,5,0,5,139.0
-KL-000496-2025,ST/433/2025,Mathai Johnson vs Albert Henry,Complainant Evidence,5,0,5,314.0
-KL-000429-2026,ST/165/2026,Maxvalue Credits and Investments Ltd vs Shajahan,Appearance,5,0,5,171.0
 KL-000072-2026,ST/172/2026,Mermount Corporation vs NIHAS N S,Appearance,5,0,5,172.1
-KL-000532-2026,ST/229/2026,Manappuram Finance Ltd vs Rajeena,Appearance,5,0,5,104.0
-KL-001007-2025,ST/737/2025,KERALA KAUMUDI PVT LTD vs Madhu Kumar P,Complainant Evidence,5,0,5,213.0
-KL-000214-2026,ST/72/2026,Akhilan S B vs Abhilash S,Appearance,5,0,5,214.0
-KL-000398-2026,ST/163/2026,Kollam Grama Vikasana Nidhi Ltd vs Arun Satheesan,Appearance,5,0,5,157.0
-KL-000142-2026,ST/173/2026,mermount corporation vs RAYYAN TILES AND GRANITES,Appearance,5,0,5,172.1
-KL-000326-2024,ST/263/2025,SreeGokulam Chits and Finance CO vs Udeesh Kumar,Post-Disposal,5,0,5,84.0
-KL-000196-2025,ST/186/2025,City Boots vs Noushad A M,Appearance,5,0,5,419.0
-KL-001181-2026,ST/653/2026,Nowsher A vs Sudhir Kumar Chandrasekhar,Appearance,5,0,5,61.0
-KL-000999-2025,ST/738/2025,Kerala Kaumudi Pvt Ltd vs Madhu Kumar P,Complainant Evidence,5,0,5,213.0
-KL-000940-2025,ST/539/2025,HDFC BANK LTD vs JAYASREE KAYYALAYIL SUNNARAN,Appearance,5,0,5,255.1
-KL-000216-2026,ST/213/2026,Kollam Grama Vikasana Nidhi Ltd vs Aswathi S,Bail & Recording of Plea,5,0,5,184.0
-KL-000070-2026,ST/171/2026,MERMOUNT CORPORATION vs NIHAS N S,Appearance,5,0,5,172.1
-KL-000243-2026,ST/78/2026,Manoj J vs Mithra,Complainant Evidence,5,0,5,182.0
-KL-001155-2025,ST/779/2025,Haritha Syndicate vs Ajithakumari S L,Appearance,5,0,5,244.9
-KL-000829-2026,ST/556/2026,SUDHAKARAN vs Biji Mohan B,Appearance,5,0,5,85.0
 KL-000997-2025,ST/520/2025,Ferozkhan A vs Ramesh,Bail & Recording of Plea,5,0,5,314.9
 KL-001008-2025,ST/660/2025,Sugathan K vs Shibu C,Appearance,5,0,5,303.0
-KL-000316-2026,ST/108/2026,SHAKTHIKULANGARA NIDHI LTD vs Sreekumar R,Complainant Evidence,5,1,4,190.0
-KL-000931-2025,ST/673/2025,Anitha S vs Rajeev R,Appearance,5,0,5,106.0
-KL-000530-2026,ST/231/2026,Manappuram Finance Ltd vs Chinju Mol KT,Appearance,5,0,5,70.0
-KL-000643-2026,ST/312/2026,Shree Padma Nidhi Limited vs Sujitha S,Appearance,5,0,5,139.0
-KL-000265-2026,ST/89/2026,Sreekumar Gopinadhan vs Ranjani Vijaykumar,Bail & Recording of Plea,5,0,5,188.0
+KL-000972-2026,ST/539/2026,SHAKTHIKULANGARA NIDHI LTD vs Vidhu Vijayan,Appearance,5,0,5,95.0
+KL-000442-2026,ST/180/2026,HARITHA SYNDICATE vs SINDHU,Appearance,5,0,5,190.1
+KL-000037-2026,ST/38/2026,Ajitha V vs Sebastian,Appearance,5,0,5,139.0
+KL-000454-2026,ST/183/2026,Maxvalue Credits and Investments Ltd. vs Manoj,Appearance,5,0,5,109.0
+KL-001063-2026,ST/612/2026,Kollam Nagara Nidhi Ltd vs Omana C,Appearance,5,0,5,85.0
+KL-000931-2026,ST/507/2026,Maben Nidhi Ltd vs Shameer K E,Appearance,5,0,5,104.0
+KL-000384-2026,ST/145/2026,Sivakumar Alias Sivakumar Sukumaran vs Santhosh M,Appearance,5,0,5,186.0
+KL-000982-2025,ST/651/2025,HDFC BANK LTD vs VINEETH B,Post-Disposal,5,0,5,70.0
+KL-000800-2026,ST/410/2026,Manappuram Finance Ltd vs Anil V P,Appearance,5,0,5,114.1
+KL-000829-2026,ST/556/2026,SUDHAKARAN vs Biji Mohan B,Appearance,5,0,5,85.0
+KL-000496-2025,ST/433/2025,Mathai Johnson vs Albert Henry,Complainant Evidence,5,0,5,314.0
+KL-001251-2025,ST/843/2025,ARUN MOHAN vs SUMA G,Appearance,5,0,5,154.0
+KL-000436-2025,ST/169/2025,Joseph Thomas vs Shine K Joseph,Post-Disposal,5,1,4,84.9
+KL-000214-2026,ST/72/2026,Akhilan S B vs Abhilash S,Appearance,5,0,5,214.0
 KL-000204-2026,ST/60/2026,Baiju S vs Shanavas,Appearance,5,0,5,216.1
-KL-000050-2025,ST/741/2025,Ever Decor vs Milano Furniture,Appearance,5,0,5,240.1
-KL-000774-2026,ST/418/2026,M/s Maxvalue Credits and Investments Ltd. vs Raji J,Appearance,5,0,5,90.0
-KL-000353-2024,ST/33/2025,HDFC BANK LTD vs SOMAN NARAYANAN,Post-Disposal,5,0,5,45.0
-KL-000277-2025,ST/128/2025,S Mohana  Kumar vs Wilfred Culas,Appearance,5,1,4,489.0
-KL-000300-2026,ST/102/2026,Paravur Akshaya Nidhi Ltd vs Asha V S,Appearance,5,0,5,149.0
-KL-000596-2026,ST/272/2026,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other,Appearance,5,0,5,99.0
-KL-000101-2025,ST/58/2025,Sajeev R vs Lekshmi,Examination of Accused,5,0,5,141.0
+KL-000775-2025,ST/437/2025,Subhadra  K vs Asha  Anilal,Defense Evidence,5,0,5,83.0
+KL-000210-2026,ST/417/2026,ANTONY A vs AKHIL B,Bail & Recording of Plea,5,0,5,89.0
 KL-000217-2026,ST/210/2026,Kollam Grama Vikasana Nidhi Ltd vs SHIJI BABU,Appearance,5,0,5,176.1
+KL-000280-2026,ST/93/2026,SUDHA T vs SUDHEESH S,Appearance,5,0,5,182.9
+KL-000466-2025,ST/189/2025,Mohammad Shafin vs Jasmie S,Post-Disposal,5,0,5,71.9
+KL-000902-2025,ST/574/2025,Shamshad Khan vs Shameema B,Bail & Recording of Plea,5,0,5,156.0
+KL-000726-2026,ST/403/2026,saubhagya finance vs Lekshmi PK,Appearance,5,0,5,69.9
+KL-000266-2026,ST/207/2026,Shree Padma Nidhi Limited vs SREELATHA R,Appearance,5,0,5,148.1
+KL-000801-2026,ST/411/2026,Manappuram Finance Ltd vs Anuraj R,Bail & Recording of Plea,5,0,5,116.1
+KL-000517-2026,ST/223/2026,Paravur Akshaya Nidi Ltd vs Savitha D,Appearance,5,0,5,124.0
 KL-001006-2026,ST/547/2026,Vishnu Chandran vs Sreejith S,Appearance,5,0,5,93.0
+KL-001092-2025,ST/714/2025,Saubhagya Finance vs Renjith Raj R,Post-Disposal,5,0,5,117.9
+KL-000769-2026,ST/384/2026,MANAPPURAM FINANCE LIMITED vs SIJIL KRISHNAN,Appearance,5,0,5,133.9
+KL-000523-2026,ST/224/2026,Athira S vs Nishanth,Complainant Evidence,5,0,5,156.9
+KL-001155-2025,ST/779/2025,Haritha Syndicate vs Ajithakumari S L,Appearance,5,0,5,244.9
+KL-000149-2026,ST/43/2026,V BOBBY SUNIL DUTT vs TOLIN THOMAS,Appearance,5,0,5,218.1
+KL-000142-2026,ST/173/2026,mermount corporation vs RAYYAN TILES AND GRANITES,Appearance,5,0,5,172.1
+KL-001139-2025,ST/755/2025,Sreekumar K vs Anzar,Complainant Evidence,5,0,5,246.0
+KL-000596-2026,ST/272/2026,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other,Appearance,5,0,5,99.0
+KL-000440-2025,ST/223/2025,Sheela  Nair vs Akbarsha  S,Arguments,5,0,5,232.9
+KL-000141-2026,ST/40/2026,Santha C vs Sreelatha S,Complainant Evidence,5,0,5,179.0
+KL-000265-2026,ST/89/2026,Sreekumar Gopinadhan vs Ranjani Vijaykumar,Bail & Recording of Plea,5,0,5,188.0
+KL-001007-2025,ST/737/2025,KERALA KAUMUDI PVT LTD vs Madhu Kumar P,Complainant Evidence,5,0,5,213.0

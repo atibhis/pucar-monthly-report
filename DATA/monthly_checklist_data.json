@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-16 10:08:52",
+    "generated_at": "2026-10-16 12:21:21",
     "court": "24x7 ON Court Kerala (Kollam - KLKM52)",
     "database": "Oncourts-Live (PostgreSQL DB #3)",
     "reporting_month": "2026-10"
@@ -10,8 +10,8 @@
     "benchmark_floor": 15.0,
     "current_month": "2026-10",
     "current_disposals": 9,
-    "current_rate_pct": 0.55,
-    "floor_deficit_pct": 14.45,
+    "current_rate_pct": 0.47,
+    "floor_deficit_pct": 14.53,
     "primary_court_complex": "Kollam Jurisdiction (KLKM52 Police Station Complexes)",
     "monthly_trend": [
       {
@@ -307,9 +307,9 @@
     "active_pipeline_by_stage": [
       {
         "stage": "Appearance",
-        "total_cases": 1252,
+        "total_cases": 1251,
         "contested_trial_pipeline": 0,
-        "pre_trial_pipeline": 1252
+        "pre_trial_pipeline": 1251
       },
       {
         "stage": "Complainant Evidence",
@@ -319,9 +319,9 @@
       },
       {
         "stage": "Bail & Recording of Plea",
-        "total_cases": 171,
+        "total_cases": 172,
         "contested_trial_pipeline": 0,
-        "pre_trial_pipeline": 171
+        "pre_trial_pipeline": 172
       },
       {
         "stage": "Cognizance",
@@ -337,7 +337,7 @@
       },
       {
         "stage": "Defect Correction",
-        "total_cases": 33,
+        "total_cases": 32,
         "contested_trial_pipeline": 0,
         "pre_trial_pipeline": 0
       },
@@ -373,11 +373,16 @@
       },
       {
         "stage": "Scrutiny",
-        "total_cases": 4,
+        "total_cases": 5,
         "contested_trial_pipeline": 0,
         "pre_trial_pipeline": 0
       }
     ],
+    "active_case_types": {
+      "ST": 1748,
+      "CMP": 114,
+      "OTHER": 65
+    },
     "cases": [
       {
         "filingnumber": "KL-000577-2026",
@@ -877,15 +882,15 @@
   "Q5_hearing_gaps": {
     "title": "Median Gap Between Successive Hearings & 2+ Month Outliers",
     "stats": {
-      "p75_days": 27.5,
+      "p75_days": 27.9,
       "total_cases_with_2plus_hearings": 2197,
-      "mean_days": 23.9,
+      "mean_days": 24.1,
       "gap_0_14d": 243,
-      "p25_days": 17.5,
-      "gap_15_30d": 1522,
+      "p25_days": 17.6,
+      "gap_15_30d": 1515,
       "gap_over_60d": 17,
-      "gap_31_60d": 415,
-      "p50_days": 21.0
+      "gap_31_60d": 422,
+      "p50_days": 21.1
     },
     "cases_over_2_months_count": 17,
     "cases_over_2_months": [
@@ -1197,7 +1202,7 @@
         "pending_pay_tasks": 0,
         "status": "PENDING_RESPONSE",
         "registrationdate": 1772788876900,
-        "pending_process_tasks": 1,
+        "pending_process_tasks": 0,
         "courtcasenumber": null,
         "casenumber": null,
         "dca_count": 1,
@@ -3711,16 +3716,6 @@
         "span_days": 451.0
       },
       {
-        "filingnumber": "KL-000411-2025",
-        "courtcasenumber": "ST/531/2025",
-        "casetitle": "Rajalekshmi S vs ANOOP S BABU",
-        "stage": "Appearance",
-        "total_warrants": 32,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 32,
-        "span_days": 119.0
-      },
-      {
         "filingnumber": "KL-000356-2024",
         "courtcasenumber": "ST/35/2025",
         "casetitle": "Pramod babu vs Roopa",
@@ -3729,6 +3724,16 @@
         "executed_warrants": 0,
         "unexecuted_or_reissued": 32,
         "span_days": 526.2
+      },
+      {
+        "filingnumber": "KL-000411-2025",
+        "courtcasenumber": "ST/531/2025",
+        "casetitle": "Rajalekshmi S vs ANOOP S BABU",
+        "stage": "Appearance",
+        "total_warrants": 32,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 32,
+        "span_days": 119.0
       },
       {
         "filingnumber": "KL-000051-2025",
@@ -3801,18 +3806,8 @@
         "span_days": 429.0
       },
       {
-        "filingnumber": "KL-000340-2025",
-        "courtcasenumber": "ST/150/2025",
-        "casetitle": "Musthafa Sudheer vs Akash Sanjeev",
-        "stage": "Appearance",
-        "total_warrants": 24,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 24,
-        "span_days": 469.9
-      },
-      {
-        "filingnumber": "KL-000302-2024",
-        "courtcasenumber": "ST/25/2025",
+        "filingnumber": "KL-000093-2024",
+        "courtcasenumber": "ST/14/2025",
         "casetitle": "HARIHARAN S vs BIJU V P",
         "stage": "Examination of Accused",
         "total_warrants": 24,
@@ -3831,16 +3826,6 @@
         "span_days": 310.1
       },
       {
-        "filingnumber": "KL-000301-2024",
-        "courtcasenumber": "ST/26/2025",
-        "casetitle": "HARIHARAN S vs BIJU V P",
-        "stage": "Examination of Accused",
-        "total_warrants": 24,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 24,
-        "span_days": 450.0
-      },
-      {
         "filingnumber": "KL-000339-2024",
         "courtcasenumber": "ST/20/2025",
         "casetitle": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G",
@@ -3849,6 +3834,16 @@
         "executed_warrants": 0,
         "unexecuted_or_reissued": 24,
         "span_days": 513.1
+      },
+      {
+        "filingnumber": "KL-000340-2025",
+        "courtcasenumber": "ST/150/2025",
+        "casetitle": "Musthafa Sudheer vs Akash Sanjeev",
+        "stage": "Appearance",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 469.9
       },
       {
         "filingnumber": "KL-000303-2024",
@@ -3861,8 +3856,18 @@
         "span_days": 450.0
       },
       {
-        "filingnumber": "KL-000093-2024",
-        "courtcasenumber": "ST/14/2025",
+        "filingnumber": "KL-000302-2024",
+        "courtcasenumber": "ST/25/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000301-2024",
+        "courtcasenumber": "ST/26/2025",
         "casetitle": "HARIHARAN S vs BIJU V P",
         "stage": "Examination of Accused",
         "total_warrants": 24,
@@ -3881,16 +3886,6 @@
         "span_days": 397.1
       },
       {
-        "filingnumber": "KL-000036-2025",
-        "courtcasenumber": "ST/36/2025",
-        "casetitle": "Ajikumar M S vs Vinu Pai",
-        "stage": "Complainant Evidence",
-        "total_warrants": 22,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 22,
-        "span_days": 537.1
-      },
-      {
         "filingnumber": "KL-000369-2026",
         "courtcasenumber": "ST/134/2026",
         "casetitle": "Maxvalue Credits and Investments Ltd vs Bindhu",
@@ -3899,16 +3894,6 @@
         "executed_warrants": 0,
         "unexecuted_or_reissued": 22,
         "span_days": 170.9
-      },
-      {
-        "filingnumber": "KL-000078-2025",
-        "courtcasenumber": "ST/136/2025",
-        "casetitle": "KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED",
-        "stage": "Post-Disposal",
-        "total_warrants": 22,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 22,
-        "span_days": 192.0
       },
       {
         "filingnumber": "KL-000273-2025",
@@ -3921,14 +3906,24 @@
         "span_days": 374.0
       },
       {
-        "filingnumber": "KL-000545-2025",
-        "courtcasenumber": "ST/231/2025",
-        "casetitle": "DANIEL KUTTY vs PRATHEEP P",
-        "stage": "Arguments",
-        "total_warrants": 20,
+        "filingnumber": "KL-000078-2025",
+        "courtcasenumber": "ST/136/2025",
+        "casetitle": "KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED",
+        "stage": "Post-Disposal",
+        "total_warrants": 22,
         "executed_warrants": 0,
-        "unexecuted_or_reissued": 20,
-        "span_days": 240.0
+        "unexecuted_or_reissued": 22,
+        "span_days": 192.0
+      },
+      {
+        "filingnumber": "KL-000036-2025",
+        "courtcasenumber": "ST/36/2025",
+        "casetitle": "Ajikumar M S vs Vinu Pai",
+        "stage": "Complainant Evidence",
+        "total_warrants": 22,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 22,
+        "span_days": 537.1
       },
       {
         "filingnumber": "KL-001186-2025",
@@ -3939,6 +3934,46 @@
         "executed_warrants": 0,
         "unexecuted_or_reissued": 20,
         "span_days": 264.1
+      },
+      {
+        "filingnumber": "KL-000102-2024",
+        "courtcasenumber": "ST/6/2025",
+        "casetitle": "Jacob  K vs Aji Koruthu",
+        "stage": "Examination of Accused",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 569.1
+      },
+      {
+        "filingnumber": "KL-000300-2024",
+        "courtcasenumber": "ST/27/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000545-2025",
+        "courtcasenumber": "ST/231/2025",
+        "casetitle": "DANIEL KUTTY vs PRATHEEP P",
+        "stage": "Arguments",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 240.0
+      },
+      {
+        "filingnumber": "KL-000041-2026",
+        "courtcasenumber": "ST/19/2026",
+        "casetitle": "Brothers Pharma vs Karunya Medicals and 1 Other",
+        "stage": "Complainant Evidence",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 208.0
       },
       {
         "filingnumber": "KL-001068-2025",
@@ -3959,44 +3994,14 @@
         "executed_warrants": 0,
         "unexecuted_or_reissued": 20,
         "span_days": 339.0
-      },
-      {
-        "filingnumber": "KL-000221-2025",
-        "courtcasenumber": "ST/443/2025",
-        "casetitle": "Afzaal vs Ansarudeen  A",
-        "stage": "Complainant Evidence",
-        "total_warrants": 20,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 20,
-        "span_days": 327.9
-      },
-      {
-        "filingnumber": "KL-000041-2026",
-        "courtcasenumber": "ST/19/2026",
-        "casetitle": "Brothers Pharma vs Karunya Medicals and 1 Other",
-        "stage": "Complainant Evidence",
-        "total_warrants": 20,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 20,
-        "span_days": 208.0
-      },
-      {
-        "filingnumber": "KL-000102-2024",
-        "courtcasenumber": "ST/6/2025",
-        "casetitle": "Jacob  K vs Aji Koruthu",
-        "stage": "Examination of Accused",
-        "total_warrants": 20,
-        "executed_warrants": 0,
-        "unexecuted_or_reissued": 20,
-        "span_days": 569.1
       }
     ]
   },
   "Q13_expired_processes": {
     "title": "Summons and Warrants Expired / Stalled Before Dispatch",
-    "total_stalled_or_expired": 931,
+    "total_stalled_or_expired": 928,
     "breakpoint_breakdown": {
-      "Payment Step (Litigant/Advocate unpaid fee demand)": 792,
+      "Payment Step (Litigant/Advocate unpaid fee demand)": 789,
       "Expired Before Service (Hearing date passed)": 139
     },
     "tasks_sample": [
@@ -4301,6 +4306,16 @@
         "casetitle": "SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR vs AJITHA"
       }
     ]
+  },
+  "process_summary": {
+    "total_tasks": 13590,
+    "total_summons": 4368,
+    "total_warrants": 7313,
+    "total_notices": 1909,
+    "delivered_tasks": 2149,
+    "expired_tasks": 2534,
+    "delivered_pct": 15.8,
+    "expired_pct": 18.6
   },
   "Q14_lpr_movements": {
     "title": "Absconding Accused: Moved to LPR vs Awaiting CJM Approval",
@@ -4983,9 +4998,9 @@
       {
         "cognisance_month": "2026-03",
         "newly_cognised_cases": 175,
-        "clean_first_summons_appearance": 61,
+        "clean_first_summons_appearance": 62,
         "escalated_to_warrant": 80,
-        "clean_rate_pct": 34.9
+        "clean_rate_pct": 35.4
       },
       {
         "cognisance_month": "2026-02",
@@ -5675,7 +5690,7 @@
   "Q20_data_quality": {
     "title": "Data Quality Audit: Mobile Numbers, Return Codes, Tagging",
     "respondent_mobile_capture": {
-      "total_process_tasks": 17701,
+      "total_process_tasks": 17703,
       "tasks_with_mobile": 3170,
       "pct_carrying_mobile": 17.9
     },
