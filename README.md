@@ -13,11 +13,14 @@ This repository generates:
 
 Pre-built reports and datasets are already committed in `OUTPUT/`. You can view them immediately in any browser:
 
-### Option 1: Open Directly in Your Browser
+### Option 1: View Live on GitHub Pages
+- **Live URL**: [https://atibhis.github.io/pucar-monthly-report/](https://atibhis.github.io/pucar-monthly-report/) (automatically routes to the latest executive report)
+
+### Option 2: Open Directly in Your Browser
 - **Executive Master Report**: Open the latest report in `OUTPUT/` (e.g. `OUTPUT/monthly_case_performance_report_161026.html`) in Chrome, Safari, or Firefox.
 - **Register Drill-Downs**: Open any file in `OUTPUT/CHECKLIST_VIEWS/` (e.g. `Q01_disposal_rate.html`, `Q04_silent_cases.html`).
 
-### Option 2: Run a Local Web Server
+### Option 3: Run a Local Web Server
 ```bash
 # From the repository root
 python3 -m http.server 8000

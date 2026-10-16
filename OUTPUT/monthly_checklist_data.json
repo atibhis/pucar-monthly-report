@@ -1,0 +1,5692 @@
+{
+  "meta": {
+    "generated_at": "2026-10-16 10:08:52",
+    "court": "24x7 ON Court Kerala (Kollam - KLKM52)",
+    "database": "Oncourts-Live (PostgreSQL DB #3)",
+    "reporting_month": "2026-10"
+  },
+  "Q1_disposal_rate": {
+    "title": "Month-on-Month Disposal Rate vs 15% Floor (Police Station Court Complexes)",
+    "benchmark_floor": 15.0,
+    "current_month": "2026-10",
+    "current_disposals": 9,
+    "current_rate_pct": 0.55,
+    "floor_deficit_pct": 14.45,
+    "primary_court_complex": "Kollam Jurisdiction (KLKM52 Police Station Complexes)",
+    "monthly_trend": [
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "ANCHALUMMOODU",
+        "disposals": 3,
+        "filings": 2,
+        "pending_stock": 47,
+        "disposal_rate_pct": 6.38,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 8.62,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "SAKTHIKULANGARA",
+        "disposals": 2,
+        "filings": 0,
+        "pending_stock": 48,
+        "disposal_rate_pct": 4.17,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 10.83,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "ERAVIPURAM",
+        "disposals": 1,
+        "filings": 2,
+        "pending_stock": 74,
+        "disposal_rate_pct": 1.35,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 13.65,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KOLLAM EAST",
+        "disposals": 1,
+        "filings": 1,
+        "pending_stock": 70,
+        "disposal_rate_pct": 1.43,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 13.57,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "PALLITHOTTAM",
+        "disposals": 1,
+        "filings": 0,
+        "pending_stock": 8,
+        "disposal_rate_pct": 12.5,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 2.5,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "RANNY",
+        "disposals": 1,
+        "filings": 0,
+        "pending_stock": 3,
+        "disposal_rate_pct": 33.33,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 0.0,
+        "status": "MEETS_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "AYIROOR",
+        "disposals": 0,
+        "filings": 2,
+        "pending_stock": 25,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "CHAVARA",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 35,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "EZHUKONE",
+        "disposals": 0,
+        "filings": 2,
+        "pending_stock": 47,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KADAKKAL",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 17,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KADAMPUZA",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 1,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KANNANALLOOR",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 24,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KOLLAM HQ (KLKM52)",
+        "disposals": 0,
+        "filings": 7,
+        "pending_stock": 291,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KOTTARAKARA",
+        "disposals": 0,
+        "filings": 3,
+        "pending_stock": 36,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KUNDARA",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 74,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KUNNAMANGALAM",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 1,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "KUNNIKODE",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 13,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "MANCHERRY",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 4,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "MAVELIKKARA",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 6,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "NEYYATTINKARA",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 10,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "OLLUR",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 1,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "PANGODE",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 7,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "PARIPPALLY",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 13,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "PUNALOOR",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 31,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      },
+      {
+        "month": "2026-10",
+        "court_complex (Police Station)": "PUTHOOR",
+        "disposals": 0,
+        "filings": 1,
+        "pending_stock": 27,
+        "disposal_rate_pct": 0.0,
+        "target_floor_pct": 15.0,
+        "floor_deficit_pct": 15.0,
+        "status": "BELOW_FLOOR"
+      }
+    ]
+  },
+  "Q2_disposal_mix": {
+    "title": "Disposal Mix by Outcome & Contested Pipeline",
+    "reporting_month": "2026-10",
+    "total_disposed_this_month": 9,
+    "outcome_mix": {
+      "WITHDRAWN": 6,
+      "CONVICTED": 2,
+      "DISMISSED": 1
+    },
+    "disposal_contested_split": {
+      "UNCONTESTED": 7,
+      "CONTESTED": 2
+    },
+    "active_pipeline_by_stage": [
+      {
+        "stage": "Appearance",
+        "total_cases": 1252,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 1252
+      },
+      {
+        "stage": "Complainant Evidence",
+        "total_cases": 252,
+        "contested_trial_pipeline": 252,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Bail & Recording of Plea",
+        "total_cases": 171,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 171
+      },
+      {
+        "stage": "Cognizance",
+        "total_cases": 100,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 100
+      },
+      {
+        "stage": "Examination of Accused",
+        "total_cases": 35,
+        "contested_trial_pipeline": 35,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Defect Correction",
+        "total_cases": 33,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Defense Evidence",
+        "total_cases": 31,
+        "contested_trial_pipeline": 31,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Filing",
+        "total_cases": 20,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Arguments",
+        "total_cases": 11,
+        "contested_trial_pipeline": 11,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Judgement",
+        "total_cases": 10,
+        "contested_trial_pipeline": 10,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Registration",
+        "total_cases": 8,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 0
+      },
+      {
+        "stage": "Scrutiny",
+        "total_cases": 4,
+        "contested_trial_pipeline": 0,
+        "pre_trial_pipeline": 0
+      }
+    ],
+    "cases": [
+      {
+        "filingnumber": "KL-000577-2026",
+        "courtcasenumber": "ST/262/2026",
+        "casetitle": "M/s Anchalummood Rural Cooperative Society vs Pushpa Kumari K",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-000595-2026",
+        "courtcasenumber": "ST/269/2026",
+        "casetitle": "M/s Anchalummood Rural Co-operative Society vs Jiji P",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-001138-2025",
+        "courtcasenumber": "ST/17/2026",
+        "casetitle": "Beema Mol R vs Remya",
+        "outcome": "DISMISSED",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-000720-2025",
+        "courtcasenumber": "ST/359/2025",
+        "casetitle": "Rajeev vs SRS Flour Mill",
+        "outcome": "CONVICTED",
+        "natureofdisposal": "CONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-000036-2026",
+        "courtcasenumber": "ST/27/2026",
+        "casetitle": "Pattam Granites And Tiles vs Shiny Britto",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-001150-2025",
+        "courtcasenumber": "ST/766/2025",
+        "casetitle": "A R WOOD INDUSTRIES vs SADIQUE",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-000939-2025",
+        "courtcasenumber": "ST/672/2025",
+        "casetitle": "HDFC BANK LTD vs JIBIN MATHEW",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-001241-2025",
+        "courtcasenumber": "ST/834/2025",
+        "casetitle": "Manu Augustin vs Alphonse Pappachan",
+        "outcome": "WITHDRAWN",
+        "natureofdisposal": "UNCONTESTED",
+        "disposal_month": "2026-10"
+      },
+      {
+        "filingnumber": "KL-000458-2025",
+        "courtcasenumber": "ST/378/2025",
+        "casetitle": "SAKTHIKULANGARA NIDHI LTD vs Rahul R",
+        "outcome": "CONVICTED",
+        "natureofdisposal": "CONTESTED",
+        "disposal_month": "2026-10"
+      }
+    ]
+  },
+  "Q3_cohort_disposal": {
+    "title": "6-Month Cohort Disposal Benchmark & MoM Trajectory",
+    "benchmark_cohort": "2026-03 (Filed 6 Months Ago)",
+    "benchmark_cohort_filed": 177,
+    "benchmark_cohort_disposed_6m": 28,
+    "benchmark_cohort_pct_6m": 15.8,
+    "cohort_history": [
+      {
+        "filing_month": "2026-10",
+        "total_filed": 38,
+        "disposed_as_of_today": 0,
+        "pct_disposed_as_of_today": 0.0,
+        "disposed_within_6m": 0,
+        "pct_disposed_within_6m": 0.0
+      },
+      {
+        "filing_month": "2026-09",
+        "total_filed": 126,
+        "disposed_as_of_today": 0,
+        "pct_disposed_as_of_today": 0.0,
+        "disposed_within_6m": 0,
+        "pct_disposed_within_6m": 0.0
+      },
+      {
+        "filing_month": "2026-08",
+        "total_filed": 165,
+        "disposed_as_of_today": 0,
+        "pct_disposed_as_of_today": 0.0,
+        "disposed_within_6m": 0,
+        "pct_disposed_within_6m": 0.0
+      },
+      {
+        "filing_month": "2026-07",
+        "total_filed": 179,
+        "disposed_as_of_today": 6,
+        "pct_disposed_as_of_today": 3.4,
+        "disposed_within_6m": 6,
+        "pct_disposed_within_6m": 3.4
+      },
+      {
+        "filing_month": "2026-06",
+        "total_filed": 174,
+        "disposed_as_of_today": 2,
+        "pct_disposed_as_of_today": 1.1,
+        "disposed_within_6m": 2,
+        "pct_disposed_within_6m": 1.1
+      },
+      {
+        "filing_month": "2026-05",
+        "total_filed": 132,
+        "disposed_as_of_today": 4,
+        "pct_disposed_as_of_today": 3.0,
+        "disposed_within_6m": 4,
+        "pct_disposed_within_6m": 3.0
+      },
+      {
+        "filing_month": "2026-04",
+        "total_filed": 180,
+        "disposed_as_of_today": 16,
+        "pct_disposed_as_of_today": 8.9,
+        "disposed_within_6m": 16,
+        "pct_disposed_within_6m": 8.9
+      },
+      {
+        "filing_month": "2026-03",
+        "total_filed": 177,
+        "disposed_as_of_today": 34,
+        "pct_disposed_as_of_today": 19.2,
+        "disposed_within_6m": 28,
+        "pct_disposed_within_6m": 15.8
+      },
+      {
+        "filing_month": "2026-02",
+        "total_filed": 157,
+        "disposed_as_of_today": 10,
+        "pct_disposed_as_of_today": 6.4,
+        "disposed_within_6m": 8,
+        "pct_disposed_within_6m": 5.1
+      },
+      {
+        "filing_month": "2026-01",
+        "total_filed": 127,
+        "disposed_as_of_today": 20,
+        "pct_disposed_as_of_today": 15.7,
+        "disposed_within_6m": 15,
+        "pct_disposed_within_6m": 11.8
+      },
+      {
+        "filing_month": "2025-12",
+        "total_filed": 59,
+        "disposed_as_of_today": 18,
+        "pct_disposed_as_of_today": 30.5,
+        "disposed_within_6m": 11,
+        "pct_disposed_within_6m": 18.6
+      },
+      {
+        "filing_month": "2025-11",
+        "total_filed": 47,
+        "disposed_as_of_today": 13,
+        "pct_disposed_as_of_today": 27.7,
+        "disposed_within_6m": 8,
+        "pct_disposed_within_6m": 17.0
+      }
+    ]
+  },
+  "Q4_silent_cases": {
+    "title": "60-Day Silent Cases & Long Pending Register (LPR) Gap",
+    "total_silent_over_60d": 49,
+    "silent_moved_to_lpr": 0,
+    "silent_NOT_moved_to_lpr": 49,
+    "stage_breakdown": {
+      "Filing": 18,
+      "Unclassified": 2,
+      "Defect Correction": 25,
+      "Cognizance": 2,
+      "Judgement": 1,
+      "Appearance": 1
+    },
+    "cases_gap_sample": [
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000541-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "GEETHA S vs SATHEESH KUMAR G",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000048-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "SAJU H  DAS vs JAYAKUMARI R",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000100-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "S Kunjumon vs K Pradeep",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000218-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN-2",
+        "courtcasenumber": null,
+        "casetitle": "Manoj G vs Shibu S",
+        "stage": null
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000284-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Aditi Phadnis vs Mustanki Cooperative Co.",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000266-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_SIGN",
+        "courtcasenumber": null,
+        "casetitle": "The Quilon Co Operative Urban Bank Ltd., Kollam vs Rajaprasad S",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000538-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "RE_PENDING_PAYMENT",
+        "courtcasenumber": null,
+        "casetitle": "REJIMON B vs SAJEEV K",
+        "stage": "Defect Correction"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000157-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Jacob  K vs Aji P Koruthu",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000201-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_RE_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "HDFC BANK LTD vs Ramraj S",
+        "stage": "Defect Correction"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000216-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN-2",
+        "courtcasenumber": null,
+        "casetitle": "Manoj G vs Shibu S",
+        "stage": null
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000076-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_RE_SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Karunakaran Nair Sreekumar  Pai vs Reshmi",
+        "stage": "Defect Correction"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000052-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_SIGN",
+        "courtcasenumber": null,
+        "casetitle": "M P SUBASH vs NUSRATH V P",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000306-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Hakkim vs Baby Vanaja",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000105-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Surya R L Kumari vs Sheeba A  Kumari",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000116-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_RESPONSE",
+        "courtcasenumber": null,
+        "casetitle": "Bineesh vs Ushakumari",
+        "stage": "Cognizance"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000101-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Deeshita Soin vs Tejpal Singh",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 390.2,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000296-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-08-21",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Gurdeep  Kaur vs Raman",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 302.4,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000188-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-11-17",
+        "status": "PENDING_RESPONSE",
+        "courtcasenumber": null,
+        "casetitle": "Ahamed Kabeer vs Basil Paul",
+        "stage": "Cognizance"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 261.0,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-001250-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2025-12-28",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Abhinav Sadany vs Mehul",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 236.5,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000063-2026",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-01-22",
+        "status": "PENDING_RE_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "AYIROOR NIDHI LTD vs JAYAKUMARI AMMA S",
+        "stage": "Defect Correction"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 227.5,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000295-2026",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-01-31",
+        "status": "PENDING_E-SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Anju U S",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 214.3,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000427-2026",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-02-13",
+        "status": "PENDING_SIGN",
+        "courtcasenumber": null,
+        "casetitle": "SURENDRAN N vs BIJU V",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 169.5,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000772-2026",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-03-30",
+        "status": "PENDING_SIGN",
+        "courtcasenumber": null,
+        "casetitle": "Vijikumar V vs Abraham Mathew",
+        "stage": "Filing"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 168.3,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000647-2025",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-03-31",
+        "status": "CASE_REASSIGNED",
+        "courtcasenumber": null,
+        "casetitle": "A ABDUL  RAHIM vs RENJU M",
+        "stage": "Defect Correction"
+      },
+      {
+        "lprnumber": null,
+        "days_silent": 168.3,
+        "silent_status": "SILENT_UNPARKED_GAP",
+        "filingnumber": "KL-000058-2024",
+        "lifecyclestatus": "ACTIVE",
+        "last_activity_date": "2026-03-31",
+        "status": "CASE_REASSIGNED",
+        "courtcasenumber": null,
+        "casetitle": "TANMAY BHATEJA vs TEST CASE B",
+        "stage": "Defect Correction"
+      }
+    ]
+  },
+  "Q5_hearing_gaps": {
+    "title": "Median Gap Between Successive Hearings & 2+ Month Outliers",
+    "stats": {
+      "p75_days": 27.5,
+      "total_cases_with_2plus_hearings": 2197,
+      "mean_days": 23.9,
+      "gap_0_14d": 243,
+      "p25_days": 17.5,
+      "gap_15_30d": 1522,
+      "gap_over_60d": 17,
+      "gap_31_60d": 415,
+      "p50_days": 21.0
+    },
+    "cases_over_2_months_count": 17,
+    "cases_over_2_months": [
+      {
+        "filingnumber": "KL-000699-2026",
+        "courtcasenumber": "ST/350/2026",
+        "casetitle": "Vidhyadiraja Grama Nidhi Limited vs Sumangala",
+        "stage": "Appearance",
+        "total_hearings": 4,
+        "median_gap_days": 72.0
+      },
+      {
+        "filingnumber": "KL-000776-2026",
+        "courtcasenumber": "ST/405/2026",
+        "casetitle": "MANAPPURAM FINANCE LIMITED vs SHYLA JOSE and 1 Other",
+        "stage": "Bail & Recording of Plea",
+        "total_hearings": 4,
+        "median_gap_days": 70.1
+      },
+      {
+        "filingnumber": "KL-000627-2026",
+        "courtcasenumber": "ST/320/2026",
+        "casetitle": "Jessy Roy vs Asha S V",
+        "stage": "Bail & Recording of Plea",
+        "total_hearings": 4,
+        "median_gap_days": 70.0
+      },
+      {
+        "filingnumber": "KL-001413-2026",
+        "courtcasenumber": "ST/811/2026",
+        "casetitle": "Chathanoor Sree Nidhi Ltd vs Radhakrishna Pillai G",
+        "stage": "Appearance",
+        "total_hearings": 2,
+        "median_gap_days": 69.9
+      },
+      {
+        "filingnumber": "KL-001076-2026",
+        "courtcasenumber": "ST/613/2026",
+        "casetitle": "Nedungolam Gramin Nidhi Ltd vs Sandhya S",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 64.0
+      },
+      {
+        "filingnumber": "KL-001072-2026",
+        "courtcasenumber": "ST/614/2026",
+        "casetitle": "Nedungolam Gramin Nidhi Ltd vs R Lathika",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 64.0
+      },
+      {
+        "filingnumber": "KL-000062-2026",
+        "courtcasenumber": "ST/33/2026",
+        "casetitle": "AYIROOR NIDHI LTD vs DEEPA V",
+        "stage": "Appearance",
+        "total_hearings": 6,
+        "median_gap_days": 63.0
+      },
+      {
+        "filingnumber": "KL-001101-2026",
+        "courtcasenumber": "ST/589/2026",
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Reshma R",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 62.5
+      },
+      {
+        "filingnumber": "KL-001099-2026",
+        "courtcasenumber": "ST/587/2026",
+        "casetitle": "Paripally Gurukripa Nidhi Ltd vs Vishnu S",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 62.5
+      },
+      {
+        "filingnumber": "KL-000974-2026",
+        "courtcasenumber": "ST/552/2026",
+        "casetitle": "Anil Kumar PJ vs Akbar Sha",
+        "stage": "Post-Disposal",
+        "total_hearings": 2,
+        "median_gap_days": 62.0
+      },
+      {
+        "filingnumber": "KL-001129-2026",
+        "courtcasenumber": "ST/595/2026",
+        "casetitle": "Haritha Syndicate  vs Haseena A",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 61.5
+      },
+      {
+        "filingnumber": "KL-001115-2026",
+        "courtcasenumber": "ST/618/2026",
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Salini L",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 61.5
+      },
+      {
+        "filingnumber": "KL-001112-2026",
+        "courtcasenumber": "ST/616/2026",
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Nandu Suresh",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 61.5
+      },
+      {
+        "filingnumber": "KL-001111-2026",
+        "courtcasenumber": "ST/617/2026",
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Sreerekha P",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 61.5
+      },
+      {
+        "filingnumber": "KL-001100-2026",
+        "courtcasenumber": "ST/593/2026",
+        "casetitle": "N BINUMON vs SMITHA",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 61.5
+      },
+      {
+        "filingnumber": "KL-001143-2026",
+        "courtcasenumber": "ST/605/2026",
+        "casetitle": "CSI KKD vs ANILAL V S",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 60.5
+      },
+      {
+        "filingnumber": "KL-001304-2026",
+        "courtcasenumber": "ST/731/2026",
+        "casetitle": "Vinu Pai vs Prathap Chandran K",
+        "stage": "Appearance",
+        "total_hearings": 3,
+        "median_gap_days": 60.5
+      }
+    ]
+  },
+  "Q6_non_substantive_hearings": {
+    "title": "Non-Substantive Hearings & Top Reasons in Hearing Notes",
+    "reporting_month": "2026-10",
+    "total_proceedings": 979,
+    "non_substantive_count": 815,
+    "non_substantive_percentage": 83.2,
+    "top_reasons": [
+      {
+        "rank": 1,
+        "reason": "Awaiting Process / Police / Postal Return Reports",
+        "count": 413,
+        "pct_of_non_substantive": 50.7
+      },
+      {
+        "rank": 2,
+        "reason": "Take Steps / Repeat Process Issuance",
+        "count": 254,
+        "pct_of_non_substantive": 31.2
+      },
+      {
+        "rank": 3,
+        "reason": "More Time Needed / Adjournment Prayers",
+        "count": 23,
+        "pct_of_non_substantive": 2.8
+      },
+      {
+        "rank": 4,
+        "reason": "Absence of Parties (Accused / Complainant)",
+        "count": 25,
+        "pct_of_non_substantive": 3.1
+      }
+    ]
+  },
+  "Q7_cognizance_bottlenecks": {
+    "title": "Cases Pending Cognizance > 3 Months & Root Causes",
+    "total_stuck_over_3_months": 31,
+    "hold_up_reasons_breakdown": {
+      "Delay Petition Pending (DCA)": 25,
+      "Magistrate Enquiry / Pre-Cognizance Hearing Pending": 3,
+      "Notice Fee Payment Pending": 2,
+      "Process Steps Not Taken": 1
+    },
+    "cases": [
+      {
+        "createdtime": 1732613070904,
+        "days_in_cog": 658.3,
+        "filingnumber": "KL-000116-2024",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1732623164941,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Magistrate Enquiry / Pre-Cognizance Hearing Pending",
+        "casetitle": "Bineesh vs Ushakumari",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1732873175993,
+        "days_in_cog": 652.3,
+        "filingnumber": "KL-000138-2024",
+        "pending_pay_tasks": 0,
+        "status": "CASE_ADMITTED",
+        "registrationdate": 1733141573808,
+        "pending_process_tasks": 0,
+        "courtcasenumber": "ST/12/2025",
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Magistrate Enquiry / Pre-Cognizance Hearing Pending",
+        "casetitle": "NADARAJ UMASANKAR vs RENUKA",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1733122553176,
+        "days_in_cog": 651.3,
+        "filingnumber": "KL-000156-2024",
+        "pending_pay_tasks": 1,
+        "status": "CASE_ADMITTED",
+        "registrationdate": 1733226860379,
+        "pending_process_tasks": 0,
+        "courtcasenumber": "ST/10/2025",
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Notice Fee Payment Pending",
+        "casetitle": "Suresh Kumar T vs Jijo J",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1736504935747,
+        "days_in_cog": 608.4,
+        "filingnumber": "KL-000051-2025",
+        "pending_pay_tasks": 4,
+        "status": "CASE_ADMITTED",
+        "registrationdate": 1736936406153,
+        "pending_process_tasks": 0,
+        "courtcasenumber": "ST/50/2025",
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Notice Fee Payment Pending",
+        "casetitle": "M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1738659887707,
+        "days_in_cog": 577.4,
+        "filingnumber": "KL-000188-2025",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1739613056859,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Process Steps Not Taken",
+        "casetitle": "Ahamed Kabeer vs Basil Paul",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1741859291876,
+        "days_in_cog": 314.5,
+        "filingnumber": "KL-000374-2025",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1762328265247,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Bineesh vs Athul R",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1771319108916,
+        "days_in_cog": 209.4,
+        "filingnumber": "KL-000451-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1771409052959,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Rajeev vs Abhila Reji",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1771839278617,
+        "days_in_cog": 202.4,
+        "filingnumber": "KL-000503-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1772009653637,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR vs RENJU R",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1772624671365,
+        "days_in_cog": 193.4,
+        "filingnumber": "KL-000588-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1772788876900,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Siyad vs Shaukath M",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1768222547139,
+        "days_in_cog": 192.4,
+        "filingnumber": "KL-000133-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1772878777460,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "SUJATHA vs BINDHU",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1768403114286,
+        "days_in_cog": 188.3,
+        "filingnumber": "KL-000157-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1773228064928,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "A TWO METAL CRAFT vs JOHN C",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1773796232670,
+        "days_in_cog": 181.4,
+        "filingnumber": "KL-000698-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1773827581830,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Vidhyadiraja Grama Nidhi Limited vs Geethakumari",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1773228121137,
+        "days_in_cog": 178.4,
+        "filingnumber": "KL-000638-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1774084673274,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "RAHUL vs BIJU",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1771242859588,
+        "days_in_cog": 175.4,
+        "filingnumber": "KL-000445-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1774347862377,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Peter Sebastian vs Abin Justin",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1775469176021,
+        "days_in_cog": 151.4,
+        "filingnumber": "KL-000811-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1776422645090,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Ajeesh A vs Lanoprin",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1771498981984,
+        "days_in_cog": 144.4,
+        "filingnumber": "KL-000478-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1777026249054,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Sunil B K vs S Sudhamani",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1775616323062,
+        "days_in_cog": 143.3,
+        "filingnumber": "KL-000818-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1777116736576,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Sankara Narayana Pillai vs Remya Mohan",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1778503608067,
+        "days_in_cog": 123.3,
+        "filingnumber": "KL-001093-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1778844540778,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 2,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Kerala Kaumudi (P) Ltd vs Sundaran B",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1778580725147,
+        "days_in_cog": 123.3,
+        "filingnumber": "KL-001103-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1778844611099,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Kerala Kaumudi (P) Ltd vs Sundaran B",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1769667388511,
+        "days_in_cog": 118.4,
+        "filingnumber": "KL-000267-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1779271960911,
+        "pending_process_tasks": 4,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "ABDUL RASHEED vs Arya Arjun Maintenance Pvt Ltd and 1 Other",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1779185446807,
+        "days_in_cog": 118.4,
+        "filingnumber": "KL-001138-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1779273147715,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 0,
+        "hold_up_reason": "Magistrate Enquiry / Pre-Cognizance Hearing Pending",
+        "casetitle": "BALAN A vs SWALIHA",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1767870585031,
+        "days_in_cog": 116.4,
+        "filingnumber": "KL-000043-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1779445654833,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 2,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "BINDHU ASHOK KUMAR vs GEETHANJALI",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1773395193063,
+        "days_in_cog": 113.4,
+        "filingnumber": "KL-000663-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1779704390446,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "JASEELA M vs ABDUL GAFOOR",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1779693664438,
+        "days_in_cog": 108.3,
+        "filingnumber": "KL-001168-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780142906349,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "PNY SABHA FINANCE LTD,ALUMPEEDIKA BRANCH vs KARUNYA K R",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1778236207627,
+        "days_in_cog": 108.3,
+        "filingnumber": "KL-001087-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780142561781,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Krishnapillai G vs Sajeena M",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1769672179406,
+        "days_in_cog": 108.3,
+        "filingnumber": "KL-000270-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780142747670,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "FAZIL vs JALALUDEEN",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1780379850100,
+        "days_in_cog": 104.4,
+        "filingnumber": "KL-001205-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780483720749,
+        "pending_process_tasks": 2,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "R Sasidharan Pillai vs USHA KUMARI",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1747129378976,
+        "days_in_cog": 104.4,
+        "filingnumber": "KL-000592-2025",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780483263181,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Harikumar Pillai vs Franklin Raj",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1778232917671,
+        "days_in_cog": 102.4,
+        "filingnumber": "KL-001085-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780654733615,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "sudarsan financiers vs rahumath store",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1775463591855,
+        "days_in_cog": 102.4,
+        "filingnumber": "KL-000809-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1780655824727,
+        "pending_process_tasks": 1,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Veena S vs Seenadevi",
+        "stage": "Cognizance"
+      },
+      {
+        "createdtime": 1777699599559,
+        "days_in_cog": 98.4,
+        "filingnumber": "KL-001024-2026",
+        "pending_pay_tasks": 0,
+        "status": "PENDING_RESPONSE",
+        "registrationdate": 1781001956195,
+        "pending_process_tasks": 0,
+        "courtcasenumber": null,
+        "casenumber": null,
+        "dca_count": 1,
+        "hold_up_reason": "Delay Petition Pending (DCA)",
+        "casetitle": "Kerala kaumudi (P) Ltd vs AJAYA KUMAR S",
+        "stage": "Cognizance"
+      }
+    ]
+  },
+  "Q8_mediation_cases": {
+    "title": "Cases in Mediation > 6 Months & 3+ Hearing Tail",
+    "total_mediation_cases": 547,
+    "in_mediation_over_6_months": 305,
+    "in_mediation_over_12_months": 123,
+    "require_3plus_mediation_hearings": 346,
+    "cases_sample": [
+      {
+        "filingnumber": "KL-000209-2024",
+        "courtcasenumber": "ST/48/2025",
+        "casetitle": "Athira S vs shobhitha",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 535.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000020-2025",
+        "courtcasenumber": "ST/88/2025",
+        "casetitle": "MGR ASSOCIATES vs Sujatha",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 532.5,
+        "med_hearings_orders": 7,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000312-2024",
+        "courtcasenumber": "ST/45/2025",
+        "casetitle": "Sunil Kumar B vs Arun M G",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 517.3,
+        "med_hearings_orders": 1,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000030-2025",
+        "courtcasenumber": "ST/38/2025",
+        "casetitle": "SILVER LINE TRADING COMPANY vs M/s GOURI STORES ",
+        "stage": "Complainant Evidence",
+        "days_in_mediation": 505.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000101-2025",
+        "courtcasenumber": "ST/58/2025",
+        "casetitle": "Sajeev R vs Lekshmi",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 496.5,
+        "med_hearings_orders": 14,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000348-2024",
+        "courtcasenumber": "ST/158/2025",
+        "casetitle": "P Muraleedharan Achary vs Suvarnna S",
+        "stage": "Complainant Evidence",
+        "days_in_mediation": 495.3,
+        "med_hearings_orders": 25,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000138-2024",
+        "courtcasenumber": "ST/12/2025",
+        "casetitle": "NADARAJ UMASANKAR vs RENUKA",
+        "stage": "Cognizance",
+        "days_in_mediation": 494.4,
+        "med_hearings_orders": 34,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000285-2025",
+        "courtcasenumber": "ST/108/2025",
+        "casetitle": "Cleetas Antony vs Mahadevan T R",
+        "stage": "Post-Judgement",
+        "days_in_mediation": 490.5,
+        "med_hearings_orders": 3,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000012-2025",
+        "courtcasenumber": "ST/39/2025",
+        "casetitle": "M M Khan vs Chacko Panicker",
+        "stage": "Post-Judgement",
+        "days_in_mediation": 490.5,
+        "med_hearings_orders": 3,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000383-2025",
+        "courtcasenumber": "ST/181/2025",
+        "casetitle": "Pradeep S vs Ajayakumar B O",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 486.5,
+        "med_hearings_orders": 16,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000285-2024",
+        "courtcasenumber": "ST/113/2025",
+        "casetitle": "Athira S vs FARHANA",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 484.5,
+        "med_hearings_orders": 1,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000332-2024",
+        "courtcasenumber": "ST/31/2025",
+        "casetitle": "Sheeja N vs Bhadran",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 6,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000300-2024",
+        "courtcasenumber": "ST/27/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000302-2024",
+        "courtcasenumber": "ST/25/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000093-2024",
+        "courtcasenumber": "ST/14/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000303-2024",
+        "courtcasenumber": "ST/24/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000301-2024",
+        "courtcasenumber": "ST/26/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 2,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000049-2024",
+        "courtcasenumber": "ST/4/2025",
+        "casetitle": "SAJU H  DAS vs JAYAKUMARI R",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 480.5,
+        "med_hearings_orders": 12,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000039-2025",
+        "courtcasenumber": "ST/184/2025",
+        "casetitle": "Ajikumar M S vs Vinu S Pai Pai",
+        "stage": "Complainant Evidence",
+        "days_in_mediation": 479.4,
+        "med_hearings_orders": 13,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000175-2025",
+        "courtcasenumber": "ST/107/2025",
+        "casetitle": "Lathika Sasankan vs Shiju A",
+        "stage": "Post-Judgement",
+        "days_in_mediation": 479.4,
+        "med_hearings_orders": 3,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000036-2025",
+        "courtcasenumber": "ST/36/2025",
+        "casetitle": "Ajikumar M S vs Vinu Pai",
+        "stage": "Complainant Evidence",
+        "days_in_mediation": 479.4,
+        "med_hearings_orders": 13,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000314-2025",
+        "courtcasenumber": "ST/167/2025",
+        "casetitle": "Darsana vs Sreedevi",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 476.4,
+        "med_hearings_orders": 11,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000408-2025",
+        "courtcasenumber": "ST/152/2025",
+        "casetitle": "M/s Evangeline Dev Impex Pvt Ltd vs Abhijith  Ajith",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 475.5,
+        "med_hearings_orders": 11,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000422-2025",
+        "courtcasenumber": "ST/204/2025",
+        "casetitle": "M/s Evangeline Dev Impex Pvt Ltd vs Shameer P N",
+        "stage": "Post-Disposal",
+        "days_in_mediation": 474.5,
+        "med_hearings_orders": 11,
+        "duration_bucket": "> 12 Months"
+      },
+      {
+        "filingnumber": "KL-000277-2025",
+        "courtcasenumber": "ST/128/2025",
+        "casetitle": "S Mohana  Kumar vs Wilfred Culas",
+        "stage": "Appearance",
+        "days_in_mediation": 474.4,
+        "med_hearings_orders": 15,
+        "duration_bucket": "> 12 Months"
+      }
+    ]
+  },
+  "Q9_dca_cycle": {
+    "title": "Delay Condonation 'Take Steps' Cycle (>5 DCA Hearings)",
+    "total_cases_in_dca_cycle_over_5h": 66,
+    "cases": [
+      {
+        "filingnumber": "KL-000059-2025",
+        "courtcasenumber": "ST/780/2026",
+        "casetitle": "Subair A vs Siva Prasad",
+        "stage": "Appearance",
+        "dca_hearings_count": 15,
+        "cycle_span_days": 284.8
+      },
+      {
+        "filingnumber": "KL-000374-2025",
+        "courtcasenumber": null,
+        "casetitle": "Bineesh vs Athul R",
+        "stage": "Cognizance",
+        "dca_hearings_count": 15,
+        "cycle_span_days": 329.0
+      },
+      {
+        "filingnumber": "KL-000352-2024",
+        "courtcasenumber": "ST/372/2026",
+        "casetitle": "JINJU RANI vs SUNIL S",
+        "stage": "Appearance",
+        "dca_hearings_count": 15,
+        "cycle_span_days": 348.0
+      },
+      {
+        "filingnumber": "KL-000160-2026",
+        "courtcasenumber": null,
+        "casetitle": "Ansari M vs Sreekumar R",
+        "stage": "Appearance",
+        "dca_hearings_count": 14,
+        "cycle_span_days": 250.9
+      },
+      {
+        "filingnumber": "KL-000149-2024",
+        "courtcasenumber": "ST/277/2025",
+        "casetitle": "Sree Gokulam Chits and Finance Company vs sajeshkumar",
+        "stage": "Post-Judgement",
+        "dca_hearings_count": 14,
+        "cycle_span_days": 189.0
+      },
+      {
+        "filingnumber": "KL-000519-2025",
+        "courtcasenumber": null,
+        "casetitle": "Santha vs Suneesh",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 14,
+        "cycle_span_days": 502.9
+      },
+      {
+        "filingnumber": "KL-001117-2025",
+        "courtcasenumber": null,
+        "casetitle": "Aman A vs Sherafudeen",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 14,
+        "cycle_span_days": 216.9
+      },
+      {
+        "filingnumber": "KL-000441-2025",
+        "courtcasenumber": null,
+        "casetitle": "Santha vs Noushad Y",
+        "stage": "Appearance",
+        "dca_hearings_count": 13,
+        "cycle_span_days": 526.0
+      },
+      {
+        "filingnumber": "KL-000035-2026",
+        "courtcasenumber": "ST/918/2026",
+        "casetitle": "G Crafts, J and J Manufacturing  vs De Cake World",
+        "stage": "Appearance",
+        "dca_hearings_count": 13,
+        "cycle_span_days": 133.2
+      },
+      {
+        "filingnumber": "KL-000451-2026",
+        "courtcasenumber": null,
+        "casetitle": "Rajeev vs Abhila Reji",
+        "stage": "Cognizance",
+        "dca_hearings_count": 12,
+        "cycle_span_days": 209.0
+      },
+      {
+        "filingnumber": "KL-000433-2025",
+        "courtcasenumber": null,
+        "casetitle": "Santha vs Ramees",
+        "stage": "Appearance",
+        "dca_hearings_count": 12,
+        "cycle_span_days": 355.0
+      },
+      {
+        "filingnumber": "KL-001165-2025",
+        "courtcasenumber": "ST/835/2026",
+        "casetitle": "Mohammed Hafis Nizam vs Roufin Abdul Kalam",
+        "stage": "Appearance",
+        "dca_hearings_count": 11,
+        "cycle_span_days": 160.8
+      },
+      {
+        "filingnumber": "KL-001112-2025",
+        "courtcasenumber": "ST/940/2026",
+        "casetitle": "A Najeeb vs Sheela",
+        "stage": "Appearance",
+        "dca_hearings_count": 11,
+        "cycle_span_days": 224.0
+      },
+      {
+        "filingnumber": "KL-001136-2025",
+        "courtcasenumber": "ST/868/2026",
+        "casetitle": "kerala kaumudi (P) Ltd vs Gopakumar K",
+        "stage": "Appearance",
+        "dca_hearings_count": 11,
+        "cycle_span_days": 202.1
+      },
+      {
+        "filingnumber": "KL-000109-2025",
+        "courtcasenumber": "ST/753/2025",
+        "casetitle": "Ajikumar M S vs Vinu S Pai",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 11,
+        "cycle_span_days": 165.0
+      },
+      {
+        "filingnumber": "KL-000944-2025",
+        "courtcasenumber": "ST/389/2026",
+        "casetitle": "Rema K vs Reeja S",
+        "stage": "Bail & Recording of Plea",
+        "dca_hearings_count": 11,
+        "cycle_span_days": 196.0
+      },
+      {
+        "filingnumber": "KL-000638-2026",
+        "courtcasenumber": null,
+        "casetitle": "RAHUL vs BIJU",
+        "stage": "Cognizance",
+        "dca_hearings_count": 10,
+        "cycle_span_days": 182.0
+      },
+      {
+        "filingnumber": "KL-000133-2026",
+        "courtcasenumber": null,
+        "casetitle": "SUJATHA vs BINDHU",
+        "stage": "Cognizance",
+        "dca_hearings_count": 10,
+        "cycle_span_days": 179.0
+      },
+      {
+        "filingnumber": "KL-000394-2025",
+        "courtcasenumber": "ST/20/2026",
+        "casetitle": "Gopinathan Nair G vs Jasmin M",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 230.8
+      },
+      {
+        "filingnumber": "KL-001229-2025",
+        "courtcasenumber": null,
+        "casetitle": "HDFC Bank Ltd vs Ajesh Kuttappan",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 179.0
+      },
+      {
+        "filingnumber": "KL-000740-2025",
+        "courtcasenumber": null,
+        "casetitle": "Neethu T J vs Minimol",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 154.8
+      },
+      {
+        "filingnumber": "KL-000481-2026",
+        "courtcasenumber": "ST/856/2026",
+        "casetitle": "M/s Prakruthy Distributors vs Anilkumar",
+        "stage": "Appearance",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 122.8
+      },
+      {
+        "filingnumber": "KL-000157-2026",
+        "courtcasenumber": null,
+        "casetitle": "A TWO METAL CRAFT vs JOHN C",
+        "stage": "Cognizance",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 215.8
+      },
+      {
+        "filingnumber": "KL-000766-2025",
+        "courtcasenumber": "ST/812/2025",
+        "casetitle": "Sanoop Salton vs Anoob B",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 79.0
+      },
+      {
+        "filingnumber": "KL-000483-2026",
+        "courtcasenumber": "ST/671/2026",
+        "casetitle": "SREENARAYANA PRARTHANA SAMITHI KUNNATHOOR vs UMADEVI S",
+        "stage": "Appearance",
+        "dca_hearings_count": 9,
+        "cycle_span_days": 73.0
+      },
+      {
+        "filingnumber": "KL-000725-2026",
+        "courtcasenumber": "ST/1308/2026",
+        "casetitle": "Saubhagaya Finance  vs Devu",
+        "stage": "Appearance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 129.1
+      },
+      {
+        "filingnumber": "KL-001013-2025",
+        "courtcasenumber": "ST/64/2026",
+        "casetitle": "Kaladevi N vs Sajith B",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 69.0
+      },
+      {
+        "filingnumber": "KL-000286-2024",
+        "courtcasenumber": "ST/819/2025",
+        "casetitle": "Biju K vs Dileep D",
+        "stage": "Appearance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 152.8
+      },
+      {
+        "filingnumber": "KL-000371-2026",
+        "courtcasenumber": "ST/1190/2026",
+        "casetitle": "Beena Alias Beena Moideen vs Viji Vincent",
+        "stage": "Appearance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 149.8
+      },
+      {
+        "filingnumber": "KL-000880-2025",
+        "courtcasenumber": "ST/65/2026",
+        "casetitle": "MOHAN JOHN vs Sanju Sherief",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 75.0
+      },
+      {
+        "filingnumber": "KL-000136-2025",
+        "courtcasenumber": "ST/391/2026",
+        "casetitle": "Johnson Daniel vs Sumesh",
+        "stage": "Appearance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 96.0
+      },
+      {
+        "filingnumber": "KL-000114-2024",
+        "courtcasenumber": "ST/529/2025",
+        "casetitle": "Balachandran S vs Ms Karma Assistance LLP",
+        "stage": "Appearance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 216.0
+      },
+      {
+        "filingnumber": "KL-000906-2025",
+        "courtcasenumber": "ST/2/2026",
+        "casetitle": "Siju Sadanandan vs Sinosh S",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 70.0
+      },
+      {
+        "filingnumber": "KL-001205-2026",
+        "courtcasenumber": null,
+        "casetitle": "R Sasidharan Pillai vs USHA KUMARI",
+        "stage": "Cognizance",
+        "dca_hearings_count": 8,
+        "cycle_span_days": 117.8
+      },
+      {
+        "filingnumber": "KL-000297-2026",
+        "courtcasenumber": null,
+        "casetitle": "SHAMEER S vs JASMINE BASHEER",
+        "stage": "Appearance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 115.8
+      },
+      {
+        "filingnumber": "KL-000588-2026",
+        "courtcasenumber": null,
+        "casetitle": "Siyad vs Shaukath M",
+        "stage": "Cognizance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 172.0
+      },
+      {
+        "filingnumber": "KL-000721-2026",
+        "courtcasenumber": "ST/1294/2026",
+        "casetitle": "Saubhagaya Finance  vs Saraswathy",
+        "stage": "Appearance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 134.0
+      },
+      {
+        "filingnumber": "KL-000592-2025",
+        "courtcasenumber": null,
+        "casetitle": "Harikumar Pillai vs Franklin Raj",
+        "stage": "Cognizance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 124.8
+      },
+      {
+        "filingnumber": "KL-001073-2025",
+        "courtcasenumber": "ST/252/2026",
+        "casetitle": "Theertha Cashew Traders vs Nazeer F",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 102.9
+      },
+      {
+        "filingnumber": "KL-001256-2025",
+        "courtcasenumber": "ST/582/2026",
+        "casetitle": "John Bosco vs Sujitha",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 104.9
+      },
+      {
+        "filingnumber": "KL-000715-2026",
+        "courtcasenumber": "ST/1307/2026",
+        "casetitle": "Saubhagaya Finance  vs Ambili G",
+        "stage": "Appearance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 135.1
+      },
+      {
+        "filingnumber": "KL-000445-2026",
+        "courtcasenumber": null,
+        "casetitle": "Peter Sebastian vs Abin Justin",
+        "stage": "Cognizance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 157.0
+      },
+      {
+        "filingnumber": "KL-000751-2026",
+        "courtcasenumber": "ST/1211/2026",
+        "casetitle": "Laly Abraham vs Ambily Gopan",
+        "stage": "Appearance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 97.0
+      },
+      {
+        "filingnumber": "KL-000059-2026",
+        "courtcasenumber": "ST/781/2026",
+        "casetitle": "AYIROOR NIDHI LTD vs GOKUL RAJENDRAN",
+        "stage": "Appearance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 106.0
+      },
+      {
+        "filingnumber": "KL-000503-2026",
+        "courtcasenumber": null,
+        "casetitle": "SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR vs RENJU R",
+        "stage": "Cognizance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 191.0
+      },
+      {
+        "filingnumber": "KL-000818-2026",
+        "courtcasenumber": null,
+        "casetitle": "Sankara Narayana Pillai vs Remya Mohan",
+        "stage": "Cognizance",
+        "dca_hearings_count": 7,
+        "cycle_span_days": 138.0
+      },
+      {
+        "filingnumber": "KL-001103-2026",
+        "courtcasenumber": null,
+        "casetitle": "Kerala Kaumudi (P) Ltd vs Sundaran B",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 114.0
+      },
+      {
+        "filingnumber": "KL-000270-2026",
+        "courtcasenumber": null,
+        "casetitle": "FAZIL vs JALALUDEEN",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 136.8
+      },
+      {
+        "filingnumber": "KL-000941-2026",
+        "courtcasenumber": null,
+        "casetitle": "Resmi Raj vs Jayachitra R",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 105.0
+      },
+      {
+        "filingnumber": "KL-001085-2026",
+        "courtcasenumber": null,
+        "casetitle": "sudarsan financiers vs rahumath store",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 121.8
+      },
+      {
+        "filingnumber": "KL-001162-2026",
+        "courtcasenumber": "ST/1316/2026",
+        "casetitle": "JAYA L vs LEENAMOL L",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 136.0
+      },
+      {
+        "filingnumber": "KL-001119-2025",
+        "courtcasenumber": "ST/68/2026",
+        "casetitle": "Theertha Cashew Traders vs Nazeer F and 1 Other",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 66.9
+      },
+      {
+        "filingnumber": "KL-001024-2025",
+        "courtcasenumber": "ST/811/2025",
+        "casetitle": "Bank of India , Kadapakkada Branch vs Shanavas A",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 62.9
+      },
+      {
+        "filingnumber": "KL-000581-2026",
+        "courtcasenumber": "ST/782/2026",
+        "casetitle": "M/s Anchalummood Rural Co Operative Society vs Shamsudeen",
+        "stage": "Bail & Recording of Plea",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 93.9
+      },
+      {
+        "filingnumber": "KL-000198-2026",
+        "courtcasenumber": "ST/656/2026",
+        "casetitle": "Anup Kumar T S vs Shanty Mon T C",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 88.0
+      },
+      {
+        "filingnumber": "KL-000793-2026",
+        "courtcasenumber": "ST/1275/2026",
+        "casetitle": "Sainaba vs ShylaS",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 95.0
+      },
+      {
+        "filingnumber": "KL-000705-2025",
+        "courtcasenumber": "ST/749/2026",
+        "casetitle": "Sumesh S vs Bahuleyan",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 89.1
+      },
+      {
+        "filingnumber": "KL-001234-2025",
+        "courtcasenumber": "ST/285/2026",
+        "casetitle": "HDFC Bank Ltd vs Mary Subha",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 53.0
+      },
+      {
+        "filingnumber": "KL-000043-2026",
+        "courtcasenumber": null,
+        "casetitle": "BINDHU ASHOK KUMAR vs GEETHANJALI",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 103.0
+      },
+      {
+        "filingnumber": "KL-000739-2026",
+        "courtcasenumber": "ST/1309/2026",
+        "casetitle": "saubhagya finance vs Suma",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 132.0
+      },
+      {
+        "filingnumber": "KL-000478-2026",
+        "courtcasenumber": null,
+        "casetitle": "Sunil B K vs S Sudhamani",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 142.0
+      },
+      {
+        "filingnumber": "KL-000705-2026",
+        "courtcasenumber": "ST/778/2026",
+        "casetitle": "RAJAN PILLAI M N vs ARYA C",
+        "stage": "Post-Disposal",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 78.9
+      },
+      {
+        "filingnumber": "KL-001298-2026",
+        "courtcasenumber": null,
+        "casetitle": "Suresh V vs Remanan Pillai",
+        "stage": "Cognizance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 108.1
+      },
+      {
+        "filingnumber": "KL-000586-2026",
+        "courtcasenumber": "ST/1291/2026",
+        "casetitle": "Snehalatha vs Muhammed Nasar M",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 155.0
+      },
+      {
+        "filingnumber": "KL-000552-2026",
+        "courtcasenumber": "ST/1061/2026",
+        "casetitle": "Sreelekshmi A vs Preetha Chandra",
+        "stage": "Complainant Evidence",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 99.9
+      },
+      {
+        "filingnumber": "KL-000914-2026",
+        "courtcasenumber": "ST/1321/2026",
+        "casetitle": "Sree Gokulam Chits and Finance Co Pvt Ltd vs Rejitha",
+        "stage": "Appearance",
+        "dca_hearings_count": 6,
+        "cycle_span_days": 111.0
+      }
+    ]
+  },
+  "Q10_bail_distribution": {
+    "title": "Hearings Needed to Secure Bail & 3+ Hearing Tail",
+    "total_cases_granted_bail": 663,
+    "average_hearings": 2.84,
+    "secured_in_1_hearing": 218,
+    "secured_in_2_hearings": 110,
+    "stuck_in_3plus_hearing_tail": 335,
+    "pct_tail_3plus": 50.5,
+    "cases_tail_sample": [
+      {
+        "filingnumber": "KL-000180-2025",
+        "courtcasenumber": "ST/81/2025",
+        "casetitle": "Gopakumar Gopi vs Sajitha",
+        "stage": "Judgement",
+        "total_bail_hearings": 11,
+        "days_to_secure_bail": 68.8
+      },
+      {
+        "filingnumber": "KL-000385-2025",
+        "courtcasenumber": "ST/208/2025",
+        "casetitle": "Viswambaran P vs Ajith Kumar",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 10,
+        "days_to_secure_bail": 75.8
+      },
+      {
+        "filingnumber": "KL-000381-2025",
+        "courtcasenumber": "ST/207/2025",
+        "casetitle": "Viswambaran P vs Ajith Kumar",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 10,
+        "days_to_secure_bail": 75.8
+      },
+      {
+        "filingnumber": "KL-000421-2025",
+        "courtcasenumber": "ST/159/2025",
+        "casetitle": "M/s Evangeline Dev Impex Pvt Ltd vs Arun  A",
+        "stage": "Post-Disposal",
+        "total_bail_hearings": 9,
+        "days_to_secure_bail": 90.1
+      },
+      {
+        "filingnumber": "KL-000274-2025",
+        "courtcasenumber": "ST/156/2025",
+        "casetitle": "Sahad vs Ajmeer",
+        "stage": "Post-Disposal",
+        "total_bail_hearings": 8,
+        "days_to_secure_bail": 77.2
+      },
+      {
+        "filingnumber": "KL-000302-2025",
+        "courtcasenumber": "ST/505/2025",
+        "casetitle": "Sidrah Nut Foods vs Deal Makers Exporteria Pvt Ltd and 3 Others",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 8,
+        "days_to_secure_bail": 13.0
+      },
+      {
+        "filingnumber": "KL-000958-2025",
+        "courtcasenumber": "ST/554/2025",
+        "casetitle": "Sajuthajudeen vs Joice",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 8,
+        "days_to_secure_bail": 38.0
+      },
+      {
+        "filingnumber": "KL-000048-2026",
+        "courtcasenumber": "ST/119/2026",
+        "casetitle": "Unni J vs C R SUDHEER and 1 Other",
+        "stage": "Appearance",
+        "total_bail_hearings": 8,
+        "days_to_secure_bail": 70.0
+      },
+      {
+        "filingnumber": "KL-000390-2026",
+        "courtcasenumber": "ST/158/2026",
+        "casetitle": "Rachani R vs Bhagya Aiswarya Nidhi Ltd and 3 Others",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 8,
+        "days_to_secure_bail": 107.0
+      },
+      {
+        "filingnumber": "KL-000021-2026",
+        "courtcasenumber": "ST/7/2026",
+        "casetitle": "Sahadevan Pillai B vs Krishnan Kutty M",
+        "stage": "Appearance",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 72.1
+      },
+      {
+        "filingnumber": "KL-001054-2026",
+        "courtcasenumber": "ST/903/2026",
+        "casetitle": "Leela vs Nithin VS",
+        "stage": "Appearance",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 27.0
+      },
+      {
+        "filingnumber": "KL-001175-2025",
+        "courtcasenumber": "ST/788/2025",
+        "casetitle": "Dileep James vs Baiju",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 79.2
+      },
+      {
+        "filingnumber": "KL-001022-2025",
+        "courtcasenumber": "ST/551/2025",
+        "casetitle": "Manappuram Finance Ltd. vs Arun  K",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 34.0
+      },
+      {
+        "filingnumber": "KL-000458-2025",
+        "courtcasenumber": "ST/378/2025",
+        "casetitle": "SAKTHIKULANGARA NIDHI LTD vs Rahul R",
+        "stage": "Post-Judgement",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 77.0
+      },
+      {
+        "filingnumber": "KL-001024-2025",
+        "courtcasenumber": "ST/811/2025",
+        "casetitle": "Bank of India , Kadapakkada Branch vs Shanavas A",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 236.1
+      },
+      {
+        "filingnumber": "KL-000273-2025",
+        "courtcasenumber": "ST/290/2025",
+        "casetitle": "Life Care Agencies vs T K Yunus Kutty",
+        "stage": "Post-Judgement",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 198.1
+      },
+      {
+        "filingnumber": "KL-000434-2025",
+        "courtcasenumber": "ST/168/2025",
+        "casetitle": "M/s Evangeline Dev Impex Pvt Ltd vs Ajayakrishnan P",
+        "stage": "Post-Disposal",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 313.0
+      },
+      {
+        "filingnumber": "KL-000743-2025",
+        "courtcasenumber": "ST/383/2025",
+        "casetitle": "Jaquiline Nepolean vs Nishant Muraleedharan",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 83.0
+      },
+      {
+        "filingnumber": "KL-000175-2025",
+        "courtcasenumber": "ST/107/2025",
+        "casetitle": "Lathika Sasankan vs Shiju A",
+        "stage": "Post-Judgement",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 28.1
+      },
+      {
+        "filingnumber": "KL-000656-2025",
+        "courtcasenumber": "ST/310/2025",
+        "casetitle": "HDFC Bank vs Siju K",
+        "stage": "Post-Judgement",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 51.9
+      },
+      {
+        "filingnumber": "KL-000479-2025",
+        "courtcasenumber": "ST/209/2025",
+        "casetitle": "Shylajakumari S vs Anandan",
+        "stage": "Post-Judgement",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 44.9
+      },
+      {
+        "filingnumber": "KL-000327-2026",
+        "courtcasenumber": "ST/127/2026",
+        "casetitle": "Hussain Nizam vs Muhammed Niyas",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 77.1
+      },
+      {
+        "filingnumber": "KL-000109-2025",
+        "courtcasenumber": "ST/753/2025",
+        "casetitle": "Ajikumar M S vs Vinu S Pai",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 7,
+        "days_to_secure_bail": 115.0
+      },
+      {
+        "filingnumber": "KL-000580-2025",
+        "courtcasenumber": "ST/247/2025",
+        "casetitle": "Kavya Babu vs Jiji L",
+        "stage": "Complainant Evidence",
+        "total_bail_hearings": 6,
+        "days_to_secure_bail": 73.0
+      },
+      {
+        "filingnumber": "KL-000258-2025",
+        "courtcasenumber": "ST/105/2025",
+        "casetitle": "Abdul Ibrahim vs Prathapachandran P R",
+        "stage": "Post-Disposal",
+        "total_bail_hearings": 6,
+        "days_to_secure_bail": 89.8
+      }
+    ]
+  },
+  "Q11_warrant_laggards": {
+    "title": "Unexecuted Warrants (>21 Working Days) & Police Station Laggards",
+    "threshold": "21 Working Days (~30 Calendar Days)",
+    "police_stations": [
+      {
+        "police_station": "KOLLAM EAST",
+        "district": "KOLLAM CITY",
+        "total_warrants": 54,
+        "executed": 0,
+        "unexecuted": 54,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "SAKTHIKULANGARA",
+        "district": "KOLLAM CITY",
+        "total_warrants": 55,
+        "executed": 13,
+        "unexecuted": 42,
+        "execution_rate_pct": 23.6
+      },
+      {
+        "police_station": "ERAVIPURAM",
+        "district": "KOLLAM CITY",
+        "total_warrants": 50,
+        "executed": 10,
+        "unexecuted": 40,
+        "execution_rate_pct": 20.0
+      },
+      {
+        "police_station": "KUNDARA",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 43,
+        "executed": 6,
+        "unexecuted": 37,
+        "execution_rate_pct": 14.0
+      },
+      {
+        "police_station": "KILIKOLLOOR",
+        "district": "KOLLAM CITY",
+        "total_warrants": 39,
+        "executed": 3,
+        "unexecuted": 36,
+        "execution_rate_pct": 7.7
+      },
+      {
+        "police_station": "ANCHALUMMOODU",
+        "district": "KOLLAM CITY",
+        "total_warrants": 36,
+        "executed": 0,
+        "unexecuted": 36,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHAVARA",
+        "district": "KOLLAM CITY",
+        "total_warrants": 34,
+        "executed": 0,
+        "unexecuted": 34,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOTTIYAM",
+        "district": "KOLLAM CITY",
+        "total_warrants": 32,
+        "executed": 2,
+        "unexecuted": 30,
+        "execution_rate_pct": 6.3
+      },
+      {
+        "police_station": "POOYAPPALLY",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 25,
+        "executed": 2,
+        "unexecuted": 23,
+        "execution_rate_pct": 8.0
+      },
+      {
+        "police_station": "PATHANAMTHITTA",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 21,
+        "executed": 0,
+        "unexecuted": 21,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KARUNAGAPALLY",
+        "district": "KOLLAM CITY",
+        "total_warrants": 24,
+        "executed": 4,
+        "unexecuted": 20,
+        "execution_rate_pct": 16.7
+      },
+      {
+        "police_station": "SASTHANCOTTAH",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 21,
+        "executed": 1,
+        "unexecuted": 20,
+        "execution_rate_pct": 4.8
+      },
+      {
+        "police_station": "PARAVOOR",
+        "district": "KOLLAM CITY",
+        "total_warrants": 20,
+        "executed": 1,
+        "unexecuted": 19,
+        "execution_rate_pct": 5.0
+      },
+      {
+        "police_station": "CHATHANNUR",
+        "district": "KOLLAM CITY",
+        "total_warrants": 18,
+        "executed": 0,
+        "unexecuted": 18,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "EZHUKONE",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 18,
+        "executed": 1,
+        "unexecuted": 17,
+        "execution_rate_pct": 5.6
+      },
+      {
+        "police_station": "OCHIRA",
+        "district": "KOLLAM CITY",
+        "total_warrants": 17,
+        "executed": 0,
+        "unexecuted": 17,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOLLAM WEST",
+        "district": "KOLLAM CITY",
+        "total_warrants": 20,
+        "executed": 5,
+        "unexecuted": 15,
+        "execution_rate_pct": 25.0
+      },
+      {
+        "police_station": "KOTTARAKARA",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 18,
+        "executed": 4,
+        "unexecuted": 14,
+        "execution_rate_pct": 22.2
+      },
+      {
+        "police_station": "PUNALOOR",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 14,
+        "executed": 0,
+        "unexecuted": 14,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "SOORANADU",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 15,
+        "executed": 2,
+        "unexecuted": 13,
+        "execution_rate_pct": 13.3
+      },
+      {
+        "police_station": "AYIROOR",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 13,
+        "executed": 0,
+        "unexecuted": 13,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KAYAMKULAM",
+        "district": "ALAPPUZHA",
+        "total_warrants": 12,
+        "executed": 1,
+        "unexecuted": 11,
+        "execution_rate_pct": 8.3
+      },
+      {
+        "police_station": "PARIPPALLY",
+        "district": "KOLLAM CITY",
+        "total_warrants": 12,
+        "executed": 1,
+        "unexecuted": 11,
+        "execution_rate_pct": 8.3
+      },
+      {
+        "police_station": "CHADAYAMANGALAM",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 12,
+        "executed": 1,
+        "unexecuted": 11,
+        "execution_rate_pct": 8.3
+      },
+      {
+        "police_station": "VENJARAMOODU",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 11,
+        "executed": 0,
+        "unexecuted": 11,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KADAKKAL",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 10,
+        "executed": 0,
+        "unexecuted": 10,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PUTHOOR",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 10,
+        "executed": 1,
+        "unexecuted": 9,
+        "execution_rate_pct": 10.0
+      },
+      {
+        "police_station": "KALLAMBALAM",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 9,
+        "executed": 0,
+        "unexecuted": 9,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "YERROOR",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 10,
+        "executed": 2,
+        "unexecuted": 8,
+        "execution_rate_pct": 20.0
+      },
+      {
+        "police_station": "KUNNIKODE",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 8,
+        "executed": 1,
+        "unexecuted": 7,
+        "execution_rate_pct": 12.5
+      },
+      {
+        "police_station": "PATHANA PURAM",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 7,
+        "executed": 0,
+        "unexecuted": 7,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHIRAYINKIL",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 7,
+        "executed": 0,
+        "unexecuted": 7,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THIRUVALLA",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 7,
+        "executed": 0,
+        "unexecuted": 7,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PANGODE",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 7,
+        "executed": 1,
+        "unexecuted": 6,
+        "execution_rate_pct": 14.3
+      },
+      {
+        "police_station": "PANDALAM",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 6,
+        "executed": 0,
+        "unexecuted": 6,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KADUTHURUTHI",
+        "district": "KOTTAYAM",
+        "total_warrants": 6,
+        "executed": 0,
+        "unexecuted": 6,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PALLITHOTTAM",
+        "district": "KOLLAM CITY",
+        "total_warrants": 6,
+        "executed": 0,
+        "unexecuted": 6,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ARANMULA",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 6,
+        "executed": 0,
+        "unexecuted": 6,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NEDUMANGAD",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 6,
+        "executed": 1,
+        "unexecuted": 5,
+        "execution_rate_pct": 16.7
+      },
+      {
+        "police_station": "KILIMANOOR",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 5,
+        "executed": 0,
+        "unexecuted": 5,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ANCHAL",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 5,
+        "executed": 0,
+        "unexecuted": 5,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NEYYATTINKARA",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 5,
+        "executed": 1,
+        "unexecuted": 4,
+        "execution_rate_pct": 20.0
+      },
+      {
+        "police_station": "CHAVARA THEKKUMBHAGAM",
+        "district": "KOLLAM CITY",
+        "total_warrants": 5,
+        "executed": 1,
+        "unexecuted": 4,
+        "execution_rate_pct": 20.0
+      },
+      {
+        "police_station": "PERINADU",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THRIKUNNAPUZHA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ALAPPUZHA SOUTH",
+        "district": "ALAPPUZHA",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "RANNY",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MEDICAL COLLEGE PS",
+        "district": "THRISSUR CITY",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOTTAYAM WEST",
+        "district": "KOTTAYAM",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ANKAMALY",
+        "district": "ERNAKULAM RURAL",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ATTINGAL",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MUHAMMA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 4,
+        "executed": 0,
+        "unexecuted": 4,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ENATHU",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 6,
+        "executed": 3,
+        "unexecuted": 3,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "EAST KALLADA",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 4,
+        "executed": 1,
+        "unexecuted": 3,
+        "execution_rate_pct": 25.0
+      },
+      {
+        "police_station": "HARIPPAD",
+        "district": "ALAPPUZHA",
+        "total_warrants": 4,
+        "executed": 1,
+        "unexecuted": 3,
+        "execution_rate_pct": 25.0
+      },
+      {
+        "police_station": "VATTIYOORKAVU",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOTTAYI",
+        "district": "PALAKKAD",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VATTAPPARA",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PALLIKKAL",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KADAKKAVOOR",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THENMALA",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANNARGHAT",
+        "district": "PALAKKAD",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THOTTAPPALLY",
+        "district": "ALAPPUZHA",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MARADU PS",
+        "district": "ERNAKULAM CITY",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KONNY",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PULIKEEZHU",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VALLI KUNNAM",
+        "district": "ALAPPUZHA",
+        "total_warrants": 3,
+        "executed": 0,
+        "unexecuted": 3,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MULANTHURUTHY",
+        "district": "ERNAKULAM RURAL",
+        "total_warrants": 3,
+        "executed": 1,
+        "unexecuted": 2,
+        "execution_rate_pct": 33.3
+      },
+      {
+        "police_station": "NEMOM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 3,
+        "executed": 1,
+        "unexecuted": 2,
+        "execution_rate_pct": 33.3
+      },
+      {
+        "police_station": "SREEKARYAM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 3,
+        "executed": 1,
+        "unexecuted": 2,
+        "execution_rate_pct": 33.3
+      },
+      {
+        "police_station": "VADAKEKAD",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANGALAPURAM",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOZHIKODE CUSBA",
+        "district": "KOZHIKODE CITY",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANNANCHERY",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "FORT",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "TIRUR",
+        "district": "MALAPPURAM",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ARIYANCODE",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VIZHINJAM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PETTAH",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "POTHENCODE",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHERPU",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANNANCHERY",
+        "district": "KOLLAM",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KANAKAKUNNU",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANNAR",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NOORANADU",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "SULTHANBATHERY",
+        "district": "WYNAD",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KAZHAKUTTAM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ALAPPUZHA NORTH",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHENGANNUR",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PALODE",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHIRAYINKIL",
+        "district": "KOLLAM",
+        "total_warrants": 2,
+        "executed": 0,
+        "unexecuted": 2,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VECHOOCHIRA",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 3,
+        "executed": 2,
+        "unexecuted": 1,
+        "execution_rate_pct": 66.7
+      },
+      {
+        "police_station": "NEDUPUZHA",
+        "district": "THRISSUR CITY",
+        "total_warrants": 2,
+        "executed": 1,
+        "unexecuted": 1,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "CHELAKKARA",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 2,
+        "executed": 1,
+        "unexecuted": 1,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "POZHIYOOR",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 2,
+        "executed": 1,
+        "unexecuted": 1,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "KAREELAKULANGARA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 1,
+        "unexecuted": 1,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "KUMARAKOM",
+        "district": "KOTTAYAM",
+        "total_warrants": 2,
+        "executed": 1,
+        "unexecuted": 1,
+        "execution_rate_pct": 50.0
+      },
+      {
+        "police_station": "KEEZHVAIPUR",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KODUVALLY",
+        "district": "KOZHIKODE RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VADANAPALLY",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "FORT COCHIN",
+        "district": "ERNAKULAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PAZHAYANNUR",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PALAKKAD TOWN SOUTH",
+        "district": "PALAKKAD",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "AMBALAMEDU",
+        "district": "ERNAKULAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHITTOOR",
+        "district": "PALAKKAD",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MANIMALA",
+        "district": "KOTTAYAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOIPURAM",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MALAPPURAM",
+        "district": "MALAPPURAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THRISSUR WEST",
+        "district": "THRISSUR CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ARROOR",
+        "district": "ALAPPUZHA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KANNANALLOOR",
+        "district": "KOLLAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "GANDHI NAGAR",
+        "district": "KOTTAYAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ADOOR",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOVALAM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KALPAKANCHERRY",
+        "district": "MALAPPURAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VARKALA",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NEDUMBASSERY AIRPORT",
+        "district": "ERNAKULAM RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PUNNAPRA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "POOJAPPURA",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "CHALAKUDI",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THAMARASSERY",
+        "district": "KOZHIKODE RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "AREAKKODE",
+        "district": "MALAPPURAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "ERNAKULAM CENTRAL",
+        "district": "ERNAKULAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KARUVARAKUNDU",
+        "district": "MALAPPURAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VALAPPAD",
+        "district": "THRISSUR RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THANITHODE",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PEROORKADA",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PERINGOME",
+        "district": "KANNUR",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KOLLENGODE",
+        "district": "PALAKKAD",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NEENDAKARA COASTAL",
+        "district": "KOLLAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MALAYALAPUZHA",
+        "district": "PATHANAMTHITTA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PERAMBRA",
+        "district": "KOZHIKODE RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "PANTHEERANKAVU  PS",
+        "district": "KOLLAM",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KODENCHERRY",
+        "district": "KOZHIKODE RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "NATTUKAL",
+        "district": "PALAKKAD",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KANNUR TOWN",
+        "district": "KANNUR",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MALAYINKIL",
+        "district": "THIRUVANANTHAPURAM RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THIRUVALLAM",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "KULATHUPUZHA",
+        "district": "KOLLAM RURAL",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "THAMPANOOR",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "MAVELIKKARA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 1,
+        "executed": 0,
+        "unexecuted": 1,
+        "execution_rate_pct": 0.0
+      },
+      {
+        "police_station": "VENMANI",
+        "district": "ALAPPUZHA",
+        "total_warrants": 2,
+        "executed": 2,
+        "unexecuted": 0,
+        "execution_rate_pct": 100.0
+      },
+      {
+        "police_station": "HIRUVANANTHAPURAM RAILWA",
+        "district": "RAILWAY POLICE",
+        "total_warrants": 1,
+        "executed": 1,
+        "unexecuted": 0,
+        "execution_rate_pct": 100.0
+      },
+      {
+        "police_station": "AMBALAPUZHA",
+        "district": "ALAPPUZHA",
+        "total_warrants": 1,
+        "executed": 1,
+        "unexecuted": 0,
+        "execution_rate_pct": 100.0
+      },
+      {
+        "police_station": "VALIATHURA",
+        "district": "THIRUVANANTHAPURAM CITY",
+        "total_warrants": 1,
+        "executed": 1,
+        "unexecuted": 0,
+        "execution_rate_pct": 100.0
+      }
+    ]
+  },
+  "Q12_repeat_warrants": {
+    "title": "Cases with 5 or More Warrants Issued",
+    "cases_count": 626,
+    "common_patterns": {
+      "jurisdiction_concentration": "Kollam East, Parippally, Eravipuram & Pathanamthitta police jurisdictions",
+      "root_issue": "Accused untraceable / address door locked / multiple NBWs reissued without Sec 82 proclamation"
+    },
+    "cases_sample": [
+      {
+        "filingnumber": "KL-000745-2025",
+        "courtcasenumber": "ST/396/2025",
+        "casetitle": "Shyni vs Susy A",
+        "stage": "Judgement",
+        "total_warrants": 36,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 36,
+        "span_days": 342.0
+      },
+      {
+        "filingnumber": "KL-000194-2025",
+        "courtcasenumber": "ST/154/2025",
+        "casetitle": "Suma Devi M Jayakumar vs Jayalekshmi K",
+        "stage": "Complainant Evidence",
+        "total_warrants": 32,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 32,
+        "span_days": 451.0
+      },
+      {
+        "filingnumber": "KL-000411-2025",
+        "courtcasenumber": "ST/531/2025",
+        "casetitle": "Rajalekshmi S vs ANOOP S BABU",
+        "stage": "Appearance",
+        "total_warrants": 32,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 32,
+        "span_days": 119.0
+      },
+      {
+        "filingnumber": "KL-000356-2024",
+        "courtcasenumber": "ST/35/2025",
+        "casetitle": "Pramod babu vs Roopa",
+        "stage": "Appearance",
+        "total_warrants": 32,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 32,
+        "span_days": 526.2
+      },
+      {
+        "filingnumber": "KL-000051-2025",
+        "courtcasenumber": "ST/50/2025",
+        "casetitle": "M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES",
+        "stage": "Cognizance",
+        "total_warrants": 30,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 30,
+        "span_days": 381.0
+      },
+      {
+        "filingnumber": "KL-000260-2025",
+        "courtcasenumber": "ST/288/2025",
+        "casetitle": "Vijayakumar V vs Roopa Rani V",
+        "stage": "Complainant Evidence",
+        "total_warrants": 29,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 29,
+        "span_days": 408.9
+      },
+      {
+        "filingnumber": "KL-000644-2025",
+        "courtcasenumber": "ST/344/2025",
+        "casetitle": "Franklin vs Lekha",
+        "stage": "Defense Evidence",
+        "total_warrants": 28,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 28,
+        "span_days": 378.1
+      },
+      {
+        "filingnumber": "KL-000560-2025",
+        "courtcasenumber": "ST/316/2025",
+        "casetitle": "Cyril vs Shamnad",
+        "stage": "Complainant Evidence",
+        "total_warrants": 26,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 26,
+        "span_days": 389.0
+      },
+      {
+        "filingnumber": "KL-000304-2025",
+        "courtcasenumber": "ST/236/2025",
+        "casetitle": "SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs CHARASHMA KUMARI P L",
+        "stage": "Appearance",
+        "total_warrants": 26,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 26,
+        "span_days": 333.0
+      },
+      {
+        "filingnumber": "KL-000577-2025",
+        "courtcasenumber": "ST/242/2025",
+        "casetitle": "Al Nabeel vs Arief N",
+        "stage": "Defense Evidence",
+        "total_warrants": 26,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 26,
+        "span_days": 457.1
+      },
+      {
+        "filingnumber": "KL-000287-2025",
+        "courtcasenumber": "ST/241/2025",
+        "casetitle": "MOLLY A vs RAJU ABRAHAM",
+        "stage": "Complainant Evidence",
+        "total_warrants": 25,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 25,
+        "span_days": 429.0
+      },
+      {
+        "filingnumber": "KL-000340-2025",
+        "courtcasenumber": "ST/150/2025",
+        "casetitle": "Musthafa Sudheer vs Akash Sanjeev",
+        "stage": "Appearance",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 469.9
+      },
+      {
+        "filingnumber": "KL-000302-2024",
+        "courtcasenumber": "ST/25/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000575-2025",
+        "courtcasenumber": "ST/240/2025",
+        "casetitle": "PREEJA S vs Asha Alias Ashakumari",
+        "stage": "Defense Evidence",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 310.1
+      },
+      {
+        "filingnumber": "KL-000301-2024",
+        "courtcasenumber": "ST/26/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000339-2024",
+        "courtcasenumber": "ST/20/2025",
+        "casetitle": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G",
+        "stage": "Appearance",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 513.1
+      },
+      {
+        "filingnumber": "KL-000303-2024",
+        "courtcasenumber": "ST/24/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000093-2024",
+        "courtcasenumber": "ST/14/2025",
+        "casetitle": "HARIHARAN S vs BIJU V P",
+        "stage": "Examination of Accused",
+        "total_warrants": 24,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 24,
+        "span_days": 450.0
+      },
+      {
+        "filingnumber": "KL-000454-2025",
+        "courtcasenumber": "ST/221/2025",
+        "casetitle": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs BINDU RAJENDRAN",
+        "stage": "Appearance",
+        "total_warrants": 23,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 23,
+        "span_days": 397.1
+      },
+      {
+        "filingnumber": "KL-000036-2025",
+        "courtcasenumber": "ST/36/2025",
+        "casetitle": "Ajikumar M S vs Vinu Pai",
+        "stage": "Complainant Evidence",
+        "total_warrants": 22,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 22,
+        "span_days": 537.1
+      },
+      {
+        "filingnumber": "KL-000369-2026",
+        "courtcasenumber": "ST/134/2026",
+        "casetitle": "Maxvalue Credits and Investments Ltd vs Bindhu",
+        "stage": "Complainant Evidence",
+        "total_warrants": 22,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 22,
+        "span_days": 170.9
+      },
+      {
+        "filingnumber": "KL-000078-2025",
+        "courtcasenumber": "ST/136/2025",
+        "casetitle": "KERALA KAUMUDI vs GREENGATE ENTERPRISES PRIVATE LIMITED",
+        "stage": "Post-Disposal",
+        "total_warrants": 22,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 22,
+        "span_days": 192.0
+      },
+      {
+        "filingnumber": "KL-000273-2025",
+        "courtcasenumber": "ST/290/2025",
+        "casetitle": "Life Care Agencies vs T K Yunus Kutty",
+        "stage": "Post-Judgement",
+        "total_warrants": 22,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 22,
+        "span_days": 374.0
+      },
+      {
+        "filingnumber": "KL-000545-2025",
+        "courtcasenumber": "ST/231/2025",
+        "casetitle": "DANIEL KUTTY vs PRATHEEP P",
+        "stage": "Arguments",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 240.0
+      },
+      {
+        "filingnumber": "KL-001186-2025",
+        "courtcasenumber": "ST/780/2025",
+        "casetitle": "Anitha J vs Harish H",
+        "stage": "Appearance",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 264.1
+      },
+      {
+        "filingnumber": "KL-001068-2025",
+        "courtcasenumber": "ST/691/2025",
+        "casetitle": "M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd vs Nishana N",
+        "stage": "Examination of Accused",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 273.0
+      },
+      {
+        "filingnumber": "KL-000423-2025",
+        "courtcasenumber": "ST/321/2025",
+        "casetitle": "THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR",
+        "stage": "Examination of Accused",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 339.0
+      },
+      {
+        "filingnumber": "KL-000221-2025",
+        "courtcasenumber": "ST/443/2025",
+        "casetitle": "Afzaal vs Ansarudeen  A",
+        "stage": "Complainant Evidence",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 327.9
+      },
+      {
+        "filingnumber": "KL-000041-2026",
+        "courtcasenumber": "ST/19/2026",
+        "casetitle": "Brothers Pharma vs Karunya Medicals and 1 Other",
+        "stage": "Complainant Evidence",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 208.0
+      },
+      {
+        "filingnumber": "KL-000102-2024",
+        "courtcasenumber": "ST/6/2025",
+        "casetitle": "Jacob  K vs Aji Koruthu",
+        "stage": "Examination of Accused",
+        "total_warrants": 20,
+        "executed_warrants": 0,
+        "unexecuted_or_reissued": 20,
+        "span_days": 569.1
+      }
+    ]
+  },
+  "Q13_expired_processes": {
+    "title": "Summons and Warrants Expired / Stalled Before Dispatch",
+    "total_stalled_or_expired": 931,
+    "breakpoint_breakdown": {
+      "Payment Step (Litigant/Advocate unpaid fee demand)": 792,
+      "Expired Before Service (Hearing date passed)": 139
+    },
+    "tasks_sample": [
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978654029,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001435-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1171/2026",
+        "duedate": null,
+        "tasknumber": "KL-001435-2026-TK4",
+        "casetitle": "Girija Sajikumar vs Sulatha"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978643707,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001728-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1047/2026",
+        "duedate": null,
+        "tasknumber": "KL-001728-2026-TK3",
+        "casetitle": "Paravur Akshaya Nidhi Ltd vs Sajana M"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978637183,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001213-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/919/2026",
+        "duedate": null,
+        "tasknumber": "KL-001213-2026-TK3",
+        "casetitle": "Saji Yohannan vs Sunny M J"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978635834,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001536-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/908/2026",
+        "duedate": null,
+        "tasknumber": "KL-001536-2026-TK3",
+        "casetitle": "Nedungolam  Gramin Nidhi Ltd vs Pramod S"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978575228,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000946-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/508/2026",
+        "duedate": null,
+        "tasknumber": "KL-000946-2026-TK4",
+        "casetitle": "O Thomas Alias Oommen Thomas Panicker vs Jayan C K"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978574900,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000946-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/508/2026",
+        "duedate": null,
+        "tasknumber": "KL-000946-2026-TK3",
+        "casetitle": "O Thomas Alias Oommen Thomas Panicker vs Jayan C K"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978569973,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000673-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/329/2026",
+        "duedate": null,
+        "tasknumber": "KL-000673-2026-TK4",
+        "casetitle": "Vidhyadiraja Grama Nidhi Limited vs Anas Ebrahimkutty"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978569728,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000673-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/329/2026",
+        "duedate": null,
+        "tasknumber": "KL-000673-2026-TK3",
+        "casetitle": "Vidhyadiraja Grama Nidhi Limited vs Anas Ebrahimkutty"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978565461,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000432-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/220/2026",
+        "duedate": null,
+        "tasknumber": "KL-000432-2026-TK11",
+        "casetitle": "Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978565213,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000432-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/220/2026",
+        "duedate": null,
+        "tasknumber": "KL-000432-2026-TK10",
+        "casetitle": "Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978563951,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000354-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/215/2026",
+        "duedate": null,
+        "tasknumber": "KL-000354-2026-TK11",
+        "casetitle": "Kosh Koshy vs Abhijith Pillai"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978563612,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000354-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/215/2026",
+        "duedate": null,
+        "tasknumber": "KL-000354-2026-TK10",
+        "casetitle": "Kosh Koshy vs Abhijith Pillai"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978544984,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000069-2025",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/429/2025",
+        "duedate": null,
+        "tasknumber": "KL-000069-2025-TK26",
+        "casetitle": "Ajikumar M S vs Vinu  Pai"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978534969,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000406-2025",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/140/2025",
+        "duedate": null,
+        "tasknumber": "KL-000406-2025-TK23",
+        "casetitle": "DAISY T vs LAWRANCE H"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791978534672,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-000406-2025",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/140/2025",
+        "duedate": null,
+        "tasknumber": "KL-000406-2025-TK22",
+        "casetitle": "DAISY T vs LAWRANCE H"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891985247,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001736-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1052/2026",
+        "duedate": null,
+        "tasknumber": "KL-001736-2026-TK3",
+        "casetitle": "Thajudeen M vs Deepa B S"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891982842,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001705-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1028/2026",
+        "duedate": null,
+        "tasknumber": "KL-001705-2026-TK3",
+        "casetitle": "Manappuram Finance Ltd. vs Vinod R"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891980581,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001682-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1012/2026",
+        "duedate": null,
+        "tasknumber": "KL-001682-2026-TK3",
+        "casetitle": "Maben Nidhi Ltd. vs Jeens MS"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891979235,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001681-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1011/2026",
+        "duedate": null,
+        "tasknumber": "KL-001681-2026-TK3",
+        "casetitle": "Maben Nidhi Ltd. vs Jimsha MP"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891977859,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001680-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1010/2026",
+        "duedate": null,
+        "tasknumber": "KL-001680-2026-TK3",
+        "casetitle": "Maben Nidhi Ltd. vs Sulekha"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891976388,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001678-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1009/2026",
+        "duedate": null,
+        "tasknumber": "KL-001678-2026-TK3",
+        "casetitle": "Maben Nidhi Ltd. vs Bindu Sebastian"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891974716,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001384-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/1007/2026",
+        "duedate": null,
+        "tasknumber": "KL-001384-2026-TK3",
+        "casetitle": "Samastha Nair Nidhi Ltd. vs Prakash B"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891972404,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001365-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/926/2026",
+        "duedate": null,
+        "tasknumber": "KL-001365-2026-TK3",
+        "casetitle": "Samastha Nair Nidhi Ltd. vs Sindhu Pradeep"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891970955,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001354-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/925/2026",
+        "duedate": null,
+        "tasknumber": "KL-001354-2026-TK3",
+        "casetitle": "Samastha Nair Nidhi Ltd. vs Chintha N S"
+      },
+      {
+        "tasktype": "WARRANT",
+        "createdtime": 1791891968130,
+        "failure_breakpoint": "Payment Step (Litigant/Advocate unpaid fee demand)",
+        "filingnumber": "KL-001505-2026",
+        "dateclosed": 0,
+        "status": "PENDING_PAYMENT",
+        "courtcasenumber": "ST/875/2026",
+        "duedate": null,
+        "tasknumber": "KL-001505-2026-TK3",
+        "casetitle": "SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR vs AJITHA"
+      }
+    ]
+  },
+  "Q14_lpr_movements": {
+    "title": "Absconding Accused: Moved to LPR vs Awaiting CJM Approval",
+    "total_moved_to_lpr": 17,
+    "historical_lpr_numbered": 23,
+    "awaiting_lpr_cjm_approval_est": 448,
+    "lpr_cases": [
+      {
+        "filingnumber": "KL-000997-2025",
+        "courtcasenumber": "ST/520/2025",
+        "casetitle": "Ferozkhan A vs Ramesh",
+        "lprnumber": "LP/10/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Bail & Recording of Plea",
+        "createdtime": 1758793372277,
+        "lastmodifiedtime": 1790242754403
+      },
+      {
+        "filingnumber": "KL-000712-2025",
+        "courtcasenumber": "ST/393/2025",
+        "casetitle": "Rupesh L vs Aromal",
+        "lprnumber": "LP/11/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1751607336293,
+        "lastmodifiedtime": 1789815317158
+      },
+      {
+        "filingnumber": "KL-000314-2024",
+        "courtcasenumber": "ST/196/2025",
+        "casetitle": "G VIKRAMAN PILLAI vs ANIL KUMAR",
+        "lprnumber": "LP/1/2025",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1734496641350,
+        "lastmodifiedtime": 1787557253909
+      },
+      {
+        "filingnumber": "KL-000040-2025",
+        "courtcasenumber": "ST/289/2025",
+        "casetitle": "Rizwan Cashews vs Nadha Enterprises",
+        "lprnumber": "LP/1/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1736399723574,
+        "lastmodifiedtime": 1784716832182
+      },
+      {
+        "filingnumber": "KL-001087-2025",
+        "courtcasenumber": "ST/847/2025",
+        "casetitle": "Supreme Cashew Industries vs Ubaid Ebrahim",
+        "lprnumber": "LP/12/2026",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Appearance",
+        "createdtime": 1761293873432,
+        "lastmodifiedtime": 1790242551219
+      },
+      {
+        "filingnumber": "KL-000846-2025",
+        "courtcasenumber": "ST/850/2025",
+        "casetitle": "HDFC Bank Ltd vs Vimalkumar Vijayan",
+        "lprnumber": "LP/13/2026",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Post-Disposal",
+        "createdtime": 1755607658832,
+        "lastmodifiedtime": 1787225478486
+      },
+      {
+        "filingnumber": "KL-000741-2025",
+        "courtcasenumber": "ST/432/2025",
+        "casetitle": "Geevarghese C vs Shahanad",
+        "lprnumber": "LP/14/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1752818503525,
+        "lastmodifiedtime": 1784885195120
+      },
+      {
+        "filingnumber": "KL-000579-2025",
+        "courtcasenumber": "ST/434/2025",
+        "casetitle": "Oommachan vs Sudha",
+        "lprnumber": "LP/15/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1746690249994,
+        "lastmodifiedtime": 1784885198319
+      },
+      {
+        "filingnumber": "KL-001082-2025",
+        "courtcasenumber": "ST/848/2025",
+        "casetitle": "Choice Cashew Industries vs Ubaid Ebrahim",
+        "lprnumber": "LP/16/2026",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Appearance",
+        "createdtime": 1761286837220,
+        "lastmodifiedtime": 1789034177462
+      },
+      {
+        "filingnumber": "KL-000737-2025",
+        "courtcasenumber": "ST/380/2025",
+        "casetitle": "S Rajakrishnan vs Biju S",
+        "lprnumber": "LP/17/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1752675255878,
+        "lastmodifiedtime": 1787557267249
+      },
+      {
+        "filingnumber": "KL-000896-2025",
+        "courtcasenumber": "ST/584/2025",
+        "casetitle": "Ahamed Kabeer vs Rajesh R",
+        "lprnumber": "LP/18/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1756287982890,
+        "lastmodifiedtime": 1780141428762
+      },
+      {
+        "filingnumber": "KL-000897-2025",
+        "courtcasenumber": "ST/592/2025",
+        "casetitle": "Ahamed Kabeer vs Rajesh R",
+        "lprnumber": "LP/19/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1756290064617,
+        "lastmodifiedtime": 1780141431222
+      },
+      {
+        "filingnumber": "KL-000527-2025",
+        "courtcasenumber": "ST/230/2025",
+        "casetitle": "Vineeth Mohan vs Denny Rajan",
+        "lprnumber": "LP/2/2025",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1745491026301,
+        "lastmodifiedtime": 1780394189334
+      },
+      {
+        "filingnumber": "KL-000150-2024",
+        "courtcasenumber": "ST/43/2025",
+        "casetitle": "Raju  Maniyan vs Sindhu",
+        "lprnumber": "LP/2/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1732947586409,
+        "lastmodifiedtime": 1788333555796
+      },
+      {
+        "filingnumber": "KL-000267-2024",
+        "courtcasenumber": "ST/849/2025",
+        "casetitle": "Kabeer  T vs Jayapalan",
+        "lprnumber": "LP/3/2025",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Post-Disposal",
+        "createdtime": 1733378783500,
+        "lastmodifiedtime": 1784540169179
+      },
+      {
+        "filingnumber": "KL-000270-2024",
+        "courtcasenumber": "ST/846/2025",
+        "casetitle": "HDFC Bank LTD vs Meenakumari R",
+        "lprnumber": "LP/3/2026",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Post-Disposal",
+        "createdtime": 1733391239060,
+        "lastmodifiedtime": 1778242625426
+      },
+      {
+        "filingnumber": "KL-000186-2025",
+        "courtcasenumber": "ST/845/2025",
+        "casetitle": "Vijayakumar vs Nazarudeen S",
+        "lprnumber": "LP/4/2025",
+        "lifecyclestatus": "ACTIVE",
+        "stage": "Post-Disposal",
+        "createdtime": 1738655112276,
+        "lastmodifiedtime": 1774265681210
+      },
+      {
+        "filingnumber": "KL-000713-2025",
+        "courtcasenumber": "ST/390/2025",
+        "casetitle": "Marykutty Andrew vs Sumayya",
+        "lprnumber": "LP/4/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1751618348968,
+        "lastmodifiedtime": 1791542506740
+      },
+      {
+        "filingnumber": "KL-000838-2025",
+        "courtcasenumber": "ST/458/2025",
+        "casetitle": "HDFC BANK LTD vs MAJEESH MURALI",
+        "lprnumber": "LP/5/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1755596088785,
+        "lastmodifiedtime": 1785323600984
+      },
+      {
+        "filingnumber": "KL-000339-2024",
+        "courtcasenumber": "ST/20/2025",
+        "casetitle": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs GIREESH G",
+        "lprnumber": "LP/6/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1735284391164,
+        "lastmodifiedtime": 1787391640224
+      },
+      {
+        "filingnumber": "KL-000506-2025",
+        "courtcasenumber": "ST/217/2025",
+        "casetitle": "HDFC BANK LTD vs VALSALA T K",
+        "lprnumber": "LP/7/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1744734823657,
+        "lastmodifiedtime": 1787047378205
+      },
+      {
+        "filingnumber": "KL-000280-2025",
+        "courtcasenumber": "ST/170/2025",
+        "casetitle": "Praveen P vs Naveen R",
+        "lprnumber": "LP/8/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Bail & Recording of Plea",
+        "createdtime": 1740130315355,
+        "lastmodifiedtime": 1787224035536
+      },
+      {
+        "filingnumber": "KL-000728-2025",
+        "courtcasenumber": "ST/441/2025",
+        "casetitle": "Sivakumar K vs Gopakumar",
+        "lprnumber": "LP/9/2026",
+        "lifecyclestatus": "LPR",
+        "stage": "Appearance",
+        "createdtime": 1752477952561,
+        "lastmodifiedtime": 1790160218397
+      }
+    ],
+    "awaiting_sample": [
+      {
+        "filingnumber": "KL-000745-2025",
+        "courtcasenumber": "ST/396/2025",
+        "casetitle": "Shyni vs Susy A",
+        "stage": "Judgement",
+        "failed_warrant_count": 32
+      },
+      {
+        "filingnumber": "KL-000194-2025",
+        "courtcasenumber": "ST/154/2025",
+        "casetitle": "Suma Devi M Jayakumar vs Jayalekshmi K",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 28
+      },
+      {
+        "filingnumber": "KL-000356-2024",
+        "courtcasenumber": "ST/35/2025",
+        "casetitle": "Pramod babu vs Roopa",
+        "stage": "Appearance",
+        "failed_warrant_count": 25
+      },
+      {
+        "filingnumber": "KL-000411-2025",
+        "courtcasenumber": "ST/531/2025",
+        "casetitle": "Rajalekshmi S vs ANOOP S BABU",
+        "stage": "Appearance",
+        "failed_warrant_count": 24
+      },
+      {
+        "filingnumber": "KL-000260-2025",
+        "courtcasenumber": "ST/288/2025",
+        "casetitle": "Vijayakumar V vs Roopa Rani V",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 22
+      },
+      {
+        "filingnumber": "KL-000644-2025",
+        "courtcasenumber": "ST/344/2025",
+        "casetitle": "Franklin vs Lekha",
+        "stage": "Defense Evidence",
+        "failed_warrant_count": 21
+      },
+      {
+        "filingnumber": "KL-000051-2025",
+        "courtcasenumber": "ST/50/2025",
+        "casetitle": "M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES",
+        "stage": "Cognizance",
+        "failed_warrant_count": 20
+      },
+      {
+        "filingnumber": "KL-000340-2025",
+        "courtcasenumber": "ST/150/2025",
+        "casetitle": "Musthafa Sudheer vs Akash Sanjeev",
+        "stage": "Appearance",
+        "failed_warrant_count": 19
+      },
+      {
+        "filingnumber": "KL-000287-2025",
+        "courtcasenumber": "ST/241/2025",
+        "casetitle": "MOLLY A vs RAJU ABRAHAM",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 19
+      },
+      {
+        "filingnumber": "KL-000575-2025",
+        "courtcasenumber": "ST/240/2025",
+        "casetitle": "PREEJA S vs Asha Alias Ashakumari",
+        "stage": "Defense Evidence",
+        "failed_warrant_count": 19
+      },
+      {
+        "filingnumber": "KL-000454-2025",
+        "courtcasenumber": "ST/221/2025",
+        "casetitle": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD vs BINDU RAJENDRAN",
+        "stage": "Appearance",
+        "failed_warrant_count": 19
+      },
+      {
+        "filingnumber": "KL-000593-2025",
+        "courtcasenumber": "ST/251/2025",
+        "casetitle": "SUMA PARAYIL VEEDU KUMARAN vs JABEES STEPHEN",
+        "stage": "Arguments",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-000560-2025",
+        "courtcasenumber": "ST/316/2025",
+        "casetitle": "Cyril vs Shamnad",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-000221-2025",
+        "courtcasenumber": "ST/443/2025",
+        "casetitle": "Afzaal vs Ansarudeen  A",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-000102-2024",
+        "courtcasenumber": "ST/6/2025",
+        "casetitle": "Jacob  K vs Aji Koruthu",
+        "stage": "Examination of Accused",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-000304-2025",
+        "courtcasenumber": "ST/236/2025",
+        "casetitle": "SREE GOKULAM CHITS AND FINANCE CO PVT LTD vs CHARASHMA KUMARI P L",
+        "stage": "Appearance",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-000369-2026",
+        "courtcasenumber": "ST/134/2026",
+        "casetitle": "Maxvalue Credits and Investments Ltd vs Bindhu",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 18
+      },
+      {
+        "filingnumber": "KL-001186-2025",
+        "courtcasenumber": "ST/780/2025",
+        "casetitle": "Anitha J vs Harish H",
+        "stage": "Appearance",
+        "failed_warrant_count": 17
+      },
+      {
+        "filingnumber": "KL-000577-2025",
+        "courtcasenumber": "ST/242/2025",
+        "casetitle": "Al Nabeel vs Arief N",
+        "stage": "Defense Evidence",
+        "failed_warrant_count": 17
+      },
+      {
+        "filingnumber": "KL-000036-2025",
+        "courtcasenumber": "ST/36/2025",
+        "casetitle": "Ajikumar M S vs Vinu Pai",
+        "stage": "Complainant Evidence",
+        "failed_warrant_count": 16
+      }
+    ]
+  },
+  "Q15_consolidation_pairs": {
+    "title": "Complainant-Accused Pairs Stuck in Complainant Evidence",
+    "total_consolidation_pairs": 14,
+    "total_stuck_cases_involved": 41,
+    "pairs": [
+      {
+        "complainant": "KALADEVI N",
+        "accused": "SAJITH B",
+        "stuck_cases_count": 10,
+        "filing_numbers": "KL-001132-2025, KL-001014-2025, KL-001012-2025, KL-000945-2025, KL-001133-2025, KL-001011-2025, KL-000889-2025, KL-001009-2025, KL-001015-2025, KL-001013-2025"
+      },
+      {
+        "complainant": "VISWAMBARAN P",
+        "accused": "AJITH KUMAR",
+        "stuck_cases_count": 4,
+        "filing_numbers": "KL-000385-2025, KL-000373-2025, KL-000381-2025, KL-000362-2025"
+      },
+      {
+        "complainant": "BROTHERS PHARMA",
+        "accused": "KARUNYA MEDICALS AND 1 OTHER",
+        "stuck_cases_count": 3,
+        "filing_numbers": "KL-000051-2026, KL-000041-2026, KL-000054-2026"
+      },
+      {
+        "complainant": "P MANIYAN PILLAI",
+        "accused": "PRASANTHAN PILLAI S",
+        "stuck_cases_count": 3,
+        "filing_numbers": "KL-000305-2026, KL-000239-2026, KL-000304-2026"
+      },
+      {
+        "complainant": "XAVIER A",
+        "accused": "REJI BABU",
+        "stuck_cases_count": 3,
+        "filing_numbers": "KL-000650-2026, KL-000624-2026, KL-000649-2026"
+      },
+      {
+        "complainant": "TREVOR MORRISON",
+        "accused": "SMITHA TWINKLE",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-000633-2025, KL-000634-2025"
+      },
+      {
+        "complainant": "VALLERIYAN",
+        "accused": "HITHA KRISHNA",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-001168-2025, KL-001188-2025"
+      },
+      {
+        "complainant": "VINU S PAI",
+        "accused": "RAJAN S",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-000017-2026, KL-000010-2026"
+      },
+      {
+        "complainant": "VINU S PAI",
+        "accused": "SANTHI S",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-000015-2026, KL-000007-2026"
+      },
+      {
+        "complainant": "SILVERLINE TRADING COMPANY",
+        "accused": "VARNAM PAINTS AND 1 OTHER",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-000603-2026, KL-000605-2026"
+      },
+      {
+        "complainant": "KERALA KAUMUDI PVT LTD",
+        "accused": "MADHU KUMAR P",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-001007-2025, KL-000999-2025"
+      },
+      {
+        "complainant": "SABU M",
+        "accused": "SAINUDHEEN KUTTY M",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-000169-2026, KL-000167-2026"
+      },
+      {
+        "complainant": "SEBASTIAN JOSEPH",
+        "accused": "BERNAD SEBASTIAN",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-001205-2025, KL-000042-2026"
+      },
+      {
+        "complainant": "A T GEORGEKUTTY",
+        "accused": "JISMI ANTONY",
+        "stuck_cases_count": 2,
+        "filing_numbers": "KL-001239-2025, KL-001240-2025"
+      }
+    ]
+  },
+  "Q16_advocate_caseload": {
+    "title": "Advocates with Largest Pending Caseload & Median Case Age",
+    "top_advocates": [
+      {
+        "advocate_name": "RAJEEV C",
+        "barregistrationnumber": "K/1384/1998",
+        "pending_caseload": 93,
+        "median_case_age_days": 141.4
+      },
+      {
+        "advocate_name": "Kizhakkanela K. Sudhakaran",
+        "barregistrationnumber": "K/397/1990",
+        "pending_caseload": 91,
+        "median_case_age_days": 116.4
+      },
+      {
+        "advocate_name": "ASHA. G.V.",
+        "barregistrationnumber": "K/1135/2006",
+        "pending_caseload": 54,
+        "median_case_age_days": 370.1
+      },
+      {
+        "advocate_name": "Gireesh. G.P.",
+        "barregistrationnumber": "K/1070/2009",
+        "pending_caseload": 33,
+        "median_case_age_days": 150.5
+      },
+      {
+        "advocate_name": "SANAL VAMADEVAN (MANGAD)",
+        "barregistrationnumber": "K/311/2001",
+        "pending_caseload": 33,
+        "median_case_age_days": 239.3
+      },
+      {
+        "advocate_name": "Veliyam K.S. Rajeev",
+        "barregistrationnumber": "K/156/1988",
+        "pending_caseload": 32,
+        "median_case_age_days": 223.2
+      },
+      {
+        "advocate_name": "RAJESH RAJAN",
+        "barregistrationnumber": "K/1316/1998",
+        "pending_caseload": 30,
+        "median_case_age_days": 194.3
+      },
+      {
+        "advocate_name": "B N HASKAR",
+        "barregistrationnumber": "K/125/2001",
+        "pending_caseload": 30,
+        "median_case_age_days": 283.5
+      },
+      {
+        "advocate_name": "JIJU BABU. S.",
+        "barregistrationnumber": "K/257/2011",
+        "pending_caseload": 29,
+        "median_case_age_days": 271.5
+      },
+      {
+        "advocate_name": "DEVIKA S",
+        "barregistrationnumber": "K/3415/2023",
+        "pending_caseload": 27,
+        "median_case_age_days": 193.4
+      },
+      {
+        "advocate_name": "Chirakkarathazham S. Suresh Kumar",
+        "barregistrationnumber": "K/1524/1995",
+        "pending_caseload": 27,
+        "median_case_age_days": 343.6
+      },
+      {
+        "advocate_name": "Nisa Fazil",
+        "barregistrationnumber": "K/704/1997",
+        "pending_caseload": 26,
+        "median_case_age_days": 203.9
+      },
+      {
+        "advocate_name": "HARI PRASAD V",
+        "barregistrationnumber": "K/390/1979",
+        "pending_caseload": 26,
+        "median_case_age_days": 193.4
+      },
+      {
+        "advocate_name": "Reju Prasad",
+        "barregistrationnumber": "K/796/2017",
+        "pending_caseload": 26,
+        "median_case_age_days": 193.4
+      },
+      {
+        "advocate_name": "Kottukkal. V. Jayakumar",
+        "barregistrationnumber": "K/693/2011",
+        "pending_caseload": 24,
+        "median_case_age_days": 142.3
+      },
+      {
+        "advocate_name": "Radhakrishna Pillai",
+        "barregistrationnumber": "K/1043/10",
+        "pending_caseload": 23,
+        "median_case_age_days": 183.7
+      },
+      {
+        "advocate_name": "Anandu Krishnan R",
+        "barregistrationnumber": "K/1339/2024",
+        "pending_caseload": 23,
+        "median_case_age_days": 195.4
+      },
+      {
+        "advocate_name": "Saji V",
+        "barregistrationnumber": "K/637/2002",
+        "pending_caseload": 22,
+        "median_case_age_days": 53.4
+      },
+      {
+        "advocate_name": "PALLAVI S PILLAI",
+        "barregistrationnumber": "K/1736/2023",
+        "pending_caseload": 21,
+        "median_case_age_days": 230.4
+      },
+      {
+        "advocate_name": "SETHUKRISHNAN. S.",
+        "barregistrationnumber": "K/818/2006",
+        "pending_caseload": 21,
+        "median_case_age_days": 91.4
+      },
+      {
+        "advocate_name": "REEJA A",
+        "barregistrationnumber": "K/001077/2016",
+        "pending_caseload": 19,
+        "median_case_age_days": 120.4
+      },
+      {
+        "advocate_name": "RANJITH. A.",
+        "barregistrationnumber": "K/1266/2002",
+        "pending_caseload": 18,
+        "median_case_age_days": 196.8
+      },
+      {
+        "advocate_name": "N R ROY",
+        "barregistrationnumber": "K/863/1989",
+        "pending_caseload": 18,
+        "median_case_age_days": 344.9
+      },
+      {
+        "advocate_name": "PARIPPALLY ANEESH. B.P.",
+        "barregistrationnumber": "K/224/2015",
+        "pending_caseload": 18,
+        "median_case_age_days": 134.3
+      },
+      {
+        "advocate_name": "PRASANTH B L",
+        "barregistrationnumber": "K/632/1992",
+        "pending_caseload": 18,
+        "median_case_age_days": 214.4
+      }
+    ]
+  },
+  "Q17_clean_summons": {
+    "title": "Clean First-Summons Appearance Rate & MoM Trajectory",
+    "historical_cohorts": [
+      {
+        "cognisance_month": "2026-10",
+        "newly_cognised_cases": 27,
+        "clean_first_summons_appearance": 0,
+        "escalated_to_warrant": 0,
+        "clean_rate_pct": 0.0
+      },
+      {
+        "cognisance_month": "2026-09",
+        "newly_cognised_cases": 148,
+        "clean_first_summons_appearance": 2,
+        "escalated_to_warrant": 0,
+        "clean_rate_pct": 1.4
+      },
+      {
+        "cognisance_month": "2026-08",
+        "newly_cognised_cases": 146,
+        "clean_first_summons_appearance": 20,
+        "escalated_to_warrant": 8,
+        "clean_rate_pct": 13.7
+      },
+      {
+        "cognisance_month": "2026-07",
+        "newly_cognised_cases": 180,
+        "clean_first_summons_appearance": 29,
+        "escalated_to_warrant": 56,
+        "clean_rate_pct": 16.1
+      },
+      {
+        "cognisance_month": "2026-06",
+        "newly_cognised_cases": 179,
+        "clean_first_summons_appearance": 39,
+        "escalated_to_warrant": 74,
+        "clean_rate_pct": 21.8
+      },
+      {
+        "cognisance_month": "2026-05",
+        "newly_cognised_cases": 139,
+        "clean_first_summons_appearance": 26,
+        "escalated_to_warrant": 58,
+        "clean_rate_pct": 18.7
+      },
+      {
+        "cognisance_month": "2026-04",
+        "newly_cognised_cases": 170,
+        "clean_first_summons_appearance": 33,
+        "escalated_to_warrant": 102,
+        "clean_rate_pct": 19.4
+      },
+      {
+        "cognisance_month": "2026-03",
+        "newly_cognised_cases": 175,
+        "clean_first_summons_appearance": 61,
+        "escalated_to_warrant": 80,
+        "clean_rate_pct": 34.9
+      },
+      {
+        "cognisance_month": "2026-02",
+        "newly_cognised_cases": 173,
+        "clean_first_summons_appearance": 39,
+        "escalated_to_warrant": 120,
+        "clean_rate_pct": 22.5
+      },
+      {
+        "cognisance_month": "2026-01",
+        "newly_cognised_cases": 98,
+        "clean_first_summons_appearance": 31,
+        "escalated_to_warrant": 60,
+        "clean_rate_pct": 31.6
+      },
+      {
+        "cognisance_month": "2025-12",
+        "newly_cognised_cases": 56,
+        "clean_first_summons_appearance": 19,
+        "escalated_to_warrant": 31,
+        "clean_rate_pct": 33.9
+      },
+      {
+        "cognisance_month": "2025-11",
+        "newly_cognised_cases": 44,
+        "clean_first_summons_appearance": 13,
+        "escalated_to_warrant": 25,
+        "clean_rate_pct": 29.5
+      },
+      {
+        "cognisance_month": "2025-10",
+        "newly_cognised_cases": 101,
+        "clean_first_summons_appearance": 28,
+        "escalated_to_warrant": 62,
+        "clean_rate_pct": 27.7
+      }
+    ]
+  },
+  "Q18_engagement_latency": {
+    "title": "Arrival-to-Engagement Latency (First Appearance to Bail/Plea)",
+    "stats": {
+      "total_cases_engaged": 615,
+      "median_latency_days": 59.0,
+      "mean_latency_days": 78.5,
+      "same_day_engagement": 135,
+      "gap_1_to_14_days": 15,
+      "gap_15_to_30_days": 42,
+      "gap_over_30_days": 423
+    }
+  },
+  "Q19_institutional_filers": {
+    "title": "Institutional & Bulk Complainants (3+ Filings)",
+    "total_institutions_with_3plus": 105,
+    "institutions": [
+      {
+        "complainant": "HDFC BANK LTD",
+        "total_cases_filed": 213,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "PARAVUR AKSHAYA NIDHI LTD",
+        "total_cases_filed": 66,
+        "filed_this_month": 3,
+        "filed_last_month": 12
+      },
+      {
+        "complainant": "HARITHA SYNDICATE",
+        "total_cases_filed": 65,
+        "filed_this_month": 4,
+        "filed_last_month": 5
+      },
+      {
+        "complainant": "VIDHYADIRAJA GRAMA NIDHI LIMITED",
+        "total_cases_filed": 30,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MANAPPURAM FINANCE LTD",
+        "total_cases_filed": 29,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SAUBHAGYA FINANCE",
+        "total_cases_filed": 29,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MABEN NIDHI LTD.",
+        "total_cases_filed": 22,
+        "filed_this_month": 2,
+        "filed_last_month": 4
+      },
+      {
+        "complainant": "SHREE PADMA NIDHI LIMITED",
+        "total_cases_filed": 19,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "NEDUNGOLAM GRAMIN NIDHI LTD",
+        "total_cases_filed": 18,
+        "filed_this_month": 1,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "MANAPPURAM FINANCE LTD.",
+        "total_cases_filed": 18,
+        "filed_this_month": 0,
+        "filed_last_month": 6
+      },
+      {
+        "complainant": "SILVERLINE TRADING COMPANY",
+        "total_cases_filed": 17,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SHAKTHIKULANGARA NIDHI LTD",
+        "total_cases_filed": 15,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KOLLAM URBAN VIKAS NIDHI LIMITED",
+        "total_cases_filed": 15,
+        "filed_this_month": 2,
+        "filed_last_month": 5
+      },
+      {
+        "complainant": "ELAKAMON AKSHAYA NIDHI LTD",
+        "total_cases_filed": 15,
+        "filed_this_month": 0,
+        "filed_last_month": 3
+      },
+      {
+        "complainant": "MARANATHA FINCORP",
+        "total_cases_filed": 15,
+        "filed_this_month": 2,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "M/S EVANGELINE DEV IMPEX PVT LTD",
+        "total_cases_filed": 13,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KERALA KAUMUDI (P) LTD",
+        "total_cases_filed": 13,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MABEN NIDHI LTD",
+        "total_cases_filed": 13,
+        "filed_this_month": 1,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SAMASTHA NAIR NIDHI LTD.",
+        "total_cases_filed": 12,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MANAPPURAM FINANCE LIMITED",
+        "total_cases_filed": 11,
+        "filed_this_month": 1,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "SREE NARAYANA PRARTHANA SAMITHI",
+        "total_cases_filed": 11,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SREENARAYANA PRARTHANA SAMITHI",
+        "total_cases_filed": 11,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "AYIROOR NIDHI LTD",
+        "total_cases_filed": 10,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KALADEVI N",
+        "total_cases_filed": 10,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KERALA KAUMUDI PVT LTD",
+        "total_cases_filed": 9,
+        "filed_this_month": 3,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SUNIL KUMAR B",
+        "total_cases_filed": 9,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "M/S MAXVALUE CREDITS AND INVESTMENTS LTD",
+        "total_cases_filed": 8,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "HDFC BANK",
+        "total_cases_filed": 8,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SANTHA",
+        "total_cases_filed": 8,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "PADMAKUMAR",
+        "total_cases_filed": 8,
+        "filed_this_month": 1,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "SREE GOKULAM CHITS AND FINANCE CO PVT LTD",
+        "total_cases_filed": 8,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KERALA KAUMUDI",
+        "total_cases_filed": 7,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SAUBHAGAYA FINANCE",
+        "total_cases_filed": 7,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "C.P ENTERPRISES",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "KOLLAM URBAN VIKAS NIDHI LTD",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 4
+      },
+      {
+        "complainant": "AJIKUMAR M S",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SALIM",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 5
+      },
+      {
+        "complainant": "PARIPALLY GURUKRIPA NIDHI LTD",
+        "total_cases_filed": 6,
+        "filed_this_month": 1,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KOLLAM NAGARA NIDHI LTD",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "V BOBBY SUNIL DUTT",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ANANTHAPURI NIDHI LIMITED",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MAX VALUE CREDITS AND INVESTMENT LTD",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SREE GOKULAM CHIT AND FINANCE CO PVT LTD",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ANIL KUMAR",
+        "total_cases_filed": 6,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "RAJEEV R",
+        "total_cases_filed": 6,
+        "filed_this_month": 1,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "HARIHARAN S",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "M/S FORT IN INFRA DEVELOPERS PRIVATE LIMITED",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "GOPALAKRISHNA PILLAI",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "VIJAYAN A",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "BINDHU JAMES LITTLE FLOWER",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 5
+      },
+      {
+        "complainant": "POOTHAKULAM NIDHI LIMITED",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "UMAMAHESWARI R",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "AHAMED KABEER",
+        "total_cases_filed": 5,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ANILKUMAR",
+        "total_cases_filed": 4,
+        "filed_this_month": 2,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "REJIMON B",
+        "total_cases_filed": 4,
+        "filed_this_month": 1,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "SURESH KUMAR T",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "TOMY SOLOMON",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KOLLAM URBAN VIKAS NIDHI LTD.",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "REMA K",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "TREVOR MORRISON",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ZAINA A",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SHAJAHAN A",
+        "total_cases_filed": 4,
+        "filed_this_month": 2,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "CHEMMANUR GOLD PALACE INTERNATIONAL LTD",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "CORE PHARMA",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MAXVALUE CREDITS AND INVESTMENTS LTD",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "BANK EMPLOYEES COOPERATIVE SOCIETY",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "VISWAMBARAN P",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "VINU S PAI",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SUJESH CHANDRAN",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SANKARA NARAYANA PILLAI",
+        "total_cases_filed": 4,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SUDARSAN FINANCIERS",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "BROTHERS PHARMA",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "NIXON WILLIAM",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 3
+      },
+      {
+        "complainant": "P MANIYAN PILLAI",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "BINEESH",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "RAVEENDRAN R",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "CHANDRASEKHARAN PILLAI K",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "LEELAMANI",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SHAJI",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 1
+      },
+      {
+        "complainant": "AMJITHA S",
+        "total_cases_filed": 3,
+        "filed_this_month": 3,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "M/S TMS SREENIVASA REDDIAR",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ATHIRA S",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "DEEPU D",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "RAJENDRAN K",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SURESH S",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "XAVIER A",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SAJI YOHANNAN",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "BEEMA MOL R",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SILVER LINE TRADING COMPANY",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MERMOUNT CORPORATION",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SURENDRANATH",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SHEELA S",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SREEKUMAR GOPINADHAN",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "JOHN BOSCO",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "THANOOF A",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "ESHIKA CASHEW COMPANY",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "EDGE INTERIORS",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "KOLLAM GRAMA VIKASANA NIDHI LTD",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SATHEESH BABU",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "SUBHASH CHANDRA BOSE",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "MUHAMED SHERIEEF A",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 3
+      },
+      {
+        "complainant": "S KUNJUMON",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      },
+      {
+        "complainant": "LALY ABRAHAM",
+        "total_cases_filed": 3,
+        "filed_this_month": 0,
+        "filed_last_month": 0
+      }
+    ]
+  },
+  "Q20_data_quality": {
+    "title": "Data Quality Audit: Mobile Numbers, Return Codes, Tagging",
+    "respondent_mobile_capture": {
+      "total_process_tasks": 17701,
+      "tasks_with_mobile": 3170,
+      "pct_carrying_mobile": 17.9
+    },
+    "delivery_returns_structure": {
+      "total_returns": 958,
+      "structured_returns": 0,
+      "blank_or_unreturned": 275
+    },
+    "document_mis_tagging": {
+      "witness_tagged_as_accused": 0,
+      "status": "PASS (Zero mis-tagged document records detected)"
+    }
+  }
+}

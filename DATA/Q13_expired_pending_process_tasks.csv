@@ -1,4 +1,333 @@
 tasktype,createdtime,failure_breakpoint,filingnumber,dateclosed,status,courtcasenumber,duedate,tasknumber,casetitle
+WARRANT,1791978654029,Payment Step (Litigant/Advocate unpaid fee demand),KL-001435-2026,0.0,PENDING_PAYMENT,ST/1171/2026,,KL-001435-2026-TK4,Girija Sajikumar vs Sulatha
+WARRANT,1791978643707,Payment Step (Litigant/Advocate unpaid fee demand),KL-001728-2026,0.0,PENDING_PAYMENT,ST/1047/2026,,KL-001728-2026-TK3,Paravur Akshaya Nidhi Ltd vs Sajana M
+WARRANT,1791978637183,Payment Step (Litigant/Advocate unpaid fee demand),KL-001213-2026,0.0,PENDING_PAYMENT,ST/919/2026,,KL-001213-2026-TK3,Saji Yohannan vs Sunny M J
+WARRANT,1791978635834,Payment Step (Litigant/Advocate unpaid fee demand),KL-001536-2026,0.0,PENDING_PAYMENT,ST/908/2026,,KL-001536-2026-TK3,Nedungolam  Gramin Nidhi Ltd vs Pramod S
+WARRANT,1791978575228,Payment Step (Litigant/Advocate unpaid fee demand),KL-000946-2026,0.0,PENDING_PAYMENT,ST/508/2026,,KL-000946-2026-TK4,O Thomas Alias Oommen Thomas Panicker vs Jayan C K
+WARRANT,1791978574900,Payment Step (Litigant/Advocate unpaid fee demand),KL-000946-2026,0.0,PENDING_PAYMENT,ST/508/2026,,KL-000946-2026-TK3,O Thomas Alias Oommen Thomas Panicker vs Jayan C K
+WARRANT,1791978569973,Payment Step (Litigant/Advocate unpaid fee demand),KL-000673-2026,0.0,PENDING_PAYMENT,ST/329/2026,,KL-000673-2026-TK4,Vidhyadiraja Grama Nidhi Limited vs Anas Ebrahimkutty
+WARRANT,1791978569728,Payment Step (Litigant/Advocate unpaid fee demand),KL-000673-2026,0.0,PENDING_PAYMENT,ST/329/2026,,KL-000673-2026-TK3,Vidhyadiraja Grama Nidhi Limited vs Anas Ebrahimkutty
+WARRANT,1791978565461,Payment Step (Litigant/Advocate unpaid fee demand),KL-000432-2026,0.0,PENDING_PAYMENT,ST/220/2026,,KL-000432-2026-TK11,Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer
+WARRANT,1791978565213,Payment Step (Litigant/Advocate unpaid fee demand),KL-000432-2026,0.0,PENDING_PAYMENT,ST/220/2026,,KL-000432-2026-TK10,Elakamon Akshaya Nidhi Ltd vs Fasila Shajeer
+WARRANT,1791978563951,Payment Step (Litigant/Advocate unpaid fee demand),KL-000354-2026,0.0,PENDING_PAYMENT,ST/215/2026,,KL-000354-2026-TK11,Kosh Koshy vs Abhijith Pillai
+WARRANT,1791978563612,Payment Step (Litigant/Advocate unpaid fee demand),KL-000354-2026,0.0,PENDING_PAYMENT,ST/215/2026,,KL-000354-2026-TK10,Kosh Koshy vs Abhijith Pillai
+WARRANT,1791978544984,Payment Step (Litigant/Advocate unpaid fee demand),KL-000069-2025,0.0,PENDING_PAYMENT,ST/429/2025,,KL-000069-2025-TK26,Ajikumar M S vs Vinu  Pai
+WARRANT,1791978534969,Payment Step (Litigant/Advocate unpaid fee demand),KL-000406-2025,0.0,PENDING_PAYMENT,ST/140/2025,,KL-000406-2025-TK23,DAISY T vs LAWRANCE H
+WARRANT,1791978534672,Payment Step (Litigant/Advocate unpaid fee demand),KL-000406-2025,0.0,PENDING_PAYMENT,ST/140/2025,,KL-000406-2025-TK22,DAISY T vs LAWRANCE H
+WARRANT,1791891985247,Payment Step (Litigant/Advocate unpaid fee demand),KL-001736-2026,0.0,PENDING_PAYMENT,ST/1052/2026,,KL-001736-2026-TK3,Thajudeen M vs Deepa B S
+WARRANT,1791891982842,Payment Step (Litigant/Advocate unpaid fee demand),KL-001705-2026,0.0,PENDING_PAYMENT,ST/1028/2026,,KL-001705-2026-TK3,Manappuram Finance Ltd. vs Vinod R
+WARRANT,1791891980581,Payment Step (Litigant/Advocate unpaid fee demand),KL-001682-2026,0.0,PENDING_PAYMENT,ST/1012/2026,,KL-001682-2026-TK3,Maben Nidhi Ltd. vs Jeens MS
+WARRANT,1791891979235,Payment Step (Litigant/Advocate unpaid fee demand),KL-001681-2026,0.0,PENDING_PAYMENT,ST/1011/2026,,KL-001681-2026-TK3,Maben Nidhi Ltd. vs Jimsha MP
+WARRANT,1791891977859,Payment Step (Litigant/Advocate unpaid fee demand),KL-001680-2026,0.0,PENDING_PAYMENT,ST/1010/2026,,KL-001680-2026-TK3,Maben Nidhi Ltd. vs Sulekha
+WARRANT,1791891976388,Payment Step (Litigant/Advocate unpaid fee demand),KL-001678-2026,0.0,PENDING_PAYMENT,ST/1009/2026,,KL-001678-2026-TK3,Maben Nidhi Ltd. vs Bindu Sebastian
+WARRANT,1791891974716,Payment Step (Litigant/Advocate unpaid fee demand),KL-001384-2026,0.0,PENDING_PAYMENT,ST/1007/2026,,KL-001384-2026-TK3,Samastha Nair Nidhi Ltd. vs Prakash B
+WARRANT,1791891972404,Payment Step (Litigant/Advocate unpaid fee demand),KL-001365-2026,0.0,PENDING_PAYMENT,ST/926/2026,,KL-001365-2026-TK3,Samastha Nair Nidhi Ltd. vs Sindhu Pradeep
+WARRANT,1791891970955,Payment Step (Litigant/Advocate unpaid fee demand),KL-001354-2026,0.0,PENDING_PAYMENT,ST/925/2026,,KL-001354-2026-TK3,Samastha Nair Nidhi Ltd. vs Chintha N S
+WARRANT,1791891968130,Payment Step (Litigant/Advocate unpaid fee demand),KL-001505-2026,0.0,PENDING_PAYMENT,ST/875/2026,,KL-001505-2026-TK3,SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR vs AJITHA
+WARRANT,1791891966460,Payment Step (Litigant/Advocate unpaid fee demand),KL-001472-2026,0.0,PENDING_PAYMENT,ST/861/2026,,KL-001472-2026-TK4,J K Steel and Wood  Industries vs M/S Aaramam Traders 
+WARRANT,1791891963226,Payment Step (Litigant/Advocate unpaid fee demand),KL-001366-2026,0.0,PENDING_PAYMENT,ST/784/2026,,KL-001366-2026-TK6,Shree Padma Nidhi Limited vs Ambili R C
+WARRANT,1791891961041,Payment Step (Litigant/Advocate unpaid fee demand),KL-000590-2026,0.0,PENDING_PAYMENT,ST/743/2026,,KL-000590-2026-TK5,New prince glass House vs Sahana
+WARRANT,1791891960748,Payment Step (Litigant/Advocate unpaid fee demand),KL-000590-2026,0.0,PENDING_PAYMENT,ST/743/2026,,KL-000590-2026-TK4,New prince glass House vs Sahana
+WARRANT,1791891959575,Payment Step (Litigant/Advocate unpaid fee demand),KL-000607-2026,0.0,PENDING_PAYMENT,ST/742/2026,,KL-000607-2026-TK6,New Prince Glass House  vs Sahana
+WARRANT,1791891959316,Payment Step (Litigant/Advocate unpaid fee demand),KL-000607-2026,0.0,PENDING_PAYMENT,ST/742/2026,,KL-000607-2026-TK5,New Prince Glass House  vs Sahana
+WARRANT,1791891955906,Payment Step (Litigant/Advocate unpaid fee demand),KL-001190-2026,0.0,PENDING_PAYMENT,ST/663/2026,,KL-001190-2026-TK5,SREE NARAYANA PRARTHANA SAMITHI vs HARITHA S RAHUL
+WARRANT,1791891951064,Payment Step (Litigant/Advocate unpaid fee demand),KL-000372-2026,0.0,PENDING_PAYMENT,ST/659/2026,,KL-000372-2026-TK5,THAHA vs Sufeer A
+WARRANT,1791891943075,Payment Step (Litigant/Advocate unpaid fee demand),KL-001184-2026,0.0,PENDING_PAYMENT,ST/647/2026,,KL-001184-2026-TK5,SreeNarayana Prarthana Samithi vs SARASWATHY HARIDASAN
+WARRANT,1791891886961,Payment Step (Litigant/Advocate unpaid fee demand),KL-000438-2026,0.0,PENDING_PAYMENT,ST/190/2026,,KL-000438-2026-TK6,HARITHA SYNDICATE vs RIYAS T
+WARRANT,1791891886627,Payment Step (Litigant/Advocate unpaid fee demand),KL-000438-2026,0.0,PENDING_PAYMENT,ST/190/2026,,KL-000438-2026-TK5,HARITHA SYNDICATE vs RIYAS T
+WARRANT,1791891865583,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2025,0.0,PENDING_PAYMENT,ST/426/2025,,KL-000687-2025-TK25,NISAM  A vs ANEES R
+WARRANT,1791891850925,Payment Step (Litigant/Advocate unpaid fee demand),KL-000015-2025,0.0,PENDING_PAYMENT,ST/77/2025,,KL-000015-2025-TK24,Jessy  Panicker vs Sreelatha
+WARRANT,1791891850615,Payment Step (Litigant/Advocate unpaid fee demand),KL-000015-2025,0.0,PENDING_PAYMENT,ST/77/2025,,KL-000015-2025-TK23,Jessy  Panicker vs Sreelatha
+WARRANT,1791805891685,Payment Step (Litigant/Advocate unpaid fee demand),KL-000247-2026,0.0,PENDING_PAYMENT,ST/660/2026,,KL-000247-2026-TK4,M/S Highness Finance Private Limited  vs Rosamma
+WARRANT,1791805891276,Payment Step (Litigant/Advocate unpaid fee demand),KL-000247-2026,0.0,PENDING_PAYMENT,ST/660/2026,,KL-000247-2026-TK3,M/S Highness Finance Private Limited  vs Rosamma
+WARRANT,1791805515324,Payment Step (Litigant/Advocate unpaid fee demand),KL-001807-2026,0.0,PENDING_PAYMENT,ST/1097/2026,,KL-001807-2026-TK4,Bindu B vs Mahesh
+WARRANT,1791805513420,Payment Step (Litigant/Advocate unpaid fee demand),KL-001779-2026,0.0,PENDING_PAYMENT,ST/1073/2026,,KL-001779-2026-TK4,John Varghese vs Prasad C
+WARRANT,1791805505303,Payment Step (Litigant/Advocate unpaid fee demand),KL-001670-2026,0.0,PENDING_PAYMENT,ST/1017/2026,,KL-001670-2026-TK3,Shanavas S vs Nizar J
+WARRANT,1791805458908,Payment Step (Litigant/Advocate unpaid fee demand),KL-001209-2026,0.0,PENDING_PAYMENT,ST/733/2026,,KL-001209-2026-TK4,Sabu S vs Raju
+WARRANT,1791805453484,Payment Step (Litigant/Advocate unpaid fee demand),KL-001207-2026,0.0,PENDING_PAYMENT,ST/665/2026,,KL-001207-2026-TK12,Arya S vs Society for Integrated Growth of the Nation  and 2 Others
+WARRANT,1791805452668,Payment Step (Litigant/Advocate unpaid fee demand),KL-001207-2026,0.0,PENDING_PAYMENT,ST/665/2026,,KL-001207-2026-TK10,Arya S vs Society for Integrated Growth of the Nation  and 2 Others
+WARRANT,1791805451937,Payment Step (Litigant/Advocate unpaid fee demand),KL-001207-2026,0.0,PENDING_PAYMENT,ST/665/2026,,KL-001207-2026-TK8,Arya S vs Society for Integrated Growth of the Nation  and 2 Others
+WARRANT,1791805446274,Payment Step (Litigant/Advocate unpaid fee demand),KL-001094-2026,0.0,PENDING_PAYMENT,ST/601/2026,,KL-001094-2026-TK4,Saseendra Babu Velu Pillai vs Sreekala Devi
+WARRANT,1791805444287,Payment Step (Litigant/Advocate unpaid fee demand),KL-001105-2026,0.0,PENDING_PAYMENT,ST/600/2026,,KL-001105-2026-TK4,Padmavathy Amma vs Sreekala Devi
+WARRANT,1791805441439,Payment Step (Litigant/Advocate unpaid fee demand),KL-000925-2026,0.0,PENDING_PAYMENT,ST/511/2026,,KL-000925-2026-TK4,Santhakumari Y vs Kanchana R
+WARRANT,1791805440989,Payment Step (Litigant/Advocate unpaid fee demand),KL-000925-2026,0.0,PENDING_PAYMENT,ST/511/2026,,KL-000925-2026-TK3,Santhakumari Y vs Kanchana R
+WARRANT,1791805438335,Payment Step (Litigant/Advocate unpaid fee demand),KL-000777-2026,0.0,PENDING_PAYMENT,ST/414/2026,,KL-000777-2026-TK6,Radhamani S vs Vineeth V
+WARRANT,1791805437749,Payment Step (Litigant/Advocate unpaid fee demand),KL-000777-2026,0.0,PENDING_PAYMENT,ST/414/2026,,KL-000777-2026-TK5,Radhamani S vs Vineeth V
+WARRANT,1791805434898,Payment Step (Litigant/Advocate unpaid fee demand),KL-000752-2026,0.0,PENDING_PAYMENT,ST/378/2026,,KL-000752-2026-TK8,Vijayan A vs Surya S
+WARRANT,1791805434405,Payment Step (Litigant/Advocate unpaid fee demand),KL-000752-2026,0.0,PENDING_PAYMENT,ST/378/2026,,KL-000752-2026-TK7,Vijayan A vs Surya S
+WARRANT,1791805432928,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2026,0.0,PENDING_PAYMENT,ST/365/2026,,KL-000687-2026-TK4,NAPOLEON P vs THE PACKING WORLD
+WARRANT,1791805432425,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2026,0.0,PENDING_PAYMENT,ST/365/2026,,KL-000687-2026-TK3,NAPOLEON P vs THE PACKING WORLD
+WARRANT,1791805424325,Payment Step (Litigant/Advocate unpaid fee demand),KL-000512-2026,0.0,PENDING_PAYMENT,ST/234/2026,,KL-000512-2026-TK10,SHAJI vs Girish Kumar S
+WARRANT,1791805423979,Payment Step (Litigant/Advocate unpaid fee demand),KL-000512-2026,0.0,PENDING_PAYMENT,ST/234/2026,,KL-000512-2026-TK9,SHAJI vs Girish Kumar S
+WARRANT,1791805393365,Payment Step (Litigant/Advocate unpaid fee demand),KL-000981-2025,0.0,PENDING_PAYMENT,ST/718/2025,,KL-000981-2025-TK13,Mulamoottil Associates vs Haneefa
+WARRANT,1791805392648,Payment Step (Litigant/Advocate unpaid fee demand),KL-000981-2025,0.0,PENDING_PAYMENT,ST/718/2025,,KL-000981-2025-TK12,Mulamoottil Associates vs Haneefa
+WARRANT,1791805392630,Payment Step (Litigant/Advocate unpaid fee demand),KL-000595-2025,0.0,PENDING_PAYMENT,ST/679/2025,,KL-000595-2025-TK31,Arun Kumar vs Prasad
+WARRANT,1791542870281,Payment Step (Litigant/Advocate unpaid fee demand),KL-001031-2026,0.0,PENDING_PAYMENT,ST/555/2026,,KL-001031-2026-TK5,Poothakulam Nidhi Limited vs Arya Krishnan S
+WARRANT,1791542010788,Payment Step (Litigant/Advocate unpaid fee demand),KL-001262-2026,0.0,PENDING_PAYMENT,ST/721/2026,,KL-001262-2026-TK6,Sasidharan Nair vs Mahesh Kumar
+WARRANT,1791542010430,Payment Step (Litigant/Advocate unpaid fee demand),KL-001262-2026,0.0,PENDING_PAYMENT,ST/721/2026,,KL-001262-2026-TK5,Sasidharan Nair vs Mahesh Kumar
+WARRANT,1791542009036,Payment Step (Litigant/Advocate unpaid fee demand),KL-001251-2026,0.0,PENDING_PAYMENT,ST/720/2026,,KL-001251-2026-TK5,Azhakesan S vs Sruthy S Raj
+WARRANT,1791542008742,Payment Step (Litigant/Advocate unpaid fee demand),KL-001251-2026,0.0,PENDING_PAYMENT,ST/720/2026,,KL-001251-2026-TK4,Azhakesan S vs Sruthy S Raj
+WARRANT,1791542007985,Expired Before Service (Hearing date passed),KL-001255-2026,0.0,EXPIRED,ST/713/2026,,KL-001255-2026-TK7,N DENASH vs GOPAKUMAR
+WARRANT,1791542004876,Payment Step (Litigant/Advocate unpaid fee demand),KL-001030-2026,0.0,PENDING_PAYMENT,ST/554/2026,,KL-001030-2026-TK6,Poothakulam Nidhi Limited vs SatheeshChandran V B
+WARRANT,1791542004620,Payment Step (Litigant/Advocate unpaid fee demand),KL-001030-2026,0.0,PENDING_PAYMENT,ST/554/2026,,KL-001030-2026-TK5,Poothakulam Nidhi Limited vs SatheeshChandran V B
+WARRANT,1791541999170,Payment Step (Litigant/Advocate unpaid fee demand),KL-000992-2026,0.0,PENDING_PAYMENT,ST/535/2026,,KL-000992-2026-TK5,Shree Padma Nidhi Limited vs Biju P
+WARRANT,1791541998901,Payment Step (Litigant/Advocate unpaid fee demand),KL-000992-2026,0.0,PENDING_PAYMENT,ST/535/2026,,KL-000992-2026-TK4,Shree Padma Nidhi Limited vs Biju P
+WARRANT,1791541995020,Payment Step (Litigant/Advocate unpaid fee demand),KL-000727-2026,0.0,PENDING_PAYMENT,ST/392/2026,,KL-000727-2026-TK8,saubhagya finance vs Rugminiyamma
+WARRANT,1791541994702,Payment Step (Litigant/Advocate unpaid fee demand),KL-000727-2026,0.0,PENDING_PAYMENT,ST/392/2026,,KL-000727-2026-TK7,saubhagya finance vs Rugminiyamma
+WARRANT,1791541993415,Payment Step (Litigant/Advocate unpaid fee demand),KL-000701-2026,0.0,PENDING_PAYMENT,ST/375/2026,,KL-000701-2026-TK12,Saubhagaya Finance  vs Aruna S
+WARRANT,1791541993124,Payment Step (Litigant/Advocate unpaid fee demand),KL-000701-2026,0.0,PENDING_PAYMENT,ST/375/2026,,KL-000701-2026-TK11,Saubhagaya Finance  vs Aruna S
+WARRANT,1791541987684,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2026,0.0,PENDING_PAYMENT,ST/309/2026,,KL-000645-2026-TK12,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
+WARRANT,1791541987367,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2026,0.0,PENDING_PAYMENT,ST/309/2026,,KL-000645-2026-TK11,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
+WARRANT,1791541985969,Payment Step (Litigant/Advocate unpaid fee demand),KL-000598-2026,0.0,PENDING_PAYMENT,ST/273/2026,,KL-000598-2026-TK14,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1791541985676,Payment Step (Litigant/Advocate unpaid fee demand),KL-000598-2026,0.0,PENDING_PAYMENT,ST/273/2026,,KL-000598-2026-TK13,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1791541985316,Payment Step (Litigant/Advocate unpaid fee demand),KL-000596-2026,0.0,PENDING_PAYMENT,ST/272/2026,,KL-000596-2026-TK11,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1791541982618,Payment Step (Litigant/Advocate unpaid fee demand),KL-000424-2026,0.0,PENDING_PAYMENT,ST/245/2026,,KL-000424-2026-TK8,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
+WARRANT,1791541982279,Payment Step (Litigant/Advocate unpaid fee demand),KL-000424-2026,0.0,PENDING_PAYMENT,ST/245/2026,,KL-000424-2026-TK7,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
+WARRANT,1791541975423,Payment Step (Litigant/Advocate unpaid fee demand),KL-000326-2026,0.0,PENDING_PAYMENT,ST/139/2026,,KL-000326-2026-TK11,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
+WARRANT,1791541975137,Payment Step (Litigant/Advocate unpaid fee demand),KL-000326-2026,0.0,PENDING_PAYMENT,ST/139/2026,,KL-000326-2026-TK10,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
+WARRANT,1791541899185,Payment Step (Litigant/Advocate unpaid fee demand),KL-000199-2026,0.0,PENDING_PAYMENT,ST/58/2026,,KL-000199-2026-TK10,Muhammed Riyas N vs Ashkar Anzar
+WARRANT,1791541898906,Payment Step (Litigant/Advocate unpaid fee demand),KL-000199-2026,0.0,PENDING_PAYMENT,ST/58/2026,,KL-000199-2026-TK9,Muhammed Riyas N vs Ashkar Anzar
+WARRANT,1791541891578,Payment Step (Litigant/Advocate unpaid fee demand),KL-001052-2025,0.0,PENDING_PAYMENT,ST/831/2025,,KL-001052-2025-TK13,Tinu P vs Vinu P
+WARRANT,1791541891250,Payment Step (Litigant/Advocate unpaid fee demand),KL-001052-2025,0.0,PENDING_PAYMENT,ST/831/2025,,KL-001052-2025-TK12,Tinu P vs Vinu P
+WARRANT,1791541886114,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2025,0.0,PENDING_PAYMENT,ST/716/2025,,KL-001096-2025-TK14,Saubhagya Finance vs Resna S
+WARRANT,1791541885833,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2025,0.0,PENDING_PAYMENT,ST/716/2025,,KL-001096-2025-TK13,Saubhagya Finance vs Resna S
+WARRANT,1791541884581,Payment Step (Litigant/Advocate unpaid fee demand),KL-001095-2025,0.0,PENDING_PAYMENT,ST/715/2025,,KL-001095-2025-TK13,Saubhagya Finance vs Sudha  O
+WARRANT,1791541884301,Payment Step (Litigant/Advocate unpaid fee demand),KL-001095-2025,0.0,PENDING_PAYMENT,ST/715/2025,,KL-001095-2025-TK12,Saubhagya Finance vs Sudha  O
+WARRANT,1791541869459,Payment Step (Litigant/Advocate unpaid fee demand),KL-000689-2025,0.0,PENDING_PAYMENT,ST/370/2025,,KL-000689-2025-TK18,K K Shajahan vs Babitha Sam
+WARRANT,1791541863486,Payment Step (Litigant/Advocate unpaid fee demand),KL-000184-2025,0.0,PENDING_PAYMENT,ST/296/2025,,KL-000184-2025-TK30,kerala kaumudi  vs Devan Vaidyan T
+WARRANT,1791541863201,Payment Step (Litigant/Advocate unpaid fee demand),KL-000184-2025,0.0,PENDING_PAYMENT,ST/296/2025,,KL-000184-2025-TK29,kerala kaumudi  vs Devan Vaidyan T
+WARRANT,1791541860371,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2025,0.0,PENDING_PAYMENT,ST/186/2025,,KL-000196-2025-TK11,City Boots vs Noushad A M
+WARRANT,1791541857370,Payment Step (Litigant/Advocate unpaid fee demand),KL-000233-2025,0.0,PENDING_PAYMENT,ST/104/2025,,KL-000233-2025-TK27,Sachin vs Safeela
+WARRANT,1791541857045,Payment Step (Litigant/Advocate unpaid fee demand),KL-000233-2025,0.0,PENDING_PAYMENT,ST/104/2025,,KL-000233-2025-TK26,Sachin vs Safeela
+WARRANT,1791458657086,Payment Step (Litigant/Advocate unpaid fee demand),KL-001636-2026,0.0,PENDING_PAYMENT,ST/987/2026,,KL-001636-2026-TK4,Shobitha S vs Shiji
+WARRANT,1791458654128,Payment Step (Litigant/Advocate unpaid fee demand),KL-000937-2026,0.0,PENDING_PAYMENT,ST/902/2026,,KL-000937-2026-TK4,M/s TMS Sreenivasa Reddiar and 1 Other vs A Sajeev
+WARRANT,1791458653717,Payment Step (Litigant/Advocate unpaid fee demand),KL-000937-2026,0.0,PENDING_PAYMENT,ST/902/2026,,KL-000937-2026-TK3,M/s TMS Sreenivasa Reddiar and 1 Other vs A Sajeev
+WARRANT,1791458237579,Payment Step (Litigant/Advocate unpaid fee demand),KL-001236-2026,0.0,PENDING_PAYMENT,ST/710/2026,,KL-001236-2026-TK4,Kerala kaumudi ( p) Ltd vs Ajaya Kumar S
+WARRANT,1791458236144,Payment Step (Litigant/Advocate unpaid fee demand),KL-001235-2026,0.0,PENDING_PAYMENT,ST/709/2026,,KL-001235-2026-TK4,Kerala Kaumudi (P) Ltd vs Ajayakumar S
+WARRANT,1791458223358,Payment Step (Litigant/Advocate unpaid fee demand),KL-000784-2026,0.0,PENDING_PAYMENT,ST/399/2026,,KL-000784-2026-TK14,Saleena S vs RAJU
+WARRANT,1791458217030,Payment Step (Litigant/Advocate unpaid fee demand),KL-000276-2026,0.0,PENDING_PAYMENT,ST/104/2026,,KL-000276-2026-TK17,Thampi K Kunjappan vs Sheeja
+WARRANT,1791458210478,Payment Step (Litigant/Advocate unpaid fee demand),KL-000019-2026,0.0,PENDING_PAYMENT,ST/5/2026,,KL-000019-2026-TK16,HDFC BANK LTD vs MAHILAL K MOHAN
+WARRANT,1791458210081,Payment Step (Litigant/Advocate unpaid fee demand),KL-001187-2025,0.0,PENDING_PAYMENT,ST/782/2025,,KL-001187-2025-TK29,Anitha J vs Harish H
+WARRANT,1791458209764,Payment Step (Litigant/Advocate unpaid fee demand),KL-001186-2025,0.0,PENDING_PAYMENT,ST/780/2025,,KL-001186-2025-TK34,Anitha J vs Harish H
+WARRANT,1791372457223,Payment Step (Litigant/Advocate unpaid fee demand),KL-001578-2026,0.0,PENDING_PAYMENT,ST/1006/2026,,KL-001578-2026-TK3,Maha Devi vs Bijumon Christepher
+WARRANT,1791372383564,Payment Step (Litigant/Advocate unpaid fee demand),KL-000892-2026,0.0,PENDING_PAYMENT,ST/471/2026,,KL-000892-2026-TK9,SILVERLINE TRADING COMPANY vs M/S DIYAS DIGITAL FURNITURE AND HOME APPLIANCES
+WARRANT,1791372383229,Payment Step (Litigant/Advocate unpaid fee demand),KL-000892-2026,0.0,PENDING_PAYMENT,ST/471/2026,,KL-000892-2026-TK8,SILVERLINE TRADING COMPANY vs M/S DIYAS DIGITAL FURNITURE AND HOME APPLIANCES
+WARRANT,1791372381671,Payment Step (Litigant/Advocate unpaid fee demand),KL-000888-2026,0.0,PENDING_PAYMENT,ST/470/2026,,KL-000888-2026-TK9,SILVERLINE TRADING COMPANY vs M/S DIYAS DIGITAL FURNITURE AND HOME APPLIANCES
+WARRANT,1791372381285,Payment Step (Litigant/Advocate unpaid fee demand),KL-000888-2026,0.0,PENDING_PAYMENT,ST/470/2026,,KL-000888-2026-TK8,SILVERLINE TRADING COMPANY vs M/S DIYAS DIGITAL FURNITURE AND HOME APPLIANCES
+WARRANT,1791372379666,Payment Step (Litigant/Advocate unpaid fee demand),KL-000875-2026,0.0,PENDING_PAYMENT,ST/459/2026,,KL-000875-2026-TK6,Manappuram Finance Ltd vs Ajayakumar
+WARRANT,1791372377608,Payment Step (Litigant/Advocate unpaid fee demand),KL-000865-2026,0.0,PENDING_PAYMENT,ST/449/2026,,KL-000865-2026-TK8,Sidhik vs Ajmeer A
+WARRANT,1791372374982,Payment Step (Litigant/Advocate unpaid fee demand),KL-000352-2024,0.0,PENDING_PAYMENT,ST/372/2026,,KL-000352-2024-TK12,JINJU RANI vs SUNIL S
+WARRANT,1791372357738,Payment Step (Litigant/Advocate unpaid fee demand),KL-001078-2025,0.0,PENDING_PAYMENT,ST/722/2025,,KL-001078-2025-TK25,Saubhagya Finance vs Merlin
+WARRANT,1791372343643,Payment Step (Litigant/Advocate unpaid fee demand),KL-000287-2025,0.0,PENDING_PAYMENT,ST/241/2025,,KL-000287-2025-TK40,MOLLY A vs RAJU ABRAHAM
+WARRANT,1791282548340,Payment Step (Litigant/Advocate unpaid fee demand),KL-001011-2026,0.0,PENDING_PAYMENT,ST/983/2026,,KL-001011-2026-TK5,DEEPAKUMARI J vs RANI
+WARRANT,1791282548031,Payment Step (Litigant/Advocate unpaid fee demand),KL-001011-2026,0.0,PENDING_PAYMENT,ST/983/2026,,KL-001011-2026-TK4,DEEPAKUMARI J vs RANI
+WARRANT,1791282377405,Payment Step (Litigant/Advocate unpaid fee demand),KL-000613-2026,0.0,PENDING_PAYMENT,ST/297/2026,,KL-000613-2026-TK9,Vidhyadiraja Grama Nidhi Limited vs Renju Rajan
+WARRANT,1791282377120,Payment Step (Litigant/Advocate unpaid fee demand),KL-000613-2026,0.0,PENDING_PAYMENT,ST/297/2026,,KL-000613-2026-TK8,Vidhyadiraja Grama Nidhi Limited vs Renju Rajan
+WARRANT,1791282371010,Payment Step (Litigant/Advocate unpaid fee demand),KL-000488-2026,0.0,PENDING_PAYMENT,ST/204/2026,,KL-000488-2026-TK9,Manappuram Finance Ltd vs Ajeesh M
+WARRANT,1791282369789,Payment Step (Litigant/Advocate unpaid fee demand),KL-000348-2026,0.0,PENDING_PAYMENT,ST/155/2026,,KL-000348-2026-TK13,Bank Employees Cooperative Society vs Vinneth P S
+WARRANT,1791282362372,Expired Before Service (Hearing date passed),KL-001187-2025,0.0,EXPIRED,ST/782/2025,,KL-001187-2025-TK22,Anitha J vs Harish H
+WARRANT,1791282362102,Expired Before Service (Hearing date passed),KL-001187-2025,0.0,EXPIRED,ST/782/2025,,KL-001187-2025-TK21,Anitha J vs Harish H
+WARRANT,1791282359232,Expired Before Service (Hearing date passed),KL-001186-2025,0.0,EXPIRED,ST/780/2025,,KL-001186-2025-TK27,Anitha J vs Harish H
+WARRANT,1791282358913,Expired Before Service (Hearing date passed),KL-001186-2025,0.0,EXPIRED,ST/780/2025,,KL-001186-2025-TK26,Anitha J vs Harish H
+WARRANT,1791282354351,Payment Step (Litigant/Advocate unpaid fee demand),KL-000872-2025,0.0,PENDING_PAYMENT,ST/581/2025,,KL-000872-2025-TK16,Arya Ravi vs Shajin Kattan Kodumal
+WARRANT,1791282349022,Payment Step (Litigant/Advocate unpaid fee demand),KL-000221-2025,0.0,PENDING_PAYMENT,ST/443/2025,,KL-000221-2025-TK36,Afzaal vs Ansarudeen  A
+WARRANT,1791282342870,Payment Step (Litigant/Advocate unpaid fee demand),KL-000662-2025,0.0,PENDING_PAYMENT,ST/361/2025,,KL-000662-2025-TK23,Umamaheswari R vs Surya
+WARRANT,1791282340102,Payment Step (Litigant/Advocate unpaid fee demand),KL-000423-2025,0.0,PENDING_PAYMENT,ST/321/2025,,KL-000423-2025-TK37,"THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR"
+WARRANT,1791282339811,Payment Step (Litigant/Advocate unpaid fee demand),KL-000423-2025,0.0,PENDING_PAYMENT,ST/321/2025,,KL-000423-2025-TK36,"THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR"
+WARRANT,1791282339515,Payment Step (Litigant/Advocate unpaid fee demand),KL-000423-2025,0.0,PENDING_PAYMENT,ST/321/2025,,KL-000423-2025-TK35,"THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR"
+WARRANT,1791200087679,Payment Step (Litigant/Advocate unpaid fee demand),KL-000634-2025,0.0,PENDING_PAYMENT,ST/401/2025,,KL-000634-2025-TK18,Trevor Morrison vs Smitha Twinkle
+WARRANT,1791200087362,Payment Step (Litigant/Advocate unpaid fee demand),KL-000634-2025,0.0,PENDING_PAYMENT,ST/401/2025,,KL-000634-2025-TK17,Trevor Morrison vs Smitha Twinkle
+WARRANT,1791200085409,Payment Step (Litigant/Advocate unpaid fee demand),KL-000635-2025,0.0,PENDING_PAYMENT,ST/362/2025,,KL-000635-2025-TK19,Trevor Morrison vs Twinkle
+WARRANT,1791200084790,Payment Step (Litigant/Advocate unpaid fee demand),KL-000635-2025,0.0,PENDING_PAYMENT,ST/362/2025,,KL-000635-2025-TK17,Trevor Morrison vs Twinkle
+WARRANT,1791198411772,Payment Step (Litigant/Advocate unpaid fee demand),KL-001102-2026,0.0,PENDING_PAYMENT,ST/591/2026,,KL-001102-2026-TK5,Paravur Akshaya Nidhi Ltd vs Arjun R Nath
+WARRANT,1791198406609,Payment Step (Litigant/Advocate unpaid fee demand),KL-000861-2026,0.0,PENDING_PAYMENT,ST/448/2026,,KL-000861-2026-TK4,Paravur Akshaya Nidhi Ltd vs Latha P S
+WARRANT,1791198406285,Payment Step (Litigant/Advocate unpaid fee demand),KL-000861-2026,0.0,PENDING_PAYMENT,ST/448/2026,,KL-000861-2026-TK3,Paravur Akshaya Nidhi Ltd vs Latha P S
+WARRANT,1791198388039,Payment Step (Litigant/Advocate unpaid fee demand),KL-000730-2025,0.0,PENDING_PAYMENT,ST/524/2025,,KL-000730-2025-TK22,HDFC BANK LTD vs MOHAN PRASAD U N
+WARRANT,1791198383577,Payment Step (Litigant/Advocate unpaid fee demand),KL-000617-2025,0.0,PENDING_PAYMENT,ST/376/2025,,KL-000617-2025-TK16,SALEENA vs Viji Yasodaran
+WARRANT,1791198380438,Payment Step (Litigant/Advocate unpaid fee demand),KL-000720-2025,0.0,PENDING_PAYMENT,ST/359/2025,,KL-000720-2025-TK34,Rajeev vs SRS Flour Mill
+WARRANT,1791198378941,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK37,Cyril vs Shamnad
+WARRANT,1791198378448,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK36,Cyril vs Shamnad
+WARRANT,1791021626629,Payment Step (Litigant/Advocate unpaid fee demand),KL-001648-2026,0.0,PENDING_PAYMENT,ST/994/2026,,KL-001648-2026-TK3,Kunjumol A K vs SHUBHA
+WARRANT,1791021623262,Payment Step (Litigant/Advocate unpaid fee demand),KL-001623-2026,0.0,PENDING_PAYMENT,ST/963/2026,,KL-001623-2026-TK7,Deepu D vs Muhammed Rafi
+WARRANT,1791021622716,Payment Step (Litigant/Advocate unpaid fee demand),KL-001623-2026,0.0,PENDING_PAYMENT,ST/963/2026,,KL-001623-2026-TK5,Deepu D vs Muhammed Rafi
+WARRANT,1791021613684,Payment Step (Litigant/Advocate unpaid fee demand),KL-001350-2026,0.0,PENDING_PAYMENT,ST/796/2026,,KL-001350-2026-TK6,SREENARAYANA PRARTHANA SAMITHI vs JAYASREE BABU
+WARRANT,1791021612198,Payment Step (Litigant/Advocate unpaid fee demand),KL-001348-2026,0.0,PENDING_PAYMENT,ST/795/2026,,KL-001348-2026-TK6,SREENARAYANA PRARTHANA SAMITHI vs REMA RAGHAVAN
+WARRANT,1791021610379,Payment Step (Litigant/Advocate unpaid fee demand),KL-001346-2026,0.0,PENDING_PAYMENT,ST/792/2026,,KL-001346-2026-TK6,SREENARAYANA PRARTHANA SAMITHI vs BINDHU MOLE S
+WARRANT,1791021550397,Payment Step (Litigant/Advocate unpaid fee demand),KL-001128-2026,0.0,PENDING_PAYMENT,ST/594/2026,,KL-001128-2026-TK11,SreeNarayana Prarthana Samithi vs MANILA T
+WARRANT,1791021546895,Payment Step (Litigant/Advocate unpaid fee demand),KL-000886-2026,0.0,PENDING_PAYMENT,ST/467/2026,,KL-000886-2026-TK5,Manappuram Finance Ltd vs Aswathy KS
+WARRANT,1791021546581,Payment Step (Litigant/Advocate unpaid fee demand),KL-000886-2026,0.0,PENDING_PAYMENT,ST/467/2026,,KL-000886-2026-TK4,Manappuram Finance Ltd vs Aswathy KS
+WARRANT,1791021540933,Payment Step (Litigant/Advocate unpaid fee demand),KL-000800-2026,0.0,PENDING_PAYMENT,ST/410/2026,,KL-000800-2026-TK6,Manappuram Finance Ltd vs Anil V P
+WARRANT,1791021540660,Payment Step (Litigant/Advocate unpaid fee demand),KL-000800-2026,0.0,PENDING_PAYMENT,ST/410/2026,,KL-000800-2026-TK5,Manappuram Finance Ltd vs Anil V P
+WARRANT,1791021539009,Payment Step (Litigant/Advocate unpaid fee demand),KL-000944-2025,0.0,PENDING_PAYMENT,ST/389/2026,,KL-000944-2025-TK13,Rema K vs Reeja S
+WARRANT,1791021538643,Payment Step (Litigant/Advocate unpaid fee demand),KL-000944-2025,0.0,PENDING_PAYMENT,ST/389/2026,,KL-000944-2025-TK12,Rema K vs Reeja S
+WARRANT,1791021531187,Payment Step (Litigant/Advocate unpaid fee demand),KL-000417-2026,0.0,PENDING_PAYMENT,ST/162/2026,,KL-000417-2026-TK4,Rajeev R vs Chandu Raj N
+WARRANT,1791021530926,Payment Step (Litigant/Advocate unpaid fee demand),KL-000417-2026,0.0,PENDING_PAYMENT,ST/162/2026,,KL-000417-2026-TK3,Rajeev R vs Chandu Raj N
+WARRANT,1791021528857,Payment Step (Litigant/Advocate unpaid fee demand),KL-000200-2026,0.0,PENDING_PAYMENT,ST/141/2026,,KL-000200-2026-TK10,Deepu D vs Muhammed Firoz R
+WARRANT,1791021528572,Payment Step (Litigant/Advocate unpaid fee demand),KL-000200-2026,0.0,PENDING_PAYMENT,ST/141/2026,,KL-000200-2026-TK9,Deepu D vs Muhammed Firoz R
+WARRANT,1791021526328,Payment Step (Litigant/Advocate unpaid fee demand),KL-000235-2026,0.0,PENDING_PAYMENT,ST/80/2026,,KL-000235-2026-TK10,HDFC BANK LTD vs JIJUMON S
+WARRANT,1791021524687,Payment Step (Litigant/Advocate unpaid fee demand),KL-000234-2026,0.0,PENDING_PAYMENT,ST/74/2026,,KL-000234-2026-TK11,HDFC BANK LTD vs VISHNU VIJAYAN
+WARRANT,1791021506017,Payment Step (Litigant/Advocate unpaid fee demand),KL-000398-2025,0.0,PENDING_PAYMENT,ST/335/2025,,KL-000398-2025-TK26,Judy J vs Shahina N
+WARRANT,1790850211021,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2025,0.0,PENDING_PAYMENT,ST/242/2025,,KL-000577-2025-TK37,Al Nabeel vs Arief N
+WARRANT,1790850210686,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2025,0.0,PENDING_PAYMENT,ST/242/2025,,KL-000577-2025-TK36,Al Nabeel vs Arief N
+WARRANT,1790848744352,Payment Step (Litigant/Advocate unpaid fee demand),KL-001662-2026,0.0,PENDING_PAYMENT,ST/993/2026,,KL-001662-2026-TK4,VICTOR CLEETUS vs ARUN R
+WARRANT,1790848680190,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2026,0.0,PENDING_PAYMENT,ST/458/2026,,KL-000876-2026-TK9,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
+WARRANT,1790848679806,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2026,0.0,PENDING_PAYMENT,ST/458/2026,,KL-000876-2026-TK8,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
+WARRANT,1790848662848,Payment Step (Litigant/Advocate unpaid fee demand),KL-000202-2026,0.0,PENDING_PAYMENT,ST/149/2026,,KL-000202-2026-TK7,Kerala Kaumudi Pvt Ltd vs Biju L U
+WARRANT,1790848662567,Payment Step (Litigant/Advocate unpaid fee demand),KL-000202-2026,0.0,PENDING_PAYMENT,ST/149/2026,,KL-000202-2026-TK6,Kerala Kaumudi Pvt Ltd vs Biju L U
+WARRANT,1790848661319,Payment Step (Litigant/Advocate unpaid fee demand),KL-000155-2026,0.0,PENDING_PAYMENT,ST/148/2026,,KL-000155-2026-TK7,kerala kaumudi Pvt Ltd vs Biju L U
+WARRANT,1790848661021,Payment Step (Litigant/Advocate unpaid fee demand),KL-000155-2026,0.0,PENDING_PAYMENT,ST/148/2026,,KL-000155-2026-TK6,kerala kaumudi Pvt Ltd vs Biju L U
+WARRANT,1790848659529,Payment Step (Litigant/Advocate unpaid fee demand),KL-000170-2026,0.0,PENDING_PAYMENT,ST/146/2026,,KL-000170-2026-TK10,kerala kaumudi pvt ltd vs Biju L U
+WARRANT,1790848658528,Payment Step (Litigant/Advocate unpaid fee demand),KL-000170-2026,0.0,PENDING_PAYMENT,ST/146/2026,,KL-000170-2026-TK9,kerala kaumudi pvt ltd vs Biju L U
+WARRANT,1790848630840,Payment Step (Litigant/Advocate unpaid fee demand),KL-000275-2025,0.0,PENDING_PAYMENT,ST/183/2025,,KL-000275-2025-TK24,SABU V vs JYOTHI S
+WARRANT,1790765020412,Payment Step (Litigant/Advocate unpaid fee demand),KL-000786-2026,0.0,PENDING_PAYMENT,ST/419/2026,,KL-000786-2026-TK13,Anees Abbas vs Ajesh Kumar K
+WARRANT,1790762412609,Payment Step (Litigant/Advocate unpaid fee demand),KL-000407-2026,0.0,PENDING_PAYMENT,ST/161/2026,,KL-000407-2026-TK13,SREELATHA O vs SREEJA
+WARRANT,1790762390315,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK55,Rajalekshmi S vs ANOOP S BABU
+WARRANT,1790762389965,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK54,Rajalekshmi S vs ANOOP S BABU
+WARRANT,1790762389606,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK53,Rajalekshmi S vs ANOOP S BABU
+WARRANT,1790762372722,Payment Step (Litigant/Advocate unpaid fee demand),KL-000377-2025,0.0,PENDING_PAYMENT,ST/123/2025,,KL-000377-2025-TK28,Suchee Garments  vs Fizaka International impex LLP and 2 Others
+WARRANT,1790678985692,Payment Step (Litigant/Advocate unpaid fee demand),KL-001181-2026,0.0,PENDING_PAYMENT,ST/653/2026,,KL-001181-2026-TK10,Nowsher A vs Sudhir Kumar Chandrasekhar
+WARRANT,1790672429181,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK20,Hussain Nizam vs Muhammed Niyas
+WARRANT,1790672428826,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK19,Hussain Nizam vs Muhammed Niyas
+WARRANT,1790672417456,Payment Step (Litigant/Advocate unpaid fee demand),KL-000661-2025,0.0,PENDING_PAYMENT,ST/576/2025,,KL-000661-2025-TK19,Rakhesh Rajendran vs Saranya A
+WARRANT,1790592402147,Payment Step (Litigant/Advocate unpaid fee demand),KL-000393-2025,0.0,PENDING_PAYMENT,ST/151/2025,,KL-000393-2025-TK16,Johnson A vs Jayapalan  Rozario
+WARRANT,1790588850978,Payment Step (Litigant/Advocate unpaid fee demand),KL-000737-2026,0.0,PENDING_PAYMENT,ST/981/2026,,KL-000737-2026-TK9,Suresh G vs Fiza Muhammad Shafi
+WARRANT,1790588850717,Payment Step (Litigant/Advocate unpaid fee demand),KL-000737-2026,0.0,PENDING_PAYMENT,ST/981/2026,,KL-000737-2026-TK8,Suresh G vs Fiza Muhammad Shafi
+WARRANT,1790588828998,Payment Step (Litigant/Advocate unpaid fee demand),KL-000952-2026,0.0,PENDING_PAYMENT,ST/810/2026,,KL-000952-2026-TK9,Manikantan vs Raji Thilak
+WARRANT,1790588828331,Payment Step (Litigant/Advocate unpaid fee demand),KL-000952-2026,0.0,PENDING_PAYMENT,ST/810/2026,,KL-000952-2026-TK8,Manikantan vs Raji Thilak
+WARRANT,1790588823722,Payment Step (Litigant/Advocate unpaid fee demand),KL-001165-2026,0.0,PENDING_PAYMENT,ST/664/2026,,KL-001165-2026-TK4,YESODHARAN vs SHAMLA BEEVI
+WARRANT,1790588820032,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2026,0.0,PENDING_PAYMENT,ST/626/2026,,KL-001096-2026-TK7,Saheerath vs V S Sudhakaran Nair
+WARRANT,1790588819456,Payment Step (Litigant/Advocate unpaid fee demand),KL-001109-2026,0.0,PENDING_PAYMENT,ST/621/2026,,KL-001109-2026-TK8,HARITHA SYNDICATE vs SIMLA E
+WARRANT,1790588774903,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2026,0.0,PENDING_PAYMENT,ST/307/2026,,KL-000644-2026-TK16,SILVERLINE TRADING COMPANY vs SAJEEV
+WARRANT,1790588774611,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2026,0.0,PENDING_PAYMENT,ST/307/2026,,KL-000644-2026-TK15,SILVERLINE TRADING COMPANY vs SAJEEV
+WARRANT,1790588769907,Payment Step (Litigant/Advocate unpaid fee demand),KL-000301-2026,0.0,PENDING_PAYMENT,ST/111/2026,,KL-000301-2026-TK22,Sunitha K T vs Aruna A
+WARRANT,1790588769584,Payment Step (Litigant/Advocate unpaid fee demand),KL-000301-2026,0.0,PENDING_PAYMENT,ST/111/2026,,KL-000301-2026-TK21,Sunitha K T vs Aruna A
+WARRANT,1790588767707,Payment Step (Litigant/Advocate unpaid fee demand),KL-000042-2026,0.0,PENDING_PAYMENT,ST/25/2026,,KL-000042-2026-TK12,Sebastian Joseph vs Bernad Sebastian
+WARRANT,1790588766715,Payment Step (Litigant/Advocate unpaid fee demand),KL-001166-2025,0.0,PENDING_PAYMENT,ST/844/2025,,KL-001166-2025-TK21,M/S KRISHNA FUELS vs VARGHESE
+WARRANT,1790588764231,Payment Step (Litigant/Advocate unpaid fee demand),KL-001205-2025,0.0,PENDING_PAYMENT,ST/807/2025,,KL-001205-2025-TK14,Sebastian Joseph vs Bernad Sebastian
+WARRANT,1790588763810,Payment Step (Litigant/Advocate unpaid fee demand),KL-001172-2025,0.0,PENDING_PAYMENT,ST/776/2025,,KL-001172-2025-TK9,HDFC BANK LTD vs Raji K R
+WARRANT,1790588763453,Payment Step (Litigant/Advocate unpaid fee demand),KL-001120-2025,0.0,PENDING_PAYMENT,ST/746/2025,,KL-001120-2025-TK10,Tomy Solomon vs Suneer  A
+WARRANT,1790588761020,Payment Step (Litigant/Advocate unpaid fee demand),KL-000961-2025,0.0,PENDING_PAYMENT,ST/594/2025,,KL-000961-2025-TK12,HDFC BANK LTD vs SHYJU S RAJU
+WARRANT,1790588758443,Payment Step (Litigant/Advocate unpaid fee demand),KL-000834-2025,0.0,PENDING_PAYMENT,ST/453/2025,,KL-000834-2025-TK12,Manappuram Finance Ltd. vs ANNIE ISSAC
+WARRANT,1790588756892,Payment Step (Litigant/Advocate unpaid fee demand),KL-000294-2025,0.0,PENDING_PAYMENT,ST/377/2025,,KL-000294-2025-TK26,Shylaja I vs Rajesh R
+WARRANT,1790588754140,Payment Step (Litigant/Advocate unpaid fee demand),KL-000685-2025,0.0,PENDING_PAYMENT,ST/374/2025,,KL-000685-2025-TK18,Biju B vs Sunilkumar R
+WARRANT,1790588753549,Payment Step (Litigant/Advocate unpaid fee demand),KL-000460-2025,0.0,PENDING_PAYMENT,ST/225/2025,,KL-000460-2025-TK20,SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES
+WARRANT,1790588750785,Payment Step (Litigant/Advocate unpaid fee demand),KL-000299-2024,0.0,PENDING_PAYMENT,ST/91/2025,,KL-000299-2024-TK33,Shamsudeen  M vs Aswathy
+WARRANT,1790421460081,Payment Step (Litigant/Advocate unpaid fee demand),KL-000533-2026,0.0,PENDING_PAYMENT,ST/230/2026,,KL-000533-2026-TK12,Anoop S vs Rechana R
+WARRANT,1790420770260,Payment Step (Litigant/Advocate unpaid fee demand),KL-001066-2026,0.0,PENDING_PAYMENT,ST/570/2026,,KL-001066-2026-TK10,Kollam Nagara Nidhi Ltd vs Manikantan B
+WARRANT,1790420763413,Payment Step (Litigant/Advocate unpaid fee demand),KL-000805-2025,0.0,PENDING_PAYMENT,ST/480/2025,,KL-000805-2025-TK36,Pathrose Robert vs Jaimon Xavier
+WARRANT,1790420763091,Payment Step (Litigant/Advocate unpaid fee demand),KL-000805-2025,0.0,PENDING_PAYMENT,ST/480/2025,,KL-000805-2025-TK35,Pathrose Robert vs Jaimon Xavier
+WARRANT,1790418377659,Payment Step (Litigant/Advocate unpaid fee demand),KL-001385-2026,0.0,PENDING_PAYMENT,ST/794/2026,,KL-001385-2026-TK3,Kollam Housing Co-Operative Society Ltd vs Baiju C
+WARRANT,1790418372544,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2026,0.0,PENDING_PAYMENT,ST/716/2026,,KL-000196-2026-TK12,Arya Harshan vs Asif M
+WARRANT,1790418372310,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2026,0.0,PENDING_PAYMENT,ST/716/2026,,KL-000196-2026-TK11,Arya Harshan vs Asif M
+WARRANT,1790418369773,Payment Step (Litigant/Advocate unpaid fee demand),KL-001212-2026,0.0,PENDING_PAYMENT,ST/666/2026,,KL-001212-2026-TK5,Sunil Kumar R vs Sooraj M M
+WARRANT,1790418369505,Payment Step (Litigant/Advocate unpaid fee demand),KL-001212-2026,0.0,PENDING_PAYMENT,ST/666/2026,,KL-001212-2026-TK4,Sunil Kumar R vs Sooraj M M
+WARRANT,1790418331423,Payment Step (Litigant/Advocate unpaid fee demand),KL-000405-2026,0.0,PENDING_PAYMENT,ST/248/2026,,KL-000405-2026-TK17,Renjith Vijayan vs Shiju Thomas
+WARRANT,1790418324699,Payment Step (Litigant/Advocate unpaid fee demand),KL-001168-2025,0.0,PENDING_PAYMENT,ST/771/2025,,KL-001168-2025-TK11,Valleriyan vs Hitha Krishna
+WARRANT,1790418322072,Payment Step (Litigant/Advocate unpaid fee demand),KL-001105-2025,0.0,PENDING_PAYMENT,ST/723/2025,,KL-001105-2025-TK15,R Sindu vs P R Pratap Chandran
+WARRANT,1790418320981,Payment Step (Litigant/Advocate unpaid fee demand),KL-001063-2025,0.0,PENDING_PAYMENT,ST/688/2025,,KL-001063-2025-TK6,Haritha Syndicate vs Sandhya  Rani
+WARRANT,1790418320678,Payment Step (Litigant/Advocate unpaid fee demand),KL-001063-2025,0.0,PENDING_PAYMENT,ST/688/2025,,KL-001063-2025-TK5,Haritha Syndicate vs Sandhya  Rani
+WARRANT,1790418318443,Payment Step (Litigant/Advocate unpaid fee demand),KL-000501-2025,0.0,PENDING_PAYMENT,ST/533/2025,,KL-000501-2025-TK21,Mohammed Sidhique E S vs Haseena  S
+WARRANT,1790418318126,Payment Step (Litigant/Advocate unpaid fee demand),KL-000835-2025,0.0,PENDING_PAYMENT,ST/454/2025,,KL-000835-2025-TK14,HDFC BANK LTD vs SATHYA BHAMA
+WARRANT,1790418315726,Payment Step (Litigant/Advocate unpaid fee demand),KL-000569-2025,0.0,PENDING_PAYMENT,ST/325/2025,,KL-000569-2025-TK16,Jubairiyath vs Shameema B
+WARRANT,1790418313312,Payment Step (Litigant/Advocate unpaid fee demand),KL-000364-2025,0.0,PENDING_PAYMENT,ST/285/2025,,KL-000364-2025-TK26,Viswaabharan P vs Ajith Kumar
+WARRANT,1790418310748,Payment Step (Litigant/Advocate unpaid fee demand),KL-000323-2024,0.0,PENDING_PAYMENT,ST/256/2025,,KL-000323-2024-TK23,SHAKTHIKULANGARA NIDHI LTD vs PRADEEP  KUMAR
+WARRANT,1790418308785,Payment Step (Litigant/Advocate unpaid fee demand),KL-000263-2025,0.0,PENDING_PAYMENT,ST/106/2025,,KL-000263-2025-TK25,LEENUS LOPAS vs RAHILA THAHIR
+WARRANT,1790334362650,Payment Step (Litigant/Advocate unpaid fee demand),KL-000798-2026,0.0,PENDING_PAYMENT,ST/404/2026,,KL-000798-2026-TK4,Manappuram Finance Ltd. vs Saranya Unnikrishnan
+WARRANT,1790334362146,Payment Step (Litigant/Advocate unpaid fee demand),KL-000370-2026,0.0,PENDING_PAYMENT,ST/138/2026,,KL-000370-2026-TK18,Firos Naisam vs Shahina
+WARRANT,1790329365017,Payment Step (Litigant/Advocate unpaid fee demand),KL-001281-2026,0.0,PENDING_PAYMENT,ST/718/2026,,KL-001281-2026-TK4,The Bank Employees Co-operative Society Ltd No vs Riyas D
+WARRANT,1790329364652,Payment Step (Litigant/Advocate unpaid fee demand),KL-000705-2025,0.0,PENDING_PAYMENT,ST/749/2026,,KL-000705-2025-TK7,Sumesh S vs Bahuleyan
+WARRANT,1790329364384,Payment Step (Litigant/Advocate unpaid fee demand),KL-000705-2025,0.0,PENDING_PAYMENT,ST/749/2026,,KL-000705-2025-TK6,Sumesh S vs Bahuleyan
+WARRANT,1790329308707,Payment Step (Litigant/Advocate unpaid fee demand),KL-000814-2026,0.0,PENDING_PAYMENT,ST/519/2026,,KL-000814-2026-TK7,Ambili A vs Heera J
+WARRANT,1790329308687,Payment Step (Litigant/Advocate unpaid fee demand),KL-001086-2026,0.0,PENDING_PAYMENT,ST/576/2026,,KL-001086-2026-TK5,Ajitha K vs Deepu R
+WARRANT,1790329308433,Payment Step (Litigant/Advocate unpaid fee demand),KL-001086-2026,0.0,PENDING_PAYMENT,ST/576/2026,,KL-001086-2026-TK4,Ajitha K vs Deepu R
+WARRANT,1790329308229,Payment Step (Litigant/Advocate unpaid fee demand),KL-000959-2026,0.0,PENDING_PAYMENT,ST/516/2026,,KL-000959-2026-TK7,Anilkumar vs Prabhakumari
+WARRANT,1790329308008,Payment Step (Litigant/Advocate unpaid fee demand),KL-000959-2026,0.0,PENDING_PAYMENT,ST/516/2026,,KL-000959-2026-TK6,Anilkumar vs Prabhakumari
+WARRANT,1790329304578,Payment Step (Litigant/Advocate unpaid fee demand),KL-000883-2026,0.0,PENDING_PAYMENT,ST/490/2026,,KL-000883-2026-TK4,Manappuram Finance Ltd vs Aswin Anirudhan
+WARRANT,1790329304230,Payment Step (Litigant/Advocate unpaid fee demand),KL-000907-2026,0.0,PENDING_PAYMENT,ST/481/2026,,KL-000907-2026-TK7,Nedungolam Gramin Nidhi Ltd vs Radha S
+WARRANT,1790329302635,Payment Step (Litigant/Advocate unpaid fee demand),KL-000833-2026,0.0,PENDING_PAYMENT,ST/475/2026,,KL-000833-2026-TK12,Stephen Netto vs Ganga
+WARRANT,1790329302398,Payment Step (Litigant/Advocate unpaid fee demand),KL-000833-2026,0.0,PENDING_PAYMENT,ST/475/2026,,KL-000833-2026-TK11,Stephen Netto vs Ganga
+WARRANT,1790329302197,Payment Step (Litigant/Advocate unpaid fee demand),KL-000833-2026,0.0,PENDING_PAYMENT,ST/475/2026,,KL-000833-2026-TK10,Stephen Netto vs Ganga
+WARRANT,1790329298538,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK19,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1790329298001,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK18,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1790329297704,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK17,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1790329297301,Payment Step (Litigant/Advocate unpaid fee demand),KL-000797-2026,0.0,PENDING_PAYMENT,ST/401/2026,,KL-000797-2026-TK4,Manappuram Finance Ltd vs Raju MK
+WARRANT,1790329296995,Payment Step (Litigant/Advocate unpaid fee demand),KL-000136-2025,0.0,PENDING_PAYMENT,ST/391/2026,,KL-000136-2025-TK10,Johnson Daniel vs Sumesh
+WARRANT,1790329296783,Payment Step (Litigant/Advocate unpaid fee demand),KL-000136-2025,0.0,PENDING_PAYMENT,ST/391/2026,,KL-000136-2025-TK9,Johnson Daniel vs Sumesh
+WARRANT,1790329296566,Payment Step (Litigant/Advocate unpaid fee demand),KL-000136-2025,0.0,PENDING_PAYMENT,ST/391/2026,,KL-000136-2025-TK8,Johnson Daniel vs Sumesh
+WARRANT,1790329296334,Payment Step (Litigant/Advocate unpaid fee demand),KL-000769-2026,0.0,PENDING_PAYMENT,ST/384/2026,,KL-000769-2026-TK6,MANAPPURAM FINANCE LIMITED vs SIJIL KRISHNAN
+WARRANT,1790329271618,Payment Step (Litigant/Advocate unpaid fee demand),KL-000771-2026,0.0,PENDING_PAYMENT,ST/383/2026,,KL-000771-2026-TK8,MANAPPURAM FINANCE LIMITED vs PARVATHY P
+WARRANT,1790329271300,Payment Step (Litigant/Advocate unpaid fee demand),KL-000771-2026,0.0,PENDING_PAYMENT,ST/383/2026,,KL-000771-2026-TK7,MANAPPURAM FINANCE LIMITED vs PARVATHY P
+WARRANT,1790329269400,Payment Step (Litigant/Advocate unpaid fee demand),KL-000734-2026,0.0,PENDING_PAYMENT,ST/373/2026,,KL-000734-2026-TK7,MANAPPURAM FINANCE LIMITED vs SHAKEER SATHAR
+WARRANT,1790329269092,Payment Step (Litigant/Advocate unpaid fee demand),KL-000341-2026,0.0,PENDING_PAYMENT,ST/362/2026,,KL-000341-2026-TK10,SHAMSUDEEN KHALID vs SANTHOSH KUMAR
+WARRANT,1790329265008,Payment Step (Litigant/Advocate unpaid fee demand),KL-000636-2026,0.0,PENDING_PAYMENT,ST/318/2026,,KL-000636-2026-TK9,Ashif Riyas vs Habeeb A
+WARRANT,1790329264693,Payment Step (Litigant/Advocate unpaid fee demand),KL-000636-2026,0.0,PENDING_PAYMENT,ST/318/2026,,KL-000636-2026-TK8,Ashif Riyas vs Habeeb A
+WARRANT,1790329263289,Payment Step (Litigant/Advocate unpaid fee demand),KL-000637-2026,0.0,PENDING_PAYMENT,ST/303/2026,,KL-000637-2026-TK12,SILVERLINE TRADING COMPANY vs ANOOP SUGATHAN KUMAR
+WARRANT,1790329262922,Payment Step (Litigant/Advocate unpaid fee demand),KL-000637-2026,0.0,PENDING_PAYMENT,ST/303/2026,,KL-000637-2026-TK11,SILVERLINE TRADING COMPANY vs ANOOP SUGATHAN KUMAR
+WARRANT,1790329261676,Payment Step (Litigant/Advocate unpaid fee demand),KL-000620-2026,0.0,PENDING_PAYMENT,ST/292/2026,,KL-000620-2026-TK8,Nizam vs Mohammed Basheer
+WARRANT,1790329261242,Payment Step (Litigant/Advocate unpaid fee demand),KL-000620-2026,0.0,PENDING_PAYMENT,ST/292/2026,,KL-000620-2026-TK7,Nizam vs Mohammed Basheer
+WARRANT,1790329260890,Payment Step (Litigant/Advocate unpaid fee demand),KL-000422-2026,0.0,PENDING_PAYMENT,ST/244/2026,,KL-000422-2026-TK8,Elakamon Akshaya Nidhi Ltd vs Faseela H
+WARRANT,1790329260254,Payment Step (Litigant/Advocate unpaid fee demand),KL-000420-2026,0.0,PENDING_PAYMENT,ST/243/2026,,KL-000420-2026-TK8,Elakamon Akshaya Nidhi Ltd vs Preetha
+WARRANT,1790329259453,Payment Step (Litigant/Advocate unpaid fee demand),KL-000360-2026,0.0,PENDING_PAYMENT,ST/240/2026,,KL-000360-2026-TK8,Elakamon Akshaya Nidhi Ltd vs Aseena S
+WARRANT,1790329258966,Payment Step (Litigant/Advocate unpaid fee demand),KL-000531-2026,0.0,PENDING_PAYMENT,ST/237/2026,,KL-000531-2026-TK16,Binu John vs Limi Lorance
+WARRANT,1790329258657,Payment Step (Litigant/Advocate unpaid fee demand),KL-000531-2026,0.0,PENDING_PAYMENT,ST/237/2026,,KL-000531-2026-TK15,Binu John vs Limi Lorance
+WARRANT,1790329250296,Payment Step (Litigant/Advocate unpaid fee demand),KL-000441-2026,0.0,PENDING_PAYMENT,ST/177/2026,,KL-000441-2026-TK9,Aneesha Biju vs Sarath Sasi
+WARRANT,1790329250010,Payment Step (Litigant/Advocate unpaid fee demand),KL-000441-2026,0.0,PENDING_PAYMENT,ST/177/2026,,KL-000441-2026-TK8,Aneesha Biju vs Sarath Sasi
+WARRANT,1790329249448,Payment Step (Litigant/Advocate unpaid fee demand),KL-000429-2026,0.0,PENDING_PAYMENT,ST/165/2026,,KL-000429-2026-TK9,Maxvalue Credits and Investments Ltd vs Shajahan
+WARRANT,1790329249116,Payment Step (Litigant/Advocate unpaid fee demand),KL-000395-2026,0.0,PENDING_PAYMENT,ST/152/2026,,KL-000395-2026-TK7,Paravur Akshaya Nidhi Ltd vs Aswathy Krishna
+WARRANT,1790329248755,Payment Step (Litigant/Advocate unpaid fee demand),KL-000401-2026,0.0,PENDING_PAYMENT,ST/151/2026,,KL-000401-2026-TK16,Prabhakaran K vs Harikumar S
+WARRANT,1790329239444,Payment Step (Litigant/Advocate unpaid fee demand),KL-000021-2026,0.0,PENDING_PAYMENT,ST/7/2026,,KL-000021-2026-TK19,Sahadevan Pillai B vs Krishnan Kutty M
+WARRANT,1790329239140,Payment Step (Litigant/Advocate unpaid fee demand),KL-000021-2026,0.0,PENDING_PAYMENT,ST/7/2026,,KL-000021-2026-TK18,Sahadevan Pillai B vs Krishnan Kutty M
+WARRANT,1790329239134,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK14,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1790329238643,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK13,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1790329236744,Payment Step (Litigant/Advocate unpaid fee demand),KL-001238-2025,0.0,PENDING_PAYMENT,ST/833/2025,,KL-001238-2025-TK16,Cristy X vs Bagal Holidays and 1 Other
+WARRANT,1790329236479,Payment Step (Litigant/Advocate unpaid fee demand),KL-001238-2025,0.0,PENDING_PAYMENT,ST/833/2025,,KL-001238-2025-TK15,Cristy X vs Bagal Holidays and 1 Other
+WARRANT,1790329236439,Payment Step (Litigant/Advocate unpaid fee demand),KL-001238-2025,0.0,PENDING_PAYMENT,ST/833/2025,,KL-001238-2025-TK14,Cristy X vs Bagal Holidays and 1 Other
+WARRANT,1790329236171,Payment Step (Litigant/Advocate unpaid fee demand),KL-000286-2024,0.0,PENDING_PAYMENT,ST/819/2025,,KL-000286-2024-TK19,Biju K vs Dileep D
+WARRANT,1790329236156,Payment Step (Litigant/Advocate unpaid fee demand),KL-001238-2025,0.0,PENDING_PAYMENT,ST/833/2025,,KL-001238-2025-TK13,Cristy X vs Bagal Holidays and 1 Other
+WARRANT,1790329235930,Payment Step (Litigant/Advocate unpaid fee demand),KL-000286-2024,0.0,PENDING_PAYMENT,ST/819/2025,,KL-000286-2024-TK18,Biju K vs Dileep D
+WARRANT,1790329235639,Payment Step (Litigant/Advocate unpaid fee demand),KL-001201-2025,0.0,PENDING_PAYMENT,ST/793/2025,,KL-001201-2025-TK8,Upasana Healthcare and Hospitals Private Limited  vs Ramlal R
+WARRANT,1790329191372,Payment Step (Litigant/Advocate unpaid fee demand),KL-001189-2025,0.0,PENDING_PAYMENT,ST/789/2025,,KL-001189-2025-TK10,M/S Sadik Stores vs Sajan Sasidharan
+WARRANT,1790329190514,Payment Step (Litigant/Advocate unpaid fee demand),KL-001164-2025,0.0,PENDING_PAYMENT,ST/774/2025,,KL-001164-2025-TK8,HDFC BANK LTD vs MUHAMMED ANAS ANSHAD
+WARRANT,1790329187826,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK19,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1790329187417,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK18,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1790329187133,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK17,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1790329186839,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK16,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1790329186097,Payment Step (Litigant/Advocate unpaid fee demand),KL-000328-2025,0.0,PENDING_PAYMENT,ST/740/2025,,KL-000328-2025-TK28,Asian Firdaus Cashews vs A K B Exports and Imports and 1 Other
+WARRANT,1790329185667,Payment Step (Litigant/Advocate unpaid fee demand),KL-000050-2025,0.0,PENDING_PAYMENT,ST/741/2025,,KL-000050-2025-TK16,Ever Decor vs Milano Furniture
+WARRANT,1790329183668,Payment Step (Litigant/Advocate unpaid fee demand),KL-000813-2025,0.0,PENDING_PAYMENT,ST/717/2025,,KL-000813-2025-TK21,GEETHA S vs Satheeshkumar G
+WARRANT,1790329182957,Payment Step (Litigant/Advocate unpaid fee demand),KL-001083-2025,0.0,PENDING_PAYMENT,ST/702/2025,,KL-001083-2025-TK14,Saubhagya Finance vs Aswathy S
+WARRANT,1790329182685,Payment Step (Litigant/Advocate unpaid fee demand),KL-001083-2025,0.0,PENDING_PAYMENT,ST/702/2025,,KL-001083-2025-TK13,Saubhagya Finance vs Aswathy S
+WARRANT,1790329182293,Payment Step (Litigant/Advocate unpaid fee demand),KL-000909-2025,0.0,PENDING_PAYMENT,ST/668/2025,,KL-000909-2025-TK12,MARANATHA FINCORP vs SREERAJ S T
+WARRANT,1790329181980,Payment Step (Litigant/Advocate unpaid fee demand),KL-000912-2025,0.0,PENDING_PAYMENT,ST/632/2025,,KL-000912-2025-TK13,MARANATHA FINCORP vs Surendran K
+WARRANT,1790329181637,Payment Step (Litigant/Advocate unpaid fee demand),KL-000911-2025,0.0,PENDING_PAYMENT,ST/631/2025,,KL-000911-2025-TK13,MARANATHA FINCORP vs NISHAD K J
+WARRANT,1790329181302,Payment Step (Litigant/Advocate unpaid fee demand),KL-000824-2025,0.0,PENDING_PAYMENT,ST/537/2025,,KL-000824-2025-TK21,Beena L vs Lekha R
+WARRANT,1790329181020,Payment Step (Litigant/Advocate unpaid fee demand),KL-000824-2025,0.0,PENDING_PAYMENT,ST/537/2025,,KL-000824-2025-TK20,Beena L vs Lekha R
+WARRANT,1790329178340,Payment Step (Litigant/Advocate unpaid fee demand),KL-000564-2025,0.0,PENDING_PAYMENT,ST/534/2025,,KL-000564-2025-TK21,GIRIRAJ KUMAR KABRA vs AADITHYA TRADING CORPORATION and 1 Other
+WARRANT,1790329178004,Payment Step (Litigant/Advocate unpaid fee demand),KL-000886-2025,0.0,PENDING_PAYMENT,ST/491/2025,,KL-000886-2025-TK18,Dr Jameela Beevi B vs Shajin Kattan Kodumal
+WARRANT,1790329177742,Payment Step (Litigant/Advocate unpaid fee demand),KL-000886-2025,0.0,PENDING_PAYMENT,ST/491/2025,,KL-000886-2025-TK17,Dr Jameela Beevi B vs Shajin Kattan Kodumal
+WARRANT,1790329177463,Payment Step (Litigant/Advocate unpaid fee demand),KL-000886-2025,0.0,PENDING_PAYMENT,ST/491/2025,,KL-000886-2025-TK16,Dr Jameela Beevi B vs Shajin Kattan Kodumal
+WARRANT,1790329177160,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2025,0.0,PENDING_PAYMENT,ST/490/2025,,KL-000876-2025-TK10,Haritha Syndicate vs Gireesh Kumar
+WARRANT,1790329176338,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2025,0.0,PENDING_PAYMENT,ST/426/2025,,KL-000687-2025-TK23,NISAM  A vs ANEES R
+WARRANT,1790329175963,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK55,Shyni vs Susy A
+WARRANT,1790329175628,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK54,Shyni vs Susy A
+WARRANT,1790329175299,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK53,Shyni vs Susy A
+WARRANT,1790329174904,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK52,Shyni vs Susy A
+WARRANT,1790329171979,Payment Step (Litigant/Advocate unpaid fee demand),KL-000041-2025,0.0,PENDING_PAYMENT,ST/363/2025,,KL-000041-2025-TK23,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
+WARRANT,1790329171699,Payment Step (Litigant/Advocate unpaid fee demand),KL-000041-2025,0.0,PENDING_PAYMENT,ST/363/2025,,KL-000041-2025-TK22,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
+WARRANT,1790329170189,Payment Step (Litigant/Advocate unpaid fee demand),KL-000552-2025,0.0,PENDING_PAYMENT,ST/227/2025,,KL-000552-2025-TK21,GEETHA S vs SATHEESH KUMAR G
+WARRANT,1790329169834,Payment Step (Litigant/Advocate unpaid fee demand),KL-000552-2025,0.0,PENDING_PAYMENT,ST/227/2025,,KL-000552-2025-TK20,GEETHA S vs SATHEESH KUMAR G
+WARRANT,1790329169480,Payment Step (Litigant/Advocate unpaid fee demand),KL-000232-2025,0.0,PENDING_PAYMENT,ST/205/2025,,KL-000232-2025-TK29,Nistilan Stephen vs Usha Cyril
+WARRANT,1790329168205,Payment Step (Litigant/Advocate unpaid fee demand),KL-000317-2025,0.0,PENDING_PAYMENT,ST/111/2025,,KL-000317-2025-TK24,Hakkim vs Baby Vanaja
+WARRANT,1790329167861,Payment Step (Litigant/Advocate unpaid fee demand),KL-000145-2025,0.0,PENDING_PAYMENT,ST/86/2025,,KL-000145-2025-TK17,HDFC BANK LTD vs NASILA IQBAL
+WARRANT,1790329165298,Payment Step (Litigant/Advocate unpaid fee demand),KL-000333-2024,0.0,PENDING_PAYMENT,ST/61/2025,,KL-000333-2024-TK30,Life Care Agencies vs Neeraj  Dev D
+WARRANT,1790329164493,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK31,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1790329164208,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK30,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1790329163960,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK29,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1790329163669,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK28,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1790329161352,Payment Step (Litigant/Advocate unpaid fee demand),KL-000033-2025,0.0,PENDING_PAYMENT,ST/37/2025,,KL-000033-2025-TK13,M/s. Collection India Enterprises Pvt Ltd vs P PRASAD
+WARRANT,1790329160986,Payment Step (Litigant/Advocate unpaid fee demand),KL-000329-2024,0.0,PENDING_PAYMENT,ST/32/2025,,KL-000329-2024-TK16,HDFC Bank Ltd vs Nirmal Philip
+WARRANT,1790329156086,Payment Step (Litigant/Advocate unpaid fee demand),KL-000298-2024,0.0,PENDING_PAYMENT,ST/16/2025,,KL-000298-2024-TK20,JOSEPH ANTONY vs LENTO
+WARRANT,1790329154945,Payment Step (Litigant/Advocate unpaid fee demand),KL-000156-2024,0.0,PENDING_PAYMENT,ST/10/2025,,KL-000156-2024-TK19,Suresh Kumar T vs Jijo J
 WARRANT,1790242608945,Payment Step (Litigant/Advocate unpaid fee demand),KL-001304-2026,0.0,PENDING_PAYMENT,ST/731/2026,,KL-001304-2026-TK3,Vinu Pai vs Prathap Chandran K
 WARRANT,1790242563798,Payment Step (Litigant/Advocate unpaid fee demand),KL-000352-2024,0.0,PENDING_PAYMENT,ST/372/2026,,KL-000352-2024-TK10,JINJU RANI vs SUNIL S
 WARRANT,1790242558543,Payment Step (Litigant/Advocate unpaid fee demand),KL-000523-2026,0.0,PENDING_PAYMENT,ST/224/2026,,KL-000523-2026-TK11,Athira S vs Nishanth
@@ -8,13 +337,10 @@ WARRANT,1790242551093,Payment Step (Litigant/Advocate unpaid fee demand),KL-0010
 WARRANT,1790242548392,Payment Step (Litigant/Advocate unpaid fee demand),KL-001242-2025,0.0,PENDING_PAYMENT,ST/835/2025,,KL-001242-2025-TK7,M/S SILVERLINE TRADING COMPANY vs RATHEESH RAJAPPAN PILLAI
 WARRANT,1790242548326,Payment Step (Litigant/Advocate unpaid fee demand),KL-001200-2025,0.0,PENDING_PAYMENT,ST/806/2025,,KL-001200-2025-TK13,Umamaheswari R vs ARUNDHATHY
 WARRANT,1790242548006,Payment Step (Litigant/Advocate unpaid fee demand),KL-001242-2025,0.0,PENDING_PAYMENT,ST/835/2025,,KL-001242-2025-TK6,M/S SILVERLINE TRADING COMPANY vs RATHEESH RAJAPPAN PILLAI
-WARRANT,1790242545464,Payment Step (Litigant/Advocate unpaid fee demand),KL-000328-2025,0.0,PENDING_PAYMENT,ST/740/2025,,KL-000328-2025-TK27,Asian Firdaus Cashews vs A K B Exports and Imports and 1 Other
-WARRANT,1790242517256,Payment Step (Litigant/Advocate unpaid fee demand),KL-001078-2025,0.0,PENDING_PAYMENT,ST/722/2025,,KL-001078-2025-TK24,Saubhagya Finance vs Merlin
 WARRANT,1790242514588,Payment Step (Litigant/Advocate unpaid fee demand),KL-000941-2025,0.0,PENDING_PAYMENT,ST/699/2025,,KL-000941-2025-TK16,Aru Raj vs Ajesh S
 WARRANT,1790242514334,Payment Step (Litigant/Advocate unpaid fee demand),KL-000941-2025,0.0,PENDING_PAYMENT,ST/699/2025,,KL-000941-2025-TK15,Aru Raj vs Ajesh S
 WARRANT,1790242514014,Payment Step (Litigant/Advocate unpaid fee demand),KL-000941-2025,0.0,PENDING_PAYMENT,ST/699/2025,,KL-000941-2025-TK14,Aru Raj vs Ajesh S
 WARRANT,1790242513734,Payment Step (Litigant/Advocate unpaid fee demand),KL-000941-2025,0.0,PENDING_PAYMENT,ST/699/2025,,KL-000941-2025-TK13,Aru Raj vs Ajesh S
-WARRANT,1790242513014,Payment Step (Litigant/Advocate unpaid fee demand),KL-000595-2025,0.0,PENDING_PAYMENT,ST/679/2025,,KL-000595-2025-TK30,Arun Kumar vs Prasad
 WARRANT,1790242512700,Payment Step (Litigant/Advocate unpaid fee demand),KL-000595-2025,0.0,PENDING_PAYMENT,ST/679/2025,,KL-000595-2025-TK29,Arun Kumar vs Prasad
 WARRANT,1790242512255,Payment Step (Litigant/Advocate unpaid fee demand),KL-000939-2025,0.0,PENDING_PAYMENT,ST/672/2025,,KL-000939-2025-TK22,HDFC BANK LTD vs JIBIN MATHEW
 WARRANT,1790242511923,Payment Step (Litigant/Advocate unpaid fee demand),KL-000939-2025,0.0,PENDING_PAYMENT,ST/672/2025,,KL-000939-2025-TK21,HDFC BANK LTD vs JIBIN MATHEW
@@ -24,32 +350,19 @@ WARRANT,1790242504010,Payment Step (Litigant/Advocate unpaid fee demand),KL-0006
 WARRANT,1790242503689,Payment Step (Litigant/Advocate unpaid fee demand),KL-000607-2025,0.0,PENDING_PAYMENT,ST/276/2025,,KL-000607-2025-TK27,ANILKUMAR C R vs UNNIKRISHNAN
 WARRANT,1790242502028,Payment Step (Litigant/Advocate unpaid fee demand),KL-000194-2025,0.0,PENDING_PAYMENT,ST/154/2025,,KL-000194-2025-TK46,Suma Devi M Jayakumar vs Jayalekshmi K
 WARRANT,1790242501543,Payment Step (Litigant/Advocate unpaid fee demand),KL-000194-2025,0.0,PENDING_PAYMENT,ST/154/2025,,KL-000194-2025-TK44,Suma Devi M Jayakumar vs Jayalekshmi K
-WARRANT,1790242500985,Payment Step (Litigant/Advocate unpaid fee demand),KL-000299-2024,0.0,PENDING_PAYMENT,ST/91/2025,,KL-000299-2024-TK31,Shamsudeen  M vs Aswathy
 WARRANT,1790242498417,Payment Step (Litigant/Advocate unpaid fee demand),KL-000048-2025,0.0,PENDING_PAYMENT,ST/76/2025,,KL-000048-2025-TK14,Anila George vs Revikumar P
 WARRANT,1790242498031,Payment Step (Litigant/Advocate unpaid fee demand),KL-000128-2024,0.0,PENDING_PAYMENT,ST/62/2025,,KL-000128-2024-TK31,PRASANTH S vs B SABU  PANICKER
 WARRANT,1790242497506,Payment Step (Litigant/Advocate unpaid fee demand),KL-000102-2024,,PENDING_PAYMENT,ST/6/2025,,KL-000102-2024-TK29,Jacob  K vs Aji Koruthu
 WARRANT,1790242496921,Payment Step (Litigant/Advocate unpaid fee demand),KL-000054-2024,,PENDING_PAYMENT,ST/5/2025,,KL-000054-2024-TK15,Ashokan S vs Baiju Raveendran
-WARRANT,1790160170050,Payment Step (Litigant/Advocate unpaid fee demand),KL-001533-2026,0.0,PENDING_PAYMENT,ST/897/2026,,KL-001533-2026-TK3,Paravur Akshaya Nidhi Ltd vs Hajisanth S
-WARRANT,1790160165551,Payment Step (Litigant/Advocate unpaid fee demand),KL-001532-2026,0.0,PENDING_PAYMENT,ST/896/2026,,KL-001532-2026-TK3,Paravur Akshaya Nidhi Ltd vs Haritha BS
 WARRANT,1790160155956,Payment Step (Litigant/Advocate unpaid fee demand),KL-001060-2026,0.0,PENDING_PAYMENT,ST/869/2026,,KL-001060-2026-TK7,R Suresh vs Sreekala R
 WARRANT,1790160154911,Payment Step (Litigant/Advocate unpaid fee demand),KL-001060-2026,0.0,PENDING_PAYMENT,ST/869/2026,,KL-001060-2026-TK5,R Suresh vs Sreekala R
-WARRANT,1790160149962,Payment Step (Litigant/Advocate unpaid fee demand),KL-001481-2026,0.0,PENDING_PAYMENT,ST/845/2026,,KL-001481-2026-TK3,SREE GOKULAM CHITS AND FINANCE CO. PVT. LTD. vs SUJITH S
 WARRANT,1790160099863,Payment Step (Litigant/Advocate unpaid fee demand),KL-000625-2026,0.0,PENDING_PAYMENT,ST/717/2026,,KL-000625-2026-TK4,Praveen P vs Unnikrishna Pillai R
 WARRANT,1790160099592,Payment Step (Litigant/Advocate unpaid fee demand),KL-000625-2026,0.0,PENDING_PAYMENT,ST/717/2026,,KL-000625-2026-TK3,Praveen P vs Unnikrishna Pillai R
-WARRANT,1790160082299,Payment Step (Litigant/Advocate unpaid fee demand),KL-000348-2026,0.0,PENDING_PAYMENT,ST/155/2026,,KL-000348-2026-TK12,Bank Employees Cooperative Society vs Vinneth P S
 WARRANT,1790160078818,Payment Step (Litigant/Advocate unpaid fee demand),KL-001261-2025,0.0,PENDING_PAYMENT,ST/10/2026,,KL-001261-2025-TK12,M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd. vs Jose Nikesh
-WARRANT,1790160075885,Payment Step (Litigant/Advocate unpaid fee demand),KL-001218-2025,0.0,PENDING_PAYMENT,ST/813/2025,,KL-001218-2025-TK12,Sangeeth A vs Sky Travels Tuty
-WARRANT,1790160075502,Payment Step (Litigant/Advocate unpaid fee demand),KL-000775-2025,0.0,PENDING_PAYMENT,ST/437/2025,,KL-000775-2025-TK13,Subhadra  K vs Asha  Anilal
+WARRANT,1790160075502,Expired Before Service (Hearing date passed),KL-000775-2025,0.0,EXPIRED,ST/437/2025,,KL-000775-2025-TK13,Subhadra  K vs Asha  Anilal
 WARRANT,1790159643315,Payment Step (Litigant/Advocate unpaid fee demand),KL-000045-2025,0.0,PENDING_PAYMENT,ST/787/2025,,KL-000045-2025-TK23,Murali Govind vs SOUMYA
 WARRANT,1790159642997,Payment Step (Litigant/Advocate unpaid fee demand),KL-000045-2025,0.0,PENDING_PAYMENT,ST/787/2025,,KL-000045-2025-TK22,Murali Govind vs SOUMYA
-WARRANT,1790159639320,Payment Step (Litigant/Advocate unpaid fee demand),KL-000891-2025,0.0,PENDING_PAYMENT,ST/585/2025,,KL-000891-2025-TK14,SHAKTHIKULANGARA NIDHI LTD vs SHIBU  B
-WARRANT,1790159636734,Payment Step (Litigant/Advocate unpaid fee demand),KL-000882-2025,0.0,PENDING_PAYMENT,ST/571/2025,,KL-000882-2025-TK17,Haritha Syndicate vs Ratheesh R
-WARRANT,1790159636476,Payment Step (Litigant/Advocate unpaid fee demand),KL-000882-2025,0.0,PENDING_PAYMENT,ST/571/2025,,KL-000882-2025-TK16,Haritha Syndicate vs Ratheesh R
 WARRANT,1790159634495,Payment Step (Litigant/Advocate unpaid fee demand),KL-000116-2025,0.0,PENDING_PAYMENT,ST/462/2025,,KL-000116-2025-TK22,Praseetha A vs MUHAMMED
-WARRANT,1790159629097,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK50,Shyni vs Susy A
-WARRANT,1790159628781,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK49,Shyni vs Susy A
-WARRANT,1790159628526,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK48,Shyni vs Susy A
-WARRANT,1790159628276,Payment Step (Litigant/Advocate unpaid fee demand),KL-000745-2025,0.0,PENDING_PAYMENT,ST/396/2025,,KL-000745-2025-TK47,Shyni vs Susy A
 WARRANT,1790159626703,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2025,0.0,PENDING_PAYMENT,ST/344/2025,,KL-000644-2025-TK35,Franklin vs Lekha
 WARRANT,1790159626276,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2025,0.0,PENDING_PAYMENT,ST/344/2025,,KL-000644-2025-TK33,Franklin vs Lekha
 WARRANT,1790159625682,Payment Step (Litigant/Advocate unpaid fee demand),KL-000423-2025,0.0,PENDING_PAYMENT,ST/321/2025,,KL-000423-2025-TK33,"THE BANK EMPLYOEES COOPERATIVE SOCIETY  ,KOLLAM vs R SAJI KUMAR"
@@ -57,7 +370,6 @@ WARRANT,1790159625210,Payment Step (Litigant/Advocate unpaid fee demand),KL-0004
 WARRANT,1790159624877,Payment Step (Litigant/Advocate unpaid fee demand),KL-000575-2025,0.0,PENDING_PAYMENT,ST/240/2025,,KL-000575-2025-TK43,PREEJA S vs Asha Alias Ashakumari
 WARRANT,1790159624396,Payment Step (Litigant/Advocate unpaid fee demand),KL-000575-2025,0.0,PENDING_PAYMENT,ST/240/2025,,KL-000575-2025-TK41,PREEJA S vs Asha Alias Ashakumari
 WARRANT,1790159623828,Payment Step (Litigant/Advocate unpaid fee demand),KL-000303-2025,,PENDING_PAYMENT,ST/166/2025,,KL-000303-2025-TK15,C.P Enterprises    vs Sajina  Abdhulla Basheer
-WARRANT,1790159623570,Payment Step (Litigant/Advocate unpaid fee demand),KL-000263-2025,0.0,PENDING_PAYMENT,ST/106/2025,,KL-000263-2025-TK24,LEENUS LOPAS vs RAHILA THAHIR
 WARRANT,1790159622975,Payment Step (Litigant/Advocate unpaid fee demand),KL-000300-2024,0.0,PENDING_PAYMENT,ST/27/2025,,KL-000300-2024-TK28,HARIHARAN S vs BIJU V P
 WARRANT,1790159622275,Payment Step (Litigant/Advocate unpaid fee demand),KL-000300-2024,0.0,PENDING_PAYMENT,ST/27/2025,,KL-000300-2024-TK25,HARIHARAN S vs BIJU V P
 WARRANT,1790159621812,Payment Step (Litigant/Advocate unpaid fee demand),KL-000301-2024,0.0,PENDING_PAYMENT,ST/26/2025,,KL-000301-2024-TK32,HARIHARAN S vs BIJU V P
@@ -76,27 +388,20 @@ WARRANT,1790075607614,Payment Step (Litigant/Advocate unpaid fee demand),KL-0010
 WARRANT,1790075607348,Payment Step (Litigant/Advocate unpaid fee demand),KL-001089-2025,0.0,PENDING_PAYMENT,ST/706/2025,,KL-001089-2025-TK15,Saubhagya Finance vs Kunjumol
 WARRANT,1790075606798,Payment Step (Litigant/Advocate unpaid fee demand),KL-001086-2025,0.0,PENDING_PAYMENT,ST/705/2025,,KL-001086-2025-TK17,Saubhagya Finance vs Maya
 WARRANT,1790075606503,Payment Step (Litigant/Advocate unpaid fee demand),KL-001086-2025,0.0,PENDING_PAYMENT,ST/705/2025,,KL-001086-2025-TK16,Saubhagya Finance vs Maya
-WARRANT,1790075411810,Payment Step (Litigant/Advocate unpaid fee demand),KL-001619-2026,0.0,PENDING_PAYMENT,ST/955/2026,,KL-001619-2026-TK4,Sudarsanan vs Nizamudeen N
 WARRANT,1790075405193,Payment Step (Litigant/Advocate unpaid fee demand),KL-001508-2026,0.0,PENDING_PAYMENT,ST/885/2026,,KL-001508-2026-TK4,Indumathi T vs Johnson
 WARRANT,1790075397683,Payment Step (Litigant/Advocate unpaid fee demand),KL-001312-2026,0.0,PENDING_PAYMENT,ST/732/2026,,KL-001312-2026-TK3,Vinu Pai vs Prathap Chandran K
-WARRANT,1790075178578,Payment Step (Litigant/Advocate unpaid fee demand),KL-001237-2026,0.0,PENDING_PAYMENT,ST/684/2026,,KL-001237-2026-TK4,Manappuram Finance Ltd vs Anilkumar H
 WARRANT,1790075174208,Payment Step (Litigant/Advocate unpaid fee demand),KL-001074-2026,0.0,PENDING_PAYMENT,ST/622/2026,,KL-001074-2026-TK4,Sandhya B Pillai vs Sreelatha
-WARRANT,1790075171175,Payment Step (Litigant/Advocate unpaid fee demand),KL-001026-2026,0.0,PENDING_PAYMENT,ST/568/2026,,KL-001026-2026-TK4,USHAKUMARI TK vs VARGHESE
 WARRANT,1790075167411,Payment Step (Litigant/Advocate unpaid fee demand),KL-001021-2026,0.0,PENDING_PAYMENT,ST/548/2026,,KL-001021-2026-TK4,Kunjumon vs Joji Baby
 WARRANT,1790075167148,Payment Step (Litigant/Advocate unpaid fee demand),KL-001021-2026,0.0,PENDING_PAYMENT,ST/548/2026,,KL-001021-2026-TK3,Kunjumon vs Joji Baby
 WARRANT,1790075165369,Payment Step (Litigant/Advocate unpaid fee demand),KL-000817-2026,0.0,PENDING_PAYMENT,ST/465/2026,,KL-000817-2026-TK11,Sheela Nair vs Suchithra Niyas
 WARRANT,1790075164902,Payment Step (Litigant/Advocate unpaid fee demand),KL-000817-2026,0.0,PENDING_PAYMENT,ST/465/2026,,KL-000817-2026-TK10,Sheela Nair vs Suchithra Niyas
 WARRANT,1790075162238,Payment Step (Litigant/Advocate unpaid fee demand),KL-000878-2026,0.0,PENDING_PAYMENT,ST/454/2026,,KL-000878-2026-TK5,Manappuram Finance Ltd vs Amal KT
 WARRANT,1790075161957,Payment Step (Litigant/Advocate unpaid fee demand),KL-000878-2026,0.0,PENDING_PAYMENT,ST/454/2026,,KL-000878-2026-TK4,Manappuram Finance Ltd vs Amal KT
-WARRANT,1790075160766,Payment Step (Litigant/Advocate unpaid fee demand),KL-000425-2026,0.0,PENDING_PAYMENT,ST/423/2026,,KL-000425-2026-TK6,PREMOD G vs SUNIL ALIAS THANKAPPA SUNIL
-WARRANT,1790075160446,Payment Step (Litigant/Advocate unpaid fee demand),KL-000425-2026,0.0,PENDING_PAYMENT,ST/423/2026,,KL-000425-2026-TK5,PREMOD G vs SUNIL ALIAS THANKAPPA SUNIL
-WARRANT,1790075158917,Payment Step (Litigant/Advocate unpaid fee demand),KL-000757-2026,0.0,PENDING_PAYMENT,ST/394/2026,,KL-000757-2026-TK7,Nedungolam Gramin Nidhi Ltd vs Rejitha A
 WARRANT,1790075152671,Payment Step (Litigant/Advocate unpaid fee demand),KL-000512-2026,0.0,PENDING_PAYMENT,ST/234/2026,,KL-000512-2026-TK7,SHAJI vs Girish Kumar S
-WARRANT,1790075148900,Payment Step (Litigant/Advocate unpaid fee demand),KL-000981-2025,0.0,PENDING_PAYMENT,ST/718/2025,,KL-000981-2025-TK9,Mulamoottil Associates vs Haneefa
-WARRANT,1790075148636,Payment Step (Litigant/Advocate unpaid fee demand),KL-000981-2025,0.0,PENDING_PAYMENT,ST/718/2025,,KL-000981-2025-TK8,Mulamoottil Associates vs Haneefa
+WARRANT,1790075148900,Expired Before Service (Hearing date passed),KL-000981-2025,0.0,EXPIRED,ST/718/2025,,KL-000981-2025-TK9,Mulamoottil Associates vs Haneefa
+WARRANT,1790075148636,Expired Before Service (Hearing date passed),KL-000981-2025,0.0,EXPIRED,ST/718/2025,,KL-000981-2025-TK8,Mulamoottil Associates vs Haneefa
 WARRANT,1790073352447,Payment Step (Litigant/Advocate unpaid fee demand),KL-000459-2026,0.0,PENDING_PAYMENT,ST/197/2026,,KL-000459-2026-TK13,PADMAKUMAR vs Greeshma Rengan
 WARRANT,1790073352158,Payment Step (Litigant/Advocate unpaid fee demand),KL-000459-2026,0.0,PENDING_PAYMENT,ST/197/2026,,KL-000459-2026-TK12,PADMAKUMAR vs Greeshma Rengan
-WARRANT,1790073351770,Payment Step (Litigant/Advocate unpaid fee demand),KL-000436-2026,0.0,PENDING_PAYMENT,ST/174/2026,,KL-000436-2026-TK15,Akash J vs Bibin Baby
 WARRANT,1790073351236,Payment Step (Litigant/Advocate unpaid fee demand),KL-000323-2026,0.0,PENDING_PAYMENT,ST/137/2026,,KL-000323-2026-TK16,K Vijayan Pillai vs Geetha K M
 WARRANT,1790073350885,Payment Step (Litigant/Advocate unpaid fee demand),KL-000323-2026,0.0,PENDING_PAYMENT,ST/137/2026,,KL-000323-2026-TK15,K Vijayan Pillai vs Geetha K M
 WARRANT,1790073341823,Payment Step (Litigant/Advocate unpaid fee demand),KL-000931-2025,0.0,PENDING_PAYMENT,ST/673/2025,,KL-000931-2025-TK13,Anitha S vs Rajeev R
@@ -115,20 +420,16 @@ WARRANT,1790073325373,Payment Step (Litigant/Advocate unpaid fee demand),KL-0000
 WARRANT,1789815573619,Payment Step (Litigant/Advocate unpaid fee demand),KL-000142-2026,0.0,PENDING_PAYMENT,ST/173/2026,,KL-000142-2026-TK11,mermount corporation vs RAYYAN TILES AND GRANITES
 WARRANT,1789815571163,Payment Step (Litigant/Advocate unpaid fee demand),KL-000072-2026,0.0,PENDING_PAYMENT,ST/172/2026,,KL-000072-2026-TK12,Mermount Corporation vs NIHAS N S
 WARRANT,1789815570861,Payment Step (Litigant/Advocate unpaid fee demand),KL-000070-2026,0.0,PENDING_PAYMENT,ST/171/2026,,KL-000070-2026-TK12,MERMOUNT CORPORATION vs NIHAS N S
-WARRANT,1789815012854,Payment Step (Litigant/Advocate unpaid fee demand),KL-000405-2026,0.0,PENDING_PAYMENT,ST/248/2026,,KL-000405-2026-TK16,Renjith Vijayan vs Shiju Thomas
-WARRANT,1789813224662,Payment Step (Litigant/Advocate unpaid fee demand),KL-001520-2026,0.0,PENDING_PAYMENT,ST/879/2026,,KL-001520-2026-TK3,Gireesan Pillai vs Sarika RS
 WARRANT,1789813218841,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2026,0.0,PENDING_PAYMENT,ST/629/2026,,KL-001142-2026-TK4,Hareesh S vs PRADEEP R PILLAI
 WARRANT,1789808478665,Payment Step (Litigant/Advocate unpaid fee demand),KL-000884-2026,0.0,PENDING_PAYMENT,ST/486/2026,,KL-000884-2026-TK4,Sreekumar S vs Ambika
 WARRANT,1789808478343,Payment Step (Litigant/Advocate unpaid fee demand),KL-000884-2026,0.0,PENDING_PAYMENT,ST/486/2026,,KL-000884-2026-TK3,Sreekumar S vs Ambika
-WARRANT,1789808475290,Payment Step (Litigant/Advocate unpaid fee demand),KL-000865-2026,0.0,PENDING_PAYMENT,ST/449/2026,,KL-000865-2026-TK5,Sidhik vs Ajmeer A
-WARRANT,1789808475015,Payment Step (Litigant/Advocate unpaid fee demand),KL-000865-2026,0.0,PENDING_PAYMENT,ST/449/2026,,KL-000865-2026-TK4,Sidhik vs Ajmeer A
+WARRANT,1789808475290,Expired Before Service (Hearing date passed),KL-000865-2026,0.0,EXPIRED,ST/449/2026,,KL-000865-2026-TK5,Sidhik vs Ajmeer A
+WARRANT,1789808475015,Expired Before Service (Hearing date passed),KL-000865-2026,0.0,EXPIRED,ST/449/2026,,KL-000865-2026-TK4,Sidhik vs Ajmeer A
 WARRANT,1789808472050,Payment Step (Litigant/Advocate unpaid fee demand),KL-000985-2025,0.0,PENDING_PAYMENT,ST/422/2026,,KL-000985-2025-TK10,kerala kaumudi  vs Jijumon M
 WARRANT,1789808471766,Payment Step (Litigant/Advocate unpaid fee demand),KL-000985-2025,0.0,PENDING_PAYMENT,ST/422/2026,,KL-000985-2025-TK9,kerala kaumudi  vs Jijumon M
 WARRANT,1789808440300,Payment Step (Litigant/Advocate unpaid fee demand),KL-000544-2026,0.0,PENDING_PAYMENT,ST/246/2026,,KL-000544-2026-TK17,Shree Padma Nidhi Limited vs Sangeeth S
 WARRANT,1789808437364,Payment Step (Litigant/Advocate unpaid fee demand),KL-000488-2026,0.0,PENDING_PAYMENT,ST/204/2026,,KL-000488-2026-TK7,Manappuram Finance Ltd vs Ajeesh M
 WARRANT,1789808436985,Payment Step (Litigant/Advocate unpaid fee demand),KL-000475-2026,0.0,PENDING_PAYMENT,ST/194/2026,,KL-000475-2026-TK13,SILVERLINE TRADING COMPANY vs SANJEEVAN
-WARRANT,1789808432393,Payment Step (Litigant/Advocate unpaid fee demand),KL-000369-2026,0.0,PENDING_PAYMENT,ST/134/2026,,KL-000369-2026-TK25,Maxvalue Credits and Investments Ltd vs Bindhu
-WARRANT,1789808432073,Payment Step (Litigant/Advocate unpaid fee demand),KL-000369-2026,0.0,PENDING_PAYMENT,ST/134/2026,,KL-000369-2026-TK24,Maxvalue Credits and Investments Ltd vs Bindhu
 WARRANT,1789808431547,Payment Step (Litigant/Advocate unpaid fee demand),KL-000369-2026,0.0,PENDING_PAYMENT,ST/134/2026,,KL-000369-2026-TK22,Maxvalue Credits and Investments Ltd vs Bindhu
 WARRANT,1789808427740,Payment Step (Litigant/Advocate unpaid fee demand),KL-000310-2026,0.0,PENDING_PAYMENT,ST/107/2026,,KL-000310-2026-TK15,Ajikumar M S vs Nizarudeen
 WARRANT,1789808427215,Payment Step (Litigant/Advocate unpaid fee demand),KL-000158-2026,0.0,PENDING_PAYMENT,ST/59/2026,,KL-000158-2026-TK12,Deepthi vs Chandrababu
@@ -139,39 +440,23 @@ WARRANT,1789808421851,Payment Step (Litigant/Advocate unpaid fee demand),KL-0007
 WARRANT,1789808392620,Payment Step (Litigant/Advocate unpaid fee demand),KL-000924-2025,0.0,PENDING_PAYMENT,ST/515/2025,,KL-000924-2025-TK17,HDFC BANK LTD vs RINU R
 WARRANT,1789808392288,Payment Step (Litigant/Advocate unpaid fee demand),KL-000719-2025,0.0,PENDING_PAYMENT,ST/497/2025,,KL-000719-2025-TK13,Liyas A L vs Shad  Adhil
 WARRANT,1789808392022,Payment Step (Litigant/Advocate unpaid fee demand),KL-000924-2025,0.0,PENDING_PAYMENT,ST/515/2025,,KL-000924-2025-TK16,HDFC BANK LTD vs RINU R
-WARRANT,1789808389687,Payment Step (Litigant/Advocate unpaid fee demand),KL-000832-2025,0.0,PENDING_PAYMENT,ST/494/2025,,KL-000832-2025-TK18,Manappuram Finance Ltd. vs Sudheep B
-WARRANT,1789808389396,Payment Step (Litigant/Advocate unpaid fee demand),KL-000832-2025,0.0,PENDING_PAYMENT,ST/494/2025,,KL-000832-2025-TK17,Manappuram Finance Ltd. vs Sudheep B
 WARRANT,1789808388236,Payment Step (Litigant/Advocate unpaid fee demand),KL-000764-2025,0.0,PENDING_PAYMENT,ST/440/2025,,KL-000764-2025-TK26,Priya  Krishnan vs Litheesh A S
-WARRANT,1789808385773,Payment Step (Litigant/Advocate unpaid fee demand),KL-000617-2025,0.0,PENDING_PAYMENT,ST/376/2025,,KL-000617-2025-TK14,SALEENA vs Viji Yasodaran
 WARRANT,1789808384747,Payment Step (Litigant/Advocate unpaid fee demand),KL-000662-2025,0.0,PENDING_PAYMENT,ST/361/2025,,KL-000662-2025-TK22,Umamaheswari R vs Surya
-WARRANT,1789808384435,Payment Step (Litigant/Advocate unpaid fee demand),KL-000662-2025,0.0,PENDING_PAYMENT,ST/361/2025,,KL-000662-2025-TK21,Umamaheswari R vs Surya
 WARRANT,1789808384056,Payment Step (Litigant/Advocate unpaid fee demand),KL-000565-2025,0.0,PENDING_PAYMENT,ST/334/2025,,KL-000565-2025-TK23,Haritha Syndicate vs Jyothish
 WARRANT,1789808381136,Payment Step (Litigant/Advocate unpaid fee demand),KL-000440-2025,0.0,PENDING_PAYMENT,ST/223/2025,,KL-000440-2025-TK19,Sheela  Nair vs Akbarsha  S
 WARRANT,1789808380758,Payment Step (Litigant/Advocate unpaid fee demand),KL-000377-2025,0.0,PENDING_PAYMENT,ST/123/2025,,KL-000377-2025-TK26,Suchee Garments  vs Fizaka International impex LLP and 2 Others
 WARRANT,1789808378943,Payment Step (Litigant/Advocate unpaid fee demand),KL-000361-2025,0.0,PENDING_PAYMENT,ST/117/2025,,KL-000361-2025-TK36,Jamon J vs Sumangalan S
 WARRANT,1789808378586,Payment Step (Litigant/Advocate unpaid fee demand),KL-000282-2024,0.0,PENDING_PAYMENT,ST/34/2025,,KL-000282-2024-TK26,J K Vijayakumar vs Chacko Panicker
-WARRANT,1789643477056,Payment Step (Litigant/Advocate unpaid fee demand),KL-000720-2025,0.0,PENDING_PAYMENT,ST/359/2025,,KL-000720-2025-TK33,Rajeev vs SRS Flour Mill
 WARRANT,1789643476720,Payment Step (Litigant/Advocate unpaid fee demand),KL-000720-2025,0.0,PENDING_PAYMENT,ST/359/2025,,KL-000720-2025-TK32,Rajeev vs SRS Flour Mill
 WARRANT,1789638802651,Payment Step (Litigant/Advocate unpaid fee demand),KL-001307-2026,0.0,PENDING_PAYMENT,ST/996/2026,,KL-001307-2026-TK4,Haritha Syndicate  vs Anil Kumar R
-WARRANT,1789638796292,Payment Step (Litigant/Advocate unpaid fee demand),KL-001494-2026,0.0,PENDING_PAYMENT,ST/870/2026,,KL-001494-2026-TK4,MANAPPURAM FINANCE LIMITED vs SAHI
-WARRANT,1789638794839,Payment Step (Litigant/Advocate unpaid fee demand),KL-000481-2026,0.0,PENDING_PAYMENT,ST/856/2026,,KL-000481-2026-TK4,M/s Prakruthy Distributors vs Anilkumar
-WARRANT,1789638794551,Payment Step (Litigant/Advocate unpaid fee demand),KL-000481-2026,0.0,PENDING_PAYMENT,ST/856/2026,,KL-000481-2026-TK3,M/s Prakruthy Distributors vs Anilkumar
-WARRANT,1789638791603,Payment Step (Litigant/Advocate unpaid fee demand),KL-001273-2026,0.0,PENDING_PAYMENT,ST/719/2026,,KL-001273-2026-TK4,Mable Jose vs Harison A
 WARRANT,1789638789418,Payment Step (Litigant/Advocate unpaid fee demand),KL-001194-2026,0.0,PENDING_PAYMENT,ST/654/2026,,KL-001194-2026-TK4,MARANATHA FINCORP vs Archana L
-WARRANT,1789638787768,Payment Step (Litigant/Advocate unpaid fee demand),KL-001157-2026,0.0,PENDING_PAYMENT,ST/636/2026,,KL-001157-2026-TK3,Thanoof A vs Nasimudeen B
+WARRANT,1789638787768,Expired Before Service (Hearing date passed),KL-001157-2026,0.0,EXPIRED,ST/636/2026,,KL-001157-2026-TK3,Thanoof A vs Nasimudeen B
 WARRANT,1789638786553,Payment Step (Litigant/Advocate unpaid fee demand),KL-000566-2026,0.0,PENDING_PAYMENT,ST/609/2026,,KL-000566-2026-TK6,Vijaykumar G vs SUNIKUMARI P
 WARRANT,1789638786253,Payment Step (Litigant/Advocate unpaid fee demand),KL-000566-2026,0.0,PENDING_PAYMENT,ST/609/2026,,KL-000566-2026-TK5,Vijaykumar G vs SUNIKUMARI P
-WARRANT,1789638760516,Payment Step (Litigant/Advocate unpaid fee demand),KL-001110-2026,0.0,PENDING_PAYMENT,ST/603/2026,,KL-001110-2026-TK5,MINI vs NARGEES S
-WARRANT,1789638758196,Payment Step (Litigant/Advocate unpaid fee demand),KL-001032-2026,0.0,PENDING_PAYMENT,ST/557/2026,,KL-001032-2026-TK4,Poothakulam Nidhi Limited vs Gopu Krishnan G
-WARRANT,1789638757951,Payment Step (Litigant/Advocate unpaid fee demand),KL-001032-2026,0.0,PENDING_PAYMENT,ST/557/2026,,KL-001032-2026-TK3,Poothakulam Nidhi Limited vs Gopu Krishnan G
-WARRANT,1789638754822,Payment Step (Litigant/Advocate unpaid fee demand),KL-000911-2026,0.0,PENDING_PAYMENT,ST/505/2026,,KL-000911-2026-TK3,PADMAKUMAR vs Nissar
 WARRANT,1789638754555,Payment Step (Litigant/Advocate unpaid fee demand),KL-000911-2026,0.0,PENDING_PAYMENT,ST/505/2026,,KL-000911-2026-TK2,PADMAKUMAR vs Nissar
 WARRANT,1789638752382,Payment Step (Litigant/Advocate unpaid fee demand),KL-000792-2026,0.0,PENDING_PAYMENT,ST/420/2026,,KL-000792-2026-TK5,SHIBU G vs SALEENA SHAJAHAN
 WARRANT,1789638752126,Payment Step (Litigant/Advocate unpaid fee demand),KL-000792-2026,0.0,PENDING_PAYMENT,ST/420/2026,,KL-000792-2026-TK4,SHIBU G vs SALEENA SHAJAHAN
 WARRANT,1789638747933,Payment Step (Litigant/Advocate unpaid fee demand),KL-000290-2026,0.0,PENDING_PAYMENT,ST/241/2026,,KL-000290-2026-TK9,Rathilal R vs Varsha S
-WARRANT,1789638743372,Payment Step (Litigant/Advocate unpaid fee demand),KL-000370-2026,0.0,PENDING_PAYMENT,ST/138/2026,,KL-000370-2026-TK17,Firos Naisam vs Shahina
-WARRANT,1789638717036,Payment Step (Litigant/Advocate unpaid fee demand),KL-000316-2026,0.0,PENDING_PAYMENT,ST/108/2026,,KL-000316-2026-TK12,SHAKTHIKULANGARA NIDHI LTD vs Sreekumar R
-WARRANT,1789638714799,Payment Step (Litigant/Advocate unpaid fee demand),KL-001258-2025,0.0,PENDING_PAYMENT,ST/47/2026,,KL-001258-2025-TK10,Nazimudeen H vs Sajeena R
 WARRANT,1789638714177,Payment Step (Litigant/Advocate unpaid fee demand),KL-000041-2026,0.0,PENDING_PAYMENT,ST/19/2026,,KL-000041-2026-TK25,Brothers Pharma vs Karunya Medicals and 1 Other
 WARRANT,1789638701022,Payment Step (Litigant/Advocate unpaid fee demand),KL-001151-2025,0.0,PENDING_PAYMENT,ST/767/2025,,KL-001151-2025-TK15,Maniyan Krishnan vs Saju B
 WARRANT,1789638667309,Payment Step (Litigant/Advocate unpaid fee demand),KL-001016-2025,0.0,PENDING_PAYMENT,ST/550/2025,,KL-001016-2025-TK21,Manappuram Finance Ltd. vs Jincy  Arun
@@ -187,39 +472,28 @@ WARRANT,1789638653338,Payment Step (Litigant/Advocate unpaid fee demand),KL-0005
 WARRANT,1789638650583,Payment Step (Litigant/Advocate unpaid fee demand),KL-000545-2025,,PENDING_PAYMENT,ST/231/2025,,KL-000545-2025-TK32,DANIEL KUTTY vs PRATHEEP P
 WARRANT,1789638650299,Payment Step (Litigant/Advocate unpaid fee demand),KL-000545-2025,,PENDING_PAYMENT,ST/231/2025,,KL-000545-2025-TK31,DANIEL KUTTY vs PRATHEEP P
 WARRANT,1789552143127,Payment Step (Litigant/Advocate unpaid fee demand),KL-001498-2026,0.0,PENDING_PAYMENT,ST/863/2026,,KL-001498-2026-TK3,Jumailathu Beevi A vs Sinosh S
-WARRANT,1789552137545,Payment Step (Litigant/Advocate unpaid fee demand),KL-001001-2026,0.0,PENDING_PAYMENT,ST/736/2026,,KL-001001-2026-TK3,SHAJAHAN M vs PRAKASH P M
-WARRANT,1789552137263,Payment Step (Litigant/Advocate unpaid fee demand),KL-001001-2026,0.0,PENDING_PAYMENT,ST/736/2026,,KL-001001-2026-TK2,SHAJAHAN M vs PRAKASH P M
 WARRANT,1789552135017,Payment Step (Litigant/Advocate unpaid fee demand),KL-001272-2026,0.0,PENDING_PAYMENT,ST/725/2026,,KL-001272-2026-TK4,KERALA KAUMUDI (P) LTD vs MADHU KUMAR P
-WARRANT,1789552129382,Payment Step (Litigant/Advocate unpaid fee demand),KL-001152-2026,0.0,PENDING_PAYMENT,ST/639/2026,,KL-001152-2026-TK8,Paravur Akshaya Nidhi Ltd vs Athira A
-WARRANT,1789552129068,Payment Step (Litigant/Advocate unpaid fee demand),KL-001152-2026,0.0,PENDING_PAYMENT,ST/639/2026,,KL-001152-2026-TK7,Paravur Akshaya Nidhi Ltd vs Athira A
 WARRANT,1789552102596,Payment Step (Litigant/Advocate unpaid fee demand),KL-000855-2026,0.0,PENDING_PAYMENT,ST/441/2026,,KL-000855-2026-TK3,Sujith S vs Sajin Peter
 WARRANT,1789552102310,Payment Step (Litigant/Advocate unpaid fee demand),KL-000855-2026,0.0,PENDING_PAYMENT,ST/441/2026,,KL-000855-2026-TK2,Sujith S vs Sajin Peter
 WARRANT,1789552101129,Payment Step (Litigant/Advocate unpaid fee demand),KL-000789-2026,0.0,PENDING_PAYMENT,ST/407/2026,,KL-000789-2026-TK14,Sunil S vs Shakeela
-WARRANT,1789552101087,Payment Step (Litigant/Advocate unpaid fee demand),KL-000777-2026,0.0,PENDING_PAYMENT,ST/414/2026,,KL-000777-2026-TK4,Radhamani S vs Vineeth V
-WARRANT,1789552100771,Payment Step (Litigant/Advocate unpaid fee demand),KL-000777-2026,0.0,PENDING_PAYMENT,ST/414/2026,,KL-000777-2026-TK3,Radhamani S vs Vineeth V
-WARRANT,1789552099426,Payment Step (Litigant/Advocate unpaid fee demand),KL-000784-2026,0.0,PENDING_PAYMENT,ST/399/2026,,KL-000784-2026-TK13,Saleena S vs RAJU
+WARRANT,1789552101087,Expired Before Service (Hearing date passed),KL-000777-2026,0.0,EXPIRED,ST/414/2026,,KL-000777-2026-TK4,Radhamani S vs Vineeth V
+WARRANT,1789552100771,Expired Before Service (Hearing date passed),KL-000777-2026,0.0,EXPIRED,ST/414/2026,,KL-000777-2026-TK3,Radhamani S vs Vineeth V
 WARRANT,1789552099128,Payment Step (Litigant/Advocate unpaid fee demand),KL-000784-2026,0.0,PENDING_PAYMENT,ST/399/2026,,KL-000784-2026-TK12,Saleena S vs RAJU
 WARRANT,1789552089173,Payment Step (Litigant/Advocate unpaid fee demand),KL-000389-2026,0.0,PENDING_PAYMENT,ST/144/2026,,KL-000389-2026-TK26,Sajju V vs Uthara S
 WARRANT,1789552088351,Payment Step (Litigant/Advocate unpaid fee demand),KL-000434-2026,0.0,PENDING_PAYMENT,ST/169/2026,,KL-000434-2026-TK3,Elakamon Akshaya Nidhi Ltd vs Akhil Krishnan
 WARRANT,1789552087927,Payment Step (Litigant/Advocate unpaid fee demand),KL-000333-2026,0.0,PENDING_PAYMENT,ST/117/2026,,KL-000333-2026-TK18,BALU PS vs DEEPU PRAHLAD
 WARRANT,1789552085445,Payment Step (Litigant/Advocate unpaid fee demand),KL-000320-2026,0.0,PENDING_PAYMENT,ST/115/2026,,KL-000320-2026-TK12,MOHANA PILLAI vs Sreedvi
 WARRANT,1789552085065,Payment Step (Litigant/Advocate unpaid fee demand),KL-000276-2026,0.0,PENDING_PAYMENT,ST/104/2026,,KL-000276-2026-TK16,Thampi K Kunjappan vs Sheeja
-WARRANT,1789552084744,Payment Step (Litigant/Advocate unpaid fee demand),KL-000276-2026,0.0,PENDING_PAYMENT,ST/104/2026,,KL-000276-2026-TK15,Thampi K Kunjappan vs Sheeja
 WARRANT,1789552084347,Payment Step (Litigant/Advocate unpaid fee demand),KL-000265-2026,0.0,PENDING_PAYMENT,ST/89/2026,,KL-000265-2026-TK11,Sreekumar Gopinadhan vs Ranjani Vijaykumar
 WARRANT,1789552053672,Payment Step (Litigant/Advocate unpaid fee demand),KL-000019-2026,0.0,PENDING_PAYMENT,ST/5/2026,,KL-000019-2026-TK15,HDFC BANK LTD vs MAHILAL K MOHAN
-WARRANT,1789552053330,Payment Step (Litigant/Advocate unpaid fee demand),KL-000019-2026,0.0,PENDING_PAYMENT,ST/5/2026,,KL-000019-2026-TK14,HDFC BANK LTD vs MAHILAL K MOHAN
 WARRANT,1789552048772,Payment Step (Litigant/Advocate unpaid fee demand),KL-000103-2025,0.0,PENDING_PAYMENT,ST/689/2025,,KL-000103-2025-TK29,K Sreekumar vs Reshmi G
 WARRANT,1789552048499,Payment Step (Litigant/Advocate unpaid fee demand),KL-000103-2025,0.0,PENDING_PAYMENT,ST/689/2025,,KL-000103-2025-TK28,K Sreekumar vs Reshmi G
-WARRANT,1789552048215,Payment Step (Litigant/Advocate unpaid fee demand),KL-000103-2025,0.0,PENDING_PAYMENT,ST/689/2025,,KL-000103-2025-TK27,K Sreekumar vs Reshmi G
 WARRANT,1789552047940,Payment Step (Litigant/Advocate unpaid fee demand),KL-000103-2025,0.0,PENDING_PAYMENT,ST/689/2025,,KL-000103-2025-TK26,K Sreekumar vs Reshmi G
 WARRANT,1789552047245,Payment Step (Litigant/Advocate unpaid fee demand),KL-000828-2025,0.0,PENDING_PAYMENT,ST/684/2025,,KL-000828-2025-TK17,Beema Mol R vs Shameena Noufal  S
 WARRANT,1789552046903,Payment Step (Litigant/Advocate unpaid fee demand),KL-001048-2025,0.0,PENDING_PAYMENT,ST/626/2025,,KL-001048-2025-TK21,Haritha Syndicate vs Deepthi S
 WARRANT,1789552043296,Payment Step (Litigant/Advocate unpaid fee demand),KL-000952-2025,0.0,PENDING_PAYMENT,ST/587/2025,,KL-000952-2025-TK13,Arun George vs Athul Raj
 WARRANT,1789551513084,Payment Step (Litigant/Advocate unpaid fee demand),KL-000287-2025,0.0,PENDING_PAYMENT,ST/241/2025,,KL-000287-2025-TK38,MOLLY A vs RAJU ABRAHAM
-WARRANT,1789551512726,Payment Step (Litigant/Advocate unpaid fee demand),KL-000287-2025,0.0,PENDING_PAYMENT,ST/241/2025,,KL-000287-2025-TK37,MOLLY A vs RAJU ABRAHAM
-WARRANT,1789551512286,Payment Step (Litigant/Advocate unpaid fee demand),KL-000275-2025,0.0,PENDING_PAYMENT,ST/183/2025,,KL-000275-2025-TK23,SABU V vs JYOTHI S
 WARRANT,1789551507118,Payment Step (Litigant/Advocate unpaid fee demand),KL-000123-2024,,PENDING_PAYMENT,ST/8/2025,,KL-000123-2024-TK22,S Kunjumon vs K Pradeep
-WARRANT,1789545173149,Payment Step (Litigant/Advocate unpaid fee demand),KL-000616-2026,0.0,PENDING_PAYMENT,ST/611/2026,,KL-000616-2026-TK8,THUNDIL NOUSHAD vs ANEESH ARAVIND
 WARRANT,1789471650665,Payment Step (Litigant/Advocate unpaid fee demand),KL-000975-2025,0.0,PENDING_PAYMENT,ST/648/2025,,KL-000975-2025-TK14,Pramod  P vs K  RAJEEV
 WARRANT,1789471136229,Payment Step (Litigant/Advocate unpaid fee demand),KL-001458-2026,0.0,PENDING_PAYMENT,ST/853/2026,,KL-001458-2026-TK2,Elakamon Akshaya Nidhi Ltd vs Aravind M P
 WARRANT,1789471127407,Payment Step (Litigant/Advocate unpaid fee demand),KL-001199-2026,0.0,PENDING_PAYMENT,ST/655/2026,,KL-001199-2026-TK4,Salim vs Kunjahammad
@@ -231,57 +505,42 @@ WARRANT,1789471088200,Payment Step (Litigant/Advocate unpaid fee demand),KL-0004
 WARRANT,1789471087897,Payment Step (Litigant/Advocate unpaid fee demand),KL-000474-2026,0.0,PENDING_PAYMENT,ST/192/2026,,KL-000474-2026-TK20,Amal Murali vs Sandhya V and 1 Other
 WARRANT,1789471082850,Payment Step (Litigant/Advocate unpaid fee demand),KL-000067-2026,0.0,PENDING_PAYMENT,ST/45/2026,,KL-000067-2026-TK13,SREEKUMAR GOPINADHAN vs Ranjani Vijaykumar
 WARRANT,1789471077225,Payment Step (Litigant/Advocate unpaid fee demand),KL-001139-2025,0.0,PENDING_PAYMENT,ST/755/2025,,KL-001139-2025-TK10,Sreekumar K vs Anzar
-WARRANT,1789470846435,Payment Step (Litigant/Advocate unpaid fee demand),KL-000872-2025,0.0,PENDING_PAYMENT,ST/581/2025,,KL-000872-2025-TK15,Arya Ravi vs Shajin Kattan Kodumal
 WARRANT,1789470843455,Payment Step (Litigant/Advocate unpaid fee demand),KL-000837-2025,0.0,PENDING_PAYMENT,ST/527/2025,,KL-000837-2025-TK14,Sivaprasad C vs Thriptha
 WARRANT,1789470843103,Payment Step (Litigant/Advocate unpaid fee demand),KL-000730-2025,0.0,PENDING_PAYMENT,ST/524/2025,,KL-000730-2025-TK21,HDFC BANK LTD vs MOHAN PRASAD U N
-WARRANT,1789470842813,Payment Step (Litigant/Advocate unpaid fee demand),KL-000730-2025,0.0,PENDING_PAYMENT,ST/524/2025,,KL-000730-2025-TK20,HDFC BANK LTD vs MOHAN PRASAD U N
 WARRANT,1789470835726,Payment Step (Litigant/Advocate unpaid fee demand),KL-000502-2025,0.0,PENDING_PAYMENT,ST/418/2025,,KL-000502-2025-TK11,Sheeja S vs S G Vijayakumar
 WARRANT,1789470835346,Payment Step (Litigant/Advocate unpaid fee demand),KL-000522-2025,0.0,PENDING_PAYMENT,ST/391/2025,,KL-000522-2025-TK24,Satheesh Babu vs Ragesh R
 WARRANT,1789470834985,Payment Step (Litigant/Advocate unpaid fee demand),KL-000689-2025,0.0,PENDING_PAYMENT,ST/370/2025,,KL-000689-2025-TK16,K K Shajahan vs Babitha Sam
-WARRANT,1789470834687,Payment Step (Litigant/Advocate unpaid fee demand),KL-000689-2025,0.0,PENDING_PAYMENT,ST/370/2025,,KL-000689-2025-TK15,K K Shajahan vs Babitha Sam
 WARRANT,1789470831914,Payment Step (Litigant/Advocate unpaid fee demand),KL-000550-2025,0.0,PENDING_PAYMENT,ST/337/2025,,KL-000550-2025-TK14,SATHEESAN V vs Advocate Palmer H
 WARRANT,1789470831662,Payment Step (Litigant/Advocate unpaid fee demand),KL-000550-2025,0.0,PENDING_PAYMENT,ST/337/2025,,KL-000550-2025-TK13,SATHEESAN V vs Advocate Palmer H
-WARRANT,1789470831380,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK35,Cyril vs Shamnad
 WARRANT,1789470831084,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK34,Cyril vs Shamnad
-WARRANT,1789470830716,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK33,Cyril vs Shamnad
 WARRANT,1789470830412,Payment Step (Litigant/Advocate unpaid fee demand),KL-000560-2025,0.0,PENDING_PAYMENT,ST/316/2025,,KL-000560-2025-TK32,Cyril vs Shamnad
 WARRANT,1789470829199,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2025,0.0,PENDING_PAYMENT,ST/242/2025,,KL-000577-2025-TK35,Al Nabeel vs Arief N
 WARRANT,1789470828966,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2025,0.0,PENDING_PAYMENT,ST/242/2025,,KL-000577-2025-TK34,Al Nabeel vs Arief N
 WARRANT,1789470828672,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2025,0.0,PENDING_PAYMENT,ST/242/2025,,KL-000577-2025-TK33,Al Nabeel vs Arief N
 WARRANT,1789470828149,Payment Step (Litigant/Advocate unpaid fee demand),KL-000371-2025,0.0,PENDING_PAYMENT,ST/239/2025,,KL-000371-2025-TK31,Abdul Majeed vs Sirajudeen
 WARRANT,1789470827831,Payment Step (Litigant/Advocate unpaid fee demand),KL-000371-2025,0.0,PENDING_PAYMENT,ST/239/2025,,KL-000371-2025-TK30,Abdul Majeed vs Sirajudeen
-WARRANT,1789470824399,Payment Step (Litigant/Advocate unpaid fee demand),KL-000317-2025,0.0,PENDING_PAYMENT,ST/111/2025,,KL-000317-2025-TK23,Hakkim vs Baby Vanaja
-WARRANT,1789381407061,Payment Step (Litigant/Advocate unpaid fee demand),KL-000493-2026,0.0,PENDING_PAYMENT,ST/674/2026,,KL-000493-2026-TK7,SREE NARAYANA PRARTHANA SAMITHI KUNNATHOOR vs LEKSHMI M
-WARRANT,1789381406577,Payment Step (Litigant/Advocate unpaid fee demand),KL-000468-2026,0.0,PENDING_PAYMENT,ST/673/2026,,KL-000468-2026-TK5,Sree Narayana Prarthana Samithi vs Geetha PG
-WARRANT,1789381405995,Payment Step (Litigant/Advocate unpaid fee demand),KL-000480-2026,0.0,PENDING_PAYMENT,ST/670/2026,,KL-000480-2026-TK5,"SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR vs PRIYADARSHINI T"
-WARRANT,1789381405712,Payment Step (Litigant/Advocate unpaid fee demand),KL-000231-2026,0.0,PENDING_PAYMENT,ST/669/2026,,KL-000231-2026-TK8,SREE NARAYANA PRARTHANA SAMITHI vs AGNES
 WARRANT,1789381364461,Payment Step (Litigant/Advocate unpaid fee demand),KL-000880-2026,0.0,PENDING_PAYMENT,ST/462/2026,,KL-000880-2026-TK8,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
 WARRANT,1789381364152,Payment Step (Litigant/Advocate unpaid fee demand),KL-000880-2026,0.0,PENDING_PAYMENT,ST/462/2026,,KL-000880-2026-TK7,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
-WARRANT,1789381360222,Payment Step (Litigant/Advocate unpaid fee demand),KL-000613-2026,0.0,PENDING_PAYMENT,ST/297/2026,,KL-000613-2026-TK7,Vidhyadiraja Grama Nidhi Limited vs Renju Rajan
 WARRANT,1789381357823,Payment Step (Litigant/Advocate unpaid fee demand),KL-000622-2026,0.0,PENDING_PAYMENT,ST/296/2026,,KL-000622-2026-TK12,Vidhyadiraja Grama Nidhi Limited vs Monikuttan
 WARRANT,1789381357266,Payment Step (Litigant/Advocate unpaid fee demand),KL-000595-2026,0.0,PENDING_PAYMENT,ST/269/2026,,KL-000595-2026-TK11,M/s Anchalummood Rural Co-operative Society vs Jiji P
 WARRANT,1789381356932,Payment Step (Litigant/Advocate unpaid fee demand),KL-000577-2026,0.0,PENDING_PAYMENT,ST/262/2026,,KL-000577-2026-TK11,M/s Anchalummood Rural Cooperative Society vs Pushpa Kumari K
 WARRANT,1789381316778,Payment Step (Litigant/Advocate unpaid fee demand),KL-000986-2025,0.0,PENDING_PAYMENT,ST/674/2025,,KL-000986-2025-TK13,Haritha Syndicate vs Sajeesh Kumar
 WARRANT,1789381315102,Payment Step (Litigant/Advocate unpaid fee demand),KL-000823-2025,0.0,PENDING_PAYMENT,ST/580/2025,,KL-000823-2025-TK20,Sreerag Syamala vs Akshay
 WARRANT,1789381313974,Payment Step (Litigant/Advocate unpaid fee demand),KL-000530-2025,0.0,PENDING_PAYMENT,ST/578/2025,,KL-000530-2025-TK11,Bank Employees Co-operative Society Ltd vs S Nelson
-WARRANT,1789381313634,Payment Step (Litigant/Advocate unpaid fee demand),KL-000824-2025,0.0,PENDING_PAYMENT,ST/537/2025,,KL-000824-2025-TK19,Beena L vs Lekha R
-WARRANT,1789381313340,Payment Step (Litigant/Advocate unpaid fee demand),KL-000824-2025,0.0,PENDING_PAYMENT,ST/537/2025,,KL-000824-2025-TK18,Beena L vs Lekha R
 WARRANT,1789381311071,Payment Step (Litigant/Advocate unpaid fee demand),KL-000829-2025,0.0,PENDING_PAYMENT,ST/448/2025,,KL-000829-2025-TK18,Manappuram Finance Ltd. vs SHANIFA  J
 WARRANT,1789381309441,Payment Step (Litigant/Advocate unpaid fee demand),KL-000605-2025,0.0,PENDING_PAYMENT,ST/347/2025,,KL-000605-2025-TK31,Babu H vs Pradeep Kumar P
-WARRANT,1789381308090,Payment Step (Litigant/Advocate unpaid fee demand),KL-000398-2025,0.0,PENDING_PAYMENT,ST/335/2025,,KL-000398-2025-TK24,Judy J vs Shahina N
-WARRANT,1789381307850,Payment Step (Litigant/Advocate unpaid fee demand),KL-000398-2025,0.0,PENDING_PAYMENT,ST/335/2025,,KL-000398-2025-TK23,Judy J vs Shahina N
+WARRANT,1789381308090,Expired Before Service (Hearing date passed),KL-000398-2025,0.0,EXPIRED,ST/335/2025,,KL-000398-2025-TK24,Judy J vs Shahina N
+WARRANT,1789381307850,Expired Before Service (Hearing date passed),KL-000398-2025,0.0,EXPIRED,ST/335/2025,,KL-000398-2025-TK23,Judy J vs Shahina N
 WARRANT,1789381307405,Payment Step (Litigant/Advocate unpaid fee demand),KL-000462-2025,0.0,PENDING_PAYMENT,ST/318/2025,,KL-000462-2025-TK29,Deepam Manufacturing and Industrial vs Nisha Foods and 1 Other
-WARRANT,1789381304771,Payment Step (Litigant/Advocate unpaid fee demand),KL-000184-2025,0.0,PENDING_PAYMENT,ST/296/2025,,KL-000184-2025-TK28,kerala kaumudi  vs Devan Vaidyan T
-WARRANT,1789381304496,Payment Step (Litigant/Advocate unpaid fee demand),KL-000184-2025,0.0,PENDING_PAYMENT,ST/296/2025,,KL-000184-2025-TK27,kerala kaumudi  vs Devan Vaidyan T
+WARRANT,1789381304771,Expired Before Service (Hearing date passed),KL-000184-2025,0.0,EXPIRED,ST/296/2025,,KL-000184-2025-TK28,kerala kaumudi  vs Devan Vaidyan T
+WARRANT,1789381304496,Expired Before Service (Hearing date passed),KL-000184-2025,0.0,EXPIRED,ST/296/2025,,KL-000184-2025-TK27,kerala kaumudi  vs Devan Vaidyan T
 WARRANT,1789381303033,Payment Step (Litigant/Advocate unpaid fee demand),KL-000601-2025,0.0,PENDING_PAYMENT,ST/282/2025,,KL-000601-2025-TK20,Haritha Syndicate vs Naginass  N
-WARRANT,1789381302388,Payment Step (Litigant/Advocate unpaid fee demand),KL-000460-2025,0.0,PENDING_PAYMENT,ST/225/2025,,KL-000460-2025-TK19,SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES
 WARRANT,1789381298483,Payment Step (Litigant/Advocate unpaid fee demand),KL-000120-2024,0.0,PENDING_PAYMENT,ST/41/2025,,KL-000120-2024-TK20,Surya R L Kumari vs Sheeba A
 PROCLAMATION,1789125179475,Payment Step (Litigant/Advocate unpaid fee demand),KL-000430-2026,0.0,PENDING_PAYMENT,ST/166/2026,,KL-000430-2026-TK10,HDFC BANK LTD vs SANTHOSH KUMAR R
 ATTACHMENT,1789125179184,Payment Step (Litigant/Advocate unpaid fee demand),KL-000430-2026,0.0,PENDING_PAYMENT,ST/166/2026,,KL-000430-2026-TK9,HDFC BANK LTD vs SANTHOSH KUMAR R
 WARRANT,1789125178869,Payment Step (Litigant/Advocate unpaid fee demand),KL-000430-2026,0.0,PENDING_PAYMENT,ST/166/2026,,KL-000430-2026-TK8,HDFC BANK LTD vs SANTHOSH KUMAR R
-WARRANT,1789117009829,Payment Step (Litigant/Advocate unpaid fee demand),KL-001216-2026,0.0,PENDING_PAYMENT,ST/707/2026,,KL-001216-2026-TK3,Ayiroor Nidhi  LTD vs Anilkumar S
-WARRANT,1789117008468,Payment Step (Litigant/Advocate unpaid fee demand),KL-001181-2026,0.0,PENDING_PAYMENT,ST/653/2026,,KL-001181-2026-TK5,Nowsher A vs Sudhir Kumar Chandrasekhar
-WARRANT,1789117008208,Payment Step (Litigant/Advocate unpaid fee demand),KL-001181-2026,0.0,PENDING_PAYMENT,ST/653/2026,,KL-001181-2026-TK4,Nowsher A vs Sudhir Kumar Chandrasekhar
+WARRANT,1789117008468,Expired Before Service (Hearing date passed),KL-001181-2026,0.0,EXPIRED,ST/653/2026,,KL-001181-2026-TK5,Nowsher A vs Sudhir Kumar Chandrasekhar
+WARRANT,1789117008208,Expired Before Service (Hearing date passed),KL-001181-2026,0.0,EXPIRED,ST/653/2026,,KL-001181-2026-TK4,Nowsher A vs Sudhir Kumar Chandrasekhar
 WARRANT,1789117008111,Payment Step (Litigant/Advocate unpaid fee demand),KL-001169-2026,0.0,PENDING_PAYMENT,ST/650/2026,,KL-001169-2026-TK4,Unni S vs Abhijith P A
 WARRANT,1789117007650,Payment Step (Litigant/Advocate unpaid fee demand),KL-001166-2026,0.0,PENDING_PAYMENT,ST/649/2026,,KL-001166-2026-TK4,SHAJI N vs MOHANDAS BHANU
 WARRANT,1789117007136,Payment Step (Litigant/Advocate unpaid fee demand),KL-001081-2026,0.0,PENDING_PAYMENT,ST/645/2026,,KL-001081-2026-TK5,Saidali vs Jishnu Vinod
@@ -291,28 +550,21 @@ WARRANT,1789117000656,Payment Step (Litigant/Advocate unpaid fee demand),KL-0009
 WARRANT,1789117000285,Payment Step (Litigant/Advocate unpaid fee demand),KL-000927-2026,0.0,PENDING_PAYMENT,ST/496/2026,,KL-000927-2026-TK8,M/s Kollam Urban Vikas Nidhi Ltd vs Girija Kumari
 WARRANT,1789116997673,Payment Step (Litigant/Advocate unpaid fee demand),KL-000935-2026,0.0,PENDING_PAYMENT,ST/494/2026,,KL-000935-2026-TK11,Sudheesh B vs Anoop Krishnan V
 WARRANT,1789116997143,Payment Step (Litigant/Advocate unpaid fee demand),KL-000782-2026,0.0,PENDING_PAYMENT,ST/492/2026,,KL-000782-2026-TK5,Vijikumar V vs Abraham Mathew
-WARRANT,1789116995895,Payment Step (Litigant/Advocate unpaid fee demand),KL-000502-2026,0.0,PENDING_PAYMENT,ST/491/2026,,KL-000502-2026-TK8,Max value credits and investment ltd  vs Sabarinath
 WARRANT,1789116995640,Payment Step (Litigant/Advocate unpaid fee demand),KL-000502-2026,0.0,PENDING_PAYMENT,ST/491/2026,,KL-000502-2026-TK7,Max value credits and investment ltd  vs Sabarinath
 WARRANT,1789116994843,Payment Step (Litigant/Advocate unpaid fee demand),KL-000875-2026,0.0,PENDING_PAYMENT,ST/459/2026,,KL-000875-2026-TK4,Manappuram Finance Ltd vs Ajayakumar
-WARRANT,1789116993617,Payment Step (Litigant/Advocate unpaid fee demand),KL-000879-2026,0.0,PENDING_PAYMENT,ST/456/2026,,KL-000879-2026-TK7,Manappuram Finance Ltd vs Adarsh Sathyapal
-WARRANT,1789116993308,Payment Step (Litigant/Advocate unpaid fee demand),KL-000879-2026,0.0,PENDING_PAYMENT,ST/456/2026,,KL-000879-2026-TK6,Manappuram Finance Ltd vs Adarsh Sathyapal
 WARRANT,1789116992981,Payment Step (Litigant/Advocate unpaid fee demand),KL-000819-2026,0.0,PENDING_PAYMENT,ST/429/2026,,KL-000819-2026-TK4,Niyas A vs Shanavas
 WARRANT,1789116968261,Payment Step (Litigant/Advocate unpaid fee demand),KL-000804-2026,0.0,PENDING_PAYMENT,ST/415/2026,,KL-000804-2026-TK7,Jasmin S vs Sethu Suresh
 WARRANT,1789116967980,Payment Step (Litigant/Advocate unpaid fee demand),KL-000804-2026,0.0,PENDING_PAYMENT,ST/415/2026,,KL-000804-2026-TK6,Jasmin S vs Sethu Suresh
 WARRANT,1789116967625,Payment Step (Litigant/Advocate unpaid fee demand),KL-000800-2026,0.0,PENDING_PAYMENT,ST/410/2026,,KL-000800-2026-TK4,Manappuram Finance Ltd vs Anil V P
-WARRANT,1789116965835,Payment Step (Litigant/Advocate unpaid fee demand),KL-000743-2026,0.0,PENDING_PAYMENT,ST/393/2026,,KL-000743-2026-TK9,saubhagya finance vs Ajitha Kumari
 WARRANT,1789116965283,Payment Step (Litigant/Advocate unpaid fee demand),KL-000666-2026,0.0,PENDING_PAYMENT,ST/364/2026,,KL-000666-2026-TK9,K Rajan vs Reji Mol
 WARRANT,1789116965052,Payment Step (Litigant/Advocate unpaid fee demand),KL-000666-2026,0.0,PENDING_PAYMENT,ST/364/2026,,KL-000666-2026-TK8,K Rajan vs Reji Mol
 WARRANT,1789116964822,Payment Step (Litigant/Advocate unpaid fee demand),KL-000666-2026,0.0,PENDING_PAYMENT,ST/364/2026,,KL-000666-2026-TK7,K Rajan vs Reji Mol
-WARRANT,1789116962336,Payment Step (Litigant/Advocate unpaid fee demand),KL-000712-2026,0.0,PENDING_PAYMENT,ST/351/2026,,KL-000712-2026-TK9,Saubhagaya Finance vs Jalaja P
 WARRANT,1789116959217,Payment Step (Litigant/Advocate unpaid fee demand),KL-000549-2026,0.0,PENDING_PAYMENT,ST/250/2026,,KL-000549-2026-TK14,Ajithkumar A vs Sobha A
 WARRANT,1789116958628,Payment Step (Litigant/Advocate unpaid fee demand),KL-000392-2026,0.0,PENDING_PAYMENT,ST/212/2026,,KL-000392-2026-TK9,Elakamon Akshaya Nidhi Ltd vs Fousiya
 WARRANT,1789116956898,Payment Step (Litigant/Advocate unpaid fee demand),KL-000385-2026,0.0,PENDING_PAYMENT,ST/211/2026,,KL-000385-2026-TK9,Elakamon Akshaya Nidhi Ltd vs Padmini S
 WARRANT,1789116955940,Payment Step (Litigant/Advocate unpaid fee demand),KL-000220-2026,0.0,PENDING_PAYMENT,ST/168/2026,,KL-000220-2026-TK9,Mohanan G vs Shajimon M
 WARRANT,1789116955686,Payment Step (Litigant/Advocate unpaid fee demand),KL-000220-2026,0.0,PENDING_PAYMENT,ST/168/2026,,KL-000220-2026-TK8,Mohanan G vs Shajimon M
 WARRANT,1789116545368,Payment Step (Litigant/Advocate unpaid fee demand),KL-000280-2026,0.0,PENDING_PAYMENT,ST/93/2026,,KL-000280-2026-TK7,SUDHA T vs SUDHEESH S
-WARRANT,1789116542770,Payment Step (Litigant/Advocate unpaid fee demand),KL-000062-2026,0.0,PENDING_PAYMENT,ST/33/2026,,KL-000062-2026-TK12,AYIROOR NIDHI LTD vs DEEPA V
-WARRANT,1789116542514,Payment Step (Litigant/Advocate unpaid fee demand),KL-000062-2026,0.0,PENDING_PAYMENT,ST/33/2026,,KL-000062-2026-TK11,AYIROOR NIDHI LTD vs DEEPA V
 WARRANT,1789116541811,Payment Step (Litigant/Advocate unpaid fee demand),KL-000014-2026,0.0,PENDING_PAYMENT,ST/12/2026,,KL-000014-2026-TK8,Ajith S vs Vandana B
 WARRANT,1789116541291,Payment Step (Litigant/Advocate unpaid fee demand),KL-001199-2025,0.0,PENDING_PAYMENT,ST/792/2025,,KL-001199-2025-TK9,Sri Durga Traders vs Manu Soman
 WARRANT,1789116537791,Payment Step (Litigant/Advocate unpaid fee demand),KL-001118-2025,0.0,PENDING_PAYMENT,ST/731/2025,,KL-001118-2025-TK11,Zaina A vs Sameer
@@ -335,57 +587,38 @@ WARRANT,1789116529802,Payment Step (Litigant/Advocate unpaid fee demand),KL-0009
 WARRANT,1789116504305,Payment Step (Litigant/Advocate unpaid fee demand),KL-000842-2025,0.0,PENDING_PAYMENT,ST/563/2025,,KL-000842-2025-TK20,Zaina A vs Abdul Rasheed Sameer
 WARRANT,1789116503823,Payment Step (Litigant/Advocate unpaid fee demand),KL-000718-2025,0.0,PENDING_PAYMENT,ST/558/2025,,KL-000718-2025-TK14,Ajayakumar vs Prasanth  D
 WARRANT,1789116501424,Payment Step (Litigant/Advocate unpaid fee demand),KL-000221-2025,0.0,PENDING_PAYMENT,ST/443/2025,,KL-000221-2025-TK35,Afzaal vs Ansarudeen  A
-WARRANT,1789116501169,Payment Step (Litigant/Advocate unpaid fee demand),KL-000221-2025,0.0,PENDING_PAYMENT,ST/443/2025,,KL-000221-2025-TK34,Afzaal vs Ansarudeen  A
 WARRANT,1789116498988,Payment Step (Litigant/Advocate unpaid fee demand),KL-000666-2025,0.0,PENDING_PAYMENT,ST/308/2025,,KL-000666-2025-TK25,C.P Enterprises vs Shahul  P
 WARRANT,1789116498711,Payment Step (Litigant/Advocate unpaid fee demand),KL-000493-2025,0.0,PENDING_PAYMENT,ST/206/2025,,KL-000493-2025-TK22,HDFC BANK LTD vs SAI KUMAR S
 WARRANT,1789116497908,Payment Step (Litigant/Advocate unpaid fee demand),KL-000115-2025,0.0,PENDING_PAYMENT,ST/72/2025,,KL-000115-2025-TK17,HDFC Bank vs AYYAPPAN G
 WARRANT,1789116496864,Payment Step (Litigant/Advocate unpaid fee demand),KL-000278-2024,0.0,PENDING_PAYMENT,ST/2/2025,,KL-000278-2024-TK16,HDFC BANK LTD vs Sivaranjini S
-WARRANT,1789037906365,Payment Step (Litigant/Advocate unpaid fee demand),KL-001187-2025,0.0,PENDING_PAYMENT,ST/782/2025,,KL-001187-2025-TK20,Anitha J vs Harish H
-WARRANT,1789037906057,Payment Step (Litigant/Advocate unpaid fee demand),KL-001187-2025,0.0,PENDING_PAYMENT,ST/782/2025,,KL-001187-2025-TK19,Anitha J vs Harish H
-WARRANT,1789037905690,Payment Step (Litigant/Advocate unpaid fee demand),KL-001186-2025,0.0,PENDING_PAYMENT,ST/780/2025,,KL-001186-2025-TK25,Anitha J vs Harish H
-WARRANT,1789037905397,Payment Step (Litigant/Advocate unpaid fee demand),KL-001186-2025,0.0,PENDING_PAYMENT,ST/780/2025,,KL-001186-2025-TK24,Anitha J vs Harish H
-WARRANT,1789035093406,Payment Step (Litigant/Advocate unpaid fee demand),KL-000725-2025,0.0,PENDING_PAYMENT,ST/412/2025,,KL-000725-2025-TK30,Quilon Co Operative Urban Bank Ltd vs Saifudeen
-WARRANT,1789035093106,Payment Step (Litigant/Advocate unpaid fee demand),KL-000725-2025,0.0,PENDING_PAYMENT,ST/412/2025,,KL-000725-2025-TK29,Quilon Co Operative Urban Bank Ltd vs Saifudeen
+WARRANT,1789037906365,Expired Before Service (Hearing date passed),KL-001187-2025,0.0,EXPIRED,ST/782/2025,,KL-001187-2025-TK20,Anitha J vs Harish H
+WARRANT,1789037906057,Expired Before Service (Hearing date passed),KL-001187-2025,0.0,EXPIRED,ST/782/2025,,KL-001187-2025-TK19,Anitha J vs Harish H
+WARRANT,1789037905690,Expired Before Service (Hearing date passed),KL-001186-2025,0.0,EXPIRED,ST/780/2025,,KL-001186-2025-TK25,Anitha J vs Harish H
+WARRANT,1789037905397,Expired Before Service (Hearing date passed),KL-001186-2025,0.0,EXPIRED,ST/780/2025,,KL-001186-2025-TK24,Anitha J vs Harish H
+WARRANT,1789035093406,Expired Before Service (Hearing date passed),KL-000725-2025,0.0,EXPIRED,ST/412/2025,,KL-000725-2025-TK30,Quilon Co Operative Urban Bank Ltd vs Saifudeen
+WARRANT,1789035093106,Expired Before Service (Hearing date passed),KL-000725-2025,0.0,EXPIRED,ST/412/2025,,KL-000725-2025-TK29,Quilon Co Operative Urban Bank Ltd vs Saifudeen
 WARRANT,1789034253412,Payment Step (Litigant/Advocate unpaid fee demand),KL-001393-2026,0.0,PENDING_PAYMENT,ST/803/2026,,KL-001393-2026-TK3,Kollam Housing Co-operative Society  vs Hareesh H
 WARRANT,1789034185448,Payment Step (Litigant/Advocate unpaid fee demand),KL-001079-2026,0.0,PENDING_PAYMENT,ST/579/2026,,KL-001079-2026-TK8,Rajesh R K Nair vs Vinod R K
 WARRANT,1789034182841,Payment Step (Litigant/Advocate unpaid fee demand),KL-000964-2026,0.0,PENDING_PAYMENT,ST/536/2026,,KL-000964-2026-TK9,Paravur Akshaya Nidhi Ltd vs Sreeja R P
-WARRANT,1789034175673,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2026,0.0,PENDING_PAYMENT,ST/307/2026,,KL-000644-2026-TK14,SILVERLINE TRADING COMPANY vs SAJEEV
-WARRANT,1789034175371,Payment Step (Litigant/Advocate unpaid fee demand),KL-000644-2026,0.0,PENDING_PAYMENT,ST/307/2026,,KL-000644-2026-TK13,SILVERLINE TRADING COMPANY vs SAJEEV
 WARRANT,1789034170863,Payment Step (Litigant/Advocate unpaid fee demand),KL-000387-2026,0.0,PENDING_PAYMENT,ST/143/2026,,KL-000387-2026-TK10,RG Electronics and 2 Others vs Omkar Distributors
-WARRANT,1789034143318,Payment Step (Litigant/Advocate unpaid fee demand),KL-000021-2026,0.0,PENDING_PAYMENT,ST/7/2026,,KL-000021-2026-TK17,Sahadevan Pillai B vs Krishnan Kutty M
-WARRANT,1789034143054,Payment Step (Litigant/Advocate unpaid fee demand),KL-000021-2026,0.0,PENDING_PAYMENT,ST/7/2026,,KL-000021-2026-TK16,Sahadevan Pillai B vs Krishnan Kutty M
-WARRANT,1789034140500,Payment Step (Litigant/Advocate unpaid fee demand),KL-001166-2025,0.0,PENDING_PAYMENT,ST/844/2025,,KL-001166-2025-TK20,M/S KRISHNA FUELS vs VARGHESE
 WARRANT,1789034135793,Payment Step (Litigant/Advocate unpaid fee demand),KL-001103-2025,0.0,PENDING_PAYMENT,ST/720/2025,,KL-001103-2025-TK13,RIYAS A vs BEENA  BEEGUM
 WARRANT,1789034135378,Payment Step (Litigant/Advocate unpaid fee demand),KL-000885-2025,0.0,PENDING_PAYMENT,ST/573/2025,,KL-000885-2025-TK20,Renjith C vs Sudheer
 WARRANT,1789034131217,Payment Step (Litigant/Advocate unpaid fee demand),KL-000695-2025,0.0,PENDING_PAYMENT,ST/410/2025,,KL-000695-2025-TK13,M/S Fort In Infra Developers Private Limited vs Arul S
-WARRANT,1789034130529,Payment Step (Litigant/Advocate unpaid fee demand),KL-000260-2025,0.0,PENDING_PAYMENT,ST/288/2025,,KL-000260-2025-TK38,Vijayakumar V vs Roopa Rani V
 WARRANT,1789034129701,Payment Step (Litigant/Advocate unpaid fee demand),KL-000260-2025,0.0,PENDING_PAYMENT,ST/288/2025,,KL-000260-2025-TK35,Vijayakumar V vs Roopa Rani V
 WARRANT,1789034129352,Payment Step (Litigant/Advocate unpaid fee demand),KL-000355-2025,0.0,PENDING_PAYMENT,ST/210/2025,,KL-000355-2025-TK22,Sherly  Wilson vs Manaf K S
 WARRANT,1789034127657,Payment Step (Litigant/Advocate unpaid fee demand),KL-000277-2025,,PENDING_PAYMENT,ST/128/2025,,KL-000277-2025-TK9,S Mohana  Kumar vs Wilfred Culas
 WARRANT,1788944700200,Payment Step (Litigant/Advocate unpaid fee demand),KL-001231-2026,0.0,PENDING_PAYMENT,ST/690/2026,,KL-001231-2026-TK3,Saji Yohannan vs Sobha K
-WARRANT,1788944659938,Payment Step (Litigant/Advocate unpaid fee demand),KL-000864-2026,0.0,PENDING_PAYMENT,ST/445/2026,,KL-000864-2026-TK7,Paravur Akshaya Nidhi Ltd vs Vishnu Manoj
-WARRANT,1788944656648,Payment Step (Litigant/Advocate unpaid fee demand),KL-000294-2026,0.0,PENDING_PAYMENT,ST/376/2026,,KL-000294-2026-TK10,Anilkumar B vs Ramani S
-WARRANT,1788944654120,Payment Step (Litigant/Advocate unpaid fee demand),KL-000587-2026,0.0,PENDING_PAYMENT,ST/271/2026,,KL-000587-2026-TK12,"Samastha Nair Nidhi Ltd.,  vs Ambili"
-WARRANT,1788944622609,Payment Step (Litigant/Advocate unpaid fee demand),KL-000042-2026,0.0,PENDING_PAYMENT,ST/25/2026,,KL-000042-2026-TK11,Sebastian Joseph vs Bernad Sebastian
-WARRANT,1788944620913,Payment Step (Litigant/Advocate unpaid fee demand),KL-001205-2025,0.0,PENDING_PAYMENT,ST/807/2025,,KL-001205-2025-TK13,Sebastian Joseph vs Bernad Sebastian
-WARRANT,1788944619123,Payment Step (Litigant/Advocate unpaid fee demand),KL-001168-2025,0.0,PENDING_PAYMENT,ST/771/2025,,KL-001168-2025-TK10,Valleriyan vs Hitha Krishna
-WARRANT,1788944613724,Payment Step (Litigant/Advocate unpaid fee demand),KL-000835-2025,0.0,PENDING_PAYMENT,ST/454/2025,,KL-000835-2025-TK13,HDFC BANK LTD vs SATHYA BHAMA
-WARRANT,1788944610862,Payment Step (Litigant/Advocate unpaid fee demand),KL-000069-2025,0.0,PENDING_PAYMENT,ST/429/2025,,KL-000069-2025-TK24,Ajikumar M S vs Vinu  Pai
 WARRANT,1788944604151,Payment Step (Litigant/Advocate unpaid fee demand),KL-000013-2025,0.0,PENDING_PAYMENT,ST/177/2025,,KL-000013-2025-TK23,HARITHA SYNDICATE vs SUBHA ANTONY
 WARRANT,1788944603647,Payment Step (Litigant/Advocate unpaid fee demand),KL-000013-2025,0.0,PENDING_PAYMENT,ST/177/2025,,KL-000013-2025-TK22,HARITHA SYNDICATE vs SUBHA ANTONY
 WARRANT,1788860942928,Payment Step (Litigant/Advocate unpaid fee demand),KL-000783-2025,0.0,PENDING_PAYMENT,ST/734/2025,,KL-000783-2025-TK21,Ansu Joseph vs Sathyaprakash M
 WARRANT,1788860942710,Payment Step (Litigant/Advocate unpaid fee demand),KL-000783-2025,0.0,PENDING_PAYMENT,ST/734/2025,,KL-000783-2025-TK20,Ansu Joseph vs Sathyaprakash M
 WARRANT,1788860942524,Payment Step (Litigant/Advocate unpaid fee demand),KL-001117-2026,0.0,PENDING_PAYMENT,ST/623/2026,,KL-001117-2026-TK4,Sandhya B Pillai vs Sreelekha
 WARRANT,1788860942441,Payment Step (Litigant/Advocate unpaid fee demand),KL-000783-2025,0.0,PENDING_PAYMENT,ST/734/2025,,KL-000783-2025-TK19,Ansu Joseph vs Sathyaprakash M
-WARRANT,1788860941513,Payment Step (Litigant/Advocate unpaid fee demand),KL-000393-2025,0.0,PENDING_PAYMENT,ST/151/2025,,KL-000393-2025-TK15,Johnson A vs Jayapalan  Rozario
-WARRANT,1788860517915,Payment Step (Litigant/Advocate unpaid fee demand),KL-000737-2026,0.0,PENDING_PAYMENT,ST/981/2026,,KL-000737-2026-TK5,Suresh G vs Fiza Muhammad Shafi
-WARRANT,1788860517616,Payment Step (Litigant/Advocate unpaid fee demand),KL-000737-2026,0.0,PENDING_PAYMENT,ST/981/2026,,KL-000737-2026-TK4,Suresh G vs Fiza Muhammad Shafi
+WARRANT,1788860941513,Expired Before Service (Hearing date passed),KL-000393-2025,0.0,EXPIRED,ST/151/2025,,KL-000393-2025-TK15,Johnson A vs Jayapalan  Rozario
+WARRANT,1788860517915,Expired Before Service (Hearing date passed),KL-000737-2026,0.0,EXPIRED,ST/981/2026,,KL-000737-2026-TK5,Suresh G vs Fiza Muhammad Shafi
+WARRANT,1788860517616,Expired Before Service (Hearing date passed),KL-000737-2026,0.0,EXPIRED,ST/981/2026,,KL-000737-2026-TK4,Suresh G vs Fiza Muhammad Shafi
 WARRANT,1788860489173,Payment Step (Litigant/Advocate unpaid fee demand),KL-000970-2026,0.0,PENDING_PAYMENT,ST/892/2026,,KL-000970-2026-TK4,Raju R vs Mujeeb Subairkunju
 WARRANT,1788860488887,Payment Step (Litigant/Advocate unpaid fee demand),KL-000970-2026,0.0,PENDING_PAYMENT,ST/892/2026,,KL-000970-2026-TK3,Raju R vs Mujeeb Subairkunju
-WARRANT,1788860453924,Payment Step (Litigant/Advocate unpaid fee demand),KL-001170-2026,0.0,PENDING_PAYMENT,ST/692/2026,,KL-001170-2026-TK4,Sony Jacob vs MELLO ANTONY
-WARRANT,1788860448654,Payment Step (Litigant/Advocate unpaid fee demand),KL-001197-2026,0.0,PENDING_PAYMENT,ST/676/2026,,KL-001197-2026-TK5,Rajeev R vs Shibu S
-WARRANT,1788860448154,Payment Step (Litigant/Advocate unpaid fee demand),KL-001197-2026,0.0,PENDING_PAYMENT,ST/676/2026,,KL-001197-2026-TK3,Rajeev R vs Shibu S
-WARRANT,1788860447892,Payment Step (Litigant/Advocate unpaid fee demand),KL-001197-2026,0.0,PENDING_PAYMENT,ST/676/2026,,KL-001197-2026-TK2,Rajeev R vs Shibu S
 WARRANT,1788860365825,Payment Step (Litigant/Advocate unpaid fee demand),KL-000186-2026,0.0,PENDING_PAYMENT,ST/140/2026,,KL-000186-2026-TK16,Sivaprasad vs Rafeek
 WARRANT,1788860361057,Payment Step (Litigant/Advocate unpaid fee demand),KL-001178-2025,0.0,PENDING_PAYMENT,ST/796/2025,,KL-001178-2025-TK12,vyapari vyavasayi merchantile social welfare cooporative society  vs Muhhammad Firdhouse
 WARRANT,1788860360665,Payment Step (Litigant/Advocate unpaid fee demand),KL-001143-2025,0.0,PENDING_PAYMENT,ST/762/2025,,KL-001143-2025-TK16,Shihabudeen vs Saifudeen
@@ -394,34 +627,22 @@ WARRANT,1788860350653,Payment Step (Litigant/Advocate unpaid fee demand),KL-0006
 WARRANT,1788860299523,Payment Step (Litigant/Advocate unpaid fee demand),KL-000340-2025,0.0,PENDING_PAYMENT,ST/150/2025,,KL-000340-2025-TK30,Musthafa Sudheer vs Akash Sanjeev
 WARRANT,1788777596657,Payment Step (Litigant/Advocate unpaid fee demand),KL-001203-2026,0.0,PENDING_PAYMENT,ST/677/2026,,KL-001203-2026-TK3,Saji Yohannan vs Vilasini
 WARRANT,1788777588231,Payment Step (Litigant/Advocate unpaid fee demand),KL-000979-2026,0.0,PENDING_PAYMENT,ST/541/2026,,KL-000979-2026-TK4,M/s Maxvalue Credits and Investments Ltd vs Renju R
-WARRANT,1788777587940,Payment Step (Litigant/Advocate unpaid fee demand),KL-000979-2026,0.0,PENDING_PAYMENT,ST/541/2026,,KL-000979-2026-TK3,M/s Maxvalue Credits and Investments Ltd vs Renju R
 WARRANT,1788777581385,Payment Step (Litigant/Advocate unpaid fee demand),KL-000697-2026,0.0,PENDING_PAYMENT,ST/337/2026,,KL-000697-2026-TK12,Vidhyadiraja Grama Nidhi Limited vs Baiju John
-WARRANT,1788777343215,Payment Step (Litigant/Advocate unpaid fee demand),KL-000465-2026,0.0,PENDING_PAYMENT,ST/188/2026,,KL-000465-2026-TK10,Pramodkumar Nair vs Biju K
 WARRANT,1788777332860,Payment Step (Litigant/Advocate unpaid fee demand),KL-001149-2025,0.0,PENDING_PAYMENT,ST/764/2025,,KL-001149-2025-TK15,Haritha Syndicate vs Resmi B S
 WARRANT,1788777328188,Payment Step (Litigant/Advocate unpaid fee demand),KL-000894-2025,0.0,PENDING_PAYMENT,ST/536/2025,,KL-000894-2025-TK14,Ratheesh E vs Bincymol W
-WARRANT,1788777327843,Payment Step (Litigant/Advocate unpaid fee demand),KL-000805-2025,0.0,PENDING_PAYMENT,ST/480/2025,,KL-000805-2025-TK33,Pathrose Robert vs Jaimon Xavier
-WARRANT,1788777327502,Payment Step (Litigant/Advocate unpaid fee demand),KL-000805-2025,0.0,PENDING_PAYMENT,ST/480/2025,,KL-000805-2025-TK32,Pathrose Robert vs Jaimon Xavier
 WARRANT,1788606552129,Expired Before Service (Hearing date passed),KL-000303-2025,0.0,EXPIRED,ST/166/2025,,KL-000303-2025-TK14,C.P Enterprises    vs Sajina  Abdhulla Basheer
-WARRANT,1788605166316,Payment Step (Litigant/Advocate unpaid fee demand),KL-001122-2026,0.0,PENDING_PAYMENT,ST/599/2026,,KL-001122-2026-TK5,SUVARNA DEVI V vs VIPIN P
-WARRANT,1788605165972,Payment Step (Litigant/Advocate unpaid fee demand),KL-001122-2026,0.0,PENDING_PAYMENT,ST/599/2026,,KL-001122-2026-TK4,SUVARNA DEVI V vs VIPIN P
 WARRANT,1788604293481,Payment Step (Litigant/Advocate unpaid fee demand),KL-000930-2025,0.0,PENDING_PAYMENT,ST/541/2025,,KL-000930-2025-TK21,Premkrishnan V vs Bijith B
 WARRANT,1788604292881,Payment Step (Litigant/Advocate unpaid fee demand),KL-000491-2025,0.0,PENDING_PAYMENT,ST/408/2025,,KL-000491-2025-TK19,Santha vs K Ramachandran Chettiyar
-WARRANT,1788604287562,Payment Step (Litigant/Advocate unpaid fee demand),KL-000569-2025,0.0,PENDING_PAYMENT,ST/325/2025,,KL-000569-2025-TK15,Jubairiyath vs Shameema B
 WARRANT,1788604287206,Payment Step (Litigant/Advocate unpaid fee demand),KL-000183-2025,0.0,PENDING_PAYMENT,ST/145/2025,,KL-000183-2025-TK14,HDFC BANK LTD vs GEETHA SURESH
 WARRANT,1788601787534,Payment Step (Litigant/Advocate unpaid fee demand),KL-001025-2026,0.0,PENDING_PAYMENT,ST/551/2026,,KL-001025-2026-TK5,Thampuran Food Products vs Sujith Simon
 WARRANT,1788601787260,Payment Step (Litigant/Advocate unpaid fee demand),KL-001025-2026,0.0,PENDING_PAYMENT,ST/551/2026,,KL-001025-2026-TK4,Thampuran Food Products vs Sujith Simon
 WARRANT,1788601785435,Payment Step (Litigant/Advocate unpaid fee demand),KL-000867-2025,0.0,PENDING_PAYMENT,ST/550/2026,,KL-000867-2025-TK4,Biju Alfred vs Shanitha
 WARRANT,1788601762491,Payment Step (Litigant/Advocate unpaid fee demand),KL-000547-2026,0.0,PENDING_PAYMENT,ST/261/2026,,KL-000547-2026-TK12,SOBHANA vs MERI
 WARRANT,1788601759088,Payment Step (Litigant/Advocate unpaid fee demand),KL-000550-2026,0.0,PENDING_PAYMENT,ST/247/2026,,KL-000550-2026-TK14,SOBHANA vs ANIMOLE Y
-WARRANT,1788601758519,Payment Step (Litigant/Advocate unpaid fee demand),KL-000531-2026,0.0,PENDING_PAYMENT,ST/237/2026,,KL-000531-2026-TK14,Binu John vs Limi Lorance
-WARRANT,1788601758159,Payment Step (Litigant/Advocate unpaid fee demand),KL-000531-2026,0.0,PENDING_PAYMENT,ST/237/2026,,KL-000531-2026-TK13,Binu John vs Limi Lorance
 WARRANT,1788601756798,Payment Step (Litigant/Advocate unpaid fee demand),KL-000501-2026,0.0,PENDING_PAYMENT,ST/226/2026,,KL-000501-2026-TK7,Max value credits and investment ltd vs Syamala K
 WARRANT,1788601756504,Payment Step (Litigant/Advocate unpaid fee demand),KL-000501-2026,0.0,PENDING_PAYMENT,ST/226/2026,,KL-000501-2026-TK6,Max value credits and investment ltd vs Syamala K
-WARRANT,1788601755103,Payment Step (Litigant/Advocate unpaid fee demand),KL-000418-2026,0.0,PENDING_PAYMENT,ST/178/2026,,KL-000418-2026-TK10,Chackochan M vs Rajendran Pillai K N
 WARRANT,1788601741840,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK18,Hussain Nizam vs Muhammed Niyas
 WARRANT,1788601741572,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK17,Hussain Nizam vs Muhammed Niyas
-WARRANT,1788601741219,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK16,Hussain Nizam vs Muhammed Niyas
-WARRANT,1788601740680,Payment Step (Litigant/Advocate unpaid fee demand),KL-000327-2026,0.0,PENDING_PAYMENT,ST/127/2026,,KL-000327-2026-TK15,Hussain Nizam vs Muhammed Niyas
 WARRANT,1788601740303,Payment Step (Litigant/Advocate unpaid fee demand),KL-000141-2026,0.0,PENDING_PAYMENT,ST/40/2026,,KL-000141-2026-TK10,Santha C vs Sreelatha S
 WARRANT,1788601734913,Payment Step (Litigant/Advocate unpaid fee demand),KL-001241-2025,0.0,PENDING_PAYMENT,ST/834/2025,,KL-001241-2025-TK16,Manu Augustin vs Alphonse Pappachan
 WARRANT,1788601734611,Payment Step (Litigant/Advocate unpaid fee demand),KL-001241-2025,0.0,PENDING_PAYMENT,ST/834/2025,,KL-001241-2025-TK15,Manu Augustin vs Alphonse Pappachan
@@ -432,15 +653,11 @@ WARRANT,1788601713245,Payment Step (Litigant/Advocate unpaid fee demand),KL-0010
 WARRANT,1788601712169,Payment Step (Litigant/Advocate unpaid fee demand),KL-000959-2025,0.0,PENDING_PAYMENT,ST/602/2025,,KL-000959-2025-TK28,Sobhana  K I vs Sufaija S
 WARRANT,1788601711893,Payment Step (Litigant/Advocate unpaid fee demand),KL-000959-2025,0.0,PENDING_PAYMENT,ST/602/2025,,KL-000959-2025-TK27,Sobhana  K I vs Sufaija S
 WARRANT,1788601709271,Payment Step (Litigant/Advocate unpaid fee demand),KL-000668-2025,0.0,PENDING_PAYMENT,ST/500/2025,,KL-000668-2025-TK17,Sobhana  K I vs Sajin S
-WARRANT,1788601708731,Payment Step (Litigant/Advocate unpaid fee demand),KL-000685-2025,0.0,PENDING_PAYMENT,ST/374/2025,,KL-000685-2025-TK17,Biju B vs Sunilkumar R
-WARRANT,1788601706575,Payment Step (Litigant/Advocate unpaid fee demand),KL-000323-2024,0.0,PENDING_PAYMENT,ST/256/2025,,KL-000323-2024-TK22,SHAKTHIKULANGARA NIDHI LTD vs PRADEEP  KUMAR
 WARRANT,1788433695937,Payment Step (Litigant/Advocate unpaid fee demand),KL-000882-2025,0.0,PENDING_PAYMENT,ST/571/2025,,KL-000882-2025-TK15,Haritha Syndicate vs Ratheesh R
 WARRANT,1788432412689,Payment Step (Litigant/Advocate unpaid fee demand),KL-000286-2025,0.0,PENDING_PAYMENT,ST/317/2025,,KL-000286-2025-TK22,THANVEER N vs MUHAMMED AFSAL
 WARRANT,1788432412386,Payment Step (Litigant/Advocate unpaid fee demand),KL-000286-2025,0.0,PENDING_PAYMENT,ST/317/2025,,KL-000286-2025-TK21,THANVEER N vs MUHAMMED AFSAL
-WARRANT,1788429108353,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2026,0.0,PENDING_PAYMENT,ST/626/2026,,KL-001096-2026-TK4,Saheerath vs V S Sudhakaran Nair
-WARRANT,1788429107514,Payment Step (Litigant/Advocate unpaid fee demand),KL-001109-2026,0.0,PENDING_PAYMENT,ST/621/2026,,KL-001109-2026-TK5,HARITHA SYNDICATE vs SIMLA E
-WARRANT,1788429097032,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2026,0.0,PENDING_PAYMENT,ST/458/2026,,KL-000876-2026-TK7,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
-WARRANT,1788429096676,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2026,0.0,PENDING_PAYMENT,ST/458/2026,,KL-000876-2026-TK6,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
+WARRANT,1788429097032,Expired Before Service (Hearing date passed),KL-000876-2026,0.0,EXPIRED,ST/458/2026,,KL-000876-2026-TK7,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
+WARRANT,1788429096676,Expired Before Service (Hearing date passed),KL-000876-2026,0.0,EXPIRED,ST/458/2026,,KL-000876-2026-TK6,SILVERLINE TRADING COMPANY vs MUHAMMED THAHA
 WARRANT,1788429093837,Payment Step (Litigant/Advocate unpaid fee demand),KL-000779-2026,0.0,PENDING_PAYMENT,ST/427/2026,,KL-000779-2026-TK5,M/s Maxvalue Credits and Investments Ltd vs Manu
 WARRANT,1788429093558,Payment Step (Litigant/Advocate unpaid fee demand),KL-000779-2026,0.0,PENDING_PAYMENT,ST/427/2026,,KL-000779-2026-TK4,M/s Maxvalue Credits and Investments Ltd vs Manu
 WARRANT,1788429084241,Payment Step (Litigant/Advocate unpaid fee demand),KL-000364-2026,0.0,PENDING_PAYMENT,ST/131/2026,,KL-000364-2026-TK8,max value credits and invesmnet ltd vs Rema
@@ -448,26 +665,18 @@ WARRANT,1788429083878,Payment Step (Litigant/Advocate unpaid fee demand),KL-0003
 WARRANT,1788428992214,Payment Step (Litigant/Advocate unpaid fee demand),KL-000924-2025,0.0,PENDING_PAYMENT,ST/515/2025,,KL-000924-2025-TK14,HDFC BANK LTD vs RINU R
 WARRANT,1788333448292,Payment Step (Litigant/Advocate unpaid fee demand),KL-000190-2025,0.0,PENDING_PAYMENT,ST/487/2025,,KL-000190-2025-TK35,M/S COMBINED FOODS (P) LTD vs FNS TRADING AND DISTRIBUTION
 WARRANT,1788333443163,Payment Step (Litigant/Advocate unpaid fee demand),KL-000062-2025,0.0,PENDING_PAYMENT,ST/202/2025,,KL-000062-2025-TK17,Sunildeth KR vs Sheeja A
-WARRANT,1787557394074,Payment Step (Litigant/Advocate unpaid fee demand),KL-001120-2025,0.0,PENDING_PAYMENT,ST/746/2025,,KL-001120-2025-TK9,Tomy Solomon vs Suneer  A
 WARRANT,1787557114320,Payment Step (Litigant/Advocate unpaid fee demand),KL-000726-2026,0.0,PENDING_PAYMENT,ST/403/2026,,KL-000726-2026-TK7,saubhagya finance vs Lekshmi PK
 WARRANT,1787557114035,Payment Step (Litigant/Advocate unpaid fee demand),KL-000726-2026,0.0,PENDING_PAYMENT,ST/403/2026,,KL-000726-2026-TK6,saubhagya finance vs Lekshmi PK
-WARRANT,1787557106705,Payment Step (Litigant/Advocate unpaid fee demand),KL-000150-2026,0.0,PENDING_PAYMENT,ST/36/2026,,KL-000150-2026-TK9,V BOBBY SUNIL DUTT vs NAFIH P M
 WARRANT,1787557104338,Payment Step (Litigant/Advocate unpaid fee demand),KL-001212-2025,0.0,PENDING_PAYMENT,ST/802/2025,,KL-001212-2025-TK10,HDFC BANK LTD vs MATHEWS JOY IDICULLA
 WARRANT,1787557101213,Expired Before Service (Hearing date passed),KL-000941-2025,0.0,EXPIRED,ST/699/2025,,KL-000941-2025-TK12,Aru Raj vs Ajesh S
 WARRANT,1787557100958,Expired Before Service (Hearing date passed),KL-000941-2025,0.0,EXPIRED,ST/699/2025,,KL-000941-2025-TK11,Aru Raj vs Ajesh S
 WARRANT,1787557100645,Expired Before Service (Hearing date passed),KL-000941-2025,0.0,EXPIRED,ST/699/2025,,KL-000941-2025-TK10,Aru Raj vs Ajesh S
 WARRANT,1787557100371,Expired Before Service (Hearing date passed),KL-000941-2025,0.0,EXPIRED,ST/699/2025,,KL-000941-2025-TK9,Aru Raj vs Ajesh S
-WARRANT,1787557095746,Payment Step (Litigant/Advocate unpaid fee demand),KL-000834-2025,0.0,PENDING_PAYMENT,ST/453/2025,,KL-000834-2025-TK11,Manappuram Finance Ltd. vs ANNIE ISSAC
-WARRANT,1787557089933,Payment Step (Litigant/Advocate unpaid fee demand),KL-000294-2025,0.0,PENDING_PAYMENT,ST/377/2025,,KL-000294-2025-TK25,Shylaja I vs Rajesh R
 WARRANT,1787557088915,Payment Step (Litigant/Advocate unpaid fee demand),KL-000022-2025,0.0,PENDING_PAYMENT,ST/348/2025,,KL-000022-2025-TK16,MARANATHA FINCORP vs BIPIN BABU
 WARRANT,1787557088752,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2025,0.0,PENDING_PAYMENT,ST/371/2025,,KL-000645-2025-TK21,Faizal A vs Nahas A S
 WARRANT,1787396235947,Payment Step (Litigant/Advocate unpaid fee demand),KL-001068-2025,0.0,PENDING_PAYMENT,ST/691/2025,,KL-001068-2025-TK34,M/s. Sree Gokulam Chit & Finance Co. Pvt. Ltd vs Nishana N
-WARRANT,1787391564667,Payment Step (Litigant/Advocate unpaid fee demand),KL-000899-2026,0.0,PENDING_PAYMENT,ST/871/2026,,KL-000899-2026-TK3,Ajikumar vs Aneesa Beevi
-WARRANT,1787391564408,Payment Step (Litigant/Advocate unpaid fee demand),KL-000899-2026,0.0,PENDING_PAYMENT,ST/871/2026,,KL-000899-2026-TK2,Ajikumar vs Aneesa Beevi
 WARRANT,1787391561817,Payment Step (Litigant/Advocate unpaid fee demand),KL-001319-2026,0.0,PENDING_PAYMENT,ST/858/2026,,KL-001319-2026-TK3,Samastha Nair Nidhi Ltd. vs Sumitha Sukumaran
-WARRANT,1787391560129,Payment Step (Litigant/Advocate unpaid fee demand),KL-001310-2026,0.0,PENDING_PAYMENT,ST/857/2026,,KL-001310-2026-TK3,Samastha nair nidhi ltd.  vs Sandhya EK
 WARRANT,1787391554666,Payment Step (Litigant/Advocate unpaid fee demand),KL-001380-2026,0.0,PENDING_PAYMENT,ST/774/2026,,KL-001380-2026-TK4,Baiju Kabeer vs Shanavas
-WARRANT,1787391554075,Payment Step (Litigant/Advocate unpaid fee demand),KL-001380-2026,0.0,PENDING_PAYMENT,ST/774/2026,,KL-001380-2026-TK3,Baiju Kabeer vs Shanavas
 WARRANT,1787391527578,Payment Step (Litigant/Advocate unpaid fee demand),KL-001152-2026,0.0,PENDING_PAYMENT,ST/639/2026,,KL-001152-2026-TK4,Paravur Akshaya Nidhi Ltd vs Athira A
 PROCLAMATION,1787391522815,Payment Step (Litigant/Advocate unpaid fee demand),KL-001108-2026,0.0,PENDING_PAYMENT,ST/597/2026,,KL-001108-2026-TK18,SHYAM MOHAN vs ANEESHA B R
 PROCLAMATION,1787391522576,Payment Step (Litigant/Advocate unpaid fee demand),KL-001108-2026,0.0,PENDING_PAYMENT,ST/597/2026,,KL-001108-2026-TK17,SHYAM MOHAN vs ANEESHA B R
@@ -482,16 +691,10 @@ WARRANT,1787391519579,Payment Step (Litigant/Advocate unpaid fee demand),KL-0011
 WARRANT,1787391519089,Payment Step (Litigant/Advocate unpaid fee demand),KL-001108-2026,0.0,PENDING_PAYMENT,ST/597/2026,,KL-001108-2026-TK8,SHYAM MOHAN vs ANEESHA B R
 WARRANT,1787391518578,Payment Step (Litigant/Advocate unpaid fee demand),KL-001108-2026,0.0,PENDING_PAYMENT,ST/597/2026,,KL-001108-2026-TK7,SHYAM MOHAN vs ANEESHA B R
 WARRANT,1787391506504,Payment Step (Litigant/Advocate unpaid fee demand),KL-000890-2026,0.0,PENDING_PAYMENT,ST/469/2026,,KL-000890-2026-TK4,Manappuram Finance Ltd vs Saraswathy K
-WARRANT,1787391505824,Payment Step (Litigant/Advocate unpaid fee demand),KL-000813-2026,0.0,PENDING_PAYMENT,ST/425/2026,,KL-000813-2026-TK4,SANILKUMAR NARAYANAN vs SHAHUL HAMEED
 WARRANT,1787391502928,Expired Before Service (Hearing date passed),KL-000425-2026,0.0,EXPIRED,ST/423/2026,,KL-000425-2026-TK4,PREMOD G vs SUNIL ALIAS THANKAPPA SUNIL
 WARRANT,1787391502509,Expired Before Service (Hearing date passed),KL-000425-2026,0.0,EXPIRED,ST/423/2026,,KL-000425-2026-TK3,PREMOD G vs SUNIL ALIAS THANKAPPA SUNIL
-WARRANT,1787391444104,Payment Step (Litigant/Advocate unpaid fee demand),KL-000301-2026,0.0,PENDING_PAYMENT,ST/111/2026,,KL-000301-2026-TK20,Sunitha K T vs Aruna A
-WARRANT,1787391443558,Payment Step (Litigant/Advocate unpaid fee demand),KL-000301-2026,0.0,PENDING_PAYMENT,ST/111/2026,,KL-000301-2026-TK19,Sunitha K T vs Aruna A
 WARRANT,1787391442955,Payment Step (Litigant/Advocate unpaid fee demand),KL-000162-2026,0.0,PENDING_PAYMENT,ST/62/2026,,KL-000162-2026-TK12,Sebastian J vs Kasmel S
-WARRANT,1787391437100,Payment Step (Litigant/Advocate unpaid fee demand),KL-001172-2025,0.0,PENDING_PAYMENT,ST/776/2025,,KL-001172-2025-TK8,HDFC BANK LTD vs Raji K R
-WARRANT,1787391430221,Payment Step (Litigant/Advocate unpaid fee demand),KL-000961-2025,0.0,PENDING_PAYMENT,ST/594/2025,,KL-000961-2025-TK9,HDFC BANK LTD vs SHYJU S RAJU
 WARRANT,1787391419338,Expired Before Service (Hearing date passed),KL-000536-2025,0.0,EXPIRED,ST/324/2025,,KL-000536-2025-TK16,Ferozkhan A vs Najimudeen
-WARRANT,1787391417697,Payment Step (Litigant/Advocate unpaid fee demand),KL-000364-2025,0.0,PENDING_PAYMENT,ST/285/2025,,KL-000364-2025-TK23,Viswaabharan P vs Ajith Kumar
 WARRANT,1787310493662,Payment Step (Litigant/Advocate unpaid fee demand),KL-000869-2025,0.0,PENDING_PAYMENT,ST/808/2025,,KL-000869-2025-TK22,Abdul Salim M vs M/s Frizzile Foods and 3 Others
 WARRANT,1787310493119,Payment Step (Litigant/Advocate unpaid fee demand),KL-000869-2025,0.0,PENDING_PAYMENT,ST/808/2025,,KL-000869-2025-TK21,Abdul Salim M vs M/s Frizzile Foods and 3 Others
 WARRANT,1787308470485,Payment Step (Litigant/Advocate unpaid fee demand),KL-000766-2026,0.0,PENDING_PAYMENT,ST/746/2026,,KL-000766-2026-TK9,Civz Infra Solution Pvt Ltd vs Govind Krishnan
@@ -513,9 +716,7 @@ WARRANT,1787308421905,Payment Step (Litigant/Advocate unpaid fee demand),KL-0003
 WARRANT,1787308421682,Payment Step (Litigant/Advocate unpaid fee demand),KL-000366-2026,0.0,PENDING_PAYMENT,ST/133/2026,,KL-000366-2026-TK12,Maxvalue Credits and Investments Ltd vs Usha
 WARRANT,1787308421281,Payment Step (Litigant/Advocate unpaid fee demand),KL-000366-2026,0.0,PENDING_PAYMENT,ST/133/2026,,KL-000366-2026-TK10,Maxvalue Credits and Investments Ltd vs Usha
 WARRANT,1787308420794,Payment Step (Litigant/Advocate unpaid fee demand),KL-000306-2026,0.0,PENDING_PAYMENT,ST/98/2026,,KL-000306-2026-TK9,Biju K P vs SALEENA A
-WARRANT,1787308417026,Payment Step (Litigant/Advocate unpaid fee demand),KL-000144-2026,0.0,PENDING_PAYMENT,ST/30/2026,,KL-000144-2026-TK8,Maben Nidhi Ltd. vs Pinto Paul
 WARRANT,1787308416675,Payment Step (Litigant/Advocate unpaid fee demand),KL-001226-2025,0.0,PENDING_PAYMENT,ST/818/2025,,KL-001226-2025-TK12,Vidhu B vs Vijayakumar
-WARRANT,1787308415524,Payment Step (Litigant/Advocate unpaid fee demand),KL-000138-2026,0.0,PENDING_PAYMENT,ST/28/2026,,KL-000138-2026-TK8,Maben Nidhi Ltd. vs Nasla N
 WARRANT,1787308413806,Payment Step (Litigant/Advocate unpaid fee demand),KL-001203-2025,0.0,PENDING_PAYMENT,ST/797/2025,,KL-001203-2025-TK8,Shemeena Basheer vs Raseena Jalaludheen
 WARRANT,1787308413269,Payment Step (Litigant/Advocate unpaid fee demand),KL-001171-2025,0.0,PENDING_PAYMENT,ST/775/2025,,KL-001171-2025-TK13,HDFC BANK LTD vs PRADEEP V
 WARRANT,1787308412826,Payment Step (Litigant/Advocate unpaid fee demand),KL-001171-2025,0.0,PENDING_PAYMENT,ST/775/2025,,KL-001171-2025-TK11,HDFC BANK LTD vs PRADEEP V
@@ -530,18 +731,12 @@ WARRANT,1787308404318,Payment Step (Litigant/Advocate unpaid fee demand),KL-0010
 WARRANT,1787308404048,Payment Step (Litigant/Advocate unpaid fee demand),KL-001080-2025,0.0,PENDING_PAYMENT,ST/700/2025,,KL-001080-2025-TK14,Saubhagya Finance vs Usha Kumari R
 WARRANT,1787308401537,Payment Step (Litigant/Advocate unpaid fee demand),KL-000984-2025,0.0,PENDING_PAYMENT,ST/652/2025,,KL-000984-2025-TK21,HDFC BANK LTD vs AJI
 WARRANT,1787308401297,Payment Step (Litigant/Advocate unpaid fee demand),KL-000984-2025,0.0,PENDING_PAYMENT,ST/652/2025,,KL-000984-2025-TK20,HDFC BANK LTD vs AJI
-WARRANT,1787308400892,Payment Step (Litigant/Advocate unpaid fee demand),KL-001050-2025,0.0,PENDING_PAYMENT,ST/657/2025,,KL-001050-2025-TK18,Haritha Syndicate vs Jayasree B
-WARRANT,1787308400574,Payment Step (Litigant/Advocate unpaid fee demand),KL-001050-2025,0.0,PENDING_PAYMENT,ST/657/2025,,KL-001050-2025-TK17,Haritha Syndicate vs Jayasree B
-WARRANT,1787308360703,Payment Step (Litigant/Advocate unpaid fee demand),KL-001047-2025,0.0,PENDING_PAYMENT,ST/624/2025,,KL-001047-2025-TK10,Haritha Syndicate vs Kunjumon
 WARRANT,1787308360317,Payment Step (Litigant/Advocate unpaid fee demand),KL-000910-2025,0.0,PENDING_PAYMENT,ST/601/2025,,KL-000910-2025-TK14,MARANATHA FINCORP vs SINDHU T S
 WARRANT,1787308360068,Payment Step (Litigant/Advocate unpaid fee demand),KL-000910-2025,0.0,PENDING_PAYMENT,ST/601/2025,,KL-000910-2025-TK13,MARANATHA FINCORP vs SINDHU T S
 WARRANT,1787308359289,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK50,Rajalekshmi S vs ANOOP S BABU
-WARRANT,1787308358998,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK49,Rajalekshmi S vs ANOOP S BABU
 WARRANT,1787308358707,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK48,Rajalekshmi S vs ANOOP S BABU
 WARRANT,1787308358423,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK47,Rajalekshmi S vs ANOOP S BABU
-WARRANT,1787308358123,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK46,Rajalekshmi S vs ANOOP S BABU
 WARRANT,1787308357867,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK45,Rajalekshmi S vs ANOOP S BABU
-WARRANT,1787308357578,Payment Step (Litigant/Advocate unpaid fee demand),KL-000411-2025,0.0,PENDING_PAYMENT,ST/531/2025,,KL-000411-2025-TK44,Rajalekshmi S vs ANOOP S BABU
 WARRANT,1787308357227,Payment Step (Litigant/Advocate unpaid fee demand),KL-000830-2025,0.0,PENDING_PAYMENT,ST/451/2025,,KL-000830-2025-TK12,Manappuram Finance Ltd. vs Archana G
 WARRANT,1787308354609,Payment Step (Litigant/Advocate unpaid fee demand),KL-000619-2025,0.0,PENDING_PAYMENT,ST/439/2025,,KL-000619-2025-TK13,Rajesh Raveendran Pillai vs Shijumom  Joseph
 WARRANT,1787308354160,Payment Step (Litigant/Advocate unpaid fee demand),KL-000622-2025,0.0,PENDING_PAYMENT,ST/427/2025,,KL-000622-2025-TK15,Ratheesh  Raveendran Pillai vs Shijumon Joseph
@@ -564,12 +759,14 @@ WARRANT,1787308337645,Payment Step (Litigant/Advocate unpaid fee demand),KL-0003
 WARRANT,1787308336989,Payment Step (Litigant/Advocate unpaid fee demand),KL-000282-2025,0.0,PENDING_PAYMENT,ST/125/2025,,KL-000282-2025-TK14,MARANATHA FINCORP vs AMBILI K
 WARRANT,1787308335251,Payment Step (Litigant/Advocate unpaid fee demand),KL-000061-2025,0.0,PENDING_PAYMENT,ST/74/2025,,KL-000061-2025-TK20,HDFC BANK LTD vs SUJITH SURENDRAN
 WARRANT,1787308334210,Payment Step (Litigant/Advocate unpaid fee demand),KL-000009-2025,0.0,PENDING_PAYMENT,ST/68/2025,,KL-000009-2025-TK11,HDFC BANK LTD vs SUNI S
-WARRANT,1787308333708,Payment Step (Litigant/Advocate unpaid fee demand),KL-000049-2025,0.0,PENDING_PAYMENT,ST/52/2025,,KL-000049-2025-TK9,SHAJAHAN M vs NUSRATH V P
-WARRANT,1787308332728,Payment Step (Litigant/Advocate unpaid fee demand),KL-000056-2025,0.0,PENDING_PAYMENT,ST/51/2025,,KL-000056-2025-TK10,M P SUBASH vs NUSRATH V P
+WARRANT,1787308333708,Expired Before Service (Hearing date passed),KL-000049-2025,0.0,EXPIRED,ST/52/2025,,KL-000049-2025-TK9,SHAJAHAN M vs NUSRATH V P
+WARRANT,1787308333465,Expired Before Service (Hearing date passed),KL-000049-2025,0.0,EXPIRED,ST/52/2025,,KL-000049-2025-TK8,SHAJAHAN M vs NUSRATH V P
+WARRANT,1787308332728,Expired Before Service (Hearing date passed),KL-000056-2025,0.0,EXPIRED,ST/51/2025,,KL-000056-2025-TK10,M P SUBASH vs NUSRATH V P
+WARRANT,1787308332464,Expired Before Service (Hearing date passed),KL-000056-2025,0.0,EXPIRED,ST/51/2025,,KL-000056-2025-TK9,M P SUBASH vs NUSRATH V P
 WARRANT,1787223539258,Payment Step (Litigant/Advocate unpaid fee demand),KL-000815-2026,0.0,PENDING_PAYMENT,ST/741/2026,,KL-000815-2026-TK4,Shuhaib A vs Ahammed Reyhan
 WARRANT,1787223538881,Payment Step (Litigant/Advocate unpaid fee demand),KL-000815-2026,0.0,PENDING_PAYMENT,ST/741/2026,,KL-000815-2026-TK3,Shuhaib A vs Ahammed Reyhan
-WARRANT,1787223534042,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2026,0.0,PENDING_PAYMENT,ST/716/2026,,KL-000196-2026-TK8,Arya Harshan vs Asif M
-WARRANT,1787223533769,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2026,0.0,PENDING_PAYMENT,ST/716/2026,,KL-000196-2026-TK7,Arya Harshan vs Asif M
+WARRANT,1787223534042,Expired Before Service (Hearing date passed),KL-000196-2026,0.0,EXPIRED,ST/716/2026,,KL-000196-2026-TK8,Arya Harshan vs Asif M
+WARRANT,1787223533769,Expired Before Service (Hearing date passed),KL-000196-2026,0.0,EXPIRED,ST/716/2026,,KL-000196-2026-TK7,Arya Harshan vs Asif M
 WARRANT,1787223469080,Payment Step (Litigant/Advocate unpaid fee demand),KL-000764-2026,0.0,PENDING_PAYMENT,ST/406/2026,,KL-000764-2026-TK8,Abdul Khareem A vs Muhammed Saleem N K
 WARRANT,1787223372686,Payment Step (Litigant/Advocate unpaid fee demand),KL-000517-2026,0.0,PENDING_PAYMENT,ST/223/2026,,KL-000517-2026-TK8,Paravur Akshaya Nidi Ltd vs Savitha D
 WARRANT,1787223276331,Payment Step (Litigant/Advocate unpaid fee demand),KL-001244-2025,0.0,PENDING_PAYMENT,ST/838/2025,,KL-001244-2025-TK8,SILVERLINE TRADING COMPANY vs MAHESH PILLAI MOHAN
@@ -577,7 +774,6 @@ PROCLAMATION,1787223270366,Payment Step (Litigant/Advocate unpaid fee demand),KL
 ATTACHMENT,1787223269766,Payment Step (Litigant/Advocate unpaid fee demand),KL-000902-2025,0.0,PENDING_PAYMENT,ST/574/2025,,KL-000902-2025-TK15,Shamshad Khan vs Shameema B
 WARRANT,1787223269141,Payment Step (Litigant/Advocate unpaid fee demand),KL-000902-2025,0.0,PENDING_PAYMENT,ST/574/2025,,KL-000902-2025-TK13,Shamshad Khan vs Shameema B
 WARRANT,1787223267619,Payment Step (Litigant/Advocate unpaid fee demand),KL-000949-2025,0.0,PENDING_PAYMENT,ST/543/2025,,KL-000949-2025-TK9,HDFC BANK LTD vs SYAMKUMAR K
-WARRANT,1787223267328,Payment Step (Litigant/Advocate unpaid fee demand),KL-000501-2025,0.0,PENDING_PAYMENT,ST/533/2025,,KL-000501-2025-TK20,Mohammed Sidhique E S vs Haseena  S
 WARRANT,1787223266614,Payment Step (Litigant/Advocate unpaid fee demand),KL-000949-2025,0.0,PENDING_PAYMENT,ST/543/2025,,KL-000949-2025-TK8,HDFC BANK LTD vs SYAMKUMAR K
 WARRANT,1787223255006,Payment Step (Litigant/Advocate unpaid fee demand),KL-000346-2024,0.0,PENDING_PAYMENT,ST/40/2025,,KL-000346-2024-TK25,ELIAMMA ROBINSON vs SABITHA THAMPI ARNOLD
 WARRANT,1787223254331,Expired Before Service (Hearing date passed),KL-000300-2024,0.0,EXPIRED,ST/27/2025,,KL-000300-2024-TK24,HARIHARAN S vs BIJU V P
@@ -594,26 +790,21 @@ WARRANT,1787134512083,Payment Step (Litigant/Advocate unpaid fee demand),KL-0007
 WARRANT,1787134499591,Payment Step (Litigant/Advocate unpaid fee demand),KL-000632-2025,0.0,PENDING_PAYMENT,ST/355/2025,,KL-000632-2025-TK21,K R SUSEELAN vs Poornima Harbhan
 WARRANT,1787134495529,Expired Before Service (Hearing date passed),KL-000036-2025,0.0,EXPIRED,ST/36/2025,,KL-000036-2025-TK30,Ajikumar M S vs Vinu Pai
 WARRANT,1787134494410,Expired Before Service (Hearing date passed),KL-000036-2025,0.0,EXPIRED,ST/36/2025,,KL-000036-2025-TK28,Ajikumar M S vs Vinu Pai
-WARRANT,1787050513472,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2025,0.0,PENDING_PAYMENT,ST/426/2025,,KL-000687-2025-TK22,NISAM  A vs ANEES R
-WARRANT,1787050513226,Payment Step (Litigant/Advocate unpaid fee demand),KL-000687-2025,0.0,PENDING_PAYMENT,ST/426/2025,,KL-000687-2025-TK21,NISAM  A vs ANEES R
 WARRANT,1787050511429,Expired Before Service (Hearing date passed),KL-000577-2025,0.0,EXPIRED,ST/242/2025,,KL-000577-2025-TK30,Al Nabeel vs Arief N
 WARRANT,1787050510507,Expired Before Service (Hearing date passed),KL-000577-2025,0.0,EXPIRED,ST/242/2025,,KL-000577-2025-TK29,Al Nabeel vs Arief N
 WARRANT,1787050510223,Expired Before Service (Hearing date passed),KL-000577-2025,0.0,EXPIRED,ST/242/2025,,KL-000577-2025-TK28,Al Nabeel vs Arief N
-WARRANT,1787047266530,Payment Step (Litigant/Advocate unpaid fee demand),KL-001212-2026,0.0,PENDING_PAYMENT,ST/666/2026,,KL-001212-2026-TK3,Sunil Kumar R vs Sooraj M M
+WARRANT,1787047266530,Expired Before Service (Hearing date passed),KL-001212-2026,0.0,EXPIRED,ST/666/2026,,KL-001212-2026-TK3,Sunil Kumar R vs Sooraj M M
 WARRANT,1787047263837,Expired Before Service (Hearing date passed),KL-000868-2026,0.0,EXPIRED,ST/457/2026,,KL-000868-2026-TK6,Shariar A R vs Binu Sharina R
 WARRANT,1787047263606,Expired Before Service (Hearing date passed),KL-000868-2026,0.0,EXPIRED,ST/457/2026,,KL-000868-2026-TK5,Shariar A R vs Binu Sharina R
 WARRANT,1787047260992,Expired Before Service (Hearing date passed),KL-000718-2026,0.0,EXPIRED,ST/357/2026,,KL-000718-2026-TK7,Vidhyadiraja Grama Nidhi Limited vs Mohanan
 WARRANT,1787047260720,Expired Before Service (Hearing date passed),KL-000718-2026,0.0,EXPIRED,ST/357/2026,,KL-000718-2026-TK6,Vidhyadiraja Grama Nidhi Limited vs Mohanan
 WARRANT,1787047260437,Payment Step (Litigant/Advocate unpaid fee demand),KL-000055-2026,0.0,PENDING_PAYMENT,ST/322/2026,,KL-000055-2026-TK8,Ansari M vs Sharly
-WARRANT,1787047255996,Payment Step (Litigant/Advocate unpaid fee demand),KL-000401-2026,0.0,PENDING_PAYMENT,ST/151/2026,,KL-000401-2026-TK15,Prabhakaran K vs Harikumar S
 WARRANT,1787047216169,Payment Step (Litigant/Advocate unpaid fee demand),KL-000148-2026,0.0,PENDING_PAYMENT,ST/39/2026,,KL-000148-2026-TK19,Rajith V vs Fr Bijoy P
 WARRANT,1787047212999,Payment Step (Litigant/Advocate unpaid fee demand),KL-001179-2025,0.0,PENDING_PAYMENT,ST/783/2025,,KL-001179-2025-TK19,KBC Chicken vs Afsal S
 WARRANT,1787047212754,Payment Step (Litigant/Advocate unpaid fee demand),KL-001179-2025,0.0,PENDING_PAYMENT,ST/783/2025,,KL-001179-2025-TK18,KBC Chicken vs Afsal S
 WARRANT,1787047212497,Payment Step (Litigant/Advocate unpaid fee demand),KL-001179-2025,0.0,PENDING_PAYMENT,ST/783/2025,,KL-001179-2025-TK17,KBC Chicken vs Afsal S
-WARRANT,1787047202374,Payment Step (Litigant/Advocate unpaid fee demand),KL-000041-2025,0.0,PENDING_PAYMENT,ST/363/2025,,KL-000041-2025-TK21,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
-WARRANT,1787047202095,Payment Step (Litigant/Advocate unpaid fee demand),KL-000041-2025,0.0,PENDING_PAYMENT,ST/363/2025,,KL-000041-2025-TK20,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
-WARRANT,1787047198171,Payment Step (Litigant/Advocate unpaid fee demand),KL-000368-2025,0.0,PENDING_PAYMENT,ST/238/2025,,KL-000368-2025-TK13,Siyad H vs Sajeevan S
-WARRANT,1787047197895,Payment Step (Litigant/Advocate unpaid fee demand),KL-000368-2025,0.0,PENDING_PAYMENT,ST/238/2025,,KL-000368-2025-TK12,Siyad H vs Sajeevan S
+WARRANT,1787047202374,Expired Before Service (Hearing date passed),KL-000041-2025,0.0,EXPIRED,ST/363/2025,,KL-000041-2025-TK21,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
+WARRANT,1787047202095,Expired Before Service (Hearing date passed),KL-000041-2025,0.0,EXPIRED,ST/363/2025,,KL-000041-2025-TK20,SILVER LINE TRADING COMPANY vs M/s MSB COLOURS 
 WARRANT,1786964346919,Expired Before Service (Hearing date passed),KL-000644-2026,0.0,EXPIRED,ST/307/2026,,KL-000644-2026-TK7,SILVERLINE TRADING COMPANY vs SAJEEV
 WARRANT,1786964346605,Expired Before Service (Hearing date passed),KL-000644-2026,0.0,EXPIRED,ST/307/2026,,KL-000644-2026-TK6,SILVERLINE TRADING COMPANY vs SAJEEV
 WARRANT,1786963940215,Payment Step (Litigant/Advocate unpaid fee demand),KL-000951-2025,0.0,PENDING_PAYMENT,ST/643/2025,,KL-000951-2025-TK13,Raju Peter vs Shaji
@@ -621,6 +812,8 @@ WARRANT,1786963933155,Expired Before Service (Hearing date passed),KL-000954-202
 WARRANT,1786963932877,Expired Before Service (Hearing date passed),KL-000954-2025,0.0,EXPIRED,ST/588/2025,,KL-000954-2025-TK9,Jayachandran  S vs Ajitha Kumari S
 WARRANT,1786963932585,Expired Before Service (Hearing date passed),KL-000954-2025,0.0,EXPIRED,ST/588/2025,,KL-000954-2025-TK8,Jayachandran  S vs Ajitha Kumari S
 WARRANT,1786963932270,Expired Before Service (Hearing date passed),KL-000954-2025,0.0,EXPIRED,ST/588/2025,,KL-000954-2025-TK7,Jayachandran  S vs Ajitha Kumari S
+WARRANT,1786962710152,Expired Before Service (Hearing date passed),KL-000786-2026,0.0,EXPIRED,ST/419/2026,,KL-000786-2026-TK8,Anees Abbas vs Ajesh Kumar K
+WARRANT,1786962709806,Expired Before Service (Hearing date passed),KL-000786-2026,0.0,EXPIRED,ST/419/2026,,KL-000786-2026-TK7,Anees Abbas vs Ajesh Kumar K
 WARRANT,1786961605238,Expired Before Service (Hearing date passed),KL-000691-2025,0.0,EXPIRED,ST/340/2025,,KL-000691-2025-TK17,Kantilal Maruti Katkar vs Stephen  T
 WARRANT,1786701426590,Payment Step (Litigant/Advocate unpaid fee demand),KL-000973-2026,0.0,PENDING_PAYMENT,ST/809/2026,,KL-000973-2026-TK4,Athira A vs Nisha
 WARRANT,1786701426315,Payment Step (Litigant/Advocate unpaid fee demand),KL-000973-2026,0.0,PENDING_PAYMENT,ST/809/2026,,KL-000973-2026-TK3,Athira A vs Nisha
@@ -630,32 +823,28 @@ WARRANT,1786701417398,Payment Step (Litigant/Advocate unpaid fee demand),KL-0010
 WARRANT,1786701414323,Payment Step (Litigant/Advocate unpaid fee demand),KL-001009-2026,0.0,PENDING_PAYMENT,ST/549/2026,,KL-001009-2026-TK9,Deepak Raju vs Athira Mohan
 WARRANT,1786701414056,Payment Step (Litigant/Advocate unpaid fee demand),KL-001009-2026,0.0,PENDING_PAYMENT,ST/549/2026,,KL-001009-2026-TK8,Deepak Raju vs Athira Mohan
 WARRANT,1786701412512,Payment Step (Litigant/Advocate unpaid fee demand),KL-000790-2026,0.0,PENDING_PAYMENT,ST/532/2026,,KL-000790-2026-TK3,Evangeline Dev Impex Pvt Limited vs Tiji P Jose
-WARRANT,1786701411338,Payment Step (Litigant/Advocate unpaid fee demand),KL-000727-2026,0.0,PENDING_PAYMENT,ST/392/2026,,KL-000727-2026-TK6,saubhagya finance vs Rugminiyamma
-WARRANT,1786701411051,Payment Step (Litigant/Advocate unpaid fee demand),KL-000727-2026,0.0,PENDING_PAYMENT,ST/392/2026,,KL-000727-2026-TK5,saubhagya finance vs Rugminiyamma
-WARRANT,1786701410401,Payment Step (Litigant/Advocate unpaid fee demand),KL-000294-2026,0.0,PENDING_PAYMENT,ST/376/2026,,KL-000294-2026-TK8,Anilkumar B vs Ramani S
-WARRANT,1786701403431,Payment Step (Litigant/Advocate unpaid fee demand),KL-000505-2026,0.0,PENDING_PAYMENT,ST/214/2026,,KL-000505-2026-TK7,BABU N vs MUHAMMED RAFI
-WARRANT,1786701401254,Payment Step (Litigant/Advocate unpaid fee demand),KL-000491-2026,0.0,PENDING_PAYMENT,ST/208/2026,,KL-000491-2026-TK7,Saji R vs Sulaimankunju A
+WARRANT,1786701411338,Expired Before Service (Hearing date passed),KL-000727-2026,0.0,EXPIRED,ST/392/2026,,KL-000727-2026-TK6,saubhagya finance vs Rugminiyamma
+WARRANT,1786701411051,Expired Before Service (Hearing date passed),KL-000727-2026,0.0,EXPIRED,ST/392/2026,,KL-000727-2026-TK5,saubhagya finance vs Rugminiyamma
+WARRANT,1786701401570,Expired Before Service (Hearing date passed),KL-000491-2026,0.0,EXPIRED,ST/208/2026,,KL-000491-2026-TK8,Saji R vs Sulaimankunju A
+WARRANT,1786701401254,Expired Before Service (Hearing date passed),KL-000491-2026,0.0,EXPIRED,ST/208/2026,,KL-000491-2026-TK7,Saji R vs Sulaimankunju A
 WARRANT,1786701400731,Payment Step (Litigant/Advocate unpaid fee demand),KL-000461-2026,0.0,PENDING_PAYMENT,ST/187/2026,,KL-000461-2026-TK6,HDFC BANK LTD vs VIJAYA KUMARI P
-WARRANT,1786701397293,Payment Step (Litigant/Advocate unpaid fee demand),KL-000206-2026,0.0,PENDING_PAYMENT,ST/114/2026,,KL-000206-2026-TK6,Vijayan Pillai vs Biji Mohan
 WARRANT,1786701255283,Payment Step (Litigant/Advocate unpaid fee demand),KL-000303-2026,0.0,PENDING_PAYMENT,ST/95/2026,,KL-000303-2026-TK4,Paravur Akshaya Nidhi Ltd vs Amitha S
 WARRANT,1786701254751,Payment Step (Litigant/Advocate unpaid fee demand),KL-000249-2026,0.0,PENDING_PAYMENT,ST/86/2026,,KL-000249-2026-TK7,Chathannoor Sree Nidhi Ltd vs Sajitha
 WARRANT,1786701251649,Payment Step (Litigant/Advocate unpaid fee demand),KL-000214-2026,0.0,PENDING_PAYMENT,ST/72/2026,,KL-000214-2026-TK4,Akhilan S B vs Abhilash S
 WARRANT,1786701249010,Payment Step (Litigant/Advocate unpaid fee demand),KL-000204-2026,0.0,PENDING_PAYMENT,ST/60/2026,,KL-000204-2026-TK4,Baiju S vs Shanavas
-WARRANT,1786701247981,Payment Step (Litigant/Advocate unpaid fee demand),KL-000199-2026,0.0,PENDING_PAYMENT,ST/58/2026,,KL-000199-2026-TK8,Muhammed Riyas N vs Ashkar Anzar
-WARRANT,1786701247592,Payment Step (Litigant/Advocate unpaid fee demand),KL-000199-2026,0.0,PENDING_PAYMENT,ST/58/2026,,KL-000199-2026-TK7,Muhammed Riyas N vs Ashkar Anzar
+WARRANT,1786701247981,Expired Before Service (Hearing date passed),KL-000199-2026,0.0,EXPIRED,ST/58/2026,,KL-000199-2026-TK8,Muhammed Riyas N vs Ashkar Anzar
+WARRANT,1786701247592,Expired Before Service (Hearing date passed),KL-000199-2026,0.0,EXPIRED,ST/58/2026,,KL-000199-2026-TK7,Muhammed Riyas N vs Ashkar Anzar
 WARRANT,1786701245081,Payment Step (Litigant/Advocate unpaid fee demand),KL-000027-2026,0.0,PENDING_PAYMENT,ST/48/2026,,KL-000027-2026-TK7,MUHAMMED AJMAL  U N vs SAJEEV S R
 WARRANT,1786701237139,Payment Step (Litigant/Advocate unpaid fee demand),KL-001235-2025,0.0,PENDING_PAYMENT,ST/827/2025,,KL-001235-2025-TK8,Sree Venkateswara Enterprises vs Popees Babycare Products Pvt Ltd  and 1 Other
 WARRANT,1786701236612,Payment Step (Litigant/Advocate unpaid fee demand),KL-001215-2025,0.0,PENDING_PAYMENT,ST/810/2025,,KL-001215-2025-TK8,Akhil Chandran vs Axis Overseas and 1 Other
 WARRANT,1786701233978,Payment Step (Litigant/Advocate unpaid fee demand),KL-001207-2025,0.0,PENDING_PAYMENT,ST/799/2025,,KL-001207-2025-TK8,HDFC BANK LTD vs AMLAL R
 WARRANT,1786701233646,Payment Step (Litigant/Advocate unpaid fee demand),KL-001206-2025,0.0,PENDING_PAYMENT,ST/798/2025,,KL-001206-2025-TK8,HDFC BANK LTD vs SREEHARI M
 WARRANT,1786701233308,Payment Step (Litigant/Advocate unpaid fee demand),KL-000504-2025,0.0,PENDING_PAYMENT,ST/728/2025,,KL-000504-2025-TK14,HIGHNESS FINANCE PRIVATE LIMITED vs GIRIJA T
-WARRANT,1786701230614,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2025,0.0,PENDING_PAYMENT,ST/716/2025,,KL-001096-2025-TK12,Saubhagya Finance vs Resna S
-WARRANT,1786701230187,Payment Step (Litigant/Advocate unpaid fee demand),KL-001096-2025,0.0,PENDING_PAYMENT,ST/716/2025,,KL-001096-2025-TK11,Saubhagya Finance vs Resna S
-WARRANT,1786701228141,Payment Step (Litigant/Advocate unpaid fee demand),KL-001095-2025,0.0,PENDING_PAYMENT,ST/715/2025,,KL-001095-2025-TK11,Saubhagya Finance vs Sudha  O
-WARRANT,1786701227834,Payment Step (Litigant/Advocate unpaid fee demand),KL-001095-2025,0.0,PENDING_PAYMENT,ST/715/2025,,KL-001095-2025-TK10,Saubhagya Finance vs Sudha  O
+WARRANT,1786701230614,Expired Before Service (Hearing date passed),KL-001096-2025,0.0,EXPIRED,ST/716/2025,,KL-001096-2025-TK12,Saubhagya Finance vs Resna S
+WARRANT,1786701230187,Expired Before Service (Hearing date passed),KL-001096-2025,0.0,EXPIRED,ST/716/2025,,KL-001096-2025-TK11,Saubhagya Finance vs Resna S
+WARRANT,1786701228141,Expired Before Service (Hearing date passed),KL-001095-2025,0.0,EXPIRED,ST/715/2025,,KL-001095-2025-TK11,Saubhagya Finance vs Sudha  O
+WARRANT,1786701227834,Expired Before Service (Hearing date passed),KL-001095-2025,0.0,EXPIRED,ST/715/2025,,KL-001095-2025-TK10,Saubhagya Finance vs Sudha  O
 WARRANT,1786701222881,Expired Before Service (Hearing date passed),KL-000595-2025,0.0,EXPIRED,ST/679/2025,,KL-000595-2025-TK24,Arun Kumar vs Prasad
-WARRANT,1786701082017,Payment Step (Litigant/Advocate unpaid fee demand),KL-001057-2025,0.0,PENDING_PAYMENT,ST/664/2025,,KL-001057-2025-TK13,Haritha Syndicate vs Stanley  Jose
-WARRANT,1786701081765,Payment Step (Litigant/Advocate unpaid fee demand),KL-001057-2025,0.0,PENDING_PAYMENT,ST/664/2025,,KL-001057-2025-TK12,Haritha Syndicate vs Stanley  Jose
 WARRANT,1786701081045,Payment Step (Litigant/Advocate unpaid fee demand),KL-001008-2025,0.0,PENDING_PAYMENT,ST/660/2025,,KL-001008-2025-TK8,Sugathan K vs Shibu C
 WARRANT,1786701076931,Payment Step (Litigant/Advocate unpaid fee demand),KL-000953-2025,,PENDING_PAYMENT,ST/646/2025,,KL-000953-2025-TK17,Sajeena Y vs Shahaludeen
 WARRANT,1786701076628,Payment Step (Litigant/Advocate unpaid fee demand),KL-000953-2025,0.0,PENDING_PAYMENT,ST/646/2025,,KL-000953-2025-TK16,Sajeena Y vs Shahaludeen
@@ -666,103 +855,76 @@ WARRANT,1786701064026,Payment Step (Litigant/Advocate unpaid fee demand),KL-0006
 WARRANT,1786701061527,Payment Step (Litigant/Advocate unpaid fee demand),KL-000184-2025,0.0,PENDING_PAYMENT,ST/296/2025,,KL-000184-2025-TK26,kerala kaumudi  vs Devan Vaidyan T
 PROCLAMATION,1786701058115,Payment Step (Litigant/Advocate unpaid fee demand),KL-000356-2025,0.0,PENDING_PAYMENT,ST/275/2025,,KL-000356-2025-TK28,Rahimath A vs Azeem  N
 WARRANT,1786701056628,Payment Step (Litigant/Advocate unpaid fee demand),KL-000356-2025,0.0,PENDING_PAYMENT,ST/275/2025,,KL-000356-2025-TK24,Rahimath A vs Azeem  N
-WARRANT,1786701056122,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2025,0.0,PENDING_PAYMENT,ST/186/2025,,KL-000196-2025-TK10,City Boots vs Noushad A M
 WARRANT,1786701055897,Payment Step (Litigant/Advocate unpaid fee demand),KL-000196-2025,0.0,PENDING_PAYMENT,ST/186/2025,,KL-000196-2025-TK9,City Boots vs Noushad A M
 WARRANT,1786701054331,Payment Step (Litigant/Advocate unpaid fee demand),KL-000262-2024,0.0,PENDING_PAYMENT,ST/138/2025,,KL-000262-2024-TK22,HARITHA SYNDICATE vs VIJI
 WARRANT,1786701053978,Payment Step (Litigant/Advocate unpaid fee demand),KL-000262-2024,0.0,PENDING_PAYMENT,ST/138/2025,,KL-000262-2024-TK21,HARITHA SYNDICATE vs VIJI
-WARRANT,1786701051400,Payment Step (Litigant/Advocate unpaid fee demand),KL-000233-2025,0.0,PENDING_PAYMENT,ST/104/2025,,KL-000233-2025-TK25,Sachin vs Safeela
-WARRANT,1786701049961,Payment Step (Litigant/Advocate unpaid fee demand),KL-000233-2025,0.0,PENDING_PAYMENT,ST/104/2025,,KL-000233-2025-TK24,Sachin vs Safeela
+WARRANT,1786701051400,Expired Before Service (Hearing date passed),KL-000233-2025,0.0,EXPIRED,ST/104/2025,,KL-000233-2025-TK25,Sachin vs Safeela
+WARRANT,1786701049961,Expired Before Service (Hearing date passed),KL-000233-2025,0.0,EXPIRED,ST/104/2025,,KL-000233-2025-TK24,Sachin vs Safeela
 WARRANT,1786701049442,Payment Step (Litigant/Advocate unpaid fee demand),KL-000289-2024,0.0,PENDING_PAYMENT,ST/15/2025,,KL-000289-2024-TK11,HARITHA SYNDICATE vs SAJEENA
 WARRANT,1786613424085,Expired Before Service (Hearing date passed),KL-000398-2025,0.0,EXPIRED,ST/335/2025,,KL-000398-2025-TK22,Judy J vs Shahina N
 WARRANT,1786613423848,Expired Before Service (Hearing date passed),KL-000398-2025,0.0,EXPIRED,ST/335/2025,,KL-000398-2025-TK21,Judy J vs Shahina N
-WARRANT,1786439214902,Payment Step (Litigant/Advocate unpaid fee demand),KL-001342-2026,0.0,PENDING_PAYMENT,ST/849/2026,,KL-001342-2026-TK3,Samastha Nair Nidhi Ltd. vs Asya P S
-WARRANT,1786439213457,Payment Step (Litigant/Advocate unpaid fee demand),KL-001335-2026,0.0,PENDING_PAYMENT,ST/848/2026,,KL-001335-2026-TK3,Samastha Nair Nidhi Ltd. vs Hera Hemachandran
-WARRANT,1786439212135,Payment Step (Litigant/Advocate unpaid fee demand),KL-000872-2026,0.0,PENDING_PAYMENT,ST/836/2026,,KL-000872-2026-TK4,Mohammed Sidhique E S vs Sheela R
-WARRANT,1786439171319,Payment Step (Litigant/Advocate unpaid fee demand),KL-001262-2026,0.0,PENDING_PAYMENT,ST/721/2026,,KL-001262-2026-TK4,Sasidharan Nair vs Mahesh Kumar
-WARRANT,1786439164714,Payment Step (Litigant/Advocate unpaid fee demand),KL-001086-2026,0.0,PENDING_PAYMENT,ST/576/2026,,KL-001086-2026-TK3,Ajitha K vs Deepu R
-WARRANT,1786359416276,Payment Step (Litigant/Advocate unpaid fee demand),KL-000341-2026,0.0,PENDING_PAYMENT,ST/362/2026,,KL-000341-2026-TK7,SHAMSUDEEN KHALID vs SANTHOSH KUMAR
+WARRANT,1786439171319,Expired Before Service (Hearing date passed),KL-001262-2026,0.0,EXPIRED,ST/721/2026,,KL-001262-2026-TK4,Sasidharan Nair vs Mahesh Kumar
+WARRANT,1786439164714,Expired Before Service (Hearing date passed),KL-001086-2026,0.0,EXPIRED,ST/576/2026,,KL-001086-2026-TK3,Ajitha K vs Deepu R
 WARRANT,1786359414976,Payment Step (Litigant/Advocate unpaid fee demand),KL-000545-2026,0.0,PENDING_PAYMENT,ST/256/2026,,KL-000545-2026-TK7,Nisma Mol AK vs SAJAYAN M
 WARRANT,1786359414703,Payment Step (Litigant/Advocate unpaid fee demand),KL-000545-2026,0.0,PENDING_PAYMENT,ST/256/2026,,KL-000545-2026-TK6,Nisma Mol AK vs SAJAYAN M
-WARRANT,1786357778140,Payment Step (Litigant/Advocate unpaid fee demand),KL-001251-2026,0.0,PENDING_PAYMENT,ST/720/2026,,KL-001251-2026-TK3,Azhakesan S vs Sruthy S Raj
+WARRANT,1786357778140,Expired Before Service (Hearing date passed),KL-001251-2026,0.0,EXPIRED,ST/720/2026,,KL-001251-2026-TK3,Azhakesan S vs Sruthy S Raj
+WARRANT,1786357776835,Expired Before Service (Hearing date passed),KL-001255-2026,0.0,EXPIRED,ST/713/2026,,KL-001255-2026-TK3,N DENASH vs GOPAKUMAR
 WARRANT,1786357755822,Payment Step (Litigant/Advocate unpaid fee demand),KL-001082-2026,0.0,PENDING_PAYMENT,ST/575/2026,,KL-001082-2026-TK4,Jayakumar P vs Rajan B
-WARRANT,1786357739299,Payment Step (Litigant/Advocate unpaid fee demand),KL-001031-2026,0.0,PENDING_PAYMENT,ST/555/2026,,KL-001031-2026-TK4,Poothakulam Nidhi Limited vs Arya Krishnan S
-WARRANT,1786357739042,Payment Step (Litigant/Advocate unpaid fee demand),KL-001031-2026,0.0,PENDING_PAYMENT,ST/555/2026,,KL-001031-2026-TK3,Poothakulam Nidhi Limited vs Arya Krishnan S
-WARRANT,1786357737919,Payment Step (Litigant/Advocate unpaid fee demand),KL-001030-2026,0.0,PENDING_PAYMENT,ST/554/2026,,KL-001030-2026-TK4,Poothakulam Nidhi Limited vs SatheeshChandran V B
-WARRANT,1786357737674,Payment Step (Litigant/Advocate unpaid fee demand),KL-001030-2026,0.0,PENDING_PAYMENT,ST/554/2026,,KL-001030-2026-TK3,Poothakulam Nidhi Limited vs SatheeshChandran V B
+WARRANT,1786357739042,Expired Before Service (Hearing date passed),KL-001031-2026,0.0,EXPIRED,ST/555/2026,,KL-001031-2026-TK3,Poothakulam Nidhi Limited vs Arya Krishnan S
+WARRANT,1786357737919,Expired Before Service (Hearing date passed),KL-001030-2026,0.0,EXPIRED,ST/554/2026,,KL-001030-2026-TK4,Poothakulam Nidhi Limited vs SatheeshChandran V B
+WARRANT,1786357737674,Expired Before Service (Hearing date passed),KL-001030-2026,0.0,EXPIRED,ST/554/2026,,KL-001030-2026-TK3,Poothakulam Nidhi Limited vs SatheeshChandran V B
 WARRANT,1786357736632,Payment Step (Litigant/Advocate unpaid fee demand),KL-000919-2026,0.0,PENDING_PAYMENT,ST/489/2026,,KL-000919-2026-TK4,Anuraj R vs Manju Ramachandran
-WARRANT,1786357713658,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2026,0.0,PENDING_PAYMENT,ST/309/2026,,KL-000645-2026-TK9,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
-WARRANT,1786357713599,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2026,0.0,PENDING_PAYMENT,ST/309/2026,,KL-000645-2026-TK8,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
-WARRANT,1786357713265,Payment Step (Litigant/Advocate unpaid fee demand),KL-000645-2026,0.0,PENDING_PAYMENT,ST/309/2026,,KL-000645-2026-TK7,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
+WARRANT,1786357713658,Expired Before Service (Hearing date passed),KL-000645-2026,0.0,EXPIRED,ST/309/2026,,KL-000645-2026-TK9,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
+WARRANT,1786357713599,Expired Before Service (Hearing date passed),KL-000645-2026,0.0,EXPIRED,ST/309/2026,,KL-000645-2026-TK8,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
+WARRANT,1786357713265,Expired Before Service (Hearing date passed),KL-000645-2026,0.0,EXPIRED,ST/309/2026,,KL-000645-2026-TK7,M/S SKYLINE METALLOIDS vs SHAHUL HAMEED SAIDALAVI MOOKKUMMAL
 WARRANT,1786357657105,Expired Before Service (Hearing date passed),KL-000460-2025,0.0,EXPIRED,ST/225/2025,,KL-000460-2025-TK17,SUMA PARAYIL VEEDU KUMARAN vs TINTU JABEES
 WARRANT,1786099795850,Payment Step (Litigant/Advocate unpaid fee demand),KL-000464-2026,0.0,PENDING_PAYMENT,ST/193/2026,,KL-000464-2026-TK6,Sudheesh vs Subhash Babu
-WARRANT,1786099793402,Payment Step (Litigant/Advocate unpaid fee demand),KL-000033-2025,0.0,PENDING_PAYMENT,ST/37/2025,,KL-000033-2025-TK10,M/s. Collection India Enterprises Pvt Ltd vs P PRASAD
 WARRANT,1786099792890,Payment Step (Litigant/Advocate unpaid fee demand),KL-000343-2024,,PENDING_PAYMENT,ST/18/2025,,KL-000343-2024-TK5,HDFC BANK LTD vs MURALEEDHARAN PILLAI
-WARRANT,1786095737566,Payment Step (Litigant/Advocate unpaid fee demand),KL-000713-2025,0.0,PENDING_PAYMENT,ST/390/2025,,KL-000713-2025-TK11,Marykutty Andrew vs Sumayya
+WARRANT,1786095737566,Expired Before Service (Hearing date passed),KL-000713-2025,0.0,EXPIRED,ST/390/2025,,KL-000713-2025-TK11,Marykutty Andrew vs Sumayya
 WARRANT,1786095722019,Payment Step (Litigant/Advocate unpaid fee demand),KL-000829-2026,0.0,PENDING_PAYMENT,ST/556/2026,,KL-000829-2026-TK4,SUDHAKARAN vs Biji Mohan B
 WARRANT,1786095716012,Payment Step (Litigant/Advocate unpaid fee demand),KL-000992-2026,0.0,PENDING_PAYMENT,ST/535/2026,,KL-000992-2026-TK3,Shree Padma Nidhi Limited vs Biju P
 WARRANT,1786095715612,Expired Before Service (Hearing date passed),KL-000991-2026,0.0,EXPIRED,ST/533/2026,,KL-000991-2026-TK3,Rose Gold and Diamonds vs Veena
-WARRANT,1786095126622,Payment Step (Litigant/Advocate unpaid fee demand),KL-000798-2026,0.0,PENDING_PAYMENT,ST/404/2026,,KL-000798-2026-TK3,Manappuram Finance Ltd. vs Saranya Unnikrishnan
-WARRANT,1786095126292,Payment Step (Litigant/Advocate unpaid fee demand),KL-000701-2026,0.0,PENDING_PAYMENT,ST/375/2026,,KL-000701-2026-TK10,Saubhagaya Finance  vs Aruna S
-WARRANT,1786095125582,Payment Step (Litigant/Advocate unpaid fee demand),KL-000701-2026,0.0,PENDING_PAYMENT,ST/375/2026,,KL-000701-2026-TK9,Saubhagaya Finance  vs Aruna S
-WARRANT,1786095125295,Payment Step (Litigant/Advocate unpaid fee demand),KL-000701-2026,0.0,PENDING_PAYMENT,ST/375/2026,,KL-000701-2026-TK8,Saubhagaya Finance  vs Aruna S
+WARRANT,1786095126292,Expired Before Service (Hearing date passed),KL-000701-2026,0.0,EXPIRED,ST/375/2026,,KL-000701-2026-TK10,Saubhagaya Finance  vs Aruna S
+WARRANT,1786095125582,Expired Before Service (Hearing date passed),KL-000701-2026,0.0,EXPIRED,ST/375/2026,,KL-000701-2026-TK9,Saubhagaya Finance  vs Aruna S
+WARRANT,1786095125295,Expired Before Service (Hearing date passed),KL-000701-2026,0.0,EXPIRED,ST/375/2026,,KL-000701-2026-TK8,Saubhagaya Finance  vs Aruna S
 WARRANT,1786095120206,Payment Step (Litigant/Advocate unpaid fee demand),KL-000659-2026,0.0,PENDING_PAYMENT,ST/316/2026,,KL-000659-2026-TK5,Manappuram Finance Ltd vs Saraswathy
-WARRANT,1786095117385,Payment Step (Litigant/Advocate unpaid fee demand),KL-000598-2026,0.0,PENDING_PAYMENT,ST/273/2026,,KL-000598-2026-TK11,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
-WARRANT,1786095117197,Payment Step (Litigant/Advocate unpaid fee demand),KL-000598-2026,0.0,PENDING_PAYMENT,ST/273/2026,,KL-000598-2026-TK10,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
-WARRANT,1786095117134,Payment Step (Litigant/Advocate unpaid fee demand),KL-000598-2026,0.0,PENDING_PAYMENT,ST/273/2026,,KL-000598-2026-TK9,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
-WARRANT,1786095115862,Payment Step (Litigant/Advocate unpaid fee demand),KL-000596-2026,0.0,PENDING_PAYMENT,ST/272/2026,,KL-000596-2026-TK9,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
-WARRANT,1786095115059,Payment Step (Litigant/Advocate unpaid fee demand),KL-000424-2026,0.0,PENDING_PAYMENT,ST/245/2026,,KL-000424-2026-TK6,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
-WARRANT,1786095114095,Payment Step (Litigant/Advocate unpaid fee demand),KL-000424-2026,0.0,PENDING_PAYMENT,ST/245/2026,,KL-000424-2026-TK5,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
-WARRANT,1786095113764,Payment Step (Litigant/Advocate unpaid fee demand),KL-000424-2026,0.0,PENDING_PAYMENT,ST/245/2026,,KL-000424-2026-TK4,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
-WARRANT,1786095112486,Payment Step (Litigant/Advocate unpaid fee demand),KL-000524-2026,0.0,PENDING_PAYMENT,ST/232/2026,,KL-000524-2026-TK7,Shree Padma Nidhi Limited vs Remya R
-WARRANT,1786095112173,Payment Step (Litigant/Advocate unpaid fee demand),KL-000533-2026,0.0,PENDING_PAYMENT,ST/230/2026,,KL-000533-2026-TK7,Anoop S vs Rechana R
+WARRANT,1786095117385,Expired Before Service (Hearing date passed),KL-000598-2026,0.0,EXPIRED,ST/273/2026,,KL-000598-2026-TK11,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1786095117197,Expired Before Service (Hearing date passed),KL-000598-2026,0.0,EXPIRED,ST/273/2026,,KL-000598-2026-TK10,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1786095117134,Expired Before Service (Hearing date passed),KL-000598-2026,0.0,EXPIRED,ST/273/2026,,KL-000598-2026-TK9,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1786095115862,Expired Before Service (Hearing date passed),KL-000596-2026,0.0,EXPIRED,ST/272/2026,,KL-000596-2026-TK9,SILVERLINE TRADING COMPANY vs M/S EVERSHINE PAINT HOUSE and 1 Other
+WARRANT,1786095115059,Expired Before Service (Hearing date passed),KL-000424-2026,0.0,EXPIRED,ST/245/2026,,KL-000424-2026-TK6,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
+WARRANT,1786095114095,Expired Before Service (Hearing date passed),KL-000424-2026,0.0,EXPIRED,ST/245/2026,,KL-000424-2026-TK5,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
+WARRANT,1786095113764,Expired Before Service (Hearing date passed),KL-000424-2026,0.0,EXPIRED,ST/245/2026,,KL-000424-2026-TK4,Elakamon Akshaya Nidhi Ltd vs Terbin Donel Gomes
 WARRANT,1786095110630,Expired Before Service (Hearing date passed),KL-000470-2026,0.0,EXPIRED,ST/209/2026,,KL-000470-2026-TK10,Gopalakrishnan vs Surendran Pillai
 WARRANT,1786095110280,Payment Step (Litigant/Advocate unpaid fee demand),KL-000421-2026,0.0,PENDING_PAYMENT,ST/186/2026,,KL-000421-2026-TK6,SHEENA vs ANEESHA B R
-WARRANT,1786095104683,Payment Step (Litigant/Advocate unpaid fee demand),KL-000326-2026,0.0,PENDING_PAYMENT,ST/139/2026,,KL-000326-2026-TK9,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
-WARRANT,1786095103782,Payment Step (Litigant/Advocate unpaid fee demand),KL-000326-2026,0.0,PENDING_PAYMENT,ST/139/2026,,KL-000326-2026-TK8,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
-WARRANT,1786095103531,Payment Step (Litigant/Advocate unpaid fee demand),KL-000326-2026,0.0,PENDING_PAYMENT,ST/139/2026,,KL-000326-2026-TK7,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
-WARRANT,1786095097980,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK12,K MURALEEDHARAN PILLAI vs Shamsudeen
-WARRANT,1786095097752,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK11,K MURALEEDHARAN PILLAI vs Shamsudeen
-WARRANT,1786095096786,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK10,K MURALEEDHARAN PILLAI vs Shamsudeen
-WARRANT,1786095096474,Payment Step (Litigant/Advocate unpaid fee demand),KL-000034-2026,0.0,PENDING_PAYMENT,ST/16/2026,,KL-000034-2026-TK9,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1786095103782,Expired Before Service (Hearing date passed),KL-000326-2026,0.0,EXPIRED,ST/139/2026,,KL-000326-2026-TK8,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
+WARRANT,1786095103531,Expired Before Service (Hearing date passed),KL-000326-2026,0.0,EXPIRED,ST/139/2026,,KL-000326-2026-TK7,ALCHIMED HEALTH CARE LLP. vs MEDIMART PHARMA AND SURGICAL and 1 Other
+WARRANT,1786095097980,Expired Before Service (Hearing date passed),KL-000034-2026,0.0,EXPIRED,ST/16/2026,,KL-000034-2026-TK12,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1786095097752,Expired Before Service (Hearing date passed),KL-000034-2026,0.0,EXPIRED,ST/16/2026,,KL-000034-2026-TK11,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1786095096786,Expired Before Service (Hearing date passed),KL-000034-2026,0.0,EXPIRED,ST/16/2026,,KL-000034-2026-TK10,K MURALEEDHARAN PILLAI vs Shamsudeen
+WARRANT,1786095096474,Expired Before Service (Hearing date passed),KL-000034-2026,0.0,EXPIRED,ST/16/2026,,KL-000034-2026-TK9,K MURALEEDHARAN PILLAI vs Shamsudeen
 WARRANT,1786095095825,Payment Step (Litigant/Advocate unpaid fee demand),KL-001263-2025,0.0,PENDING_PAYMENT,ST/1/2026,,KL-001263-2025-TK7,Bahulayan N vs Jayaprakash M P
-WARRANT,1786095092879,Payment Step (Litigant/Advocate unpaid fee demand),KL-001201-2025,0.0,PENDING_PAYMENT,ST/793/2025,,KL-001201-2025-TK5,Upasana Healthcare and Hospitals Private Limited  vs Ramlal R
-WARRANT,1786095039567,Payment Step (Litigant/Advocate unpaid fee demand),KL-001189-2025,0.0,PENDING_PAYMENT,ST/789/2025,,KL-001189-2025-TK9,M/S Sadik Stores vs Sajan Sasidharan
-WARRANT,1786095037240,Payment Step (Litigant/Advocate unpaid fee demand),KL-001164-2025,0.0,PENDING_PAYMENT,ST/774/2025,,KL-001164-2025-TK7,HDFC BANK LTD vs MUHAMMED ANAS ANSHAD
-WARRANT,1786095036928,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK15,Manuel Cruz Darwin vs Subish Kaikolante
-WARRANT,1786095036670,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK14,Manuel Cruz Darwin vs Subish Kaikolante
-WARRANT,1786095036090,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK13,Manuel Cruz Darwin vs Subish Kaikolante
-WARRANT,1786095035262,Payment Step (Litigant/Advocate unpaid fee demand),KL-001142-2025,0.0,PENDING_PAYMENT,ST/758/2025,,KL-001142-2025-TK10,Manuel Cruz Darwin vs Subish Kaikolante
-WARRANT,1786095033478,Payment Step (Litigant/Advocate unpaid fee demand),KL-000813-2025,0.0,PENDING_PAYMENT,ST/717/2025,,KL-000813-2025-TK20,GEETHA S vs Satheeshkumar G
-WARRANT,1786095029126,Payment Step (Litigant/Advocate unpaid fee demand),KL-000909-2025,0.0,PENDING_PAYMENT,ST/668/2025,,KL-000909-2025-TK11,MARANATHA FINCORP vs SREERAJ S T
-WARRANT,1786095028837,Payment Step (Litigant/Advocate unpaid fee demand),KL-000912-2025,0.0,PENDING_PAYMENT,ST/632/2025,,KL-000912-2025-TK12,MARANATHA FINCORP vs Surendran K
-WARRANT,1786095028541,Payment Step (Litigant/Advocate unpaid fee demand),KL-000911-2025,0.0,PENDING_PAYMENT,ST/631/2025,,KL-000911-2025-TK12,MARANATHA FINCORP vs NISHAD K J
+WARRANT,1786095036670,Expired Before Service (Hearing date passed),KL-001142-2025,0.0,EXPIRED,ST/758/2025,,KL-001142-2025-TK14,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1786095036090,Expired Before Service (Hearing date passed),KL-001142-2025,0.0,EXPIRED,ST/758/2025,,KL-001142-2025-TK13,Manuel Cruz Darwin vs Subish Kaikolante
+WARRANT,1786095035262,Expired Before Service (Hearing date passed),KL-001142-2025,0.0,EXPIRED,ST/758/2025,,KL-001142-2025-TK10,Manuel Cruz Darwin vs Subish Kaikolante
 WARRANT,1786095023445,Payment Step (Litigant/Advocate unpaid fee demand),KL-000942-2025,0.0,PENDING_PAYMENT,ST/540/2025,,KL-000942-2025-TK14,HIGHNESS FINANCE PRIVATE LIMITED vs BIJITHA S
-WARRANT,1786095023080,Payment Step (Litigant/Advocate unpaid fee demand),KL-000564-2025,0.0,PENDING_PAYMENT,ST/534/2025,,KL-000564-2025-TK20,GIRIRAJ KUMAR KABRA vs AADITHYA TRADING CORPORATION and 1 Other
-WARRANT,1786095022201,Payment Step (Litigant/Advocate unpaid fee demand),KL-000876-2025,0.0,PENDING_PAYMENT,ST/490/2025,,KL-000876-2025-TK9,Haritha Syndicate vs Gireesh Kumar
 WARRANT,1786095020365,Expired Before Service (Hearing date passed),KL-000687-2025,0.0,EXPIRED,ST/426/2025,,KL-000687-2025-TK17,NISAM  A vs ANEES R
-WARRANT,1786094915664,Payment Step (Litigant/Advocate unpaid fee demand),KL-000552-2025,0.0,PENDING_PAYMENT,ST/227/2025,,KL-000552-2025-TK19,GEETHA S vs SATHEESH KUMAR G
-WARRANT,1786094915162,Payment Step (Litigant/Advocate unpaid fee demand),KL-000552-2025,0.0,PENDING_PAYMENT,ST/227/2025,,KL-000552-2025-TK18,GEETHA S vs SATHEESH KUMAR G
-WARRANT,1786094910026,Payment Step (Litigant/Advocate unpaid fee demand),KL-000333-2024,0.0,PENDING_PAYMENT,ST/61/2025,,KL-000333-2024-TK27,Life Care Agencies vs Neeraj  Dev D
-WARRANT,1786094907495,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK27,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
-WARRANT,1786094907221,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK25,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
-WARRANT,1786094907180,Payment Step (Litigant/Advocate unpaid fee demand),KL-000051-2025,0.0,PENDING_PAYMENT,ST/50/2025,,KL-000051-2025-TK24,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
-WARRANT,1786094906662,Payment Step (Litigant/Advocate unpaid fee demand),KL-000329-2024,0.0,PENDING_PAYMENT,ST/32/2025,,KL-000329-2024-TK13,HDFC Bank Ltd vs Nirmal Philip
-WARRANT,1786094906259,Payment Step (Litigant/Advocate unpaid fee demand),KL-000156-2024,0.0,PENDING_PAYMENT,ST/10/2025,,KL-000156-2024-TK18,Suresh Kumar T vs Jijo J
-WARRANT,1786094905006,Payment Step (Litigant/Advocate unpaid fee demand),KL-000156-2024,0.0,PENDING_PAYMENT,ST/10/2025,,KL-000156-2024-TK17,Suresh Kumar T vs Jijo J
-WARRANT,1786008866206,Payment Step (Litigant/Advocate unpaid fee demand),KL-000705-2025,0.0,PENDING_PAYMENT,ST/749/2026,,KL-000705-2025-TK5,Sumesh S vs Bahuleyan
+WARRANT,1786094907495,Expired Before Service (Hearing date passed),KL-000051-2025,0.0,EXPIRED,ST/50/2025,,KL-000051-2025-TK27,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1786094907221,Expired Before Service (Hearing date passed),KL-000051-2025,0.0,EXPIRED,ST/50/2025,,KL-000051-2025-TK25,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1786094907180,Expired Before Service (Hearing date passed),KL-000051-2025,0.0,EXPIRED,ST/50/2025,,KL-000051-2025-TK24,M/s SILVER LINE TRADING COMPANY vs M/s KODIYATTU HOME APPLIANCES
+WARRANT,1786094906259,Expired Before Service (Hearing date passed),KL-000156-2024,0.0,EXPIRED,ST/10/2025,,KL-000156-2024-TK18,Suresh Kumar T vs Jijo J
+WARRANT,1786094905006,Expired Before Service (Hearing date passed),KL-000156-2024,0.0,EXPIRED,ST/10/2025,,KL-000156-2024-TK17,Suresh Kumar T vs Jijo J
+WARRANT,1786008866206,Expired Before Service (Hearing date passed),KL-000705-2025,0.0,EXPIRED,ST/749/2026,,KL-000705-2025-TK5,Sumesh S vs Bahuleyan
 WARRANT,1786008681487,Expired Before Service (Hearing date passed),KL-000607-2025,0.0,EXPIRED,ST/276/2025,,KL-000607-2025-TK22,ANILKUMAR C R vs UNNIKRISHNAN
-WARRANT,1785926049492,Payment Step (Litigant/Advocate unpaid fee demand),KL-000492-2026,0.0,PENDING_PAYMENT,ST/672/2026,,KL-000492-2026-TK6,"SREE NARAYANA PRARTHANA SAMITHI,KUNNATHOOR vs ATHIRA A P"
-WARRANT,1785926047815,Payment Step (Litigant/Advocate unpaid fee demand),KL-000483-2026,0.0,PENDING_PAYMENT,ST/671/2026,,KL-000483-2026-TK4,SREENARAYANA PRARTHANA SAMITHI KUNNATHOOR vs UMADEVI S
-WARRANT,1785926026483,Payment Step (Litigant/Advocate unpaid fee demand),KL-000833-2026,0.0,PENDING_PAYMENT,ST/475/2026,,KL-000833-2026-TK6,Stephen Netto vs Ganga
-WARRANT,1785926026218,Payment Step (Litigant/Advocate unpaid fee demand),KL-000833-2026,0.0,PENDING_PAYMENT,ST/475/2026,,KL-000833-2026-TK5,Stephen Netto vs Ganga
-WARRANT,1785926022444,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK14,VIPINACHANDRAN vs MURUKESAN NAIR
-WARRANT,1785926021849,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK13,VIPINACHANDRAN vs MURUKESAN NAIR
-WARRANT,1785926021513,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK12,VIPINACHANDRAN vs MURUKESAN NAIR
-WARRANT,1785926020995,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK11,VIPINACHANDRAN vs MURUKESAN NAIR
-WARRANT,1785926020741,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK10,VIPINACHANDRAN vs MURUKESAN NAIR
-WARRANT,1785926020476,Payment Step (Litigant/Advocate unpaid fee demand),KL-000807-2026,0.0,PENDING_PAYMENT,ST/424/2026,,KL-000807-2026-TK9,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926026483,Expired Before Service (Hearing date passed),KL-000833-2026,0.0,EXPIRED,ST/475/2026,,KL-000833-2026-TK6,Stephen Netto vs Ganga
+WARRANT,1785926026218,Expired Before Service (Hearing date passed),KL-000833-2026,0.0,EXPIRED,ST/475/2026,,KL-000833-2026-TK5,Stephen Netto vs Ganga
+WARRANT,1785926022444,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK14,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926021849,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK13,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926021513,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK12,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926020995,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK11,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926020741,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK10,VIPINACHANDRAN vs MURUKESAN NAIR
+WARRANT,1785926020476,Expired Before Service (Hearing date passed),KL-000807-2026,0.0,EXPIRED,ST/424/2026,,KL-000807-2026-TK9,VIPINACHANDRAN vs MURUKESAN NAIR
 WARRANT,1785926019560,Payment Step (Litigant/Advocate unpaid fee demand),KL-000210-2026,0.0,PENDING_PAYMENT,ST/417/2026,,KL-000210-2026-TK6,ANTONY A vs AKHIL B
-WARRANT,1785926003719,Payment Step (Litigant/Advocate unpaid fee demand),KL-000623-2026,0.0,PENDING_PAYMENT,ST/291/2026,,KL-000623-2026-TK8,Vidhyadiraja Grama Nidhi Limited vs Anju Kurup
 WARRANT,1785926002631,Payment Step (Litigant/Advocate unpaid fee demand),KL-000518-2026,0.0,PENDING_PAYMENT,ST/263/2026,,KL-000518-2026-TK9,BYJU Y vs SUMESH R
 WARRANT,1785926002356,Payment Step (Litigant/Advocate unpaid fee demand),KL-000518-2026,0.0,PENDING_PAYMENT,ST/263/2026,,KL-000518-2026-TK8,BYJU Y vs SUMESH R
 WARRANT,1785925927010,Payment Step (Litigant/Advocate unpaid fee demand),KL-000310-2024,0.0,PENDING_PAYMENT,ST/95/2025,,KL-000310-2024-TK16,Hdfc Bank LTD vs Abilash Dileep

@@ -1322,6 +1322,74 @@ def generate_master_email():
             except Exception:
                 pass
 
+    update_index_redirects(REPORT_FILENAME)
+
+
+def update_index_redirects(report_filename):
+    """Updates root index.html and OUTPUT/index.html to redirect to the latest master report."""
+    root_index_path = os.path.join(BASE_DIR, "index.html")
+    output_index_path = os.path.join(OUTPUT_DIR, "index.html")
+
+    root_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=OUTPUT/{report_filename}">
+    <title>24x7 ON Court Kerala — Monthly Performance Report</title>
+    <script>
+        window.location.replace("OUTPUT/{report_filename}");
+    </script>
+    <style>
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0b1239; color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }}
+        .card {{ background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 32px; text-align: center; max-width: 480px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }}
+        h1 {{ font-size: 20px; margin: 0 0 12px; }}
+        p {{ color: #94a3b8; font-size: 14px; margin-bottom: 24px; }}
+        a {{ display: inline-block; background: #10b981; color: #0b1239; font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-size: 14px; transition: transform 0.15s; }}
+        a:hover {{ transform: translateY(-2px); }}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>24x7 ON Court Kerala</h1>
+        <p>Loading the latest Monthly Case Performance Report...</p>
+        <a href="OUTPUT/{report_filename}">Open Executive Master Report →</a>
+    </div>
+</body>
+</html>
+"""
+    output_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url={report_filename}">
+    <title>24x7 ON Court Kerala — Monthly Performance Report</title>
+    <script>
+        window.location.replace("{report_filename}");
+    </script>
+    <style>
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0b1239; color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }}
+        .card {{ background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 32px; text-align: center; max-width: 480px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }}
+        h1 {{ font-size: 20px; margin: 0 0 12px; }}
+        p {{ color: #94a3b8; font-size: 14px; margin-bottom: 24px; }}
+        a {{ display: inline-block; background: #10b981; color: #0b1239; font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-size: 14px; transition: transform 0.15s; }}
+        a:hover {{ transform: translateY(-2px); }}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>24x7 ON Court Kerala</h1>
+        <p>Loading the latest Monthly Case Performance Report...</p>
+        <a href="{report_filename}">Open Executive Master Report →</a>
+    </div>
+</body>
+</html>
+"""
+    with open(root_index_path, "w") as f:
+        f.write(root_html)
+    with open(output_index_path, "w") as f:
+        f.write(output_html)
+
+
 
 def generate_markdown_briefing():
     note_content = f"""# 24x7 ON Court Kerala — Monthly Case Performance Report
