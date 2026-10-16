@@ -7,21 +7,20 @@
 ## Executive Summary (Core Metrics Up Top)
 
 ### 1. Matters
-* **1,633 Total Active Matters**
-* **+177 new** (10.8% intake)
-* **895 in Appearance** (54.8% of active stock)
+* **1,927 Total Active Matters**
+* **1,252 in Appearance** (65.0% of active stock)
 * Breakdown:
-  - Summary Trial (`ST`): **1,511** (92.5%) — *+163 new*
-  - Misc Petition (`CMP`): **122** (7.5%) — *+14 new*
+  - Summary Trial (`ST`): **1,748** (90.7%)
+  - Misc Petition (`CMP`): **114** (5.9%)
 
 ### 2. Disposals
-* **445 Total Disposed Cases**
-* **21.0% clearance rate** (+26 disposals this month)
-* **15.8% 6-month cohort disposal benchmark** (March 2026 cohort)
+* **497 Total Disposed Cases**
+* **0.6% clearance rate** (+9 disposals this month)
+* **15.8% 6-month cohort disposal benchmark** (2026-03 (Filed 6 Months Ago))
 * Breakdown:
-  - Withdrawn / Settled: **342** (76.9%) — *+15 this month*
-  - Dismissed: **61** (13.7%) — *+6 this month*
-  - Judgement / Conviction: **42** (9.4%) — *+5 this month*
+  - Withdrawn / Settled: **378** (76.1%) — *+6 this month*
+  - Dismissed: **71** (14.3%) — *+1 this month*
+  - Judgement / Conviction: **40** (8.0%) — *+2 this month*
 
 ### 3. Hearings
 * **1,017 Total Proceedings Recorded**

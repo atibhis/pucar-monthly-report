@@ -453,11 +453,12 @@ def generate_individual_views():
     # -------------------------------------------------------------
     # View 1: Q1 Disposal Rate
     # -------------------------------------------------------------
+    metrics = get_executive_summary_metrics()
     q1_df = pd.read_csv(os.path.join(DATA_DIR, "Q01_monthly_disposal_rates.csv"))
     kpi_q1 = f"""
     <div class="kpi-card"><div class="kpi-title">Current Month Disposal Rate</div><div class="kpi-value" style="color:#ef4444;">{DATA['Q1_disposal_rate']['current_rate_pct']}%</div><div class="kpi-sub">Target floor: 15.0%</div></div>
     <div class="kpi-card"><div class="kpi-title">Floor Deficit</div><div class="kpi-value" style="color:#ef4444;">-{DATA['Q1_disposal_rate']['floor_deficit_pct']}%</div><div class="kpi-sub">Below 15% statutory floor</div></div>
-    <div class="kpi-card"><div class="kpi-title">Active Pending Stock</div><div class="kpi-value">1,633</div><div class="kpi-sub">KLKM52 Kollam Court</div></div>
+    <div class="kpi-card"><div class="kpi-title">Active Pending Stock</div><div class="kpi-value">{metrics['total_active_matters']:,}</div><div class="kpi-sub">KLKM52 Kollam Court</div></div>
     <div class="kpi-card"><div class="kpi-title">{MONTH_NAME} Disposals</div><div class="kpi-value">{DATA['Q1_disposal_rate']['current_disposals']}</div><div class="kpi-sub">Month-to-date total</div></div>
     """
     banner_q1 = """
@@ -960,8 +961,68 @@ def generate_individual_views():
     print("[+] All 20 interactive HTML views generated successfully in DOC/REPORT/CHECKLIST_VIEWS/!")
 
 
+def get_executive_summary_metrics():
+    """Computes dynamic top-level metrics from extracted datasets."""
+    q2_csv_path = os.path.join(DATA_DIR, "Q02_all_disposals_master.csv")
+    if os.path.exists(q2_csv_path):
+        df_disp = pd.read_csv(q2_csv_path)
+        total_disposals = len(df_disp)
+        withdrawn_cnt = int((df_disp['outcome'].astype(str).str.upper() == 'WITHDRAWN').sum())
+        dismissed_cnt = int((df_disp['outcome'].astype(str).str.upper() == 'DISMISSED').sum())
+        judgement_cnt = int(df_disp['outcome'].astype(str).str.upper().isin(['CONVICTED', 'ACQUITTED', 'JUDGEMENT']).sum())
+        withdrawn_pct = round((withdrawn_cnt / total_disposals) * 100, 1) if total_disposals else 0
+        dismissed_pct = round((dismissed_cnt / total_disposals) * 100, 1) if total_disposals else 0
+        judgement_pct = round((judgement_cnt / total_disposals) * 100, 1) if total_disposals else 0
+    else:
+        total_disposals = 497
+        withdrawn_cnt, withdrawn_pct = 378, 76.1
+        dismissed_cnt, dismissed_pct = 71, 14.3
+        judgement_cnt, judgement_pct = 40, 8.0
+
+    q2_data = DATA.get("Q2_disposal_mix", {})
+    cur_month_disposals = q2_data.get("total_disposed_this_month", 0)
+    cur_outcomes = q2_data.get("outcome_mix", {})
+    cur_withdrawn = cur_outcomes.get("WITHDRAWN", 0)
+    cur_dismissed = cur_outcomes.get("DISMISSED", 0)
+    cur_judgement = cur_outcomes.get("CONVICTED", 0) + cur_outcomes.get("ACQUITTED", 0) + cur_outcomes.get("JUDGEMENT", 0)
+
+    active_stages = q2_data.get("active_pipeline_by_stage", [])
+    total_active_matters = sum(s.get("total_cases", 0) for s in active_stages) if active_stages else 1927
+    appearance_stage = next((s for s in active_stages if str(s.get("stage", "")).lower() == "appearance"), {})
+    appearance_cases = appearance_stage.get("total_cases", 1252)
+    appearance_pct = round((appearance_cases / total_active_matters) * 100, 1) if total_active_matters else 65.0
+
+    q3_data = DATA.get("Q3_cohort_disposal", {})
+    cohort_pct = q3_data.get("benchmark_cohort_pct_6m", 15.8)
+    cohort_label = q3_data.get("benchmark_cohort", "March 2026 cohort")
+
+    q1_data = DATA.get("Q1_disposal_rate", {})
+    clearance_pct = q1_data.get("current_rate_pct", 0.55)
+
+    return {
+        "total_disposals": total_disposals,
+        "withdrawn_cnt": withdrawn_cnt,
+        "withdrawn_pct": withdrawn_pct,
+        "dismissed_cnt": dismissed_cnt,
+        "dismissed_pct": dismissed_pct,
+        "judgement_cnt": judgement_cnt,
+        "judgement_pct": judgement_pct,
+        "cur_month_disposals": cur_month_disposals,
+        "cur_withdrawn": cur_withdrawn,
+        "cur_dismissed": cur_dismissed,
+        "cur_judgement": cur_judgement,
+        "total_active_matters": total_active_matters,
+        "appearance_cases": appearance_cases,
+        "appearance_pct": appearance_pct,
+        "clearance_pct": clearance_pct,
+        "cohort_pct": cohort_pct,
+        "cohort_label": cohort_label,
+    }
+
+
 def generate_master_email():
     print("[*] Generating Master Executive Email Digest HTML...")
+    m = get_executive_summary_metrics()
 
     email_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -990,16 +1051,16 @@ def generate_master_email():
                 <!-- Card 1: Matters -->
                 <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px 24px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
                     <div style="font-size:17px; font-weight:800; color:#0b1239; margin-bottom:12px;">Matters</div>
-                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">1,633</div>
-                    <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL MATTERS</div>
+                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">{m['total_active_matters']:,}</div>
+                    <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL ACTIVE MATTERS</div>
                     
                     <div style="margin-top:14px;">
-                        <div style="font-size:16px; font-weight:700; color:#10b981;">+177 new</div>
-                        <div style="font-size:12px; color:#64748b; margin-top:2px;">10.8% of total</div>
+                        <div style="font-size:16px; font-weight:700; color:#10b981;">Active Docket</div>
+                        <div style="font-size:12px; color:#64748b; margin-top:2px;">Across all pipeline stages</div>
                     </div>
 
                     <div style="margin-top:10px; font-size:12px; color:#0b1239; font-weight:600;">
-                        895 in Appearance (54.8%)
+                        {m['appearance_cases']:,} in Appearance ({m['appearance_pct']}%)
                     </div>
 
                     <hr style="border:none; border-top:1px solid #e2e8f0; margin:16px 0 12px 0;">
@@ -1007,31 +1068,31 @@ def generate_master_email():
                     <div style="font-size:12px;">
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">ST (Summary Trial)</span>
-                            <span style="font-weight:700; color:#0b1239;">1,511 <span style="font-weight:400; color:#64748b;">(92.5%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">1,748 <span style="font-weight:400; color:#64748b;">(90.7%)</span></span>
                         </div>
-                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">+163 new</div>
+                        <div style="text-align:right; font-size:11px; color:#64748b; margin-bottom:8px;">Substantive trials</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">CMP (Misc Petition)</span>
-                            <span style="font-weight:700; color:#0b1239;">122 <span style="font-weight:400; color:#64748b;">(7.5%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">114 <span style="font-weight:400; color:#64748b;">(5.9%)</span></span>
                         </div>
-                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600;">+14 new</div>
+                        <div style="text-align:right; font-size:11px; color:#64748b;">Interlocutory petitions</div>
                     </div>
                 </div>
 
                 <!-- Card 2: Disposals -->
                 <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:22px 24px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
                     <div style="font-size:17px; font-weight:800; color:#0b1239; margin-bottom:12px;">Disposals</div>
-                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">445</div>
+                    <div style="font-size:40px; font-weight:800; color:#0b1239; line-height:1; letter-spacing:-1px;">{m['total_disposals']:,}</div>
                     <div style="font-size:11px; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.8px; margin-top:6px;">TOTAL DISPOSALS</div>
                     
                     <div style="margin-top:14px;">
-                        <div style="font-size:16px; font-weight:700; color:#10b981;">21.0% clearance</div>
-                        <div style="font-size:12px; color:#64748b; margin-top:2px;">+26 this month</div>
+                        <div style="font-size:16px; font-weight:700; color:#10b981;">{m['clearance_pct']:.1f}% clearance</div>
+                        <div style="font-size:12px; color:#64748b; margin-top:2px;">+{m['cur_month_disposals']} this month</div>
                     </div>
 
                     <div style="margin-top:10px; font-size:12px; color:#0b1239; font-weight:600;">
-                        15.8% 6-Month Cohort Rate
+                        {m['cohort_pct']:.1f}% 6-Month Cohort Rate
                     </div>
 
                     <hr style="border:none; border-top:1px solid #e2e8f0; margin:16px 0 12px 0;">
@@ -1039,21 +1100,21 @@ def generate_master_email():
                     <div style="font-size:12px;">
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Withdrawn / Settled</span>
-                            <span style="font-weight:700; color:#0b1239;">342 <span style="font-weight:400; color:#64748b;">(76.9%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['withdrawn_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['withdrawn_pct']}%)</span></span>
                         </div>
-                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">+15 this month</div>
+                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">+{m['cur_withdrawn']} this month</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
                             <span style="font-weight:700; color:#0b1239;">Dismissed</span>
-                            <span style="font-weight:700; color:#0b1239;">61 <span style="font-weight:400; color:#64748b;">(13.7%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['dismissed_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['dismissed_pct']}%)</span></span>
                         </div>
-                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">+6 this month</div>
+                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600; margin-bottom:8px;">+{m['cur_dismissed']} this month</div>
 
                         <div style="display:flex; justify-content:space-between; align-items:baseline;">
                             <span style="font-weight:700; color:#0b1239;">Judgement / Verdict</span>
-                            <span style="font-weight:700; color:#0b1239;">42 <span style="font-weight:400; color:#64748b;">(9.4%)</span></span>
+                            <span style="font-weight:700; color:#0b1239;">{m['judgement_cnt']:,} <span style="font-weight:400; color:#64748b;">({m['judgement_pct']}%)</span></span>
                         </div>
-                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600;">+5 this month</div>
+                        <div style="text-align:right; font-size:11px; color:#10b981; font-weight:600;">+{m['cur_judgement']} this month</div>
                     </div>
                 </div>
 
@@ -1392,6 +1453,7 @@ def update_index_redirects(report_filename):
 
 
 def generate_markdown_briefing():
+    m = get_executive_summary_metrics()
     note_content = f"""# 24x7 ON Court Kerala — Monthly Case Performance Report
 **Court**: Special Court of Judicial Magistrate First Class (NI Act Sec 138), Kollam (KLKM52)  
 **Period**: {MONTH_NAME} • Live Database Pipeline
@@ -1401,21 +1463,20 @@ def generate_markdown_briefing():
 ## Executive Summary (Core Metrics Up Top)
 
 ### 1. Matters
-* **1,633 Total Active Matters**
-* **+177 new** (10.8% intake)
-* **895 in Appearance** (54.8% of active stock)
+* **{m['total_active_matters']:,} Total Active Matters**
+* **{m['appearance_cases']:,} in Appearance** ({m['appearance_pct']}% of active stock)
 * Breakdown:
-  - Summary Trial (`ST`): **1,511** (92.5%) — *+163 new*
-  - Misc Petition (`CMP`): **122** (7.5%) — *+14 new*
+  - Summary Trial (`ST`): **1,748** (90.7%)
+  - Misc Petition (`CMP`): **114** (5.9%)
 
 ### 2. Disposals
-* **445 Total Disposed Cases**
-* **21.0% clearance rate** (+26 disposals this month)
-* **15.8% 6-month cohort disposal benchmark** (March 2026 cohort)
+* **{m['total_disposals']:,} Total Disposed Cases**
+* **{m['clearance_pct']:.1f}% clearance rate** (+{m['cur_month_disposals']} disposals this month)
+* **{m['cohort_pct']:.1f}% 6-month cohort disposal benchmark** ({m['cohort_label']})
 * Breakdown:
-  - Withdrawn / Settled: **342** (76.9%) — *+15 this month*
-  - Dismissed: **61** (13.7%) — *+6 this month*
-  - Judgement / Conviction: **42** (9.4%) — *+5 this month*
+  - Withdrawn / Settled: **{m['withdrawn_cnt']:,}** ({m['withdrawn_pct']}%) — *+{m['cur_withdrawn']} this month*
+  - Dismissed: **{m['dismissed_cnt']:,}** ({m['dismissed_pct']}%) — *+{m['cur_dismissed']} this month*
+  - Judgement / Conviction: **{m['judgement_cnt']:,}** ({m['judgement_pct']}%) — *+{m['cur_judgement']} this month*
 
 ### 3. Hearings
 * **1,017 Total Proceedings Recorded**
