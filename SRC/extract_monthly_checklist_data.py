@@ -63,13 +63,15 @@ class ChecklistDataExtractor:
             print(f"[-] Query failed: {e}")
             raise
 
-    def run_all(self):
+    def run_all(self, target_month=None):
         master_results = {}
         ts_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.target_month = target_month or datetime.now().strftime("%Y-%m")
         master_results["meta"] = {
             "generated_at": ts_now,
             "court": "24x7 ON Court Kerala (Kollam - KLKM52)",
-            "database": "Oncourts-Live (PostgreSQL DB #3)"
+            "database": "Oncourts-Live (PostgreSQL DB #3)",
+            "reporting_month": self.target_month
         }
 
         # -------------------------------------------------------------
@@ -157,12 +159,12 @@ class ChecklistDataExtractor:
                 "status": status
             })
         active_pending_stock = 1633
-        cur_disp = sum(r["disposals"] for r in q1_rows if r["month"] == "2026-09")
+        cur_disp = sum(r["disposals"] for r in q1_rows if r["month"] == self.target_month)
         cur_rate = round((cur_disp / active_pending_stock) * 100, 2)
         master_results["Q1_disposal_rate"] = {
             "title": "Month-on-Month Disposal Rate vs 15% Floor (Police Station Court Complexes)",
             "benchmark_floor": 15.0,
-            "current_month": "2026-09",
+            "current_month": self.target_month,
             "current_disposals": cur_disp,
             "current_rate_pct": cur_rate,
             "floor_deficit_pct": round(15.0 - cur_rate, 2),
@@ -198,7 +200,7 @@ class ChecklistDataExtractor:
         df_q2_disp["disposal_dt"] = pd.to_datetime(df_q2_disp["disposal_time_ms"], unit="ms", errors="coerce")
         df_q2_disp["disposal_month"] = df_q2_disp["disposal_dt"].dt.strftime("%Y-%m")
 
-        cur_month_disp = df_q2_disp[df_q2_disp["disposal_month"] == "2026-09"]
+        cur_month_disp = df_q2_disp[df_q2_disp["disposal_month"] == self.target_month]
         outcome_mix = cur_month_disp["outcome"].value_counts().to_dict()
         contested_disp = cur_month_disp["natureofdisposal"].value_counts().to_dict()
 
@@ -218,7 +220,7 @@ class ChecklistDataExtractor:
 
         master_results["Q2_disposal_mix"] = {
             "title": "Disposal Mix by Outcome & Contested Pipeline",
-            "reporting_month": "2026-09",
+            "reporting_month": self.target_month,
             "total_disposed_this_month": len(cur_month_disp),
             "outcome_mix": outcome_mix,
             "disposal_contested_split": contested_disp,
@@ -226,7 +228,8 @@ class ChecklistDataExtractor:
             "cases": cur_month_disp[["filingnumber", "courtcasenumber", "casetitle", "outcome", "natureofdisposal", "disposal_month"]].to_dict(orient="records")
         }
         df_q2_disp.to_csv(os.path.join(DATA_DIR, "Q02_all_disposals_master.csv"), index=False)
-        print(f"  [+] Q2 extracted. September Disposals: {len(cur_month_disp)} (Withdrawn: {outcome_mix.get('WITHDRAWN', 0)}, Judgement: {outcome_mix.get('CONVICTED', 0) + outcome_mix.get('ACQUITTED', 0) + outcome_mix.get('JUDGEMENT', 0)}, Dismissed: {outcome_mix.get('DISMISSED', 0)})")
+        m_label = datetime.strptime(self.target_month, "%Y-%m").strftime("%B")
+        print(f"  [+] Q2 extracted. {m_label} Disposals: {len(cur_month_disp)} (Withdrawn: {outcome_mix.get('WITHDRAWN', 0)}, Judgement: {outcome_mix.get('CONVICTED', 0) + outcome_mix.get('ACQUITTED', 0) + outcome_mix.get('JUDGEMENT', 0)}, Dismissed: {outcome_mix.get('DISMISSED', 0)})")
 
         # -------------------------------------------------------------
         # Q3: 6-Month Cohort Disposal Benchmark & MoM Movement
@@ -1087,5 +1090,12 @@ class ChecklistDataExtractor:
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Extract monthly checklist data from Metabase")
+    parser.add_argument("--month", default=None, help="Target reporting month (YYYY-MM), e.g. 2026-10")
+    parser.add_argument("--force", "-f", action="store_true", help="Force rerun regardless of cadence")
+    args, _ = parser.parse_known_args()
+
     extractor = ChecklistDataExtractor()
-    extractor.run_all()
+    extractor.run_all(target_month=args.month)
+

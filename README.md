@@ -3,9 +3,9 @@
 An automated data extraction pipeline and reporting suite for the **Special Court of Judicial Magistrate First Class (NI Act Sec 138), Kollam (KLKM52)**.
 
 This repository generates:
-1. **Executive Monthly Performance Report** (`OUTPUT/monthly_case_performance_report.html`): High-level executive dashboard showing top-line intake/disposal/hearing metrics and deep links to all operational registers.
+1. **Executive Monthly Performance Report** (`OUTPUT/monthly_case_performance_report_{DDMMYY}.html`, e.g. `monthly_case_performance_report_161026.html`): High-level executive dashboard showing top-line intake/disposal/hearing metrics and deep links to all operational registers.
 2. **20 Interactive Drill-Down Views** (`OUTPUT/CHECKLIST_VIEWS/`): Standalone client-side data views with live search, column sorting, month filters, stage-wise breakdown pills, and CSV downloads.
-3. **Markdown Briefing** (`OUTPUT/monthly_case_performance_note.md`): Clean text summary for documentation and briefs.
+3. **Markdown Briefing** (`OUTPUT/monthly_case_performance_note_{DDMMYY}.md`, e.g. `monthly_case_performance_note_161026.md`): Clean text summary for documentation and briefs.
 
 ---
 
@@ -14,7 +14,7 @@ This repository generates:
 Pre-built reports and datasets are already committed in `OUTPUT/`. You can view them immediately in any browser:
 
 ### Option 1: Open Directly in Your Browser
-- **Executive Master Report**: Double-click or open `OUTPUT/monthly_case_performance_report.html` in Chrome, Safari, or Firefox.
+- **Executive Master Report**: Open the latest report in `OUTPUT/` (e.g. `OUTPUT/monthly_case_performance_report_161026.html`) in Chrome, Safari, or Firefox.
 - **Register Drill-Downs**: Open any file in `OUTPUT/CHECKLIST_VIEWS/` (e.g. `Q01_disposal_rate.html`, `Q04_silent_cases.html`).
 
 ### Option 2: Run a Local Web Server
@@ -23,7 +23,7 @@ Pre-built reports and datasets are already committed in `OUTPUT/`. You can view 
 python3 -m http.server 8000
 ```
 Then visit in your browser:
-- Master Report: [http://localhost:8000/OUTPUT/monthly_case_performance_report.html](http://localhost:8000/OUTPUT/monthly_case_performance_report.html)
+- Master Report: [http://localhost:8000/OUTPUT/monthly_case_performance_report_161026.html](http://localhost:8000/OUTPUT/monthly_case_performance_report_161026.html)
 - Interactive Views Directory: [http://localhost:8000/OUTPUT/CHECKLIST_VIEWS/](http://localhost:8000/OUTPUT/CHECKLIST_VIEWS/)
 
 ---
@@ -86,6 +86,11 @@ MB_DATABASE_ID=2
 ```bash
 ./run_report.sh
 ```
+> **7-Day Cadence Policy**: The script checks if a report was already generated within the last 7 days. If so, it will cleanly skip re-running. To force a run anyway, add `--force` (or `-f`):
+> ```bash
+> ./run_report.sh --force
+> ```
+
 *Equivalent step-by-step commands:*
 ```bash
 # 1. Fetch live records from Metabase and save datasets to DATA/
@@ -99,7 +104,7 @@ python3 SRC/generate_checklist_htmls.py --all
 
 ## Navigating the Reports
 
-### 1. Executive Performance Report (`OUTPUT/monthly_case_performance_report.html`)
+### 1. Executive Performance Report (`OUTPUT/monthly_case_performance_report_{MMYY}.html`)
 - **Top 4 Core Metric Cards**:
   - **Matters**: Total case docket (1,633), new monthly filings (+177), case type breakdown (Summary Trial 92.5% vs Misc Petitions 7.5%).
   - **Disposals**: Total clearance (445), monthly additions (+26), outcome mix (Withdrawn/Settled 76.9%, Dismissed 13.7%, Judgement 9.4%).
@@ -177,8 +182,8 @@ pucar-monthly-report/
 │   ├── Q02_all_disposals_master.csv
 │   └── ... (20 CSV datasets)
 ├── OUTPUT/                        # Generated reports & interactive views
-│   ├── monthly_case_performance_report.html # Master executive report
-│   ├── monthly_case_performance_note.md     # Markdown briefing
+│   ├── monthly_case_performance_report_161026.html # Master executive report (DDMMYY tagged)
+│   ├── monthly_case_performance_note_161026.md     # Markdown briefing (DDMMYY tagged)
 │   └── CHECKLIST_VIEWS/           # 20 standalone interactive HTML data views
 │       ├── Q01_disposal_rate.html
 │       ├── Q02_disposal_mix.html
