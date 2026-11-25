@@ -14,3 +14,9 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Court Dashboard: case-level data, outputs and the design template stay local
+COURT_DASHBOARD/DATA/
+COURT_DASHBOARD/OUTPUT/
+COURT_DASHBOARD/TEMPLATE/
+Court-Dashboard.html

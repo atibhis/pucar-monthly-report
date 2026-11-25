@@ -106,12 +106,12 @@ python3 SRC/generate_checklist_htmls.py --all
 ---
 
 ### Workflow 3: Email the Court Dashboard
-The Court Dashboard pipeline lives in the sibling folder `METABASE/COURT_DASHBOARD/` and is not part of this repository. Each run pulls fresh live data, rebuilds the dashboard and emails it through Gmail.
+The Court Dashboard pipeline is in `COURT_DASHBOARD/` (setup, including the git-ignored design template, in `COURT_DASHBOARD/README.md`). Each run pulls fresh live data, rebuilds the dashboard and emails it through Gmail.
 
 The email body carries the key metrics: cases, hearings, processes and the diagnostic indicators. The full dashboard (`Court-Dashboard_<DDMMYY_HHMM>.html`) is attached; download it and open it in a browser for every page, case list, search and CSV export.
 
 #### Step 1: Add Gmail Credentials
-Add these to `METABASE/.env`. Use a Gmail **App Password**, not your account password.
+Add these to `.env` in the repository root. Use a Gmail **App Password**, not your account password.
 ```ini
 GMAIL_USER=your_address@gmail.com
 GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
@@ -119,7 +119,7 @@ GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
 
 #### Step 2: Send
 ```bash
-cd METABASE/COURT_DASHBOARD
+cd COURT_DASHBOARD
 
 # Test: email only yourself (GMAIL_USER)
 ./run_court_dashboard.sh --send
