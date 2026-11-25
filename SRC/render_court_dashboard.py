@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fill Court-Dashboard.html (the design template, left untouched) with the live payload from
+Fill TEMPLATE/Court-Dashboard.html (the design template, left untouched) with the live payload from
 extract_court_dashboard.py and write OUTPUT/Court-Dashboard_<DDMMYY>.html (timestamped, DDMMYY_HHMM).
 
 Static values, charts, pills and the first rows of every table are written into the HTML.
@@ -19,10 +19,8 @@ from bs4 import BeautifulSoup, NavigableString
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-# Design template (contains sample case data, so it is never committed). First one found wins.
-TEMPLATE = next((t for t in (os.path.join(ROOT, "TEMPLATE", "Court-Dashboard.html"),
-                             os.path.join(os.path.dirname(ROOT), "Court-Dashboard.html")) if os.path.exists(t)),
-                os.path.join(ROOT, "TEMPLATE", "Court-Dashboard.html"))
+# Design template (contains sample case data, so it is git-ignored and copied in by hand).
+TEMPLATE = os.path.join(ROOT, "TEMPLATE", "Court-Dashboard.html")
 DATA = os.path.join(ROOT, "DATA", "court_dashboard_data.json")
 OUT_DIR = os.path.join(ROOT, "OUTPUT")
 STATIC_ROWS = 50

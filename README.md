@@ -1,234 +1,140 @@
-# 24x7 ON Court Kerala — Monthly Case Performance Report
+# Court Dashboard — 24x7 ON Court Kerala
 
-An automated data extraction pipeline and reporting suite for the **Special Court of Judicial Magistrate First Class (NI Act Sec 138), Kollam (KLKM52)**.
+A monthly dashboard for the Special Court of Judicial Magistrate First Class (NI Act Sec 138), Kollam. Each run pulls live
+data from Oncourts-Live (Metabase, database #3), fills the dashboard design template and writes two files:
 
-This repository generates:
-1. **Executive Monthly Performance Report** (`OUTPUT/monthly_case_performance_report_{DDMMYY}.html`, e.g. `monthly_case_performance_report_161026.html`): High-level executive dashboard showing top-line intake/disposal/hearing metrics and deep links to all operational registers.
-2. **20 Interactive Drill-Down Views** (`OUTPUT/CHECKLIST_VIEWS/`): Standalone client-side data views with live search, column sorting, month filters, stage-wise breakdown pills, and CSV downloads.
-3. **Markdown Briefing** (`OUTPUT/monthly_case_performance_note_{DDMMYY}.md`, e.g. `monthly_case_performance_note_161026.md`): Clean text summary for documentation and briefs.
+* the **full dashboard**: one self-contained HTML file with every indicator page, case lists, search, CSV export and per-case histories
+* an **email summary**: key numbers only, email-safe HTML
+
+The run can also email both: the summary goes in the email body and the dashboard is attached.
 
 ---
 
-## Quick Start: View Existing Reports (No Setup Needed)
+## Repository structure
 
-Pre-built reports and datasets are already committed in `OUTPUT/`. You can view them immediately in any browser:
-
-### Option 1: View Live on GitHub Pages
-- **Live URL**: [https://atibhis.github.io/pucar-monthly-report/](https://atibhis.github.io/pucar-monthly-report/) (automatically routes to the latest executive report)
-
-### Option 2: Open Directly in Your Browser
-- **Executive Master Report**: Open the latest report in `OUTPUT/` (e.g. `OUTPUT/monthly_case_performance_report_161026.html`) in Chrome, Safari, or Firefox.
-- **Register Drill-Downs**: Open any file in `OUTPUT/CHECKLIST_VIEWS/` (e.g. `Q01_disposal_rate.html`, `Q04_silent_cases.html`).
-
-### Option 3: Run a Local Web Server
-```bash
-# From the repository root
-python3 -m http.server 8000
 ```
-Then visit in your browser:
-- Master Report: [http://localhost:8000/OUTPUT/monthly_case_performance_report_161026.html](http://localhost:8000/OUTPUT/monthly_case_performance_report_161026.html)
-- Interactive Views Directory: [http://localhost:8000/OUTPUT/CHECKLIST_VIEWS/](http://localhost:8000/OUTPUT/CHECKLIST_VIEWS/)
+.
+├── run_court_dashboard.sh            # Entry point: extract → render → email body → (optional) send
+├── requirements.txt                  # pandas, numpy, beautifulsoup4, python-dotenv
+├── .env.example                      # Credential keys; copy to .env
+├── SRC/
+│   ├── court_dashboard_sql.py        # Every SQL query behind the dashboard (one per dataset)
+│   ├── extract_court_dashboard.py    # Logs in to Metabase, runs the queries, builds DATA/court_dashboard_data.json
+│   ├── render_court_dashboard.py     # Fills TEMPLATE/Court-Dashboard.html → OUTPUT/Court-Dashboard_<DDMMYY_HHMM>.html
+│   ├── render_email_body.py          # Builds OUTPUT/Court-Dashboard_email_<DDMMYY_HHMM>.html
+│   └── send_court_dashboard_email.py # Sends the email through Gmail SMTP
+│
+│   Local only (git-ignored, never commit):
+├── .env                              # Credentials
+├── TEMPLATE/Court-Dashboard.html     # Design template; contains real case data, so it is handed over separately
+├── DATA/                             # Raw query results, CSVs and the JSON payload from the last pull
+└── OUTPUT/                           # Generated dashboards and email bodies
+```
 
 ---
 
-## Installation & Setup
+## How to run (any system)
 
-If you want to re-generate reports or run the live data extraction pipeline, set up your Python environment:
+You need **Python 3.9+** and network access to `https://oncourts.kerala.gov.in/pucar-dashboard`.
 
-### 1. Clone the Repository
+### 1. Get the code and install dependencies
+
+macOS / Linux:
 ```bash
 git clone git@github.com:atibhis/pucar-monthly-report.git
 cd pucar-monthly-report
-```
-
-### 2. Set Up Python Environment
-Requires **Python 3.9+**:
-```bash
 python3 -m venv .venv
-source .venv/bin/activate       # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
+Windows (PowerShell):
+```powershell
+git clone git@github.com:atibhis/pucar-monthly-report.git
+cd pucar-monthly-report
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
-## How to Run
+### 2. Add the template and credentials
 
-The repository supports two operating workflows:
+1. Put the design template at `TEMPLATE/Court-Dashboard.html`. You will receive it separately; it is not in git.
+2. Copy `.env.example` to `.env` and fill it in:
+   ```ini
+   METABASE_USER=...            # Metabase login with read access to DB #3
+   METABASE_PASS=...
+   GMAIL_USER=...               # only needed for sending
+   GMAIL_APP_PASSWORD=...       # Gmail App Password (Google Account → Security → App passwords), not the account password
+   ```
 
-### Workflow 1: Regenerate Reports from Existing Data (Offline Mode)
-Re-builds all HTML reports and drill-down views using the pre-extracted data in `DATA/`. **No database connection or credentials required.**
+### 3. Run
 
+macOS / Linux:
 ```bash
-./run_report.sh --generate-only
+./run_court_dashboard.sh                     # live pull; reporting month = last complete month (IST)
+./run_court_dashboard.sh --month 2026-10     # a specific reporting month
+./run_court_dashboard.sh --offline           # re-render from the last pull in DATA/, without querying
+./run_court_dashboard.sh --send              # also email it to GMAIL_USER (use this as a test)
+./run_court_dashboard.sh --send-to "a@example.com, b@example.com"   # email these recipients
+DASHBOARD_URL=https://host/path.html ./run_court_dashboard.sh --send-to "..."  # once hosted: the email links to it
 ```
-*Equivalent command:*
-```bash
-python3 SRC/generate_checklist_htmls.py --all
+
+Windows has no `bash` unless you use Git Bash or WSL; both run the commands above unchanged. Without them, run the
+steps by hand:
+```powershell
+python SRC\extract_court_dashboard.py                 # add --month 2026-10 or --offline as needed
+python SRC\render_court_dashboard.py
+python SRC\render_email_body.py --dashboard OUTPUT\Court-Dashboard_<DDMMYY_HHMM>.html
+python SRC\send_court_dashboard_email.py --dashboard OUTPUT\Court-Dashboard_<DDMMYY_HHMM>.html --body OUTPUT\Court-Dashboard_email_<DDMMYY_HHMM>.html [--to "a@example.com"]
 ```
-All outputs will be updated in the `OUTPUT/` directory.
+
+A live pull takes a few minutes. Every output carries a `DDMMYY_HHMM` timestamp, so earlier runs are never overwritten.
+Open the dashboard in any browser; it works offline.
 
 ---
 
-### Workflow 2: Live Data Extraction & Rebuild (Full Pipeline)
-Connects to the ON Courts Metabase / PostgreSQL instance, pulls live transactional case and hearing records, re-computes metrics, saves updated CSVs to `DATA/`, and re-renders all reports in `OUTPUT/`.
+## Rules followed
 
-#### Step 1: Set Up Credentials
-Copy `.env.example` to `.env`:
-```bash
-cp .env.example .env
-```
-Open `.env` and fill in your Metabase credentials:
-```ini
-MB_BASE_URL=https://your-metabase-instance.com
-MB_USERNAME=your_email@domain.com
-MB_PASSWORD=your_secure_password
-MB_DATABASE_ID=2
-```
+### Data
+* **Live data only.** Every number comes from a SQL query against Oncourts-Live, run at the time of the pull. Nothing
+  is hard-coded, estimated or carried over from an earlier run. Every query is in `SRC/court_dashboard_sql.py` and
+  runs unchanged as a Metabase native question (replace `$M_START$` with e.g. `2026-10-01 00:00:00`).
+* **Structured fields only.** Metrics use order types, hearing types, task statuses and application types. No metric
+  reads free-text order wording or police remarks.
+* **No guessing.** If a value is not recorded, it is shown as not recorded, not filled in. For example, a disposed case
+  with no disposal order has no disposal date: it counts in the totals but is left out of every month-wise or 30-day
+  figure. Addresses are counted only under the exact official district or state name.
+* **Complete tables.** Every table shows every row; nothing is cut off.
+* **Dates** use IST. Month buckets are calendar months in IST.
+* **SQL note:** never put a bare `?` in a query. Metabase's JDBC driver treats it as a bind parameter.
 
-#### Step 2: Run the Pipeline
-```bash
-./run_report.sh
-```
-> **7-Day Cadence Policy**: The script checks if a report was already generated within the last 7 days. If so, it will cleanly skip re-running. To force a run anyway, add `--force` (or `-f`):
-> ```bash
-> ./run_report.sh --force
-> ```
+### Privacy
+* The dashboard, `DATA/`, `OUTPUT/` and the template hold party names, case numbers and case histories. They are
+  git-ignored. Never commit them and never host them publicly; this repository deliberately has no web deployment.
+* Credentials live only in `.env`. Never commit it, print it or paste it anywhere.
+* Before emailing anyone new, run `--send` to send a test to yourself first, and send only to people authorised to see
+  case-level data.
 
-*Equivalent step-by-step commands:*
-```bash
-# 1. Fetch live records from Metabase and save datasets to DATA/
-python3 SRC/extract_monthly_checklist_data.py
-
-# 2. Re-render executive report and 20 interactive views
-python3 SRC/generate_checklist_htmls.py --all
-```
-
----
-
-### Workflow 3: Email the Court Dashboard
-The Court Dashboard pipeline is in `COURT_DASHBOARD/` (setup, including the git-ignored design template, in `COURT_DASHBOARD/README.md`). Each run pulls fresh live data, rebuilds the dashboard and emails it through Gmail.
-
-The email body carries the key metrics: cases, hearings, processes and the diagnostic indicators. The full dashboard (`Court-Dashboard_<DDMMYY_HHMM>.html`) is attached; download it and open it in a browser for every page, case list, search and CSV export.
-
-#### Step 1: Add Gmail Credentials
-Add these to `.env` in the repository root. Use a Gmail **App Password**, not your account password.
-```ini
-GMAIL_USER=your_address@gmail.com
-GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
-```
-
-#### Step 2: Send
-```bash
-cd COURT_DASHBOARD
-
-# Test: email only yourself (GMAIL_USER)
-./run_court_dashboard.sh --send
-
-# Email other recipients
-./run_court_dashboard.sh --send-to "person1@example.com, person2@example.com"
-
-# Once the dashboard is hosted, put links back in the email ("Open →", "View cases")
-DASHBOARD_URL=https://… ./run_court_dashboard.sh --send-to "…"
-```
-
-#### Before Sending to Others
-1. Send a test to yourself and check the email in Gmail.
-2. Open the attachment and check it works. Gmail may show a download prompt for HTML attachments; that is expected.
-3. The attachment contains party names and case histories. Send it only to people who are allowed to see them, and do not host it publicly.
-
----
-
-## Navigating the Reports
-
-### 1. Executive Performance Report (`OUTPUT/monthly_case_performance_report_{MMYY}.html`)
-- **Top 4 Core Metric Cards**:
-  - **Matters**: Total case docket (1,633), new monthly filings (+177), case type breakdown (Summary Trial 92.5% vs Misc Petitions 7.5%).
-  - **Disposals**: Total clearance (445), monthly additions (+26), outcome mix (Withdrawn/Settled 76.9%, Dismissed 13.7%, Judgement 9.4%).
-  - **Hearings**: Hearing count (1,017), median interval between successive dates (21.0 days), substantive trial ratio (14.7%).
-  - **Process & Summons**: Total process tasks (3,521), overall delivery rate (49.3%), RPAD vs Police warrant breakdown.
-- **Secondary Server Setup Table**:
-  - Categorizes all 20 operational registers under 4 domains:
-    1. *Case Delay & Velocity Bottlenecks* (Q01, Q04, Q05, Q07, Q09)
-    2. *Process Delivery & Police Enforcement* (Q11, Q12, Q13, Q17)
-    3. *Caseflow & Litigant Management* (Q08, Q10, Q15, Q16, Q18, Q19)
-    4. *Administration & Data Quality Audit* (Q14, Q20)
-  - Every row features an **Open Register →** link leading directly to the interactive data table.
-
-### 2. Interactive Register Views (`OUTPUT/CHECKLIST_VIEWS/`)
-Each of the 20 views is a self-contained HTML page featuring:
-- **Instant Search**: Type any keyword into the search bar to filter records in real time across all columns.
-- **Column Sorting**: Click any table header to sort ascending or descending (supports numeric and alphabetical).
-- **CSV Export**: Click "📥 Export Dataset (CSV)" to download the raw underlying data file.
-- **Specialized Filters**:
-  - **Q02 (Disposal Mix)**: Interactive month dropdown (defaults to latest month `September 2026`) that dynamically re-computes KPIs and row counts.
-  - **Q04 (Silent Cases)**: Stage-wise clickable pills (`Defect Correction`, `Filing`, `Cognizance`, `Appearance`, `Judgement`) with live counts.
-
-### 3. Visual Status Indicators
-To maintain a clean visual interface, text status flags are replaced with standard color indicators:
-| Indicator | Color | Meaning |
-| :--- | :--- | :--- |
-| 🟢 | Emerald (`#10b981`) | **Meets Floor** (≥15% disposal rate) / **Active** / **Pass** / **Fast-Track Ready** |
-| 🔴 | Red (`#ef4444`) | **Below Floor** (<15%) / **Silent Unparked Gap** / **Expired** / **Critical Lag** |
-| 🟠 | Amber (`#f59e0b`) | **Pending Action** / **Pending Payment** / **Moderate Concern** |
-| 🟣 | Purple (`#8b5cf6`) | **Long Pending Register (LPR)** (Parked dormant caseload) |
-
-*Hovering over any indicator displays a tooltip explaining the status. Searchability is preserved via hidden searchable tokens.*
-
----
-
-## Analytical Questions Index (Q01 – Q20)
-
-| View | Analytical Focus | Dataset (`DATA/`) |
-| :--- | :--- | :--- |
-| **Q01** | Month-on-Month Disposal Rate vs 15% Floor | `Q01_monthly_disposal_rates.csv` |
-| **Q02** | Disposal Mix by Outcome & Contested Pipeline | `Q02_all_disposals_master.csv` |
-| **Q03** | 6-Month Cohort Disposal Benchmark | `Q03_cohort_disposal_rates.csv` |
-| **Q04** | 60-Day Silent Cases & LPR Gap (Stage Breakdown) | `Q04_silent_cases_not_in_lpr.csv` |
-| **Q05** | Hearing Interval Outliers (>60 Days) | `Q05_hearing_gap_cases_over_60d.csv` |
-| **Q06** | Substantive vs Non-Substantive Hearing Breakdown | `Q06_hearing_substantive_reasons.csv` |
-| **Q07** | Cognizance Bottlenecks (>90 Days) & Root Causes | `Q07_cognizance_bottlenecks.csv` |
-| **Q08** | Mediation Duration (>6 & >12 Months) & Hearing Tail | `Q08_mediation_cases.csv` |
-| **Q09** | Delay Condonation (DCA) Repeat Cycles (>5 Hearings)| `Q09_dca_cycle_cases.csv` |
-| **Q10** | Bail Hearing Count & Time to Secure Bail | `Q10_bail_hearings_cases.csv` |
-| **Q11** | Unexecuted Warrants Across Police Stations | `Q11_unexecuted_warrants_police_stations.csv` |
-| **Q12** | Repeat Warrant Backlog (5+ Warrants Issued) | `Q12_cases_5plus_warrants.csv` |
-| **Q13** | Process Tasks Expired or Stalled Before Dispatch | `Q13_expired_pending_process_tasks.csv` |
-| **Q14** | Long Pending Register (LPR) Status & CJM Approvals| `Q14_lpr_cases_register.csv` |
-| **Q15** | Complainant Evidence Multi-Case Party Pairs | `Q15_complainant_evidence_pairs.csv` |
-| **Q16** | Top Advocates Caseload Concentration | `Q16_top_advocates_caseload.csv` |
-| **Q17** | Clean Summons Cohorts & Fast-Track Velocity | `Q17_clean_summons_cohorts.csv` |
-| **Q18** | First Appearance to Plea Recording Latency | `Q10_bail_hearings_cases.csv` |
-| **Q19** | Institutional & Out-of-District Complainants | `Q19_institutional_filers.csv` |
-| **Q20** | Data Quality Audit (Mobiles, Return Codes, Tagging)| `Q13_expired_pending_process_tasks.csv` |
-
----
-
-## Directory Structure
-
-```
-pucar-monthly-report/
-├── .env.example                   # Metabase credentials template
-├── .gitignore                     # Git ignore rules (environments, caches, OS)
-├── requirements.txt               # Dependencies: pandas, requests, python-dotenv
-├── run_report.sh                  # Pipeline runner script
-├── README.md                      # System documentation & usage guide
-├── DATA/                          # Committed CSV datasets & master JSON payload
-│   ├── monthly_checklist_data.json
-│   ├── Q01_monthly_disposal_rates.csv
-│   ├── Q02_all_disposals_master.csv
-│   └── ... (20 CSV datasets)
-├── OUTPUT/                        # Generated reports & interactive views
-│   ├── monthly_case_performance_report_161026.html # Master executive report (DDMMYY tagged)
-│   ├── monthly_case_performance_note_161026.md     # Markdown briefing (DDMMYY tagged)
-│   └── CHECKLIST_VIEWS/           # 20 standalone interactive HTML data views
-│       ├── Q01_disposal_rate.html
-│       ├── Q02_disposal_mix.html
-│       └── ... (Q01 to Q20)
-└── SRC/                           # Pipeline source code
-    ├── oncourts_api.py            # Metabase authentication & query wrapper
-    ├── extract_monthly_checklist_data.py # Live data extraction engine
-    └── generate_checklist_htmls.py       # HTML & markdown report generator
-```
-
----
-
+### Metric definitions
+* **Filed case**: `filingdate` set and status not draft / pending payment / pending signature. **Disposed**: `outcome` set; disposal date = first published disposal order (including composite orders). **Pending** = filed − disposed. ST = court case number `ST/…`; CMP = has a CMP number but no ST number.
+* **Reporting month** = last complete month (IST) unless `--month` is given. Arrows on case and process counts = change over the last 30 days. Arrows on hearing statistics = reporting month vs previous month.
+* **Hearings**: completed hearings in the month. Duration = median of recorded `hearingdurationinmillis` (> 0), no cut-off. Median gap = median days between successive hearing dates for a case.
+* **Processes**: `dristi_task` NOTICE / SUMMONS / WARRANT. Served: notice DELIVERED, summons DELIVERED/EXECUTED, warrant EXECUTED.
+* **Monthly disposal %** = disposals in the month ÷ pending stock at the start of the month (target floor 15%).
+* **Silent**: pending, not in LPR, no future hearing, and no order / hearing / task / application for 60+ days.
+* **Hearing gap outliers**: pending cases whose median gap (completed + scheduled hearings) is over 60 days.
+* **Cognizance delay**: stage Cognizance, no TAKE_COGNIZANCE order, 90+ days since registration. Reason (the first that applies): delay-condonation application pending; no notice task; notice issued but none DELIVERED; notice served.
+* **DCA cycle**: pending cases with more than 5 completed delay-condonation hearings, plus the number of DELAY_CONDONATION applications filed.
+* **Unexecuted warrants**: iCOPS warrants (excluding FAILED pushes) not delivered and booked more than 21 working days ago.
+* **Repeat warrants**: 5+ warrant orders. Chart = recorded status of each case's most recent warrant task. Executed = task EXECUTED or iCOPS DELIVERED.
+* **Process failures**: a hearing date in the last 180 days has passed while the task is still PENDING_PAYMENT, ISSUE_* (issued, not sent) or EXPIRED.
+* **Clean first summons**: cohort = month of the first cognizance order. Clean = an ACCEPT_BAIL order (the accused's first recorded appearance), no warrant / proclamation / attachment order, and at most one summons order.
+* **Mediation**: cases with a REFERRAL_CASE_TO_ADR order. Days = referral → disposal order, or → today while pending. Hearings = completed hearings since referral.
+* **Bail**: hearings from the first BAIL-purpose hearing (or the grant hearing) up to the first ACCEPT_BAIL order.
+* **Joint scheduling**: same complainant and accused (from the case title), 2+ pending cases at the same trial stage.
+* **Advocates**: active vakalats. Avg disposal = filing → disposal order. Avg trial = first evidence / S.351 / arguments hearing → disposal order, or today while pending. Undated disposals are not averaged.
+* **Appearance → plea**: first ACCEPT_BAIL order → first completed PLEA hearing.
+* **Institutional**: complainant type REPRESENTATIVE, pending cases. District and state come from the company's registered address. Individual addresses are encrypted and not used.
+* **LPR**: In LPR = `lifecyclestatus='LPR'`. Revived = has a move-out-of-LPR order.
+* **Disposed cases register** ("View cases"): every disposed case with its outcome, disposal-order date and nature of disposal as recorded.

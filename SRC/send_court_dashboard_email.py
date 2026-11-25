@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Email the Court Dashboard through Gmail SMTP: the email-summary HTML as the body and the full
-dashboard attached. Credentials come from METABASE/.env (GMAIL_USER, GMAIL_APP_PASSWORD).
+dashboard attached. Credentials come from .env in the repository root (GMAIL_USER, GMAIL_APP_PASSWORD).
 
   python3 SRC/send_court_dashboard_email.py --dashboard OUTPUT/Court-Dashboard_<ts>.html \
       --body OUTPUT/Court-Dashboard_email_<ts>.html [--to "a@x.com, b@y.com"]
@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-load_dotenv(os.path.join(os.path.dirname(ROOT), ".env"))
+load_dotenv(os.path.join(ROOT, ".env"))
 
 
 def main():
@@ -32,7 +32,7 @@ def main():
 
     user, pw = os.environ.get("GMAIL_USER", "").strip(), os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
     if not user or not pw:
-        raise SystemExit("GMAIL_USER / GMAIL_APP_PASSWORD missing from METABASE/.env")
+        raise SystemExit("GMAIL_USER / GMAIL_APP_PASSWORD missing from .env in the repository root")
     to = [a.strip() for a in (args.to or user).split(",") if a.strip()]
 
     with open(os.path.join(ROOT, "DATA", "court_dashboard_data.json")) as f:

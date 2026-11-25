@@ -1,22 +1,14 @@
-# Environments
+# Credentials
 .env
-.env.local
+
+# Case-level data, generated dashboards and the design template (holds real case data). Never commit.
+DATA/
+OUTPUT/
+TEMPLATE/
+
+# Python / OS
 .venv/
 venv/
-ENV/
-
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Court Dashboard: case-level data, outputs and the design template stay local
-COURT_DASHBOARD/DATA/
-COURT_DASHBOARD/OUTPUT/
-COURT_DASHBOARD/TEMPLATE/
-Court-Dashboard.html

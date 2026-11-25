@@ -22,13 +22,14 @@ import numpy as np
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)                       # COURT_DASHBOARD/
-METABASE_ROOT = os.path.dirname(ROOT)              # METABASE/
-sys.path.insert(0, os.path.join(METABASE_ROOT, "SRC"))
+ROOT = os.path.dirname(HERE)                       # repository root
 sys.path.insert(0, HERE)
 
-from oncourts_api import ONCourtsAnalytics, BASE_URL  # noqa: E402
+from dotenv import load_dotenv  # noqa: E402
 from court_dashboard_sql import SQL  # noqa: E402
+
+load_dotenv(os.path.join(ROOT, ".env"))
+BASE_URL = "https://oncourts.kerala.gov.in/pucar-dashboard"
 
 DB_ID = 3
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -158,7 +159,13 @@ def case_row(r):
 
 class Metabase:
     def __init__(self):
-        self.session = ONCourtsAnalytics().session_id
+        user, pw = os.environ.get("METABASE_USER"), os.environ.get("METABASE_PASS")
+        if not user or not pw:
+            raise SystemExit("METABASE_USER / METABASE_PASS missing from .env in the repository root")
+        req = urllib.request.Request(f"{BASE_URL}/api/session", data=json.dumps({"username": user, "password": pw}).encode(),
+                                     headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            self.session = json.loads(resp.read().decode("utf-8"))["id"]
 
     def query(self, sql):
         body = urllib.parse.urlencode({"query": json.dumps({"database": DB_ID, "type": "native", "native": {"query": sql}})}).encode()
